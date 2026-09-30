@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Malay",
+    "engine": "Malay_engine",
+    "iso_codes": [
+      "msa",
+      "ms"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Malay",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "msa_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Malay)",
+          "How are operations (Malay)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "msa_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Malay)",
+          "Report readiness (Malay)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Jurutera itu mereka bentuk sistem teragih yang sangat cekap.",
+    "Para pelajar memahami rangkaian saraf tiruan yang kompleks dengan baik.",
+    "Kami berjaya melaksanakan protokol memori segerak tanpa kependaman.",
+    "Profesor menerangkan prinsip-prinsip tatabahasa generatif secara terperinci.",
+    "Kumpulan penyelidik menerbitkan makalah penting tentang kecerdasan buatan.",
+    "Arkitek perisian mengoptimumkan saluran pemprosesan data dengan teliti.",
+    "Kecerdasan buatan menganalisis teks pelbagai bahasa dengan tepat.",
+    "Pasukan pembangunan berjaya menyelesaikan semua ujian integrasi.",
+    "Bas memori berkelajuan tinggi memastikan ketekalan data dalam masa nyata.",
+    "Kami menjalankan ujian tanda aras yang ketat untuk membuktikan kestabilan.",
+    "Kanak-kanak membaca buku-buku yang menarik di perpustakaan awam.",
+    "Cuaca hari ini sangat nyaman, tenang dan menyegarkan.",
+    "Para petani memulakan musim menuai padi di sawah yang luas.",
+    "Saintis itu menguji kelajuan dan ketepatan algoritma baharu tersebut.",
+    "Jurutera itu mereka bentuk sistem teragih yang sangat cekap. [14]",
+    "Para pelajar memahami rangkaian saraf tiruan yang kompleks dengan baik. [15]",
+    "Kami berjaya melaksanakan protokol memori segerak tanpa kependaman. [16]",
+    "Profesor menerangkan prinsip-prinsip tatabahasa generatif secara terperinci. [17]",
+    "Kumpulan penyelidik menerbitkan makalah penting tentang kecerdasan buatan. [18]",
+    "Arkitek perisian mengoptimumkan saluran pemprosesan data dengan teliti. [19]"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "irregular_verb_paradigms": {
+    "ablaut_classes": {
+      "class_1_i_a_u": [
+        { "base": "sing", "past": "sang", "past_participle": "sung" },
+        { "base": "ring", "past": "rang", "past_participle": "rung" },
+        { "base": "drink", "past": "drank", "past_participle": "drunk" },
+        { "base": "sink", "past": "sank", "past_participle": "sunk" }
+      ],
+      "class_2_identical_forms": [
+        { "base": "hit", "past": "hit", "past_participle": "hit" },
+        { "base": "cut", "past": "cut", "past_participle": "cut" },
+        { "base": "put", "past": "put", "past_participle": "put" },
+        { "base": "set", "past": "set", "past_participle": "set" }
+      ],
+      "class_3_past_equals_participle": [
+        { "base": "teach", "past": "taught", "past_participle": "taught" },
+        { "base": "buy", "past": "bought", "past_participle": "bought" },
+        { "base": "catch", "past": "caught", "past_participle": "caught" },
+        { "base": "bring", "past": "brought", "past_participle": "brought" }
+      ],
+      "suppletion": [
+        { "base": "be", "past": "was/were", "past_participle": "been" },
+        { "base": "go", "past": "went", "past_participle": "gone" }
+      ]
+    }
+  }
+}

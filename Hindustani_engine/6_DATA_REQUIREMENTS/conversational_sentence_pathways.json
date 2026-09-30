@@ -1,0 +1,75 @@
+{
+  "language": "Hindustani",
+  "engine": "Hindustani_engine",
+  "iso_code": "hi",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "hi_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "सर, क्या आपको लगता है कि यह नया वितरित आर्किटेक्चर हमारे लोड को संभाल पाएगा?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "देखिए... सैद्धांतिक रूप से यह पूरी तरह सक्षम है, लेकिन हमें डेटाबेस की सहमति पर थोड़ा और ध्यान देना होगा।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 218.4,
+        "speech_rate_sps": 3.42,
+        "vocal_roughness": 0.68,
+        "floor_posture": "RESPECTFUL_INQUIRY"
+      }
+    },
+    {
+      "id": "hi_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "जी बिल्कुल। क्या हम इसके लिए कोई नया बेंचमार्क टेस्ट चला सकते हैं?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "हाँ, कल सुबह टीम के साथ मिलकर हम इस पर काम शुरू करेंगे।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 224.1,
+        "speech_rate_sps": 3.65,
+        "vocal_roughness": 0.62,
+        "floor_posture": "COLLABORATIVE_ACTION"
+      }
+    },
+    {
+      "id": "hi_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "क्या आपने इस निर्णय के अंतिम परिणामों पर विचार किया है?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "मैंने हर पहलू की बारीकी से समीक्षा की है, और यह कदम आवश्यक है।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 208.5,
+        "speech_rate_sps": 3.15,
+        "vocal_roughness": 0.74,
+        "floor_posture": "RESOLUTE_DISCOURSE"
+      }
+    },
+    {
+      "id": "hi_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "सर्वर की मेमोरी स्थिति का क्या हाल है?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "शून्य-नैनोसेकंड विलंबता के साथ पूर्ण समकालिकता बनी हुई है।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 232.0,
+        "speech_rate_sps": 4.1,
+        "vocal_roughness": 0.58,
+        "floor_posture": "TECHNICAL_CONFIRMATION"
+      }
+    },
+    {
+      "id": "hi_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "क्या सभी सुरक्षा प्रोटोकॉल ठीक से लागू कर दिए गए हैं?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "प्रत्येक मॉड्यूल का स्वतंत्र रूप से परीक्षण किया गया है और सभी सुरक्षित हैं।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.3,
+        "speech_rate_sps": 3.28,
+        "vocal_roughness": 0.66,
+        "floor_posture": "ASSURANCE_CLOSURE"
+      }
+    }
+  ]
+}

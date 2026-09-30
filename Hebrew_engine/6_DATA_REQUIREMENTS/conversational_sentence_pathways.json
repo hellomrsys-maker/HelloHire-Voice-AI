@@ -1,0 +1,75 @@
+{
+  "language": "Hebrew",
+  "engine": "D:\\gra.voi\\Hebrew_engine",
+  "iso_code": "heb",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "heb_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "המהנדס תכנן מערכת מבוזרת יעילה ביותר.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "הסטודנטים הבינו את הרשת העצבית המורכבת היטב.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "heb_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "יישמנו בהצלחה את פרוטוקול הזיכרון הסינכרוני ללא השהיה.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "הפרופסור הסביר בפירוט את עקרונות הדקדוק הגנרטיבי.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "heb_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "צוות המחקר פרסם מאמר מדעי חשוב על בינה מלאכותית.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ארכיטקט התוכנה ביצע אופטימיזציה של תהליך עיבוד הנתונים.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "heb_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "בינה מלאכותית מנתחת טקסטים רב-לשוניים בדיוק רב.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "צוות הפיתוח השלים את כל בדיקות האינטגרציה בהצלחה.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "heb_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "אפיק הזיכרון המהיר מבטיח עקביות נתונים בזמן אמת.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ביצענו בדיקות ביצועים מחמירות כדי להוכיח אמינות.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

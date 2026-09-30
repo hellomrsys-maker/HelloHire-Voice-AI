@@ -1,0 +1,15 @@
+{
+  "engine": "Hebrew_engine",
+  "generated_utc": "2026-09-29T11:57:28Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Hebrew-HTB",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "The Hebrew Universal Dependencies Treebank is licensed under the",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

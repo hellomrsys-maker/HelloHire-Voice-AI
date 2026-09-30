@@ -1,0 +1,33 @@
+{
+  "greetings": {
+    "respect_hierarchy": {
+      "call": "shikamoo",
+      "expected_response": "marahaba",
+      "social_direction": "junior_to_elder",
+      "prohibited_direction": "elder_to_junior"
+    },
+    "state_inquiry_singular": {
+      "call": "hujambo",
+      "expected_response": "sijambo"
+    },
+    "state_inquiry_plural": {
+      "call": "hamjambo",
+      "expected_response": "hatujambo"
+    },
+    "news_inquiries": {
+      "call": "habari gani",
+      "responses": ["nzuri", "salama", "njema", "safi"]
+    }
+  },
+  "titles": [
+    "Mzee", "Bwana", "Bibi", "Mheshimiwa", "Ndugu", "Ustadh", "Mama", "Baba", "Kaka", "Dada"
+  ],
+  "epistolary": {
+    "openings": [
+      "kwa mheshimiwa", "kwa bwana", "kwa bibi", "ndugu", "mpendwa"
+    ],
+    "closings": [
+      "wako mtiifu", "wako mwaminifu", "wasalaam", "wako katika kazi"
+    ]
+  }
+}

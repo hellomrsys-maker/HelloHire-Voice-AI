@@ -1,0 +1,11 @@
+{
+  "homonym_inventory": {
+    "bank": { "senses": ["financial institution", "sloping land alongside water"], "type": "homonymy" },
+    "bark": { "senses": ["tough exterior of a tree", "sharp explosive cry of a dog"], "type": "homonymy" },
+    "bat": { "senses": ["nocturnal flying mammal", "wooden implement for hitting a ball"], "type": "homonymy" },
+    "crane": { "senses": ["large machine for lifting weights", "large tall wading bird"], "type": "homonymy" },
+    "match": { "senses": ["slender piece of wood for lighting fire", "competitive contest", "equal counterpart"], "type": "polysemy" },
+    "fair": { "senses": ["just and unbiased", "light in color/complexion", "gathering for public entertainment"], "type": "polysemy" },
+    "mean": { "senses": ["signify/denote", "mathematical average", "unkind/malicious"], "type": "homonymy" }
+  }
+}

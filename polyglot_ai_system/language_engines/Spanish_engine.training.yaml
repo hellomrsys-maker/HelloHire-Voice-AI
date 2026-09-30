@@ -1,0 +1,907 @@
+# =============================================================================
+# language_engines/Spanish_engine.training.yaml
+# CANONICAL TRAINING FILE — Spanish Language Engine
+# Single-File Language Engine AI Specification — all 19 sections.
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "spanish_engine_v1"
+  language_name:                "Spanish"
+  language_code:                "es"
+  language_family:              "Indo-European › Italic › Romance › Ibero-Romance"
+  writing_systems:
+    - name: Latin
+      direction: left_to_right
+      case_sensitive: true
+      special_characters:
+        - { mark: "á", name: "acute_accent_a",   affects: "stress_disambiguation" }
+        - { mark: "é", name: "acute_accent_e",   affects: "stress_disambiguation" }
+        - { mark: "í", name: "acute_accent_i",   affects: "stress_disambiguation" }
+        - { mark: "ó", name: "acute_accent_o",   affects: "stress_disambiguation" }
+        - { mark: "ú", name: "acute_accent_u",   affects: "stress_disambiguation" }
+        - { mark: "ü", name: "diaeresis_u",      affects: "separate_pronunciation_in_gue_gui" }
+        - { mark: "ñ", name: "enye",             affects: "distinct_phoneme_palatal_nasal" }
+        - { mark: "¡", name: "inverted_exclamation", affects: "sentence_initial_exclamation_marker" }
+        - { mark: "¿", name: "inverted_question",    affects: "sentence_initial_question_marker" }
+  supported_variants:
+    - code: es-ES
+      name: "Peninsular Spanish (Castilian)"
+      reference_accent: "Standard Castilian"
+      features: ["distinción (seseo absent)", "vosotros for 2nd plural informal"]
+    - code: es-MX
+      name: "Mexican Spanish"
+      reference_accent: "Standard Mexican"
+      features: ["seseo", "ustedes for 2nd plural"]
+    - code: es-AR
+      name: "Rioplatense Spanish (Argentina/Uruguay)"
+      reference_accent: "Buenos Aires"
+      features: ["voseo (vos instead of tú)", "seseo", "different intonation"]
+    - code: es-CO
+      name: "Colombian Spanish"
+      reference_accent: "Bogotá standard"
+      features: ["seseo", "clear articulation", "considered neutral in broadcasting"]
+    - code: es-419
+      name: "Latin American Spanish (general)"
+      reference_accent: "Neutral Latin American"
+      features: ["seseo", "ustedes for 2nd plural", "no vosotros"]
+  canonical_training_file:      "language_engines/Spanish_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    context_compression:        "sliding_window"
+    topic_shift_detection:      true
+    pronoun_resolution:         true
+    gender_agreement_tracking:  true
+    tú_usted_vos_register_tracking: true
+
+  reasoning:
+    chain_of_thought:           true
+    max_reasoning_steps:        32
+    metacognitive_monitoring:   true
+    uncertainty_awareness:      true
+
+  error_detection:
+    grammar_error_detection:    true
+    gender_agreement_check:     true
+    accent_omission_detection:  true
+    ser_estar_confusion:        true
+    register_mismatch:          true
+
+  self_correction:
+    enabled:                    true
+    correction_passes:          2
+
+  safety_and_privacy:
+    content_filter:             true
+    privacy_guard:              true
+    filter_threshold:           0.85
+    blocked_content_categories:
+      - harmful_content
+      - private_pii
+      - hate_speech
+      - violence_promotion
+
+  human_preference_alignment:
+    register_adaptation:        true
+    tú_usted_default:           "usted"
+    voseo_variant_support:      true
+    cultural_sensitivity:       true
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      max_length:               8192
+      inverted_punctuation_handling: true
+    speech_input:
+      supported_formats:        ["PCM_16kHz_mono", "Opus", "WebM", "FLAC"]
+      sample_rate_hz:           16000
+      vad_enabled:              true
+
+  understanding:
+    tokenization:
+      strategy:                 "BPE"
+      vocab_size:               52000
+      max_length:               8192
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      dependency_parsing:       true
+      gender_annotation:        true
+      number_annotation:        true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      word_order:               "SVO_flexible"
+      pro_drop:                 true
+      clitic_doubling:          true
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+      gender_stack:             true
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+
+  generation:
+    grammar_realization:
+      agreement_checking:       true
+      ser_estar_disambiguation: true
+      subjunctive_selection:    true
+      inverted_punctuation_insertion: true
+    style_control:
+      register_adaptation:      true
+      tú_usted_vos_switching:   true
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:    { enabled: true, comprehension_depth: "deep" }
+  writing:    { enabled: true, max_output_tokens: 10000 }
+  listening:  { enabled: true, real_time: true }
+  speaking:   { enabled: true, prosody_control: true }
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    seseo_vs_distincion:        "variant_aware"
+    voseo_support:              true
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "fr", "de", "ja", "ar", "ta"]
+  teaching:   { enabled: true, scaffolding: true }
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    brainstorming_modes:        ["lluvia_de_ideas", "asociación_libre", "análogos", "combinación_aleatoria"]
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      tiempo:
+        - { metaphor: "el tiempo es un río",          effect: "flujo_constante" }
+        - { metaphor: "el tiempo es oro",              effect: "recurso_valioso" }
+        - { metaphor: "el tiempo todo lo cura",        effect: "recuperación" }
+      mente:
+        - { metaphor: "la mente es un jardín",         effect: "cultivo" }
+        - { metaphor: "la mente es un océano",         effect: "profundidad" }
+      idioma:
+        - { metaphor: "el idioma es un puente",        effect: "conexión" }
+        - { metaphor: "el idioma es una ventana",      effect: "perspectiva" }
+
+  style_transfer:
+    enabled:                    true
+    formal_to_informal:
+      - { from: "usted",        to: "tú" }
+    informal_to_formal:
+      - { from: "tú",           to: "usted" }
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    script:                     "Latin"
+    diacritics_required:        true
+    inverted_punctuation:       true
+    ñ_required:                 true
+
+  morphology:
+    gender:
+      values:                   ["masculine", "feminine"]
+      default_for_unknown:      "masculine"
+      adjective_agreement:      "agrees_with_head_noun"
+    number:
+      values:                   ["singular", "plural"]
+      plural_formation:
+        vowel_ending:           "add_-s"
+        consonant_ending:       "add_-es"
+        z_ending:               "z_to_c_plus_es"
+    inflection:
+      verbs:
+        groups:
+          - id: "group_ar"
+            description: "Regular -ar verbs (hablar)"
+            present_endings: ["-o", "-as", "-a", "-amos", "-áis", "-an"]
+          - id: "group_er"
+            description: "Regular -er verbs (comer)"
+            present_endings: ["-o", "-es", "-e", "-emos", "-éis", "-en"]
+          - id: "group_ir"
+            description: "Regular -ir verbs (vivir)"
+            present_endings: ["-o", "-es", "-e", "-imos", "-ís", "-en"]
+        tenses_supported:
+          - presente
+          - pretérito_indefinido
+          - pretérito_imperfecto
+          - pretérito_perfecto_compuesto
+          - futuro_simple
+          - condicional_simple
+          - subjuntivo_presente
+          - subjuntivo_imperfecto
+          - imperativo
+
+    irregular_verbs:
+      - { infinitive: "ser",    presente: ["soy","eres","es","somos","sois","son"],       note: "copula permanent identity" }
+      - { infinitive: "estar",  presente: ["estoy","estás","está","estamos","estáis","están"], note: "copula temporary state" }
+      - { infinitive: "ir",     presente: ["voy","vas","va","vamos","vais","van"],        pp: "ido" }
+      - { infinitive: "tener",  presente: ["tengo","tienes","tiene","tenemos","tenéis","tienen"] }
+      - { infinitive: "hacer",  presente: ["hago","haces","hace","hacemos","hacéis","hacen"], pp: "hecho" }
+      - { infinitive: "decir",  presente: ["digo","dices","dice","decimos","decís","dicen"],  pp: "dicho" }
+      - { infinitive: "poder",  presente: ["puedo","puedes","puede","podemos","podéis","pueden"] }
+      - { infinitive: "querer", presente: ["quiero","quieres","quiere","queremos","queréis","quieren"] }
+      - { infinitive: "venir",  presente: ["vengo","vienes","viene","venimos","venís","vienen"] }
+      - { infinitive: "poner",  presente: ["pongo","pones","pone","ponemos","ponéis","ponen"], pp: "puesto" }
+
+  phonology:
+    seseo_distincion:
+      seseo:        "c(e/i) and z pronounced as [s] — Latin America and parts of Spain (Andalusia/Canaries)"
+      distincion:   "c(e/i) and z pronounced as [θ] — Standard Castilian"
+    voseo:
+      description:  "vos replaces tú in Rioplatense and some Central American varieties"
+      verb_forms:   "2nd_singular_with_specific_endings: hablás, tenés, vivís"
+
+  syntax:
+    word_order:                 "SVO_with_flexible_scrambling"
+    pro_drop:                   true
+    personal_a:
+      rule:                     "direct object marker required before definite human referents"
+      example:                  "Veo a María (I see María) — a required before María"
+    ser_vs_estar:
+      ser_uses:                 ["permanent_identity", "origin", "material", "time", "passive_voice_with_agent", "essential_characteristics"]
+      estar_uses:               ["temporary_state", "location", "condition", "result_of_change", "progressive_aspect"]
+    subjunctive_triggers:
+      - "querer que"
+      - "esperar que"
+      - "es necesario que"
+      - "cuando + future_reference"
+      - "para que"
+      - "antes de que"
+      - "aunque + unknown_speaker"
+      - "ojalá"
+
+  punctuation:
+    sentence_ending:            [".", "!", "?"]
+    inverted_markers:           ["¡", "¿"]
+    guillemets:                 ["«", "»"]
+    em_dash:                    "—"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      register: "formal"
+      slots:
+        salutation:             ["Buenos días", "Buenas tardes", "Buenas noches"]
+        addressee_title:        ["señor", "señora", "señorita", "doctor", "doctora"]
+        name:                   ["[NAME]", ""]
+      templates:
+        - "{salutation}, {addressee_title} {name}."
+        - "{salutation}, ¿cómo está usted?"
+
+    - id: "greeting_informal"
+      register: "informal"
+      slots:
+        salutation:             ["Hola", "¡Hola!", "Buenas", "¿Qué tal?", "¿Qué pasa?"]
+        name:                   ["[NAME]", ""]
+      templates:
+        - "{salutation}, {name}."
+        - "{salutation}, ¿cómo estás?"
+
+    - id: "farewell_formal"
+      register: "formal"
+      slots:
+        valediction:            ["Hasta luego", "Adiós", "Hasta pronto", "Que tenga buen día"]
+        courtesy:               ["señor", "señora", ""]
+      templates:
+        - "{valediction}, {courtesy}."
+        - "{valediction}."
+
+    - id: "farewell_informal"
+      register: "informal"
+      slots:
+        valediction:            ["Chao", "Adiós", "Hasta luego", "Nos vemos", "Cuidate"]
+      templates:
+        - "¡{valediction}!"
+        - "¡{valediction}, {name}!"
+
+    - id: "gratitude_expression"
+      register: "any"
+      slots:
+        thanks:                 ["Gracias", "Muchas gracias", "Mil gracias", "Te lo agradezco", "Se lo agradezco"]
+        reason:                 ["", "por todo", "por su ayuda", "por tu ayuda"]
+      templates:
+        - "{thanks}."
+        - "{thanks} {reason}."
+
+    - id: "apology_expression"
+      register: "any"
+      slots:
+        apology:                ["Perdón", "Disculpe", "Lo siento", "Lo siento mucho", "Disculpa"]
+        reason:                 ["", "por el inconveniente", "por el retraso", "por mi error"]
+      templates:
+        - "{apology}."
+        - "{apology} {reason}."
+
+    - id: "ser_estar_state"
+      register: "any"
+      slots:
+        subject:                ["Yo", "Tú", "Él", "Ella", "Nosotros", "Ellos"]
+        copula:                 ["soy", "eres", "es", "somos", "son", "estoy", "estás", "está", "estamos", "están"]
+        predicate:              ["cansado", "feliz", "en casa", "de España", "profesor", "contento", "listo"]
+      templates:
+        - "{subject} {copula} {predicate}."
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "fill_slots_from_context"
+    - step: "apply_gender_agreement"
+    - step: "apply_number_agreement"
+    - step: "ser_estar_disambiguation"
+    - step: "apply_personal_a_rule"
+    - step: "apply_register_tú_usted_vos"
+    - step: "insert_inverted_punctuation"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  register_engine:
+    tú_register:
+      description:              "Informal singular — family, friends, peers, children"
+      verb_forms:               "2nd_person_singular"
+    usted_register:
+      description:              "Formal singular — strangers, superiors, professional contexts"
+      verb_forms:               "3rd_person_singular_grammatically"
+    vos_register:
+      description:              "Rioplatense and Central American informal singular"
+      verb_forms:               "distinct_voseo_conjugation"
+    vosotros_register:
+      description:              "2nd plural informal — Peninsular Spanish only"
+      availability:             "es-ES only"
+    ustedes_register:
+      description:              "2nd plural — Latin America all registers; Peninsular formal"
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input"
+    - step: "unicode_normalization_NFC"
+    - step: "inverted_punctuation_detection"
+    - step: "sentence_boundary_detection"
+    - step: "tokenization_BPE"
+    - step: "morphological_analysis"
+    - step: "gender_number_tagging"
+    - step: "POS_tagging_UD"
+    - step: "dependency_parse"
+    - step: "ser_estar_classification"
+    - step: "personal_a_detection"
+    - step: "clitic_analysis"
+    - step: "register_classification_tú_usted_vos"
+    - step: "subjunctive_mood_detection"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string"
+    language:                   "es"
+    variant:                    "es-ES|es-MX|es-AR|es-CO|es-419"
+    tokens:                     "list[Token]"
+    morphology:                 "list[MorphTag]"
+    syntax_tree:                "DependencyTree"
+    component_family:           "string"
+    slots:                      "dict[str,str]"
+    register:                   "tú|usted|vos|neutral"
+    gender_assignments:         "dict[noun_token, masculine|feminine]"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         14000
+  extended_vocabulary_size:     75000
+
+  false_friends_with_english:
+    - { spanish: "actualmente", false_meaning: "actually",   true_meaning: "currently/nowadays" }
+    - { spanish: "sensible",    false_meaning: "sensible",   true_meaning: "sensitive" }
+    - { spanish: "embarazada",  false_meaning: "embarrassed", true_meaning: "pregnant" }
+    - { spanish: "exitoso",     false_meaning: "exit",       true_meaning: "successful" }
+    - { spanish: "largo",       false_meaning: "large",      true_meaning: "long" }
+    - { spanish: "librería",    false_meaning: "library",    true_meaning: "bookshop" }
+    - { spanish: "realizar",    false_meaning: "realize",    true_meaning: "to carry out / to accomplish" }
+    - { spanish: "soportar",    false_meaning: "to support", true_meaning: "to tolerate / endure" }
+    - { spanish: "compromiso",  false_meaning: "compromise", true_meaning: "commitment/obligation" }
+    - { spanish: "constipado",  false_meaning: "constipated", true_meaning: "having a cold" }
+
+  regional_vocabulary:
+    - { region: "es-AR", word: "vos",        meaning: "informal_2nd_singular_pronoun" }
+    - { region: "es-AR", word: "che",        meaning: "hey / friend (vocative)" }
+    - { region: "es-MX", word: "ahorita",    meaning: "right now / soon / earlier (highly context-dependent)" }
+    - { region: "es-MX", word: "güey/wey",   meaning: "dude / guy (very informal)" }
+    - { region: "es-ES", word: "vosotros",   meaning: "2nd_plural_informal (absent in LatAm)" }
+    - { region: "es-ES", word: "ordenador",  meaning: "computer (LatAm: computadora/computador)" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  vowel_system:
+    description:                "5 pure vowels: a [a], e [e], i [i], o [o], u [u] — no reduced or central vowels unlike English"
+    vowels:
+      - { grapheme: "a", IPA: "a", example: "casa" }
+      - { grapheme: "e", IPA: "e", example: "mesa" }
+      - { grapheme: "i", IPA: "i", example: "sí" }
+      - { grapheme: "o", IPA: "o", example: "cosa" }
+      - { grapheme: "u", IPA: "u", example: "luz" }
+
+  consonant_highlights:
+    - { grapheme: "ñ",     IPA: "ɲ",  example: "año",   note: "palatal nasal — distinct phoneme" }
+    - { grapheme: "ll",    IPA: "ʎ or ʝ", example: "llover", note: "yeísmo: ll and y merged as [ʝ] in most varieties" }
+    - { grapheme: "rr",    IPA: "r",  example: "perro",  note: "trilled r — contrast with single r [ɾ]" }
+    - { grapheme: "j/g(e,i)", IPA: "x", example: "jota", note: "velar fricative; softer [h] in some Caribbean/Central Am varieties" }
+    - { grapheme: "v/b",   IPA: "b/β", example: "boca/vaca", note: "b and v have identical pronunciation in Spanish" }
+
+  stress_rules:
+    default:                    "penultimate_syllable if word ends in vowel, n, or s"
+    ultimate:                   "if word ends in consonant other than n/s"
+    written_accent:             "marks exception to default stress rule or disambiguates homographs"
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  grammatical_meaning:
+    tense_aspect_mood:
+      - { form: "presente",              meaning: "current_state_habitual_or_immediate_future" }
+      - { form: "pretérito_indefinido",  meaning: "completed_past_action_viewed_as_whole" }
+      - { form: "pretérito_imperfecto",  meaning: "past_background_or_habitual_state" }
+      - { form: "pretérito_perfecto_compuesto", meaning: "recent_past_with_present_relevance" }
+      - { form: "futuro_simple",         meaning: "future_event_or_probability" }
+      - { form: "condicional_simple",    meaning: "hypothetical_or_polite_request" }
+      - { form: "subjuntivo_presente",   meaning: "doubt_desire_emotion_or_unknown_event" }
+    ser_estar_meaning:
+      ser:                      "essential_permanent_identity_origin_material_time"
+      estar:                    "temporary_state_condition_location_progressive"
+      adjective_meaning_shift:
+        - { adjective: "listo",  ser: "clever/smart",    estar: "ready" }
+        - { adjective: "malo",   ser: "bad/evil",        estar: "sick/ill" }
+        - { adjective: "bueno",  ser: "good (character)", estar: "good (feeling/tasting)" }
+        - { adjective: "seguro", ser: "safe",             estar: "sure/certain" }
+        - { adjective: "rico",   ser: "wealthy/rich",     estar: "delicious" }
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - complaining
+    - refusing
+    - agreeing
+    - disagreeing
+
+  politeness_system:
+    tú_usted_vos:
+      tú:       "Informal singular — family, close friends, same-age peers, children (all regions)"
+      usted:    "Formal singular — strangers, elders, professional contexts (all regions)"
+      vos:      "Rioplatense/Central American informal singular — used where tú would be elsewhere"
+      vosotros: "Informal 2nd plural — Peninsular Spain only; Latin America uses ustedes for all registers"
+    formulaic_politeness:
+      opening_formal:     ["Buenos días / Buenas tardes / Buenas noches", "¿Cómo está usted?"]
+      opening_informal:   ["¡Hola!", "¿Qué tal?", "¿Cómo estás?"]
+      closing_formal:     ["Hasta luego", "Que tenga un buen día", "Un cordial saludo"]
+      closing_informal:   ["¡Chao!", "¡Nos vemos!", "¡Cuídate!"]
+
+  cultural_context:
+    indirect_refusal:     "Spanish speakers often soften refusals; direct no can seem abrupt"
+    physical_greetings:   "One or two kisses on the cheek in Spain; handshake more common in LatAm formal contexts"
+    diminutives:          "Diminutive suffix -ito/-ita carries affection or smallness: cafecito, mamita"
+    simpatía_value:       "High value placed on warmth, friendliness, and sociability in interactions"
+    regional_humor:       "Irony and sarcasm used differently across regions; awareness required"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "es_td_001"
+    language:                   "es"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation", "addressee_title", "name"]
+    normalized_components:
+      salutation:               "Buenos días"
+      addressee_title:          "señora"
+      name:                     "García"
+    grammar_rules_used:
+      - "formal_register_usted"
+      - "gender_feminine_title"
+      - "greeting_time_appropriate_morning"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "es_td_002"
+    language:                   "es"
+    component_families:
+      - "greeting_informal"
+    slot_order:                 ["salutation", "name"]
+    normalized_components:
+      salutation:               "Hola"
+      name:                     "Carlos"
+    grammar_rules_used:
+      - "informal_register_tú"
+      - "exclamative_punctuation"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "es_td_003"
+    language:                   "es"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks", "reason"]
+    normalized_components:
+      thanks:                   "Muchas gracias"
+      reason:                   "por su ayuda"
+    grammar_rules_used:
+      - "formal_usted_register"
+      - "prepositional_phrase_por"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "es_td_004"
+    language:                   "es"
+    component_families:
+      - "ser_estar_state"
+    slot_order:                 ["subject", "copula", "predicate"]
+    normalized_components:
+      subject:                  "Ella"
+      copula:                   "está"
+      predicate:                "cansada"
+    grammar_rules_used:
+      - "estar_for_temporary_state"
+      - "gender_agreement_feminine_adjective"
+      - "3rd_person_singular"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "es_td_005"
+    language:                   "es"
+    component_families:
+      - "farewell_informal"
+    slot_order:                 ["valediction"]
+    normalized_components:
+      valediction:              "¡Hasta luego!"
+    grammar_rules_used:
+      - "informal_register"
+      - "inverted_exclamation_required"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "es_ex_001"
+    training_item_ref:          "es_td_001"
+    expected_output:            "Buenos días, señora García."
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "Buenos días"
+      addressee_title:          "señora"
+      name:                     "García"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Buenos_días"
+      - "contains_señora_not_señor"
+      - "ends_with_period"
+
+  - example_id:                 "es_ex_002"
+    training_item_ref:          "es_td_002"
+    expected_output:            "Hola, Carlos."
+    component_family_used:      "greeting_informal"
+    slots_filled:
+      salutation:               "Hola"
+      name:                     "Carlos"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Hola"
+      - "contains_name"
+
+  - example_id:                 "es_ex_003"
+    training_item_ref:          "es_td_003"
+    expected_output:            "Muchas gracias por su ayuda."
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "Muchas gracias"
+      reason:                   "por su ayuda"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_Muchas_gracias"
+      - "contains_por_su_ayuda"
+      - "ends_with_period"
+
+  - example_id:                 "es_ex_004"
+    training_item_ref:          "es_td_004"
+    expected_output:            "Ella está cansada."
+    component_family_used:      "ser_estar_state"
+    slots_filled:
+      subject:                  "Ella"
+      copula:                   "está"
+      predicate:                "cansada"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "uses_estar_not_ser"
+      - "adjective_feminine_cansada_not_cansado"
+      - "ends_with_period"
+
+  - example_id:                 "es_ex_005"
+    training_item_ref:          "es_td_005"
+    expected_output:            "¡Hasta luego!"
+    component_family_used:      "farewell_informal"
+    slots_filled:
+      valediction:              "¡Hasta luego!"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "starts_with_inverted_exclamation"
+      - "ends_with_exclamation"
+      - "contains_Hasta_luego"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "es_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "es_eval_002"
+    rule_type:                  "min_length"
+    description:                "Output must be at least 1 token"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "es_eval_003"
+    rule_type:                  "max_length"
+    description:                "Output must not exceed 4096 tokens"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "es_eval_004"
+    rule_type:                  "gender_agreement"
+    description:                "Adjective and article gender must agree with head noun"
+    parameters:
+      check_method:             "morphological_tagger"
+    threshold:                  0.90
+    blocking:                   false
+
+  - rule_id:                    "es_eval_005"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots in selected template must be filled"
+    parameters:
+      required_slots:           ["salutation", "thanks", "valediction", "subject"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "es_eval_006"
+    rule_type:                  "ser_estar_validation"
+    description:                "Copula selection must match semantic category"
+    parameters:
+      validate_on_families:     ["ser_estar_state"]
+    threshold:                  0.90
+    blocking:                   false
+
+  - rule_id:                    "es_eval_007"
+    rule_type:                  "inverted_punctuation_check"
+    description:                "Exclamative and interrogative sentences must begin with ¡ or ¿"
+    parameters: {}
+    threshold:                  0.95
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    gender_agreement_stack:     "persists_within_sentence_boundary"
+    register_tracking:          "persists_within_conversation_boundary"
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+
+  engine_to_french:
+    type:                       "bridge"
+    target_engine:              "french_engine_v1"
+    link_file:                  "language_engines/French_engine.training.yaml"
+    relationship:               "Romance_sibling_positive_transfer"
+    note:                       "High lexical overlap; gender system identical; tense system parallel"
+
+  engine_to_german:
+    type:                       "bridge"
+    target_engine:              "german_engine_v1"
+    link_file:                  "language_engines/German_engine.training.yaml"
+    relationship:               "Indo_European_contrastive"
+
+  engine_to_arabic:
+    type:                       "bridge"
+    target_engine:              "arabic_engine_v1"
+    link_file:                  "language_engines/Arabic_engine.training.yaml"
+    relationship:               "historical_lexical_borrowing_Arabic_into_Spanish"
+    note:                       "~4000 Spanish words of Arabic origin (algebra, alcohol, azul, almohada)"
+
+  engine_to_japanese:
+    type:                       "bridge"
+    target_engine:              "japanese_engine_v1"
+    link_file:                  "language_engines/Japanese_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_tamil:
+    type:                       "bridge"
+    target_engine:              "tamil_engine_v1"
+    link_file:                  "language_engines/Tamil_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold with all 19 section stubs"
+      reason:                   "Project initialization"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: 5 regional variants (es-ES, es-MX, es-AR, es-CO, es-419),
+        ser/estar disambiguation system, personal a rule, voseo support,
+        seseo/distinción phonological variants, 10 false friends, regional
+        vocabulary, full irregular verb table, subjunctive triggers, 7 component
+        families, 5 training items, 5 regression tests, 7 evaluation rules.
+      reason:                   "Promote Spanish engine from scaffold to active"
+      approved_by:              "polyglot_engine_dev"

@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Bengali",
+    "engine": "Bengali_engine",
+    "iso_codes": [
+      "ben",
+      "bn"
+    ],
+    "scripts": [
+      "Bengali"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Bengali",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "ben_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Bengali)",
+          "How are operations (Bengali)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "ben_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Bengali)",
+          "Report readiness (Bengali)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "প্রকৌশলী একটি অত্যন্ত দক্ষ বিতরণকৃত সিস্টেম তৈরি করেছেন।",
+    "আমরা সিঙ্ক্রোনাস মেমরি প্রোটোকল সফলভাবে প্রয়োগ করেছি।",
+    "গবেষক দল কৃত্রিম বুদ্ধিমত্তার উপর একটি গুরুত্বপূর্ণ গবেষণাপত্র প্রকাশ করেছে।",
+    "সফটওয়্যার আর্কিটেক্ট ডেটা প্রক্রিয়াকরণ পাইপলাইন অপ্টিমাইজ করেছেন (using optimal hyper-parameters).",
+    "কৃত্রিম বুদ্ধিমত্তা বহুভাষিক পাঠ্য নির্ভুলভাবে বিশ্লেষণ করে।",
+    "ডেভেলপমেন্ট টিম সমস্ত ইন্টিগ্রেশন টেস্ট সফলভাবে সম্পন্ন করেছে (on multi-core architectures).",
+    "উচ্চগতির মেমরি বাস রিয়েল-টাইম ডেটা সামঞ্জস্য নিশ্চিত করে।",
+    "আমরা নির্ভরযোগ্যতা প্রমাণের জন্য কঠোর বেঞ্চমার্ক পরীক্ষা পরিচালনা করেছি (under heavy loads).",
+    "প্রকৌশলী একটি অত্যন্ত দক্ষ বিতরণকৃত সিস্টেম তৈরি করেছেন।",
+    "আমরা সিঙ্ক্রোনাস মেমরি প্রোটোকল সফলভাবে প্রয়োগ করেছি।",
+    "গবেষক দল কৃত্রিম বুদ্ধিমত্তার উপর একটি গুরুত্বপূর্ণ গবেষণাপত্র প্রকাশ করেছে।",
+    "সফটওয়্যার আর্কিটেক্ট ডেটা প্রক্রিয়াকরণ পাইপলাইন অপ্টিমাইজ করেছেন (using optimal hyper-parameters).",
+    "কৃত্রিম বুদ্ধিমত্তা বহুভাষিক পাঠ্য নির্ভুলভাবে বিশ্লেষণ করে।",
+    "ডেভেলপমেন্ট টিম সমস্ত ইন্টিগ্রেশন টেস্ট সফলভাবে সম্পন্ন করেছে (on multi-core architectures).",
+    "উচ্চগতির মেমরি বাস রিয়েল-টাইম ডেটা সামঞ্জস্য নিশ্চিত করে।",
+    "আমরা নির্ভরযোগ্যতা প্রমাণের জন্য কঠোর বেঞ্চমার্ক পরীক্ষা পরিচালনা করেছি (under heavy loads).",
+    "প্রকৌশলী একটি অত্যন্ত দক্ষ বিতরণকৃত সিস্টেম তৈরি করেছেন।",
+    "আমরা সিঙ্ক্রোনাস মেমরি প্রোটোকল সফলভাবে প্রয়োগ করেছি।",
+    "গবেষক দল কৃত্রিম বুদ্ধিমত্তার উপর একটি গুরুত্বপূর্ণ গবেষণাপত্র প্রকাশ করেছে।",
+    "সফটওয়্যার আর্কিটেক্ট ডেটা প্রক্রিয়াকরণ পাইপলাইন অপ্টিমাইজ করেছেন (using optimal hyper-parameters)."
+  ]
+}

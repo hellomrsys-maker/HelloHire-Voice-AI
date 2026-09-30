@@ -1,0 +1,28 @@
+{
+  "full_reduplication": {
+    "semantics": "plurality_variety",
+    "examples": ["anak-anak", "buku-buku", "rumah-rumah", "mobil-mobil", "guru-guru", "negara-negara"]
+  },
+  "imitative_sound_shift": {
+    "semantics": "semantic_nuance_variety",
+    "pairs": [
+      {"word": "sayur-mayur", "base": "sayur", "meaning": "all kinds of vegetables"},
+      {"word": "bolak-balik", "base": "balik", "meaning": "to and fro / back and forth"},
+      {"word": "warna-warni", "base": "warna", "meaning": "colorful / diverse colors"},
+      {"word": "ramah-tamah", "base": "ramah", "meaning": "hospitable and welcoming"},
+      {"word": "gerak-gerik", "base": "gerak", "meaning": "movements / gestures"},
+      {"word": "lauk-pauk", "base": "lauk", "meaning": "assorted side dishes"}
+    ]
+  },
+  "partial_reduplication": {
+    "semantics": "collective_resemblance",
+    "examples": [
+      {"word": "pepohonan", "base": "pohon", "meaning": "trees in general"},
+      {"word": "dedaunan", "base": "daun", "meaning": "foliage / leaves"},
+      {"word": "rerumputan", "base": "rumput", "meaning": "grasses"}
+    ]
+  },
+  "lexicalized_invariable": [
+    "kupu-kupu", "laba-laba", "pura-pura", "kura-kura", "paru-paru", "cita-cita", "tiba-tiba", "sia-sia"
+  ]
+}

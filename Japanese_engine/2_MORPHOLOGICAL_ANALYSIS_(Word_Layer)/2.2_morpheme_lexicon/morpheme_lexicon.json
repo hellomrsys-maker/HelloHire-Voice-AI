@@ -1,0 +1,30 @@
+{
+  "morpheme_lexicon": {
+    "kanji_roots": {
+      "total_joyo_kanji": 2136,
+      "reading_dichotomy": {
+        "onyomi_sino_japanese": "Phonetic adaptation of Chinese pronunciation during Han, Tang, or Song eras (e.g. 山 san, 水 sui, 木 moku, 火 ka).",
+        "kunyomi_native_japanese": "Semantic assignment of native Yamato morphemes to Chinese ideograms (e.g. 山 yama, 水 mizu, 木 ki, 火 hi)."
+      },
+      "multivocal_roots": [
+        {"kanji": "日", "onyomi": ["ニチ", "ジツ"], "kunyomi": ["ひ", "か"], "examples": ["日本 (nihon)", "休日 (kyuujitsu)", "日曜日 (nichiyoubi)", "三日 (mikka)"]},
+        {"kanji": "生", "onyomi": ["セイ", "ショウ"], "kunyomi": ["い-きる", "う-まれる", "は-える", "なま"], "examples": ["生活 (seikatsu)", "一生 (isshou)", "生まれる (umareru)", "生ビール (namabiiru)"]}
+      ]
+    },
+    "suffixes_prefixes": {
+      "social_honorific_suffixes": ["〜様 (sama)", "〜さん (san)", "〜君 (kun)", "〜ちゃん (chan)", "〜先生 (sensei)", "〜部長 (buchou)"],
+      "negation_prefixes": ["不〜 (fu: 不可能)", "無〜 (mu: 無責任)", "非〜 (hi: 非公開)", "未〜 (mi: 未定)"],
+      "evaluative_prefixes": ["超〜 (chou: 超高速)", "最〜 (sai: 最高)", "再〜 (sai: 再確認)"]
+    },
+    "counter_lexicon": {
+      "rules": "Classifiers combine with numerals triggering phonological assimilation (gemination and voicing).",
+      "phonological_shifts_hon": {
+        "1": {"num": "いち", "counter": "ほん", "assimilated": "いっぽん (ippon)"},
+        "3": {"num": "さん", "counter": "ほん", "assimilated": "さんぼん (sanbon)"},
+        "6": {"num": "ろく", "counter": "ほん", "assimilated": "ろっぽん (roppon)"},
+        "8": {"num": "はち", "counter": "ほん", "assimilated": "はっぽん (happon)"},
+        "10": {"num": "じゅう", "counter": "ほん", "assimilated": "じゅっぽん (juppon)"}
+      }
+    }
+  }
+}

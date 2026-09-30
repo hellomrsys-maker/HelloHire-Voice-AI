@@ -1,0 +1,82 @@
+# =====================================================================
+# Korean Engine Policy Configuration
+# Language: Korean (한국어 / 조선말) [ko / kor]
+# Standard: Pluricentric (South Korean Pyojun-eo & North Korean Munhwa-eo)
+# Cognitive Architecture: 9-Layer Matrix + 4 Dedicated Sub-AIs
+# =====================================================================
+
+engine:
+  name: "KoreanEngine"
+  version: "1.0.0"
+  iso_639_1: "ko"
+  iso_639_2: "kor"
+  architecture: "9-layer cognitive"
+  zero_bridge_memory:
+    enabled: true
+    state_vector_bytes: 64
+    magic_header: 0x4B4F5245 # "KORE"
+    synchronization_ns: 0
+
+phonological_rules:
+  jaso_decomposition:
+    enabled: true
+    choseong_count: 19
+    jungseong_count: 21
+    jongseong_count: 28
+    unicode_base: 0xAC00
+  batchim_neutralization:
+    enabled: true
+    coda_stops: ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅇ"]
+  phonological_processes:
+    nasalization: true
+    tensification: true
+    liquidization: true
+    palatalization: true
+    aspiration: true
+
+morphological_rules:
+  particle_agreement:
+    validate_batchim_concord: true
+    topic: ["은", "는"]
+    subject: ["이", "가"]
+    object: ["을", "를"]
+    instrumental: ["으로", "로"]
+    comitative: ["과", "와"]
+  irregular_verbs:
+    track_7_irregular_classes: true # ㄷ, ㅂ, ㅅ, 르, 으, ㅎ, 여
+
+pragmatic_rules:
+  speech_levels:
+    - "hasipsio" # Deferential formal (-습니다)
+    - "haeyo"     # Polite informal (-어요)
+    - "hage"      # Familiar (-네)
+    - "hao"       # Semi-formal (-오)
+    - "haera"     # Plain written (-ㄴ다)
+    - "hae"       # Intimate banmal (-어)
+  honorific_concord:
+    enforce_subject_honorific_harmony: true # 께서 with -(으)시-
+    enforce_lexical_honorific_harmony: true  # 진지 with 드시다
+    detect_speech_level_clash: true
+
+sub_ais:
+  syntax_sub_ai:
+    target_offset_byte: 18
+    target_sub_ai_id_byte: 52
+    rules: ["head_final_sov", "topic_subject_distinction", "adnominal_clauses"]
+  phonology_sub_ai:
+    target_offset_byte: 20
+    target_sub_ai_id_byte: 53
+    rules: ["jaso_decomposition", "batchim_neutralization", "phonological_alternation"]
+  pragmatic_sub_ai:
+    target_offset_byte: 22
+    target_sub_ai_id_byte: 54
+    rules: ["speech_level_consistency", "honorific_concord", "social_deixis"]
+  editorial_sub_ai:
+    target_offset_byte: 19
+    target_sub_ai_id_byte: 55
+    rules: ["particle_agreement", "irregular_conjugation", "orthography_audit"]
+
+benchmarks:
+  max_inference_latency_ns: 2500000 # 2.5 ms
+  target_amsv_sync_ns: 0
+  min_confidence_score: 0.95

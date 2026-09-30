@@ -1,0 +1,30 @@
+{
+  "irregular_plural_paradigms": {
+    "umlaut_mutations": [
+      { "singular": "foot", "plural": "feet", "historical_mechanism": "i-mutation" },
+      { "singular": "tooth", "plural": "teeth", "historical_mechanism": "i-mutation" },
+      { "singular": "goose", "plural": "geese", "historical_mechanism": "i-mutation" },
+      { "singular": "man", "plural": "men", "historical_mechanism": "i-mutation" },
+      { "singular": "woman", "plural": "women", "historical_mechanism": "i-mutation" },
+      { "singular": "mouse", "plural": "mice", "historical_mechanism": "i-mutation" },
+      { "singular": "louse", "plural": "lice", "historical_mechanism": "i-mutation" }
+    ],
+    "old_english_en_suffix": [
+      { "singular": "ox", "plural": "oxen" },
+      { "singular": "child", "plural": "children", "note": "double plural: -ru + -en" },
+      { "singular": "brother", "plural": "brethren", "note": "archaic religious plural" }
+    ],
+    "zero_plurals": [
+      { "singular": "sheep", "plural": "sheep" },
+      { "singular": "deer", "plural": "deer" },
+      { "singular": "fish", "plural": "fish" },
+      { "singular": "species", "plural": "species" }
+    ],
+    "classical_borrowings": {
+      "latin_us_to_i": [{ "singular": "cactus", "plural": "cacti" }, { "singular": "stimulus", "plural": "stimuli" }],
+      "latin_um_to_a": [{ "singular": "datum", "plural": "data" }, { "singular": "medium", "plural": "media" }, { "singular": "bacterium", "plural": "bacteria" }],
+      "greek_is_to_es": [{ "singular": "analysis", "plural": "analyses" }, { "singular": "thesis", "plural": "theses" }, { "singular": "hypothesis", "plural": "hypotheses" }],
+      "greek_on_to_a": [{ "singular": "criterion", "plural": "criteria" }, { "singular": "phenomenon", "plural": "phenomena" }]
+    }
+  }
+}

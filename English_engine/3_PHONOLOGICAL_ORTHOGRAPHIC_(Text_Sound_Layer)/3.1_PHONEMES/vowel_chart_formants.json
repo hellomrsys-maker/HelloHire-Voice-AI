@@ -1,0 +1,17 @@
+{
+  "english_vowel_formants_average_adult": {
+    "units": "Hertz (Hz)",
+    "vowels": {
+      "IY": { "ipa": "iː", "f1": 270, "f2": 2290, "f3": 3010, "height": "high", "backness": "front", "tenseness": "tense" },
+      "IH": { "ipa": "ɪ", "f1": 390, "f2": 1990, "f3": 2550, "height": "high-mid", "backness": "front", "tenseness": "lax" },
+      "EH": { "ipa": "ɛ", "f1": 530, "f2": 1840, "f3": 2480, "height": "mid-low", "backness": "front", "tenseness": "lax" },
+      "AE": { "ipa": "æ", "f1": 660, "f2": 1720, "f3": 2410, "height": "low", "backness": "front", "tenseness": "lax" },
+      "AA": { "ipa": "ɑː", "f1": 730, "f2": 1090, "f3": 2440, "height": "low", "backness": "back", "tenseness": "tense" },
+      "AO": { "ipa": "ɔː", "f1": 570, "f2": 840, "f3": 2410, "height": "mid-low", "backness": "back", "tenseness": "tense" },
+      "AH": { "ipa": "ʌ", "f1": 520, "f2": 1190, "f3": 2390, "height": "mid-low", "backness": "central", "tenseness": "lax" },
+      "UH": { "ipa": "ʊ", "f1": 440, "f2": 1020, "f3": 2240, "height": "high-mid", "backness": "back", "tenseness": "lax" },
+      "UW": { "ipa": "uː", "f1": 300, "f2": 870, "f3": 2240, "height": "high", "backness": "back", "tenseness": "tense" },
+      "ER": { "ipa": "ɝː", "f1": 490, "f2": 1350, "f3": 1690, "height": "mid", "backness": "central", "tenseness": "rhotic" }
+    }
+  }
+}

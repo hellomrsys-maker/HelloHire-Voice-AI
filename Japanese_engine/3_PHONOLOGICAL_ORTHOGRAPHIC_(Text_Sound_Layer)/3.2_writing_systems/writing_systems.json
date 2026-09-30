@@ -1,0 +1,41 @@
+{
+  "writing_systems": {
+    "scripts": {
+      "kanji": {
+        "count": "2,136 Joyo Kanji",
+        "semantic_role": "Content morphemes (nouns, verb/adjective stems).",
+        "benefits": "Enables rapid visual parsing without spaces (wakachi-gaki) and resolves homophones."
+      },
+      "hiragana": {
+        "count": "46 fundamental syllabograms",
+        "grammatical_role": "Grammatical particles, inflections (okurigana), native Japanese words lacking Joyo kanji."
+      },
+      "katakana": {
+        "count": "46 corresponding syllabograms",
+        "role": "Non-Sinitic foreign loanwords, onomatopoeia, scientific names, textual emphasis."
+      }
+    },
+    "furigana_ruby": {
+      "html_standard": "<ruby>漢字<rt>かんじ</rt></ruby>",
+      "target_audiences": ["Children's literature", "Foreign language learners (JLPT)", "Uncommon proper names", "Novelistic artistic readings (Gikun 義訓)"]
+    },
+    "mixed_script_coordination": {
+      "orthographic_norm": "Standard Japanese text seamlessly weaves all three scripts plus Arabic numerals into a single sentence.",
+      "exemplar": {
+        "sentence": "私は3台のコンピューターを買いました。",
+        "script_breakdown": [
+          {"text": "私", "script": "Kanji"},
+          {"text": "は", "script": "Hiragana (Particle)"},
+          {"text": "3", "script": "Arabic Numeral"},
+          {"text": "台", "script": "Kanji (Counter)"},
+          {"text": "の", "script": "Hiragana (Particle)"},
+          {"text": "コンピューター", "script": "Katakana (Loanword)"},
+          {"text": "を", "script": "Hiragana (Particle)"},
+          {"text": "買", "script": "Kanji (Verb stem)"},
+          {"text": "いました", "script": "Hiragana (Okurigana + Polite auxiliary)"},
+          {"text": "。", "script": "Japanese Punctuation"}
+        ]
+      }
+    }
+  }
+}

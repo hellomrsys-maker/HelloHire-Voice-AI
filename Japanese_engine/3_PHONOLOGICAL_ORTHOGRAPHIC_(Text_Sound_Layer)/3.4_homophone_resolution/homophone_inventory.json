@@ -1,0 +1,34 @@
+{
+  "homophone_resolution": {
+    "collision_lexicon": [
+      {
+        "mora_key": "き (ki)",
+        "candidates": [
+          {"kanji": "気", "context_clues": ["気持ち", "天気", "気付く", "気をつける"], "prior": 0.45},
+          {"kanji": "木", "context_clues": ["木を植える", "大きな木", "木の葉"], "prior": 0.30},
+          {"kanji": "来", "context_clues": ["来月", "来年", "来客"], "prior": 0.15},
+          {"kanji": "機", "context_clues": ["機会", "飛行機", "機能"], "prior": 0.10}
+        ]
+      },
+      {
+        "mora_key": "こう (kou)",
+        "candidates": [
+          {"kanji": "公", "context_clues": ["公園", "公式", "公務員"], "prior": 0.25},
+          {"kanji": "工", "context_clues": ["工場", "工事", "工夫"], "prior": 0.20},
+          {"kanji": "校", "context_clues": ["学校", "校長", "校舎"], "prior": 0.25},
+          {"kanji": "高", "context_clues": ["高校", "高等", "高層"], "prior": 0.20},
+          {"kanji": "行", "context_clues": ["行動", "旅行", "行事"], "prior": 0.10}
+        ]
+      },
+      {
+        "mora_key": "かんしょう (kanshou)",
+        "candidates": [
+          {"kanji": "鑑賞", "meaning": "Artistic appreciation", "context_clues": ["映画", "音楽", "美術", "絵画"], "prior": 0.40},
+          {"kanji": "干渉", "meaning": "Interference / Intrusion", "context_clues": ["内政", "他国", "余計", "電波"], "prior": 0.35},
+          {"kanji": "感傷", "meaning": "Sentimentality", "context_clues": ["感傷に浸る", "感傷的", "ノスタルジー"], "prior": 0.15},
+          {"kanji": "緩衝", "meaning": "Buffer / Cushion", "context_clues": ["緩衝地帯", "緩衝材"], "prior": 0.10}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "genam_vs_rp_phonemic_splits": {
+    "rhoticity": {
+      "GenAm": "Rhotic (pronounces /r/ in all positions: 'car' /kɑːr/, 'hard' /hɑːrd/)",
+      "RP": "Non-rhotic (drops /r/ in coda position: 'car' /kɑː/, 'hard' /hɑːd/)"
+    },
+    "trap_bath_split": {
+      "GenAm": "Merged: BATH words use /æ/ ('bath' /bæθ/, 'dance' /dæns/)",
+      "RP": "Split: BATH words use /ɑː/ ('bath' /bɑːθ/, 'dance' /dɑːns/)"
+    },
+    "lot_cloth_split": {
+      "GenAm": "CLOTH words often merged with LOT (/ɑ/) or THOUGHT (/ɔ/)",
+      "RP": "CLOTH words use /ɒ/"
+    },
+    "flapping": {
+      "GenAm": "/t/ and /d/ become voiced alveolar flap [ɾ] intervocalically before unstressed syllables ('water' [ˈwɔːɾɚ])",
+      "RP": "/t/ remains aspirated or glottalized [tʰ] / [ʔ] ('water' [ˈwɔːtə])"
+    },
+    "yod_dropping": {
+      "GenAm": "Drops /j/ after coronals ('tune' /tuːn/, 'news' /nuːz/, 'duty' /ˈduːti/)",
+      "RP": "Preserves /j/ ('tune' /tjuːn/, 'news' /njuːz/, 'duty' /ˈdjuːti/)"
+    }
+  }
+}

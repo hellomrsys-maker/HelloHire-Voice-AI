@@ -1,0 +1,83 @@
+# =====================================================================
+# German Engine Policy Configuration
+# Language: German (Deutsch) [de / deu]
+# Standard: Pluricentric (DE-Standard, AT-Standard, CH-Standard)
+# Cognitive Architecture: 9-Layer Matrix + 4 Dedicated Sub-AIs
+# =====================================================================
+
+engine:
+  name: "GermanEngine"
+  version: "1.0.0"
+  iso_639_1: "de"
+  iso_639_2: "deu"
+  architecture: "9-layer cognitive"
+  zero_bridge_memory:
+    enabled: true
+    state_vector_bytes: 64
+    magic_header: 0x4745524D # "GERM"
+    synchronization_ns: 0
+
+orthography_rules:
+  substantive_capitalization:
+    enabled: true
+    enforce_noun_capitalization: true
+    allow_nominalized_adjectives: true # e.g. "das Gute", "die Reisenden"
+  eszett_handling:
+    standard_mode: "DE_AT" # Options: DE_AT (uses ß/ss distinction), CH (converts ß to ss)
+    convert_eszett_for_swiss: true
+  umlauts:
+    enforce_proper_glyphs: true # ä, ö, ü, Ä, Ö, Ü (disallow ae, oe, ue in standard text)
+    allow_ascii_expansion_in_fallback: false
+
+syntactic_rules:
+  satzklammer_validation:
+    enforce_v2_main_clause: true
+    enforce_vend_subordinate: true
+    enforce_v1_imperative_yesno: true
+    tekamolo_heuristic: true # Warn if order diverges heavily from Temporal > Kausal > Modal > Lokal
+  separable_verbs:
+    track_split_prefixes: true
+    recombine_lemma: true
+
+morphological_rules:
+  case_government:
+    cases: ["nominative", "accusative", "dative", "genitive"]
+    strict_preposition_government: true
+    wechselpraepositionen_heuristic: true # Akkusativ for direction/motion, Dativ for location/rest
+  adjective_declension:
+    validate_strong_weak_mixed: true
+    check_masculine_accusative_en: true
+    check_dative_plural_noun_n: true
+
+pragmatic_rules:
+  register_modes:
+    - "duzen"     # Informal (du, ihr, dein, euer)
+    - "siezen"    # Formal (Sie, Ihnen, Ihr)
+    - "neutral"   # Third person / passive / impersonal
+  enforce_formal_pronoun_capitalization: true # Sie/Ihnen/Ihr must be capitalized
+  detect_mixed_register_clash: true
+  epistolary_conventions:
+    require_unpunctuated_complimentary_close: true # No comma after "Mit freundlichen Grüßen"
+
+sub_ais:
+  syntax_sub_ai:
+    target_offset_byte: 18
+    target_sub_ai_id_byte: 52
+    rules: ["satzklammer_check", "v2_v_end_ordering", "tekamolo_order"]
+  phonology_sub_ai:
+    target_offset_byte: 20
+    target_sub_ai_id_byte: 53
+    rules: ["substantive_capitalization", "eszett_ss_rules", "umlaut_orthography"]
+  pragmatic_sub_ai:
+    target_offset_byte: 22
+    target_sub_ai_id_byte: 54
+    rules: ["duzen_siezen_consistency", "honorific_address", "modal_particles"]
+  editorial_sub_ai:
+    target_offset_byte: 24
+    target_sub_ai_id_byte: 55
+    rules: ["adjective_agreement", "case_government", "nominalstil_optimization"]
+
+benchmarks:
+  max_inference_latency_ns: 2500000 # 2.5 ms
+  target_amsv_sync_ns: 0
+  min_confidence_score: 0.95

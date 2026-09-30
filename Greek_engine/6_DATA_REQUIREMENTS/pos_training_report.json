@@ -1,0 +1,17 @@
+{
+  "engine": "Greek_engine",
+  "treebank": "UD_Greek-GDT",
+  "license": "User agreement for the Greek UD Treebank",
+  "trained": true,
+  "val_token_accuracy": 0.7025,
+  "majority_baseline": 0.1959,
+  "beats_baseline_by": 0.5066,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 793,
+  "final_train_loss": 0.5584,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\greek_engine_pos_tagger.pt"
+}

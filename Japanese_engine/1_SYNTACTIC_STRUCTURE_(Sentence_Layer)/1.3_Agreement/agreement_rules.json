@@ -1,0 +1,22 @@
+{
+  "agreement_system": {
+    "morphosyntactic_inflection_agreement": {
+      "status": "NON-EXISTENT",
+      "rule": "Japanese verbs and adjectives NEVER agree with the subject in grammatical person (1st, 2nd, 3rd), grammatical number (singular, plural), or grammatical gender (masculine, feminine, neuter).",
+      "proof": {
+        "first_person_singular": "私は本を読む (watashi wa hon o yomu)",
+        "second_person_plural": "あなたたちは本を読む (anatatachi wa hon o yomu)",
+        "third_person_singular": "彼は本を読む (kare wa hon o yomu)",
+        "conclusion": "Predicate '読む' remains completely invariant."
+      }
+    },
+    "honorific_concord": {
+      "status": "SOCIAL AGREEMENT (Mandatory)",
+      "rule": "In Japanese, 'agreement' is social concord: the predicate honorific form must strictly concord with the relative social rank and in-group/out-group status of the referent and interlocutor.",
+      "dimensions": {
+        "subject_elevation_sonkeigo": "If subject is superior/out-group, verb must take Sonkeigo (先生がいらっしゃる / 社長がおっしゃる).",
+        "self_lowering_kenjougo": "If subject is speaker/in-group directing action toward superior, verb must take Kenjougo (私が伺う / 私が申し上げる)."
+      }
+    }
+  }
+}

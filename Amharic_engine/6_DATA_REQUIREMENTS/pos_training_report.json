@@ -1,0 +1,17 @@
+{
+  "engine": "Amharic_engine",
+  "treebank": "UD_Amharic-ATT",
+  "license": "The treebank is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International.",
+  "trained": true,
+  "val_token_accuracy": 0.8205,
+  "majority_baseline": 0.2577,
+  "beats_baseline_by": 0.5628,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 268,
+  "final_train_loss": 0.3096,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\amharic_engine_pos_tagger.pt"
+}

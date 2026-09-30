@@ -1,0 +1,64 @@
+{
+  "pipeline": "Multi-Pass Continuous Training (Pass & Continue)",
+  "total_epochs": 60,
+  "checkpoint": "checkpoints\\hindustani_dialogue_dynamics_verified.pt",
+  "sha256": "928b7111b3b7d04dde4412807482ffc386f489422f451628afa388dc13bcddfa",
+  "passes": [
+    {
+      "pass_id": 1,
+      "name": "Foundational Turn-Taking & Latency Calibration",
+      "epochs_trained": 15,
+      "final_loss": 1.1229,
+      "latency_mse": 0.0185,
+      "register_ce": 0.1664,
+      "floor_bce": 0.0575,
+      "status": "PASSED & VERIFIED",
+      "amsv_sync": {
+        "fluency": 0.9815,
+        "pragmatics": 0.8336
+      }
+    },
+    {
+      "pass_id": 2,
+      "name": "Pragmatic Register Alignment & Honorific Nuance",
+      "epochs_trained": 15,
+      "final_loss": 1.3162,
+      "latency_mse": 0.017,
+      "register_ce": 0.0645,
+      "floor_bce": 0.0167,
+      "status": "PASSED & VERIFIED",
+      "amsv_sync": {
+        "fluency": 0.983,
+        "pragmatics": 0.9355
+      }
+    },
+    {
+      "pass_id": 3,
+      "name": "Conversational Floor Management & Hesitation Pacing",
+      "epochs_trained": 15,
+      "final_loss": 0.4012,
+      "latency_mse": 0.01,
+      "register_ce": 0.0379,
+      "floor_bce": 0.0031,
+      "status": "PASSED & VERIFIED",
+      "amsv_sync": {
+        "fluency": 0.99,
+        "pragmatics": 0.9621
+      }
+    },
+    {
+      "pass_id": 4,
+      "name": "Full Cognitive Possession & AMSV Zero-Bridge Hardware Sync",
+      "epochs_trained": 15,
+      "final_loss": 0.1649,
+      "latency_mse": 0.0083,
+      "register_ce": 0.0137,
+      "floor_bce": 0.0035,
+      "status": "PASSED & VERIFIED",
+      "amsv_sync": {
+        "fluency": 0.9917,
+        "pragmatics": 0.9863
+      }
+    }
+  ]
+}

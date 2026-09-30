@@ -1,0 +1,60 @@
+# Turkish Language Engine Cognitive Policy Configuration
+engine:
+  id: "turkish_engine"
+  name: "Turkish Computational Cognitive Engine"
+  version: "1.0.0"
+  iso_639_1: "tr"
+  iso_639_3: "tur"
+  script: "Latn"
+
+phonology:
+  vowel_harmony:
+    enforce_two_way_a_type: true
+    enforce_four_way_i_type: true
+  consonant_harmony:
+    enforce_consonant_assimilation: true # fıstıkçı şahap (d->t, c->ç)
+    enforce_consonant_lenition: true     # p->b, ç->c, t->d, k->ğ
+    respect_monosyllabic_exceptions: true
+    respect_loanword_exceptions: true
+  orthography:
+    strict_dotted_dotless_i: true
+    proper_noun_apostrophe_binding: true
+
+morphology_syntax:
+  word_order:
+    canonical: "SOV"
+    allow_pragmatic_scrambling: true
+  case_system:
+    cases: ["nom", "acc", "dat", "loc", "abl", "gen"]
+    differential_object_marking: true
+  evidentiality:
+    track_mis_evidential_stance: true
+
+pragmatics:
+  t_v_distinction:
+    formal_pronoun: "siz"
+    informal_pronoun: "sen"
+  honorific_titles:
+    postpositive_bey_hanim: true
+    academic_hocam: true
+  courtesy_formulas:
+    validate_situational_idioms: true
+
+sub_ais:
+  syntax_sub_ai:
+    amsv_bytes: [18, 52]
+    weight: 0.35
+  phonology_sub_ai:
+    amsv_bytes: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 24]
+    weight: 0.20
+  pragmatic_sub_ai:
+    amsv_bytes: [22, 54]
+    weight: 0.20
+  editorial_sub_ai:
+    amsv_bytes: [20, 26]
+    weight: 0.25
+
+memory_sync:
+  zero_bridge_direct_memory: true
+  amsv_byte_size: 64
+  checksum_byte: 63

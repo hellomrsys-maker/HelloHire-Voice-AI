@@ -1,0 +1,10 @@
+[package]
+name = "cdie-idea-transfer"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "cdie_idea_transfer"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

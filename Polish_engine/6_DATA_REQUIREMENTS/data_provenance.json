@@ -1,0 +1,15 @@
+{
+  "engine": "Polish_engine",
+  "generated_utc": "2026-09-29T11:57:32Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Polish-PDB",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "The Polish UD treebank is derived from the Polish Dependency Bank 2.0 (PDB 2.0, http://zil.ipipan.waw.pl/PDB) and is distributed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 Int",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

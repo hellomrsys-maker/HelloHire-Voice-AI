@@ -1,0 +1,38 @@
+{
+  "model_registry": {
+    "neural_models": [
+      {
+        "id": "bandhu_sub_ais_transformer",
+        "checkpoint": "checkpoints/bandhu_sub_ais_verified.pt",
+        "size_mb": 28.2,
+        "parameters": "7 Sub-AIs (Writing, Book, Recruitment, Pronunciation, Listening, Question, Reasoning)",
+        "framework": "PyTorch / TorchScript",
+        "device": "CUDA with CPU fallback"
+      },
+      {
+        "id": "english_syntax_sub_ai",
+        "component": "English_engine/brain/sub_ais/syntax_sub_ai.py",
+        "type": "Neural-Symbolic Transformer Head",
+        "target": "Syntactic complexity and agreement evaluation"
+      },
+      {
+        "id": "english_phonology_sub_ai",
+        "component": "English_engine/brain/sub_ais/phonology_sub_ai.py",
+        "type": "Acoustic-Prosodic Neural Predictor",
+        "target": "Phoneme accuracy and F0 contour modeling"
+      },
+      {
+        "id": "english_pragmatic_sub_ai",
+        "component": "English_engine/brain/sub_ais/pragmatic_sub_ai.py",
+        "type": "Speech Act & Register Neural Classifier",
+        "target": "Searle illocutionary force & felicity scoring"
+      },
+      {
+        "id": "english_editorial_sub_ai",
+        "component": "English_engine/brain/sub_ais/editorial_sub_ai.py",
+        "type": "Editorial Style & Readability Optimizer",
+        "target": "Stylistic grading & active voice transformation"
+      }
+    ]
+  }
+}

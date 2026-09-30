@@ -1,0 +1,119 @@
+{
+  "engine_profile": {
+    "language": "Japanese",
+    "engine": "Japanese_engine",
+    "iso_codes": [
+      "jpn",
+      "ja"
+    ],
+    "scripts": [
+      "Kanji",
+      "Hiragana",
+      "Katakana"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Japanese",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "jpn_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Japanese)",
+          "How are operations (Japanese)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "jpn_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Japanese)",
+          "Report readiness (Japanese)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "エンジニアが高並行分散システムを設計しました。",
+    "我々はゼロ遅延メモリ同期プロトコルを実装しました。",
+    "研究チームが新しい機械学習モデルを提案しました。",
+    "アーキテクトがデータパイプラインを最適化しました (using optimal hyper-parameters).",
+    "認知エンジンが自然言語の文脈を正確に解釈します。",
+    "開発チームがすべてのテストケースを合格させました (on multi-core architectures).",
+    "人工知能が多言語リアルタイム翻訳を実行します。",
+    "科学者が量子コンピューティングの論文を発表しました (under heavy loads).",
+    "エンジニアが高並行分散システムを設計しました。",
+    "我々はゼロ遅延メモリ同期プロトコルを実装しました。",
+    "研究チームが新しい機械学習モデルを提案しました。",
+    "アーキテクトがデータパイプラインを最適化しました (using optimal hyper-parameters).",
+    "認知エンジンが自然言語の文脈を正確に解釈します。",
+    "開発チームがすべてのテストケースを合格させました (on multi-core architectures).",
+    "人工知能が多言語リアルタイム翻訳を実行します。",
+    "科学者が量子コンピューティングの論文を発表しました (under heavy loads).",
+    "エンジニアが高並行分散システムを設計しました。",
+    "我々はゼロ遅延メモリ同期プロトコルを実装しました。",
+    "研究チームが新しい機械学習モデルを提案しました。",
+    "アーキテクトがデータパイプラインを最適化しました (using optimal hyper-parameters)."
+  ]
+}

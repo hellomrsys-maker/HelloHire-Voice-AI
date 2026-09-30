@@ -1,0 +1,884 @@
+# =============================================================================
+# language_engines/Japanese_engine.training.yaml
+# CANONICAL TRAINING FILE — Japanese Language Engine
+# Single-File Language Engine AI Specification — all 19 sections.
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "japanese_engine_v1"
+  language_name:                "Japanese"
+  language_code:                "ja"
+  language_family:              "Japonic (language isolate or Japonic family)"
+  writing_systems:
+    - name: "Hiragana"
+      direction: "left_to_right (horizontal) or top_to_bottom_right_to_left (vertical)"
+      script_type: "syllabary"
+      usage: "native Japanese words, grammatical particles, verb endings, furigana"
+      mora_count: 46_basic_plus_combinations
+    - name: "Katakana"
+      direction: "left_to_right or vertical"
+      script_type: "syllabary"
+      usage: "loanwords (gairaigo), foreign names, onomatopoeia, scientific terms, emphasis"
+      mora_count: 46_basic_plus_combinations
+    - name: "Kanji"
+      direction: "left_to_right or vertical"
+      script_type: "logographic"
+      usage: "nouns, verb/adjective stems, proper nouns, most content words"
+      joyo_kanji:  2136
+      readings:    "each kanji has on-yomi (Chinese reading) and kun-yomi (Japanese reading)"
+    - name: "Romaji"
+      direction: "left_to_right"
+      script_type: "Latin transliteration"
+      usage: "transliteration, some brand names, input method entry"
+      systems:     ["Hepburn", "Nihon-shiki", "Kunrei-shiki"]
+  supported_variants:
+    - code: ja-JP
+      name: "Standard Japanese (Tokyo dialect basis)"
+      reference_accent: "Hyōjungo — NHK standard"
+    - code: ja-KS
+      name: "Kansai Japanese (Osaka/Kyoto)"
+      reference_accent: "Kansai dialect (Kansai-ben)"
+      notes: "Different pitch accent patterns; distinct vocabulary and sentence-final particles"
+  canonical_training_file:      "language_engines/Japanese_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    keigo_register_tracking:    true
+    topic_zero_anaphora_tracking: true
+
+  error_detection:
+    grammar_error_detection:    true
+    keigo_level_mismatch:       true
+    particle_error_detection:   true
+    mixed_script_validation:    true
+
+  self_correction:
+    enabled:                    true
+    correction_passes:          2
+
+  safety_and_privacy:
+    content_filter:             true
+    filter_threshold:           0.85
+
+  human_preference_alignment:
+    keigo_default:              "teineigo"
+    cultural_sensitivity:       true
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      max_length:               8192
+      script_detection:         true
+      mixed_script_handling:    true
+
+  understanding:
+    tokenization:
+      strategy:                 "morphological_segmentation"
+      tool:                     "MeCab_or_Sudachi"
+      vocab_size:               50000
+      note:                     "Japanese has no spaces between words — morphological segmentation required before any further processing"
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      dependency_parsing:       true
+      script_type_annotation:   true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      word_order:               "SOV"
+      head_final:               true
+      pro_drop:                 true
+      postpositions:            true
+      zero_anaphora:            true
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+      keigo_register_stack:     "tracks_honorific_level_within_conversation"
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+
+  generation:
+    grammar_realization:
+      particle_selection:       true
+      keigo_honorific_agreement: true
+      verb_ending_inflection:   true
+      sentence_final_particle:  true
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:    { enabled: true, comprehension_depth: "deep", script_support: ["hiragana", "katakana", "kanji", "romaji"] }
+  writing:    { enabled: true, max_output_tokens: 10000 }
+  listening:  { enabled: true, real_time: true }
+  speaking:
+    enabled:                    true
+    pitch_accent:               true
+    pitch_accent_system:        "Tokyo_standard"
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    pitch_accent_aware:         true
+    mora_timing:                true
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "fr", "de", "es", "ar", "ta"]
+  teaching:   { enabled: true, scaffolding: true }
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    wabi_sabi_aesthetic:        "appreciation of imperfection and transience in generated content"
+    ma_concept:                 "negative space / meaningful silence as a creative element"
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      時間_jikan:
+        - { metaphor: "時間は川のようなもの",  effect: "流れ_framing" }
+        - { metaphor: "時は金なり",          effect: "価値_framing" }
+        - { metaphor: "光陰矢の如し",         effect: "速さ_framing" }
+      心_kokoro:
+        - { metaphor: "心は鏡",              effect: "反映_framing" }
+        - { metaphor: "心の海",              effect: "深み_framing" }
+      言葉_kotoba:
+        - { metaphor: "言葉は橋",            effect: "つながり_framing" }
+        - { metaphor: "言葉は刀",            effect: "鋭さ_framing" }
+
+  haiku_mode:
+    enabled:                    true
+    structure:                  "5-7-5 mora"
+    seasonal_word:              "kigo required for traditional haiku"
+    cutting_word:               "kireji — pause or cut at end of first or second unit"
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    primary_scripts:            ["Hiragana", "Katakana", "Kanji"]
+    mixed_script_norm:          "Normal Japanese text mixes all three scripts in every sentence"
+    word_spacing:               "none — words not separated by spaces"
+    punctuation:
+      sentence_end:             "。(ideographic_full_stop) or ！ or ？"
+      comma:                    "、(ideographic_comma)"
+      parentheses:              "（ ）(fullwidth)"
+      quotation:                "「 」(inner) or 『 』(outer)"
+
+  morphology:
+    verb_groups:
+      godan_u_verbs:
+        description:            "Group 1 — verbs ending in う ku su tsu nu bu mu gu ru"
+        example:                "書く (kaku — to write): 書か 書き 書く 書け 書こ"
+      ichidan_ru_verbs:
+        description:            "Group 2 — verbs ending in -iru or -eru"
+        example:                "食べる (taberu — to eat): 食べ 食べ 食べる 食べれ 食べよ"
+      irregular:
+        - { verb: "する (suru)", meaning: "to do",  te_form: "して", masu_form: "します" }
+        - { verb: "くる (kuru)", meaning: "to come", te_form: "きて", masu_form: "きます" }
+    adjective_types:
+      i_adjectives:
+        description:            "Predicative adjectives ending in い"
+        example:                "大きい → 大きくない (negative) / 大きかった (past)"
+      na_adjectives:
+        description:            "Nominal adjectives that take な before a noun"
+        example:                "静かな → 静かじゃない (negative)"
+    particles:
+      は (wa):                  "topic marker"
+      が (ga):                  "subject marker"
+      を (wo/o):                "direct object marker"
+      に (ni):                  "direction / time / indirect object marker"
+      で (de):                  "location of action / means / cause"
+      の (no):                  "possessive / noun modifier"
+      と (to):                  "and (nouns) / with / quotation"
+      も (mo):                  "also / even"
+      から (kara):              "from / because"
+      まで (made):              "until / as far as"
+      よ (yo):                  "sentence-final: assertion / new information"
+      ね (ne):                  "sentence-final: seeking agreement / softener"
+      か (ka):                  "sentence-final: question marker"
+
+  keigo_system:
+    description: >
+      Japanese politeness/honorific system — one of the most grammatically
+      complex in any human language. Three major levels:
+    levels:
+      - id: "kudaketa_tai"
+        name: "Casual speech (くだけた体)"
+        description: "Plain form — used with close friends, family, subordinates, children"
+        verb_ending: "dictionary form / plain form"
+        example: "食べる、行く、だ"
+      - id: "teineigo"
+        name: "Polite speech (丁寧語)"
+        description: "Standard polite form — suitable for most everyday interactions"
+        verb_ending: "ます (masu) and です (desu)"
+        example: "食べます、行きます、です"
+      - id: "sonkeigo"
+        name: "Respectful speech (尊敬語)"
+        description: "Elevates the actions of the person being spoken to"
+        patterns: ["〜れる/られる", "お〜になる", "special_verbs"]
+        special_verbs:
+          - { plain: "いる", sonkeigo: "いらっしゃる" }
+          - { plain: "する", sonkeigo: "なさる" }
+          - { plain: "言う", sonkeigo: "おっしゃる" }
+          - { plain: "食べる", sonkeigo: "召し上がる" }
+          - { plain: "来る", sonkeigo: "いらっしゃる" }
+          - { plain: "行く", sonkeigo: "いらっしゃる" }
+      - id: "kenjogo"
+        name: "Humble speech (謙譲語)"
+        description: "Lowers the speaker's actions to show respect to listener"
+        special_verbs:
+          - { plain: "いる", kenjogo: "おる" }
+          - { plain: "する", kenjogo: "いたす" }
+          - { plain: "言う", kenjogo: "申す" }
+          - { plain: "食べる", kenjogo: "いただく" }
+          - { plain: "来る", kenjogo: "まいる" }
+          - { plain: "行く", kenjogo: "まいる" }
+
+  syntax:
+    word_order:                 "SOV — subject, object, verb"
+    modifier_placement:         "modifiers precede what they modify (head-final)"
+    topicalization:             "topic marked by は (wa) can move to front of sentence"
+    negation:
+      verb:                     "〜ない (plain) / 〜ません (polite)"
+      adjective_i:              "〜くない"
+      adjective_na:             "〜じゃない / 〜ではない"
+    question_formation:         "Add か (ka) at sentence end in polite form; rising intonation in casual"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      register: "teineigo_or_sonkeigo"
+      slots:
+        salutation:             ["おはようございます", "こんにちは", "こんばんは"]
+        addressee_honorific:    ["〜様 (sama)", "〜さん (san) + 部長/課長/先生", ""]
+      templates:
+        - "{salutation}。"
+        - "{salutation}、{addressee_honorific}。"
+
+    - id: "greeting_informal"
+      register: "kudaketa"
+      slots:
+        salutation:             ["おはよう", "やあ", "ねえ", "よう"]
+        addressee_name:         ["[NAME]", ""]
+      templates:
+        - "{salutation}、{addressee_name}！"
+        - "{salutation}！"
+
+    - id: "farewell_formal"
+      register: "teineigo"
+      slots:
+        valediction:            ["失礼いたします", "お疲れ様でした", "お先に失礼します", "さようなら"]
+      templates:
+        - "{valediction}。"
+
+    - id: "farewell_informal"
+      register: "kudaketa"
+      slots:
+        valediction:            ["じゃあね", "またね", "バイバイ", "またあとで", "行ってきます"]
+      templates:
+        - "{valediction}！"
+        - "{valediction}、{name}！"
+
+    - id: "gratitude_expression"
+      register: "any"
+      slots:
+        thanks:                 ["ありがとうございます", "ありがとう", "どうもありがとうございます", "感謝します"]
+        reason:                 ["", "お世話になりました", "助かりました", "ご協力ありがとうございます"]
+      templates:
+        - "{thanks}。"
+        - "{thanks}。{reason}。"
+
+    - id: "apology_expression"
+      register: "any"
+      slots:
+        apology:                ["すみません", "申し訳ありません", "ごめんなさい", "失礼しました", "お詫び申し上げます"]
+        reason:                 ["", "ご迷惑をおかけして", "遅刻して", "誤解させてしまい"]
+      templates:
+        - "{apology}。"
+        - "{reason}、{apology}。"
+
+    - id: "introduction_self"
+      register: "teineigo"
+      slots:
+        verb_phrase:            ["と申します", "と言います", "です"]
+        name:                   ["[NAME]"]
+        company_dept:           ["", "〜社の", "〜部の"]
+      templates:
+        - "{company_dept}{name}{verb_phrase}。"
+        - "私は{name}{verb_phrase}。"
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "fill_slots_from_context"
+    - step: "select_keigo_level"
+    - step: "apply_verb_conjugation"
+    - step: "apply_adjective_inflection"
+    - step: "assign_particles"
+    - step: "apply_honorific_prefixes_o_go"
+    - step: "add_sentence_final_particle"
+    - step: "output_in_mixed_script"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  keigo_selection_rules:
+    context_superior_or_unknown: "teineigo minimum; sonkeigo/kenjogo for high-status interactions"
+    context_close_friend:        "kudaketa (plain form)"
+    context_business_formal:     "sonkeigo when referring to client/customer actions; kenjogo for own actions"
+    default:                     "teineigo"
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input"
+    - step: "unicode_normalization_NFC"
+    - step: "script_type_detection"
+    - step: "morphological_segmentation_MeCab"
+    - step: "POS_tagging"
+    - step: "particle_identification"
+    - step: "keigo_level_classification"
+    - step: "verb_conjugation_analysis"
+    - step: "dependency_parse_SOV"
+    - step: "zero_anaphora_resolution"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string"
+    language:                   "ja"
+    scripts_present:            "list[hiragana|katakana|kanji|romaji]"
+    morphemes:                  "list[Morpheme]"
+    particles:                  "dict[position, particle]"
+    keigo_level:                "kudaketa|teineigo|sonkeigo|kenjogo"
+    syntax_tree:                "DependencyTree_SOV"
+    component_family:           "string"
+    slots:                      "dict[str,str]"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         10000
+  extended_vocabulary_size:     60000
+
+  word_origins:
+    wago:
+      description:              "Native Japanese words (和語)"
+      proportion:               "~30% of vocabulary in everyday speech"
+    kango:
+      description:              "Sino-Japanese words (漢語) — derived from Chinese"
+      proportion:               "~50% of vocabulary"
+    gairaigo:
+      description:              "Foreign loanwords (外来語) — written in Katakana"
+      proportion:               "~20% and growing"
+      examples:
+        - { katakana: "コーヒー", romaji: "kōhī",  origin: "English: coffee" }
+        - { katakana: "テレビ",  romaji: "terebi", origin: "English: television" }
+        - { katakana: "パン",    romaji: "pan",    origin: "Portuguese: pão (bread)" }
+        - { katakana: "アルバイト", romaji: "arubaito", origin: "German: Arbeit (work)" }
+        - { katakana: "カバン",  romaji: "kaban",  origin: "Portuguese: cabana" }
+
+  counters:
+    description:                "Japanese uses counter words (助数詞) with numbers; counter depends on object type"
+    examples:
+      - { counter: "枚 (mai)",  usage: "flat objects: paper, stamps, sheets" }
+      - { counter: "本 (hon)",  usage: "long objects: pens, bottles, roads" }
+      - { counter: "匹 (hiki)", usage: "small animals: cats, fish, insects" }
+      - { counter: "頭 (tou)",  usage: "large animals: horses, cows, elephants" }
+      - { counter: "冊 (satsu)", usage: "bound books and magazines" }
+      - { counter: "杯 (hai)",  usage: "cups and bowls of liquid" }
+
+  keigo_vocabulary_pairs:
+    - { plain: "食べる (taberu)", teineigo: "食べます", sonkeigo: "召し上がる", kenjogo: "いただく" }
+    - { plain: "飲む (nomu)",   teineigo: "飲みます", sonkeigo: "お飲みになる", kenjogo: "いただく" }
+    - { plain: "行く (iku)",    teineigo: "行きます", sonkeigo: "いらっしゃる", kenjogo: "まいる" }
+    - { plain: "来る (kuru)",   teineigo: "来ます",  sonkeigo: "いらっしゃる", kenjogo: "まいる" }
+    - { plain: "いる (iru)",    teineigo: "います",  sonkeigo: "いらっしゃる", kenjogo: "おる" }
+    - { plain: "する (suru)",   teineigo: "します",  sonkeigo: "なさる",      kenjogo: "いたす" }
+    - { plain: "言う (iu)",     teineigo: "言います", sonkeigo: "おっしゃる",  kenjogo: "申す" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  mora_timing:                  "Japanese is mora-timed — each mora has equal duration"
+  pitch_accent:
+    type:                       "pitch_accent (高低アクセント)"
+    system:                     "Tokyo standard — words have a pitch pattern with one boundary (downstep)"
+    pattern_types:
+      - { type: "heiban (平板型)",    description: "flat — rises after first mora, stays high" }
+      - { type: "atamadaka (頭高型)", description: "first mora high, drops after" }
+      - { type: "nakadaka (中高型)",  description: "rises to high at some middle mora, then drops" }
+      - { type: "odaka (尾高型)",     description: "all moras high; drops after (affects particle)" }
+    kansai_note:                "Kansai dialects use a different two-tone pitch accent system"
+
+  vowel_chart:
+    - { grapheme: "あ/ア", IPA: "a",  example: "あさ (asa — morning)" }
+    - { grapheme: "い/イ", IPA: "i",  example: "いぬ (inu — dog)" }
+    - { grapheme: "う/ウ", IPA: "ɯ",  example: "うみ (umi — sea)", note: "unrounded back vowel — not English 'u'" }
+    - { grapheme: "え/エ", IPA: "e",  example: "えき (eki — station)" }
+    - { grapheme: "お/オ", IPA: "o",  example: "おか (oka — hill)" }
+
+  consonant_highlights:
+    - { grapheme: "ら行 (r-row)", IPA: "ɾ", note: "Japanese r is a flap — neither English r nor l" }
+    - { grapheme: "つ (tsu)",    IPA: "tsɯ", note: "affricate — no equivalent in English onset" }
+    - { grapheme: "ふ (fu)",     IPA: "ɸɯ",  note: "bilabial fricative — lighter than English f" }
+    - { grapheme: "し (shi)",    IPA: "ɕi",  note: "palatal fricative — lighter than English sh" }
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  grammatical_meaning:
+    tense_aspect:
+      - { form: "〜る (plain present)", meaning: "non_past — present state or future action" }
+      - { form: "〜た (plain past)",    meaning: "completed_action_or_past_state" }
+      - { form: "〜ている (te-iru)",    meaning: "ongoing_action or resultant_state" }
+      - { form: "〜ます",              meaning: "polite_non_past" }
+      - { form: "〜ました",            meaning: "polite_past" }
+    particle_meaning:
+      は_wa:    "topic marker — what the sentence is about (not necessarily the grammatical subject)"
+      が_ga:    "subject marker — who/what performs the action; emphasis on identification"
+      を_wo:    "direct object marker — what the action is done to"
+      に_ni:    "direction / indirect object / time point / state change"
+      で_de:    "location of action / means / material / cause"
+      note: >
+        は vs が distinction is one of the most complex in Japanese:
+        は marks old/shared information (topic); が marks new information (subject)
+    keigo_meaning:
+      note: >
+        Keigo encodes social hierarchy, in-group/out-group distinctions (uchi/soto),
+        and formality simultaneously. Using the wrong level is a significant social error.
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - refusing
+    - agreeing
+    - disagreeing
+
+  politeness_system:
+    description: >
+      Japanese politeness is grammatically encoded at every level.
+      The keigo system (see language_rules) is the primary vehicle.
+    uchi_soto:
+      description:              "In-group (uchi) vs out-group (soto) — fundamental social distinction"
+      uchi:                     "Family, close friends, colleagues within same company/group"
+      soto:                     "Customers, clients, strangers, members of other groups"
+      rule:                     "Use humble speech (kenjogo) about your own group's actions to outsiders; use respectful speech (sonkeigo) about outsider's actions"
+    indirectness:
+      refusal:                  "Direct refusals are rare; 'ちょっと...' or 'むずかしいですね...' signal polite refusal"
+      requests:                 "Often phrased as questions: 〜していただけますか (would you be able to...)"
+
+  cultural_context:
+    bowing:                     "Non-verbal communication — depth and duration of bow signals formality level"
+    silence:                    "間 (ma) — meaningful pause is valued; don't rush to fill silence"
+    group_harmony:              "和 (wa) — preserving group harmony; avoid direct confrontation"
+    business_cards:             "名刺交換 — exchange with both hands; read carefully before putting away"
+    seasonal_greetings:         "お中元/お歳暮 — mid-year and year-end gifts with fixed honorific phrases"
+    self_deprecation:           "Downplaying one's own abilities/possessions is a politeness strategy"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "ja_td_001"
+    language:                   "ja"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation"]
+    normalized_components:
+      salutation:               "こんにちは"
+    grammar_rules_used:
+      - "teineigo_neutral_greeting"
+      - "sentence_final_period_ideographic"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ja_td_002"
+    language:                   "ja"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks"]
+    normalized_components:
+      thanks:                   "ありがとうございます"
+    grammar_rules_used:
+      - "teineigo_gratitude"
+      - "sentence_final_period_ideographic"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ja_td_003"
+    language:                   "ja"
+    component_families:
+      - "apology_expression"
+    slot_order:                 ["apology"]
+    normalized_components:
+      apology:                  "申し訳ありません"
+    grammar_rules_used:
+      - "kenjogo_formal_apology"
+      - "sentence_final_period_ideographic"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ja_td_004"
+    language:                   "ja"
+    component_families:
+      - "farewell_formal"
+    slot_order:                 ["valediction"]
+    normalized_components:
+      valediction:              "失礼いたします"
+    grammar_rules_used:
+      - "kenjogo_farewell"
+      - "sentence_final_period_ideographic"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ja_td_005"
+    language:                   "ja"
+    component_families:
+      - "introduction_self"
+    slot_order:                 ["name", "verb_phrase"]
+    normalized_components:
+      name:                     "田中"
+      verb_phrase:              "と申します"
+    grammar_rules_used:
+      - "kenjogo_self_introduction"
+      - "topic_particle_は_optional_in_introduction"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "ja_ex_001"
+    training_item_ref:          "ja_td_001"
+    expected_output:            "こんにちは。"
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "こんにちは"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_is_hiragana_correct"
+      - "ends_with_ideographic_period"
+      - "no_kanji_substitution_errors"
+
+  - example_id:                 "ja_ex_002"
+    training_item_ref:          "ja_td_002"
+    expected_output:            "ありがとうございます。"
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "ありがとうございます"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_contains_全体_correct_hiragana"
+      - "ends_with_ideographic_period"
+      - "keigo_level_is_teineigo"
+
+  - example_id:                 "ja_ex_003"
+    training_item_ref:          "ja_td_003"
+    expected_output:            "申し訳ありません。"
+    component_family_used:      "apology_expression"
+    slots_filled:
+      apology:                  "申し訳ありません"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_kanji_申し訳"
+      - "ends_with_ideographic_period"
+      - "keigo_level_is_kenjogo"
+
+  - example_id:                 "ja_ex_004"
+    training_item_ref:          "ja_td_004"
+    expected_output:            "失礼いたします。"
+    component_family_used:      "farewell_formal"
+    slots_filled:
+      valediction:              "失礼いたします"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_kanji_失礼"
+      - "contains_kenjogo_form_いたします"
+      - "ends_with_ideographic_period"
+
+  - example_id:                 "ja_ex_005"
+    training_item_ref:          "ja_td_005"
+    expected_output:            "田中と申します。"
+    component_family_used:      "introduction_self"
+    slots_filled:
+      name:                     "田中"
+      verb_phrase:              "と申します"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_name_kanji_田中"
+      - "contains_kenjogo_申します"
+      - "ends_with_ideographic_period"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "ja_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ja_eval_002"
+    rule_type:                  "min_length"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ja_eval_003"
+    rule_type:                  "max_length"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "ja_eval_004"
+    rule_type:                  "keigo_consistency"
+    description:                "Keigo level must be consistent within a single utterance"
+    parameters:
+      check_mixed_keigo:        true
+    threshold:                  0.90
+    blocking:                   false
+
+  - rule_id:                    "ja_eval_005"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots must be filled"
+    parameters:
+      required_slots:           ["salutation", "thanks", "apology", "valediction"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ja_eval_006"
+    rule_type:                  "script_validity"
+    description:                "Output must use correct scripts — hiragana/katakana characters must be valid Unicode"
+    parameters:
+      check_unicode_block:      true
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ja_eval_007"
+    rule_type:                  "sentence_final_punctuation"
+    description:                "Sentences must end with ideographic full stop 。 or appropriate ! / ?"
+    parameters:
+      expected_sentence_end:    ["。", "！", "？"]
+    threshold:                  0.95
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    keigo_register_stack:       "persists_within_conversation"
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+    note:                       "Japanese is popular English-learning target; extensive loanword integration"
+
+  engine_to_french:
+    type:                       "bridge"
+    target_engine:              "french_engine_v1"
+    link_file:                  "language_engines/French_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_german:
+    type:                       "bridge"
+    target_engine:              "german_engine_v1"
+    link_file:                  "language_engines/German_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+    note:                       "German Arbeit → アルバイト; significant German loanwords in Japanese"
+
+  engine_to_spanish:
+    type:                       "bridge"
+    target_engine:              "spanish_engine_v1"
+    link_file:                  "language_engines/Spanish_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_arabic:
+    type:                       "bridge"
+    target_engine:              "arabic_engine_v1"
+    link_file:                  "language_engines/Arabic_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_tamil:
+    type:                       "bridge"
+    target_engine:              "tamil_engine_v1"
+    link_file:                  "language_engines/Tamil_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold with all 19 section stubs"
+      reason:                   "Project initialization"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: 4 writing systems (Hiragana, Katakana, Kanji, Romaji),
+        full keigo system (kudaketa/teineigo/sonkeigo/kenjogo) with 7 verb
+        pairs, all Japanese particles with meanings, SOV word order,
+        MeCab morphological segmentation, pitch accent system (heiban/
+        atamadaka/nakadaka/odaka), 5 IPA vowels with Japanese pronunciation
+        notes, word origin taxonomy (wago/kango/gairaigo), counter words,
+        uchi/soto social distinction, 6 component families, 5 training items,
+        5 regression tests, 7 evaluation rules (keigo/script/punctuation).
+      reason:                   "Promote Japanese engine from scaffold to active"
+      approved_by:              "polyglot_engine_dev"

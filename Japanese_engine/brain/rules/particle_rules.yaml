@@ -1,0 +1,81 @@
+# Japanese Particle (助詞 Joshi) Rules and Structural Integrity Specifications
+
+particles:
+  wa:
+    kana: "は"
+    type: "kakari_joshi"
+    function: "Topic marker / Contrast marker"
+    rules:
+      - id: "WA_TOPIC"
+        desc: "Marks discourse topic (known/shared information). Predicate asserts new information about this topic."
+      - id: "WA_CONTRAST"
+        desc: "When used with non-subject constituents (e.g. には, では), marks contrastive focus."
+
+  ga:
+    kana: "が"
+    type: "kaku_joshi"
+    function: "Subject / Agent marker / Exhaustive listing"
+    rules:
+      - id: "GA_AGENT"
+        desc: "Marks the syntactic subject in neutral descriptions or subordinated clauses (relative clauses)."
+      - id: "GA_EXHAUSTIVE"
+        desc: "Specifies exhaustive identity (e.g. 田中さんが犯人だ - Tanaka is the one)."
+      - id: "GA_STATIVE_OBJECT"
+        desc: "Marks the object of stative predicates (e.g. 日本語が分かる, 水が飲みたい)."
+
+  o:
+    kana: "を"
+    type: "kaku_joshi"
+    function: "Direct object marker / Path of movement"
+    rules:
+      - id: "O_ACCUSATIVE"
+        desc: "Marks direct accusative object of transitive verb (e.g. 本を読む)."
+      - id: "O_TRAVERSAL"
+        desc: "Marks path or space through which movement occurs (e.g. 道を歩く, 空を飛ぶ, 橋を渡る)."
+
+  ni:
+    kana: "に"
+    type: "kaku_joshi"
+    function: "Target / Indirect object / Specific point in time / Agent of passive or causative"
+    rules:
+      - id: "NI_LOCATION_EXIST"
+        desc: "Marks static location of existence with ある / いる (e.g. 部屋に猫がいる)."
+      - id: "NI_GOAL"
+        desc: "Marks destination/arrival point (e.g. 学校に行く, 東京に到着する)."
+      - id: "NI_TIME"
+        desc: "Marks specific point in time (e.g. 3時に起きる)."
+
+  de:
+    kana: "で"
+    type: "kaku_joshi"
+    function: "Location of dynamic action / Means / Instrument / Cause"
+    rules:
+      - id: "DE_ACTION_LOC"
+        desc: "Marks where an action takes place (e.g. 図書館で勉強する)."
+      - id: "DE_INSTRUMENT"
+        desc: "Marks instrument or tool (e.g. ペンで書く, 電車で行く)."
+
+  no:
+    kana: "の"
+    type: "kakari_joshi_no"
+    function: "Genitive / Nominalizer / Apposition / Subject in relative clauses (Ga-No conversion)"
+    rules:
+      - id: "NO_GENITIVE"
+        desc: "Noun modifier (AのB)."
+      - id: "GA_NO_CONVERSION"
+        desc: "Permits 'が' to convert to 'の' in adnominal relative clauses (e.g. 私の書いた論文)."
+
+common_violations:
+  - id: "PARTICLE_DUPLICATION"
+    pattern: "は.*は.*(です|ます)"
+    description: "Multiple primary topic markers in a single clause without contrastive context."
+    severity: "warning"
+  - id: "CONFUSED_NI_DE"
+    pattern: "で(いる|ある)"
+    description: "Use of dynamic action particle 'で' instead of static existence particle 'に' with いる/ある."
+    severity: "error"
+    suggestion: "に"
+  - id: "REDUNDANT_TOPO_PARTICLE"
+    pattern: "へに行く"
+    description: "Colloquial stacking where 'へ' and 'に' conflict or redundant direction is used."
+    severity: "warning"

@@ -1,0 +1,42 @@
+{
+  "valikattal_rules": {
+    "triggers": [
+      {
+        "pattern": "accusative_ai",
+        "description": "After accusative case suffix -ai (ஐ), initial plosives (k, c, t, p) double",
+        "example_before": "புத்தகத்தை படி",
+        "example_after": "புத்தகத்தைப் படி"
+      },
+      {
+        "pattern": "dative_ku",
+        "description": "After dative case suffix -ku / -ukku (க்கு / உக்கு), initial plosives double",
+        "example_before": "வீட்டுக்கு போ",
+        "example_after": "வீட்டுக்குப் போ"
+      },
+      {
+        "pattern": "adverb_ini_angu",
+        "description": "After words like இனி (ini), அங்கு (aṅku), இங்கு (iṅku), initial plosives double",
+        "example_before": "இனி பார்",
+        "example_after": "இனிப் பார்"
+      }
+    ],
+    "plosive_doubling_map": {
+      "க": "க்க",
+      "ச": "ச்ச",
+      "த": "த்த",
+      "ப": "ப்ப"
+    }
+  },
+  "utampatumey_glide_insertion": {
+    "front_vowels": {
+      "vowels": ["இ", "ஈ", "எ", "ஏ", "ஐ"],
+      "inserted_glide": "ய்",
+      "example": "கிளி + ஐ -> கிளியை"
+    },
+    "back_neutral_vowels": {
+      "vowels": ["அ", "ஆ", "உ", "ஊ", "ஒ", "ஓ"],
+      "inserted_glide": "வ்",
+      "example": "பசு + ஐ -> பசுவை"
+    }
+  }
+}

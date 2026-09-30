@@ -1,0 +1,139 @@
+{
+  "regular_models": {
+    "are": {
+      "presente": ["o", "i", "a", "iamo", "ate", "ano"],
+      "imperfetto": ["avo", "avi", "ava", "avamo", "avate", "avano"],
+      "futuro": ["erò", "erai", "erà", "eremo", "erete", "eranno"],
+      "passato_remoto": ["ai", "asti", "ò", "ammo", "aste", "arono"],
+      "congiuntivo_presente": ["i", "i", "i", "iamo", "iate", "ino"],
+      "congiuntivo_imperfetto": ["assi", "assi", "asse", "assimo", "aste", "assero"],
+      "condizionale": ["erei", "eresti", "erebbe", "eremmo", "ereste", "erebbero"],
+      "gerundio": "ando",
+      "participio_passato": "ato",
+      "default_auxiliary": "avere"
+    },
+    "ere": {
+      "presente": ["o", "i", "e", "iamo", "ete", "ono"],
+      "imperfetto": ["evo", "evi", "eva", "evamo", "evate", "evano"],
+      "futuro": ["erò", "erai", "erà", "eremo", "erete", "eranno"],
+      "passato_remoto": ["ei", "esti", "é", "emmo", "este", "erono"],
+      "congiuntivo_presente": ["a", "a", "a", "iamo", "iate", "ano"],
+      "congiuntivo_imperfetto": ["essi", "essi", "esse", "essimo", "este", "essero"],
+      "condizionale": ["erei", "eresti", "erebbe", "eremmo", "ereste", "erebbero"],
+      "gerundio": "endo",
+      "participio_passato": "uto",
+      "default_auxiliary": "avere"
+    },
+    "ire": {
+      "presente": ["o", "i", "e", "iamo", "ite", "ono"],
+      "imperfetto": ["ivo", "ivi", "iva", "ivamo", "ivate", "ivano"],
+      "futuro": ["irò", "irai", "irà", "iremo", "irete", "iranno"],
+      "passato_remoto": ["ii", "isti", "ì", "immo", "iste", "irono"],
+      "congiuntivo_presente": ["a", "a", "a", "iamo", "iate", "ano"],
+      "congiuntivo_imperfetto": ["issi", "issi", "isse", "issimo", "iste", "issero"],
+      "condizionale": ["irei", "iresti", "irebbe", "iremmo", "ireste", "irebbero"],
+      "gerundio": "endo",
+      "participio_passato": "ito",
+      "default_auxiliary": "avere"
+    },
+    "ire_isc": {
+      "presente": ["isco", "isci", "isce", "iamo", "ite", "iscono"],
+      "congiuntivo_presente": ["isca", "isca", "isca", "iamo", "iate", "iscano"],
+      "gerundio": "endo",
+      "participio_passato": "ito",
+      "default_auxiliary": "avere"
+    }
+  },
+  "auxiliary_classification": {
+    "essere": [
+      "andare", "venire", "partire", "arrivare", "uscire", "entrare",
+      "nascere", "morire", "cadere", "diventare", "rimanere", "stare",
+      "essere", "sembrare", "parere", "succedere", "accadere", "salire", "scendere"
+    ],
+    "avere": [
+      "avere", "fare", "dire", "leggere", "scrivere", "mangiare", "bere",
+      "vedere", "sentire", "parlare", "ascoltare", "comprare", "vendere",
+      "lavorare", "dormire", "camminare", "pensare", "credere", "sapere"
+    ]
+  },
+  "irregular_verbs": {
+    "essere": {
+      "presente": ["sono", "sei", "è", "siamo", "siete", "sono"],
+      "imperfetto": ["ero", "eri", "era", "eravamo", "eravate", "erano"],
+      "futuro": ["sarò", "sarai", "sarà", "saremo", "sarete", "saranno"],
+      "passato_remoto": ["fui", "fosti", "fu", "fummo", "foste", "furono"],
+      "congiuntivo_presente": ["sia", "sia", "sia", "siamo", "siate", "siano"],
+      "congiuntivo_imperfetto": ["fossi", "fossi", "fosse", "fossimo", "foste", "fossero"],
+      "condizionale": ["sarei", "saresti", "sarebbe", "saremmo", "sareste", "sarebbero"],
+      "gerundio": "essendo",
+      "participio_passato": "stato",
+      "auxiliary": "essere"
+    },
+    "avere": {
+      "presente": ["ho", "hai", "ha", "abbiamo", "avete", "hanno"],
+      "imperfetto": ["avevo", "avevi", "aveva", "avevamo", "avevate", "avevano"],
+      "futuro": ["avrò", "avrai", "avrà", "avremo", "avrete", "avranno"],
+      "passato_remoto": ["ebbi", "avesti", "ebbe", "avemmo", "aveste", "ebbero"],
+      "congiuntivo_presente": ["abbia", "abbia", "abbia", "abbiamo", "abbiate", "abbiano"],
+      "congiuntivo_imperfetto": ["avessi", "avessi", "avesse", "avessimo", "aveste", "avessero"],
+      "condizionale": ["avrei", "avresti", "avrebbe", "avremmo", "avreste", "avrebbero"],
+      "gerundio": "avendo",
+      "participio_passato": "avuto",
+      "auxiliary": "avere"
+    },
+    "andare": {
+      "presente": ["vado", "vai", "va", "andiamo", "andate", "vanno"],
+      "futuro": ["andrò", "andrai", "andrà", "andremo", "andrete", "andranno"],
+      "congiuntivo_presente": ["vada", "vada", "vada", "andiamo", "andiate", "vadano"],
+      "participio_passato": "andato",
+      "auxiliary": "essere"
+    },
+    "fare": {
+      "presente": ["faccio", "fai", "fa", "facciamo", "fate", "fanno"],
+      "imperfetto": ["facevo", "facevi", "faceva", "facevamo", "facevate", "facevano"],
+      "futuro": ["farò", "farai", "farà", "faremo", "farete", "faranno"],
+      "passato_remoto": ["feci", "facesti", "fece", "facemmo", "faceste", "fecero"],
+      "congiuntivo_presente": ["faccia", "faccia", "faccia", "facciamo", "facciate", "facciano"],
+      "gerundio": "facendo",
+      "participio_passato": "fatto",
+      "auxiliary": "avere"
+    },
+    "dire": {
+      "presente": ["dico", "dici", "dice", "diciamo", "dite", "dicono"],
+      "imperfetto": ["dicevo", "dicevi", "diceva", "dicevamo", "dicevate", "dicevano"],
+      "futuro": ["dirò", "dirai", "dirà", "diremo", "direte", "diranno"],
+      "congiuntivo_presente": ["dica", "dica", "dica", "diciamo", "diciate", "dicano"],
+      "gerundio": "dicendo",
+      "participio_passato": "detto",
+      "auxiliary": "avere"
+    },
+    "venire": {
+      "presente": ["vengo", "vieni", "viene", "veniamo", "venite", "vengono"],
+      "futuro": ["verrò", "verrai", "verrà", "verremo", "verrete", "verranno"],
+      "congiuntivo_presente": ["venga", "venga", "venga", "veniamo", "veniate", "vengano"],
+      "participio_passato": "venuto",
+      "auxiliary": "essere"
+    },
+    "potere": {
+      "presente": ["posso", "puoi", "può", "possiamo", "potete", "possono"],
+      "futuro": ["potrò", "potrai", "potrà", "potremo", "potrete", "potranno"],
+      "congiuntivo_presente": ["possa", "possa", "possa", "possiamo", "possiate", "possano"],
+      "participio_passato": "potuto",
+      "auxiliary": "avere"
+    },
+    "volere": {
+      "presente": ["voglio", "vuoi", "vuole", "vogliamo", "volete", "vogliono"],
+      "futuro": ["vorrò", "vorrai", "vorrà", "vorremo", "vorrete", "vorranno"],
+      "congiuntivo_presente": ["voglia", "voglia", "voglia", "vogliamo", "vogliate", "vogliano"],
+      "participio_passato": "voluto",
+      "auxiliary": "avere"
+    },
+    "dovere": {
+      "presente": ["devo", "devi", "deve", "dobbiamo", "dovete", "devono"],
+      "futuro": ["dovrò", "dovrai", "dovrà", "dovremo", "dovrete", "dovranno"],
+      "congiuntivo_presente": ["debba", "debba", "debba", "dobbiamo", "dobbiate", "debbano"],
+      "participio_passato": "dovuto",
+      "auxiliary": "avere"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "active_voice_men": {
+    "deletion_rules": {
+      "p": {"nasal": "mem", "example_root": "pakai", "derived": "memakai"},
+      "t": {"nasal": "men", "example_root": "tulis", "derived": "menulis"},
+      "s": {"nasal": "meny", "example_root": "sapu", "derived": "menyapu"},
+      "k": {"nasal": "meng", "example_root": "kirim", "derived": "mengirim"}
+    },
+    "retention_rules": {
+      "b": {"nasal": "mem", "example_root": "baca", "derived": "membaca"},
+      "d": {"nasal": "men", "example_root": "dengar", "derived": "mendengar"},
+      "j": {"nasal": "men", "example_root": "jual", "derived": "menjual"},
+      "c": {"nasal": "men", "example_root": "cuci", "derived": "mencuci"},
+      "g": {"nasal": "meng", "example_root": "goreng", "derived": "menggoreng"}
+    },
+    "vowel_and_glottal_rules": {
+      "vowels_and_h": {"nasal": "meng", "example_root": "ambil", "derived": "mengambil"}
+    },
+    "liquid_and_nasal_rules": {
+      "liquids_nasals": {"nasal": "me", "consonants": ["l", "r", "m", "n", "ny", "ng", "w", "y"]}
+    },
+    "monosyllable_rule": {
+      "prefix": "menge", "examples": ["cat", "bom", "lap", "klik"]
+    }
+  },
+  "passive_voice_di": {
+    "prefix": "di",
+    "agent_marker": "oleh",
+    "is_separable": false
+  },
+  "stative_accidental_ter": {
+    "prefix": "ter",
+    "types": ["accidental", "completed_state", "superlative"]
+  },
+  "intransitive_ber": {
+    "prefix": "ber",
+    "r_dropping_exceptions": [
+      {"root": "kerja", "derived": "bekerja"},
+      {"root": "renang", "derived": "berenang"},
+      {"root": "ajar", "derived": "belajar"}
+    ]
+  },
+  "suffixes": {
+    "causative_benefactive": "-kan",
+    "locative_iterative": "-i"
+  },
+  "circumfixes": {
+    "process_nominal": "peN-...-an",
+    "abstract_state": "ke-...-an",
+    "result_reciprocal": "per-...-an"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "major_world_englishes": {
+    "General_American": {
+      "rhoticity": true,
+      "flapping": true,
+      "lexicon": { "elevator": "lift", "apartment": "flat", "cookie": "biscuit", "trunk": "boot" }
+    },
+    "British_Received_Pronunciation": {
+      "rhoticity": false,
+      "flapping": false,
+      "lexicon": { "lift": "elevator", "flat": "apartment", "biscuit": "cookie", "boot": "trunk" }
+    },
+    "Australian_English": {
+      "rhoticity": false,
+      "vowel_shifts": "Diphthong shift (/iː/ -> [əi], /uː/ -> [əu])",
+      "hypocoristics": ["arvo (afternoon)", "brekkie (breakfast)", "servo (service station)"]
+    },
+    "Indian_English": {
+      "rhoticity": "Variable / light tap [ɾ]",
+      "retroflexion": "Alveolar stops /t, d/ realized as retroflex [ʈ, ɖ]",
+      "syntax": {
+        "stative_progressive": "Use of continuous tense with stative verbs ('I am understanding this')",
+        "tag_questions": "Invariant question tags ('isn't it?', 'no?')"
+      },
+      "lexicon": { "prepone": "advance schedule earlier", "airdash": "travel urgently by flight" }
+    }
+  }
+}

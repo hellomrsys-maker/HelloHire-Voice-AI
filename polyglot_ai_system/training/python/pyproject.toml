@@ -1,0 +1,94 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "polyglot-training"
+version = "1.0.0"
+description = "High-level AI training API and orchestration for the 6-language polyglot AI system"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Polyglot AI System" },
+]
+
+keywords = [
+    "ai", "training", "deep-learning", "nlp", "polyglot",
+    "cognitive-architecture", "transformer",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+]
+
+dependencies = [
+    "torch>=2.1.0",
+    "transformers>=4.36.0",
+    "accelerate>=0.25.0",
+    "peft>=0.7.0",
+    "datasets>=2.15.0",
+    "tokenizers>=0.15.0",
+    "safetensors>=0.4.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "pydantic>=2.5.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "mlflow>=2.9.0",
+    "wandb>=0.16.0",
+    "tqdm>=4.66.0",
+    "rich>=13.0.0",
+    "click>=8.1.0",
+    "pyyaml>=6.0.0",
+    "jsonlines>=4.0.0",
+    "einops>=0.7.0",
+    "flash-attn>=2.4.0 ; sys_platform == 'linux'",
+    "triton>=2.1.0 ; sys_platform == 'linux'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+]
+
+[project.scripts]
+polyglot-train = "polyglot_training.cli:main"
+polyglot-train-verify = "polyglot_training.verify:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

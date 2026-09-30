@@ -1,0 +1,40 @@
+# Polish Sovereign Language Engine Configuration Policy
+
+engine:
+  id: 9
+  iso_code: "pl"
+  name: "Polish Sovereign Language Engine"
+  country_coverage: ["Poland", "Lithuania", "Belarus", "Ukraine", "Diaspora"]
+  version: "1.0.0"
+  amsv_magic: 0x504F4C53  # "POLS"
+  amsv_bytes: 64
+
+rules:
+  genitive_of_negation_strict: true
+  honorific_third_person_strict: true
+  negative_concord_strict: true
+  case_agreement_strict: true
+  sibilant_orthography_check: true
+  pro_drop_tolerance: true
+
+registers:
+  allowed: ["neutral", "informal_ty", "formal_pan_pani"]
+  default: "neutral"
+
+sub_ais:
+  syntax:
+    bitmask: 0x01
+    active: true
+  phonology:
+    bitmask: 0x02
+    active: true
+  pragmatic:
+    bitmask: 0x04
+    active: true
+  editorial:
+    bitmask: 0x08
+    active: true
+
+performance:
+  zero_bridge_direct_memory: true
+  max_latency_nanoseconds: 1000000  # 1ms target threshold

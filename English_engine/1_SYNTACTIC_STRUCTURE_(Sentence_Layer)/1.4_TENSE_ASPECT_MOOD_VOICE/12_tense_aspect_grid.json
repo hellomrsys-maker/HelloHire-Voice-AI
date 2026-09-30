@@ -1,0 +1,18 @@
+{
+  "tense_aspect_grid_12": {
+    "present_simple": { "formula": "Subject + Verb(base / -s)", "example": "The model learns continuously.", "aspect": "Simple", "time": "Present" },
+    "present_continuous": { "formula": "Subject + am/is/are + Verb-ing", "example": "The model is learning now.", "aspect": "Progressive", "time": "Present" },
+    "present_perfect": { "formula": "Subject + have/has + Verb(past participle)", "example": "The model has converged.", "aspect": "Perfect", "time": "Present" },
+    "present_perfect_continuous": { "formula": "Subject + have/has been + Verb-ing", "example": "The model has been training for 10 epochs.", "aspect": "Perfect Progressive", "time": "Present" },
+
+    "past_simple": { "formula": "Subject + Verb(past / -ed)", "example": "The model learned the distribution.", "aspect": "Simple", "time": "Past" },
+    "past_continuous": { "formula": "Subject + was/were + Verb-ing", "example": "The model was training during the outage.", "aspect": "Progressive", "time": "Past" },
+    "past_perfect": { "formula": "Subject + had + Verb(past participle)", "example": "The model had completed before the power cut.", "aspect": "Perfect", "time": "Past" },
+    "past_perfect_continuous": { "formula": "Subject + had been + Verb-ing", "example": "The model had been running for hours before failing.", "aspect": "Perfect Progressive", "time": "Past" },
+
+    "future_simple": { "formula": "Subject + will + Verb(base)", "example": "The model will evaluate tomorrow.", "aspect": "Simple", "time": "Future" },
+    "future_continuous": { "formula": "Subject + will be + Verb-ing", "example": "The model will be processing requests at noon.", "aspect": "Progressive", "time": "Future" },
+    "future_perfect": { "formula": "Subject + will have + Verb(past participle)", "example": "The model will have finished by midnight.", "aspect": "Perfect", "time": "Future" },
+    "future_perfect_continuous": { "formula": "Subject + will have been + Verb-ing", "example": "The model will have been executing for 24 hours.", "aspect": "Perfect Progressive", "time": "Future" }
+  }
+}

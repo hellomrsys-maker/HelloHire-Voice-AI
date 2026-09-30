@@ -1,0 +1,31 @@
+{
+  "language": "Hindustani",
+  "pipeline": "Hindustani Unified Single Total Training Pipeline",
+  "duration_seconds": 5.14,
+  "phase1_syntax": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\hindustani_main_model_verified.pt",
+    "final_loss": 53.2681
+  },
+  "phase2_sub_ais": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\hindustani_engine_sub_ais_verified.pt"
+  },
+  "phase3_intent_tree": {
+    "status": "SUCCESS",
+    "total_capacity": 135,
+    "intents_evaluated": 2
+  },
+  "phase4_prosody_dynamics": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\hindustani_dialogue_dynamics_verified.pt"
+  },
+  "phase5_amsv_sync": {
+    "status": "SUCCESS",
+    "verified_checkpoints": {
+      "hindustani_main_model_verified.pt": "fbf6c9d85462a3f014db1a3062931df362ea7889ffbbb358749834d14e2df3fc",
+      "hindustani_engine_sub_ais_verified.pt": "ffc7f895bd430080761f1e2ae4a91904f7799967ad26f7b4e25e87598ab7372a",
+      "hindustani_dialogue_dynamics_verified.pt": "4b97e757bbaeeb18d0e2371481775857b4ad737cc0858d66296dec699a7c2cb0"
+    }
+  }
+}

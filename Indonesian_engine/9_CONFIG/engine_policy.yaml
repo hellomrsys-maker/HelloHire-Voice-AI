@@ -1,0 +1,49 @@
+# Layer 9: Engine Policy & Operational Configuration — Indonesian Language Engine
+
+engine:
+  name: "Indonesian_engine"
+  iso_639_1: "id"
+  iso_639_3: "ind"
+  language_family: "Austronesian"
+  branch: "Malayo-Polynesian (Nuclear Malayo-Polynesian)"
+  version: "1.0.0"
+  target_standard: "Bahasa Indonesia Baku (KBBI V / Badan Pengembangan dan Pembinaan Bahasa)"
+
+amsv:
+  magic_header: 0x494E444F # "INDO"
+  vector_size_bytes: 64
+  zero_bridge_sync: true
+  sub_ai_offset_map:
+    syntax_flags: 18
+    morphology_flags: 19
+    phonology_flags: 20
+    aspect_flags: 21
+    register_tier: 22
+    pragmatic_flags: 23
+    confidence: 24 # float32 (24..27)
+    sub_ai_active:
+      syntax: 52
+      phonology: 53
+      pragmatic: 54
+      editorial: 55
+
+grammatical_rules:
+  enforce_nasal_assimilation: true # p->m, t->n, s->ny, k->ng
+  enforce_voice_symmetry: true     # meN- active vs di- passive
+  enforce_classifier_concord: true # orang for human, ekor for animal, buah for inanimate
+  enforce_negation_distribution: true # tidak (verbs/adj) vs bukan (nouns)
+  enforce_hyphenated_reduplication: true # buku-buku, not buku2
+
+sub_ais:
+  - id: "IndonesianSyntaxSubAI"
+    description: "Evaluates SVO constituent ordering, voice symmetry (meN- vs di-), and classifier syntax"
+    byte_sync: [18, 52]
+  - id: "IndonesianPhonologySubAI"
+    description: "Evaluates morphophonemic nasal assimilation (p/t/s/k deletion) and ber- r-dropping"
+    byte_sync: [20, 53]
+  - id: "IndonesianPragmaticSubAI"
+    description: "Classifies social deixis (Bapak/Ibu vs Kamu/Anda) and formal epistolary standards"
+    byte_sync: [22, 23, 54]
+  - id: "IndonesianEditorialSubAI"
+    description: "Audits circumfixes (ke-an/pe-an), reduplication validity, aspect particles, and confidence scoring"
+    byte_sync: [19, 21, 24, 25, 26, 27, 55]

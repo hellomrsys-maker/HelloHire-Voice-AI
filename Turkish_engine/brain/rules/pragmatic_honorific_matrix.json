@@ -1,0 +1,48 @@
+{
+  "honorific_titles": {
+    "Bey": {"gender": "masc", "position": "postpositive", "meaning": "Mr."},
+    "Hanım": {"gender": "fem", "position": "postpositive", "meaning": "Ms./Mrs."},
+    "Hocam": {"gender": "neutral", "position": "postpositive", "meaning": "Esteemed Professor / Colleague"},
+    "Efendim": {"gender": "neutral", "position": "standalone", "meaning": "Sir / Madam"}
+  },
+  "registers": {
+    "formal_business": {
+      "salutations": [
+        "Sayın {name} Bey,",
+        "Sayın {name} Hanım,",
+        "Sayın Yetkili,"
+      ],
+      "valedictions": [
+        "Saygılarımla,",
+        "İyi çalışmalar dilerim,"
+      ],
+      "pronoun": "siz",
+      "t_v_honorific": true
+    },
+    "academic": {
+      "salutations": [
+        "Değerli Hocam,",
+        "Sayın {name} Hocam,"
+      ],
+      "valedictions": [
+        "Saygılarımla ve hürmetlerimle,",
+        "Çalışmalarınızda üstün başarılar dilerim,"
+      ],
+      "pronoun": "siz",
+      "t_v_honorific": true
+    },
+    "informal": {
+      "salutations": [
+        "Sevgili {name},",
+        "Merhaba {name},"
+      ],
+      "valedictions": [
+        "Sevgiler,",
+        "Görüşmek üzere,",
+        "Kendine iyi bak,"
+      ],
+      "pronoun": "sen",
+      "t_v_honorific": false
+    }
+  }
+}

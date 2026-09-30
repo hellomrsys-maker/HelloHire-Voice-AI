@@ -1,0 +1,62 @@
+{
+  "language": "Mandarin",
+  "engine": "D:\\gra.voi\\Mandarin_engine",
+  "iso_code": "cmn",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "cmn_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "工程师设计了高并发分布式系统。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "我们已经完成了零拷贝内存同步测试。",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "cmn_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "医学研究团队发现了新的治疗机制。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "系统架构师优化了数据流管线 (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "cmn_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "人工智能模型在多语言任务中表现优异。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "项目组按时交付了核心认知模块 (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "cmn_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "科学家发表了量子计算最新研究成果。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "我们通过严格的基准测试验证了吞吐量 (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

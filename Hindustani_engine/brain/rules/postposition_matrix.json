@@ -1,0 +1,50 @@
+{
+  "postpositions": {
+    "simple": [
+      {"form": "ne", "devanagari": "ने", "case": "ergative"},
+      {"form": "ko", "devanagari": "को", "case": "dative_accusative"},
+      {"form": "se", "devanagari": "से", "case": "instrumental_ablative"},
+      {"form": "ka", "devanagari": "का", "case": "genitive_masc_sing"},
+      {"form": "ke", "devanagari": "के", "case": "genitive_masc_plur_oblique"},
+      {"form": "ki", "devanagari": "की", "case": "genitive_fem"},
+      {"form": "mein", "devanagari": "में", "case": "locative_in"},
+      {"form": "par", "devanagari": "पर", "case": "locative_on"},
+      {"form": "tak", "devanagari": "तक", "case": "terminative"}
+    ],
+    "compound": [
+      {"form": "ke paas", "devanagari": "के पास", "meaning": "near / in possession of"},
+      {"form": "ke saath", "devanagari": "के साथ", "meaning": "with / together with"},
+      {"form": "ke liye", "devanagari": "के लिए", "meaning": "for"},
+      {"form": "ke baad", "devanagari": "के बाद", "meaning": "after"},
+      {"form": "ke pehle", "devanagari": "के पहले", "meaning": "before"},
+      {"form": "ke bina", "devanagari": "के बिना", "meaning": "without"}
+    ]
+  },
+  "oblique_nominal_inflection": {
+    "masculine_marked_ending_a": {
+      "singular": "e",
+      "plural": "on",
+      "examples": [
+        {"direct": "ladka", "oblique_sg": "ladke", "oblique_pl": "ladkon"},
+        {"direct": "kamra", "oblique_sg": "kamre", "oblique_pl": "kamron"},
+        {"direct": "baccha", "oblique_sg": "bacche", "oblique_pl": "bacchon"}
+      ]
+    },
+    "masculine_unmarked_consonant": {
+      "singular": "no_change",
+      "plural": "on",
+      "examples": [
+        {"direct": "ghar", "oblique_sg": "ghar", "oblique_pl": "gharon"},
+        {"direct": "seb", "oblique_sg": "seb", "oblique_pl": "sebon"}
+      ]
+    },
+    "feminine": {
+      "singular": "no_change",
+      "plural": "on",
+      "examples": [
+        {"direct": "kitaab", "oblique_sg": "kitaab", "oblique_pl": "kitabon"},
+        {"direct": "ladki", "oblique_sg": "ladki", "oblique_pl": "ladkiyon"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,49 @@
+# Japanese Keigo Operational Rules (敬語変換・運用規則)
+
+verb_mappings:
+  食べる:
+    sonkeigo: ["召し上がる", "お召し上がりになる"]
+    kenjougo: ["いただく", "頂戴する"]
+    teineigo: ["食べます"]
+  行く:
+    sonkeigo: ["いらっしゃる", "おいでになる"]
+    kenjougo: ["伺う", "参る"]
+    teineigo: ["行きます"]
+  来る:
+    sonkeigo: ["いらっしゃる", "お見えになる", "お越しになる"]
+    kenjougo: ["伺う", "参る"]
+    teineigo: ["来ます"]
+  言う:
+    sonkeigo: ["おっしゃる"]
+    kenjougo: ["申す", "申し上げる"]
+    teineigo: ["言います"]
+  する:
+    sonkeigo: ["なさる", "される"]
+    kenjougo: ["いたす"]
+    teineigo: ["します"]
+  見る:
+    sonkeigo: ["ご覧になる"]
+    kenjougo: ["拝見する"]
+    teineigo: ["見ます"]
+  知る:
+    sonkeigo: ["ご存じだ", "ご存知です"]
+    kenjougo: ["存じる", "存じ上げる"]
+    teineigo: ["知っています"]
+
+prefixation_rules:
+  o_prefix_native:
+    target: "Yamato-kotoba (和語)"
+    examples: ["お茶", "お酒", "お手紙", "お水", "お名前", "お仕事"]
+  go_prefix_sino:
+    target: "Kango (漢語)"
+    examples: ["ご家族", "ご住所", "ご意見", "ご連絡", "ご返信", "ご案内", "ご予定"]
+
+anti_patterns:
+  double_honorific:
+    - "おっしゃられる -> おっしゃる"
+    - "ご覧になられる -> ご覧になる"
+    - "お召し上がりになられる -> 召し上がる"
+  baito_keigo:
+    - "〜のほうをお持ちしました -> 〜をお持ちしました"
+    - "千円からお預かりします -> 千円をお預かりします"
+    - "よろしかったでしょうか -> よろしいでしょうか"

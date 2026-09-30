@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Vietnamese",
+    "engine": "Vietnamese_engine",
+    "iso_codes": [
+      "vie",
+      "vi"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Vietnamese",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "vie_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Vietnamese)",
+          "How are operations (Vietnamese)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "vie_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Vietnamese)",
+          "Report readiness (Vietnamese)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Kỹ sư đã thiết kế một kiến trúc phân tán hiệu năng rất cao.",
+    "Chúng tôi đã triển khai thành công giao thức bộ nhớ đồng bộ nguyên tử.",
+    "Nhóm nghiên cứu đã công bố bài báo khoa học mang tính đột phá về AI.",
+    "Kiến trúc sư phần mềm đã tối ưu hóa luồng xử lý dữ liệu thời gian thực (using optimal hyper-parameters).",
+    "Mô hình nhận thức đánh giá ngữ cảnh đa ngôn ngữ với độ chính xác cao.",
+    "Đội ngũ phát triển đã hoàn thành tất cả các bài kiểm tra tích hợp (on multi-core architectures).",
+    "Giao diện bộ nhớ tốc độ cao đảm bảo tính nhất quán dữ liệu tức thì.",
+    "Chúng tôi đã tiến hành các thử nghiệm đo lường hiệu năng rất nghiêm ngặt (under heavy loads).",
+    "Kỹ sư đã thiết kế một kiến trúc phân tán hiệu năng rất cao.",
+    "Chúng tôi đã triển khai thành công giao thức bộ nhớ đồng bộ nguyên tử.",
+    "Nhóm nghiên cứu đã công bố bài báo khoa học mang tính đột phá về AI.",
+    "Kiến trúc sư phần mềm đã tối ưu hóa luồng xử lý dữ liệu thời gian thực (using optimal hyper-parameters).",
+    "Mô hình nhận thức đánh giá ngữ cảnh đa ngôn ngữ với độ chính xác cao.",
+    "Đội ngũ phát triển đã hoàn thành tất cả các bài kiểm tra tích hợp (on multi-core architectures).",
+    "Giao diện bộ nhớ tốc độ cao đảm bảo tính nhất quán dữ liệu tức thì.",
+    "Chúng tôi đã tiến hành các thử nghiệm đo lường hiệu năng rất nghiêm ngặt (under heavy loads).",
+    "Kỹ sư đã thiết kế một kiến trúc phân tán hiệu năng rất cao.",
+    "Chúng tôi đã triển khai thành công giao thức bộ nhớ đồng bộ nguyên tử.",
+    "Nhóm nghiên cứu đã công bố bài báo khoa học mang tính đột phá về AI.",
+    "Kiến trúc sư phần mềm đã tối ưu hóa luồng xử lý dữ liệu thời gian thực (using optimal hyper-parameters)."
+  ]
+}

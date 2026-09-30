@@ -1,0 +1,19 @@
+{
+  "anaphora_resolution_pipeline": {
+    "stages": [
+      { "stage": 1, "name": "Mention Extraction", "description": "Detect all NPs, pronouns, and named entities using POS and NER" },
+      { "stage": 2, "name": "Agreement Filtering", "description": "Prune candidate antecedents violating gender, number, animacy, or person agreement" },
+      { "stage": 3, "name": "Syntactic Binding Constraints", "description": "Enforce Chomsky's Binding Principles A, B, and C" },
+      { "stage": 4, "name": "Salience / Recency Ranking", "description": "Rank remaining antecedents via Lappin & Leass salience weights (Subject > Object > Oblique, sentence recency)" },
+      { "stage": 5, "name": "Coreference Cluster Clustering", "description": "Unify mentions into transitive equivalence classes" }
+    ],
+    "salience_weights": {
+      "current_sentence_subject": 80,
+      "existential_predicate": 70,
+      "current_sentence_direct_object": 50,
+      "indirect_object": 40,
+      "prepositional_object": 30,
+      "recency_penalty_per_sentence": -20
+    }
+  }
+}

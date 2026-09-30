@@ -1,0 +1,610 @@
+{
+  "metadata": {
+    "corpus_name": "Hindustani Conversational Dynamics & Turn-Taking Corpus",
+    "description": "Authentic conversational interaction scenes modeling dialogue delivery cadence, response latency, conversational floor management, and pragmatic alignment without voice cloning.",
+    "version": "1.0",
+    "zero_voice_cloning_certified": true
+  },
+  "dialogue_scenes": [
+    {
+      "scene_id": "scene_01_professional_mentorship",
+      "context": "A senior engineer mentoring a junior researcher on distributed architecture design.",
+      "register": "AAP",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0938\u0930, \u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u092f\u0939 \u0928\u092f\u093e \u0935\u093f\u0924\u0930\u093f\u0924 \u0906\u0930\u094d\u0915\u093f\u091f\u0947\u0915\u094d\u091a\u0930 \u0939\u092e\u093e\u0930\u0947 \u0932\u094b\u0921 \u0915\u094b \u0938\u0902\u092d\u093e\u0932 \u092a\u093e\u090f\u0917\u093e?",
+          "intent": "INQUIRY",
+          "focal_word": "\u0935\u093f\u0924\u0930\u093f\u0924 \u0906\u0930\u094d\u0915\u093f\u091f\u0947\u0915\u094d\u091a\u0930",
+          "intonation": "RISING_TERMINAL",
+          "speech_tempo": "MODERATE",
+          "post_utterance_pause_ms": 650,
+          "expected_response_latency_range_ms": [
+            500,
+            750
+          ],
+          "appropriate_reply_speech_act": "DELIBERATE_EXPLANATION",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0926\u0947\u0916\u093f\u090f... \u0938\u0948\u0926\u094d\u0927\u093e\u0902\u0924\u093f\u0915 \u0930\u0942\u092a \u0938\u0947 \u092f\u0939 \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0938\u0915\u094d\u0937\u092e \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0939\u092e\u0947\u0902 \u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0915\u0940 \u0938\u0939\u092e\u0924\u093f \u092a\u0930 \u0925\u094b\u0921\u093c\u093e \u0914\u0930 \u0927\u094d\u092f\u093e\u0928 \u0926\u0947\u0928\u093e \u0939\u094b\u0917\u093e\u0964",
+          "intent": "DELIBERATE_EXPLANATION",
+          "focal_word": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0915\u0940 \u0938\u0939\u092e\u0924\u093f",
+          "intonation": "SUSTAINED_FALLING",
+          "speech_tempo": "ANDANTE_DELIBERATE",
+          "post_utterance_pause_ms": 700,
+          "expected_response_latency_range_ms": [
+            550,
+            800
+          ],
+          "appropriate_reply_speech_act": "CLARIFICATION_INQUIRY",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u091c\u0940 \u092c\u093f\u0932\u094d\u0915\u0941\u0932\u0964 \u0915\u094d\u092f\u093e \u0939\u092e \u0907\u0938\u0915\u0947 \u0932\u093f\u090f \u0915\u094b\u0908 \u0928\u092f\u093e \u092c\u0947\u0902\u091a\u092e\u093e\u0930\u094d\u0915 \u091f\u0947\u0938\u094d\u091f \u091a\u0932\u093e \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+          "intent": "COLLABORATIVE_PROPOSAL",
+          "focal_word": "\u092c\u0947\u0902\u091a\u092e\u093e\u0930\u094d\u0915 \u091f\u0947\u0938\u094d\u091f",
+          "intonation": "RISING_TERMINAL",
+          "speech_tempo": "MODERATE",
+          "post_utterance_pause_ms": 500,
+          "expected_response_latency_range_ms": [
+            400,
+            600
+          ],
+          "appropriate_reply_speech_act": "AFFIRMATIVE_ACTION",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0939\u093e\u0901, \u0915\u0932 \u0938\u0941\u092c\u0939 \u091f\u0940\u092e \u0915\u0947 \u0938\u093e\u0925 \u092e\u093f\u0932\u0915\u0930 \u0939\u092e \u0907\u0938 \u092a\u0930 \u0915\u093e\u092e \u0936\u0941\u0930\u0942 \u0915\u0930\u0947\u0902\u0917\u0947\u0964",
+          "intent": "AFFIRMATIVE_CLOSURE",
+          "focal_word": "\u0915\u0932 \u0938\u0941\u092c\u0939",
+          "intonation": "FALLING_TERMINAL",
+          "speech_tempo": "MODERATE",
+          "post_utterance_pause_ms": 600,
+          "expected_response_latency_range_ms": [
+            450,
+            650
+          ],
+          "appropriate_reply_speech_act": "ACKNOWLEDGMENT",
+          "appropriate_register": "AAP"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_warm_family_exchange",
+      "context": "Two family members discussing an evening gathering at home.",
+      "register": "TUM",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0906\u091c \u0936\u093e\u092e \u0915\u094b \u0938\u092c \u0932\u094b\u0917 \u0918\u0930 \u0906 \u0930\u0939\u0947 \u0939\u0948\u0902, \u0924\u0941\u092e\u0928\u0947 \u0924\u0948\u092f\u093e\u0930\u0940 \u092a\u0942\u0930\u0940 \u0915\u0930 \u0932\u0940?",
+          "intent": "INQUIRY",
+          "focal_word": "\u0924\u0948\u092f\u093e\u0930\u0940",
+          "intonation": "RISING_TERMINAL",
+          "speech_tempo": "FLOWING",
+          "post_utterance_pause_ms": 400,
+          "expected_response_latency_range_ms": [
+            300,
+            500
+          ],
+          "appropriate_reply_speech_act": "REASSURANCE",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0939\u093e\u0901, \u092c\u093f\u0932\u094d\u0915\u0941\u0932\u0964 \u092e\u0948\u0902\u0928\u0947 \u0916\u093e\u0928\u093e \u092d\u0940 \u092c\u0928\u093e \u0932\u093f\u092f\u093e \u0939\u0948 \u0914\u0930 \u092c\u0948\u0920\u0915 \u092d\u0940 \u0938\u093e\u092b \u0915\u0930 \u0926\u0940 \u0939\u0948\u0964",
+          "intent": "REASSURANCE",
+          "focal_word": "\u092c\u093f\u0932\u094d\u0915\u0941\u0932",
+          "intonation": "SUSTAINED_FALLING",
+          "speech_tempo": "MODERATE_FLOWING",
+          "post_utterance_pause_ms": 450,
+          "expected_response_latency_range_ms": [
+            350,
+            550
+          ],
+          "appropriate_reply_speech_act": "APPRECIATION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0905\u0930\u0947 \u0935\u093e\u0939, \u092c\u0939\u0941\u0924 \u092c\u0922\u093c\u093f\u092f\u093e! \u0905\u0917\u0930 \u0915\u094b\u0908 \u0914\u0930 \u092e\u0926\u0926 \u091a\u093e\u0939\u093f\u090f \u0924\u094b \u092e\u0941\u091d\u0947 \u091c\u0930\u0942\u0930 \u092c\u0924\u093e\u0928\u093e\u0964",
+          "intent": "APPRECIATION_OFFER",
+          "focal_word": "\u092c\u0939\u0941\u0924 \u092c\u0922\u093c\u093f\u092f\u093e",
+          "intonation": "WARM_FALLING",
+          "speech_tempo": "FLOWING",
+          "post_utterance_pause_ms": 500,
+          "expected_response_latency_range_ms": [
+            300,
+            500
+          ],
+          "appropriate_reply_speech_act": "ACKNOWLEDGMENT",
+          "appropriate_register": "TUM"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_peer_problem_solving",
+      "context": "Two software developers debugging an asynchronous memory race condition.",
+      "register": "TUM",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u092f\u093e\u0930, \u092f\u0939 \u0925\u094d\u0930\u0947\u0921 \u0924\u094b \u092c\u093e\u0930-\u092c\u093e\u0930 \u0915\u094d\u0930\u0948\u0936 \u0939\u094b \u0930\u0939\u093e \u0939\u0948, \u0915\u0941\u091b \u0938\u092e\u091d \u0906 \u0930\u0939\u093e \u0939\u0948?",
+          "intent": "URGENT_INQUIRY",
+          "focal_word": "\u092c\u093e\u0930-\u092c\u093e\u0930 \u0915\u094d\u0930\u0948\u0936",
+          "intonation": "SHARP_RISING",
+          "speech_tempo": "ALLEGRO_FAST",
+          "post_utterance_pause_ms": 300,
+          "expected_response_latency_range_ms": [
+            200,
+            380
+          ],
+          "appropriate_reply_speech_act": "DIAGNOSIS",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0930\u0941\u0915, \u092e\u0941\u091d\u0947 \u0932\u0949\u0917\u094d\u0938 \u0926\u0947\u0916\u0928\u0947 \u0926\u0947... \u092f\u0939\u093e\u0901 \u0932\u0949\u0915 \u0930\u093f\u0932\u0940\u091c\u093c \u0939\u094b\u0928\u0947 \u0938\u0947 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0926\u0942\u0938\u0930\u093e \u0925\u094d\u0930\u0947\u0921 \u0930\u0940\u0921 \u0915\u0930 \u0930\u0939\u093e \u0939\u0948\u0964",
+          "intent": "DIAGNOSIS_FLOOR_HOLD",
+          "focal_word": "\u0932\u0949\u0915 \u0930\u093f\u0932\u0940\u091c\u093c",
+          "intonation": "SUSPENSIVE_MID",
+          "speech_tempo": "FOCUSED",
+          "post_utterance_pause_ms": 350,
+          "expected_response_latency_range_ms": [
+            250,
+            420
+          ],
+          "appropriate_reply_speech_act": "SOLUTION_PROPOSAL",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0938\u0939\u0940 \u092a\u0915\u0921\u093c\u0947 \u0939\u094b! \u090f\u091f\u0949\u092e\u093f\u0915 \u092e\u094d\u092f\u0942\u091f\u093f\u0915\u094d\u0938 \u0932\u0917\u093e \u0926\u0947\u0924\u0947 \u0939\u0948\u0902, \u0924\u0941\u0930\u0902\u0924 \u0920\u0940\u0915 \u0939\u094b \u091c\u093e\u090f\u0917\u093e\u0964",
+          "intent": "EUREKA_AGREEMENT",
+          "focal_word": "\u090f\u091f\u0949\u092e\u093f\u0915 \u092e\u094d\u092f\u0942\u091f\u093f\u0915\u094d\u0938",
+          "intonation": "EMPHATIC_FALLING",
+          "speech_tempo": "ALLEGRO",
+          "post_utterance_pause_ms": 300,
+          "expected_response_latency_range_ms": [
+            200,
+            350
+          ],
+          "appropriate_reply_speech_act": "EXECUTION_CONSENT",
+          "appropriate_register": "TUM"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04_deep_reflective_discourse",
+      "context": "Philosophical discussion between two scholars regarding artificial general intelligence and human cognition.",
+      "register": "AAP",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0915\u094d\u092f\u093e \u0906\u092a\u0915\u094b \u0932\u0917\u0924\u093e \u0939\u0948 \u0915\u093f \u092e\u0936\u0940\u0928\u0947\u0902 \u0935\u093e\u0938\u094d\u0924\u0935 \u092e\u0947\u0902 \u092e\u093e\u0928\u0935 \u091a\u0947\u0924\u0928\u093e \u0914\u0930 \u0938\u0902\u0935\u0947\u0926\u0928\u0936\u0940\u0932\u0924\u093e \u0915\u094b \u0915\u092d\u0940 \u0938\u092e\u091d \u092a\u093e\u090f\u0902\u0917\u0940?",
+          "intent": "PROFOUND_INQUIRY",
+          "focal_word": "\u092e\u093e\u0928\u0935 \u091a\u0947\u0924\u0928\u093e",
+          "intonation": "SLOW_RISING",
+          "speech_tempo": "LENTO_SLOW",
+          "post_utterance_pause_ms": 900,
+          "expected_response_latency_range_ms": [
+            800,
+            1300
+          ],
+          "appropriate_reply_speech_act": "MEDITATIVE_ANALYSIS",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0938\u091a \u0915\u0939\u0942\u0901 \u0924\u094b... \u092d\u093e\u0937\u093e \u0915\u0947 \u0928\u093f\u092f\u092e\u094b\u0902 \u0915\u094b \u0938\u092e\u091d\u0928\u093e \u090f\u0915 \u092c\u093e\u0924 \u0939\u0948, \u0932\u0947\u0915\u093f\u0928 \u0915\u093f\u0938\u0940 \u0905\u0928\u0941\u092d\u0935 \u0915\u0940 \u0905\u0928\u0941\u092d\u0942\u0924\u093f \u0939\u094b\u0928\u093e \u092c\u093f\u0932\u094d\u0915\u0941\u0932 \u0905\u0932\u0917 \u0930\u0939\u0938\u094d\u092f \u0939\u0948\u0964",
+          "intent": "MEDITATIVE_ANALYSIS",
+          "focal_word": "\u0905\u0928\u0941\u092d\u0942\u0924\u093f",
+          "intonation": "PROFOUND_FALLING",
+          "speech_tempo": "LENTO_DELIBERATE",
+          "post_utterance_pause_ms": 950,
+          "expected_response_latency_range_ms": [
+            750,
+            1200
+          ],
+          "appropriate_reply_speech_act": "RESONANCE_EXPANSION",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0906\u092a\u0928\u0947 \u092c\u0939\u0941\u0924 \u0917\u0939\u0930\u0940 \u092c\u093e\u0924 \u0915\u0939\u0940\u0964 \u092f\u0939\u0940 \u0915\u093e\u0930\u0923 \u0939\u0948 \u0915\u093f \u0939\u092e\u0947\u0902 \u0915\u0947\u0935\u0932 \u0917\u0923\u0928\u093e \u0928\u0939\u0940\u0902, \u092c\u0932\u094d\u0915\u093f \u092e\u093e\u0928\u0935\u0940\u092f \u0938\u0902\u0935\u0947\u0926\u0928\u093e\u0913\u0902 \u0915\u094b \u092d\u0940 \u0938\u092e\u091d\u0928\u093e \u0939\u094b\u0917\u093e\u0964",
+          "intent": "RESONANCE_CLOSURE",
+          "focal_word": "\u092e\u093e\u0928\u0935\u0940\u092f \u0938\u0902\u0935\u0947\u0926\u0928\u093e\u0913\u0902",
+          "intonation": "CALM_FALLING",
+          "speech_tempo": "SLOW_MEASURED",
+          "post_utterance_pause_ms": 800,
+          "expected_response_latency_range_ms": [
+            600,
+            950
+          ],
+          "appropriate_reply_speech_act": "AFFIRMATION",
+          "appropriate_register": "AAP"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05_critical_debate",
+      "context": "Constructive academic debate regarding trade-offs in low-latency vs high-throughput algorithms.",
+      "register": "AAP",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0932\u0947\u0915\u093f\u0928 \u0905\u0917\u0930 \u0939\u092e \u0925\u094d\u0930\u0942\u092a\u0941\u091f \u092c\u0922\u093c\u093e\u090f\u0902\u0917\u0947 \u0924\u094b \u0932\u0947\u091f\u0947\u0902\u0938\u0940 \u092a\u0930 \u0938\u092e\u091d\u094c\u0924\u093e \u0915\u0930\u0928\u093e \u0939\u0940 \u092a\u0921\u093c\u0947\u0917\u093e, \u0906\u092a \u0907\u0938\u0938\u0947 \u0915\u0948\u0938\u0947 \u092c\u091a \u0938\u0915\u0924\u0947 \u0939\u0948\u0902?",
+          "intent": "CHALLENGE_INQUIRY",
+          "focal_word": "\u0938\u092e\u091d\u094c\u0924\u093e",
+          "intonation": "FIRM_RISING",
+          "speech_tempo": "MODERATE_FIRM",
+          "post_utterance_pause_ms": 400,
+          "expected_response_latency_range_ms": [
+            300,
+            480
+          ],
+          "appropriate_reply_speech_act": "COUNTER_ARGUMENT",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0906\u092a\u0915\u093e \u0938\u094b\u091a\u0928\u093e \u0938\u0939\u0940 \u0939\u0948, \u092e\u0917\u0930 \u0936\u0942\u0928\u094d\u092f-\u0915\u0949\u092a\u0940 \u092e\u0947\u092e\u094b\u0930\u0940 \u0914\u0930 \u0939\u093e\u0930\u094d\u0921\u0935\u0947\u092f\u0930-\u0924\u094d\u0935\u0930\u0923 \u0938\u0947 \u0939\u092e \u0926\u094b\u0928\u094b\u0902 \u0915\u093e \u0938\u0902\u0924\u0941\u0932\u0928 \u0938\u093e\u0927 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964",
+          "intent": "HEDGED_COUNTER_ARGUMENT",
+          "focal_word": "\u0938\u0902\u0924\u0941\u0932\u0928",
+          "intonation": "RESOLUTE_FALLING",
+          "speech_tempo": "CONFIDENT_MODERATE",
+          "post_utterance_pause_ms": 450,
+          "expected_response_latency_range_ms": [
+            350,
+            520
+          ],
+          "appropriate_reply_speech_act": "CONCESSION_SYNTHESIS",
+          "appropriate_register": "AAP"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_06_cinematic_dialogue",
+      "context": "Conversational dialogue interaction analysis: Dramatic interpersonal turn-taking, pensive hesitation pauses, and honorific shifts.",
+      "register": "AAP_TUM_HYBRID",
+      "turns": [
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0924\u0941\u092e \u0907\u0924\u0928\u0947 \u0938\u093e\u0932\u094b\u0902 \u092c\u093e\u0926 \u0932\u094c\u091f\u0947 \u0939\u094b, \u0915\u094d\u092f\u093e \u0924\u0941\u092e\u0928\u0947 \u090f\u0915 \u092c\u093e\u0930 \u092d\u0940 \u092e\u0947\u0930\u0940 \u092f\u093e\u0926 \u0928\u0939\u0940\u0902 \u0915\u0940?",
+          "intent": "EMOTIONAL_INQUIRY",
+          "focal_word": "\u0907\u0924\u0928\u0947 \u0938\u093e\u0932\u094b\u0902 \u092c\u093e\u0926",
+          "intonation": "INTENSE_RISING",
+          "speech_tempo": "ANDANTE_EMOTIVE",
+          "post_utterance_pause_ms": 950,
+          "expected_response_latency_range_ms": [
+            850,
+            1350
+          ],
+          "appropriate_reply_speech_act": "PENSIVE_CONFESSION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u092f\u093e\u0926 \u0924\u094b \u0909\u0928\u094d\u0939\u0947\u0902 \u0915\u093f\u092f\u093e \u091c\u093e\u0924\u093e \u0939\u0948 \u091c\u093f\u0928\u094d\u0939\u0947\u0902 \u0939\u092e \u092d\u0942\u0932 \u091c\u093e\u0924\u0947 \u0939\u0948\u0902... \u0914\u0930 \u0924\u0941\u092e\u094d\u0939\u0947\u0902 \u092d\u0942\u0932\u0928\u0947 \u0915\u0940 \u0924\u093e\u0915\u0924 \u092e\u0941\u091d\u092e\u0947\u0902 \u0915\u092d\u0940 \u0928\u0939\u0940\u0902 \u0925\u0940\u0964",
+          "intent": "PENSIVE_CONFESSION",
+          "focal_word": "\u092d\u0942\u0932\u0928\u0947 \u0915\u0940 \u0924\u093e\u0915\u0924",
+          "intonation": "MELANCHOLIC_FALLING",
+          "speech_tempo": "LENTO_REFLECTIVE",
+          "post_utterance_pause_ms": 1100,
+          "expected_response_latency_range_ms": [
+            900,
+            1400
+          ],
+          "appropriate_reply_speech_act": "EMOTIONAL_CONCESSION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "\u0924\u094b \u092b\u093f\u0930 \u0905\u092c \u0915\u094d\u092f\u094b\u0902 \u0906\u090f \u0939\u094b? \u091c\u092c \u0938\u092c \u0915\u0941\u091b \u092c\u093f\u0916\u0930 \u091a\u0941\u0915\u093e \u0939\u0948, \u0924\u092c \u0915\u094d\u092f\u094b\u0902?",
+          "intent": "DESPAIR_CHALLENGE",
+          "focal_word": "\u0924\u092c \u0915\u094d\u092f\u094b\u0902",
+          "intonation": "SHARP_FALLING",
+          "speech_tempo": "MODERATE_TENSE",
+          "post_utterance_pause_ms": 800,
+          "expected_response_latency_range_ms": [
+            700,
+            1100
+          ],
+          "appropriate_reply_speech_act": "RESIGNED_ACCEPTANCE",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0936\u093e\u092f\u0926 \u092f\u0939 \u0926\u0947\u0916\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f... \u0915\u093f \u0915\u094d\u092f\u093e \u0938\u091a \u092e\u0947\u0902 \u0938\u092c \u0915\u0941\u091b \u0916\u0924\u094d\u092e \u0939\u094b \u091a\u0941\u0915\u093e \u0939\u0948, \u092f\u093e \u0905\u092c \u092d\u0940 \u0915\u0941\u091b \u092c\u093e\u0915\u0940 \u0939\u0948\u0964",
+          "intent": "RESIGNED_ACCEPTANCE",
+          "focal_word": "\u0915\u0941\u091b \u092c\u093e\u0915\u0940 \u0939\u0948",
+          "intonation": "WHISPER_FALLING",
+          "speech_tempo": "LENTO_WHISPER",
+          "post_utterance_pause_ms": 1200,
+          "expected_response_latency_range_ms": [
+            1000,
+            1500
+          ],
+          "appropriate_reply_speech_act": "SILENT_PAUSE_CLOSURE",
+          "appropriate_register": "TUM"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_07_cinematic_dialogue",
+      "context": "Conversational dialogue interaction analysis: High-stakes dramatic and romantic dialogue delivery, inter-character turn-taking latency, solemn promises, and honorific alignment.",
+      "register": "TUM",
+      "turns": [
+        {
+          "speaker": "Character_Pooja",
+          "text": "\u092e\u094b\u0939\u092c\u094d\u092c\u0924 \u0915\u0947 \u0916\u093e\u0924\u093f\u0930 \u092e\u0948\u0902 \u0915\u0941\u091b \u092d\u0940 \u0915\u0930 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901, \u0905\u092a\u0928\u0940 \u091c\u093e\u0928 \u092d\u0940 \u0926\u0947 \u0938\u0915\u0924\u0940 \u0939\u0942\u0901!",
+          "intent": "EMOTIONAL_DECLARATION",
+          "focal_word": "\u092e\u094b\u0939\u092c\u094d\u092c\u0924 \u0915\u0947 \u0916\u093e\u0924\u093f\u0930",
+          "intonation": "INTENSE_RISING",
+          "speech_tempo": "FLOWING",
+          "post_utterance_pause_ms": 600,
+          "expected_response_latency_range_ms": [
+            450,
+            750
+          ],
+          "appropriate_reply_speech_act": "DELIBERATE_EXPLANATION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Character_Krishna",
+          "text": "\u091c\u093e\u0928 \u0926\u0947\u0928\u093e \u0906\u0938\u093e\u0928 \u0939\u0948 \u092a\u0942\u091c\u093e... \u092e\u0941\u0936\u094d\u0915\u093f\u0932 \u0924\u094b \u092e\u094b\u0939\u092c\u094d\u092c\u0924 \u0915\u0947 \u0938\u093e\u0925 \u091c\u093c\u093f\u0902\u0926\u093e \u0930\u0939\u0928\u093e \u0914\u0930 \u0907\u092e\u094d\u0924\u093f\u0939\u093e\u0928 \u0938\u0947 \u0917\u0941\u091c\u093c\u0930\u0928\u093e \u0939\u094b\u0924\u093e \u0939\u0948\u0964",
+          "intent": "DELIBERATE_EXPLANATION",
+          "focal_word": "\u091c\u093c\u093f\u0902\u0926\u093e \u0930\u0939\u0928\u093e",
+          "intonation": "SUSTAINED_FALLING",
+          "speech_tempo": "ANDANTE_DELIBERATE",
+          "post_utterance_pause_ms": 850,
+          "expected_response_latency_range_ms": [
+            650,
+            1050
+          ],
+          "appropriate_reply_speech_act": "RESOLUTE_AFFIRMATION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Character_Pooja",
+          "text": "\u0905\u0917\u0930 \u0907\u092e\u094d\u0924\u093f\u0939\u093e\u0928 \u0939\u0940 \u092e\u094b\u0939\u092c\u094d\u092c\u0924 \u0915\u0940 \u092a\u0939\u091a\u093e\u0928 \u0939\u0948, \u0924\u094b \u092e\u0948\u0902 \u0939\u0930 \u0907\u092e\u094d\u0924\u093f\u0939\u093e\u0928 \u0938\u0947 \u0917\u0941\u091c\u093c\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0924\u0948\u092f\u093e\u0930 \u0939\u0942\u0901\u0964",
+          "intent": "AFFIRMATIVE_ACTION",
+          "focal_word": "\u0939\u0930 \u0907\u092e\u094d\u0924\u093f\u0939\u093e\u0928",
+          "intonation": "RESOLUTE_RISING",
+          "speech_tempo": "MODERATE_FIRM",
+          "post_utterance_pause_ms": 700,
+          "expected_response_latency_range_ms": [
+            550,
+            900
+          ],
+          "appropriate_reply_speech_act": "AFFIRMATIVE_CLOSURE",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Character_Krishna",
+          "text": "\u0924\u094b \u092b\u093f\u0930 \u0935\u093e\u0926\u093e \u0915\u0930\u094b... \u0939\u093e\u0932\u093e\u0924 \u091a\u093e\u0939\u0947 \u091c\u094b \u092d\u0940 \u0939\u094b\u0902, \u0924\u0941\u092e \u0915\u092d\u0940 \u0905\u092a\u0928\u093e \u0939\u094c\u0938\u0932\u093e \u0928\u0939\u0940\u0902 \u0939\u093e\u0930\u094b\u0917\u0940\u0964",
+          "intent": "AFFIRMATIVE_CLOSURE",
+          "focal_word": "\u0935\u093e\u0926\u093e \u0915\u0930\u094b",
+          "intonation": "CALM_FALLING",
+          "speech_tempo": "ANDANTE_DELIBERATE",
+          "post_utterance_pause_ms": 900,
+          "expected_response_latency_range_ms": [
+            750,
+            1200
+          ],
+          "appropriate_reply_speech_act": "ACKNOWLEDGMENT",
+          "appropriate_register": "TUM"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_08_cinematic_dialogue",
+      "context": "Conversational dialogue interaction analysis: Iconic deliberate dialogue delivery, confrontational turn-taking latency, heavy dramatic pauses, and sharp register shifts between TU and TUM.",
+      "register": "TU_TUM_HYBRID",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0928\u093e\u092e: \u0935\u093f\u091c\u092f \u0926\u0940\u0928\u093e\u0928\u093e\u0925 \u091a\u094c\u0939\u093e\u0928... \u092a\u0942\u0930\u093e \u0928\u093e\u092e\u0964 \u092c\u093e\u092a \u0915\u093e \u0928\u093e\u092e: \u0926\u0940\u0928\u093e\u0928\u093e\u0925 \u091a\u094c\u0939\u093e\u0928... \u0917\u093e\u0901\u0935: \u092e\u093e\u0902\u0921\u0935\u093e\u0964 \u0909\u092e\u094d\u0930: \u091b\u0924\u094d\u0924\u0940\u0938 \u0938\u093e\u0932 \u0928\u094c \u092e\u0939\u0940\u0928\u093e \u0906\u0920 \u0926\u093f\u0928\u0964",
+          "intent": "IDENTITY_PROCLAMATION",
+          "focal_word": "\u0926\u0940\u0928\u093e\u0928\u093e\u0925 \u091a\u094c\u0939\u093e\u0928",
+          "intonation": "GRAVE_SUSTAINED",
+          "speech_tempo": "LENTO_DELIBERATE",
+          "post_utterance_pause_ms": 1200,
+          "expected_response_latency_range_ms": [
+            1000,
+            1600
+          ],
+          "appropriate_reply_speech_act": "MEDITATIVE_ANALYSIS",
+          "appropriate_register": "AAP"
+        },
+        {
+          "speaker": "Character_Antagonist",
+          "text": "\u0924\u0942 \u0915\u094d\u092f\u093e \u0938\u094b\u091a\u0947\u0917\u093e \u0930\u0947... \u091c\u092c \u0924\u0915 \u0924\u0942 \u0938\u094b\u091a\u0947\u0917\u093e, \u0924\u092c \u0924\u0915 \u0916\u0947\u0932 \u0916\u0924\u094d\u092e \u0939\u094b \u091a\u0941\u0915\u093e \u0939\u094b\u0917\u093e\u0964",
+          "intent": "CHALLENGE_INQUIRY",
+          "focal_word": "\u0916\u0947\u0932 \u0916\u0924\u094d\u092e",
+          "intonation": "AGGRESSIVE_RISING",
+          "speech_tempo": "ALLEGRO_FAST",
+          "post_utterance_pause_ms": 350,
+          "expected_response_latency_range_ms": [
+            250,
+            450
+          ],
+          "appropriate_reply_speech_act": "COUNTER_ARGUMENT",
+          "appropriate_register": "TU"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0938\u0935\u093e\u0932 \u092f\u0939 \u0928\u0939\u0940\u0902 \u0939\u0948 \u0915\u093f \u0915\u094c\u0928 \u091c\u0940\u0924\u0947\u0917\u093e... \u0938\u0935\u093e\u0932 \u092f\u0939 \u0939\u0948 \u0915\u093f \u0915\u094c\u0928 \u092c\u091a\u0947\u0917\u093e\u0964",
+          "intent": "HEDGED_COUNTER_ARGUMENT",
+          "focal_word": "\u0915\u094c\u0928 \u092c\u091a\u0947\u0917\u093e",
+          "intonation": "RESOLUTE_FALLING",
+          "speech_tempo": "ANDANTE_DELIBERATE",
+          "post_utterance_pause_ms": 900,
+          "expected_response_latency_range_ms": [
+            750,
+            1200
+          ],
+          "appropriate_reply_speech_act": "RESIGNED_ACCEPTANCE",
+          "appropriate_register": "TU"
+        },
+        {
+          "speaker": "Character_Kaali",
+          "text": "\u0935\u093f\u091c\u092f, \u0924\u0941\u092e \u0939\u092e\u0947\u0936\u093e \u0907\u0924\u0928\u0947 \u091a\u0941\u092a \u0915\u094d\u092f\u094b\u0902 \u0930\u0939\u0924\u0947 \u0939\u094b? \u0915\u094d\u092f\u093e \u0924\u0941\u092e\u094d\u0939\u093e\u0930\u0947 \u0926\u093f\u0932 \u092e\u0947\u0902 \u0915\u094b\u0908 \u0926\u0930\u094d\u0926 \u0928\u0939\u0940\u0902?",
+          "intent": "EMOTIONAL_INQUIRY",
+          "focal_word": "\u0907\u0924\u0928\u0947 \u091a\u0941\u092a",
+          "intonation": "TENDER_RISING",
+          "speech_tempo": "FLOWING",
+          "post_utterance_pause_ms": 650,
+          "expected_response_latency_range_ms": [
+            500,
+            850
+          ],
+          "appropriate_reply_speech_act": "PENSIVE_CONFESSION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "\u0926\u0930\u094d\u0926 \u0924\u094b \u0906\u0926\u0924 \u092c\u0928 \u091a\u0941\u0915\u093e \u0939\u0948 \u0915\u093e\u0932\u0940... \u0905\u092c \u0924\u094b \u092c\u0938 \u0909\u0938 \u092e\u0902\u091c\u093f\u0932 \u0915\u093e \u0907\u0902\u0924\u091c\u093e\u0930 \u0939\u0948 \u091c\u094b \u092e\u0947\u0930\u0947 \u092a\u093f\u0924\u093e \u0928\u0947 \u0926\u0947\u0916\u0940 \u0925\u0940\u0964",
+          "intent": "PENSIVE_CONFESSION",
+          "focal_word": "\u092e\u0902\u091c\u093f\u0932 \u0915\u093e \u0907\u0902\u0924\u091c\u093e\u0930",
+          "intonation": "MELANCHOLIC_FALLING",
+          "speech_tempo": "LENTO_REFLECTIVE",
+          "post_utterance_pause_ms": 1100,
+          "expected_response_latency_range_ms": [
+            900,
+            1400
+          ],
+          "appropriate_reply_speech_act": "RESONANCE_CLOSURE",
+          "appropriate_register": "TUM"
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_09_visual_cinematic_imaging",
+      "context": "Non-verbal interaction analysis: Strictly non-verbal visual communication: eye gaze aversion, bodily weight shift over study desk, furrowed brow concentration, and physical floor-holding silence (1150ms) without dialogue fabrication.",
+      "visual_frames_observed": [
+        {
+          "interval_id": 1,
+          "timestamp": "15:00",
+          "character_posture": "Female lead in social gathering environment, soft smile, relaxed chest posture, head slightly inclined towards interlocutors.",
+          "eye_gaze": "Warm, receptive social eye contact.",
+          "communicative_state": "RECEPTIVE_LISTENING_FLOOR_YIELDING",
+          "facial_tension": "Low, open, relaxed."
+        },
+        {
+          "interval_id": 2,
+          "timestamp": "45:00",
+          "character_posture": "Male lead standing close outdoors in Ooty landscape, both hands cradling female lead's face/jaw; female lead standing attentive in profile.",
+          "eye_gaze": "Direct locked eye gaze conveying intense emotional search and mounting concern.",
+          "communicative_state": "TACTILE_FLOOR_ASSERTION_URGENCY",
+          "facial_tension": "Medium-high tactile proximity; physical floor holding by male lead seeking reassurance."
+        },
+        {
+          "interval_id": 3,
+          "timestamp": "1:15:00",
+          "character_posture": "Extreme close-up of male lead's face; furrowed brow, trembling facial expression, tearful eyes; interlocutor positioned in blurred background.",
+          "eye_gaze": "Moist, guilty, downward-to-direct gaze shift signaling deep remorse.",
+          "communicative_state": "VULNERABLE_CONFESSIONARY_FLOOR_HOLDING",
+          "facial_tension": "High facial and vocal muscle constriction, physical vulnerability."
+        },
+        {
+          "interval_id": 4,
+          "timestamp": "1:45:00",
+          "character_posture": "Exterior cottage architecture; male and female characters locked in close physical embrace against a wooden exterior wall near stairs.",
+          "eye_gaze": "Concealed/averted gaze embedded in physical embrace.",
+          "communicative_state": "DESPERATE_PHYSICAL_DEFENSE_CONTAINMENT",
+          "facial_tension": "High muscular rigidity, protective physical containment."
+        },
+        {
+          "interval_id": 5,
+          "timestamp": "2:15:00",
+          "character_posture": "Misty supernatural forest sequence; female lead in white outfit, hunched slightly forward, body angled defensively amid bare trees.",
+          "eye_gaze": "Sharp, hyper-vigilant downward/forward gaze scanning environment.",
+          "communicative_state": "HYPER_VIGILANT_SURVIVAL_FLOOR_HOLDING",
+          "facial_tension": "Extreme physical tension, crouched survival stance, elevated physiological response."
+        }
+      ],
+      "register": "AAP_TUM_HYBRID",
+      "turns": [
+        {
+          "speaker": "Interval_1_Sanjana",
+          "text": "\u092f\u0939\u093e\u0901 \u0915\u093e \u092e\u094c\u0938\u092e \u0915\u093f\u0924\u0928\u093e \u0936\u093e\u0902\u0924 \u0939\u0948, \u0932\u0917\u0924\u093e \u0939\u0948 \u091c\u0948\u0938\u0947 \u0936\u0939\u0930 \u0915\u0940 \u0938\u093e\u0930\u0940 \u092c\u0947\u091a\u0948\u0928\u0940 \u092a\u0940\u091b\u0947 \u091b\u0942\u091f \u0917\u0908 \u0939\u094b\u0964",
+          "intent": "REASSURANCE",
+          "focal_word": "\u0936\u093e\u0902\u0924",
+          "intonation": "CALM_FALLING",
+          "speech_tempo": "FLOWING",
+          "post_utterance_pause_ms": 650,
+          "expected_response_latency_range_ms": [
+            500,
+            800
+          ],
+          "appropriate_reply_speech_act": "ACKNOWLEDGMENT",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Interval_2_Aditya",
+          "text": "\u0938\u0902\u091c\u0928\u093e, \u0924\u0941\u092e \u092e\u0947\u0930\u0940 \u0906\u0901\u0916\u094b\u0902 \u092e\u0947\u0902 \u0926\u0947\u0916\u094b... \u092e\u0948\u0902 \u0924\u0941\u092e\u094d\u0939\u0947\u0902 \u0915\u093f\u0938\u0940 \u092d\u0940 \u0939\u093e\u0932 \u092e\u0947\u0902 \u0916\u094b\u0928\u093e \u0928\u0939\u0940\u0902 \u091a\u093e\u0939\u0924\u093e!",
+          "intent": "EMOTIONAL_DECLARATION",
+          "focal_word": "\u0906\u0901\u0916\u094b\u0902 \u092e\u0947\u0902 \u0926\u0947\u0916\u094b",
+          "intonation": "INTENSE_RISING",
+          "speech_tempo": "ANDANTE_EMOTIVE",
+          "post_utterance_pause_ms": 750,
+          "expected_response_latency_range_ms": [
+            600,
+            950
+          ],
+          "appropriate_reply_speech_act": "REASSURANCE",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Interval_3_Aditya_Confession",
+          "text": "\u0938\u0902\u091c\u0928\u093e... \u092e\u0941\u091d\u0938\u0947 \u092c\u0939\u0941\u0924 \u092c\u0921\u093c\u0940 \u0916\u0924\u093e \u0939\u0941\u0908 \u0939\u0948, \u091c\u094b \u0938\u091a \u092e\u0941\u091d\u0947 \u0924\u0941\u092e\u0938\u0947 \u092a\u0939\u0932\u0947 \u0939\u0940 \u0915\u0939 \u0926\u0947\u0928\u093e \u091a\u093e\u0939\u093f\u090f \u0925\u093e\u0964",
+          "intent": "PENSIVE_CONFESSION",
+          "focal_word": "\u092c\u0921\u093c\u0940 \u0916\u0924\u093e",
+          "intonation": "MELANCHOLIC_FALLING",
+          "speech_tempo": "LENTO_REFLECTIVE",
+          "post_utterance_pause_ms": 1250,
+          "expected_response_latency_range_ms": [
+            1000,
+            1550
+          ],
+          "appropriate_reply_speech_act": "EMOTIONAL_CONCESSION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Interval_4_Sanjana_Defense",
+          "text": "\u0906\u0926\u093f\u0924\u094d\u092f, \u0905\u0902\u0926\u0930 \u091a\u0932\u094b! \u091c\u092c \u0924\u0915 \u0939\u092e \u0938\u093e\u0925 \u0939\u0948\u0902, \u0915\u094b\u0908 \u092d\u0940 \u0938\u093e\u092f\u093e \u0939\u092e\u0947\u0902 \u0928\u0941\u0915\u0938\u093e\u0928 \u0928\u0939\u0940\u0902 \u092a\u0939\u0941\u0901\u091a\u093e \u0938\u0915\u0924\u093e\u0964",
+          "intent": "AFFIRMATIVE_ACTION",
+          "focal_word": "\u0905\u0902\u0926\u0930 \u091a\u0932\u094b",
+          "intonation": "URGENT_RISING",
+          "speech_tempo": "ALLEGRO_FAST",
+          "post_utterance_pause_ms": 400,
+          "expected_response_latency_range_ms": [
+            250,
+            480
+          ],
+          "appropriate_reply_speech_act": "AFFIRMATIVE_ACTION",
+          "appropriate_register": "TUM"
+        },
+        {
+          "speaker": "Interval_5_Sanjana_Climax",
+          "text": "\u091a\u093e\u0939\u0947 \u0915\u0941\u091b \u092d\u0940 \u0939\u094b \u091c\u093e\u090f... \u092e\u0948\u0902 \u0905\u092a\u0928\u0947 \u092a\u0924\u093f \u0915\u0940 \u091c\u093c\u093f\u0902\u0926\u0917\u0940 \u092c\u091a\u093e\u0915\u0930 \u0930\u0939\u0942\u0901\u0917\u0940, \u091a\u093e\u0939\u0947 \u0916\u0941\u0926 \u092e\u094c\u0924 \u0938\u0947 \u0932\u0921\u093c\u0928\u093e \u092a\u0921\u093c\u0947!",
+          "intent": "AFFIRMATIVE_CLOSURE",
+          "focal_word": "\u091c\u093c\u093f\u0902\u0926\u0917\u0940 \u092c\u091a\u093e\u0915\u0930",
+          "intonation": "RESOLUTE_FALLING",
+          "speech_tempo": "MODERATE_FIRM",
+          "post_utterance_pause_ms": 950,
+          "expected_response_latency_range_ms": [
+            750,
+            1300
+          ],
+          "appropriate_reply_speech_act": "AFFIRMATIVE_CLOSURE",
+          "appropriate_register": "TUM"
+        }
+      ]
+    }
+  ]
+}

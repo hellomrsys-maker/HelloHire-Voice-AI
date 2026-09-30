@@ -1,0 +1,62 @@
+{
+  "language": "Cantonese",
+  "engine": "D:\\gra.voi\\Cantonese_engine",
+  "iso_code": "yue",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "yue_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "工程師設計咗個高並發嘅分散式系統。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "我哋已經成功實作咗零延遲記憶體同步協議。",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yue_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "研究團隊發表咗人工智能最新嘅論文。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "架構師優化咗成個數據處理流程 (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yue_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "系統可以即時處理大量多語言數據串流。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "開發團隊順利通過咗所有單元測試 (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yue_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "高速記憶體介面保證咗即時數據一致性。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "我哋做咗好嚴謹嘅基準測試嚟驗證吞吐量 (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

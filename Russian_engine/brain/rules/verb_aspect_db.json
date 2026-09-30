@@ -1,0 +1,55 @@
+{
+  "aspect_pairs": {
+    "делать": {"aspect": "impf", "partner": "сделать", "type": "prefixal"},
+    "сделать": {"aspect": "perf", "partner": "делать", "type": "prefixal"},
+    "писать": {"aspect": "impf", "partner": "написать", "type": "prefixal"},
+    "написать": {"aspect": "perf", "partner": "писать", "type": "prefixal"},
+    "читать": {"aspect": "impf", "partner": "прочитать", "type": "prefixal"},
+    "прочитать": {"aspect": "perf", "partner": "читать", "type": "prefixal"},
+    "решать": {"aspect": "impf", "partner": "решить", "type": "suffixal"},
+    "решить": {"aspect": "perf", "partner": "решать", "type": "suffixal"},
+    "открывать": {"aspect": "impf", "partner": "открыть", "type": "suffixal"},
+    "открыть": {"aspect": "perf", "partner": "открывать", "type": "suffixal"},
+    "понимать": {"aspect": "impf", "partner": "понять", "type": "suffixal"},
+    "понять": {"aspect": "perf", "partner": "понимать", "type": "suffixal"},
+    "говорить": {"aspect": "impf", "partner": "сказать", "type": "suppletive"},
+    "сказать": {"aspect": "perf", "partner": "говорить", "type": "suppletive"},
+    "брать": {"aspect": "impf", "partner": "взять", "type": "suppletive"},
+    "взять": {"aspect": "perf", "partner": "брать", "type": "suppletive"},
+    "класть": {"aspect": "impf", "partner": "положить", "type": "suppletive"},
+    "положить": {"aspect": "perf", "partner": "класть", "type": "suppletive"},
+    "покупать": {"aspect": "impf", "partner": "купить", "type": "suffixal"},
+    "купить": {"aspect": "perf", "partner": "покупать", "type": "suffixal"},
+    "видеть": {"aspect": "impf", "partner": "увидеть", "type": "prefixal"},
+    "увидеть": {"aspect": "perf", "partner": "видеть", "type": "prefixal"},
+    "вставать": {"aspect": "impf", "partner": "встать", "type": "suffixal"},
+    "встать": {"aspect": "perf", "partner": "вставать", "type": "suffixal"},
+    "завершать": {"aspect": "impf", "partner": "завершить", "type": "suffixal"},
+    "завершить": {"aspect": "perf", "partner": "завершать", "type": "suffixal"}
+  },
+
+  "aktionsart_prefixes": {
+    "за-": {"type": "inchoative", "meaning": "beginning of action"},
+    "по-": {"type": "delimitative", "meaning": "action for a short time"},
+    "про-": {"type": "perdurative", "meaning": "action through an entire duration"},
+    "на-": {"type": "cumulative", "meaning": "accumulation of quantity"},
+    "пере-": {"type": "distributive", "meaning": "action across all objects"},
+    "от-": {"type": "finitive", "meaning": "cessation or completion"}
+  },
+  "conjugation_endings": {
+    "1st": {
+      "pres_fut": ["ю", "ешь", "ет", "ем", "ете", "ут"],
+      "alt_pres_fut": ["у", "ёшь", "ёт", "ём", "ёте", "ут"]
+    },
+    "2nd": {
+      "pres_fut": ["ю", "ишь", "ит", "им", "ите", "ят"],
+      "alt_pres_fut": ["у", "ишь", "ит", "им", "ите", "ат"]
+    },
+    "past": {
+      "masc": "л",
+      "fem": "ла",
+      "neut": "ло",
+      "plur": "ли"
+    }
+  }
+}

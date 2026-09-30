@@ -1,0 +1,35 @@
+# Japanese Writing System and Orthographic Norms (表記規範・文字体系)
+
+scripts:
+  kanji:
+    inventory: "2,136 Regular Jōyō Kanji (常用漢字) + 861 Jinmeiyō Kanji (人名用漢字)"
+    role: "Substantive lexical roots: Nouns, verb stems, adjective stems"
+    simplification: "Shinjitai (新字体) standard; Kyūjitai (旧字体) historically preserved"
+
+  hiragana:
+    inventory: "46 basic syllables + dakuten, handakuten, yōon combinations"
+    role: "Grammatical particles, inflections (Okurigana 送り仮名), adverbs, native words without Joyo kanji"
+
+  katakana:
+    role: "Foreign loanwords (外来語), scientific botanical/zoological species, onomatopoeia, emphasis"
+    loanword_adaptation:
+      coffee: "コーヒー"
+      computer: "コンピューター / コンピュータ"
+      mcdonalds: "マクドナルド"
+      smartphone: "スマートフォン / スマホ"
+
+furigana_ruby_policy:
+  general_audience: "Furigana only for Hyōgai-kanji (characters outside Jōyō list) or specialized proper names"
+  educational_elementary: "Furigana for all Kanji"
+  legal_official: "Strictly Jōyō Kanji without furigana unless disambiguating legal terminology"
+
+kana_conversion_guidelines:
+  functional_words_in_hiragana:
+    - bad: "有難う御座います"
+      good: "ありがとうございます"
+    - bad: "〜して頂く"
+      good: "〜していただく"
+    - bad: "〜する事がある"
+      good: "〜することがある"
+    - bad: "〜する時"
+      good: "〜するとき"

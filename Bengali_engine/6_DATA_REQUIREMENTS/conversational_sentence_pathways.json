@@ -1,0 +1,62 @@
+{
+  "language": "Bengali",
+  "engine": "D:\\gra.voi\\Bengali_engine",
+  "iso_code": "ben",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "ben_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "প্রকৌশলী একটি অত্যন্ত দক্ষ বিতরণকৃত সিস্টেম তৈরি করেছেন।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "আমরা সিঙ্ক্রোনাস মেমরি প্রোটোকল সফলভাবে প্রয়োগ করেছি।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ben_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "গবেষক দল কৃত্রিম বুদ্ধিমত্তার উপর একটি গুরুত্বপূর্ণ গবেষণাপত্র প্রকাশ করেছে।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "সফটওয়্যার আর্কিটেক্ট ডেটা প্রক্রিয়াকরণ পাইপলাইন অপ্টিমাইজ করেছেন (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ben_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "কৃত্রিম বুদ্ধিমত্তা বহুভাষিক পাঠ্য নির্ভুলভাবে বিশ্লেষণ করে।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ডেভেলপমেন্ট টিম সমস্ত ইন্টিগ্রেশন টেস্ট সফলভাবে সম্পন্ন করেছে (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ben_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "উচ্চগতির মেমরি বাস রিয়েল-টাইম ডেটা সামঞ্জস্য নিশ্চিত করে।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "আমরা নির্ভরযোগ্যতা প্রমাণের জন্য কঠোর বেঞ্চমার্ক পরীক্ষা পরিচালনা করেছি (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

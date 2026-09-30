@@ -1,0 +1,28 @@
+{
+  "base_pairs": [
+    {"det": "идти", "indet": "ходить", "gloss": "walk, go on foot"},
+    {"det": "ехать", "indet": "ездить", "gloss": "drive, ride, go by vehicle"},
+    {"det": "бежать", "indet": "бегать", "gloss": "run"},
+    {"det": "лететь", "indet": "летать", "gloss": "fly"},
+    {"det": "плыть", "indet": "плавать", "gloss": "swim, sail"},
+    {"det": "нести", "indet": "носить", "gloss": "carry in hands"},
+    {"det": "вести", "indet": "водить", "gloss": "lead, conduct, drive vehicle"},
+    {"det": "везти", "indet": "возить", "gloss": "transport by vehicle"}
+  ],
+  "prefixes": {
+    "в": {"meaning": "inward, enter", "prep_trigger": "в + acc"},
+    "вы": {"meaning": "outward, exit", "prep_trigger": "из + gen"},
+    "до": {"meaning": "reach destination", "prep_trigger": "до + gen"},
+    "за": {"meaning": "drop by, stop on the way", "prep_trigger": "в / к"},
+    "от": {"meaning": "move away from", "prep_trigger": "от + gen"},
+    "под": {"meaning": "approach closely", "prep_trigger": "к + dat"},
+    "пере": {"meaning": "cross over, across", "prep_trigger": "через + acc"},
+    "при": {"meaning": "arrive", "prep_trigger": "в / на + acc"},
+    "про": {"meaning": "pass by or through", "prep_trigger": "мимо + gen / сквозь + acc"},
+    "у": {"meaning": "leave, depart completely", "prep_trigger": "из / с + gen"}
+  },
+  "derivation_rule": {
+    "prefixed_determinate": "perfective",
+    "prefixed_indeterminate": "imperfective"
+  }
+}

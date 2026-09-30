@@ -1,0 +1,31 @@
+{
+  "g2p_rules": {
+    "vowel_digraphs": {
+      "ee": ["IY1"],
+      "ea": ["IY1", "EH1", "EY1"],
+      "oa": ["OW1"],
+      "ai": ["EY1"],
+      "oo": ["UW1", "UH1"],
+      "ou": ["AW1", "AH1", "UW1"],
+      "oi": ["OY1"]
+    },
+    "consonant_digraphs": {
+      "th": ["TH", "DH"],
+      "sh": ["SH"],
+      "ch": ["CH", "K", "SH"],
+      "ph": ["F"],
+      "wh": ["W"],
+      "ng": ["NG"]
+    },
+    "magic_e_rule": {
+      "pattern": "VOWEL + SINGLE_CONSONANT + e$",
+      "effect": "Short vowel becomes long/tense diphthong",
+      "examples": [
+        { "short": "hop /hɒp/", "long": "hope /hoʊp/" },
+        { "short": "mat /mæt/", "long": "mate /meɪt/" },
+        { "short": "bit /bɪt/", "long": "bite /baɪt/" },
+        { "short": "tub /tʌb/", "long": "tube /tjuːb/" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "strong_declension": {
+    "description": "No article or indefinite numeric pronoun (viele, wenige, zwei)",
+    "endings": {
+      "masculine": { "nominative": "er", "accusative": "en", "dative": "em", "genitive": "en" },
+      "feminine":  { "nominative": "e",  "accusative": "e",  "dative": "er", "genitive": "er" },
+      "neuter":    { "nominative": "es", "accusative": "es", "dative": "em", "genitive": "en" },
+      "plural":    { "nominative": "e",  "accusative": "e",  "dative": "en", "genitive": "er" }
+    }
+  },
+  "weak_declension": {
+    "description": "Preceded by definite article (der, die, das, den, dem, des) or demonstrative (dieser, jener, jeder)",
+    "endings": {
+      "masculine": { "nominative": "e",  "accusative": "en", "dative": "en", "genitive": "en" },
+      "feminine":  { "nominative": "e",  "accusative": "e",  "dative": "en", "genitive": "en" },
+      "neuter":    { "nominative": "e",  "accusative": "e",  "dative": "en", "genitive": "en" },
+      "plural":    { "nominative": "en", "accusative": "en", "dative": "en", "genitive": "en" }
+    }
+  },
+  "mixed_declension": {
+    "description": "Preceded by indefinite article (ein, eine), possessive (mein, dein, sein, ihr, unser, euer), or kein",
+    "endings": {
+      "masculine": { "nominative": "er", "accusative": "en", "dative": "en", "genitive": "en" },
+      "feminine":  { "nominative": "e",  "accusative": "e",  "dative": "en", "genitive": "en" },
+      "neuter":    { "nominative": "es", "accusative": "es", "dative": "en", "genitive": "en" },
+      "plural":    { "nominative": "en", "accusative": "en", "dative": "en", "genitive": "en" }
+    }
+  },
+  "determiners": {
+    "definite_articles": ["der", "die", "das", "den", "dem", "des"],
+    "demonstratives": ["dieser", "diese", "dieses", "diesen", "diesem", "dieses", "jener", "jene", "jenes", "jeder", "jede", "jedes", "alle"],
+    "indefinite_articles": ["ein", "eine", "einen", "einem", "einer", "eines"],
+    "possessives": ["mein", "meine", "meinen", "meinem", "meiner", "meines",
+                    "dein", "deine", "deinen", "deinem", "deiner", "deines",
+                    "sein", "seine", "seinen", "seinem", "seiner", "seines",
+                    "ihr", "ihre", "ihren", "ihrem", "ihrer", "ihres",
+                    "unser", "unsere", "unseren", "unserem", "unserer", "unseres",
+                    "euer", "eure", "euren", "eurem", "eurer", "eures",
+                    "Ihr", "Ihre", "Ihren", "Ihrem", "Ihrer", "Ihres"],
+    "negative_articles": ["kein", "keine", "keinen", "keinem", "keiner", "keines"]
+  }
+}

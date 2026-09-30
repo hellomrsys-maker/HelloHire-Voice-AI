@@ -1,0 +1,15 @@
+{
+  "engine": "Hungarian_engine",
+  "generated_utc": "2026-09-29T11:57:28Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Hungarian-Szeged",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "Creative Commons BY-NC-SA 3.0",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

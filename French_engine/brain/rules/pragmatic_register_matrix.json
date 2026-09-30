@@ -1,0 +1,43 @@
+{
+  "registers": {
+    "tutoiement": {
+      "level": "informal",
+      "pronouns": ["tu", "te", "t'", "toi"],
+      "possessives": ["ton", "ta", "tes"],
+      "contexts": ["friends", "family", "peers", "children", "casual_online"],
+      "verbal_person": 1,
+      "politeness_score": 0.35
+    },
+    "vouvoiement": {
+      "level": "formal",
+      "pronouns": ["vous"],
+      "possessives": ["votre", "vos"],
+      "contexts": ["professional", "academic", "commercial", "elders", "strangers"],
+      "verbal_person": 4,
+      "politeness_score": 0.90
+    }
+  },
+  "epistolary_closings": {
+    "high_formal": [
+      "Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.",
+      "Veuillez agréer, Madame, Monsieur, l'assurance de ma parfaite considération.",
+      "Je vous prie de croire, Monsieur le Directeur, à l'assurance de mes sentiments respectueux."
+    ],
+    "standard_professional": [
+      "Cordialement,",
+      "Bien cordialement,",
+      "Sincères salutations,",
+      "Avec mes meilleures salutations,"
+    ],
+    "informal": [
+      "Amitiés,",
+      "Bien à toi,",
+      "À bientôt,",
+      "Bises,"
+    ]
+  },
+  "courtesy_modifiers": [
+    "s'il vous plaît", "s'il te plaît", "je vous en prie", "je t'en prie",
+    "veuillez", "auriez-vous l'amabilité de", "pourriez-vous"
+  ]
+}

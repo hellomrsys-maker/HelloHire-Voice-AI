@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Korean",
+    "engine": "Korean_engine",
+    "iso_codes": [
+      "kor",
+      "ko"
+    ],
+    "scripts": [
+      "Hangul"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Korean",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "kor_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Korean)",
+          "How are operations (Korean)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "kor_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Korean)",
+          "Report readiness (Korean)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "엔지니어가 고성능 분산 시스템 아키텍처를 설계했습니다.",
+    "우리는 제로 지연 원자적 메모리 동기화 프로토콜을 구현했습니다.",
+    "연구팀이 최신 생성형 인공지능 연구 논문을 발표했습니다.",
+    "소프트웨어 아키텍트가 대규모 데이터 파이프라인을 최적화했습니다 (using optimal hyper-parameters).",
+    "다국어 인지 분석 엔진이 문맥적 의미를 정확하게 평가합니다.",
+    "개발팀이 모든 단위 테스트와 통합 테스트를 통과시켰습니다 (on multi-core architectures).",
+    "고속 메모리 인터페이스가 실시간 데이터 일관성을 보장합니다.",
+    "우리는 엄격한 벤치마크 실험을 통해 처리량을 검증했습니다 (under heavy loads).",
+    "엔지니어가 고성능 분산 시스템 아키텍처를 설계했습니다.",
+    "우리는 제로 지연 원자적 메모리 동기화 프로토콜을 구현했습니다.",
+    "연구팀이 최신 생성형 인공지능 연구 논문을 발표했습니다.",
+    "소프트웨어 아키텍트가 대규모 데이터 파이프라인을 최적화했습니다 (using optimal hyper-parameters).",
+    "다국어 인지 분석 엔진이 문맥적 의미를 정확하게 평가합니다.",
+    "개발팀이 모든 단위 테스트와 통합 테스트를 통과시켰습니다 (on multi-core architectures).",
+    "고속 메모리 인터페이스가 실시간 데이터 일관성을 보장합니다.",
+    "우리는 엄격한 벤치마크 실험을 통해 처리량을 검증했습니다 (under heavy loads).",
+    "엔지니어가 고성능 분산 시스템 아키텍처를 설계했습니다.",
+    "우리는 제로 지연 원자적 메모리 동기화 프로토콜을 구현했습니다.",
+    "연구팀이 최신 생성형 인공지능 연구 논문을 발표했습니다.",
+    "소프트웨어 아키텍트가 대규모 데이터 파이프라인을 최적화했습니다 (using optimal hyper-parameters)."
+  ]
+}

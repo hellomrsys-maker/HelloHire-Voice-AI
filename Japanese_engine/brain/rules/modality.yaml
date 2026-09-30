@@ -1,0 +1,42 @@
+# Japanese Modality (モダリティ: 法性・命題態度)
+
+epistemic:
+  certainty:
+    - pattern: "に違いない"
+      strength: 0.95
+      description: "Strong conviction based on inference."
+    - pattern: "はずだ"
+      strength: 0.85
+      description: "Logical expectation based on established premises."
+    - pattern: "だろう / でしょう"
+      strength: 0.65
+      description: "Conjectural probability."
+    - pattern: "かもしれない"
+      strength: 0.40
+      description: "Epistemic possibility (might / may)."
+
+evidentiality:
+  hearsay:
+    - pattern: "そうだ (伝聞)"
+      rule: "Plain form + そうだ"
+      meaning: "I heard that..."
+  appearance_conjecture:
+    - pattern: "そうだ (様態)"
+      rule: "Verb stem / Adjective stem + そうだ"
+      meaning: "Looks like / Seems like..."
+    - pattern: "ようだ"
+      rule: "First-hand visual / circumstantial evidence"
+    - pattern: "らしい"
+      rule: "Typicality / Second-hand reliable source"
+
+deontic:
+  obligation:
+    - "なければならない"
+    - "なくてはならない"
+    - "べきだ"
+  prohibition:
+    - "てはいけない"
+    - "てはならない"
+  permission:
+    - "てもよい"
+    - "てもいい"

@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Russian",
+    "engine": "Russian_engine",
+    "iso_codes": [
+      "rus",
+      "ru"
+    ],
+    "scripts": [
+      "Cyrillic"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Russian",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "rus_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Russian)",
+          "How are operations (Russian)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "rus_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Russian)",
+          "Report readiness (Russian)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Инженер спроектировал высокопроизводительную распределённую архитектуру.",
+    "Мы внедрили протокол атомарной синхронизации памяти.",
+    "Исследовательская группа опубликовала важную научную работу.",
+    "Архитектор оптимизировал сквозной конвейер обработки данных (using optimal hyper-parameters).",
+    "Искусственный интеллект демонстрирует высокую точность классификации.",
+    "Команда разработчиков успешно прошла все приёмочные тесты (on multi-core architectures).",
+    "Алгоритм гарантирует нулевое время запаздывания синхронизации.",
+    "Мы провели всесторонний эмпирический анализ устойчивости системы (under heavy loads).",
+    "Инженер спроектировал высокопроизводительную распределённую архитектуру.",
+    "Мы внедрили протокол атомарной синхронизации памяти.",
+    "Исследовательская группа опубликовала важную научную работу.",
+    "Архитектор оптимизировал сквозной конвейер обработки данных (using optimal hyper-parameters).",
+    "Искусственный интеллект демонстрирует высокую точность классификации.",
+    "Команда разработчиков успешно прошла все приёмочные тесты (on multi-core architectures).",
+    "Алгоритм гарантирует нулевое время запаздывания синхронизации.",
+    "Мы провели всесторонний эмпирический анализ устойчивости системы (under heavy loads).",
+    "Инженер спроектировал высокопроизводительную распределённую архитектуру.",
+    "Мы внедрили протокол атомарной синхронизации памяти.",
+    "Исследовательская группа опубликовала важную научную работу.",
+    "Архитектор оптимизировал сквозной конвейер обработки данных (using optimal hyper-parameters)."
+  ]
+}

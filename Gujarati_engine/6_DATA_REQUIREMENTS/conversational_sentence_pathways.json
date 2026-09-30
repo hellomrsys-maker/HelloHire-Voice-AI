@@ -1,0 +1,75 @@
+{
+  "language": "Gujarati",
+  "engine": "D:\\gra.voi\\Gujarati_engine",
+  "iso_code": "guj",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "guj_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ઇજનેરે અત્યંત કાર્યક્ષમ વિતરિત સિસ્ટમ વિકસાવી છે.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "વિદ્યાર્થીઓએ જટિલ ન્યુરલ નેટવર્કને સારી રીતે સમજી લીધું છે.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "guj_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "અમે શૂન્ય-વિલંબ સમન્વયિત મેમરી પ્રોટોકોલ સફળતાપૂર્વક લાગુ કર્યો.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "પ્રોફેસરે જનરેટિવ વ્યાકરણના સિદ્ધાંતો વિગતવાર સમજાવ્યા.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "guj_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "સંશોધન ટીમે કૃત્રિમ બુદ્ધિ પર એક મહત્વપૂર્ણ સંશોધન પત્ર પ્રકાશિત કર્યું.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "સોફ્ટવેર આર્કિટેક્ટે ડેટા પ્રોસેસિંગ પાઇપલાઇનને શ્રેષ્ઠ બનાવી.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "guj_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "કૃત્રિમ બુદ્ધિ બહુભાષી પાઠ્યનું સચોટ વિશ્લેષણ કરે છે.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "વિકાસ ટીમે તમામ એકીકરણ પરીક્ષણો સફળતાપૂર્વક પૂર્ણ કર્યા.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "guj_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "હાઇ-સ્પીડ મેમરી બસ રીઅલ-ટાઇમ ડેટા સુસંગતતા સુનિશ્ચિત કરે છે.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "વિશ્વસનીયતા સાબિત કરવા અમે કડક બેન્ચમાર્ક પરીક્ષણો કર્યા.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

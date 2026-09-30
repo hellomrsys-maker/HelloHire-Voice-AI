@@ -1,0 +1,70 @@
+# Japanese Verb & Adjective Katsuyou (活用 Conjugation) Matrix
+
+verb_types:
+  godan:
+    name: "五段動詞 (Group 1 / Consonant-stem)"
+    rows:
+      ka: { stem_ending: "k", dict: "く", mizen: "か", ren'you: "き", shuushi: "く", rentai: "く", katei: "け", meirei: "け", te_ta: "い" }
+      ga: { stem_ending: "g", dict: "ぐ", mizen: "が", ren'you: "ぎ", shuushi: "ぐ", rentai: "ぐ", katei: "げ", meirei: "げ", te_ta: "い" }
+      sa: { stem_ending: "s", dict: "す", mizen: "さ", ren'you: "し", shuushi: "す", rentai: "す", katei: "せ", meirei: "せ", te_ta: "し" }
+      ta: { stem_ending: "t", dict: "つ", mizen: "た", ren'you: "ち", shuushi: "つ", rentai: "つ", katei: "て", meirei: "て", te_ta: "っ" }
+      na: { stem_ending: "n", dict: "ぬ", mizen: "な", ren'you: "に", shuushi: "ぬ", rentai: "ぬ", katei: "ね", meirei: "ね", te_ta: "ん" }
+      ba: { stem_ending: "b", dict: "ぶ", mizen: "ば", ren'you: "び", shuushi: "ぶ", rentai: "ぶ", katei: "べ", meirei: "べ", te_ta: "ん" }
+      ma: { stem_ending: "m", dict: "む", mizen: "ま", ren'you: "み", shuushi: "む", rentai: "む", katei: "め", meirei: "め", te_ta: "ん" }
+      ra: { stem_ending: "r", dict: "る", mizen: "ら", ren'you: "り", shuushi: "る", rentai: "る", katei: "れ", meirei: "れ", te_ta: "っ" }
+      wa: { stem_ending: "w", dict: "う", mizen: "わ", ren'you: "い", shuushi: "う", rentai: "う", katei: "え", meirei: "え", te_ta: "っ" }
+
+  ichidan:
+    name: "一段動詞 (Group 2 / Vowel-stem, Kami-Ichidan / Shimo-Ichidan)"
+    rule: "Stem ending in -i or -e before final 'る'"
+    bases:
+      mizen: ""      # e.g. 食べ-ない
+      ren'you: ""    # e.g. 食べ-ます
+      shuushi: "る"  # e.g. 食べる
+      rentai: "る"   # e.g. 食べる人
+      katei: "れば"  # e.g. 食べれば
+      meirei: "ろ"   # e.g. 食べろ (also 'よ')
+      te_ta: ""      # e.g. 食べた / 食べて
+
+  kuru:
+    name: "カ行変格活用 (Kuru)"
+    bases:
+      mizen: "こ"    # こない
+      ren'you: "き"  # きます, きて
+      shuushi: "くる"
+      rentai: "くる"
+      katei: "くれば"
+      meirei: "こい"
+
+  suru:
+    name: "サ行変格活用 (Suru)"
+    bases:
+      mizen: "し"    # しない / される
+      ren'you: "し"  # します, して
+      shuushi: "する"
+      rentai: "する"
+      katei: "すれば"
+      meirei: "しろ"
+
+adjectives:
+  i_keiyoushi:
+    name: "イ形容詞"
+    dict_ending: "い"
+    forms:
+      negative: "くない"
+      past: "かった"
+      past_negative: "くなかった"
+      te_form: "くて"
+      adverbial: "く"
+      conditional: "ければ"
+
+  na_keiyoudoushi:
+    name: "ナ形容詞 (形容動詞)"
+    dict_ending: "だ"
+    forms:
+      noun_modifier: "な"
+      adverbial: "に"
+      negative: "ではない"
+      past: "だった"
+      te_form: "で"
+      conditional: "なら"

@@ -1,0 +1,59 @@
+{
+  "engine": "Persian",
+  "version": "1.0.0",
+  "ezafe_rules": {
+    "phonetic_realization": {
+      "consonant_ending": {
+        "suffix": "-e",
+        "perso_arabic_diacritic": "ِ (kasre)",
+        "examples": [
+          {"head": "کتاب", "modifier": "خوب", "translit": "ketāb-e khub", "meaning": "good book"},
+          {"head": "دانشگاه", "modifier": "تهران", "translit": "dāneshgāh-e tehrān", "meaning": "University of Tehran"},
+          {"head": "دست", "modifier": "من", "translit": "dast-e man", "meaning": "my hand"}
+        ]
+      },
+      "vowel_ending_alif_vav": {
+        "suffix": "-ye",
+        "perso_arabic_orthography": "ی / یِ",
+        "examples": [
+          {"head": "هوای", "modifier": "پاک", "translit": "havā-ye pāk", "meaning": "clean air"},
+          {"head": "موی", "modifier": "سیاه", "translit": "mu-ye siyāh", "meaning": "black hair"},
+          {"head": "صدای", "modifier": "بلند", "translit": "sedā-ye boland", "meaning": "loud voice"}
+        ]
+      },
+      "silent_heh_ending": {
+        "suffix": "-ye",
+        "perso_arabic_orthography": "ٔ (hamzeh on heh) or ی",
+        "examples": [
+          {"head": "خانهٔ", "modifier": "بزرگ", "translit": "khāneh-ye bozorg", "meaning": "big house"},
+          {"head": "نامهٔ", "modifier": "رسمی", "translit": "nāmeh-ye rasmi", "meaning": "official letter"},
+          {"head": "پروندهٔ", "modifier": "جدید", "translit": "parvandeh-ye jadid", "meaning": "new file"}
+        ]
+      }
+    },
+    "syntactic_contexts": {
+      "attributive_adjective": {
+        "pattern": "NOUN + e + ADJ",
+        "rule": "Head noun links to attributive adjective"
+      },
+      "possessive_noun": {
+        "pattern": "NOUN + e + NOUN",
+        "rule": "Head noun links to possessor"
+      },
+      "possessive_pronoun": {
+        "pattern": "NOUN + e + PRON",
+        "rule": "Head noun links to independent personal pronoun"
+      },
+      "recursive_chaining": {
+        "pattern": "NOUN + e + ADJ + e + NOUN",
+        "example": "کتابِ جدیدِ علی (ketāb-e jadid-e 'ali = Ali's new book)"
+      }
+    },
+    "ezafe_drop_contexts": [
+      "before_postposition_ra",
+      "before_relative_clause_ke",
+      "vocative_expressions",
+      "compound_proper_nouns_formalized"
+    ]
+  }
+}

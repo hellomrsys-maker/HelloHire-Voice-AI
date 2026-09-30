@@ -1,0 +1,28 @@
+{
+  "etre_rules": {
+    "description": "With auxiliary être, the past participle agrees in gender and number with the subject.",
+    "patterns": {
+      "masc_sing": "",
+      "fem_sing": "e",
+      "masc_plur": "s",
+      "fem_plur": "es"
+    },
+    "examples": [
+      {"subject_gender": "M", "subject_number": "SG", "base": "allé", "result": "allé"},
+      {"subject_gender": "F", "subject_number": "SG", "base": "allé", "result": "allée"},
+      {"subject_gender": "M", "subject_number": "PL", "base": "allé", "result": "allés"},
+      {"subject_gender": "F", "subject_number": "PL", "base": "allé", "result": "allées"}
+    ]
+  },
+  "avoir_rules": {
+    "description": "With auxiliary avoir, the past participle agrees in gender and number with the direct object (COD) if and only if the COD precedes the verb.",
+    "preceding_cod_markers": [
+      "que", "qu'", "le", "la", "les", "l'", "quel", "quelle", "quels", "quelles", "combien de"
+    ],
+    "examples": [
+      {"sentence": "J'ai mangé la pomme.", "cod_precedes": false, "agreement": "none", "participle": "mangé"},
+      {"sentence": "La pomme que j'ai mangée.", "cod_precedes": true, "gender": "F", "number": "SG", "agreement": "e", "participle": "mangée"},
+      {"sentence": "Les lettres qu'il a écrites.", "cod_precedes": true, "gender": "F", "number": "PL", "agreement": "es", "participle": "écrites"}
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+[package]
+name = "aeee-adaptive-irt"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "aeee_adaptive_irt"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

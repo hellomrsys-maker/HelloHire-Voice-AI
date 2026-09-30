@@ -1,0 +1,883 @@
+# =============================================================================
+# language_engines/Tamil_engine.training.yaml
+# CANONICAL TRAINING FILE — Tamil Language Engine
+# Single-File Language Engine AI Specification — all 19 sections.
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "tamil_engine_v1"
+  language_name:                "Tamil"
+  language_code:                "ta"
+  language_family:              "Dravidian › South Dravidian"
+  writing_systems:
+    - name: "Tamil Script"
+      direction: "left_to_right"
+      script_type: "abugida (syllabic alphabet)"
+      note: "Each consonant has an inherent vowel 'a'; vowels modify consonants via diacritics (kombu/pulli)"
+      uyir_letters:             "12 pure vowel letters (உயிர் எழுத்து)"
+      mey_letters:              "18 consonant letters (மெய் எழுத்து)"
+      uyirmey_letters:          "216 compound letters (உயிர்மெய்) = 18 consonants × 12 vowels"
+      aytham:                   "ஃ — special letter (ஆய்தம்); rare; used in some borrowed words"
+      numerals:                 "Traditional Tamil numerals ௧௨௩; decimal Arabic also standard"
+  supported_variants:
+    - code: ta-IN
+      name: "Indian Tamil (Standard Written Tamil)"
+      reference_accent: "Madurai / Chennai educated speech"
+    - code: ta-LK
+      name: "Sri Lankan Tamil"
+      reference_accent: "Jaffna Tamil"
+      notes: "Retains some classical features lost in Indian Tamil; different vocabulary for some terms"
+    - code: ta-MY
+      name: "Malaysian Tamil"
+      reference_accent: "Malaysian Tamil"
+      notes: "Influenced by Malay and English loanwords; plantation Tamil heritage"
+    - code: ta-SG
+      name: "Singapore Tamil"
+      reference_accent: "Singapore Standard Tamil"
+      notes: "Official language of Singapore; influenced by English and Malay"
+  canonical_training_file:      "language_engines/Tamil_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    diglossia_register_tracking: true
+    gender_rational_irrational_tracking: true
+
+  error_detection:
+    grammar_error_detection:    true
+    agglutination_error_detection: true
+    diglossia_register_mixing:  true
+    retroflex_preservation:     true
+
+  safety_and_privacy:
+    content_filter:             true
+    filter_threshold:           0.85
+
+  human_preference_alignment:
+    register_adaptation:        true
+    default_register:           "koṭunṭamiḻ_spoken"
+    cultural_sensitivity:       true
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      max_length:               8192
+      script_detection:         true
+
+  understanding:
+    tokenization:
+      strategy:                 "morphological_BPE"
+      tool:                     "iNLTK_or_spaCy_ta"
+      vocab_size:               50000
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      agglutinative_segmentation: true
+      case_annotation:          true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      word_order:               "SOV"
+      head_final:               true
+      postpositions:            true
+      pro_drop:                 true
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+
+  generation:
+    grammar_realization:
+      agglutinative_morphology: true
+      case_suffix_attachment:   true
+      verb_agreement:           true
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:    { enabled: true, comprehension_depth: "deep" }
+  writing:    { enabled: true, max_output_tokens: 10000 }
+  listening:  { enabled: true, real_time: true }
+  speaking:   { enabled: true, prosody_control: true }
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    retroflex_consonants:       true
+    length_distinction:         true
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "fr", "de", "es", "ja", "ar"]
+  teaching:   { enabled: true, scaffolding: true }
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    sangam_poetry_tradition:    "2000+ year Tamil literary tradition; akam (internal) and puram (external) poetry"
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      நேரம்_time:
+        - { metaphor: "நேரம் ஆற்று நீர் போன்றது", effect: "ஓட்டம்_flow_framing" }
+        - { metaphor: "நேரம் தங்கம்",               effect: "மதிப்பு_value_framing" }
+      மனம்_mind:
+        - { metaphor: "மனம் கண்ணாடி",              effect: "பிரதிபலிப்பு_reflection" }
+        - { metaphor: "மனம் கடல்",                  effect: "ஆழம்_depth_framing" }
+      மொழி_language:
+        - { metaphor: "மொழி பாலம்",                 effect: "தொடர்பு_connection_framing" }
+        - { metaphor: "மொழி கருவி",                  effect: "பயன்_utility_framing" }
+
+  sangam_poetry_mode:
+    enabled:                    true
+    genres:                     ["அகம் (akam — love poetry)", "புறம் (puram — heroic poetry)"]
+    meters_supported:           ["வெண்பா (veṇpā)", "ஆசிரியப்பா (āsiriyappā)", "கலிப்பா (kalippā)"]
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    script:                     "Tamil"
+    direction:                  "LTR"
+    unicode_block:              "U+0B80–U+0BFF"
+    phonemic_script:            true
+    no_case_distinction:        true
+
+  morphology:
+    agglutinative:              true
+    description: >
+      Tamil is a highly agglutinative language — grammatical categories
+      are expressed by appending suffixes to the root. A single Tamil word
+      can correspond to a full English clause.
+
+    gender_system:
+      rational:                 "உயர்திணை (uyartiṇai) — humans and gods; grammatically masculine or feminine"
+      irrational:               "அஃறிணை (aḵṟiṇai) — animals, objects, abstractions; grammatically neuter"
+      masculine_plural:         "ஆண்பால் (āṇpāl)"
+      feminine_plural:          "பெண்பால் (peṇpāl)"
+      neuter_plural:            "பலவின்பால் (palaviṉpāl)"
+      note: "Gender of nouns determines verb ending forms"
+
+    number_system:
+      singular:                 "ஒருமை (orumai)"
+      plural:                   "பன்மை (paṉmai)"
+      plural_suffix:            "கள் (-kaḷ) is the most common plural suffix"
+
+    pronoun_system:
+      first_person_inclusive:   "நாம் (nām) — we including the listener"
+      first_person_exclusive:   "நாங்கள் (nāṅkaḷ) — we excluding the listener"
+      note: "Inclusive/exclusive first person plural distinction is a key Tamil feature"
+      second_person_singular:   "நீ (nī) — informal; நீங்கள் (nīṅkaḷ) — formal/plural"
+      third_rational_m:         "அவன் (avaṉ) — he (informal) / அவர் (avar) — he/she (formal)"
+      third_rational_f:         "அவள் (avaḷ) — she (informal)"
+      third_irrational_sg:      "அது (atu) — it"
+      third_irrational_pl:      "அவை (avai) — they (irrational)"
+
+    case_system:
+      cases:
+        nominative:             "subject — no suffix (base form)"
+        accusative:             "direct object — suffix ஐ (-ai)"
+        dative:                 "indirect object/purpose — suffix க்கு (-kku) or இடம் (-iṭam)"
+        sociative:              "with — suffix ஓடு (-ōṭu) or உடன் (-uṭaṉ)"
+        instrumental:          "by means of — suffix ஆல் (-āl)"
+        locative:               "at/in — suffix இல் (-il)"
+        ablative:               "from — suffix இல்இருந்து (-iliruṉtu) or இடமிருந்து"
+        genitive:               "possession — suffix இன் (-iṉ) or உடைய (-uṭaiya)"
+        vocative:               "address — suffix ஏ (-ē)"
+
+    verb_morphology:
+      description: >
+        Tamil verbs carry tense, person, number, and gender in their endings.
+        Verbs conjugate for 3 tenses (past, present, future) and agree with subject.
+      tenses:
+        past:                   "suffix இட்ட-/-ந்த-/-த-/-ட- + personal ending"
+        present:                "suffix கிற-/கின்ற- + personal ending"
+        future:                 "suffix வ- + personal ending"
+      verb_classes:
+        strong_verbs:           "Class 1–3 — doubled consonant in past tense"
+        weak_verbs:             "Class 4–7 — single consonant in past tense"
+      negative_verb:
+        finite:                 "நான் படிக்கவில்லை (nāṉ paṭikkavill̥ai) — I did not study"
+        non_finite:             "படிக்காமல் (paṭikkāmal) — without studying"
+
+    retroflex_consonants:
+      description: >
+        Tamil has a 3-way alveolar/dental vs retroflex vs alveolar lateral
+        distinction — more than most other languages.
+      retroflex_set:
+        - { letter: "ட (ṭa)", IPA: "ʈ",  type: "retroflex_plosive" }
+        - { letter: "ண (ṇa)", IPA: "ɳ",  type: "retroflex_nasal" }
+        - { letter: "ல (la)", IPA: "l",   type: "alveolar_lateral" }
+        - { letter: "ள (ḷa)", IPA: "ɭ",  type: "retroflex_lateral" }
+        - { letter: "ழ (ḻa)", IPA: "ɻ",  type: "retroflex_approximant — highly distinctive" }
+        - { letter: "ற (ṟa)", IPA: "r̺",  type: "trill_alveolar" }
+      note: "ழ (ḻa) is one of Tamil's most distinctive sounds — a retroflex approximant with no exact parallel elsewhere"
+
+  syntax:
+    word_order:                 "SOV — Subject Object Verb"
+    head_final:                 true
+    pro_drop:                   true
+    postpositions:              true
+    relative_clauses:           "Pre-nominal — relative clause precedes the noun it modifies"
+    negation:
+      finite:                   "Suffix -இல்லை (-illai) or -இல்லே for spoken"
+      verbal:                   "Negative verb stem + personal ending"
+
+  diglossia:
+    description: >
+      Tamil has strong diglossia between Classical Tamil (செந்தமிழ் centamiḻ)
+      and Spoken Tamil (கொடுந்தமிழ் koṭunṭamiḻ). The gap is large and
+      context-sensitive.
+    sentamil:
+      description:              "Formal/classical Tamil — used in literature, formal writing, official documents, news reading"
+      features:                 "Long-form verb endings; classical particles; formal pronouns"
+    koduntamil:
+      description:              "Spoken/colloquial Tamil — used in everyday speech; varies by region, caste, and age"
+      features:                 "Shortened endings; clipping; word-merging; regional variants"
+    policy:                     "Engine defaults to educated spoken Tamil (midway register); can adjust to classical or colloquial"
+
+  phonology:
+    vowel_length_distinction:   "Short and long vowels are phonemically distinct — அ vs ஆ, இ vs ஈ, etc."
+    short_vowels:               ["அ", "இ", "உ", "எ", "ஒ"]
+    long_vowels:                ["ஆ", "ஈ", "ஊ", "ஏ", "ஓ", "ஐ", "ஔ"]
+    gemination:                 "Consonant doubling is phonemically significant and orthographically marked"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      register: "formal_sentamil"
+      slots:
+        salutation:             ["வணக்கம்", "நல்வரவு", "மரியாதையான வணக்கங்கள்"]
+        addressee_honorific:    ["அய்யா (ayyā — Sir)", "அம்மா (ammā — Madam)", "ஐயா", ""]
+      templates:
+        - "{salutation}, {addressee_honorific}."
+        - "{salutation}."
+
+    - id: "greeting_informal"
+      register: "spoken_koduntamil"
+      slots:
+        salutation:             ["வணக்கம்", "என்ன விஷயம்?", "எப்படி இருக்க?"]
+        name:                   ["[NAME]", ""]
+      templates:
+        - "{salutation} {name}!"
+        - "{salutation}!"
+
+    - id: "farewell_formal"
+      register: "formal"
+      slots:
+        valediction:            ["விடைபெறுகிறேன்", "வணக்கம்", "நன்றி, போய் வருகிறேன்"]
+      templates:
+        - "{valediction}."
+
+    - id: "farewell_informal"
+      register: "informal"
+      slots:
+        valediction:            ["போய் வருவேன்", "பாய்", "bye", "சரி, வருகிறேன்"]
+      templates:
+        - "{valediction}!"
+
+    - id: "gratitude_expression"
+      register: "any"
+      slots:
+        thanks:                 ["நன்றி", "மிக்க நன்றி", "மிகவும் நன்றி", "நன்றி சொல்ல வார்த்தைகள் இல்லை"]
+        reason:                 ["", "உங்கள் உதவிக்கு", "எல்லாவற்றிற்கும்", "உங்கள் ஒத்துழைப்பிற்கு"]
+      templates:
+        - "{thanks}."
+        - "{thanks} {reason}."
+
+    - id: "apology_expression"
+      register: "any"
+      slots:
+        apology:                ["மன்னிக்கவும்", "மன்னிக்குங்கள்", "மன்னிப்பு கேட்கிறேன்", "மிகவும் மன்னிக்கவும்"]
+        reason:                 ["", "தொந்தரவுக்கு", "தாமதத்திற்கு", "என் தவறிற்கு"]
+      templates:
+        - "{apology}."
+        - "{apology} {reason}."
+
+    - id: "introduction_self"
+      register: "any"
+      slots:
+        verb_phrase:            ["என் பெயர்", "நான்"]
+        name:                   ["[NAME]"]
+        suffix:                 ["", "என்று பெயர்"]
+      templates:
+        - "{verb_phrase} {name}."
+        - "என் பெயர் {name}."
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "select_register_sentamil_or_koduntamil"
+    - step: "fill_slots_from_context"
+    - step: "apply_case_suffix"
+    - step: "apply_verb_agreement_person_number_gender"
+    - step: "apply_agglutinative_morphology"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  register_engine:
+    formal_sentamil:
+      description:              "Literary/formal Tamil — news, official documents, formal addresses"
+      pronoun:                  "நீங்கள் (nīṅkaḷ) for 2nd person polite"
+      verb_ending:              "formal personal endings"
+    spoken_koduntamil:
+      description:              "Everyday spoken Tamil — conversations, informal media"
+      pronoun:                  "நீ (nī) for 2nd informal; நீங்க for informal plural/polite"
+      verb_ending:              "colloquial clipped endings"
+    midway_register:
+      description:              "Educated spoken Tamil — most appropriate for AI output"
+      default:                  true
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input"
+    - step: "unicode_normalization_NFC"
+    - step: "tamil_script_detection"
+    - step: "morphological_segmentation"
+    - step: "agglutinative_suffix_splitting"
+    - step: "POS_tagging_UD"
+    - step: "case_suffix_analysis"
+    - step: "verb_agreement_analysis"
+    - step: "retroflex_consonant_annotation"
+    - step: "diglossia_register_classification"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string"
+    language:                   "ta"
+    variant:                    "ta-IN|ta-LK|ta-MY|ta-SG"
+    morphemes:                  "list[Morpheme]"
+    case_assignments:           "dict[noun, case]"
+    verb_agreement:             "dict[verb, person_number_gender]"
+    register:                   "sentamil|koduntamil|midway"
+    syntax_tree:                "DependencyTree_SOV"
+    component_family:           "string"
+    slots:                      "dict[str,str]"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         10000
+  extended_vocabulary_size:     55000
+
+  word_layer_analysis:
+    pure_tamil:
+      description:              "Native Dravidian roots (தனித்தமிழ் taṉittamiḻ movement promotes these)"
+      examples:
+        - { word: "மின்னஞ்சல் (miṉṉañcal)", meaning: "email (lit. electric letter)" }
+        - { word: "கணினி (kaṇiṉi)",          meaning: "computer (lit. counting machine)" }
+        - { word: "நூலகம் (nūlakam)",         meaning: "library" }
+    sanskrit_tatsama:
+      description:              "Sanskrit-origin words in Tamil (சமஸ்கிருதம்)"
+      examples:
+        - { word: "பூமி (pūmi)",        meaning: "earth (from Sanskrit bhūmi)" }
+        - { word: "அரசன் (aracan)",     meaning: "king (from Sanskrit rājan)" }
+    english_loanwords:
+      examples:
+        - { word: "பஸ் (pas)",           origin: "bus" }
+        - { word: "அலுவலகம் (aluvalakam)", meaning: "office — from English" }
+        - { word: "டாக்டர் (ṭākṭar)",   origin: "doctor" }
+        - { word: "ஃபோன் (phōṉ)",       origin: "phone" }
+
+  inclusive_exclusive_note: "This distinction is grammatically obligatory in Tamil; must be tracked in context"
+  inclusive_exclusive_examples:
+    - { pronoun: "நாம் (nām)",     type: "inclusive", meaning: "we — speaker + listener + others" }
+    - { pronoun: "நாங்கள் (nāṅkaḷ)", type: "exclusive", meaning: "we — speaker + others but NOT listener" }
+
+  agglutinative_examples:
+    - { word: "படித்தார்கள்",  breakdown: "படி+த்த+ார்+கள்",      meaning: "They (rational) studied (past)" }
+    - { word: "வீட்டிலிருந்து", breakdown: "வீடு+இல்+இருந்து",    meaning: "from the house (ablative)" }
+    - { word: "சாப்பிடவில்லை", breakdown: "சாப்பிட+வில்+லை",      meaning: "did not eat" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  phonemic_vowel_length:        "Short/long distinction is phonemic and orthographic"
+
+  vowel_chart:
+    short:
+      - { grapheme: "அ", IPA: "a",   example: "அம்மா (ammā)" }
+      - { grapheme: "இ", IPA: "i",   example: "இல்லம் (illam)" }
+      - { grapheme: "உ", IPA: "u",   example: "உண்மை (uṇmai)" }
+      - { grapheme: "எ", IPA: "e",   example: "எலி (eli)" }
+      - { grapheme: "ஒ", IPA: "o",   example: "ஒரு (oru)" }
+    long:
+      - { grapheme: "ஆ", IPA: "aː",  example: "ஆடு (āṭu)" }
+      - { grapheme: "ஈ", IPA: "iː",  example: "ஈர்ப்பு (īrppu)" }
+      - { grapheme: "ஊ", IPA: "uː",  example: "ஊர் (ūr)" }
+      - { grapheme: "ஏ", IPA: "eː",  example: "ஏழை (ēḻai)" }
+      - { grapheme: "ஓ", IPA: "oː",  example: "ஓர் (ōr)" }
+      - { grapheme: "ஐ", IPA: "ai",  example: "ஐயா (ayyā)" }
+      - { grapheme: "ஔ", IPA: "au",  example: "ஔவையார் (Auvaiyār)" }
+
+  retroflex_set:
+    - { letter: "ட",  IPA: "ʈ",  type: "retroflex_plosive" }
+    - { letter: "ண",  IPA: "ɳ",  type: "retroflex_nasal" }
+    - { letter: "ள",  IPA: "ɭ",  type: "retroflex_lateral" }
+    - { letter: "ழ",  IPA: "ɻ",  type: "retroflex_approximant — unique Tamil sound" }
+    - { letter: "ற",  IPA: "r̺",  type: "alveolar_trill" }
+    - { letter: "ன",  IPA: "n̺",  type: "alveolar_nasal" }
+
+  note: "ழ (ḻa) is one of Tamil's most iconic sounds — it does not exist in any other major world language"
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  grammatical_meaning:
+    tense_aspect:
+      - { form: "Past tense",    meaning: "completed_action — suffix varies by verb class" }
+      - { form: "Present tense", meaning: "ongoing_action — suffix கிற-/கின்ற-" }
+      - { form: "Future tense",  meaning: "upcoming_action_or_general_truth — suffix வ-" }
+    case_meaning:
+      nominative:               "sentence subject"
+      accusative:               "direct object — suffix ஐ"
+      dative:                   "recipient or beneficiary — suffix க்கு"
+      locative:                 "location — suffix இல்"
+      ablative:                 "source/origin — suffix இலிருந்து"
+      genitive:                 "possession — suffix இன்/உடைய"
+      instrumental:             "means — suffix ஆல்"
+    pronoun_meaning:
+      inclusive_nām:            "speaker explicitly includes the listener in 'we'"
+      exclusive_nāṅkaḷ:         "speaker explicitly excludes the listener from 'we'"
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - refusing
+    - agreeing
+    - disagreeing
+    - blessing
+
+  politeness_system:
+    dimensions:
+      - dimension: "respectful_pronoun"
+        description: "நீங்கள் (nīṅkaḷ) is the respectful 2nd person; நீ (nī) is informal"
+        respectful:   "நீங்கள் — used with elders, strangers, authority figures"
+        informal:     "நீ — used with close friends, younger people, children"
+      - dimension: "honorific_suffix"
+        description: "-ஐயா (-ayyā) for men, -அம்மா (-ammā) for women as honorific address terms"
+    formulaic_politeness:
+      opening_formal:   ["வணக்கம் ஐயா/அம்மா", "நல்வரவு"]
+      opening_informal: ["வணக்கம்", "என்ன விஷயம்?"]
+      closing_formal:   ["நன்றி", "விடைபெறுகிறேன்"]
+      closing_informal: ["போய் வருவேன்", "சரி, bye"]
+
+  cultural_context:
+    vanakkam:                   "வணக்கம் (Vaṇakkam) — primary Tamil greeting; also used as farewell; accompanied by hands-pressed-together gesture"
+    elder_respect:              "Touching feet of elders (பாதம் தொட்டு வணங்குதல்) as sign of deep respect"
+    food_culture:               "Offering and sharing food is central to Tamil hospitality — refusing food needs careful politeness"
+    caste_variation:            "Some vocabulary and speech patterns vary by social group; engine must not encode caste-based language hierarchy"
+    religious_diversity:        "Tamil speakers include Hindus, Christians, and Muslims; religious expressions vary by community"
+    diaspora_varieties:         "Malaysian, Sri Lankan, and Singaporean Tamil have distinct vocabulary and code-switching patterns"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "ta_td_001"
+    language:                   "ta"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation"]
+    normalized_components:
+      salutation:               "வணக்கம்"
+    grammar_rules_used:
+      - "universal_tamil_greeting"
+      - "no_time_of_day_restriction"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ta_td_002"
+    language:                   "ta"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks"]
+    normalized_components:
+      thanks:                   "நன்றி"
+    grammar_rules_used:
+      - "generic_thanks_neutral_register"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ta_td_003"
+    language:                   "ta"
+    component_families:
+      - "apology_expression"
+    slot_order:                 ["apology"]
+    normalized_components:
+      apology:                  "மன்னிக்கவும்"
+    grammar_rules_used:
+      - "polite_imperative_suffix_vum"
+      - "formal_apology_register"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ta_td_004"
+    language:                   "ta"
+    component_families:
+      - "farewell_informal"
+    slot_order:                 ["valediction"]
+    normalized_components:
+      valediction:              "போய் வருவேன்"
+    grammar_rules_used:
+      - "future_tense_first_person_singular"
+      - "informal_spoken_register"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ta_td_005"
+    language:                   "ta"
+    component_families:
+      - "introduction_self"
+    slot_order:                 ["verb_phrase", "name"]
+    normalized_components:
+      verb_phrase:              "என் பெயர்"
+      name:                     "[NAME]"
+    grammar_rules_used:
+      - "possessive_genitive_en"
+      - "no_copula_required_in_nominal_sentence"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "ta_ex_001"
+    training_item_ref:          "ta_td_001"
+    expected_output:            "வணக்கம்."
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "வணக்கம்"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_contains_correct_Tamil_unicode"
+      - "ends_with_period"
+      - "no_incorrect_script_mixing"
+
+  - example_id:                 "ta_ex_002"
+    training_item_ref:          "ta_td_002"
+    expected_output:            "நன்றி."
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "நன்றி"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_is_நன்றி"
+      - "ends_with_period"
+
+  - example_id:                 "ta_ex_003"
+    training_item_ref:          "ta_td_003"
+    expected_output:            "மன்னிக்கவும்."
+    component_family_used:      "apology_expression"
+    slots_filled:
+      apology:                  "மன்னிக்கவும்"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_polite_suffix_kuvum"
+      - "ends_with_period"
+
+  - example_id:                 "ta_ex_004"
+    training_item_ref:          "ta_td_004"
+    expected_output:            "போய் வருவேன்."
+    component_family_used:      "farewell_informal"
+    slots_filled:
+      valediction:              "போய் வருவேன்"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_future_tense_marker_v"
+      - "first_person_singular_ending"
+      - "ends_with_period"
+
+  - example_id:                 "ta_ex_005"
+    training_item_ref:          "ta_td_005"
+    expected_output:            "என் பெயர் [NAME]."
+    component_family_used:      "introduction_self"
+    slots_filled:
+      verb_phrase:              "என் பெயர்"
+      name:                     "[NAME]"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "starts_with_என்_peyar"
+      - "no_explicit_copula"
+      - "ends_with_period"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "ta_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ta_eval_002"
+    rule_type:                  "min_length"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ta_eval_003"
+    rule_type:                  "max_length"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "ta_eval_004"
+    rule_type:                  "script_validity"
+    description:                "Output must contain valid Tamil Unicode characters (U+0B80–U+0BFF)"
+    parameters:
+      check_unicode_block:      "U+0B80-U+0BFF"
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ta_eval_005"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots must be filled"
+    parameters:
+      required_slots:           ["salutation", "thanks", "apology", "valediction"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ta_eval_006"
+    rule_type:                  "retroflex_preservation"
+    description:                "Retroflex letters ட ண ள ழ ற must be correctly used and not confused with alveolar counterparts"
+    parameters:
+      check_retroflex_accuracy: true
+    threshold:                  0.95
+    blocking:                   false
+
+  - rule_id:                    "ta_eval_007"
+    rule_type:                  "diglossia_register_consistency"
+    description:                "Classical (sentamil) and spoken (koduntamil) forms must not be mixed in a single utterance"
+    parameters:
+      check_register_mixing:    true
+    threshold:                  0.90
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    inclusive_exclusive_tracking: "persists_within_conversation"
+    register_tracking:          "diglossia_level_persists"
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+    note:                       "Tamil is the most widely taught Indian language; heavy English code-switching in modern usage"
+
+  engine_to_french:
+    type:                       "bridge"
+    target_engine:              "french_engine_v1"
+    link_file:                  "language_engines/French_engine.training.yaml"
+    relationship:               "colonial_contact_Pondicherry"
+    note:                       "French was official language of Pondicherry (now Puducherry) until 1954; small French-Tamil bilingual community persists"
+
+  engine_to_german:
+    type:                       "bridge"
+    target_engine:              "german_engine_v1"
+    link_file:                  "language_engines/German_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_spanish:
+    type:                       "bridge"
+    target_engine:              "spanish_engine_v1"
+    link_file:                  "language_engines/Spanish_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_arabic:
+    type:                       "bridge"
+    target_engine:              "arabic_engine_v1"
+    link_file:                  "language_engines/Arabic_engine.training.yaml"
+    relationship:               "Indian_Ocean_trade_contact_language"
+    note:                       "Historical trade contact via Indian Ocean routes; Arabic loanwords in Tamil via Islamic influence"
+
+  engine_to_japanese:
+    type:                       "bridge"
+    target_engine:              "japanese_engine_v1"
+    link_file:                  "language_engines/Japanese_engine.training.yaml"
+    relationship:               "typologically_distant_SOV_agglutinative_parallel"
+    note:                       "Both Tamil and Japanese are SOV agglutinative; structural parallel useful for contrastive learning"
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold with all 19 section stubs"
+      reason:                   "Project initialization"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: 4 regional variants (ta-IN, ta-LK, ta-MY, ta-SG), Tamil script
+        description (12 uyir + 18 mey + 216 uyirmey letters), full case system
+        (8 cases with suffixes), 3-tier gender system (rational M/F + irrational),
+        inclusive/exclusive first person plural distinction, agglutinative
+        morphology documentation, retroflex consonant set (6 consonants including
+        ழ), diglossia (sentamil/koduntamil) policy, verb conjugation classes,
+        2000+ year Sangam poetry tradition, metaphor bank in Tamil, 3 word-layer
+        vocabulary analysis (pure Tamil/Sanskrit/English), 7 component families,
+        5 training items, 5 regression tests, 7 evaluation rules
+        (script/retroflex/diglossia checks).
+      reason:                   "Promote Tamil engine from scaffold to active"
+      approved_by:              "polyglot_engine_dev"

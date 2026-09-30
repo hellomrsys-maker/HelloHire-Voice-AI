@@ -1,0 +1,45 @@
+{
+  "greeting_pairs": {
+    "salam": {
+      "call": "as-salamu 'alaykum",
+      "expected_response": "wa-'alaykum as-salam",
+      "arabic_call": "السلام عليكم",
+      "arabic_response": "وعليكم السلام"
+    },
+    "sabah": {
+      "call": "sabah al-khayr",
+      "expected_response": "sabah an-nur",
+      "arabic_call": "صباح الخير",
+      "arabic_response": "صباح النور"
+    },
+    "masa": {
+      "call": "masa' al-khayr",
+      "expected_response": "masa' an-nur",
+      "arabic_call": "مساء الخير",
+      "arabic_response": "مساء النور"
+    },
+    "ahlan": {
+      "call": "ahlan wa-sahlan",
+      "expected_response": "ahlan bika",
+      "arabic_call": "أهلاً وسهلاً",
+      "arabic_response": "أهلاً بك"
+    }
+  },
+  "honorific_titles": [
+    "fakhamat", "ma'ali", "sa'adat", "fadilat", "samahat", "al-ustadh", "as-sayyid", "as-sayyida"
+  ],
+  "epistolary": {
+    "openings": [
+      "tahiyya tayyiba wa-ba'd", "tahiyya 'atira", "ba'da at-tahiyya"
+    ],
+    "closings": [
+      "wa-tafaddalu bi-qabuli fa'iq al-ihtirami wa-t-taqdir",
+      "ma'a fa'iq al-ihtiram",
+      "wa-tafaddalu bi-qabul khalis at-tahiyyat",
+      "dumtum bi-khayr"
+    ]
+  },
+  "colloquial_markers": [
+    "kwayyis", "biddi", "shu", "esh", "daba", "dilwa'ti", "barsha", "zwin", "mashi"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "pragmatic_context": {
+    "situational_uchi_soto": {
+      "concept": "The defining sociological organizing principle in Japanese pragmatics: In-Group (内 Uchi) vs Out-Group (外 Soto).",
+      "dynamics": {
+        "with_outsiders": "When speaking to someone outside one's company/family, all members of one's own company (including one's CEO or father) are treated as Uchi and referred to without honorific titles or Sonkeigo.",
+        "internal": "When speaking internally to one's CEO, the CEO is Soto/superior and receives Sonkeigo."
+      }
+    },
+    "social_rank_hierarchy": {
+      "axes": ["Age (年上 / 年下)", "Company seniority (先輩 / 後輩)", "Institutional rank (役職: 社長, 部長, 課長)", "Customer vs Service Provider (お客様 / 店員)"],
+      "obligation": "Linguistic choice of Keigo is not an optional stylistic polish, but an obligatory grammatical constraint."
+    },
+    "discourse_aizuchi": {
+      "definition": "Frequent backchannel conversational listening responses indicating cognitive presence and attentiveness without interruption.",
+      "tokens": [
+        {"token": "はい (hai)", "role": "Formal acknowledgment of hearing the utterance."},
+        {"token": "ええ (ee)", "role": "Soft conversational agreement."},
+        {"token": "そうですね (sou desu ne)", "role": "Harmonious concurrence and empathy."},
+        {"token": "なるほど (naruhodo)", "role": "Comprehension acknowledgment (restricted to peers/juniors)."}
+      ]
+    },
+    "implicitness_and_high_context": {
+      "principle": "High-context culture where explicit propositional assertion of negative refusal causes social friction (失礼).",
+      "sasshi": "Interlocutors are expected to infer implicit intent (察し) through subtle grammatical hedges (〜けど, 〜ですが, ちょっと...)."
+    }
+  }
+}

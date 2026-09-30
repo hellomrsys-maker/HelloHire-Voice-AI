@@ -1,0 +1,43 @@
+{
+  "pipeline_architecture": {
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Morphological Segmentation (Wakachi-gaki 分かち書き)",
+        "algorithm": "Viterbi search over UniDic word lattice using node and connection cost matrix",
+        "output": "Short-Unit Words (SUW) with byte offsets and script classification"
+      },
+      {
+        "stage": 2,
+        "name": "Parts-of-Speech Tagging (品詞推定)",
+        "algorithm": "BiLSTM-CRF or Transformer-based sequence labeling against UniDic / MeCab tagsets",
+        "output": "Hierarchical Hinshi labels + Katsuyou form and base lemma"
+      },
+      {
+        "stage": 3,
+        "name": "Bunsetsu Chunking & Dependency Parsing (文節係り受け解析)",
+        "algorithm": "Head-final tournament model (CaboCha / KNP style) with shift-reduce transitions",
+        "output": "Directed acyclic dependency tree enforcing modifier-head precedence"
+      },
+      {
+        "stage": 4,
+        "name": "Named Entity Recognition (固有表現抽出)",
+        "algorithm": "Context-aware token classification with suffix heuristic triggers (株式会社, さん, 県, 市)",
+        "output": "PERSON, ORG, GPE, DATE, TECH spans"
+      },
+      {
+        "stage": 5,
+        "name": "Zero-Pronoun Resolution (ゼロ代名詞・項省略同定)",
+        "algorithm": "Topic-chain tracking + predicate honorific/giving-verb concord resolution",
+        "output": "Null subject/object link to active discourse antecedent"
+      },
+      {
+        "stage": 6,
+        "name": "Semantic Role Labeling (述語項構造解析 PAS)",
+        "algorithm": "Particle-case grid mapping (が=Agent, を=Patient, に=Goal)",
+        "output": "PAS propositional frames with confidence scores"
+      }
+    ],
+    "uncertainty_propagation": "Confidence logits and entropy scores are preserved at each stage and forwarded to downstream tasks."
+  }
+}

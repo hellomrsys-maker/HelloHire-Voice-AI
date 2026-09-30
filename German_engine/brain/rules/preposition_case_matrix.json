@@ -1,0 +1,52 @@
+{
+  "accusative_prepositions": [
+    "bis", "durch", "für", "gegen", "ohne", "um", "wider", "entlang"
+  ],
+  "dative_prepositions": [
+    "aus", "bei", "mit", "nach", "seit", "von", "zu", "gegenüber", "außer", "gemäß", "samt"
+  ],
+  "genitive_prepositions": [
+    "während", "wegen", "trotz", "anstatt", "statt", "außerhalb", "innerhalb",
+    "oberhalb", "unterhalb", "diesseits", "jenseits", "inmitten", "unweit"
+  ],
+  "two_way_prepositions": [
+    "an", "auf", "hinter", "in", "neben", "über", "unter", "vor", "zwischen"
+  ],
+  "preposition_contractions": {
+    "ans": {"prep": "an", "article": "das", "case": "accusative", "gender": "neuter"},
+    "am": {"prep": "an", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "aufs": {"prep": "auf", "article": "das", "case": "accusative", "gender": "neuter"},
+    "beim": {"prep": "bei", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "durchs": {"prep": "durch", "article": "das", "case": "accusative", "gender": "neuter"},
+    "fürs": {"prep": "für", "article": "das", "case": "accusative", "gender": "neuter"},
+    "hinterm": {"prep": "hinter", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "im": {"prep": "in", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "ins": {"prep": "in", "article": "das", "case": "accusative", "gender": "neuter"},
+    "ums": {"prep": "um", "article": "das", "case": "accusative", "gender": "neuter"},
+    "unterm": {"prep": "unter", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "vom": {"prep": "von", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "vorm": {"prep": "vor", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "zum": {"prep": "zu", "article": "dem", "case": "dative", "gender": "masculine_or_neuter"},
+    "zur": {"prep": "zu", "article": "der", "case": "dative", "gender": "feminine"}
+  },
+  "article_case_forms": {
+    "accusative": {
+      "masculine": ["den", "einen", "meinen", "deinen", "seinen", "ihren", "unseren", "euren", "Ihren", "keinen"],
+      "feminine":  ["die", "eine", "meine", "deine", "seine", "ihre", "unsere", "eure", "Ihre", "keine"],
+      "neuter":    ["das", "ein", "mein", "dein", "sein", "ihr", "unser", "euer", "Ihr", "kein"],
+      "plural":    ["die", "meine", "deine", "seine", "ihre", "unsere", "eure", "Ihre", "keine"]
+    },
+    "dative": {
+      "masculine": ["dem", "einem", "meinem", "deinem", "seinem", "ihrem", "unserem", "eurem", "Ihrem", "keinem"],
+      "feminine":  ["der", "einer", "meiner", "deiner", "seiner", "ihrer", "unserer", "eurer", "Ihrer", "keiner"],
+      "neuter":    ["dem", "einem", "meinem", "deinem", "seinem", "ihrem", "unserem", "eurem", "Ihrem", "keinem"],
+      "plural":    ["den", "meinen", "deinen", "seinen", "ihren", "unseren", "euren", "Ihren", "keinen"]
+    },
+    "genitive": {
+      "masculine": ["des", "eines", "meines", "deines", "seines", "ihres", "unseres", "eures", "Ihres", "keines"],
+      "feminine":  ["der", "einer", "meiner", "deiner", "seiner", "ihrer", "unserer", "eurer", "Ihrer", "keiner"],
+      "neuter":    ["des", "eines", "meines", "deines", "seines", "ihres", "unseres", "eures", "Ihres", "keines"],
+      "plural":    ["der", "meiner", "deiner", "seiner", "ihrer", "unserer", "eurer", "Ihrer", "keiner"]
+    }
+  }
+}

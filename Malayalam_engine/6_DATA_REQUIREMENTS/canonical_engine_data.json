@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Malayalam",
+    "engine": "Malayalam_engine",
+    "iso_codes": [
+      "mal",
+      "ml"
+    ],
+    "scripts": [
+      "Malayalam"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Malayalam",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "mal_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Malayalam)",
+          "How are operations (Malayalam)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "mal_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Malayalam)",
+          "Report readiness (Malayalam)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "എഞ്ചിനീയർ വളരെ കാര്യക്ഷമമായ വിതരണ സംവിധാനം നിർമ്മിച്ചു.",
+    "വിദ്യാർത്ഥികൾ സങ്കീർണ്ണമായ ന്യൂറൽ നെറ്റ്‌വർക്ക് പൂർണ്ണമായും മനസ്സിലാക്കി.",
+    "ഞങ്ങൾ സീറോ-ലേറ്റൻസി സിൻക്രണസ് മെമ്മറി പ്രോട്ടോക്കോൾ വിജയകരമായി നടപ്പിലാക്കി.",
+    "പ്രൊഫസർ വ്യാകരണ തത്വങ്ങൾ വിശദമായി വിശദീകരിച്ചു നൽകി.",
+    "ഗവേഷണ സംഘം കൃത്രിമ ബുദ്ധിയെക്കുറിച്ച് ഒരു പ്രധാന പ്രബന്ധം പ്രസിദ്ധീകരിച്ചു.",
+    "സോഫ്റ്റ്‌വെയർ ആർക്കിടെക്റ്റ് ഡാറ്റാ പ്രോസസ്സിംഗ് പൈപ്പ്‌ലൈൻ ഒപ്റ്റിമൈസ് ചെയ്തു.",
+    "കൃത്രിമ ബുദ്ധി ബഹുഭാഷാ പാഠങ്ങൾ കൃത്യമായി വിശകലനം ചെയ്യുന്നു.",
+    "ഡെവലപ്‌മെന്റ് ടീം എല്ലാ ഇന്റഗ്രേഷൻ ടെസ്റ്റുകളും വിജയകരമായി പൂർത്തിയാക്കി.",
+    "ഹൈ-സ്പീഡ് മെമ്മറി ബസ് തത്സമയ ഡാറ്റ സ്ഥിരത ഉറപ്പാക്കുന്നു.",
+    "വിശ്വാസ്യത തെളിയിക്കാൻ ഞങ്ങൾ കർശനമായ മാനദണ്ഡ പരിശോധനകൾ നടത്തി.",
+    "കുട്ടികൾ ലൈബ്രറിയിൽ പുതിയ പുസ്തകങ്ങൾ വായിച്ചു.",
+    "ഇന്ന് കാലാവസ്ഥ വളരെ മനോഹരവും തണുപ്പുള്ളതുമാണ്.",
+    "കർഷകർ പാടങ്ങളിൽ കൊയ്ത്തുത്സവം ആരംഭിച്ചു കഴിഞ്ഞു.",
+    "ശാസ്ത്രജ്ഞൻ പുതിയ അൽഗോരിതത്തിന്റെ വേഗത പരിശോധിച്ചു.",
+    "എഞ്ചിനീയർ വളരെ കാര്യക്ഷമമായ വിതരണ സംവിധാനം നിർമ്മിച്ചു. [14]",
+    "വിദ്യാർത്ഥികൾ സങ്കീർണ്ണമായ ന്യൂറൽ നെറ്റ്‌വർക്ക് പൂർണ്ണമായും മനസ്സിലാക്കി. [15]",
+    "ഞങ്ങൾ സീറോ-ലേറ്റൻസി സിൻക്രണസ് മെമ്മറി പ്രോട്ടോക്കോൾ വിജയകരമായി നടപ്പിലാക്കി. [16]",
+    "പ്രൊഫസർ വ്യാകരണ തത്വങ്ങൾ വിശദമായി വിശദീകരിച്ചു നൽകി. [17]",
+    "ഗവേഷണ സംഘം കൃത്രിമ ബുദ്ധിയെക്കുറിച്ച് ഒരു പ്രധാന പ്രബന്ധം പ്രസിദ്ധീകരിച്ചു. [18]",
+    "സോഫ്റ്റ്‌വെയർ ആർക്കിടെക്റ്റ് ഡാറ്റാ പ്രോസസ്സിംഗ് പൈപ്പ്‌ലൈൻ ഒപ്റ്റിമൈസ് ചെയ്തു. [19]"
+  ]
+}

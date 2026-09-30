@@ -1,0 +1,57 @@
+{
+  "engine": "Dutch",
+  "matrix_type": "gender_article_matrix",
+  "version": "1.0.0",
+  "articles": {
+    "definite": {
+      "common_singular": "de",
+      "neuter_singular": "het",
+      "plural": "de"
+    },
+    "indefinite": {
+      "singular": "een",
+      "negative": "geen"
+    }
+  },
+  "lexicon_gender_sample": {
+    "de_nouns": [
+      "man", "vrouw", "tafel", "stoel", "hond", "kat", "auto", "stad",
+      "weg", "straat", "school", "trein", "fiets", "winkel", "taal",
+      "computer", "telefoon", "sleutel", "deur", "kamer", "vriend",
+      "vriendin", "leraar", "lerares", "krant", "boom", "zee", "bloem",
+      "rekening", "ketting", "woning"
+    ],
+    "het_nouns": [
+      "huis", "boek", "kind", "meisje", "dier", "water", "brood", "geld",
+      "werk", "land", "dorp", "oog", "oor", "been", "raam", "jaar",
+      "feest", "bier", "paard", "bed", "probleem", "voorbeeld", "leven",
+      "lichaam", "hart", "idee", "resultaat", "bericht"
+    ]
+  },
+  "adjective_inflection_rules": {
+    "default_ending": "e",
+    "zero_ending_condition": {
+      "description": "Attributive adjective has NO -e ending if and only if: 1. Noun is neuter, 2. Noun is singular, AND 3. Determiner is indefinite ('een', 'geen', 'welk', 'veel', 'geen' or absent).",
+      "formula": "indefinite_determiner + bare_adjective + neuter_singular_noun",
+      "correct_examples": [
+        "een mooi huis",
+        "een groot probleem",
+        "geen lekker brood",
+        "veel koud water",
+        "een klein kind"
+      ],
+      "incorrect_examples": [
+        "een mooie huis",
+        "een grote probleem",
+        "een kleine kind"
+      ]
+    },
+    "inflected_examples": [
+      "het mooie huis",
+      "de mooie vrouw",
+      "een mooie vrouw",
+      "mooie huizen",
+      "mooie vrouwen"
+    ]
+  }
+}

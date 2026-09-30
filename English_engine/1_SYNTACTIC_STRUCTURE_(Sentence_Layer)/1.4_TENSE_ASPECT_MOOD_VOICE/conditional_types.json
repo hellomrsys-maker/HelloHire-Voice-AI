@@ -1,0 +1,35 @@
+{
+  "conditional_types": {
+    "zero_conditional": {
+      "name": "Scientific truth / General reality",
+      "if_clause": "Present Simple",
+      "main_clause": "Present Simple",
+      "example": "If water reaches 100 degrees Celsius, it boils."
+    },
+    "first_conditional": {
+      "name": "Real future possibility",
+      "if_clause": "Present Simple",
+      "main_clause": "will + base verb",
+      "example": "If learning rate is tuned properly, loss will decrease."
+    },
+    "second_conditional": {
+      "name": "Hypothetical present / unlikely future",
+      "if_clause": "Past Simple (subjunctive 'were')",
+      "main_clause": "would + base verb",
+      "example": "If I were in charge, I would allocate 1000 H100 GPUs."
+    },
+    "third_conditional": {
+      "name": "Unreal past / counterfactual",
+      "if_clause": "Past Perfect (had + VBN)",
+      "main_clause": "would have + past participle",
+      "example": "If the cluster had not crashed, the checkpoint would have saved."
+    },
+    "mixed_conditionals": {
+      "past_cause_present_result": {
+        "if_clause": "Past Perfect (had + VBN)",
+        "main_clause": "would + base verb",
+        "example": "If you had initialized weights randomly, the network would not fail now."
+      }
+    }
+  }
+}

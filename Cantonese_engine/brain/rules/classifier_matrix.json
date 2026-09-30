@@ -1,0 +1,69 @@
+{
+  "classifiers": {
+    "個": {
+      "jyutping": "go3",
+      "default_domain": "general / people / abstract items",
+      "typical_nouns": ["人", "橙", "問題", "諗法", "電話", "蘋果"],
+      "example": "一個人 (one person)"
+    },
+    "隻": {
+      "jyutping": "zek3",
+      "default_domain": "animals / boats / cups / one of a pair",
+      "typical_nouns": ["狗", "貓", "雞", "船", "隻手", "隻眼", "隻碟"],
+      "example": "隻狗好得意 (The dog is very cute - bare classifier definiteness)"
+    },
+    "條": {
+      "jyutping": "tiu4",
+      "default_domain": "long, thin, flexible objects / roads / fish",
+      "typical_nouns": ["魚", "路", "褲", "毛巾", "河", "問題"],
+      "example": "一條魚 (a fish)"
+    },
+    "件": {
+      "jyutping": "gin6",
+      "default_domain": "upper-body clothes / incidents / matters / luggage",
+      "typical_nouns": ["衫", "事", "行李", "外套"],
+      "example": "呢件事 (this matter)"
+    },
+    "本": {
+      "jyutping": "bun2",
+      "default_domain": "bound volumes / books / magazines",
+      "typical_nouns": ["書", "雜誌", "字典", "筆記"],
+      "example": "本書喺邊？ (Where is the book?)"
+    },
+    "架": {
+      "jyutping": "gaa3",
+      "default_domain": "vehicles / mechanical devices / planes",
+      "typical_nouns": ["車", "飛機", "電腦", "相機"],
+      "example": "一架車 (a car)"
+    },
+    "間": {
+      "jyutping": "gaan1",
+      "default_domain": "buildings / rooms / shops / restaurants / schools",
+      "typical_nouns": ["屋", "房", "舖頭", "茶餐廳", "學校", "公司"],
+      "example": "間舖頭開咗 (The shop is open)"
+    },
+    "張": {
+      "jyutping": "zoeng1",
+      "default_domain": "flat objects / paper / tables / chairs / beds / tickets",
+      "typical_nouns": ["紙", "枱", "凳", "床", "飛", "相"],
+      "example": "一張紙 (a sheet of paper)"
+    },
+    "粒": {
+      "jyutping": "nap1",
+      "default_domain": "small grains / beads / candies / buttons / stars",
+      "typical_nouns": ["糖", "米", "星", "掣", "藥"],
+      "example": "一粒糖 (a candy)"
+    },
+    "啲": {
+      "jyutping": "di1",
+      "default_domain": "plural / partitive / some / indefinite amount",
+      "typical_nouns": ["嘢", "人", "水", "錢", "生果"],
+      "example": "啲嘢好平 (The things are very cheap)"
+    }
+  },
+  "definiteness_rule": {
+    "structure": "[Classifier] + [Noun]",
+    "semantics": "Definite singular noun phrase without requiring a demonstrative (e.g. 隻狗 = the dog, 本書 = the book)",
+    "contrast_mandarin": "Mandarin requires demonstrative (這隻狗 / 那本書) to express definiteness"
+  }
+}

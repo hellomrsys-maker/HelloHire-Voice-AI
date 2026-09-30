@@ -1,0 +1,79 @@
+{
+  "regular_endings": {
+    "ar": {
+      "presente_indicativo": ["o", "as", "a", "amos", "áis", "an"],
+      "preterito_indefinido": ["é", "aste", "ó", "amos", "asteis", "aron"],
+      "preterito_imperfecto": ["aba", "abas", "aba", "ábamos", "abais", "aban"],
+      "futuro_simple": ["aré", "arás", "ará", "aremos", "aréis", "arán"],
+      "condicional_simple": ["aría", "arías", "aría", "aríamos", "aríais", "arían"],
+      "presente_subjuntivo": ["e", "es", "e", "emos", "éis", "en"]
+    },
+    "er": {
+      "presente_indicativo": ["o", "es", "e", "emos", "éis", "en"],
+      "preterito_indefinido": ["í", "iste", "ió", "imos", "isteis", "ieron"],
+      "preterito_imperfecto": ["ía", "ías", "ía", "íamos", "íais", "ían"],
+      "futuro_simple": ["eré", "erás", "erá", "eremos", "eréis", "erán"],
+      "condicional_simple": ["ería", "erías", "ería", "eríamos", "eríais", "erían"],
+      "presente_subjuntivo": ["a", "as", "a", "amos", "áis", "an"]
+    },
+    "ir": {
+      "presente_indicativo": ["o", "es", "e", "imos", "ís", "en"],
+      "preterito_indefinido": ["í", "iste", "ió", "imos", "isteis", "ieron"],
+      "preterito_imperfecto": ["ía", "ías", "ía", "íamos", "íais", "ían"],
+      "futuro_simple": ["iré", "irás", "irá", "iremos", "iréis", "irán"],
+      "condicional_simple": ["iría", "irías", "iría", "iríamos", "iríais", "irían"],
+      "presente_subjuntivo": ["a", "as", "a", "amos", "áis", "an"]
+    }
+  },
+  "irregular_verbs": {
+    "ser": {
+      "presente_indicativo": ["soy", "eres", "es", "somos", "sois", "son"],
+      "preterito_indefinido": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+      "preterito_imperfecto": ["era", "eras", "era", "éramos", "erais", "eran"],
+      "presente_subjuntivo": ["sea", "seas", "sea", "seamos", "seáis", "sean"],
+      "gerundio": "siendo",
+      "participio": "sido"
+    },
+    "estar": {
+      "presente_indicativo": ["estoy", "estás", "está", "estamos", "estáis", "están"],
+      "preterito_indefinido": ["estuve", "estuviste", "estuvo", "estuvimos", "estuvisteis", "estuvieron"],
+      "preterito_imperfecto": ["estaba", "estabas", "estaba", "estábamos", "estabais", "estaban"],
+      "presente_subjuntivo": ["esté", "estés", "esté", "estemos", "estéis", "estén"],
+      "gerundio": "estando",
+      "participio": "estado"
+    },
+    "ir": {
+      "presente_indicativo": ["voy", "vas", "va", "vamos", "vais", "van"],
+      "preterito_indefinido": ["fui", "fuiste", "fue", "fuimos", "fuisteis", "fueron"],
+      "preterito_imperfecto": ["iba", "ibas", "iba", "íbamos", "ibais", "iban"],
+      "presente_subjuntivo": ["vaya", "vayas", "vaya", "vayamos", "vayáis", "vayan"],
+      "gerundio": "yendo",
+      "participio": "ido"
+    },
+    "tener": {
+      "presente_indicativo": ["tengo", "tienes", "tiene", "tenemos", "tenéis", "tienen"],
+      "preterito_indefinido": ["tuve", "tuviste", "tuvo", "tuvimos", "tuvisteis", "tuvieron"],
+      "futuro_simple": ["tendré", "tendrás", "tendrá", "tendremos", "tendréis", "tendrán"],
+      "presente_subjuntivo": ["tenga", "tengas", "tenga", "tengamos", "tengáis", "tengan"],
+      "gerundio": "teniendo",
+      "participio": "tenido"
+    },
+    "haber": {
+      "presente_indicativo": ["he", "has", "ha", "hemos", "habéis", "han"],
+      "impersonal": "hay",
+      "preterito_indefinido": ["hube", "hubiste", "hubo", "hubimos", "hubisteis", "hubieron"],
+      "preterito_imperfecto": ["había", "habías", "había", "habíamos", "habíais", "habían"],
+      "presente_subjuntivo": ["haya", "hayas", "haya", "hayamos", "hayáis", "hayan"],
+      "gerundio": "habiendo",
+      "participio": "habido"
+    },
+    "hacer": {
+      "presente_indicativo": ["hago", "haces", "hace", "hacemos", "hacéis", "hacen"],
+      "preterito_indefinido": ["hice", "hiciste", "hizo", "hicimos", "hicisteis", "hicieron"],
+      "futuro_simple": ["haré", "harás", "hará", "haremos", "haréis", "harán"],
+      "presente_subjuntivo": ["haga", "hagas", "haga", "hagamos", "hagáis", "hagan"],
+      "gerundio": "haciendo",
+      "participio": "hecho"
+    }
+  }
+}

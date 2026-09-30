@@ -1,0 +1,75 @@
+{
+  "language": "Kannada",
+  "engine": "D:\\gra.voi\\Kannada_engine",
+  "iso_code": "kan",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "kan_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ಇಂಜಿನಿಯರ್ ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ ವಿತರಿಸಿದ ವ್ಯವಸ್ಥೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ್ದಾರೆ.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ವಿದ್ಯಾರ್ಥಿಗಳು ಸಂಕೀರ್ಣವಾದ ನರಮಂಡಲ ಜಾಲವನ್ನು ಸರಿಯಾಗಿ ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದಾರೆ.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kan_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ನಾವು ಶೂನ್ಯ-ವಿಳಂಬ ಸಿಂಕ್ರೊನಸ್ ಮೆಮೊರಿ ಪ್ರೋಟೋಕಾಲ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳವಡಿಸಿದ್ದೇವೆ.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ಪ್ರಾಧ್ಯಾಪಕರು ಸೃಜನಶೀಲ ವ್ಯಾಕರಣ ಸಿದ್ಧಾಂತವನ್ನು ವಿವರವಾಗಿ ವಿವರಿಸಿದರು.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kan_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ಸಂಶೋಧನಾ ತಂಡವು ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯ ಬಗ್ಗೆ ಪ್ರಮುಖ ಸಂಶೋಧನಾ ಪ್ರಬಂಧವನ್ನು ಪ್ರಕಟಿಸಿತು.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ಸಾಫ್ಟ್‌ವೇರ್ ವಾಸ್ತುಶಿಲ್ಪಿ ಡೇಟಾ ಸಂಸ್ಕರಣಾ ಪೈಪ್‌ಲೈನ್ ಅನ್ನು ಅತ್ಯುತ್ತಮವಾಗಿಸಿದ್ದಾರೆ.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kan_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯು ಬಹುಭಾಷಾ ಪಠ್ಯವನ್ನು ನಿಖರವಾಗಿ ವಿಶ್ಲೇಷಿಸುತ್ತದೆ.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ಅಭಿವೃದ್ಧಿ ತಂಡವು ಎಲ್ಲಾ ಏಕೀಕರಣ ಪರೀಕ್ಷೆಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದೆ.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kan_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ಹೈ-ಸ್ಪೀಡ್ ಮೆಮೊರಿ ಬಸ್ ನೈಜ-ಸಮಯದ ಡೇಟಾ ಸ್ಥಿರತೆಯನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ವಿಶ್ವಾಸಾರ್ಹತೆಯನ್ನು ಸಾಬೀತುಪಡಿಸಲು ನಾವು ಕಠಿಣ ಮಾನದಂಡ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಿದ್ದೇವೆ.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

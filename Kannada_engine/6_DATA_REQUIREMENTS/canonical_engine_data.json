@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Kannada",
+    "engine": "Kannada_engine",
+    "iso_codes": [
+      "kan",
+      "kn"
+    ],
+    "scripts": [
+      "Kannada"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Kannada",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "kan_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Kannada)",
+          "How are operations (Kannada)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "kan_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Kannada)",
+          "Report readiness (Kannada)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "ಇಂಜಿನಿಯರ್ ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ ವಿತರಿಸಿದ ವ್ಯವಸ್ಥೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ್ದಾರೆ.",
+    "ವಿದ್ಯಾರ್ಥಿಗಳು ಸಂಕೀರ್ಣವಾದ ನರಮಂಡಲ ಜಾಲವನ್ನು ಸರಿಯಾಗಿ ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದಾರೆ.",
+    "ನಾವು ಶೂನ್ಯ-ವಿಳಂಬ ಸಿಂಕ್ರೊನಸ್ ಮೆಮೊರಿ ಪ್ರೋಟೋಕಾಲ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳವಡಿಸಿದ್ದೇವೆ.",
+    "ಪ್ರಾಧ್ಯಾಪಕರು ಸೃಜನಶೀಲ ವ್ಯಾಕರಣ ಸಿದ್ಧಾಂತವನ್ನು ವಿವರವಾಗಿ ವಿವರಿಸಿದರು.",
+    "ಸಂಶೋಧನಾ ತಂಡವು ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯ ಬಗ್ಗೆ ಪ್ರಮುಖ ಸಂಶೋಧನಾ ಪ್ರಬಂಧವನ್ನು ಪ್ರಕಟಿಸಿತು.",
+    "ಸಾಫ್ಟ್‌ವೇರ್ ವಾಸ್ತುಶಿಲ್ಪಿ ಡೇಟಾ ಸಂಸ್ಕರಣಾ ಪೈಪ್‌ಲೈನ್ ಅನ್ನು ಅತ್ಯುತ್ತಮವಾಗಿಸಿದ್ದಾರೆ.",
+    "ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯು ಬಹುಭಾಷಾ ಪಠ್ಯವನ್ನು ನಿಖರವಾಗಿ ವಿಶ್ಲೇಷಿಸುತ್ತದೆ.",
+    "ಅಭಿವೃದ್ಧಿ ತಂಡವು ಎಲ್ಲಾ ಏಕೀಕರಣ ಪರೀಕ್ಷೆಗಳನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಳಿಸಿದೆ.",
+    "ಹೈ-ಸ್ಪೀಡ್ ಮೆಮೊರಿ ಬಸ್ ನೈಜ-ಸಮಯದ ಡೇಟಾ ಸ್ಥಿರತೆಯನ್ನು ಖಚಿತಪಡಿಸುತ್ತದೆ.",
+    "ವಿಶ್ವಾಸಾರ್ಹತೆಯನ್ನು ಸಾಬೀತುಪಡಿಸಲು ನಾವು ಕಠಿಣ ಮಾನದಂಡ ಪರೀಕ್ಷೆಗಳನ್ನು ನಡೆಸಿದ್ದೇವೆ.",
+    "ಮಕ್ಕಳು ಗ್ರಂಥಾಲಯದಲ್ಲಿ ಸುಂದರ ಕಥೆಗಳ ಪುಸ್ತಕಗಳನ್ನು ಓದಿದರು.",
+    "ಇಂದು ಹವಾಮಾನವು ತುಂಬಾ ಹಿತಕರವಾಗಿದೆ ಮತ್ತು ತಂಪಾಗಿದೆ.",
+    "ರೈತರು ಗದ್ದೆಗಳಲ್ಲಿ ಭತ್ತದ ಬೆಳೆಯನ್ನು ಕಟಾವು ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿದರು.",
+    "ವಿಜ್ಞಾನಿಯು ಹೊಸ ಗಣಿತ ಸೂತ್ರದ ನಿಖರತೆಯನ್ನು ಪರೀಕ್ಷಿಸಿದರು.",
+    "ಇಂಜಿನಿಯರ್ ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ ವಿತರಿಸಿದ ವ್ಯವಸ್ಥೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ್ದಾರೆ. [14]",
+    "ವಿದ್ಯಾರ್ಥಿಗಳು ಸಂಕೀರ್ಣವಾದ ನರಮಂಡಲ ಜಾಲವನ್ನು ಸರಿಯಾಗಿ ಅರ್ಥಮಾಡಿಕೊಂಡಿದ್ದಾರೆ. [15]",
+    "ನಾವು ಶೂನ್ಯ-ವಿಳಂಬ ಸಿಂಕ್ರೊನಸ್ ಮೆಮೊರಿ ಪ್ರೋಟೋಕಾಲ್ ಅನ್ನು ಯಶಸ್ವಿಯಾಗಿ ಅಳವಡಿಸಿದ್ದೇವೆ. [16]",
+    "ಪ್ರಾಧ್ಯಾಪಕರು ಸೃಜನಶೀಲ ವ್ಯಾಕರಣ ಸಿದ್ಧಾಂತವನ್ನು ವಿವರವಾಗಿ ವಿವರಿಸಿದರು. [17]",
+    "ಸಂಶೋಧನಾ ತಂಡವು ಕೃತಕ ಬುದ್ಧಿಮತ್ತೆಯ ಬಗ್ಗೆ ಪ್ರಮುಖ ಸಂಶೋಧನಾ ಪ್ರಬಂಧವನ್ನು ಪ್ರಕಟಿಸಿತು. [18]",
+    "ಸಾಫ್ಟ್‌ವೇರ್ ವಾಸ್ತುಶಿಲ್ಪಿ ಡೇಟಾ ಸಂಸ್ಕರಣಾ ಪೈಪ್‌ಲೈನ್ ಅನ್ನು ಅತ್ಯುತ್ತಮವಾಗಿಸಿದ್ದಾರೆ. [19]"
+  ]
+}

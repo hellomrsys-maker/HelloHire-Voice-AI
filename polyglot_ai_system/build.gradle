@@ -1,0 +1,131 @@
+// =============================================================================
+// build.gradle — Java multi-project build for Engine and Training layers
+// =============================================================================
+
+plugins {
+    id 'java-library'
+    id 'application'
+}
+
+allprojects {
+    group   = 'ai.polyglot'
+    version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java-library'
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    compileJava.options.encoding = 'UTF-8'
+
+    test {
+        useJUnitPlatform()
+        jvmArgs '-ea'
+        testLogging {
+            events 'passed', 'failed', 'skipped'
+            showStandardStreams = true
+        }
+    }
+}
+
+// =============================================================================
+// Engine Java sub-project
+// =============================================================================
+
+project(':engine:java') {
+    apply plugin: 'application'
+
+    dependencies {
+        // gRPC
+        implementation 'io.grpc:grpc-netty-shaded:1.62.2'
+        implementation 'io.grpc:grpc-protobuf:1.62.2'
+        implementation 'io.grpc:grpc-stub:1.62.2'
+
+        // JSON
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
+        implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.17.0'
+
+        // Logging
+        implementation 'org.slf4j:slf4j-api:2.0.12'
+        runtimeOnly 'ch.qos.logback:logback-classic:1.5.3'
+
+        // Testing
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+        testImplementation 'org.mockito:mockito-junit-jupiter:5.11.0'
+        testImplementation 'org.assertj:assertj-core:3.25.3'
+    }
+
+    application {
+        mainClass = 'ai.engine.service.EngineServiceMain'
+    }
+
+    sourceSets {
+        main {
+            java { srcDirs = ['src/main/java'] }
+            resources { srcDirs = ['src/main/resources'] }
+        }
+        test {
+            java { srcDirs = ['src/test/java'] }
+        }
+    }
+}
+
+// =============================================================================
+// Training Java sub-project
+// =============================================================================
+
+project(':training:java') {
+    apply plugin: 'application'
+
+    dependencies {
+        implementation project(':engine:java')
+
+        implementation 'io.grpc:grpc-netty-shaded:1.62.2'
+        implementation 'io.grpc:grpc-protobuf:1.62.2'
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
+        implementation 'org.slf4j:slf4j-api:2.0.12'
+        runtimeOnly 'ch.qos.logback:logback-classic:1.5.3'
+
+        // Distributed coordination: Apache ZooKeeper client
+        implementation 'org.apache.zookeeper:zookeeper:3.9.2'
+
+        // Metrics
+        implementation 'io.micrometer:micrometer-core:1.12.4'
+        implementation 'io.micrometer:micrometer-registry-prometheus:1.12.4'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+        testImplementation 'org.assertj:assertj-core:3.25.3'
+    }
+
+    application {
+        mainClass = 'ai.training.service.TrainingServiceMain'
+    }
+
+    sourceSets {
+        main {
+            java { srcDirs = ['src/main/java'] }
+            resources { srcDirs = ['src/main/resources'] }
+        }
+        test {
+            java { srcDirs = ['src/test/java'] }
+        }
+    }
+}
+
+// =============================================================================
+// Root settings
+// =============================================================================
+
+settings {
+    rootProject.name = 'polyglot-ai-system'
+    include ':engine:java'
+    include ':training:java'
+}

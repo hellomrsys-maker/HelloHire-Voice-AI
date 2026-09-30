@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Italian",
+    "engine": "Italian_engine",
+    "iso_codes": [
+      "ita",
+      "it"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Italian",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "ita_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Italian)",
+          "How are operations (Italian)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "ita_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Italian)",
+          "Report readiness (Italian)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "L'ingegnere ha progettato un'architettura distribuita ad alte prestazioni.",
+    "Abbiamo implementato con successo il protocollo di memoria condivisa.",
+    "Il gruppo di ricerca ha pubblicato uno studio innovativo sull'AI.",
+    "L'architetto software ha ottimizzato la pipeline di elaborazione dati (using optimal hyper-parameters).",
+    "Il modello cognitivo analizza flussi multilingue in tempo reale.",
+    "Il team di sviluppo ha completato tutti i test di integrazione (on multi-core architectures).",
+    "L'interfaccia di memoria ad alta velocità assicura la coerenza atomica.",
+    "Abbiamo condotto test empirici rigorosi per validare il throughput (under heavy loads).",
+    "L'ingegnere ha progettato un'architettura distribuita ad alte prestazioni.",
+    "Abbiamo implementato con successo il protocollo di memoria condivisa.",
+    "Il gruppo di ricerca ha pubblicato uno studio innovativo sull'AI.",
+    "L'architetto software ha ottimizzato la pipeline di elaborazione dati (using optimal hyper-parameters).",
+    "Il modello cognitivo analizza flussi multilingue in tempo reale.",
+    "Il team di sviluppo ha completato tutti i test di integrazione (on multi-core architectures).",
+    "L'interfaccia di memoria ad alta velocità assicura la coerenza atomica.",
+    "Abbiamo condotto test empirici rigorosi per validare il throughput (under heavy loads).",
+    "L'ingegnere ha progettato un'architettura distribuita ad alte prestazioni.",
+    "Abbiamo implementato con successo il protocollo di memoria condivisa.",
+    "Il gruppo di ricerca ha pubblicato uno studio innovativo sull'AI.",
+    "L'architetto software ha ottimizzato la pipeline di elaborazione dati (using optimal hyper-parameters)."
+  ]
+}

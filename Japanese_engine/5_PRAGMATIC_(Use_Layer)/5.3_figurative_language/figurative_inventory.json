@@ -1,0 +1,27 @@
+{
+  "figurative_language": {
+    "yojijukugo": [
+      {"idiom": "一石二鳥", "reading": "いっせきにちょう", "literal": "One stone, two birds", "meaning": "Killing two birds with one stone"},
+      {"idiom": "一期一会", "reading": "いちごいちえ", "literal": "One time, one meeting", "meaning": "Treasure every unrepeatable encounter"},
+      {"idiom": "以心伝心", "reading": "いしんでんしん", "literal": "Heart to heart transmission", "meaning": "Tacit mutual understanding without words"},
+      {"idiom": "十人十色", "reading": "じゅうにんといろ", "literal": "Ten people, ten colors", "meaning": "To each their own unique individuality"},
+      {"idiom": "自業自得", "reading": "じごうじとく", "literal": "Own action, own harvest", "meaning": "Reaping what one has sowed / karma"}
+    ],
+    "proverbs_kotowaza": [
+      {"proverb": "猿も木から落ちる", "literal": "Even monkeys fall from trees", "meaning": "Even the most skilled experts can make mistakes"},
+      {"proverb": "能ある鷹は爪を隠す", "literal": "A capable hawk hides its talons", "meaning": "A truly skilled person does not boast or show off"},
+      {"proverb": "石の上にも三年", "literal": "Three years even on a cold stone", "meaning": "Perseverance prevails; patience brings success"}
+    ],
+    "sarcasm_and_irony": {
+      "nature": "Marked and infrequent compared to Western languages; sarcasm in Japanese is often expressed through excessive, razor-sharp exaggerated politeness (慇懃無礼 Ingin Burei - polite rudeness).",
+      "example": "それはそれはご立派なことでございますね (My, how splendid that is for you [drenched in sarcastic contempt])."
+    },
+    "indirectness_mapping": {
+      "refusal_mappings": [
+        {"phrase": "ちょっと難しいですね", "literal": "It is a little bit difficult", "illocutionary_force": "Outright impossible / Firm refusal"},
+        {"phrase": "前向きに検討いたします", "literal": "We will examine it positively", "illocutionary_force": "Polite dismissal / No intention to proceed"},
+        {"phrase": "あいにく都合が合わず", "literal": "Unfortunately the schedule doesn't match", "illocutionary_force": "Declination of invitation"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "language": "Japanese",
+  "duration_seconds": 7.13,
+  "phase1_syntax": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\japanese_main_model_verified.pt",
+    "final_loss": 46.9276
+  },
+  "phase2_sub_ais": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\japanese_engine_sub_ais_verified.pt"
+  },
+  "phase3_intent_tree": {
+    "status": "SUCCESS",
+    "nodes_evaluated": 2
+  },
+  "phase4_vocal_prosody": {
+    "status": "SUCCESS",
+    "scenarios_evaluated": 6
+  },
+  "phase5_amsv_sync": {
+    "status": "SUCCESS",
+    "verified_checkpoints": {
+      "japanese_main_model_verified.pt": "de582ebdf183960b4668a6430f581fe53b1bf88b4dabcd0bcdb8f68fc70c6d86",
+      "japanese_engine_sub_ais_verified.pt": "11bed47f0cf8298f55cd0c42c2ed21f26d00153cefbcd1b6cd86f1468d06a68c"
+    }
+  }
+}

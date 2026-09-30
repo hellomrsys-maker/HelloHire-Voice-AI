@@ -1,0 +1,62 @@
+{
+  "language": "German",
+  "engine": "D:\\gra.voi\\German_engine",
+  "iso_code": "deu",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "deu_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Der Ingenieur entwickelte eine hochmoderne verteilte Architektur.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Wir haben das synchrone Speicherprotokoll erfolgreich implementiert.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "deu_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Die Forscherin veröffentlichte eine bahnbrechende Studie zur KI.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Der Architekt optimierte die Datenverarbeitungspipeline (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "deu_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Alle Komponenten kommunizieren ohne Latenzverzögerung miteinander.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Obwohl die Anforderungen komplex waren, schloss das Team das Projekt ab (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "deu_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Das neuronale Netzwerk klassifiziert multilinguale Syntaxmuster präzise.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Wir führten umfassende Zuverlässigkeitstests durch (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

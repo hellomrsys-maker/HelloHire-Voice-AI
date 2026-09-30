@@ -1,0 +1,32 @@
+# conditionals.yaml - Conditionals Taxonomy & Canonical Prototypes
+
+conditional_types:
+  zero_conditional:
+    prototypical_structure: "If + present simple, ... present simple"
+    semantics: "Universal scientific truth, habitual cause-effect."
+    example: "If water reaches 100 degrees Celsius, it boils."
+
+  first_conditional:
+    prototypical_structure: "If + present simple, ... will + infinitive"
+    semantics: "Real future possibility."
+    example: "If the loss drops below 0.05, we will finalize training."
+
+  second_conditional:
+    prototypical_structure: "If + past simple, ... would + infinitive"
+    semantics: "Hypothetical / counterfactual present or future."
+    example: "If we had unlimited GPU memory, we would scale batch size to 1024."
+
+  third_conditional:
+    prototypical_structure: "If + past perfect, ... would have + past participle"
+    semantics: "Counterfactual past outcome."
+    example: "If the lock had failed, the synchronization would have broken."
+
+  mixed_conditionals:
+    mixed_past_present:
+      structure: "If + past perfect, ... would + infinitive"
+      semantics: "Past hypothetical cause with current present consequence."
+      example: "If I had learned Rust earlier, I would write zero-allocation code today."
+    mixed_present_past:
+      structure: "If + past simple, ... would have + past participle"
+      semantics: "Permanent present condition with past consequence."
+      example: "If she were more careful, she would not have triggered the crash."

@@ -1,0 +1,96 @@
+{
+  "doc_verbs": {
+    "畀": {
+      "meaning": "give",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "畀本書我",
+      "example_calque": "畀我本書",
+      "mandates_inversion": true,
+      "description": "Ditransitive recipient verb requiring direct object before recipient in spoken Cantonese"
+    },
+    "送": {
+      "meaning": "gift/send",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "送份禮物畀佢",
+      "example_calque": "送佢禮物",
+      "mandates_inversion": true,
+      "description": "Ditransitive gift predicate"
+    },
+    "教": {
+      "meaning": "teach",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "教廣東話佢",
+      "example_calque": "教佢廣東話",
+      "mandates_inversion": false,
+      "description": "Instruction verb, permits both orders though V + DO + IO is colloquial Cantonese"
+    },
+    "借": {
+      "meaning": "lend/borrow",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "借部車佢",
+      "example_calque": "借佢部車",
+      "mandates_inversion": true,
+      "description": "Lending predicate"
+    },
+    "還": {
+      "meaning": "return/repay",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "還錢我",
+      "example_calque": "還我錢",
+      "mandates_inversion": true,
+      "description": "Restoration predicate"
+    },
+    "派": {
+      "meaning": "distribute/hand out",
+      "canonical_order": "V + DO + IO",
+      "example_canonical": "派利是畀小朋友",
+      "example_calque": "派小朋友利是",
+      "mandates_inversion": true,
+      "description": "Distribution predicate"
+    }
+  },
+  "postverbal_adverbs": {
+    "先": {
+      "meaning": "first / beforehand",
+      "canonical_position": "postverbal",
+      "canonical_pattern": "V + 先",
+      "mandarin_calque": "先 + V",
+      "example_canonical": "行先",
+      "example_calque": "先行"
+    },
+    "多": {
+      "meaning": "more",
+      "canonical_position": "postverbal",
+      "canonical_pattern": "V + 多 + DO",
+      "mandarin_calque": "多 + V + DO",
+      "example_canonical": "飲多杯茶",
+      "example_calque": "多飲杯茶"
+    },
+    "少": {
+      "meaning": "less",
+      "canonical_position": "postverbal",
+      "canonical_pattern": "V + 少 + DO",
+      "mandarin_calque": "少 + V + DO",
+      "example_canonical": "食少舊肉",
+      "example_calque": "少食舊肉"
+    },
+    "添": {
+      "meaning": "in addition / more",
+      "canonical_position": "postverbal_or_final",
+      "canonical_pattern": "V + DO + 添",
+      "mandarin_calque": "再 / 還",
+      "example_canonical": "買多件添",
+      "example_calque": "再買一件"
+    }
+  },
+  "comparative_structures": {
+    "gwo3": {
+      "marker": "過",
+      "canonical_pattern": "A + Adj + 過 + B",
+      "mandarin_calque": "A + 比 + B + Adj",
+      "example_canonical": "我大過你",
+      "example_calque": "我比你大",
+      "description": "Cantonese post-adjectival comparative with gwo3 (過)"
+    }
+  }
+}

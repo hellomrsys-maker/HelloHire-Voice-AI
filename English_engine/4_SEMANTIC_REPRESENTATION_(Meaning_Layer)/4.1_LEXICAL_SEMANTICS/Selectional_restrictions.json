@@ -1,0 +1,24 @@
+{
+  "selectional_restrictions": {
+    "eat": {
+      "subject": "+ANIMATE",
+      "object": "+SOLID & +EDIBLE",
+      "violation_example": "The stone ate the algorithm."
+    },
+    "drink": {
+      "subject": "+ANIMATE",
+      "object": "+LIQUID",
+      "violation_example": "The computer drank the book."
+    },
+    "think": {
+      "subject": "+SENTIENT",
+      "object": "+PROPOSITION / +IDEA",
+      "violation_example": "The chair thinks that tomorrow is sunny."
+    },
+    "compile": {
+      "subject": "+AGENT (human / software)",
+      "object": "+SOURCE_CODE",
+      "violation_example": "The tree compiled the apple."
+    }
+  }
+}

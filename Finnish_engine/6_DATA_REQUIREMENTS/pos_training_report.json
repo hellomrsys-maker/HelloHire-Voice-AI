@@ -1,0 +1,17 @@
+{
+  "engine": "Finnish_engine",
+  "treebank": "UD_Finnish-TDT",
+  "license": "This treebank is based on the Turku Dependency Treebank release",
+  "trained": true,
+  "val_token_accuracy": 0.5663,
+  "majority_baseline": 0.25,
+  "beats_baseline_by": 0.3163,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 474,
+  "final_train_loss": 0.5902,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\finnish_engine_pos_tagger.pt"
+}

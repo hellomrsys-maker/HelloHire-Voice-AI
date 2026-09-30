@@ -1,0 +1,59 @@
+{
+  "address_hierarchy": {
+    "pt_br": {
+      "informal_standard": {
+        "pronouns": ["você", "vocês"],
+        "verb_person": "3rd_person",
+        "description": "Standard everyday address across Brazil"
+      },
+      "intimate_regional": {
+        "pronouns": ["tu", "você"],
+        "verb_person": "2nd_or_3rd_person",
+        "description": "Intimate address in Southern, Northeastern, and Amazonian regions"
+      },
+      "formal_respectful": {
+        "pronouns": ["o senhor", "a senhora", "os senhores", "as senhoras"],
+        "verb_person": "3rd_person",
+        "description": "Respectful address for elders, superiors, and professionals"
+      }
+    },
+    "pt_pt": {
+      "intimate_familiar": {
+        "pronouns": ["tu", "vocês"],
+        "verb_person": "2nd_person",
+        "description": "Family, close friends, peers, children"
+      },
+      "formal_respectful": {
+        "pronouns": ["o senhor", "a senhora", "o doutor", "a professora"],
+        "verb_person": "3rd_person",
+        "description": "Standard respectful address in Portugal"
+      }
+    }
+  },
+  "epistolary_formulas": {
+    "formal": {
+      "salutations": [
+        "Prezado(a) Senhor(a),",
+        "Estimado(a) Colega,",
+        "Excelentíssimo(a) Senhor(a) Doutor(a),"
+      ],
+      "closings": [
+        "Atenciosamente,",
+        "Cordialmente,",
+        "Com os melhores cumprimentos,"
+      ]
+    },
+    "informal": {
+      "salutations": [
+        "Querido(a) amigo(a),",
+        "Olá,",
+        "Querido(a) [Nome],"
+      ],
+      "closings": [
+        "Um forte abraço,",
+        "Com carinho,",
+        "Beijos,"
+      ]
+    }
+  }
+}

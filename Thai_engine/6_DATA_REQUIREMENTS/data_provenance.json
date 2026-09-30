@@ -1,0 +1,15 @@
+{
+  "engine": "Thai_engine",
+  "generated_utc": "2026-09-29T11:57:35Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Thai-PUD",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

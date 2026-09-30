@@ -1,0 +1,34 @@
+{
+  "compositional_semantics": {
+    "case_frames": {
+      "definition": "Verb valency specifications in Japanese are governed by strict particle-case grids rather than surface linear position.",
+      "frames": [
+        {
+          "verb": "渡す (to hand over)",
+          "valency": ["Agent (が)", "Recipient (に)", "Theme (を)"],
+          "example": "太郎が花子に手紙を渡した。"
+        },
+        {
+          "verb": "住む (to reside)",
+          "valency": ["Agent (が)", "Location (に)"],
+          "example": "田中さんが東京に住んでいる。"
+        },
+        {
+          "verb": "働く (to work)",
+          "valency": ["Agent (が)", "Dynamic_Location (で)"],
+          "example": "鈴木さんが工場で働く。"
+        }
+      ]
+    },
+    "sub_lexical_kanji_embeddings": {
+      "architecture": "Decomposes Kanji compounds into constituent ideogram embeddings and radicals (Bushu 部首) to infer the semantic category of out-of-vocabulary neologisms.",
+      "examples": [
+        {"root": "木 (tree)", "compounds": ["林 (woods)", "森 (forest)", "森林 (woodland)"]},
+        {"root": "水 (water)", "compounds": ["海 (sea)", "湖 (lake)", "河 (river)"]}
+      ]
+    },
+    "thematic_roles_stability": {
+      "observation": "Because Japanese allows extensive constituent scrambling, thematic roles are securely anchored to particle markers: が consistently signals Agent/Experiencer, を signals Patient/Theme, に signals Goal/Recipient/Time, and で signals Instrument/Dynamic Action Location."
+    }
+  }
+}

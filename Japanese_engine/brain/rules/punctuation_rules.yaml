@@ -1,0 +1,44 @@
+# Japanese Punctuation Rules (約物・句読点規則)
+
+punctuation_elements:
+  kuten:
+    character: "。"
+    unicode: "U+3002"
+    rule: "Sentence-final period in Japanese text. Must not be followed immediately by exclamation or question marks in formal writing."
+  touten:
+    character: "、"
+    unicode: "U+3001"
+    rule: "Comma separating clauses or listing items. Must not occur consecutively."
+  nakaguro:
+    character: "・"
+    unicode: "U+30FB"
+    rule: "Separates foreign names, coordinated noun lists."
+  kagikakko:
+    open: "「"
+    close: "」"
+    rule: "Quotation marks for speech, titles, emphasis."
+  nijukagikakko:
+    open: "『"
+    close: "』"
+    rule: "Nested quotes or book/work titles."
+
+violations:
+  - id: "PUNC_DOUBLE_TOUTEN"
+    pattern: "、、"
+    severity: "error"
+    message: "連続した読点（、、）が検出されました。"
+    replacement: "、"
+  - id: "PUNC_DOUBLE_KUTEN"
+    pattern: "。。"
+    severity: "error"
+    message: "連続した句点（。。）が検出されました。"
+    replacement: "。"
+  - id: "PUNC_UNCLOSED_KAKKO"
+    open_char: "「"
+    close_char: "」"
+    severity: "error"
+    message: "かぎ括弧の対応が閉じていません。"
+  - id: "PUNC_INFORMAL_EXCLAMATION"
+    pattern: "(!{2,}|\?{2,}|！？|？！)"
+    severity: "warning"
+    message: "改まった文章において感嘆符・疑問符の重複は避けてください。"

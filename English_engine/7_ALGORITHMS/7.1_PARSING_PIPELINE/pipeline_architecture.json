@@ -1,0 +1,55 @@
+{
+  "pipeline_architecture": {
+    "stages": [
+      {
+        "stage_id": 1,
+        "name": "Text Normalization & Tokenization",
+        "input": "Raw UTF-8 text string",
+        "output": "List[Token] with char_offsets, clitic splits, and whitespace normalization",
+        "engine": "Rust / Python zero-copy scanner"
+      },
+      {
+        "stage_id": 2,
+        "name": "Morphological Analysis & Lemmatization",
+        "input": "List[Token]",
+        "output": "Lemmas, morpheme boundaries, inflectional tags",
+        "engine": "C++20 Trie / FST morphological transducers"
+      },
+      {
+        "stage_id": 3,
+        "name": "Part-of-Speech Tagging",
+        "input": "List[Token] + Lemmas",
+        "output": "Penn Treebank & UD POS tags",
+        "engine": "Biaffine Transformer / HMM closed-class filter"
+      },
+      {
+        "stage_id": 4,
+        "name": "Syntactic Dependency & Constituency Parsing",
+        "input": "Tagged tokens",
+        "output": "Dependency parse tree (heads, relations) & X-bar bracketed tree",
+        "engine": "Transition-based arc-standard / Biaffine Graph parser"
+      },
+      {
+        "stage_id": 5,
+        "name": "Semantic Interpretation & SRL",
+        "input": "Parse tree + Tagged tokens",
+        "output": "PropBank predicate-argument frames, Coreference chains, WordNet synsets",
+        "engine": "Neural SRL head + Lappin-Leass coreference"
+      },
+      {
+        "stage_id": 6,
+        "name": "Pragmatic & Discourse Analysis",
+        "input": "Semantic structures + Discourse history",
+        "output": "Speech act, RST discourse tree, presupposition triggers",
+        "engine": "Searle intent classifier + RST nucleus-satellite linker"
+      },
+      {
+        "stage_id": 7,
+        "name": "AMSV Zero-Bridge Physical Memory Sync",
+        "input": "All layer outputs & confidence metrics",
+        "output": "64-byte Atomic Memory State Vector physical write",
+        "engine": "AMSVEmbeddedView direct buffer synchronization"
+      }
+    ]
+  }
+}

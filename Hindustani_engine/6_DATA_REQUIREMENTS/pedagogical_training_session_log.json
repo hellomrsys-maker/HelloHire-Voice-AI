@@ -1,0 +1,167 @@
+{
+  "session_name": "Chronological Teacher-Student Pedagogical Training",
+  "runtime_covered": "2:15:22",
+  "average_cognitive_score": 95.0,
+  "lessons": [
+    {
+      "lesson_number": 1,
+      "timestamp": "00:00 - 00:25 (Act 1: Ideals & Tragic Disruption)",
+      "scene": "Mentor's Classroom: Moral Didactics & Solemn Resolution",
+      "dialogue_sample": [
+        {
+          "speaker": "Instructor",
+          "text": "वृक्ष हों भले खड़े, हों घने, हों बड़े, एक पत्र छाँह भी माँग मत, माँग मत, माँग मत... कर्तव्य पथ पर चलो!"
+        },
+        {
+          "speaker": "Disciple",
+          "text": "बाबूजी ने कोई गलती नहीं की थी। मैं न्याय वापस लूँगा।"
+        }
+      ],
+      "student_output": {
+        "act": "INFORMATIONAL_STATEMENT",
+        "subtext": "Deep communicative conviction shattered by sudden disruption. Silence becomes protective barrier.",
+        "wait_ms": 1100,
+        "register": "TU",
+        "floor": "FLOOR_HOLDING_STOIC",
+        "amsv": {
+          "fluency": 0.9090867475394827,
+          "pragmatics_score": 0.9499961852445258,
+          "sociolinguistic_score": 0.9499961852445258
+        }
+      },
+      "teacher_feedback": {
+        "score": 0.95,
+        "critique": "Outstanding grasp of post-traumatic communicative silence. You recognized that sudden tragedy mandates prolonged reflective pauses.",
+        "reinforcement": "Rule: High-impact emotional tragedy increases human inter-turn response latency from nominal 200ms to >1000ms."
+      }
+    },
+    {
+      "lesson_number": 2,
+      "timestamp": "00:25 - 00:55 (Act 2: Hierarchical Apprenticeship)",
+      "scene": "Apprenticeship & Strategic Tactical Deference",
+      "dialogue_sample": [
+        {
+          "speaker": "Superior",
+          "text": "तू जो यह आँखें नीची करके बात करता है, इसमें तेरी चालाकी है या मेरा खौफ?"
+        },
+        {
+          "speaker": "Protagonist",
+          "text": "जहाँ आपकी इजाज़त के बिना पत्ता भी नहीं हिलता, वहाँ मेरी क्या औकात... बस आपका हुक्म ही मेरी पहचान है।"
+        }
+      ],
+      "student_output": {
+        "act": "INQUIRY",
+        "subtext": "High-friction survival under hierarchical dominance. Outward total subservience masking acute situational calculation.",
+        "wait_ms": 650,
+        "register": "AAP",
+        "floor": "FLOOR_YIELDED_TACTICAL",
+        "amsv": {
+          "fluency": 1.0,
+          "pragmatics_score": 0.9499961852445258,
+          "sociolinguistic_score": 0.9499961852445258
+        }
+      },
+      "teacher_feedback": {
+        "score": 0.95,
+        "critique": "Masterful breakdown of deferential register masking. You saw that 'Aap' here isn't simple polite etiquette; it is psychological surveillance.",
+        "reinforcement": "Rule: Subservient registers in hierarchical settings mandate crisp response latency (500-750ms) to signal complete obedience while concealing internal calculations."
+      }
+    },
+    {
+      "lesson_number": 3,
+      "timestamp": "00:55 - 01:25 (Act 3: Formal Interrogation & Dominance)",
+      "scene": "Formal Interrogation & Authority Deceleration",
+      "dialogue_sample": [
+        {
+          "speaker": "Interrogator",
+          "text": "बहुत अकड़ है तुझमें! नाम क्या है रे तेरा, और कहाँ से आया है?"
+        },
+        {
+          "speaker": "Respondent",
+          "text": "नाम: विजय... पूरा नाम। बाप का नाम: दीनानाथ... उम्र: छत्तीस साल नौ महीना आठ दिन।"
+        }
+      ],
+      "student_output": {
+        "act": "INQUIRY",
+        "subtext": "Complete conversational sovereignty against an aggressive interrogation. Turning pauses into psychological dominance.",
+        "wait_ms": 1250,
+        "register": "TUM",
+        "floor": "FLOOR_DEMANDING_COMMAND",
+        "amsv": {
+          "fluency": 0.8,
+          "pragmatics_score": 0.9499961852445258,
+          "sociolinguistic_score": 0.9499961852445258
+        }
+      },
+      "teacher_feedback": {
+        "score": 0.95,
+        "critique": "Precisely right on the power inversion. The interrogator expects rapid obedience; the respondent subverts this by stretching the pause to 1250ms, seizing total conversational dominance.",
+        "reinforcement": "Rule: The longer an interlocutor comfortably holds silence without yielding or flinching, the higher their perceived conversational authority."
+      }
+    },
+    {
+      "lesson_number": 4,
+      "timestamp": "01:25 - 01:45 (Act 4: Emotional Sanctuary & Vulnerability)",
+      "scene": "Sanctuary Discourse & Fragile Intimacy",
+      "dialogue_sample": [
+        {
+          "speaker": "Confidant",
+          "text": "तुम हमेशा इतने चुप क्यों रहते हो? क्या तुम्हारे दिल में कोई खुशी, कोई दर्द नहीं?"
+        },
+        {
+          "speaker": "Protagonist",
+          "text": "दर्द तो आदत बन चुका है... और खुशियाँ? वो शायद उस दिन आएँगी जब कर्तव्य पूरा कर पाऊँगा।"
+        }
+      ],
+      "student_output": {
+        "act": "INQUIRY",
+        "subtext": "Intimate emotional sanctuary. The hard conversational shell cracks open to reveal sustained sorrow and affection.",
+        "wait_ms": 850,
+        "register": "TUM",
+        "floor": "FLOOR_SHARED_COLLABORATIVE",
+        "amsv": {
+          "fluency": 1.0,
+          "pragmatics_score": 0.9499961852445258,
+          "sociolinguistic_score": 0.9499961852445258
+        }
+      },
+      "teacher_feedback": {
+        "score": 0.95,
+        "critique": "Very perceptive detection of vulnerability. You noticed how the tempo softens from rigid Lento to Flowing when addressing an intimate confidant.",
+        "reinforcement": "Rule: Shift to 'Tum' softens vocal tension and introduces tentative pauses (600-900ms) reflecting emotional hesitance."
+      }
+    },
+    {
+      "lesson_number": 5,
+      "timestamp": "01:45 - 02:15 (Act 5: Final Resolution & Catharsis)",
+      "scene": "Climactic Resolution & Poetic Catharsis",
+      "dialogue_sample": [
+        {
+          "speaker": "Adversary",
+          "text": "तू मुझे नहीं हरा सकता! यह सब मेरा था, मेरा है और मेरा ही रहेगा!"
+        },
+        {
+          "speaker": "Protagonist",
+          "text": "यह किसी का नहीं था... यह सत्य का था। और सत्य कभी मरता नहीं।"
+        }
+      ],
+      "student_output": {
+        "act": "INFORMATIONAL_STATEMENT",
+        "subtext": "Ultimate moral and philosophical closure. Shifting from intense combat into serene poetic resolution.",
+        "wait_ms": 1500,
+        "register": "TU",
+        "floor": "FLOOR_YIELDED_TERMINAL",
+        "amsv": {
+          "fluency": 0.6666666666666666,
+          "pragmatics_score": 0.9499961852445258,
+          "sociolinguistic_score": 0.9499961852445258
+        }
+      },
+      "teacher_feedback": {
+        "score": 0.95,
+        "critique": "Brilliant final synthesis. The climactic exchange resolves prolonged conversational conflict into definitive poetic closure.",
+        "reinforcement": "Rule: Cathartic terminal closure demands complete floor yielding with sustained falling terminal pitch."
+      }
+    }
+  ]
+}

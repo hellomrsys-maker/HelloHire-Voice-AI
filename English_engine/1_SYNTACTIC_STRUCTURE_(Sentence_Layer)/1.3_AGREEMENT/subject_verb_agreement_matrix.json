@@ -1,0 +1,38 @@
+{
+  "subject_verb_agreement_matrix": {
+    "person_number_grid": {
+      "1SG": { "pronouns": ["I"], "present_be": "am", "present_have": "have", "present_do": "do", "regular_verb": "base" },
+      "2SG_2PL": { "pronouns": ["you"], "present_be": "are", "present_have": "have", "present_do": "do", "regular_verb": "base" },
+      "3SG": { "pronouns": ["he", "she", "it"], "present_be": "is", "present_have": "has", "present_do": "does", "regular_verb": "base + -s/-es" },
+      "1PL": { "pronouns": ["we"], "present_be": "are", "present_have": "have", "present_do": "do", "regular_verb": "base" },
+      "3PL": { "pronouns": ["they"], "present_be": "are", "present_have": "have", "present_do": "do", "regular_verb": "base" }
+    },
+    "special_cases": {
+      "compound_subjects_with_and": {
+        "rule": "Plural agreement unless denoting a single unified concept",
+        "example_plural": "The engineer and the scientist are collaborating.",
+        "example_singular": "Macaroni and cheese is delicious."
+      },
+      "correlative_either_or": {
+        "rule": "Verb agrees with the nearest subject conjunct (Proximity Principle)",
+        "example_1": "Neither the manager nor the employees were informed.",
+        "example_2": "Neither the employees nor the manager was informed."
+      },
+      "collective_nouns": {
+        "rule": "Singular in American English (focus on unit); plural in British English (focus on individuals)",
+        "example_us": "The committee has decided.",
+        "example_uk": "The committee have decided."
+      },
+      "indefinite_pronouns_singular": {
+        "items": ["everyone", "everybody", "someone", "somebody", "no one", "nobody", "each", "either", "neither"],
+        "rule": "Strictly singular verb agreement",
+        "example": "Everyone who attends is welcomed."
+      },
+      "quantifiers_with_of_phrase": {
+        "rule": "Verb agrees with the object of preposition (count vs mass)",
+        "example_mass": "Most of the data is clean.",
+        "example_count": "Most of the parameters are updated."
+      }
+    }
+  }
+}

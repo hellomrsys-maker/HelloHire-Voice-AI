@@ -1,0 +1,75 @@
+{
+  "language": "Danish",
+  "engine": "D:\\gra.voi\\Danish_engine",
+  "iso_code": "dan",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "dan_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Ingeniøren designede et yderst effektivt distribueret system.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "De studerende forstod det komplekse neurale netværk til fulde.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "dan_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Vi har med succes implementeret den synkrone hukommelsesprotokol.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Professoren forklarede generativ grammatik på en meget pædagogisk måde.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "dan_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Forskningsgruppen offentliggjorde en banebrydende artikel om kunstig intelligens.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Softwarearkitekten optimerede hele databehandlingsprocessen omhyggeligt.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "dan_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Systemet analyserer flersprogede tekster med stor nøjagtighed.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Udviklingsteamet gennemførte alle integrationstests uden fejl.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "dan_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Højhastighedsbussen sikrer datakonsistens i realtid på tværs af noder.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Vi udførte strenge ydelsestests for at bevise systemets pålidelighed.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

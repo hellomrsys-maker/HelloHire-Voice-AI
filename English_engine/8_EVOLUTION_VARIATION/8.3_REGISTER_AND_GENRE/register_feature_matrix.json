@@ -1,0 +1,24 @@
+{
+  "register_feature_matrix_biber": {
+    "dimensions": [
+      {
+        "dimension_1": "Involved vs Informational Production",
+        "involved_features": ["Private verbs (think, feel)", "First/second person pronouns", "Contractions", "Present tense"],
+        "informational_features": ["Nouns", "Prepositions", "Long words", "High type-token ratio"]
+      },
+      {
+        "dimension_2": "Narrative vs Non-Narrative Concerns",
+        "narrative_features": ["Past tense verbs", "Third person pronouns", "Perfect aspect", "Public verbs"]
+      },
+      {
+        "dimension_3": "Explicit vs Situation-Dependent Reference",
+        "explicit_features": ["Relative clauses", "Complementizer 'that' retention"],
+        "situation_dependent_features": ["Time/place adverbials", "Demonstratives"]
+      },
+      {
+        "dimension_4": "Overt Expression of Persuasion",
+        "features": ["Infinitives", "Prediction modals (will, shall)", "Necessity modals (must, should)", "Suasive verbs"]
+      }
+    ]
+  }
+}

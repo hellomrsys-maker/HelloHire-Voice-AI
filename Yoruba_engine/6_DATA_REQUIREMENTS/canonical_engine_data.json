@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Yoruba",
+    "engine": "Yoruba_engine",
+    "iso_codes": [
+      "yor",
+      "yo"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Yoruba",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "yor_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Yoruba)",
+          "How are operations (Yoruba)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "yor_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Yoruba)",
+          "Report readiness (Yoruba)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Onimọ-ẹrọ kọ eto pinpin ti o munadoko pupọ.",
+    "Awọn ọmọ ile-iwe loye nẹtiwọki ti o nipọn daradara.",
+    "A ti ṣe aṣeyọri ilana iranti ti ko ni idaduro kankan.",
+    "Ọjọgbọn ṣe alaye awọn ilana girama ni kikun.",
+    "Ẹgbẹ iwadii gbe iwe pataki kan jade lori oye atọwọda.",
+    "Ẹlẹrọ sọfitiwia mu gbogbo ilana ṣiṣe data dara si.",
+    "Oye atọwọda n ṣe itupalẹ ọrọ ni ọpọlọpọ awọn ede ni pipe.",
+    "Ẹgbẹ idagbasoke pari gbogbo awọn idanwo iṣọpọ ni aṣeyọri.",
+    "Ọna iranti ti o yara n rii daju pe data wa ni ibamu ni gbogbo igba.",
+    "A ṣe awọn idanwo lile lati jẹri iduroṣinṣin eto naa.",
+    "Awọn ọmọde ka awọn iwe ti o dara ninu ile-ikawe.",
+    "Oju-ọjọ oni dun pupọ, o si tutu daradara.",
+    "Awọn agbe bẹrẹ si kore ọkà ninu awọn oko nla.",
+    "Onimọ-jinlẹ ṣayẹwo iyara ati pipe ilana iṣiro tuntun.",
+    "Onimọ-ẹrọ kọ eto pinpin ti o munadoko pupọ. [14]",
+    "Awọn ọmọ ile-iwe loye nẹtiwọki ti o nipọn daradara. [15]",
+    "A ti ṣe aṣeyọri ilana iranti ti ko ni idaduro kankan. [16]",
+    "Ọjọgbọn ṣe alaye awọn ilana girama ni kikun. [17]",
+    "Ẹgbẹ iwadii gbe iwe pataki kan jade lori oye atọwọda. [18]",
+    "Ẹlẹrọ sọfitiwia mu gbogbo ilana ṣiṣe data dara si. [19]"
+  ]
+}

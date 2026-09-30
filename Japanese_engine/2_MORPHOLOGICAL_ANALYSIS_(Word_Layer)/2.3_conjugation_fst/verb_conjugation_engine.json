@@ -1,0 +1,17 @@
+{
+  "verb_conjugation_fst_spec": {
+    "paradigm_bases": [
+      {"base_id": 1, "name": "未然形 (Mizenkei)", "function": "Irrealis / Negative / Passive / Causative base"},
+      {"base_id": 2, "name": "連用形 (Ren'youkei)", "function": "Continuative / Polite ます / Past た / Gerund て base"},
+      {"base_id": 3, "name": "終止形 (Shuushikei)", "function": "Sentence-final predicative / Dictionary base"},
+      {"base_id": 4, "name": "連体形 (Rentaikei)", "function": "Attributive / Noun-modifying base"},
+      {"base_id": 5, "name": "仮定形 (Kateikei)", "function": "Hypothetical conditional ば base"},
+      {"base_id": 6, "name": "命令形 (Meireikei)", "function": "Imperative command base"}
+    ],
+    "sound_euphony_onbin": {
+      "i_onbin": "k-stem / g-stem verbs in ren'youkei + te/ta change k/g to 'i' (書いた, 泳いだ).",
+      "sokuonbin": "t-stem / r-stem / w-stem verbs in ren'youkei + te/ta change to geminate 'っ' (待った, 取った, 買った).",
+      "hatsuonbin": "m-stem / b-stem / n-stem verbs in ren'youkei + te/ta change to moraic nasal 'ん' + voiced de/da (読んだ, 飛んだ, 死んだ)."
+    }
+  }
+}

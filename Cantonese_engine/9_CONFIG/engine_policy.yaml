@@ -1,0 +1,66 @@
+# Cantonese Language Engine Policy & Configuration Specification (Config Layer)
+
+engine:
+  name: "Cantonese Language Engine"
+  code: "yue"
+  version: "1.0.0"
+  standard: "Hong Kong / Guangzhou Prestige Cantonese (HKSCS Traditional)"
+  iso_639_1: "zh"
+  iso_639_3: "yue"
+  script: "Traditional Chinese (HKSCS)"
+  romanization: "LSHK Jyutping"
+
+zero_bridge_memory:
+  magic_bytes: "0x59554554" # "YUET" in ASCII (粵)
+  vector_size_bytes: 64
+  alignment_bytes: 64
+  zero_latency_mode: true
+  byte_map:
+    magic: [0, 4]
+    version: [4, 6]
+    engine_mode: 6
+    register_mode: 7
+    tone_sfp_bitfield: [8, 16]
+    syntactic_flags: [16, 18]
+    syntax_sub_ai_capability: 18
+    doc_inversion_flag: 19
+    tone_orthography: 20
+    aspect_negation_flag: 21
+    register_tier: 22
+    sfp_concord_flag: 23
+    confidence_score: [24, 28]
+    reserved_hardware: [28, 32]
+    semantic_vector: [32, 48]
+    task_status: [48, 52]
+    sub_ai_active:
+      syntax: 52
+      phonology: 53
+      pragmatic: 54
+      editorial: 55
+    attention_vector: [56, 64]
+
+linguistic_policy:
+  word_order: "SVO"
+  doc_inversion: "strict" # Mandates V + DO + IO (畀本書我)
+  aspect_enclitics: "strict" # Validates postverbal 咗, 緊, 過, 開, 晒, 埋
+  sfp_inventory: "rich" # Validates >30 sentence final particles (喇, 呀, 㗎, 啫, 喎, 囉)
+  script_standard: "hkscs_traditional" # Enforces standard HKSCS character glyphs
+  diglossia_handling: "bilingual_aware" # Detects Mandarin calques in spoken Cantonese
+
+sub_ais:
+  syntax:
+    name: "CantoneseSyntaxSubAI"
+    designated_bytes: [18, 52]
+    scope: "SVO topology, Double Object Construction inversion, postverbal adverbs"
+  phonology:
+    name: "CantonesePhonologySubAI"
+    designated_bytes: [20, 53]
+    scope: "9 phonemic tones (6 citation + 3 checked), Jyutping romanization, lazy sound tracking"
+  pragmatic:
+    name: "CantonesePragmaticSubAI"
+    designated_bytes: [22, 23, 54]
+    scope: "Sentence-Final Particle (SFP) discourse evidentiality, diglossic register tier"
+  editorial:
+    name: "CantoneseEditorialSubAI"
+    designated_bytes: [19, 21, 24, 25, 26, 27, 55]
+    scope: "DOC inversion validation, aspectual marker accuracy, confidence score"

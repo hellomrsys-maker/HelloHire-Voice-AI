@@ -1,0 +1,103 @@
+{
+  "regular_endings": {
+    "present": {
+      "ich": "e",
+      "du": "st",
+      "er_sie_es": "t",
+      "wir": "en",
+      "ihr": "t",
+      "sie_Sie": "en"
+    },
+    "preterite": {
+      "ich": "te",
+      "du": "test",
+      "er_sie_es": "te",
+      "wir": "ten",
+      "ihr": "tet",
+      "sie_Sie": "ten"
+    },
+    "subjunctive_ii": {
+      "ich": "te",
+      "du": "test",
+      "er_sie_es": "te",
+      "wir": "ten",
+      "ihr": "tet",
+      "sie_Sie": "ten"
+    }
+  },
+  "auxiliary_verbs": {
+    "sein": {
+      "present": {"ich": "bin", "du": "bist", "er_sie_es": "ist", "wir": "sind", "ihr": "seid", "sie_Sie": "sind"},
+      "preterite": {"ich": "war", "du": "warst", "er_sie_es": "war", "wir": "waren", "ihr": "wart", "sie_Sie": "waren"},
+      "subjunctive_ii": {"ich": "wäre", "du": "wärest", "er_sie_es": "wäre", "wir": "wären", "ihr": "wäret", "sie_Sie": "wären"},
+      "participle_ii": "gewesen",
+      "auxiliary": "sein"
+    },
+    "haben": {
+      "present": {"ich": "habe", "du": "hast", "er_sie_es": "hat", "wir": "haben", "ihr": "habt", "sie_Sie": "haben"},
+      "preterite": {"ich": "hatte", "du": "hattest", "er_sie_es": "hatte", "wir": "hatten", "ihr": "hattet", "sie_Sie": "hatten"},
+      "subjunctive_ii": {"ich": "hätte", "du": "hättest", "er_sie_es": "hätte", "wir": "hätten", "ihr": "hättet", "sie_Sie": "hätten"},
+      "participle_ii": "gehabt",
+      "auxiliary": "haben"
+    },
+    "werden": {
+      "present": {"ich": "werde", "du": "wirst", "er_sie_es": "wird", "wir": "werden", "ihr": "werdet", "sie_Sie": "werden"},
+      "preterite": {"ich": "wurde", "du": "wurdest", "er_sie_es": "wurde", "wir": "wurden", "ihr": "wurdet", "sie_Sie": "wurden"},
+      "subjunctive_ii": {"ich": "würde", "du": "würdest", "er_sie_es": "würde", "wir": "würden", "ihr": "würdet", "sie_Sie": "würden"},
+      "participle_ii": "geworden",
+      "auxiliary": "sein"
+    }
+  },
+  "modal_verbs": {
+    "können": {
+      "present": {"ich": "kann", "du": "kannst", "er_sie_es": "kann", "wir": "können", "ihr": "könnt", "sie_Sie": "können"},
+      "preterite": {"ich": "konnte", "du": "konntest", "er_sie_es": "konnte", "wir": "konnten", "ihr": "konntet", "sie_Sie": "konnten"},
+      "subjunctive_ii": {"ich": "könnte", "du": "könntest", "er_sie_es": "könnte", "wir": "könnten", "ihr": "könntet", "sie_Sie": "könnten"},
+      "participle_ii": "gekonnt"
+    },
+    "müssen": {
+      "present": {"ich": "muss", "du": "musst", "er_sie_es": "muss", "wir": "müssen", "ihr": "müsst", "sie_Sie": "müssen"},
+      "preterite": {"ich": "musste", "du": "musstest", "er_sie_es": "musste", "wir": "mussten", "ihr": "musstet", "sie_Sie": "mussten"},
+      "subjunctive_ii": {"ich": "müsste", "du": "müsstest", "er_sie_es": "müsste", "wir": "müssten", "ihr": "müsstet", "sie_Sie": "müssten"},
+      "participle_ii": "gemusst"
+    },
+    "dürfen": {
+      "present": {"ich": "darf", "du": "darfst", "er_sie_es": "darf", "wir": "dürfen", "ihr": "dürft", "sie_Sie": "dürfen"},
+      "preterite": {"ich": "durfte", "du": "durftest", "er_sie_es": "durfte", "wir": "durften", "ihr": "durftet", "sie_Sie": "durften"},
+      "subjunctive_ii": {"ich": "dürfte", "du": "dürftest", "er_sie_es": "dürfte", "wir": "dürften", "ihr": "dürftet", "sie_Sie": "dürften"},
+      "participle_ii": "gedurft"
+    },
+    "sollen": {
+      "present": {"ich": "soll", "du": "sollst", "er_sie_es": "soll", "wir": "sollen", "ihr": "sollt", "sie_Sie": "sollen"},
+      "preterite": {"ich": "sollte", "du": "solltest", "er_sie_es": "sollte", "wir": "sollten", "ihr": "solltet", "sie_Sie": "sollten"},
+      "subjunctive_ii": {"ich": "sollte", "du": "solltest", "er_sie_es": "sollte", "wir": "sollten", "ihr": "solltet", "sie_Sie": "sollten"},
+      "participle_ii": "gesollt"
+    },
+    "wollen": {
+      "present": {"ich": "will", "du": "willst", "er_sie_es": "will", "wir": "wollen", "ihr": "wollt", "sie_Sie": "wollen"},
+      "preterite": {"ich": "wollte", "du": "wolltest", "er_sie_es": "wollte", "wir": "wollten", "ihr": "wolltet", "sie_Sie": "wollten"},
+      "subjunctive_ii": {"ich": "wollte", "du": "wolltest", "er_sie_es": "wollte", "wir": "wollten", "ihr": "wolltet", "sie_Sie": "wollten"},
+      "participle_ii": "gewollt"
+    },
+    "mögen": {
+      "present": {"ich": "mag", "du": "magst", "er_sie_es": "mag", "wir": "mögen", "ihr": "mögt", "sie_Sie": "mögen"},
+      "preterite": {"ich": "mochte", "du": "mochtest", "er_sie_es": "mochte", "wir": "mochten", "ihr": "mochtet", "sie_Sie": "mochten"},
+      "subjunctive_ii": {"ich": "möchte", "du": "möchtest", "er_sie_es": "möchte", "wir": "möchten", "ihr": "möchtet", "sie_Sie": "möchten"},
+      "participle_ii": "gemocht"
+    }
+  },
+  "separable_prefixes": [
+    "ab", "an", "auf", "aus", "bei", "dar", "ein", "empor", "entgegen", "entlang",
+    "fehl", "fest", "fort", "frei", "gegenüber", "heim", "her", "heran", "herauf",
+    "heraus", "herbei", "herein", "herüber", "herum", "herunter", "hervor", "hin",
+    "hinab", "hinauf", "hinaus", "hinein", "hinterher", "hinüber", "hinunter", "hinweg",
+    "hinzu", "los", "mit", "nach", "nieder", "statt", "teil", "vor", "voran", "voraus",
+    "vorbei", "vorher", "vorüber", "weg", "weiter", "wieder", "zu", "zurecht", "zurück", "zusammen"
+  ],
+  "inseparable_prefixes": [
+    "be", "emp", "ent", "er", "ge", "miss", "ver", "zer"
+  ],
+  "dual_prefixes": [
+    "durch", "hinter", "über", "um", "unter", "voll", "wider", "wieder"
+  ]
+}

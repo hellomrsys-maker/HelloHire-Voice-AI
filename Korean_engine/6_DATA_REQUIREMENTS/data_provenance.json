@@ -1,0 +1,15 @@
+{
+  "engine": "Korean_engine",
+  "generated_utc": "2026-09-29T11:57:31Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Korean-Kaist",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "The treebank is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International.",
+      "status": "ok",
+      "count": 400
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

@@ -1,0 +1,20 @@
+{
+  "grammar_theories": {
+    "school_grammar_bunpou": {
+      "origin": "Hashimoto Shinkichi (橋本文法 / 学校文法)",
+      "principles": [
+        "Classification into 6 Katsuyou stems (未然, 連用, 終止, 連体, 仮定, 命令)",
+        "Dichotomy between Jiritsugo (independent words) and Fuzokugo (attached clitic particles/auxiliaries)",
+        "Bunsetsu as the atomic communicative phrase unit"
+      ]
+    },
+    "linguistic_frameworks": {
+      "topic_grammar_mikami": "Akira Mikami's 'The Subject Does Not Exist' (主語抹殺論) theory establishing 'は' as discourse anchor and relegating 'が' to clause-internal case.",
+      "functional_syntax_kuno": "Susumu Kuno's discourse information packaging: Old information (は) vs Exhaustive new focus (が).",
+      "generative_syntax": "Scrambling as non-operator movement (Saito, Kuroda), pro-drop parametric settings."
+    },
+    "universal_dependencies_japanese": {
+      "standard": "UD_Japanese format mapping Kakariuke to head-final syntactic dependencies (nsubj, obj, obl, compound, mark, aux, punct)."
+    }
+  }
+}

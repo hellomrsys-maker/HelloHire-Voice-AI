@@ -1,0 +1,47 @@
+# Japanese Spelling, Orthography, and Okurigana Rules (表記基準・送り仮名規則)
+
+okurigana_rules:
+  general:
+    - id: "OKURI_001"
+      stem: "行"
+      standard: "行う"
+      permissible: "行なう"
+      description: "Cabinet notification standard is 行う (okurigana from 活用語尾)."
+    - id: "OKURI_002"
+      stem: "断"
+      standard: "断る"
+      description: "Regular Godan ending with る."
+    - id: "OKURI_003"
+      stem: "表"
+      standard: "表す"
+      permissible: "表わす"
+
+kanji_hiragana_preference:
+  functional_words:
+    - kanji: "有難う御座います"
+      preferred: "ありがとうございます"
+      reason: "Common conversational greeting preferred in hiragana in official and modern writing."
+    - kanji: "致す"
+      preferred: "いたす"
+      reason: "Auxiliary verb function should be written in kana."
+    - kanji: "頂く"
+      preferred: "いただく"
+      reason: "Auxiliary verb '〜していただく' should be in kana (noun / full verb can use 頂く)."
+    - kanji: "事"
+      preferred: "こと"
+      reason: "Formal noun / grammatical nominalizer should be in hiragana (e.g. することがある)."
+    - kanji: "時"
+      preferred: "とき"
+      reason: "Temporal conjunction (〜するとき) preferred in hiragana; specific clock time uses 時."
+
+homophone_disambiguation:
+  - kanji_set: ["測る", "計る", "量る"]
+    rules:
+      測る: "長さ・深さ・広さ・温度などを測る"
+      計る: "時間・計画・数値を計る"
+      量る: "重さ・容積・重量を量る"
+  - kanji_set: ["収める", "納める", "治める"]
+    rules:
+      収める: "手に入れる・結果を得る・しまう (成果を収める)"
+      納める: "引き渡す・支払う (税金を納める)"
+      治める: "統治する・静める (国を治める)"

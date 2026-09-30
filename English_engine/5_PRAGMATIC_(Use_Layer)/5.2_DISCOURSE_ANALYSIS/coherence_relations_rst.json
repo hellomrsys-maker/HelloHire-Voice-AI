@@ -1,0 +1,11 @@
+{
+  "rst_coherence_relations": {
+    "elaboration": { "nuclearity": "Nucleus-Satellite", "description": "Satellite provides additional detail or exemplification of the Nucleus" },
+    "contrast": { "nuclearity": "Multi-Nuclear", "description": "Two or more nuclei are compared along salient dimensions with opposing values" },
+    "cause": { "nuclearity": "Nucleus-Satellite", "description": "Satellite presents the causal situation that produced the Nucleus event" },
+    "condition": { "nuclearity": "Nucleus-Satellite", "description": "Satellite specifies a hypothetical situation upon which the Nucleus realization depends" },
+    "concession": { "nuclearity": "Nucleus-Satellite", "description": "Speaker acknowledges a potential incompatibility between Satellite and Nucleus, but affirms Nucleus" },
+    "background": { "nuclearity": "Nucleus-Satellite", "description": "Satellite provides context necessary for the hearer to comprehend the Nucleus" },
+    "sequence": { "nuclearity": "Multi-Nuclear", "description": "Nuclei occur in chronological or procedural temporal succession" }
+  }
+}

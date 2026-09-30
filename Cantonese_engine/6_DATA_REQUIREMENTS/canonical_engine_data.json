@@ -1,0 +1,118 @@
+{
+  "engine_profile": {
+    "language": "Cantonese",
+    "engine": "Cantonese_engine",
+    "iso_codes": [
+      "yue",
+      "zh-yue"
+    ],
+    "scripts": [
+      "Traditional Han",
+      "Jyutping"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Cantonese",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "yue_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Cantonese)",
+          "How are operations (Cantonese)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "yue_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Cantonese)",
+          "Report readiness (Cantonese)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "工程師設計咗個高並發嘅分散式系統。",
+    "我哋已經成功實作咗零延遲記憶體同步協議。",
+    "研究團隊發表咗人工智能最新嘅論文。",
+    "架構師優化咗成個數據處理流程 (using optimal hyper-parameters).",
+    "系統可以即時處理大量多語言數據串流。",
+    "開發團隊順利通過咗所有單元測試 (on multi-core architectures).",
+    "高速記憶體介面保證咗即時數據一致性。",
+    "我哋做咗好嚴謹嘅基準測試嚟驗證吞吐量 (under heavy loads).",
+    "工程師設計咗個高並發嘅分散式系統。",
+    "我哋已經成功實作咗零延遲記憶體同步協議。",
+    "研究團隊發表咗人工智能最新嘅論文。",
+    "架構師優化咗成個數據處理流程 (using optimal hyper-parameters).",
+    "系統可以即時處理大量多語言數據串流。",
+    "開發團隊順利通過咗所有單元測試 (on multi-core architectures).",
+    "高速記憶體介面保證咗即時數據一致性。",
+    "我哋做咗好嚴謹嘅基準測試嚟驗證吞吐量 (under heavy loads).",
+    "工程師設計咗個高並發嘅分散式系統。",
+    "我哋已經成功實作咗零延遲記憶體同步協議。",
+    "研究團隊發表咗人工智能最新嘅論文。",
+    "架構師優化咗成個數據處理流程 (using optimal hyper-parameters)."
+  ]
+}

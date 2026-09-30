@@ -1,0 +1,44 @@
+[package]
+name        = "engine-rust"
+version     = "1.0.0"
+edition     = "2021"
+description = "Rust data ingestion, tokenization, and preprocessing pipelines for the Verbal Communication Engine"
+
+[[lib]]
+name = "engine_rust"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+tokenizers             = { workspace = true }
+unicode-normalization  = { workspace = true }
+unicode-segmentation   = { workspace = true }
+whichlang              = { workspace = true }
+serde                  = { workspace = true }
+serde_json             = { workspace = true }
+serde_yaml             = { workspace = true }
+tokio                  = { workspace = true }
+rayon                  = { workspace = true }
+ndarray                = { workspace = true }
+rand                   = { workspace = true }
+crossbeam              = { workspace = true }
+dashmap                = { workspace = true }
+parking_lot            = { workspace = true }
+bytes                  = { workspace = true }
+libc                   = { workspace = true }
+tracing                = { workspace = true }
+tracing-subscriber     = { workspace = true }
+anyhow                 = { workspace = true }
+thiserror              = { workspace = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "tokenization_bench"
+harness = false
+
+[profile.release]
+opt-level     = 3
+lto           = "fat"
+codegen-units = 1
+panic         = "abort"

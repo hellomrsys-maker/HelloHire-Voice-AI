@@ -1,0 +1,45 @@
+{
+  "language": "Telugu",
+  "word_order": "SOV (Subject - Object - Verb / కర్త - కర్మ - క్రియ)",
+  "canonical_sentence_patterns": [
+    {
+      "pattern_id": "simple_declarative_sov",
+      "formula": "Subject (కర్త) + Object (కర్మ) + Verb (క్రియ)",
+      "example_te": "రాముడు గ్రంథాన్ని చదివాడు.",
+      "gloss": "Rama-NOM book-ACC read-PAST.3SG.MASC",
+      "translation": "Rama read the book."
+    },
+    {
+      "pattern_id": "dative_subject_construction",
+      "formula": "Experiencer-DAT (నాకు/అతనికి) + Theme (విషయం) + Predicate (క్రియ/లక్షణం)",
+      "example_te": "నాకు ఈ విషయం తెలుసు.",
+      "gloss": "1SG.DAT this matter known.PRES",
+      "translation": "I know this matter."
+    },
+    {
+      "pattern_id": "copular_verbless_predication",
+      "formula": "Subject-NOM + Predicate Noun/Adjective",
+      "example_te": "ఆయన మంచి ఆచార్యుడు.",
+      "gloss": "3SG.MASC.HON good teacher-MASC",
+      "translation": "He is a good teacher."
+    },
+    {
+      "pattern_id": "relative_participle_clause",
+      "formula": "Relative Participle (విశేషణ రూపం) + Head Noun (విశేష్యం)",
+      "example_te": "నేను నిన్న చూసిన సినిమా చాలా బాగుంది.",
+      "gloss": "1SG.NOM yesterday seen movie very good.PAST",
+      "translation": "The movie I saw yesterday was very good."
+    },
+    {
+      "pattern_id": "conditional_clausal_subordination",
+      "formula": "Conditional Clause (-తే/-ఇతే) + Main Clause",
+      "example_te": "నువ్వు బాగా శ్రమిస్తే విజయం సాధిస్తావు.",
+      "gloss": "2SG.NOM well work-COND victory achieve-FUT.2SG",
+      "translation": "If you work hard, you will achieve victory."
+    }
+  ],
+  "structural_rules": {
+    "scrambling_freedom": "Telugu permits pragmatic constituent scrambling (OSV, VSO in discourse), but SOV is strictly unmarked canonical.",
+    "head_directionality": "Strictly Head-Final (Postpositions follow nouns, Verbs terminate clauses, Modifiers precede heads)."
+  }
+}

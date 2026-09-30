@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Finnish",
+    "engine": "Finnish_engine",
+    "iso_codes": [
+      "fin",
+      "fi"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Finnish",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "fin_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Finnish)",
+          "How are operations (Finnish)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "fin_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Finnish)",
+          "Report readiness (Finnish)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Insinööri suunnitteli erittäin tehokkaan hajautetun järjestelmän.",
+    "Opiskelijat ymmärsivät monimutkaisen neuroverkon perinpohjaisesti.",
+    "Olemme onnistuneesti ottaneet käyttöön viiveettömän synkronisen muistiprotokollan.",
+    "Professori selitti generatiivisen kieliopin periaatteet erittäin yksityiskohtaisesti.",
+    "Tutkimusryhmä julkaisi merkittävän tieteellisen artikkelin tekoälystä.",
+    "Ohjelmistoarkkitehti optimoi koko tiedonkäsittelyputken toiminnan.",
+    "Tekoäly analysoi monikielisiä tekstejä poikkeuksellisen tarkasti.",
+    "Kehitystiimi suoritti kaikki integraatiotestit menestyksekkäästi loppuun.",
+    "Nopea muistiväylä varmistaa tietojen reaaliaikaisen johdonmukaisuuden.",
+    "Suoritimme tiukkoja suorituskykytestejä järjestelmän luotettavuuden osoittamiseksi.",
+    "Lapset lukivat mielenkiintoisia kirjoja kaupunginkirjastossa.",
+    "Tänään sää on erittäin miellyttävä, aurinkoinen ja raikas.",
+    "Maanviljelijät aloittivat viljasadon korjuun laajoilla pelloilla.",
+    "Tutkija tarkisti uuden algoritmin laskentanopeuden ja tarkkuuden.",
+    "Insinööri suunnitteli erittäin tehokkaan hajautetun järjestelmän. [14]",
+    "Opiskelijat ymmärsivät monimutkaisen neuroverkon perinpohjaisesti. [15]",
+    "Olemme onnistuneesti ottaneet käyttöön viiveettömän synkronisen muistiprotokollan. [16]",
+    "Professori selitti generatiivisen kieliopin periaatteet erittäin yksityiskohtaisesti. [17]",
+    "Tutkimusryhmä julkaisi merkittävän tieteellisen artikkelin tekoälystä. [18]",
+    "Ohjelmistoarkkitehti optimoi koko tiedonkäsittelyputken toiminnan. [19]"
+  ]
+}

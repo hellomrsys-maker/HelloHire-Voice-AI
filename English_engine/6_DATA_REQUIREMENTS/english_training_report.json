@@ -1,0 +1,66 @@
+{
+  "engine": "English Engine",
+  "file": "English_engine/train.py",
+  "duration_seconds": 36.33,
+  "trained_on_real_corpus": true,
+  "verified_by_metrics": true,
+  "sub_ai_validation_metrics": {
+    "writing": {
+      "train_size": 384,
+      "val_size": 96,
+      "final_train_loss": 0.5347,
+      "val_completeness": {
+        "accuracy": 0.8854,
+        "precision": 0.8846,
+        "recall": 0.9718,
+        "f1": 0.9262,
+        "n": 96
+      },
+      "val_punctuation_accuracy": 0.8333,
+      "passed": true
+    }
+  },
+  "phase1_syntax": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\english_main_model_verified.pt",
+    "final_loss": 59.9697
+  },
+  "phase2_sub_ais": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\english_engine_sub_ais_verified.pt",
+    "metrics": {
+      "writing": {
+        "train_size": 384,
+        "val_size": 96,
+        "final_train_loss": 0.5347,
+        "val_completeness": {
+          "accuracy": 0.8854,
+          "precision": 0.8846,
+          "recall": 0.9718,
+          "f1": 0.9262,
+          "n": 96
+        },
+        "val_punctuation_accuracy": 0.8333,
+        "passed": true
+      }
+    },
+    "verified_by_metrics": true
+  },
+  "phase3_intent_tree": {
+    "status": "SUCCESS",
+    "total_capacity": 274,
+    "intents_evaluated": 5
+  },
+  "phase4_vocal_prosody": {
+    "status": "SUCCESS",
+    "checkpoint": "d:\\gra.voi\\checkpoints\\english_dialogue_and_prosody_verified.pt"
+  },
+  "phase5_amsv_sync": {
+    "status": "SUCCESS",
+    "verified_checkpoints": {
+      "english_main_model_verified.pt": "daf14b7c892caac5b1680dae701365ff83927bee0f2e535c371f1223024f03ed",
+      "english_engine_sub_ais_verified.pt": "8653d0198f088463fd0ecfc0f3198a23bc407e03260c8fd61743ac6e03a79f65",
+      "english_dialogue_and_prosody_verified.pt": "9a357eac0d572ae1bd0577494e85c191c7cf9e8c2f2c9a9b33030fde3dbc0d03"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "engine": "Tamil_engine",
+  "generated_utc": "2026-09-29T11:57:34Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Tamil-TTB",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "This work is licensed under the Creative Commons Attribution-NonCommercial-",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

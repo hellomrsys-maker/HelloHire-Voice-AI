@@ -1,0 +1,20 @@
+# Uncertainty Policy Configuration
+uncertainty_policy:
+  confidence_thresholds:
+    high_confidence: 0.85
+    moderate_confidence: 0.65
+    low_confidence: 0.45
+
+  actions:
+    above_high:
+      action: "Execute deterministic commit and update AMSV state vector immediately"
+      request_human_clarification: false
+    between_moderate_and_high:
+      action: "Emit multiple ranked ambiguity candidates with entropy scoring"
+      request_human_clarification: false
+    below_moderate:
+      action: "Flag potential malformed input, activate conservative fallback, log telemetry"
+      request_human_clarification: true
+
+  entropy_cap_bits: 3.5
+  out_of_distribution_perplexity_cutoff: 40.0

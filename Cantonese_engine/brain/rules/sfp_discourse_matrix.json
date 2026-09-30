@@ -1,0 +1,94 @@
+{
+  "sentence_final_particles": {
+    "喇": {
+      "jyutping": "laa3",
+      "tone": 3,
+      "functional_tier": "aspectual_change_of_state",
+      "pragmatic_meaning": "currently relevant state / change of state (equivalent to Mandarin 了)",
+      "politeness": "neutral",
+      "example": "我走喇 (I'm leaving now)"
+    },
+    "啦": {
+      "jyutping": "laa1",
+      "tone": 1,
+      "functional_tier": "modal_imperative",
+      "pragmatic_meaning": "soliciting agreement / polite imperative / suggestion",
+      "politeness": "friendly",
+      "example": "快啲食啦 (Eat quickly, please)"
+    },
+    "呀": {
+      "jyutping": "aa3",
+      "tone": 3,
+      "functional_tier": "discourse_softener",
+      "pragmatic_meaning": "informational assertion softener / gentle question tag",
+      "politeness": "friendly_intimate",
+      "example": "係呀 (Yes, that's right)"
+    },
+    "㗎": {
+      "jyutping": "gaa3",
+      "tone": 3,
+      "functional_tier": "assertive_epistemic",
+      "pragmatic_meaning": "fused particle (ge3 + aa3) asserting inherent property or conviction",
+      "politeness": "neutral",
+      "example": "佢好叻㗎 (He is really smart, you know)"
+    },
+    "啫": {
+      "jyutping": "ze1",
+      "tone": 1,
+      "functional_tier": "restrictive_downplaying",
+      "pragmatic_meaning": "only / merely / downplaying significance",
+      "politeness": "minimizing",
+      "example": "五蚊啫 (It's only five dollars)"
+    },
+    "喎": {
+      "jyutping": "wo3",
+      "tone": 3,
+      "functional_tier": "hearsay_evidential",
+      "pragmatic_meaning": "reportative evidentiality ('they say' / 'supposedly')",
+      "politeness": "neutral",
+      "example": "聽日落雨喎 (They say it's going to rain tomorrow)"
+    },
+    "囉": {
+      "jyutping": "lo1",
+      "tone": 1,
+      "functional_tier": "obviousness_consequence",
+      "pragmatic_meaning": "stating the obvious / natural outcome / as expected",
+      "politeness": "direct",
+      "example": "咪係噉囉 (That's just how it is!)"
+    },
+    "添": {
+      "jyutping": "tim1",
+      "tone": 1,
+      "functional_tier": "additive_exclamatory",
+      "pragmatic_meaning": "additional surprise / even more so / realized just now",
+      "politeness": "expressive",
+      "example": "唔記得帶銀包添 (Oh no, I even forgot to bring my wallet!)"
+    },
+    "咩": {
+      "jyutping": "me1",
+      "tone": 1,
+      "functional_tier": "skeptical_interrogative",
+      "pragmatic_meaning": "dubitative question expecting negative answer / rhetorical doubt",
+      "politeness": "informal_skeptical",
+      "example": "你唔去咩？ (Aren't you going? Really?)"
+    },
+    "咋": {
+      "jyutping": "zaa3",
+      "tone": 3,
+      "functional_tier": "exclusive_limitative",
+      "pragmatic_meaning": "fused particle (ze1 + aa3) expressing strict limitation ('only this and no more')",
+      "politeness": "minimizing",
+      "example": "得返一個咋 (There's only one left)"
+    }
+  },
+  "cluster_rules": {
+    "tier_hierarchy": ["aspectual", "evidential_modal", "discourse_interactional"],
+    "valid_clusters": [
+      ["喇", "喎"],
+      ["㗎", "喇"],
+      ["啫", "嘛"],
+      ["咋", "話"]
+    ],
+    "max_cluster_depth": 3
+  }
+}

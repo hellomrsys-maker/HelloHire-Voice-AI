@@ -1,0 +1,44 @@
+{
+  "engine": "Dutch",
+  "matrix_type": "v2_word_order_matrix",
+  "version": "1.0.0",
+  "main_clause_rules": {
+    "v2_position": 2,
+    "description": "In declarative main clauses, the finite verb must occupy the second syntactic position.",
+    "canonical_svo": {
+      "pattern": ["SUBJECT", "FINITE_VERB", "OBJECT", "ADVERBIAL"],
+      "example": "Jan leest een boek in de bibliotheek"
+    },
+    "inversion_trigger": {
+      "description": "When an adjunct, adverbial phrase, or direct object is fronted into Position 1 (Vorfeld), subject-verb inversion is obligatory (Verb = Pos 2, Subject = Pos 3).",
+      "pattern": ["FRONTED_CONSTITUENT", "FINITE_VERB", "SUBJECT", "REMAINDER"],
+      "examples": [
+        "Morgen leest Jan een boek",
+        "Vandaag gaat hij naar school",
+        "Dat boek heeft Jan gelezen"
+      ]
+    },
+    "separable_verb_bracket": {
+      "description": "In main clauses, separable prefix moves to the clause coda (Satzklammer / verb bracket).",
+      "example": "Jan belt zijn vriendin op"
+    }
+  },
+  "subordinate_clause_rules": {
+    "verb_position": "final",
+    "description": "In subordinate clauses introduced by a subordinator, the verb cluster is pushed to the clause final position (SOV).",
+    "complementizers": [
+      "dat", "omdat", "doordat", "zodat", "als", "wanneer", "toen", "hoewel",
+      "tenzij", "mits", "nadat", "voordat", "terwijl", "sinds", "zodra", "of"
+    ],
+    "relative_pronouns": ["die", "dat", "wie", "waarop", "waarin", "waarmee"],
+    "canonical_sov_pattern": ["SUBORDINATOR", "SUBJECT", "OBJECTS_ADJUNCTS", "VERB_CLUSTER"],
+    "examples": [
+      "omdat Jan een boek leest",
+      "als hij morgen naar school gaat",
+      "dat hij zijn vriendin opbelt"
+    ]
+  },
+  "coordinating_conjunctions": [
+    "en", "maar", "want", "of", "dus"
+  ]
+}

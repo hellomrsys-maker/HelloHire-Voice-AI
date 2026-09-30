@@ -1,0 +1,18 @@
+{
+  "allomorphy_rules": {
+    "plural_allomorphs": {
+      "/s/": { "context": "After voiceless consonants other than sibilants (/p, t, k, f, theta/)", "examples": ["cats /kæts/", "books /bʊks/"] },
+      "/z/": { "context": "After voiced sounds other than sibilants (/b, d, ɡ, v, ð, m, n, ŋ, l, r/ and vowels)", "examples": ["dogs /dɒɡz/", "days /deɪz/"] },
+      "/ɪz/ or /əz/": { "context": "After sibilants (/s, z, ʃ, ʒ, tʃ, dʒ/)", "examples": ["busses /ˈbʌsɪz/", "judges /ˈdʒʌdʒɪz/"] }
+    },
+    "past_tense_allomorphs": {
+      "/t/": { "context": "After voiceless consonants other than /t/ (/p, k, f, theta, s, ʃ, tʃ/)", "examples": ["walked /wɔːkt/", "missed /mɪst/"] },
+      "/d/": { "context": "After voiced sounds other than /d/ (/b, ɡ, v, ð, z, ʒ, dʒ, m, n, ŋ, l, r/ and vowels)", "examples": ["played /pleɪd/", "hugged /hʌɡd/"] },
+      "/ɪd/ or /əd/": { "context": "After alveolar stops (/t, d/)", "examples": ["waited /ˈweɪtɪd/", "landed /ˈlændɪd/"] }
+    },
+    "indefinite_article_allomorphs": {
+      "a": { "context": "Before consonant sounds (including glide /j/)", "examples": ["a cat", "a university /ə juːnɪˈvɜːrsɪti/"] },
+      "an": { "context": "Before vowel sounds (including silent h)", "examples": ["an apple", "an hour /ən ˈaʊər/"] }
+    }
+  }
+}

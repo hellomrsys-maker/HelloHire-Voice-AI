@@ -1,0 +1,49 @@
+{
+  "registers": {
+    "1": "colloquial",
+    "2": "formal_polite",
+    "3": "monastic",
+    "4": "royal_rachasap"
+  },
+  "vocabulary_tiers": [
+    {
+      "concept": "eat",
+      "colloquial": "กิน",
+      "formal": "รับประทาน",
+      "monastic": "ฉัน",
+      "royal": "เสวย"
+    },
+    {
+      "concept": "sleep",
+      "colloquial": "นอน",
+      "formal": "นอนหลับ",
+      "monastic": "จำวัด",
+      "royal": "บรรทม"
+    },
+    {
+      "concept": "die / pass away",
+      "colloquial": "ตาย",
+      "formal": "เสียชีวิต / ถึงแก่กรรม",
+      "monastic": "มรณภาพ",
+      "royal": "สวรรคต"
+    },
+    {
+      "concept": "give",
+      "colloquial": "ให้",
+      "formal": "มอบ",
+      "monastic": "ถวาย",
+      "royal": "พระราชทาน"
+    },
+    {
+      "concept": "travel / go",
+      "colloquial": "ไป",
+      "formal": "เดินทาง",
+      "monastic": "ไป",
+      "royal": "เสด็จพระราชดำเนิน"
+    }
+  ],
+  "royal_prefixes": {
+    "พระราช-": "Prefix used before nouns indicating royal actions or items belonging to the monarch (e.g. พระราชดำรัส royal speech)",
+    "ทรง-": "Prefix used to transform common verbs into royal actions (e.g. ทรงงาน to work, ทรงพระอักษร to write)"
+  }
+}

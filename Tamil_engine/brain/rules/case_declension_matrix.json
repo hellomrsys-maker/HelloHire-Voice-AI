@@ -1,0 +1,85 @@
+{
+  "cases": {
+    "1": {
+      "name": "Nominative (Mutal Vēṟṟumai)",
+      "marker": "",
+      "function": "Subject of active verb",
+      "example_stem": "மரம்",
+      "example_inflected": "மரம்",
+      "transliteration": "maram"
+    },
+    "2": {
+      "name": "Accusative (Iraṇṭām Vēṟṟumai)",
+      "marker": "ஐ",
+      "translit_marker": "-ai",
+      "function": "Definite or animate direct object",
+      "example_stem": "மரம்",
+      "example_inflected": "மரத்தை",
+      "transliteration": "marattai",
+      "mandatory_for_animates": true
+    },
+    "3_instrumental": {
+      "name": "Instrumental (Mūṉṟām Vēṟṟumai - Karuvi)",
+      "marker": "ஆல்",
+      "translit_marker": "-āl",
+      "function": "Instrument or agent ('by / with')",
+      "example_stem": "மரம்",
+      "example_inflected": "மரத்தால்",
+      "transliteration": "marattāl"
+    },
+    "3_sociative": {
+      "name": "Sociative (Mūṉṟām Vēṟṟumai - Uṭaṉ)",
+      "marker": "உடன்",
+      "translit_marker": "-uṭaṉ",
+      "function": "Accompaniment ('together with')",
+      "example_stem": "நண்பன்",
+      "example_inflected": "நண்பனுடன்",
+      "transliteration": "naṇpaṉuṭaṉ"
+    },
+    "4": {
+      "name": "Dative (Nāṉkām Vēṟṟumai)",
+      "marker": "க்கு / உக்கு",
+      "translit_marker": "-ku / -ukku",
+      "function": "Indirect object, direction, dative subject / experiencer",
+      "example_stem": "வீடு",
+      "example_inflected": "வீட்டுக்கு",
+      "transliteration": "vīṭṭukku"
+    },
+    "5": {
+      "name": "Ablative (Aintām Vēṟṟumai)",
+      "marker": "இலிருந்து",
+      "translit_marker": "-iliruntu",
+      "function": "Source or motion away ('from')",
+      "example_stem": "ஊர்",
+      "example_inflected": "ஊரிலிருந்து",
+      "transliteration": "ūriliruntu"
+    },
+    "6": {
+      "name": "Genitive (Āṟām Vēṟṟumai)",
+      "marker": "இன் / உடைய",
+      "translit_marker": "-iṉ / -uṭaiya",
+      "function": "Possession or relation ('of')",
+      "example_stem": "அவன்",
+      "example_inflected": "அவனுடைய",
+      "transliteration": "avaṉuṭaiya"
+    },
+    "7": {
+      "name": "Locative (Ēḻām Vēṟṟumai)",
+      "marker": "இல் / இடம்",
+      "translit_marker": "-il (inanimate) / -iṭam (animate)",
+      "function": "Location in space or time ('in / at / on')",
+      "example_stem": "மேசை",
+      "example_inflected": "மேசையில்",
+      "transliteration": "mēcaiyil"
+    },
+    "8": {
+      "name": "Vocative (Eṭṭām Vēṟṟumai)",
+      "marker": "ஏ",
+      "translit_marker": "-ē",
+      "function": "Direct address ('O ... !')",
+      "example_stem": "கடவுள்",
+      "example_inflected": "கடவுளே",
+      "transliteration": "kaṭavuḷē"
+    }
+  }
+}

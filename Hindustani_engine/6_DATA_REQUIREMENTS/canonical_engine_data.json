@@ -1,0 +1,738 @@
+{
+  "engine_profile": {
+    "language": "Hindustani",
+    "engine": "Hindustani_engine",
+    "iso_codes": [
+      "hin",
+      "urd"
+    ],
+    "scripts": [
+      "Devanagari",
+      "Nastaliq",
+      "Romanized"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Hindustani",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 6,
+    "total_generative_sentence_capacity": 261,
+    "nodes": [
+      {
+        "node_id": "hi_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "आप कैसे हैं?",
+          "सब कैसा चल रहा है?",
+          "क्या हाल है?",
+          "काम कैसा चल रहा है?",
+          "सब ठीक है ना?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence} {verb}{closing}।",
+          "slots": {
+            "subject": [
+              "मैं",
+              "यहाँ सब कुछ",
+              "हमारा कार्य",
+              "सिस्टम स्थिति"
+            ],
+            "valence": [
+              "बिल्कुल ठीक",
+              "बहुत बढ़िया",
+              "सफलतापूर्वक",
+              "पूरी तरह सुरक्षित"
+            ],
+            "verb": [
+              "है",
+              "चल रहा है",
+              "व्यवस्थित है"
+            ],
+            "closing": [
+              "",
+              ", धन्यवाद",
+              ", आपकी कृपा है"
+            ]
+          }
+        },
+        "combinatorial_capacity": 144,
+        "acoustic_profile": {
+          "mean_f0_hz": 218.0,
+          "speech_rate_sps": 3.4,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "hi_tree_attention_inquiry",
+        "intent": "ATTENTION_FOCUS_CHECK",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x22",
+        "inbound_stems": [
+          "क्या आप मेरी बात ध्यान से सुन रहे हैं?",
+          "कृपया यहाँ ध्यान दें।",
+          "क्या आपका ध्यान इस पर है?"
+        ],
+        "response_spine": {
+          "template": "{polite_marker}, {attention_state} {commitment}।",
+          "slots": {
+            "polite_marker": [
+              "जी हाँ",
+              "बिल्कुल",
+              "निश्चिंत रहें"
+            ],
+            "attention_state": [
+              "पूरा ध्यान यहीं है",
+              "हम पूरी एकाग्रता से सुन रहे हैं",
+              "सभी बिंदु नोट किए जा रहे हैं"
+            ],
+            "commitment": [
+              "आप आगे बता सकते हैं",
+              "और तुरंत कार्रवाई की जाएगी",
+              "ताकि कोई त्रुटि न रहे"
+            ]
+          }
+        },
+        "combinatorial_capacity": 27,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.5,
+          "vocal_roughness": 0.6
+        }
+      },
+      {
+        "node_id": "hi_tree_system_inquiry",
+        "intent": "SYSTEM_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x23",
+        "inbound_stems": [
+          "क्या सिस्टम लोड संभाल पाएगा?",
+          "मेमोरी की क्या स्थिति है?",
+          "क्या सभी सुरक्षा परीक्षण पूरे हो चुके हैं?"
+        ],
+        "response_spine": {
+          "template": "{confirmation}... {technical_state} {conclusion}।",
+          "slots": {
+            "confirmation": [
+              "जी बिल्कुल",
+              "हाँ",
+              "पूरी तरह से"
+            ],
+            "technical_state": [
+              "शून्य-नैनोसेकंड विलंबता स्थापित है",
+              "सभी मॉड्यूल सत्यापित हैं",
+              "डेटा अखंडता पूरी तरह बरकरार है"
+            ],
+            "conclusion": [
+              "और सिस्टम पूरी तरह तैयार है",
+              "इसलिए कोई चिंता की बात नहीं है",
+              "और बेंचमार्क सफल रहे हैं"
+            ]
+          }
+        },
+        "combinatorial_capacity": 27,
+        "acoustic_profile": {
+          "mean_f0_hz": 224.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.62
+        }
+      },
+      {
+        "node_id": "hi_tree_directive_status",
+        "intent": "DIRECTIVE_STATUS_REPORTING",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "स्थिति की रिपोर्ट तुरंत दें।",
+          "अगला चरण शुरू करें।",
+          "आदेश स्वीकार करें।"
+        ],
+        "response_spine": {
+          "template": "{acknowledgment}, {status_detail}; {action_verb}।",
+          "slots": {
+            "acknowledgment": [
+              "आदेश स्वीकार किया गया",
+              "निर्देश स्पष्ट हैं",
+              "सूचना प्राप्त हुई"
+            ],
+            "status_detail": [
+              "सभी प्रणालियाँ सामान्य हैं",
+              "सुरक्षा घेरा मजबूत है",
+              "प्रक्रिया सुचारु रूप से जारी है"
+            ],
+            "action_verb": [
+              "कार्य तुरंत आरंभ किया जा रहा है",
+              "हम आगे बढ़ रहे हैं",
+              "अगले चरण की तैयारी पूर्ण है"
+            ]
+          }
+        },
+        "combinatorial_capacity": 27,
+        "acoustic_profile": {
+          "mean_f0_hz": 235.0,
+          "speech_rate_sps": 4.0,
+          "vocal_roughness": 0.72
+        }
+      },
+      {
+        "node_id": "hi_tree_closure_adjournment",
+        "intent": "CLOSURE_ADJOURNMENT",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x25",
+        "inbound_stems": [
+          "क्या आज के लिए सब पूरा हो गया?",
+          "क्या कुछ और बाकी है?",
+          "क्या हम अब समाप्त कर सकते हैं?"
+        ],
+        "response_spine": {
+          "template": "{closure_detail}, {reassurance}।",
+          "slots": {
+            "closure_detail": [
+              "आज का समस्त कार्य संपन्न हो चुका है",
+              "कोई भी विषय लंबित नहीं है",
+              "सभी बिंदु सुलझा लिए गए हैं"
+            ],
+            "reassurance": [
+              "हम सत्र समाप्त कर सकते हैं",
+              "कल निर्धारित समय पर मिलते हैं",
+              "सब कुछ सुरक्षित और व्यवस्थित है"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 215.0,
+          "speech_rate_sps": 3.2,
+          "vocal_roughness": 0.55
+        }
+      },
+      {
+        "node_id": "hi_tree_resilience_encouragement",
+        "intent": "RESILIENCE_ENCOURAGEMENT",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x26",
+        "inbound_stems": [
+          "रुको, मेरी बात सुनो!",
+          "साहस रखो! आगे बढ़ो!",
+          "घबराने की आवश्यकता नहीं है।"
+        ],
+        "response_spine": {
+          "template": "{opening_call}! {encouragement} {conviction}।",
+          "slots": {
+            "opening_call": [
+              "साहस रखो",
+              "मित्र, शांत रहो",
+              "धैर्य रखें"
+            ],
+            "encouragement": [
+              "कठिनाइयों से डरना नहीं है",
+              "लक्ष्य बिल्कुल समीप है",
+              "हमारी तैयारी अचूक है"
+            ],
+            "conviction": [
+              "और विजय निश्चित है",
+              "हम मिलकर इसे पूरा करेंगे",
+              "आगे बढ़ो, रुको मत"
+            ]
+          }
+        },
+        "combinatorial_capacity": 27,
+        "acoustic_profile": {
+          "mean_f0_hz": 245.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.85
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "राम ने पुस्तक पढ़ी।",
+    "सीता ने पत्र लिखा।",
+    "अध्यापक ने छात्रों को व्याकरण सिखाया।",
+    "इंजीनियर ने नई प्रणाली का निर्माण किया।",
+    "हमने आज सुबह एक महत्वपूर्ण निर्णय लिया।",
+    "लड़कों ने मैदान में क्रिकेट खेला।",
+    "लड़की ने सुंदर गीत गाया।",
+    "डॉक्टर ने मरीज की सावधानीपूर्वक जांच की।",
+    "सरकार ने नई आर्थिक नीति की घोषणा की।",
+    "कंपनी ने तिमाही राजस्व में वृद्धि दर्ज की।",
+    "वैज्ञानिकों ने नए ग्रह की खोज की।",
+    "न्यायाधीश ने निष्पक्ष फैसला सुनाया।",
+    "किसानों ने समय पर फसल काटी।",
+    "सुरक्षा दल ने साइबर हमले को निष्प्रभावी कर दिया।",
+    "वास्तुकार ने इमारत का नया नक्शा तैयार किया।",
+    "लेखक ने एक ऐतिहासिक उपन्यास पूरा किया।",
+    "सैनिकों ने सीमा की रक्षा की।",
+    "प्रबंधक ने परियोजना की प्रगति की समीक्षा की।",
+    "विद्यार्थी ने परीक्षा में सर्वोच्च अंक प्राप्त किए।",
+    "नागरिकों ने मतदान प्रक्रिया में सक्रिय भाग लिया।"
+  ],
+  "language": "Hindustani",
+  "last_observational_sync": "OBSERVATIONAL_PROTOCOL_RULEBOOK_SEC_10",
+  "total_observational_dyads": 646,
+  "calibrated_latency_gap_ms": 518,
+  "sample_observational_dyads": [
+    {
+      "context_1": "Arz kiya hai...",
+      "speaker_a_prosody": {
+        "f0_hz": 190.5,
+        "tempo_sps": 3.75,
+        "duration_ms": 1040,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 835,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Devata Ganga nadi se aa sakte hain, aur deviyan Yamuna nadi se...",
+      "speaker_b_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 3.86,
+        "duration_ms": 4040,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Devata Ganga nadi se aa sakte hain, aur deviyan Yamuna nadi se...",
+      "speaker_a_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 3.86,
+        "duration_ms": 4040,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 501,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Devata Ganga nadi se aa sakte hain, aur deviyan Yamuna nadi se...",
+      "speaker_b_prosody": {
+        "f0_hz": 372.1,
+        "tempo_sps": 4.03,
+        "duration_ms": 3870,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Devata Ganga nadi se aa sakte hain, aur deviyan Yamuna nadi se...",
+      "speaker_a_prosody": {
+        "f0_hz": 372.1,
+        "tempo_sps": 4.03,
+        "duration_ms": 3870,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 797,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Lekin kewal premi hi hain, jo Chinab nadi ke paani se bante hain.",
+      "speaker_b_prosody": {
+        "f0_hz": 183.9,
+        "tempo_sps": 4.88,
+        "duration_ms": 3460,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "Lekin kewal premi hi hain, jo Chinab nadi ke paani se bante hain.",
+      "speaker_a_prosody": {
+        "f0_hz": 183.9,
+        "tempo_sps": 4.88,
+        "duration_ms": 3460,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 165,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Yeh premiyon ki bhumi hai, guruon aur santon ki bhumi hai,",
+      "speaker_b_prosody": {
+        "f0_hz": 340.4,
+        "tempo_sps": 3.81,
+        "duration_ms": 3750,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Yeh premiyon ki bhumi hai, guruon aur santon ki bhumi hai,",
+      "speaker_a_prosody": {
+        "f0_hz": 340.4,
+        "tempo_sps": 3.81,
+        "duration_ms": 3750,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 125,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "is bhumi ke liye... zordaar taliyon ki gadgadahat, mere bhaiyo...",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 3.21,
+        "duration_ms": 4050,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "is bhumi ke liye... zordaar taliyon ki gadgadahat, mere bhaiyo...",
+      "speaker_a_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 3.21,
+        "duration_ms": 4050,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1117,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "To, mere pyaare dosto, Sardaar Surjeet Singh ke ghar...",
+      "speaker_b_prosody": {
+        "f0_hz": 219.2,
+        "tempo_sps": 3.22,
+        "duration_ms": 3630,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "To, mere pyaare dosto, Sardaar Surjeet Singh ke ghar...",
+      "speaker_a_prosody": {
+        "f0_hz": 219.2,
+        "tempo_sps": 3.22,
+        "duration_ms": 3630,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 328,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "is shubh awasar par chaar chaand lagane ke liye aa pahunche hain...",
+      "speaker_b_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 3.05,
+        "duration_ms": 5120,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Are, mera pyaar pawitr hai, bhabhi",
+      "speaker_a_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 2.98,
+        "duration_ms": 2620,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 214,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Are, mera pyaar pawitr hai, bhabhi",
+      "speaker_b_prosody": {
+        "f0_hz": 106.0,
+        "tempo_sps": 2.64,
+        "duration_ms": 2960,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Are, mera pyaar pawitr hai, bhabhi",
+      "speaker_a_prosody": {
+        "f0_hz": 106.0,
+        "tempo_sps": 2.64,
+        "duration_ms": 2960,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 165,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Khud prabhu hai mera gawaah",
+      "speaker_b_prosody": {
+        "f0_hz": 94.1,
+        "tempo_sps": 2.2,
+        "duration_ms": 2950,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Khud prabhu hai mera gawaah",
+      "speaker_a_prosody": {
+        "f0_hz": 94.1,
+        "tempo_sps": 2.2,
+        "duration_ms": 2950,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 258,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "\"Sahiban\" ko Daanabaad laane ke baad",
+      "speaker_b_prosody": {
+        "f0_hz": 347.8,
+        "tempo_sps": 2.6,
+        "duration_ms": 3000,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Woh idhar chadh gai... Mera khada kar gai...",
+      "speaker_a_prosody": {
+        "f0_hz": 347.8,
+        "tempo_sps": 3.84,
+        "duration_ms": 2710,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 248,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Woh idhar chadh gai... Mera khada kar gai...",
+      "speaker_b_prosody": {
+        "f0_hz": 347.8,
+        "tempo_sps": 3.97,
+        "duration_ms": 2620,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Woh idhar chadh gai... Mera khada kar gai...",
+      "speaker_a_prosody": {
+        "f0_hz": 347.8,
+        "tempo_sps": 3.97,
+        "duration_ms": 2620,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 214,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Woh idhar chadh gai...",
+      "speaker_b_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 4.16,
+        "duration_ms": 1250,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Woh idhar chadh gai...",
+      "speaker_a_prosody": {
+        "f0_hz": 363.6,
+        "tempo_sps": 4.16,
+        "duration_ms": 1250,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 166,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Ek do baar, do!",
+      "speaker_b_prosody": {
+        "f0_hz": 333.3,
+        "tempo_sps": 1.31,
+        "duration_ms": 3960,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Ek do baar, do!",
+      "speaker_a_prosody": {
+        "f0_hz": 333.3,
+        "tempo_sps": 1.31,
+        "duration_ms": 3960,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 124,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Do, do baar... - Chaar!",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 2.33,
+        "duration_ms": 2790,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Do, do baar... - Chaar!",
+      "speaker_a_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 2.33,
+        "duration_ms": 2790,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1376,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "\"Dekh lo Jaat ki mardangi,",
+      "speaker_b_prosody": {
+        "f0_hz": 235.3,
+        "tempo_sps": 2.48,
+        "duration_ms": 2620,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "\"Dekh lo Jaat ki mardangi,",
+      "speaker_a_prosody": {
+        "f0_hz": 235.3,
+        "tempo_sps": 2.48,
+        "duration_ms": 2620,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 130,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Khada ho gaya bambugaadi sa!\"",
+      "speaker_b_prosody": {
+        "f0_hz": 262.3,
+        "tempo_sps": 2.79,
+        "duration_ms": 2330,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Khada ho gaya bambugaadi sa!\"",
+      "speaker_a_prosody": {
+        "f0_hz": 262.3,
+        "tempo_sps": 2.79,
+        "duration_ms": 2330,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 3087,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Yeh kya bakwaas likh rakha hai? Haan? Kya likha hai?",
+      "speaker_b_prosody": {
+        "f0_hz": 280.7,
+        "tempo_sps": 4.1,
+        "duration_ms": 3170,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Yeh kya bakwaas likh rakha hai? Haan? Kya likha hai?",
+      "speaker_a_prosody": {
+        "f0_hz": 280.7,
+        "tempo_sps": 4.1,
+        "duration_ms": 3170,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 205,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Yeh dobara likhega? Likhega?",
+      "speaker_b_prosody": {
+        "f0_hz": 235.3,
+        "tempo_sps": 2.05,
+        "duration_ms": 2540,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Yeh dobara likhega? Likhega?",
+      "speaker_a_prosody": {
+        "f0_hz": 235.3,
+        "tempo_sps": 2.05,
+        "duration_ms": 2540,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1127,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Hey naye ishk ka pahla akshar",
+      "speaker_b_prosody": {
+        "f0_hz": 188.2,
+        "tempo_sps": 1.51,
+        "duration_ms": 5160,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "Hey naye ishk ka pahla akshar",
+      "speaker_a_prosody": {
+        "f0_hz": 188.2,
+        "tempo_sps": 1.51,
+        "duration_ms": 5160,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 798,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Samajh na sabko aawe",
+      "speaker_b_prosody": {
+        "f0_hz": 285.7,
+        "tempo_sps": 1.08,
+        "duration_ms": 4800,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Samajh na sabko aawe",
+      "speaker_a_prosody": {
+        "f0_hz": 285.7,
+        "tempo_sps": 1.08,
+        "duration_ms": 4800,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1783,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Koi paagal sir ko jhukata",
+      "speaker_b_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 1.56,
+        "duration_ms": 4160,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Koi paagal sir ko jhukata",
+      "speaker_a_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 1.56,
+        "duration_ms": 4160,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 757,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Koi tumbi par geet gaawe",
+      "speaker_b_prosody": {
+        "f0_hz": 254.0,
+        "tempo_sps": 1.32,
+        "duration_ms": 4920,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Koi tumbi par geet gaawe",
+      "speaker_a_prosody": {
+        "f0_hz": 254.0,
+        "tempo_sps": 1.32,
+        "duration_ms": 4920,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 2997,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Chaahe koi sir ko jhukaata",
+      "speaker_b_prosody": {
+        "f0_hz": 110.3,
+        "tempo_sps": 0.96,
+        "duration_ms": 6750,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Chaahe koi sir ko jhukaata",
+      "speaker_a_prosody": {
+        "f0_hz": 110.3,
+        "tempo_sps": 0.96,
+        "duration_ms": 6750,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 500,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Ya tumbi par gaawe",
+      "speaker_b_prosody": {
+        "f0_hz": 213.3,
+        "tempo_sps": 0.8,
+        "duration_ms": 6460,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Ya tumbi par gaawe",
+      "speaker_a_prosody": {
+        "f0_hz": 213.3,
+        "tempo_sps": 0.8,
+        "duration_ms": 6460,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 2206,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Sabki chaahat alag-alag hai hoti",
+      "speaker_b_prosody": {
+        "f0_hz": 102.6,
+        "tempo_sps": 1.28,
+        "duration_ms": 5080,
+        "register": "LOW_REGISTER"
+      }
+    }
+  ]
+}

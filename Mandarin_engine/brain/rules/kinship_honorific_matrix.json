@@ -1,0 +1,28 @@
+{
+  "honorific_levels": {
+    "deferential_formal": {
+      "pronouns": ["您", "贵方", "鄙人", "晚辈"],
+      "openings": ["尊敬的", "敬启者", "承蒙关照"],
+      "closings": ["此致敬礼", "顺祝商祺", "谨上"],
+      "inquiries": ["请教", "拜托", "劳驾", "指点"]
+    },
+    "standard_professional": {
+      "pronouns": ["你", "我们", "大家"],
+      "openings": ["您好", "各位好"],
+      "closings": ["祝好", "谢谢"],
+      "titles": ["老师", "经理", "主任", "工程师", "总监"]
+    },
+    "casual_intimate": {
+      "pronouns": ["你", "咱", "哥们儿"],
+      "openings": ["嗨", "喂", "在吗"],
+      "closings": ["回头见", "拜拜", "撤了"]
+    }
+  },
+  "indirect_refusal_patterns": [
+    "不太方便",
+    "再考虑考虑",
+    "再研究研究",
+    "可能有点困难",
+    "改天再聚"
+  ]
+}

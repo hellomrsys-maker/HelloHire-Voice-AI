@@ -1,0 +1,15 @@
+{
+  "engine": "Romanian_engine",
+  "generated_utc": "2026-09-29T11:57:33Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Romanian-RRT",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International license",
+      "status": "ok",
+      "count": 400
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

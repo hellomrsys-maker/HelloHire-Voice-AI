@@ -1,0 +1,235 @@
+{
+  "framework": "Bio-Acoustic Vocal Cord Frequency Modulation Matrix",
+  "biophysical_foundation": "Myoelastic-Aerodynamic Theory of Phonation. Multi-record statistical envelope capturing Min, Mean, Max, Absolute Ceiling, Demographic Cohorts, and Relative Situational Multipliers.",
+  "calibrated_baseline_gap_ms": 518,
+  "scenarios": {
+    "CALM_REASSURANCE": {
+      "display_name": "Calm Reassurance & Warmth",
+      "tuning_register": "MEDIUM_SOFT",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 140.0,
+        "average_f0_mean": 188.0,
+        "max_f0_nominal": 215.0,
+        "absolute_peak_ceiling": 260.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 105.0, "average": 110.0, "max": 125.0 },
+        "medium_register_cohort": { "min": 170.0, "average": 188.0, "max": 215.0 },
+        "high_register_cohort": { "min": 220.0, "average": 240.0, "max": 260.0 }
+      },
+      "relative_modulation_multiplier": 1.0,
+      "pitch_contour": "GENTLE_FALLING_GLISSANDO",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.42,
+        "subglottal_pressure_cm_h2o": 7.2,
+        "open_quotient_oq": 0.68,
+        "glottal_closure": "SOFT_BREATHY"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.05,
+        "average": 0.15,
+        "max": 0.25
+      },
+      "acoustic_tuning": {
+        "roughness": 0.15,
+        "smoothness": 0.88,
+        "rashness": 0.05,
+        "calmness": 0.95,
+        "speech_rate_sps": 3.1
+      },
+      "post_utterance_pause_ms": 518,
+      "amsv_scenario_byte": 33,
+      "scientific_justification": "Thyroarytenoid muscles remain relaxed with high open quotient (Oq=0.68), allowing gentle transglottal airflow. Multiplier is neutral (1.0x), keeping the voice anchored to natural resonance without abrupt glottal stops."
+    },
+    "CONFIDENCE_AUTHORITY": {
+      "display_name": "Resolute Confidence & Authority",
+      "tuning_register": "LOW_DEEP_RESONANT",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 88.0,
+        "average_f0_mean": 142.0,
+        "max_f0_nominal": 160.0,
+        "absolute_peak_ceiling": 220.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 85.0, "average": 98.0, "max": 115.0 },
+        "medium_register_cohort": { "min": 130.0, "average": 142.0, "max": 160.0 },
+        "high_register_cohort": { "min": 175.0, "average": 195.0, "max": 220.0 }
+      },
+      "relative_modulation_multiplier": 0.82,
+      "pitch_contour": "STEADY_SUSTAINED_HORIZONTAL",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.35,
+        "subglottal_pressure_cm_h2o": 9.5,
+        "open_quotient_oq": 0.50,
+        "glottal_closure": "FIRMLY_APPROXIMATED"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.25,
+        "average": 0.38,
+        "max": 0.50
+      },
+      "acoustic_tuning": {
+        "roughness": 0.38,
+        "smoothness": 0.65,
+        "rashness": 0.20,
+        "calmness": 0.88,
+        "speech_rate_sps": 3.4
+      },
+      "post_utterance_pause_ms": 518,
+      "amsv_scenario_byte": 34,
+      "scientific_justification": "Downward multiplier (0.82x) thickens the vocal fold mass via thyroarytenoid dominance. Full medial compression at 50% open quotient anchors the tone in stable chest cavity resonance."
+    },
+    "AGGRESSIVE_VIOLENCE": {
+      "display_name": "Confrontational Threat & Violence",
+      "tuning_register": "HIGH_RASH_HARSH",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 220.0,
+        "average_f0_mean": 365.0,
+        "max_f0_nominal": 440.0,
+        "absolute_peak_ceiling": 520.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 180.0, "average": 240.0, "max": 310.0 },
+        "medium_register_cohort": { "min": 310.0, "average": 365.0, "max": 440.0 },
+        "high_register_cohort": { "min": 400.0, "average": 465.0, "max": 520.0 }
+      },
+      "relative_modulation_multiplier": 1.85,
+      "pitch_contour": "SHARP_EXPLOSIVE_ATTACK_FALL",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.95,
+        "subglottal_pressure_cm_h2o": 18.0,
+        "open_quotient_oq": 0.32,
+        "glottal_closure": "HYPERADDUCTED_COLLISION"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.85,
+        "average": 0.96,
+        "max": 1.0
+      },
+      "acoustic_tuning": {
+        "roughness": 0.96,
+        "smoothness": 0.04,
+        "rashness": 0.98,
+        "calmness": 0.02,
+        "speech_rate_sps": 5.8
+      },
+      "post_utterance_pause_ms": 220,
+      "amsv_scenario_byte": 35,
+      "scientific_justification": "Massive multiplier (1.85x) with ceiling up to 520 Hz. Lateral cricoarytenoid contraction drives hyperadduction with subglottal pressure spiking to 18 cm H2O, generating explosive glottal collisions and severe harmonic distortion."
+    },
+    "EMOTIONAL_VULNERABILITY": {
+      "display_name": "Emotional Vulnerability & Tearful Tremor",
+      "tuning_register": "HIGH_MEDIUM_UNSTABLE",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 180.0,
+        "average_f0_mean": 265.0,
+        "max_f0_nominal": 310.0,
+        "absolute_peak_ceiling": 410.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 140.0, "average": 165.0, "max": 210.0 },
+        "medium_register_cohort": { "min": 230.0, "average": 265.0, "max": 310.0 },
+        "high_register_cohort": { "min": 290.0, "average": 340.0, "max": 410.0 }
+      },
+      "relative_modulation_multiplier": 1.35,
+      "pitch_contour": "FRACTURED_MICRO_TREMOR",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.72,
+        "subglottal_pressure_cm_h2o": 6.0,
+        "open_quotient_oq": 0.75,
+        "glottal_closure": "IRREGULAR_INCOMPLETE"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.50,
+        "average": 0.68,
+        "max": 0.85
+      },
+      "acoustic_tuning": {
+        "roughness": 0.68,
+        "smoothness": 0.45,
+        "rashness": 0.15,
+        "calmness": 0.10,
+        "speech_rate_sps": 2.6
+      },
+      "post_utterance_pause_ms": 750,
+      "amsv_scenario_byte": 36,
+      "scientific_justification": "Elevated multiplier (1.35x) under autonomic sympathetic tremor. Fluctuating cricothyroid tension induces pitch tremor (jitter > 3.5%) and incomplete glottal cycles."
+    },
+    "DEEP_MELANCHOLY": {
+      "display_name": "Deep Melancholy & Resignation",
+      "tuning_register": "DEEP_LOW_SILENT",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 65.0,
+        "average_f0_mean": 118.0,
+        "max_f0_nominal": 135.0,
+        "absolute_peak_ceiling": 165.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 65.0, "average": 78.0, "max": 95.0 },
+        "medium_register_cohort": { "min": 105.0, "average": 118.0, "max": 135.0 },
+        "high_register_cohort": { "min": 140.0, "average": 155.0, "max": 165.0 }
+      },
+      "relative_modulation_multiplier": 0.68,
+      "pitch_contour": "FLAT_MONOTONIC_CREEP",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.20,
+        "subglottal_pressure_cm_h2o": 5.0,
+        "open_quotient_oq": 0.82,
+        "glottal_closure": "VAPOROUS_GLOTTAL_FRY"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.55,
+        "average": 0.72,
+        "max": 0.88
+      },
+      "acoustic_tuning": {
+        "roughness": 0.72,
+        "smoothness": 0.25,
+        "rashness": 0.05,
+        "calmness": 0.35,
+        "speech_rate_sps": 1.9
+      },
+      "post_utterance_pause_ms": 880,
+      "amsv_scenario_byte": 37,
+      "scientific_justification": "Strong downward multiplier (0.68x) drops phonation into the pulse register (vocal fry floor down to 65 Hz). Cricothyroid tension is almost zero, producing low-frequency dicrotic glottal pulses."
+    },
+    "WHISPER_SECRECY": {
+      "display_name": "Intimate Whisper & Caution",
+      "tuning_register": "UNVOICED_TURBULENCE",
+      "frequency_envelope_hz": {
+        "min_f0_floor": 0.0,
+        "average_f0_mean": 0.0,
+        "max_f0_nominal": 0.0,
+        "absolute_peak_ceiling": 0.0
+      },
+      "speaker_cohort_baselines_hz": {
+        "low_register_cohort": { "min": 0.0, "average": 0.0, "max": 0.0 },
+        "medium_register_cohort": { "min": 0.0, "average": 0.0, "max": 0.0 },
+        "high_register_cohort": { "min": 0.0, "average": 0.0, "max": 0.0 }
+      },
+      "relative_modulation_multiplier": 0.0,
+      "pitch_contour": "APERIODIC_ASPIRATION",
+      "vocal_cord_biomechanics": {
+        "cricothyroid_tension": 0.10,
+        "subglottal_pressure_cm_h2o": 4.5,
+        "open_quotient_oq": 1.0,
+        "glottal_closure": "POSTERIOR_CHINK_OPEN"
+      },
+      "glottal_roughness_envelope": {
+        "min": 0.20,
+        "average": 0.40,
+        "max": 0.60
+      },
+      "acoustic_tuning": {
+        "roughness": 0.40,
+        "smoothness": 0.90,
+        "rashness": 0.02,
+        "calmness": 0.92,
+        "speech_rate_sps": 2.8
+      },
+      "post_utterance_pause_ms": 620,
+      "amsv_scenario_byte": 38,
+      "scientific_justification": "Zero vocal fold collision (Oq=1.0, multiplier 0.0x). Aperiodic glottal turbulence creates pure whisper aspiration across all speaker types."
+    }
+  }
+}

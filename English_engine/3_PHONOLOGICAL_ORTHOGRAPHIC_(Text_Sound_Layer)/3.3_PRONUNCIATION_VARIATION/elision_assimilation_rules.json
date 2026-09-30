@@ -1,0 +1,37 @@
+{
+  "connected_speech_processes": {
+    "assimilation": {
+      "regressive_place": {
+        "rule": "Alveolar consonants (/t, d, n/) assimilate in place to following bilabials or velars",
+        "examples": [
+          { "isolated": "that boy /ðæt bɔɪ/", "connected": "[ðæp bɔɪ]" },
+          { "isolated": "good girl /ɡʊd ɡɜːrl/", "connected": "[ɡʊɡ ɡɜːrl]" },
+          { "isolated": "ten men /tɛn mɛn/", "connected": "[tɛm mɛn]" }
+        ]
+      },
+      "coalescent": {
+        "rule": "Alveolar plosives /t, d/ merge with palatal glide /j/ into postalveolar affricates [tʃ, dʒ]",
+        "examples": [
+          { "isolated": "don't you /doʊnt juː/", "connected": "[doʊntʃuː]" },
+          { "isolated": "did you /dɪd juː/", "connected": "[dɪdʒuː]" }
+        ]
+      }
+    },
+    "elision": {
+      "alveolar_stop_coda_deletion": {
+        "rule": "/t, d/ elided in consonant clusters ending a word before another consonant",
+        "examples": [
+          { "isolated": "last night /læst naɪt/", "connected": "[læs naɪt]" },
+          { "isolated": "hold on /hoʊld ɒn/", "connected": "[hoʊl ɒn]" }
+        ]
+      },
+      "schwa_syncope": {
+        "rule": "Unstressed schwa elision before liquid",
+        "examples": [
+          { "citation": "camera /ˈkæmərə/", "connected": "[ˈkæmrə]" },
+          { "citation": "family /ˈfæmɪli/", "connected": "[ˈfæmli]" }
+        ]
+      }
+    }
+  }
+}

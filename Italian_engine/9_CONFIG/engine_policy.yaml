@@ -1,0 +1,49 @@
+# Layer 9: Engine Policy & Operational Configuration — Italian Language Engine
+
+engine:
+  name: "Italian_engine"
+  iso_639_1: "it"
+  iso_639_3: "ita"
+  language_family: "Indo-European"
+  branch: "Romance (Italo-Dalmatian)"
+  version: "1.0.0"
+  target_standard: "Italiano Standard / Neo-Standard (Accademia della Crusca)"
+
+amsv:
+  magic_header: 0x4954414C # "ITAL"
+  vector_size_bytes: 64
+  zero_bridge_sync: true
+  sub_ai_offset_map:
+    syntax_flags: 18
+    auxiliary_flags: 19
+    phonology_flags: 20
+    morphology_flags: 21
+    register_tier: 22
+    pragmatic_flags: 23
+    confidence: 24 # float32 (24..27)
+    sub_ai_active:
+      syntax: 52
+      phonology: 53
+      pragmatic: 54
+      editorial: 55
+
+grammatical_rules:
+  allow_pro_drop: true
+  enforce_subjunctive_after_volitional: true
+  enforce_auxiliary_agreement: true # essere requires gender/number concord on past participle
+  enforce_clitic_order: true       # e.g., glielo, me lo, te ne
+  enforce_articulated_prepositions: true # di + il -> del
+
+sub_ais:
+  - id: "ItalianSyntaxSubAI"
+    description: "Evaluates SVO constituent structure, pro-drop recovery, and subjunctive concord"
+    byte_sync: [18, 52]
+  - id: "ItalianPhonologySubAI"
+    description: "Evaluates elision (l'amico), truncation (buon giorno), and syntactic doubling"
+    byte_sync: [20, 53]
+  - id: "ItalianPragmaticSubAI"
+    description: "Classifies social deixis (tu vs Lei) and formal diplomatic epistolary standards"
+    byte_sync: [22, 23, 54]
+  - id: "ItalianEditorialSubAI"
+    description: "Audits auxiliary selection (essere vs avere), participle concord, and confidence scoring"
+    byte_sync: [19, 21, 24, 25, 26, 27, 55]

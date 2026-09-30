@@ -1,0 +1,51 @@
+# tense_aspect_voice.yaml - 12-Form English Tense-Aspect-Voice Matrix and Sequence of Tense Rules
+
+tense_aspect_grid:
+  present_simple:
+    active: "V / V-s (runs)"
+    passive: "am/is/are + V-en (is written)"
+  present_progressive:
+    active: "am/is/are + V-ing (is running)"
+    passive: "am/is/are + being + V-en (is being written)"
+  present_perfect:
+    active: "have/has + V-en (has written)"
+    passive: "have/has + been + V-en (has been written)"
+  present_perfect_progressive:
+    active: "have/has + been + V-ing (has been running)"
+    passive: "rarely used in passive"
+
+  past_simple:
+    active: "V-ed (wrote)"
+    passive: "was/were + V-en (was written)"
+  past_progressive:
+    active: "was/were + V-ing (was running)"
+    passive: "was/were + being + V-en (was being written)"
+  past_perfect:
+    active: "had + V-en (had written)"
+    passive: "had + been + V-en (had been written)"
+  past_perfect_progressive:
+    active: "had + been + V-ing (had been running)"
+    passive: "rarely used in passive"
+
+  future_simple:
+    active: "will + V (will write)"
+    passive: "will be + V-en (will be written)"
+  future_progressive:
+    active: "will be + V-ing (will be running)"
+    passive: "rarely used in passive"
+  future_perfect:
+    active: "will have + V-en (will have written)"
+    passive: "will have been + V-en (will have been written)"
+  future_perfect_progressive:
+    active: "will have been + V-ing (will have been running)"
+    passive: "rarely used in passive"
+
+sequence_of_tense_backshift:
+  reporting_verb_past:
+    present_simple -> past_simple
+    present_progressive -> past_progressive
+    present_perfect -> past_perfect
+    past_simple -> past_perfect
+    will -> would
+    can -> could
+    may -> might

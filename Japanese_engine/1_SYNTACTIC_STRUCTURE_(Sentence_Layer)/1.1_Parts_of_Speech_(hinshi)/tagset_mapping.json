@@ -1,0 +1,101 @@
+{
+  "description": "Crosswalk mapping between Japanese Morphological Tagsets (UniDic, MeCab-IPA, Juman++, Universal Dependencies)",
+  "tag_mappings": [
+    {
+      "hinshi_category": "Noun (名詞)",
+      "unidic": "名詞-普通名詞",
+      "ipa": "名詞-一般",
+      "juman": "名詞-普通名詞",
+      "ud": "NOUN",
+      "examples": ["本", "車", "水", "学校"]
+    },
+    {
+      "hinshi_category": "Proper Noun (固有名詞)",
+      "unidic": "名詞-固有名詞",
+      "ipa": "名詞-固有名詞",
+      "juman": "名詞-固有名詞",
+      "ud": "PROPN",
+      "examples": ["日本", "東京", "田中"]
+    },
+    {
+      "hinshi_category": "Pronoun (代名詞)",
+      "unidic": "代名詞",
+      "ipa": "名詞-代名詞",
+      "juman": "指示詞",
+      "ud": "PRON",
+      "examples": ["私", "彼", "これ", "それ"]
+    },
+    {
+      "hinshi_category": "Verb (動詞)",
+      "unidic": "動詞-一般",
+      "ipa": "動詞-自立",
+      "juman": "動詞",
+      "ud": "VERB",
+      "examples": ["食べる", "行く", "書く", "読む"]
+    },
+    {
+      "hinshi_category": "Auxiliary Verb (助動詞)",
+      "unidic": "助動詞",
+      "ipa": "助動詞",
+      "juman": "助動詞",
+      "ud": "AUX",
+      "examples": ["ます", "た", "ない", "れる", "せる"]
+    },
+    {
+      "hinshi_category": "I-Adjective (形容詞)",
+      "unidic": "形容詞-一般",
+      "ipa": "形容詞-自立",
+      "juman": "形容詞",
+      "ud": "ADJ",
+      "examples": ["高い", "新しい", "美しい", "良い"]
+    },
+    {
+      "hinshi_category": "Na-Adjective (形状詞 / 形容動詞)",
+      "unidic": "形状詞-一般",
+      "ipa": "名詞-形容動詞語幹",
+      "juman": "形容詞",
+      "ud": "ADJ",
+      "examples": ["静か", "綺麗", "簡単", "親切"]
+    },
+    {
+      "hinshi_category": "Particle (助詞)",
+      "unidic": "助詞-格助詞",
+      "ipa": "助詞-格助詞",
+      "juman": "助詞",
+      "ud": "ADP",
+      "examples": ["が", "を", "に", "で", "と", "へ", "から", "まで"]
+    },
+    {
+      "hinshi_category": "Topic Particle (係助詞)",
+      "unidic": "助詞-係助詞",
+      "ipa": "助詞-係助詞",
+      "juman": "助詞",
+      "ud": "ADP",
+      "examples": ["は", "も", "こそ", "さえ"]
+    },
+    {
+      "hinshi_category": "Sentence-Final Particle (終助詞)",
+      "unidic": "助詞-終助詞",
+      "ipa": "助詞-終助詞",
+      "juman": "助詞",
+      "ud": "PART",
+      "examples": ["ね", "よ", "か", "な", "わ"]
+    },
+    {
+      "hinshi_category": "Numeral / Counter (数詞・助数詞)",
+      "unidic": "名詞-数詞 / 接尾辞-名詞的-助数詞",
+      "ipa": "名詞-数 / 接尾-助数詞",
+      "juman": "数詞",
+      "ud": "NUM",
+      "examples": ["一", "二", "本", "枚", "匹", "冊", "人"]
+    },
+    {
+      "hinshi_category": "Punctuation (補助記号)",
+      "unidic": "補助記号-句点 / 補助記号-読点",
+      "ipa": "記号-句点 / 記号-読点",
+      "juman": "特殊",
+      "ud": "PUNCT",
+      "examples": ["。", "、", "「", "」", "『", "』"]
+    }
+  ]
+}

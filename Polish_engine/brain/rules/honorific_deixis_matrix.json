@@ -1,0 +1,55 @@
+{
+  "engine": "Polish",
+  "matrix_type": "honorific_deixis_matrix",
+  "version": "1.0.0",
+  "honorific_agreement_rule": {
+    "description": "Honorific forms 'Pan', 'Pani', 'Państwo', 'Panie', 'Panowie' require 3rd-person verb agreement (singular or plural), never 2nd-person.",
+    "forms": [
+      {
+        "pronoun": "Pan",
+        "gender": "masculine_singular",
+        "verb_agreement": "3rd_person_singular",
+        "vocative_salutation": "Szanowny Panie",
+        "example_correct": "Czy Pan wie?",
+        "example_violation": "Czy Pan wiesz?"
+      },
+      {
+        "pronoun": "Pani",
+        "gender": "feminine_singular",
+        "verb_agreement": "3rd_person_singular",
+        "vocative_salutation": "Szanowna Pani",
+        "example_correct": "Czy Pani czytała ten raport?",
+        "example_violation": "Czy Pani czytałaś ten raport?"
+      },
+      {
+        "pronoun": "Państwo",
+        "gender": "virile_plural",
+        "verb_agreement": "3rd_person_plural",
+        "vocative_salutation": "Szanowni Państwo",
+        "example_correct": "Czy Państwo chcą kawy?",
+        "example_violation": "Czy Państwo chcecie kawy?"
+      },
+      {
+        "pronoun": "Panowie",
+        "gender": "virile_plural_men",
+        "verb_agreement": "3rd_person_plural",
+        "vocative_salutation": "Szanowni Panowie",
+        "example_correct": "Czy Panowie mogą pomóc?",
+        "example_violation": "Czy Panowie możecie pomóc?"
+      },
+      {
+        "pronoun": "Panie",
+        "gender": "non_virile_plural_women",
+        "verb_agreement": "3rd_person_plural",
+        "vocative_salutation": "Szanowne Panie",
+        "example_correct": "Czy Panie wiedzą?",
+        "example_violation": "Czy Panie wiecie?"
+      }
+    ]
+  },
+  "informal_contrast": {
+    "pronoun": "ty",
+    "verb_agreement": "2nd_person_singular",
+    "examples": ["Czy wiesz?", "Czy czytałeś?"]
+  }
+}

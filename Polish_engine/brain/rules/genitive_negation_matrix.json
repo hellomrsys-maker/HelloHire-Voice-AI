@@ -1,0 +1,87 @@
+{
+  "engine": "Polish",
+  "matrix_type": "genitive_negation_matrix",
+  "version": "1.0.0",
+  "rule": {
+    "name": "Dopełniacz negacji (Genitive of Negation)",
+    "description": "Whenever a transitive verb taking an accusative direct object is negated by 'nie', the direct object obligatorily shifts to the genitive case.",
+    "formula": "nie + VERB_TRANSITIVE + DIRECT_OBJECT[GENITIVE]"
+  },
+  "sample_transitive_verbs": [
+    "mam", "ma", "mają", "mieć",
+    "czytam", "czyta", "czytają", "czytać",
+    "kupuję", "kupuje", "kupują", "kupić", "kupować",
+    "widzę", "widzi", "widzą", "widzieć",
+    "robię", "robi", "robią", "robić",
+    "lubię", "lubi", "lubią", "lubić",
+    "znam", "zna", "znają", "znać",
+    "piję", "pije", "piją", "pić",
+    "jem", "je", "jedzą", "jeść",
+    "rozumiem", "rozumie", "rozumieją", "rozumieć"
+  ],
+  "noun_case_alternations": [
+    {
+      "lemma": "czas",
+      "gender": "masculine_inanimate",
+      "nominative": "czas",
+      "accusative": "czas",
+      "genitive": "czasu",
+      "affirmative_example": "Mam czas.",
+      "negative_example": "Nie mam czasu."
+    },
+    {
+      "lemma": "książka",
+      "gender": "feminine",
+      "nominative": "książka",
+      "accusative": "książkę",
+      "genitive": "książki",
+      "affirmative_example": "Czytam książkę.",
+      "negative_example": "Nie czytam książki."
+    },
+    {
+      "lemma": "chleb",
+      "gender": "masculine_inanimate",
+      "nominative": "chleb",
+      "accusative": "chleb",
+      "genitive": "chleba",
+      "affirmative_example": "Kupuję chleb.",
+      "negative_example": "Nie kupuję chleba."
+    },
+    {
+      "lemma": "samochód",
+      "gender": "masculine_inanimate",
+      "nominative": "samochód",
+      "accusative": "samochód",
+      "genitive": "samochodu",
+      "affirmative_example": "Mam samochód.",
+      "negative_example": "Nie mam samochodu."
+    },
+    {
+      "lemma": "woda",
+      "gender": "feminine",
+      "nominative": "woda",
+      "accusative": "wodę",
+      "genitive": "wody",
+      "affirmative_example": "Piję wodę.",
+      "negative_example": "Nie piję wody."
+    },
+    {
+      "lemma": "problem",
+      "gender": "masculine_inanimate",
+      "nominative": "problem",
+      "accusative": "problem",
+      "genitive": "problemu",
+      "affirmative_example": "Widzę problem.",
+      "negative_example": "Nie widzę problemu."
+    },
+    {
+      "lemma": "kawa",
+      "gender": "feminine",
+      "nominative": "kawa",
+      "accusative": "kawę",
+      "genitive": "kawy",
+      "affirmative_example": "Lubię kawę.",
+      "negative_example": "Nie lubię kawy."
+    }
+  ]
+}

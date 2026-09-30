@@ -1,0 +1,25 @@
+{
+  "engine": "Korean_engine",
+  "language": "Korean",
+  "iso_code": "ko",
+  "english_first": true,
+  "trained_on_real_corpus": true,
+  "verified_by_metrics": true,
+  "orchestration_avg_score": 0.922,
+  "sub_ai_validation_metrics": {
+    "train_size": 256,
+    "val_size": 64,
+    "final_train_loss": 0.4181,
+    "val_completeness": {
+      "accuracy": 0.8438,
+      "precision": 1.0,
+      "recall": 0.7959,
+      "f1": 0.8864,
+      "n": 64
+    },
+    "val_punctuation_accuracy": 0.7656,
+    "passed": true
+  },
+  "amsv_sha256": "4bf80b635a56a5be2221a6a7b7930825f144f30966e7b2dcc94bc7308740aa39",
+  "amsv_hex": "0000000000000000000000000000000088e369fa37e826f247f040eaccadd0f10000000000000000000000000000000000000000ffff98d90000000000000000"
+}

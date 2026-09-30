@@ -1,0 +1,23 @@
+{
+  "language": "Telugu",
+  "karaka_semantic_roles": [
+    {"karaka": "Karta (కర్త)", "case": "Prathama (ప్రథమ)", "role": "Volitional Agent", "example": "రాముడు బాణం వేశాడు."},
+    {"karaka": "Karma (కర్మ)", "case": "Dvitiya (ద్వితీయ)", "role": "Direct Patient/Theme", "example": "పుస్తకాన్ని చదివాడు."},
+    {"karaka": "Karana (కరణము)", "case": "Tritiya (తృతీయ)", "role": "Instrumental Means", "example": "కలంతో వ్రాశాడు."},
+    {"karaka": "Sampradana (సంప్రదానము)", "case": "Chaturthi (చతుర్థి)", "role": "Recipient/Beneficiary", "example": "బీదలకు దానం చేశాడు."},
+    {"karaka": "Apadana (అపాదానము)", "case": "Panchami (పంచమి)", "role": "Source/Origin", "example": "చెట్టునుండి పండు రాలింది."},
+    {"karaka": "Adhikarana (అధికరణము)", "case": "Saptami (సప్తమి)", "role": "Spatial/Temporal Locus", "example": "సభయందు మాట్లాడాడు."}
+  ],
+  "paryayapadalu_synonym_clusters": {
+    "agni_fire": ["అగ్ని", "నిప్పు", "వహ్ని", "జ్వలనము", "అనలము"],
+    "neeru_water": ["నీరు", "జలము", "తోయము", "ఉదకము", "వారి"],
+    "surya_sun": ["సూర్యుడు", "భానుడు", "రవి", "దినకరుడు", "భాస్కరుడు"],
+    "krupa_kindness": ["దయ", "కృప", "కరుణ", "వాత్సల్యము"]
+  },
+  "lexical_etymology_strata": {
+    "tatsama": "Sanskrit loanwords assimilated directly with Telugu vibhakti (e.g., వృక్షము, చంద్రుడు)",
+    "tadbhaava": "Words historically derived from Sanskrit/Prakrit with phonetic shifts (e.g., అగ్గి < అగ్ని, కంబము < స్తంభము)",
+    "deshya": "Pure indigenous Dravidian roots (e.g., నేల, నీరు, చెట్టు, పాలు)",
+    "gramya": "Colloquial rustic vernacular expressions"
+  }
+}

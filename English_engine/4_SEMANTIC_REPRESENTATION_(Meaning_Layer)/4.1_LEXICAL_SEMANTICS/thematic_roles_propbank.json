@@ -1,0 +1,15 @@
+{
+  "propbank_thematic_roles": {
+    "ARG0": { "name": "Agent / Causer / Experiencer", "description": "The initiator of the action or event", "example": "The model (ARG0) predicted the token." },
+    "ARG1": { "name": "Patient / Theme", "description": "The entity undergoing the state change or affected by action", "example": "The model predicted the token (ARG1)." },
+    "ARG2": { "name": "Beneficiary / Instrument / Attribute / End state", "description": "Secondary participant or recipient", "example": "He gave the researcher (ARG2) the dataset (ARG1)." },
+    "ARG3": { "name": "Start point / Beneficiary / Instrument", "description": "Tertiary participant" },
+    "ARG4": { "name": "End point", "description": "Final destination or outcome" },
+    "ARGM_LOC": { "name": "Location", "description": "Spatial adverbial modifier", "example": "in the datacenter (ARGM-LOC)" },
+    "ARGM_TMP": { "name": "Temporal", "description": "Time of occurrence", "example": "yesterday (ARGM-TMP)" },
+    "ARGM_MNR": { "name": "Manner", "description": "Way the event was carried out", "example": "accurately (ARGM-MNR)" },
+    "ARGM_CAU": { "name": "Cause", "description": "Reason for the event", "example": "due to gradient clipping (ARGM-CAU)" },
+    "ARGM_DIS": { "name": "Discourse", "description": "Discourse marker", "example": "However (ARGM-DIS)" },
+    "ARGM_NEG": { "name": "Negation", "description": "Negative particle", "example": "not (ARGM-NEG)" }
+  }
+}

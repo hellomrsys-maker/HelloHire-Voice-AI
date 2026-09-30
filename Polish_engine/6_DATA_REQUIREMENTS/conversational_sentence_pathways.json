@@ -1,0 +1,62 @@
+{
+  "language": "Polish",
+  "engine": "D:\\gra.voi\\Polish_engine",
+  "iso_code": "pol",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "pol_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Inżynier zaprojektował wysoce wydajną architekturę rozproszoną.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Pomyślnie zaimplementowaliśmy synchroniczny protokół pamięci atomowej.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pol_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Zespół badawczy opublikował przełomowy artykuł naukowy o sztucznej inteligencji.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Architekt oprogramowania zoptymalizował potok przetwarzania danych (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pol_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Model kognitywny przetwarza wielojęzyczne strumienie w czasie rzeczywistym.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Zespół programistów pomyślnie przeszedł wszystkie testy integracyjne (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pol_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Magistrala pamięci gwarantuje spójność danych bez opóźnień.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Przeprowadziliśmy rygorystyczne testy wydajnościowe systemu (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

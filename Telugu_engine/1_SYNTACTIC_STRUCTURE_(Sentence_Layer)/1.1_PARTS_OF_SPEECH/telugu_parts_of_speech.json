@@ -1,0 +1,110 @@
+{
+  "language": "Telugu",
+  "script": "Telugu",
+  "parts_of_speech": {
+    "namavachakam": {
+      "name_te": "నామవాచకము",
+      "name_en": "Noun",
+      "description": "Nouns denoting persons, places, objects, qualities, and abstractions.",
+      "classes": [
+        "vishesha_namavachakam (సంజ్ఞావాచకము - Proper Noun)",
+        "sadharana_namavachakam (జాతివాచకము - Common Noun)",
+        "guna_namavachakam (గుణవాచకము - Abstract/Quality Noun)",
+        "samudaya_namavachakam (సముదాయవాచకము - Collective Noun)",
+        "kriya_namavachakam (క్రియావాచకము - Verbal Noun)"
+      ],
+      "examples": [
+        {"te": "రాముడు", "en": "Rama", "type": "proper"},
+        {"te": "నగరం", "en": "city", "type": "common"},
+        {"te": "ధైర్యం", "en": "courage", "type": "abstract"},
+        {"te": "సైన్యం", "en": "army", "type": "collective"},
+        {"te": "చదవడం", "en": "reading", "type": "verbal"}
+      ]
+    },
+    "sarvanamam": {
+      "name_te": "సర్వనామము",
+      "name_en": "Pronoun",
+      "description": "Words substituted for nouns, categorized across persons and honorific registers.",
+      "persons": {
+        "uttama_purusha": {
+          "te": "ఉత్తమ పురుష",
+          "en": "First Person",
+          "singular": "నేను (I)",
+          "plural_exclusive": "మేము (We - exclusive)",
+          "plural_inclusive": "మనము (We - inclusive)"
+        },
+        "madhyama_purusha": {
+          "te": "మధ్యమ పురుష",
+          "en": "Second Person",
+          "singular_informal": "నువ్వు (You - informal/intimate)",
+          "singular_honorific": "మీరు (You - polite/honorific)",
+          "plural": "మీరు (You all)"
+        },
+        "prathama_purusha": {
+          "te": "ప్రథమ పురుష",
+          "en": "Third Person",
+          "proximate_masculine": "ఇతడు / వీడు (He - proximate)",
+          "distal_masculine": "అతడు / వాడు (He - distal)",
+          "distal_honorific": "ఆయన / వారు (He/They - honorific)",
+          "proximate_feminine_nonhuman": "ఇది (This female/thing)",
+          "distal_feminine_nonhuman": "అది (That female/thing)",
+          "plural_human": "వారు / వీరు (They - human)",
+          "plural_nonhuman": "అవి / ఇవి (They - non-human)"
+        }
+      }
+    },
+    "kriya": {
+      "name_te": "క్రియ",
+      "name_en": "Verb",
+      "description": "Finite and non-finite verbs expressing action, state, or occurrence with TAM markers.",
+      "types": [
+        "sakarmaka_kriya (సకర్మక క్రియ - Transitive Verb)",
+        "akarmaka_kriya (అకర్మక క్రియ - Intransitive Verb)",
+        "samapaka_kriya (సమాపక క్రియ - Finite Verb)",
+        "asamapaka_kriya (అసమాపక క్రియ - Non-finite Verb)"
+      ],
+      "non_finite_types": [
+        "shatranthakam (శత్రర్థకము - Present continuous participle: చేస్తూ / చదువుతూ)",
+        "kvarthakam (క్త్వార్థకము - Past participle: చేసి / చదివి)",
+        "chedarthakam (చేదర్థకము - Conditional participle: చేస్తే / చదివితే)",
+        "anantaryarthakam (ఆనంతర్యార్థకము - Immediate precedence: చేయగానే)"
+      ]
+    },
+    "visheshanam": {
+      "name_te": "విశేషణము",
+      "name_en": "Adjective",
+      "description": "Modifiers that describe attributes, qualities, or quantity of nouns.",
+      "examples": [
+        {"te": "మంచి", "en": "good"},
+        {"te": "గొప్ప", "en": "great"},
+        {"te": "ఎర్రని", "en": "red"},
+        {"te": "చల్లని", "en": "cool/cold"},
+        {"te": "పెద్ద", "en": "large/big"}
+      ]
+    },
+    "kriya_visheshanam": {
+      "name_te": "క్రియావిశేషణము",
+      "name_en": "Adverb",
+      "description": "Modifiers describing manner, time, place, degree of a verb.",
+      "examples": [
+        {"te": "వేగంగా", "en": "quickly"},
+        {"te": "నెమ్మదిగా", "en": "slowly"},
+        {"te": "ఇప్పుడు", "en": "now"},
+        {"te": "అక్కడ", "en": "there"},
+        {"te": "బాగా", "en": "well"}
+      ]
+    },
+    "avyayam": {
+      "name_te": "అవ్యయము",
+      "name_en": "Indeclinable / Particle",
+      "description": "Words that do not inflect for gender, number, or case (లింగ, వచన, విభక్తి రహితమైనవి).",
+      "examples": [
+        {"te": "మరియు", "en": "and"},
+        {"te": "కాని / అయితే", "en": "but / however"},
+        {"te": "కూడా", "en": "also"},
+        {"te": "వలె / లాగా", "en": "like / as"},
+        {"te": "లేక", "en": "or"}
+      ]
+    }
+  }
+}

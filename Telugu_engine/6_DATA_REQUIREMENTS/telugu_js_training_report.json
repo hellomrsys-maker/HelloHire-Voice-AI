@@ -1,0 +1,36 @@
+{
+  "language": "Telugu",
+  "native_name": "తెలుగు",
+  "engine": "Telugu_engine",
+  "runtime": "Node.js JavaScript",
+  "duration_seconds": 0.01,
+  "phases": {
+    "phase1_syntax": {
+      "status": "SUCCESS",
+      "final_loss": 30.5458,
+      "sentences_trained": 20
+    },
+    "phase2_sub_ais": {
+      "status": "SUCCESS",
+      "final_writing_loss": 0.0084,
+      "final_email_loss": 0.0001
+    },
+    "phase3_intent_tree": {
+      "status": "SUCCESS",
+      "nodes_validated": 6,
+      "calibrated_gap_ms": 518
+    },
+    "phase4_acoustic_sonority": {
+      "status": "SUCCESS",
+      "scenarios_evaluated": 4
+    },
+    "phase5_amsv_verification": {
+      "status": "SUCCESS",
+      "model_checkpoint": "D:\\gra.voi\\checkpoints\\telugu_model_js.json",
+      "model_hash": "60cb73c7f49f5d527bf10a1fb3c4d667c027ac3c0cdd953568fb4842d680cd0f",
+      "amsv_checkpoint": "D:\\gra.voi\\checkpoints\\master_cognitive_amsv.bin",
+      "amsv_hash": "8d0ae9b4c1de7a12c31af3882a1a654da5e9e109234d1f94badc1cc022fae07e"
+    }
+  },
+  "timestamp": "2026-09-26T02:09:14.663Z"
+}

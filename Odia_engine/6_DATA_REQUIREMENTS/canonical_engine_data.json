@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Odia",
+    "engine": "Odia_engine",
+    "iso_codes": [
+      "ori",
+      "or"
+    ],
+    "scripts": [
+      "Odia"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Odia",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "ori_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Odia)",
+          "How are operations (Odia)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "ori_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Odia)",
+          "Report readiness (Odia)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "ଇଞ୍ଜିନିୟର ଏକ ଅତ୍ୟନ୍ତ ଦକ୍ଷ ବିତରିତ ପ୍ରଣାଳୀ ବିକଶିତ କରିଛନ୍ତି।",
+    "ଛାତ୍ରମାନେ ଜଟିଳ ନ୍ୟୁରାଲ ନେଟୱାର୍କକୁ ଭଲ ଭାବରେ ବୁଝିପାରିଛନ୍ତି।",
+    "ଆମେ ଶୂନ-ବିଳମ୍ବ ସମକାଳୀନ ମେମୋରୀ ପ୍ରୋଟୋକଲ୍ ସଫଳତାର ସହିତ ଲାଗୁ କରିଛୁ।",
+    "ପ୍ରଫେସର ଉତ୍ପାଦନକ୍ଷମ ବ୍ୟାକରଣ ନିୟମଗୁଡ଼ିକ ବିସ୍ତୃତ ଭାବରେ ବୁଝାଇଲେ।",
+    "ଗବେଷଣା ଦଳ କୃତ୍ରିମ ବୁଦ୍ଧିମତା ଉପରେ ଏକ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଗବେଷଣା ପତ୍ର ପ୍ରକାଶ କଲେ।",
+    "ସଫ୍ଟୱେର୍ ଆର୍କିଟେକ୍ଟ ଡାଟା ପ୍ରକ୍ରିୟାକରଣ ପାଇପଲାଇନକୁ ସୁବ୍ୟବସ୍ଥିତ କଲେ।",
+    "କୃତ୍ରିମ ବୁଦ୍ଧିମତା ବହୁଭାଷୀ ପାଠ୍ୟକୁ ସଠିକ୍ ଭାବରେ ବିଶ୍ଳେଷଣ କରେ।",
+    "ବିକାଶ ଦଳ ସମସ୍ତ ଏକୀକରଣ ପରୀକ୍ଷା ସଫଳତାର ସହିତ ସମାପ୍ତ କଲେ।",
+    "ଉଚ୍ଚ-ଗତି ମେମୋରୀ ବସ୍ ପ୍ରକୃତ-ସମୟ ଡାଟା ସୁସଙ୍ଗତତା ସୁନିଶ୍ଚିତ କରେ।",
+    "ବିଶ୍ୱସନୀୟତା ପ୍ରମାଣ କରିବା ପାଇଁ ଆମେ କଠୋର ମାନଦଣ୍ଡ ପରୀକ୍ଷା କରିଥିଲୁ।",
+    "ପିଲାମାନେ ପାଠାଗାରରେ ସୁନ୍ଦର କାହାଣୀ ବହିଗୁଡ଼ିକ ପଢ଼ିଲେ।",
+    "ଆଜି ପାଗ ବହୁତ ସୁନ୍ଦର ଏବଂ ଶୀତଳ ଅଟେ।",
+    "କୃଷକମାନେ ବିଲରେ ଧାନ ଅମଳ କରିବା ଆରମ୍ଭ କଲେ।",
+    "ବୈଜ୍ଞାନିକ ନୂତନ ଆଲଗୋରିଦମର ଗତି ଏବଂ ସଠିକତା ଯାଞ୍ଚ କଲେ।",
+    "ଇଞ୍ଜିନିୟର ଏକ ଅତ୍ୟନ୍ତ ଦକ୍ଷ ବିତରିତ ପ୍ରଣାଳୀ ବିକଶିତ କରିଛନ୍ତି। [14]",
+    "ଛାତ୍ରମାନେ ଜଟିଳ ନ୍ୟୁରାଲ ନେଟୱାର୍କକୁ ଭଲ ଭାବରେ ବୁଝିପାରିଛନ୍ତି। [15]",
+    "ଆମେ ଶୂନ-ବିଳମ୍ବ ସମକାଳୀନ ମେମୋରୀ ପ୍ରୋଟୋକଲ୍ ସଫଳତାର ସହିତ ଲାଗୁ କରିଛୁ। [16]",
+    "ପ୍ରଫେସର ଉତ୍ପାଦନକ୍ଷମ ବ୍ୟାକରଣ ନିୟମଗୁଡ଼ିକ ବିସ୍ତୃତ ଭାବରେ ବୁଝାଇଲେ। [17]",
+    "ଗବେଷଣା ଦଳ କୃତ୍ରିମ ବୁଦ୍ଧିମତା ଉପରେ ଏକ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଗବେଷଣା ପତ୍ର ପ୍ରକାଶ କଲେ। [18]",
+    "ସଫ୍ଟୱେର୍ ଆର୍କିଟେକ୍ଟ ଡାଟା ପ୍ରକ୍ରିୟାକରଣ ପାଇପଲାଇନକୁ ସୁବ୍ୟବସ୍ଥିତ କଲେ। [19]"
+  ]
+}

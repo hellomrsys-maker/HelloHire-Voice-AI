@@ -1,0 +1,62 @@
+{
+  "language": "Japanese",
+  "engine": "D:\\gra.voi\\Japanese_engine",
+  "iso_code": "jpn",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "jpn_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "エンジニアが高並行分散システムを設計しました。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "我々はゼロ遅延メモリ同期プロトコルを実装しました。",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "jpn_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "研究チームが新しい機械学習モデルを提案しました。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "アーキテクトがデータパイプラインを最適化しました (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "jpn_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "認知エンジンが自然言語の文脈を正確に解釈します。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "開発チームがすべてのテストケースを合格させました (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "jpn_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "人工知能が多言語リアルタイム翻訳を実行します。",
+      "calibrated_gap_ms": 518,
+      "context_reply": "科学者が量子コンピューティングの論文を発表しました (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

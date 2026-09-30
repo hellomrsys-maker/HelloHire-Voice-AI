@@ -1,0 +1,283 @@
+{
+  "verb_classes": {
+    "class_1_a_stem": ["করা", "পড়া", "বলা", "দেখা", "শোনা", "জানা", "থাকা"],
+    "class_2_e_stem": ["দেওয়া", "নেওয়া", "খাওয়া"],
+    "class_3_i_stem": ["কেনা", "চেনা", "লেখা"],
+    "class_4_u_stem": ["শোওয়া", "ধোওয়া", "হওয়া", "যাওয়া", "আসা"]
+  },
+  "verbs": {
+    "করা": {
+      "lemma": "করা",
+      "transitivity": "transitive",
+      "meaning": "to do",
+      "non_finite": {
+        "conjunctive": "করে",
+        "infinitive": "করতে",
+        "conditional": "করলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "করি", "2nd_fam": "করো", "2nd_int": "করিস", "hon": "করেন", "3rd_ord": "করে" },
+        "present_continuous": { "1st": "করছি", "2nd_fam": "করছ", "2nd_int": "করছিস", "hon": "করছেন", "3rd_ord": "করছে" },
+        "present_perfect": { "1st": "করেছি", "2nd_fam": "করেছ", "2nd_int": "করেছিস", "hon": "করেছেন", "3rd_ord": "করেছে" },
+        "past_simple": { "1st": "করলাম", "2nd_fam": "করলে", "2nd_int": "করলি", "hon": "করলেন", "3rd_ord": "করল" },
+        "past_continuous": { "1st": "করছিলাম", "2nd_fam": "করছিলে", "2nd_int": "করছিলি", "hon": "করছিলেন", "3rd_ord": "করছিল" },
+        "past_perfect": { "1st": "করেছিলাম", "2nd_fam": "করেছিলে", "2nd_int": "করেছিলি", "hon": "করেছিলেন", "3rd_ord": "করেছিল" },
+        "past_habitual": { "1st": "করতাম", "2nd_fam": "করতে", "2nd_int": "করতিস", "hon": "করতেন", "3rd_ord": "করত" },
+        "future_simple": { "1st": "করব", "2nd_fam": "করবে", "2nd_int": "করবি", "hon": "করবেন", "3rd_ord": "করবে" },
+        "imperative": { "2nd_fam": "করো", "2nd_int": "কর", "hon": "করুন" }
+      }
+    },
+    "পড়া": {
+      "lemma": "পড়া",
+      "transitivity": "transitive",
+      "meaning": "to read / study",
+      "non_finite": {
+        "conjunctive": "পড়ে",
+        "infinitive": "পড়তে",
+        "conditional": "পড়লে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "পড়ি", "2nd_fam": "পড়ো", "2nd_int": "পড়িস", "hon": "পড়েন", "3rd_ord": "পড়ে" },
+        "present_continuous": { "1st": "পড়ছি", "2nd_fam": "পড়ছ", "2nd_int": "পড়ছিস", "hon": "পড়ছেন", "3rd_ord": "পড়ছে" },
+        "present_perfect": { "1st": "পড়েছি", "2nd_fam": "পড়েছ", "2nd_int": "পড়েছিস", "hon": "পড়েছেন", "3rd_ord": "পড়েছে" },
+        "past_simple": { "1st": "পড়লাম", "2nd_fam": "পড়লে", "2nd_int": "পড়লি", "hon": "পড়লেন", "3rd_ord": "পড়ল" },
+        "past_continuous": { "1st": "পড়ছিলাম", "2nd_fam": "পড়ছিলে", "2nd_int": "পড়ছিলি", "hon": "পড়ছিলেন", "3rd_ord": "পড়ছিল" },
+        "past_perfect": { "1st": "পড়েছিলাম", "2nd_fam": "পড়েছিলে", "2nd_int": "পড়েছিলি", "hon": "পড়েছিলেন", "3rd_ord": "পড়েছিল" },
+        "past_habitual": { "1st": "পড়তাম", "2nd_fam": "পড়তে", "2nd_int": "পড়তিস", "hon": "পড়তেন", "3rd_ord": "পড়ত" },
+        "future_simple": { "1st": "পড়ব", "2nd_fam": "পড়বে", "2nd_int": "পড়বি", "hon": "পড়বেন", "3rd_ord": "পড়বে" },
+        "imperative": { "2nd_fam": "পড়ো", "2nd_int": "পড়", "hon": "পড়ুন" }
+      }
+    },
+    "লেখা": {
+      "lemma": "লেখা",
+      "transitivity": "transitive",
+      "meaning": "to write",
+      "non_finite": {
+        "conjunctive": "লিখে",
+        "infinitive": "লিখতে",
+        "conditional": "লিখলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "লিখি", "2nd_fam": "লেখো", "2nd_int": "লিখিস", "hon": "লেখেন", "3rd_ord": "লেখে" },
+        "present_continuous": { "1st": "লিখছি", "2nd_fam": "লিখছ", "2nd_int": "লিখছিস", "hon": "লিখছেন", "3rd_ord": "লিখছে" },
+        "present_perfect": { "1st": "লিখেছি", "2nd_fam": "লিখেছ", "2nd_int": "লিখেছিস", "hon": "লিখেছেন", "3rd_ord": "লিখেছে" },
+        "past_simple": { "1st": "লিখলাম", "2nd_fam": "লিখলে", "2nd_int": "লিখলি", "hon": "লিখলেন", "3rd_ord": "লিখল" },
+        "past_continuous": { "1st": "লিখছিলাম", "2nd_fam": "লিখছিলে", "2nd_int": "লিখছিলি", "hon": "লিখছিলেন", "3rd_ord": "লিখছিল" },
+        "past_perfect": { "1st": "লিখেছিলাম", "2nd_fam": "লিখেছিলে", "2nd_int": "লিখেছিলি", "hon": "লিখেছিলেন", "3rd_ord": "লিখেছিল" },
+        "past_habitual": { "1st": "লিখতাম", "2nd_fam": "লিখতে", "2nd_int": "লিখতিস", "hon": "লিখতেন", "3rd_ord": "লিখত" },
+        "future_simple": { "1st": "লিখব", "2nd_fam": "লিখবে", "2nd_int": "লিখবি", "hon": "লিখবেন", "3rd_ord": "লিখবে" },
+        "imperative": { "2nd_fam": "লেখো", "2nd_int": "লেখ", "hon": "লিখুন" }
+      }
+    },
+    "বলা": {
+      "lemma": "বলা",
+      "transitivity": "transitive",
+      "meaning": "to say / speak",
+      "non_finite": {
+        "conjunctive": "বলে",
+        "infinitive": "বলতে",
+        "conditional": "বললে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "বলি", "2nd_fam": "বলো", "2nd_int": "বলিস", "hon": "বলেন", "3rd_ord": "বলে" },
+        "present_continuous": { "1st": "বলছি", "2nd_fam": "বলছ", "2nd_int": "বলছিস", "hon": "বলছেন", "3rd_ord": "বলছে" },
+        "present_perfect": { "1st": "বলেছি", "2nd_fam": "বলেছ", "2nd_int": "বলেছিস", "hon": "বলেছেন", "3rd_ord": "বলেছে" },
+        "past_simple": { "1st": "বললাম", "2nd_fam": "বললে", "2nd_int": "বললি", "hon": "বললেন", "3rd_ord": "বলল" },
+        "past_continuous": { "1st": "বলছিলাম", "2nd_fam": "বলছিলে", "2nd_int": "বলছিলি", "hon": "বলছিলেন", "3rd_ord": "বলছিল" },
+        "past_perfect": { "1st": "বলেছিলাম", "2nd_fam": "বলেছিলে", "2nd_int": "বলেছিলি", "hon": "বলেছিলেন", "3rd_ord": "বলেছিল" },
+        "past_habitual": { "1st": "বলতাম", "2nd_fam": "বলতে", "2nd_int": "বলতিস", "hon": "বলতেন", "3rd_ord": "বলত" },
+        "future_simple": { "1st": "বলব", "2nd_fam": "বলবে", "2nd_int": "বলবি", "hon": "বলবেন", "3rd_ord": "বলবে" },
+        "imperative": { "2nd_fam": "বলো", "2nd_int": "বল", "hon": "বলুন" }
+      }
+    },
+    "দেখা": {
+      "lemma": "দেখা",
+      "transitivity": "transitive",
+      "meaning": "to see / watch",
+      "non_finite": {
+        "conjunctive": "দেখে",
+        "infinitive": "দেখতে",
+        "conditional": "দেখলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "দেখি", "2nd_fam": "দেখো", "2nd_int": "দেখিস", "hon": "দেখেন", "3rd_ord": "দেখে" },
+        "present_continuous": { "1st": "দেখছি", "2nd_fam": "দেখছ", "2nd_int": "দেখছিস", "hon": "দেখছেন", "3rd_ord": "দেখছে" },
+        "present_perfect": { "1st": "দেখেছি", "2nd_fam": "দেখেছ", "2nd_int": "দেখেছিস", "hon": "দেখেছেন", "3rd_ord": "দেখেছে" },
+        "past_simple": { "1st": "দেখলাম", "2nd_fam": "দেখলে", "2nd_int": "দেখলি", "hon": "দেখলেন", "3rd_ord": "দেখল" },
+        "past_continuous": { "1st": "দেখছিলাম", "2nd_fam": "দেখছিলে", "2nd_int": "দেখছিলি", "hon": "দেখছিলেন", "3rd_ord": "দেখছিল" },
+        "past_perfect": { "1st": "দেখেছিলাম", "2nd_fam": "দেখেছিলে", "2nd_int": "দেখেছিলি", "hon": "দেখেছিলেন", "3rd_ord": "দেখেছিল" },
+        "past_habitual": { "1st": "দেখতাম", "2nd_fam": "দেখতে", "2nd_int": "দেখতিস", "hon": "দেখতেন", "3rd_ord": "দেখত" },
+        "future_simple": { "1st": "দেখব", "2nd_fam": "দেখবে", "2nd_int": "দেখবি", "hon": "দেখবেন", "3rd_ord": "দেখবে" },
+        "imperative": { "2nd_fam": "দেখো", "2nd_int": "দেখ", "hon": "দেখুন" }
+      }
+    },
+    "যাওয়া": {
+      "lemma": "যাওয়া",
+      "transitivity": "intransitive",
+      "meaning": "to go",
+      "non_finite": {
+        "conjunctive": "গিয়ে",
+        "infinitive": "যেতে",
+        "conditional": "গেলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "যাই", "2nd_fam": "যাও", "2nd_int": "যাস", "hon": "যান", "3rd_ord": "যায়" },
+        "present_continuous": { "1st": "যাচ্ছি", "2nd_fam": "যাচ্ছ", "2nd_int": "যাচ্ছিস", "hon": "যাচ্ছেন", "3rd_ord": "যাচ্ছে" },
+        "present_perfect": { "1st": "গিয়েছি", "2nd_fam": "গিয়েছ", "2nd_int": "গিয়েছিস", "hon": "গিয়েছেন", "3rd_ord": "গিয়েছে" },
+        "past_simple": { "1st": "গেলাম", "2nd_fam": "গেলে", "2nd_int": "গেলি", "hon": "গেলেন", "3rd_ord": "গেল" },
+        "past_continuous": { "1st": "যাচ্ছিলাম", "2nd_fam": "যাচ্ছিলে", "2nd_int": "যাচ্ছিলি", "hon": "যাচ্ছিলেন", "3rd_ord": "যাচ্ছিল" },
+        "past_perfect": { "1st": "গিয়েছিলাম", "2nd_fam": "গিয়েছিলে", "2nd_int": "গিয়েছিলি", "hon": "গিয়েছিলেন", "3rd_ord": "গিয়েছিল" },
+        "past_habitual": { "1st": "যেতাম", "2nd_fam": "যেতে", "2nd_int": "যেতিস", "hon": "যেতেন", "3rd_ord": "যেত" },
+        "future_simple": { "1st": "যাব", "2nd_fam": "যাবে", "2nd_int": "যাবি", "hon": "যাবেন", "3rd_ord": "যাবে" },
+        "imperative": { "2nd_fam": "যাও", "2nd_int": "যা", "hon": "যান" }
+      }
+    },
+    "আসা": {
+      "lemma": "আসা",
+      "transitivity": "intransitive",
+      "meaning": "to come",
+      "non_finite": {
+        "conjunctive": "এসে",
+        "infinitive": "আসতে",
+        "conditional": "আসলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "আসি", "2nd_fam": "আসো", "2nd_int": "আসিস", "hon": "আসেন", "3rd_ord": "আসে" },
+        "present_continuous": { "1st": "আসছি", "2nd_fam": "আসছ", "2nd_int": "আসছিস", "hon": "আসছেন", "3rd_ord": "আসছে" },
+        "present_perfect": { "1st": "এসেছি", "2nd_fam": "এসেছ", "2nd_int": "এসেছিস", "hon": "এসেছেন", "3rd_ord": "এসেছে" },
+        "past_simple": { "1st": "এলাম", "2nd_fam": "এলে", "2nd_int": "এলি", "hon": "এলেন", "3rd_ord": "এল" },
+        "past_continuous": { "1st": "আসছিলাম", "2nd_fam": "আসছিলে", "2nd_int": "আসছিলি", "hon": "আসছিলেন", "3rd_ord": "আসছিল" },
+        "past_perfect": { "1st": "এসেছিলাম", "2nd_fam": "এসেছিলে", "2nd_int": "এসেছিলি", "hon": "এসেছিলেন", "3rd_ord": "এসেছিল" },
+        "past_habitual": { "1st": "আসতাম", "2nd_fam": "আসতে", "2nd_int": "আসতিস", "hon": "আসতেন", "3rd_ord": "আসত" },
+        "future_simple": { "1st": "আসব", "2nd_fam": "আসবে", "2nd_int": "আসবি", "hon": "আসবেন", "3rd_ord": "আসবে" },
+        "imperative": { "2nd_fam": "আসো", "2nd_int": "আয়", "hon": "আসুন" }
+      }
+    },
+    "খাওয়া": {
+      "lemma": "খাওয়া",
+      "transitivity": "transitive",
+      "meaning": "to eat",
+      "non_finite": {
+        "conjunctive": "খেয়ে",
+        "infinitive": "খেতে",
+        "conditional": "খেলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "খাই", "2nd_fam": "খাও", "2nd_int": "খাস", "hon": "খান", "3rd_ord": "খায়" },
+        "present_continuous": { "1st": "খাচ্ছি", "2nd_fam": "খাচ্ছ", "2nd_int": "খাচ্ছিস", "hon": "খাচ্ছেন", "3rd_ord": "খাচ্ছে" },
+        "present_perfect": { "1st": "খেয়েছি", "2nd_fam": "খেয়েছ", "2nd_int": "খেয়েছিস", "hon": "খেয়েছেন", "3rd_ord": "খেয়েছে" },
+        "past_simple": { "1st": "খেলাম", "2nd_fam": "খেলে", "2nd_int": "খেলি", "hon": "খেলেন", "3rd_ord": "খেল" },
+        "past_continuous": { "1st": "খাচ্ছিলাম", "2nd_fam": "খাচ্ছিলে", "2nd_int": "খাচ্ছিলি", "hon": "খাচ্ছিলেন", "3rd_ord": "খাচ্ছিল" },
+        "past_perfect": { "1st": "খেয়েছিলাম", "2nd_fam": "খেয়েছিলে", "2nd_int": "খেয়েছিলি", "hon": "খেয়েছিলেন", "3rd_ord": "খেয়েছিল" },
+        "past_habitual": { "1st": "খেতাম", "2nd_fam": "খেতে", "2nd_int": "খেতিস", "hon": "খেতেন", "3rd_ord": "খেত" },
+        "future_simple": { "1st": "খাব", "2nd_fam": "খাবে", "2nd_int": "খাবি", "hon": "খাবেন", "3rd_ord": "খাবে" },
+        "imperative": { "2nd_fam": "খাও", "2nd_int": "খা", "hon": "খান" }
+      }
+    },
+    "হওয়া": {
+      "lemma": "হওয়া",
+      "transitivity": "intransitive",
+      "meaning": "to be / become",
+      "non_finite": {
+        "conjunctive": "হয়ে",
+        "infinitive": "হতে",
+        "conditional": "হলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "হই", "2nd_fam": "হও", "2nd_int": "হস", "hon": "হন", "3rd_ord": "হয়" },
+        "present_continuous": { "1st": "হচ্ছি", "2nd_fam": "হচ্ছ", "2nd_int": "হচ্ছিস", "hon": "হচ্ছেন", "3rd_ord": "হচ্ছে" },
+        "present_perfect": { "1st": "হয়েছি", "2nd_fam": "হয়েছ", "2nd_int": "হয়েছিস", "hon": "হয়েছেন", "3rd_ord": "হয়েছে" },
+        "past_simple": { "1st": "হলাম", "2nd_fam": "হলে", "2nd_int": "হলি", "hon": "হলেন", "3rd_ord": "হল" },
+        "past_continuous": { "1st": "হচ্ছিলাম", "2nd_fam": "হচ্ছিলে", "2nd_int": "হচ্ছিলি", "hon": "হচ্ছিলেন", "3rd_ord": "হচ্ছিল" },
+        "past_perfect": { "1st": "হয়েছিলাম", "2nd_fam": "হয়েছিলে", "2nd_int": "হয়েছিলি", "hon": "হয়েছিলেন", "3rd_ord": "হয়েছিল" },
+        "past_habitual": { "1st": "হতাম", "2nd_fam": "হতে", "2nd_int": "হতিস", "hon": "হতেন", "3rd_ord": "হত" },
+        "future_simple": { "1st": "হব", "2nd_fam": "হবে", "2nd_int": "হবি", "hon": "হবেন", "3rd_ord": "হবে" },
+        "imperative": { "2nd_fam": "হও", "2nd_int": "হ", "hon": "হন" }
+      }
+    },
+    "ফেলা": {
+      "lemma": "ফেলা",
+      "transitivity": "transitive",
+      "meaning": "to drop / throw (vector: complete)",
+      "non_finite": {
+        "conjunctive": "ফেলে",
+        "infinitive": "ফেলতে",
+        "conditional": "ফেললে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "ফেলি", "2nd_fam": "ফেলো", "2nd_int": "ফেলিস", "hon": "ফেলেন", "3rd_ord": "ফেলে" },
+        "present_continuous": { "1st": "ফেলছি", "2nd_fam": "ফেলছ", "2nd_int": "ফেলছিস", "hon": "ফেলছেন", "3rd_ord": "ফেলছে" },
+        "present_perfect": { "1st": "ফেলেছি", "2nd_fam": "ফেলেছ", "2nd_int": "ফেলেছিস", "hon": "ফেলেছেন", "3rd_ord": "ফেলেছে" },
+        "past_simple": { "1st": "ফেললাম", "2nd_fam": "ফেললে", "2nd_int": "ফেললি", "hon": "ফেললেন", "3rd_ord": "ফেলল" },
+        "past_continuous": { "1st": "ফেলছিলাম", "2nd_fam": "ফেলছিলে", "2nd_int": "ফেলছিলি", "hon": "ফেলছিলেন", "3rd_ord": "ফেলছিল" },
+        "past_perfect": { "1st": "ফেলেছিলাম", "2nd_fam": "ফেলেছিলে", "2nd_int": "ফেলেছিলি", "hon": "ফেলেছিলেন", "3rd_ord": "ফেলেছিল" },
+        "past_habitual": { "1st": "ফেলতাম", "2nd_fam": "ফেলতে", "2nd_int": "ফেলতিস", "hon": "ফেলতেন", "3rd_ord": "ফেলত" },
+        "future_simple": { "1st": "ফেলব", "2nd_fam": "ফেলবে", "2nd_int": "ফেলবি", "hon": "ফেলবেন", "3rd_ord": "ফেলবে" },
+        "imperative": { "2nd_fam": "ফেলো", "2nd_int": "ফেল", "hon": "ফেলুন" }
+      }
+    },
+    "রাখা": {
+      "lemma": "রাখা",
+      "transitivity": "transitive",
+      "meaning": "to keep (vector: preparatory)",
+      "non_finite": {
+        "conjunctive": "রেখে",
+        "infinitive": "রাখতে",
+        "conditional": "রাখলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "রাখি", "2nd_fam": "রাখো", "2nd_int": "রাখিস", "hon": "রাখেন", "3rd_ord": "রাখে" },
+        "present_continuous": { "1st": "রাখছি", "2nd_fam": "রাখছ", "2nd_int": "রাখছিস", "hon": "রাখছেন", "3rd_ord": "রাখছে" },
+        "present_perfect": { "1st": "রেখেছি", "2nd_fam": "রেখেছ", "2nd_int": "রেখেছিস", "hon": "রেখেছেন", "3rd_ord": "রেখেছে" },
+        "past_simple": { "1st": "রাখলাম", "2nd_fam": "রাখলে", "2nd_int": "রাখলি", "hon": "রাখলেন", "3rd_ord": "রাখল" },
+        "past_continuous": { "1st": "রাখছিলাম", "2nd_fam": "রাখছিলে", "2nd_int": "রাখছিলি", "hon": "রাখছিলেন", "3rd_ord": "রাখছিল" },
+        "past_perfect": { "1st": "রেখেছিলাম", "2nd_fam": "রেখেছিলে", "2nd_int": "রেখেছিলি", "hon": "রেখেছিলেন", "3rd_ord": "রেখেছিল" },
+        "past_habitual": { "1st": "রাখতাম", "2nd_fam": "রাখতে", "2nd_int": "রাখতিস", "hon": "রাখতেন", "3rd_ord": "রাখত" },
+        "future_simple": { "1st": "রাখব", "2nd_fam": "রাখবে", "2nd_int": "রাখবি", "hon": "রাখবেন", "3rd_ord": "রাখবে" },
+        "imperative": { "2nd_fam": "রাখো", "2nd_int": "রাখ", "hon": "রাখুন" }
+      }
+    },
+    "দেওয়া": {
+      "lemma": "দেওয়া",
+      "transitivity": "transitive",
+      "meaning": "to give (vector: other-benefactive)",
+      "non_finite": {
+        "conjunctive": "দিয়ে",
+        "infinitive": "দিতে",
+        "conditional": "দিলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "দিই", "2nd_fam": "দাও", "2nd_int": "দিস", "hon": "দেন", "3rd_ord": "দেয়" },
+        "present_continuous": { "1st": "দিচ্ছি", "2nd_fam": "দিচ্ছ", "2nd_int": "দিচ্ছিস", "hon": "দিচ্ছেন", "3rd_ord": "দিচ্ছে" },
+        "present_perfect": { "1st": "দিয়েছি", "2nd_fam": "দিয়েছ", "2nd_int": "দিয়েছিস", "hon": "দিয়েছেন", "3rd_ord": "দিয়েছে" },
+        "past_simple": { "1st": "দিলাম", "2nd_fam": "দিলে", "2nd_int": "দিলি", "hon": "দিলেন", "3rd_ord": "দিল" },
+        "past_continuous": { "1st": "দিচ্ছিলাম", "2nd_fam": "দিচ্ছিলে", "2nd_int": "দিচ্ছিলি", "hon": "দিচ্ছিলেন", "3rd_ord": "দিচ্ছিল" },
+        "past_perfect": { "1st": "দিয়েছিলাম", "2nd_fam": "দিয়েছিলে", "2nd_int": "দিয়েছিলি", "hon": "দিয়েছিলেন", "3rd_ord": "দিয়েছিল" },
+        "past_habitual": { "1st": "দিতাম", "2nd_fam": "দিতে", "2nd_int": "দুতিস", "hon": "দিতেন", "3rd_ord": "দিত" },
+        "future_simple": { "1st": "দেব", "2nd_fam": "দেবে", "2nd_int": "দিবি", "hon": "দেবেন", "3rd_ord": "দেবে" },
+        "imperative": { "2nd_fam": "দাও", "2nd_int": "দে", "hon": "দিন" }
+      }
+    },
+    "নেওয়া": {
+      "lemma": "নেওয়া",
+      "transitivity": "transitive",
+      "meaning": "to take (vector: self-benefactive)",
+      "non_finite": {
+        "conjunctive": "নিয়ে",
+        "infinitive": "নিতে",
+        "conditional": "নিলে"
+      },
+      "conjugations": {
+        "present_simple": { "1st": "নিই", "2nd_fam": "নাও", "2nd_int": "নিস", "hon": "নেন", "3rd_ord": "নেয়" },
+        "present_continuous": { "1st": "নিচ্ছি", "2nd_fam": "নিচ্ছ", "2nd_int": "নিচ্ছিস", "hon": "নিচ্ছেন", "3rd_ord": "নিচ্ছে" },
+        "present_perfect": { "1st": "নিয়েছি", "2nd_fam": "নিয়েছ", "2nd_int": "নিয়েছিস", "hon": "নিয়েছেন", "3rd_ord": "নিয়েছে" },
+        "past_simple": { "1st": "নিলাম", "2nd_fam": "নিলে", "2nd_int": "নিলি", "hon": "নিলেন", "3rd_ord": "নিল" },
+        "past_continuous": { "1st": "নিচ্ছিলাম", "2nd_fam": "নিচ্ছিলে", "2nd_int": "নিচ্ছিলি", "hon": "নিচ্ছিলেন", "3rd_ord": "নিচ্ছিল" },
+        "past_perfect": { "1st": "নিয়েছিলাম", "2nd_fam": "নিয়েছিলে", "2nd_int": "নিয়েছিলি", "hon": "নিয়েছিলেন", "3rd_ord": "নিয়েছিল" },
+        "past_habitual": { "1st": "নিতাম", "2nd_fam": "নিতে", "2nd_int": "নিতিিস", "hon": "নিতেন", "3rd_ord": "নিত" },
+        "future_simple": { "1st": "নেব", "2nd_fam": "নেবে", "2nd_int": "নিবি", "hon": "নেবেন", "3rd_ord": "নেবে" },
+        "imperative": { "2nd_fam": "নাও", "2nd_int": "নে", "hon": "নিন" }
+      }
+    }
+  }
+}

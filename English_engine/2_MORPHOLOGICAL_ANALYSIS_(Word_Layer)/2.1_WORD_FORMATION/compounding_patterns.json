@@ -1,0 +1,10 @@
+{
+  "compounding_patterns": {
+    "noun_noun": { "head": "Right-hand head rule", "example": "toothbrush, data pipeline", "stress": "Initial element stress ('DATA pipeline)" },
+    "adjective_noun": { "head": "Noun", "example": "blackboard, deep learning", "stress": "Initial element stress ('BLACKboard)" },
+    "verb_noun": { "head": "Noun", "example": "playgroup, swearword", "stress": "Initial element stress" },
+    "noun_adjective": { "head": "Adjective", "example": "user-friendly, ice-cold" },
+    "particle_verb": { "head": "Verb", "example": "overcome, input, download" },
+    "orthographic_stages": ["open compound (data set)", "hyphenated compound (data-set)", "closed compound (dataset)"]
+  }
+}

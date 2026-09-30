@@ -1,0 +1,32 @@
+{
+  "consonant_phonetic_matrix": {
+    "places_of_articulation": ["bilabial", "labiodental", "dental", "alveolar", "postalveolar", "palatal", "velar", "glottal"],
+    "manners_of_articulation": ["plosive", "fricative", "affricate", "nasal", "approximant", "lateral_approximant"],
+    "phonemes": {
+      "P": { "place": "bilabial", "manner": "plosive", "voicing": "voiceless" },
+      "B": { "place": "bilabial", "manner": "plosive", "voicing": "voiced" },
+      "T": { "place": "alveolar", "manner": "plosive", "voicing": "voiceless" },
+      "D": { "place": "alveolar", "manner": "plosive", "voicing": "voiced" },
+      "K": { "place": "velar", "manner": "plosive", "voicing": "voiceless" },
+      "G": { "place": "velar", "manner": "plosive", "voicing": "voiced" },
+      "F": { "place": "labiodental", "manner": "fricative", "voicing": "voiceless" },
+      "V": { "place": "labiodental", "manner": "fricative", "voicing": "voiced" },
+      "TH": { "place": "dental", "manner": "fricative", "voicing": "voiceless" },
+      "DH": { "place": "dental", "manner": "fricative", "voicing": "voiced" },
+      "S": { "place": "alveolar", "manner": "fricative", "voicing": "voiceless" },
+      "Z": { "place": "alveolar", "manner": "fricative", "voicing": "voiced" },
+      "SH": { "place": "postalveolar", "manner": "fricative", "voicing": "voiceless" },
+      "ZH": { "place": "postalveolar", "manner": "fricative", "voicing": "voiced" },
+      "CH": { "place": "postalveolar", "manner": "affricate", "voicing": "voiceless" },
+      "JH": { "place": "postalveolar", "manner": "affricate", "voicing": "voiced" },
+      "M": { "place": "bilabial", "manner": "nasal", "voicing": "voiced" },
+      "N": { "place": "alveolar", "manner": "nasal", "voicing": "voiced" },
+      "NG": { "place": "velar", "manner": "nasal", "voicing": "voiced" },
+      "L": { "place": "alveolar", "manner": "lateral_approximant", "voicing": "voiced" },
+      "R": { "place": "postalveolar", "manner": "approximant", "voicing": "voiced" },
+      "W": { "place": "bilabial_velar", "manner": "approximant", "voicing": "voiced" },
+      "Y": { "place": "palatal", "manner": "approximant", "voicing": "voiced" },
+      "HH": { "place": "glottal", "manner": "fricative", "voicing": "voiceless" }
+    }
+  }
+}

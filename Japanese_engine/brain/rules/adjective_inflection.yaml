@@ -1,0 +1,38 @@
+# Japanese Adjective Inflection Paradigms (形容詞・形容動詞活用体系)
+
+i_adjectives:
+  description: "Native Japanese inflectional adjectives ending in 'い'"
+  paradigm:
+    stem_rule: "Remove dictionary ending 'い'"
+    forms:
+      plain_present: "{stem}い"          # e.g., 高い (takai)
+      plain_negative: "{stem}くない"      # e.g., 高くない (takakunai)
+      plain_past: "{stem}かった"         # e.g., 高かった (takakatta)
+      plain_past_negative: "{stem}くなかった" # e.g., 高くなかった (takakunakatta)
+      te_form: "{stem}くて"              # e.g., 高くて (takakute)
+      adverbial: "{stem}く"              # e.g., 高く飛ぶ (takaku)
+      conditional_ba: "{stem}ければ"     # e.g., 高ければ (takakereba)
+      noun_nominalizer: "{stem}さ"       # e.g., 高さ (takasa - height)
+      sensory_nominalizer: "{stem}み"    # e.g., 重み (omomi - depth/weight)
+  irregular_ii:
+    dictionary: "いい / 良い"
+    stem: "よ"
+    forms:
+      negative: "よくない"
+      past: "よかった"
+      te_form: "よくて"
+      adverbial: "よく"
+      conditional: "よければ"
+
+na_adjectives:
+  description: "Nominal adjectives (keiyoudoushi) inflecting via copula 'だ'"
+  paradigm:
+    forms:
+      noun_modifying: "{stem}な"         # e.g., 静かな部屋 (shizuka na heya)
+      adverbial: "{stem}に"              # e.g., 静かにする (shizuka ni suru)
+      predicative_plain: "{stem}だ"      # e.g., 静かだ (shizuka da)
+      predicative_polite: "{stem}です"    # e.g., 静かです (shizuka desu)
+      plain_negative: "{stem}ではない"    # e.g., 静かではない
+      plain_past: "{stem}だった"         # e.g., 静かだった
+      te_form: "{stem}で"                # e.g., 静かで綺麗だ
+      conditional_nara: "{stem}なら"     # e.g., 静かなら

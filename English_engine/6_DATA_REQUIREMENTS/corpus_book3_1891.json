@@ -1,0 +1,3471 @@
+{
+  "book_id": "book3_1891",
+  "sentences_extracted": 492,
+  "writing_corpus": [
+    [
+      "LIBRARY OF CONGRESS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "UNITED STATES OF AMERICA.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Grammar of the Indiana State Series.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It thus becomes to him a privilege rather than a burden.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The Preposition ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The Interjection ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Derivation of Words ...",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Number and Person ...",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Irregular Verbs ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Voice of the Verb ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Noun Substitutes ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Simple Sentences ....",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This manner of use is called established usage.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Correct use itself can only be attained by practice and habit.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That which the mind thinks about a subject is a thought.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A young tree grows rapidly.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE CLASSIFICATION OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The plowman homeward plods his weary way.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And leaves the world to darkness and to me.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The paths of glory lead but to the grave.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tliese are called abstract nouns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The simple and modified subjects, what ?",
+      1.0,
+      1,
+      0
+    ],
+    [
+      "Each to the loved one's side.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The noble dame on turret high.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The flash of armor bright.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE classificatio:n\" of words.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "For Colin's darkening plaid.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The hind beside the hart.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The pronoun performs an office of convenience and economy.",
+      1.0,
+      0,
+      2
+    ],
+    [
+      "Write nouns in place of the pronouns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "You haste away so soon.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Shall twitter from her clay-built nest.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Nor up the lawn, nor at the wood was he.",
+      1.0,
+      0,
+      1
+    ],
+    [
+      "Then I, and you, and all of us fell down.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE CLASSIFICATIOK OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "An expressed thought is a declaration.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In the sentence Troy was, the verb was declares being simply.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The jy^^dicate of a sentence is a verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is a sentence, because it expresses a thought.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Virtue alone assists me.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ADJECTIVE AS QUALIFIER AND MODIFIER.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "An adjective so used is called a predicate adjective.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Note, also, any predicate nouns or pronouns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Small minds are won by trifles.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Great is Diana of the Ephesians.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is I, be not afraid.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am not quite sure which of the two is the better.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tears sometimes have the weight of words.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Learn to labor and to wait.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "She is dressed tastefully.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The gentlemen dined.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tlie gentlemen and ladies came and dined.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "When thus joined, each simple sentence is called a clause.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE CLASSIFICATIOX OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "His virtues and faults lie on the surface.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Synopsis. - Define conjunction.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Point out the prepositions and phrases in the last exercise.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Different persons performing the same act.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Several events happening during the day.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "THE CLASSIFICATIOI^ OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Actions compared or contrasted.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The connecting tc^orcZs - preposition, conjunction.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Explain the interjection.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Define interjection.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The kinds of words have been learned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CLASSIFICATIO:^^^ OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Cheese digests everything but itself.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Politeness makes friends.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Mahes is a verb, because it declares (Art.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I came and saw and conquered.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Froissart's Chronicles contain these statements.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "His \" Chronicles \" is five hundred years old.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And we bitterly thought of the morrow.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Parse all the words.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Conjunctions and Interjections.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Courage and love inspire and sustain the hero.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Talent is something, tact is everything.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is not a sixth sense, but it is the life of all the five (senses).",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE DERIVATION OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And waste its sweetness on the desert air.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE DERIVATIOiS^ OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "HISTORY, ORIGIN, AND FORMATION.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE DERIVATIOIsr OF WORDS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PROPERTIES OF THE PARTS OF SPEECH.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PEOPERTIES OF THE PAETS OF SPEECH.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That will give the verb or simple predicate.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PKOPERTIES OF THE PARTS OF SPEECH.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Broivn, or the Miss JBroivns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Define numher and the two numbers.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In writing we should be careful to dot our i's and cross our t's.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He is masculine, referring to a noun of the masculine gender.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The man ivho died left a family.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I sing of heroes and of kings.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PROPEETIES OF THE PARTS OF SPEECH.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is the man who advocated those measures.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "All men may do what man has done.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "All that's bright must fade.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am not now that which I have been.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PROPERTIES OE THE PARTS OE SPEECH.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "George rode the horse, makes George the subject.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The possessive case is indicated by form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Declexsion\" of Proxou:n's.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Singular and Plural.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Decline the personal pronoun.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I declare the truth to you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I protest my love for you, and trust yours for me.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Life's shadows are meeting eternity's day.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "These are all definitive adjectives.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It was a feeble, frivolous, fruitless effort.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am joyous over my success.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Form sentences containing adjectives, and parse them.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE VERB - PROPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE VERB - PEOPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I sit ; The world moves, The world moves ?ne.",
+      1.0,
+      3,
+      0
+    ],
+    [
+      "It is called an intransitive verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Si9, 1 give, You give, We give.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That lies forever in the light.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Name the transitive and intransitive verbs in the Exercise.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is called the imperative mode.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is called the emphatic form of the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Pres.-per., I have learned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Puture-per,, I shall have learned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past, to have learned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past-per., having learned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past, I was learning.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Fresent-Ferfect Tense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Present-Perfect Tense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I:n^terrogative Form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Form short sentences^ and parse the verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Leaving home, we go to the seaside.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "If 1 like 1 shall go.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "SiS, pres. go, past taent, past part. gone.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is pleasanJ to ride.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Such verbs are called defective verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It snows, quoth Robert, as he put on his coat.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I the lark at heaven's gate sings.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "LIST OF IRREGULAR VERBS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Those marked r are also regular.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He loves 7ne, I am loved.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past- Perfect Tense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Iis^Fiis^iTivE Mode.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Explain these properties.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE ADVERB - PROPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Thefii'h is out., The sun is doivn.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In regard to their form, adverbs are sifnjyle or derivative.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE PREPOSITION - PROPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Terribly and frightfully the tempest roared.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Fools rush in where angels fear to tread.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Form short sentences containing adverbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE COXJU^^^CTIOX - PROPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Parse the prepositions.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In the best books great men talk to us.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE CO]^JUNCTIOX - PROPERTIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Beware of the silent dog and of still water.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Suit the action to the word, the word to the action.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "SE:N^TE2srCE - GENERAL VIEW.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Does the moon shine softly ?",
+      1.0,
+      1,
+      0
+    ],
+    [
+      "This part of grammar is called syntax.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE SEiq-TEKCE - SPECIAL VIEW.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Such a group is a phrase.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE SENTENCE - SPECIAL VIEW.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Livingstone the explorer was buried in Westminster Abbey.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Slowly and sadly they climb the distant mountains.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Loving oriels neighbor ; Seeing is believiiig = To see is to believe.",
+      1.0,
+      3,
+      0
+    ],
+    [
+      "Designate the kind of sentences as to meaning and form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "King James is the subject, tised is the predicate.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It belongs to great men to possess great defects.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He is here, They are here.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Truth and virtue conquer.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is I ; It is they.",
+      1.0,
+      3,
+      3
+    ],
+    [
+      "In Iowa they raise - what do they raise ?",
+      1.0,
+      1,
+      3
+    ],
+    [
+      "I ran a race ; He lived a long life.",
+      1.0,
+      3,
+      0
+    ],
+    [
+      "The predicate is always a verh.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Industry, not good luck, insures success.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Either he or you get the prize.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is the robbers we are after.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is in this way that the shortest sentence.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Birds of a feather flock together.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "All is not gold that glitters.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They set the machine running.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Tfe is subject, love is predicate.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The modified subject is We A^nericans.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The modified predicate is love liberty.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The hoy is nimble and bright.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ADJECTIVE MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Peter's wife's mother lay sick of a fever.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This heart of mine jou cannot have.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Neither my book nor hers contains the passage.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "As though to breathe were life.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ADVERBIAL MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A truly sensible man luill act ver^y tvisely.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He came riding a horse = hoiv he came.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ADVERBIAL MODIPIEKS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The modified subject is My mother.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I recall the morning walks which I took last year.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am anxious lest I shall fail.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I know a bank whereon the wild thyme blows.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Strike, while the iron is hot.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Be rode on a black horse ivith a tvhite foot.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "MODIFIERS DISTIXGUISHED.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They ivent to the house on the hanU of the river with a swift current.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "MODIFIERS disti:n'Guished.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Describe the modifiers and their parts.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I'll make thee glorious by my pen, and famous by my sword.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Builds on the ground her lowly nest.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "But in ourselves, that we are underlings.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "FORMS OF SENTE^'CES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The milkman (who drives a red wagon) came.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am in my usual health.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ORDER OF ARRANGEMEl^T.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Washington ivas a great man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Was the man who came with you an American ?",
+      1.0,
+      1,
+      0
+    ],
+    [
+      "Who never to himself hath (has) said.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Each in his narrow cell for ever laid.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Aiuay ivith youl - Get aioay imth you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tha^iksl = I give you thanhs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I conquered = I came, saw, and conquered.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I conclude you are a citizen here, not a stranger.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Webster's reputation as an orator was great.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tell my friend he must be there early, so as to catch the train.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I recommend him to be chairman of the meeting.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Wehster's reputation as an orator loas great.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ANALYSIS OF SENTEKCES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To state the modified subject.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To point out the modifiers of the predicate.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The predicate is modified by great.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To state the modified predicate.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The modified predicate is tvas great.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Poverty is in ivant of much, but avarice of everything.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A simple sentence is not necessarily short.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ANALYSIS OF SENTENCES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He acted like a mad man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Simple Sentences for Analysis.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Quit yourselves like men.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Compound Sentences for Analysis.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Their giant branches tossed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To the anthem of the free.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Away from their childhood's land ?",
+      1.0,
+      1,
+      0
+    ],
+    [
+      "The good is oft interred with their bones.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And Brutus is an honorable man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Complex Sentence for Analysis.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Who hath ruled in the greenwood long.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Had brightened his branches gray.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To gather the dews of May.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOUXD-COMPLEX SENTENCES FOR ANALYSIS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And set the stars of glory there.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The sentence is composed of ideas represented by words.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They consenting^ we entered (Art. 101).",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "This is lie ; these are they.",
+      1.0,
+      3,
+      3
+    ],
+    [
+      "The largest city of Indiana is Indianapolis, the capital.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The question is, tvhether we shall succeed or not.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COXSTRUCTIO:^ OF THE PREDICATE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Him and me hunted all over for 'em.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Guess whom has come.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Its him that called yesterday.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The sun appears iright.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "TliQ coivs graze, not grazes.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "See Example 2, Exercise 41).",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "JSfot he, hut his wife has come.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tliat he departed long ago is a fact.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTIO:?^ OF THE PREDICATE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A7i't and ha?rt for a7n not and have not or haven'' t.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "American nations are desired, contains the same error.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Each got one for themselves.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTION OF KOUN MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It was said, that the time for action had come.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTIO:^' OF NOUN MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "ERRORS TO BE AVOIDED.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Useless and Wrong Words.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Mm. to go^ are correct^ because they make sense.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "COll^STRUCTION\" OF ADJECTIVE MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Jews, beseeching him that he would come and heal his servant.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Let's you and I go fishing.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In Lesson 20, adjectives are classified.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adjectives do not change their form to indicate number.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTION OF ADJECTIVE MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The horse which is strong.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTIOX OF ADJECTIVE MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Analyze, and explain the adjective modifiers.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "King Alfred never rested from his labors to improve his people.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The dark, unfathomed eaves of ocean bear.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Its a pity that the bird has lost it's mate.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "This hotel will be kept by the widow of the former landlord Mr.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Brown who died last summer on an improved plan.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTION\" OF ADVERBIAL MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Quickly, earnestly, cheerfully, he obeyed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COKSTRUCTIOX OF ADVERBIAL MODIFIERS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Fully equipped, he started with the first hreah of dawn.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He acts noble^ shonld be. He acts nobly.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "CONSTRUCTION OF CONNECTIVES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Gentlemen, make yourselves to home.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I think a heap of that fellow.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Wrong Words and Wrong Arrangement.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Avoid the use of if for whether.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I doubt not hilt that he is honest, for that he is honest.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Correct the errors and explain the construction.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Italy desires the same blessing as France has obtained.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Punctuation is generally defined as an art.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "By its own reflection in the tide.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And I on the opposite shore will be.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Just as the moon rose over the bay.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Kinds of Punctuation Marks.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "By this historian, Lincoln is compared to Washington.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is thinking, after all, which greatly influences affairs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In childhood good habits of thinking are easily acquired.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Columbus, as an individual, and to Spain, as a nation.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Chapter I, - Names, and Jioio to ivrite them.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Yours of yesterday is received, etc.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "New Yorh, New Jersey, Pennsylvania, Delaware.",
+      1.0,
+      0,
+      1
+    ],
+    [
+      "From turret to foundation stone, - Scott.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "These have been fully set forth in the preceding pages.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Composition in series.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITIOX OF THE SEXTEXCE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I shall never again repeat what I have already said heretofore.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This was the first beginning of the American Union.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tell why the omissions are improper.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION OF THE SENTEN^CE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Correct the ambiguities in the following sentences.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I have been anxious to see you for a long time.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I can only study in the evening.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I have never visited one of the countries of Europe.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I do not remember one thing that happened.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Please tell me how old Mr. Johnson is.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITIOX OF THE SEXTENCE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Rearrange accordingly.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Use each word in a written sentence.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Rewrite the following sentences.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Faithful are the wounds of a friend.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION OF THE SENTENCE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Denial of Contrary .... He is not a very agreeable person.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Caesar w^as ambitious.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I am willing to comply with your request.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Jefferson was more patriotic than Hamilton.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Study carefully the thought of the selection as a whole.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION^ OF THE SENTEN^CE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Studies serve for delight, for ornament, arrd for ability.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A Father's Advice to His Son.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Nor any unproportioned thought his act.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Be thou familiar, but by no means vulgar.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Of each new-hatched, unfledged comrade.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Take each man's censure, but reserve thy judgment.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "For the apparel oft proclaims the man.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "COMPOSITIO:b^ OF THE SEXTEKCE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And borrowing dulls the edge of husbandry.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Thou canst not then be false to any man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Whose trees in summer yield him shade.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Proceed as in Exercise 78.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Whose soul is still prepared for death.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Who hath his life from rumors freed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And having nothing, yet hath all.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION OF THE SEN'TENCE.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Change of the rhetorical for the grammatical order.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Him they feared, him they trusted, him they obeyed.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Nor Marvell's wit and graceful song.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Come I to speak in Coesar's funeral.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Did this in Caesar seem ambitious?",
+      1.0,
+      1,
+      0
+    ],
+    [
+      "I thrice presented him a kingly crown.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Which he did thrice refuse.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Yet Brutus says he was ambitious.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And sure, he is an honorable man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "But here I am to speak what T do know.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "If you have tears, prepare to shed them now.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION IN SERIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Mark how the blood of Caesar followed it.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Ingratitude, more strong than traitors' arms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Whilst bloody treason flourished over us.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And will, no doubt, with reason answer you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That gave me public leave to speak of him.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To stir men's blood.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And bid them speak for me.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The stones of Rome to rise and mutiny.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITIONS^ IX SERIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Proceed as in the last exercises.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The Making of a Piece of Statuary.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is the first sitting.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "We will suppose the bust completed in clay.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Kepeating us by rote.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "With stuff untainted shaped a hero new.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Wise, steadfast in the strength of God, and true.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Not lured by any cheat of birth.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And brave old wisdom of sincerity.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Broad prairie rather, genijd, level -lined.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Fruitful and friendly for all human kind.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Yet also nigh to heaven and loved of loftiest stars.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And one of Plutarch's men talked with us face to face.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And can his fame abide.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Till the wise years decide.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Our children shall behold his fame.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The kindly-earnest, brave, foreseeing man.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Sagacious, patient, dreading praise, not blame.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "New birth of our new soil - the first American.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Koran in white marble.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Sugg-estions for Descriptive Composition.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "EXAMPLE OF NARRATION.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "He gave me, accordingly, three great puffy rolls.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Quakers, near the market.",
+      1.0,
+      0,
+      2
+    ],
+    [
+      "Exercise 82, page 223.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "THE WRECK OF THE HESPERUS.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "To bear him company.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That ope in the month of May.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "His pipe was in his mouth.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The smoke now wTst, now south.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "For I fear a hurricane.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And the billows frothed like yeast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Then leaped her cable's length.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And bound her to the mast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And he steered for the open sea.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A frozen corpse was he.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "On his fixed and glassy eyes.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "On the Lake of Galilee.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Towards the reef of Norman's Woe.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "On the rocks and the hard sea-sand.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Like icicles from her deck.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Like the horns of an angry bull.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A fisherman stood aghast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Lashed close to a drifting mast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "On the billows fall and rise.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Christ save us all from a death like this.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Pedro Guttierez, a page of the queen's wardrobe.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITIOlSr IN SERIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Reduce this story in verse to the prose form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In sport, up shroud and rigging ran.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "All eyes were turned on high.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Alone he stood in air.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "No aid could reach him there.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "With horror all aghast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "We watched the quivering mast.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The atmosphere grew thick and hot.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Stood officers and crew.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Then suddenly a rifle grasped.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "With many a manly shout.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "His father drew, in silent joy.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And fainted on the deck.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A Tale of Two Brothers.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A level field hid in a happy vale.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Sowed, walking side by side, the fruitful seed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And stored them with much labor in his barns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "But Zimri dwelt alone within his house.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "As Zimri lay upon his lonely bed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And counted in his mind his little gains.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And yet we share the harvest sheaves alike.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "So he arose, and girded up his loins.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And went out softly to the level field.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The trees stood black against the cold blue sky.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The branches waved and whispered in the wind.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "So Zimri, guided by the shifting light.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And then went back to sleep, and happy dreams.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "He goeth home at night to a cold house.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Dwell happy with my wife and seven sons.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Who aid me in my toil, and make it light.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And went down softly to the level field.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The dark leaves waved and whispered in the breeze.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Took from his store of sheaves a generous third.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Then he went back to sleep, and happy dreams.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "The brothers rose, and went out to their toil.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Though he had given a third, was still the same.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And placed them on his brother Abram's heap.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And then lay down behind his pile to watch.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The olive-branches whispered in the wind.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "And laid it on his brother Zimri's pile.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Then Zimri rose, and caught him in his arms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Neither could Zimri.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "That he had bound them in such loving bands.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Proceed as in previous exercises.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Suggestions for Narrative Composition.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Individual Exercises.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Yesterday's events in your own experience.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "For Class Compariso:^.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "An Example of Expositiox.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Object-nouns, or common nouns which name objects.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION\" IX SERIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "True eloquence does not consist in speech.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Then, patriotism is eloquent; then, self-devotion is eloquent.",
+      1.0,
+      3,
+      0
+    ],
+    [
+      "A71 extract from the luorhs of Horace Bushnell.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The vital blood, at length, of all creatures, stops, congealed.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Down goes the frost to the earth's center.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It would not awake an infant in the cradle.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "From the writings of Fisher Ames.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adapted from the ivories of John Ledyard.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Those who are in oppositio7i to the proposition stated.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "COMPOSITION\" IK SERIES.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "State wliat is found to be ih^ purpose of the writer.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "From the Works of John M, Mason.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The Constitution should be Adopted.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A Letter of Iktimacy.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Much used forms are Yours truly.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Suggestions of Subjects for Letter-Writing.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "PRINCIPLES OF VERSIFICATION.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Under the hawthorn in the dale.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Meter, or measure, refers to number and kind of feet.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Is there aught in sleep (that) can calm the sense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Angels could (do) no more.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Because the linguistic committee delayed their final decision.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Although the experimental results contradicted earlier findings.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "While the syntactic trees were being computed in the laboratory.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Whereas classical grammarians emphasized morphological inflection.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Since no conclusive evidence could be extracted from the text.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Unless the author clarifies the ambiguous antecedent on line twelve.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Whenever an intransitive verb appears without a direct object.",
+      0.0,
+      0,
+      0
+    ]
+  ],
+  "email_corpus": [
+    [
+      "All that's bright must fade.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Tell my friend he must be there early, so as to catch the train.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Please tell me how old Mr. Johnson is.",
+      0.85,
+      3,
+      0.05,
+      1
+    ],
+    [
+      "Rewrite the following sentences.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "The kindly-earnest, brave, foreseeing man.",
+      0.92,
+      3,
+      0.05,
+      1
+    ],
+    [
+      "On his fixed and glassy eyes.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Dear Dr. Patel, could you please review the attached document? Best regards, Alex.",
+      0.96,
+      0,
+      0.04,
+      0
+    ],
+    [
+      "Dear Professor Schmidt, could you please let me know if Friday works for our seminar? Sincerely, Marcus.",
+      0.94,
+      0,
+      0.05,
+      0
+    ],
+    [
+      "Hi team, please find attached the revised quarterly projections for your review. Thanks, David.",
+      0.8,
+      1,
+      0.1,
+      1
+    ],
+    [
+      "Send me the updated database passwords right now.",
+      0.15,
+      3,
+      0.75,
+      3
+    ],
+    [
+      "You must rewrite this report immediately without any excuses.",
+      0.1,
+      3,
+      0.85,
+      3
+    ]
+  ],
+  "listening_corpus": [
+    [
+      "It thus becomes to him a privilege rather than a burden.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Correct use itself can only be attained by practice and habit.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "That which the mind thinks about a subject is a thought.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "In the sentence Troy was, the verb was declares being simply.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I am not quite sure which of the two is the better.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "It is not a sixth sense, but it is the life of all the five (senses).",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "In writing we should be careful to dot our i's and cross our t's.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "He is masculine, referring to a noun of the masculine gender.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I protest my love for you, and trust yours for me.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Suit the action to the word, the word to the action.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Loving oriels neighbor ; Seeing is believiiig = To see is to believe.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "They ivent to the house on the hanU of the river with a swift current.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I'll make thee glorious by my pen, and famous by my sword.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Tell my friend he must be there early, so as to catch the train.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "A7i't and ha?rt for a7n not and have not or haven'' t.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Jews, beseeching him that he would come and heal his servant.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "King Alfred never rested from his labors to improve his people.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "This hotel will be kept by the widow of the former landlord Mr.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I shall never again repeat what I have already said heretofore.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I have been anxious to see you for a long time.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Denial of Contrary .... He is not a very agreeable person.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "And one of Plutarch's men talked with us face to face.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "State wliat is found to be ih^ purpose of the writer.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I'd've gone to the conference if the train had not been delayed.",
+      1,
+      0.85,
+      0
+    ],
+    [
+      "Whaddya think about the new universal syntax model?",
+      2,
+      0.78,
+      0
+    ],
+    [
+      "We're gonna analyze the acoustic speech waveform tomorrow.",
+      3,
+      0.72,
+      0
+    ],
+    [
+      "Do you wanna review the experimental results together this afternoon?",
+      4,
+      0.68,
+      0
+    ],
+    [
+      "You gotta make sure you're ready for the phonology quiz.",
+      6,
+      0.7,
+      0
+    ]
+  ],
+  "pronunciation_corpus": [
+    [
+      "That which the mind thinks about a subject is a thought.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The simple and modified subjects, what ?",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "George rode the horse, makes George the subject.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Present-Perfect Tense.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "King James is the subject, tised is the predicate.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Tfe is subject, love is predicate.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The modified subject is We A^nericans.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The modified subject is My mother.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "To state the modified subject.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "The sentence is composed of ideas represented by words.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "I thrice presented him a kingly crown.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Object-nouns, or common nouns which name objects.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Suggestions of Subjects for Letter-Writing.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The student walked to school and asked several insightful questions.",
+      0.94,
+      0,
+      0.88
+    ],
+    [
+      "The official RE-cord of the committee was archived.",
+      0.92,
+      0,
+      0.92
+    ],
+    [
+      "Please re-CORD the audio signal inside the chamber.",
+      0.91,
+      1,
+      0.91
+    ],
+    [
+      "A rare archaeological OB-ject was uncovered near the temple.",
+      0.92,
+      0,
+      0.89
+    ],
+    [
+      "They ob-JECT strongly to the proposed methodological changes.",
+      0.9,
+      1,
+      0.9
+    ]
+  ],
+  "reviewing_corpus": [
+    [
+      "Livingstone the explorer was buried in Westminster Abbey.",
+      2,
+      0.75,
+      1.0
+    ],
+    [
+      "American nations are desired, contains the same error.",
+      0,
+      0.2,
+      1.0
+    ],
+    [
+      "ERRORS TO BE AVOIDED.",
+      0,
+      0.2,
+      1.0
+    ],
+    [
+      "Correct the errors and explain the construction.",
+      0,
+      0.2,
+      1.0
+    ],
+    [
+      "From turret to foundation stone, - Scott.",
+      2,
+      0.75,
+      1.0
+    ],
+    [
+      "The stones of Rome to rise and mutiny.",
+      2,
+      0.75,
+      1.0
+    ],
+    [
+      "In Section 3 on page 14, the subject-verb concord completely fails: 'they is' must be corrected to 'they are'.",
+      0,
+      0.15,
+      1.0
+    ],
+    [
+      "Page 8, line 22: The double negative creates an unintended contradictory assertion in the proof.",
+      0,
+      0.2,
+      1.0
+    ],
+    [
+      "On page 5, the antecedent of the pronoun 'it' is ambiguous across the two preceding noun phrases.",
+      1,
+      0.65,
+      1.0
+    ],
+    [
+      "The author might consider softening the tone in paragraph 2, as colloquial slang clashes with journal style.",
+      2,
+      0.85,
+      1.0
+    ],
+    [
+      "You may optionally prefer the Oxford comma here for aesthetic balance, though the sentence is grammatically sound.",
+      3,
+      0.95,
+      0.8
+    ]
+  ],
+  "book_writing_corpus": [
+    [
+      "I came and saw and conquered.",
+      0.05,
+      0.05,
+      3
+    ],
+    [
+      "I conquered = I came, saw, and conquered.",
+      0.05,
+      0.05,
+      3
+    ],
+    [
+      "They consenting^ we entered (Art. 101).",
+      0.05,
+      0.05,
+      3
+    ],
+    [
+      "Chapter I, - Names, and Jioio to ivrite them.",
+      0.1,
+      0.2,
+      1
+    ],
+    [
+      "The detective walked into the abandoned study. Rain battered the dark window panes. He noticed the drawer was open.",
+      0.03,
+      0.04,
+      3
+    ],
+    [
+      "The detective walked into the room. Rain batters the window panes and he sees the broken lock on the door.",
+      0.88,
+      0.1,
+      2
+    ],
+    [
+      "Three hundred pages after introducing Lord Harrington's second cousin once, the narrative simply states 'he died'.",
+      0.1,
+      0.92,
+      1
+    ]
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "engine_profile": {
+    "language": "Mandarin",
+    "engine": "Mandarin_engine",
+    "iso_codes": [
+      "cmn",
+      "zh"
+    ],
+    "scripts": [
+      "Simplified Han",
+      "Pinyin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Mandarin",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "cmn_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Mandarin)",
+          "How are operations (Mandarin)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "cmn_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Mandarin)",
+          "Report readiness (Mandarin)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "工程师设计了高并发分布式系统。",
+    "我们已经完成了零拷贝内存同步测试。",
+    "医学研究团队发现了新的治疗机制。",
+    "系统架构师优化了数据流管线 (using optimal hyper-parameters).",
+    "人工智能模型在多语言任务中表现优异。",
+    "项目组按时交付了核心认知模块 (on multi-core architectures).",
+    "科学家发表了量子计算最新研究成果。",
+    "我们通过严格的基准测试验证了吞吐量 (under heavy loads).",
+    "工程师设计了高并发分布式系统。",
+    "我们已经完成了零拷贝内存同步测试。",
+    "医学研究团队发现了新的治疗机制。",
+    "系统架构师优化了数据流管线 (using optimal hyper-parameters).",
+    "人工智能模型在多语言任务中表现优异。",
+    "项目组按时交付了核心认知模块 (on multi-core architectures).",
+    "科学家发表了量子计算最新研究成果。",
+    "我们通过严格的基准测试验证了吞吐量 (under heavy loads).",
+    "工程师设计了高并发分布式系统。",
+    "我们已经完成了零拷贝内存同步测试。",
+    "医学研究团队发现了新的治疗机制。",
+    "系统架构师优化了数据流管线 (using optimal hyper-parameters)."
+  ]
+}

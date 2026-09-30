@@ -1,0 +1,75 @@
+{
+  "language": "Hausa",
+  "engine": "D:\\gra.voi\\Hausa_engine",
+  "iso_code": "hau",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "hau_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Injiniyan ya gina ingantaccen tsarin rarraba bayanai mai matuƙar inganci.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ɓaliban sun fahimci hadadden tsarin cibiyar sadarwa na jijiyoyi sosai.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hau_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Mun aiwatar da yarjejeniyar ƙwaƙwalwar ajiya mai aiki a lokaci guda cikin nasara.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Farfesa ya yi cikakken bayani kan ƙa'idojin ilimin nahawu.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hau_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Ƙungiyar bincike ta buga wata muhimmiyar maƙala kan fasahar basirar wucin gadi.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Mai tsara manhaja ya inganta dukkan hanyoyin sarrafa bayanai.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hau_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Basirar wucin gadi tana nazarin rubutu a cikin harsuna da yawa daidai.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ƙungiyar ci gaba ta kammala dukkan gwaje-gwajen haɗin kai cikin nasara.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hau_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Hanyar ƙwaƙwalwa mai sauri tana tabbatar da daidaiton bayanai a ainihin lokaci.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Mun gudanar da tsauraran gwaje-gwaje don tabbatar da ƙarfin tsarin.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

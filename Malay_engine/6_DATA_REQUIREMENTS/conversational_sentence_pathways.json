@@ -1,0 +1,75 @@
+{
+  "language": "Malay",
+  "engine": "D:\\gra.voi\\Malay_engine",
+  "iso_code": "msa",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "msa_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Jurutera itu mereka bentuk sistem teragih yang sangat cekap.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Para pelajar memahami rangkaian saraf tiruan yang kompleks dengan baik.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "msa_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Kami berjaya melaksanakan protokol memori segerak tanpa kependaman.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Profesor menerangkan prinsip-prinsip tatabahasa generatif secara terperinci.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "msa_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Kumpulan penyelidik menerbitkan makalah penting tentang kecerdasan buatan.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Arkitek perisian mengoptimumkan saluran pemprosesan data dengan teliti.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "msa_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Kecerdasan buatan menganalisis teks pelbagai bahasa dengan tepat.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Pasukan pembangunan berjaya menyelesaikan semua ujian integrasi.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "msa_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Bas memori berkelajuan tinggi memastikan ketekalan data dalam masa nyata.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Kami menjalankan ujian tanda aras yang ketat untuk membuktikan kestabilan.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

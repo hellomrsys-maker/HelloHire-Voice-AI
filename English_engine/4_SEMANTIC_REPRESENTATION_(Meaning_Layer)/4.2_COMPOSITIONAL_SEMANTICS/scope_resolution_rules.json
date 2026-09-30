@@ -1,0 +1,27 @@
+{
+  "quantifier_scope_resolution": {
+    "principles": [
+      "Linear precedence preference (Surface scope takes default priority)",
+      "Universal quantifiers (every, all) tend to outscope existential quantifiers (a, some)",
+      "Logical operators (negation, modals) interact with quantifiers creating de dicto vs de re readings"
+    ],
+    "patterns": {
+      "every_some_ambiguity": {
+        "sentence": "Every student read a book.",
+        "reading_1_surface": {
+          "formula": "forall x [Student(x) -> exists y [Book(y) and Read(x, y)]]",
+          "meaning": "Different students may have read different books (Default)"
+        },
+        "reading_2_inverse": {
+          "formula": "exists y [Book(y) and forall x [Student(x) -> Read(x, y)]]",
+          "meaning": "There is one particular book that all students read"
+        }
+      },
+      "negation_quantifier_scope": {
+        "sentence": "All that glitters is not gold.",
+        "reading_surface": "forall x [Glitters(x) -> not Gold(x)] (Nothing that glitters is gold)",
+        "reading_intended": "not forall x [Glitters(x) -> Gold(x)] (Not everything that glitters is gold)"
+      }
+    }
+  }
+}

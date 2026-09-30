@@ -1,0 +1,16 @@
+{
+  "pythonVersion": "3.14",
+  "pythonPlatform": "Windows",
+  "pythonPath": "C:\\Users\\sysyo\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+  "extraPaths": [
+    "d:\\gra.voi",
+    "C:\\Users\\sysyo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages"
+  ],
+  "exclude": [
+    "**/__pycache__",
+    "**/training/legacy/**",
+    "**/.pytest_cache/**"
+  ],
+  "reportMissingImports": "none",
+  "reportMissingTypeStubs": false
+}

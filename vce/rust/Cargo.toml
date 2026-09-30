@@ -1,0 +1,10 @@
+[package]
+name = "vce-audio-stream"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "vce_audio_stream"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

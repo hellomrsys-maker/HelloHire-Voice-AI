@@ -1,0 +1,17 @@
+{
+  "voiceless_consonants": ["f", "s", "t", "k", "ç", "ş", "h", "p"],
+  "lenition_map": {
+    "p": "b",
+    "ç": "c",
+    "t": "d",
+    "k": "ğ"
+  },
+  "assimilation_map": {
+    "d": "t",
+    "c": "ç"
+  },
+  "non_leniting_exceptions": [
+    "top", "ip", "kat", "saç", "süt", "ot", "at", "ak", "et",
+    "hukuk", "devlet", "millet", "cumhuriyet", "saat", "sanat", "hayat", "bilet", "dikkat"
+  ]
+}

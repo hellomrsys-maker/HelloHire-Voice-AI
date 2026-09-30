@@ -1,0 +1,18 @@
+{
+  "derivational_affixes": {
+    "prefixes": {
+      "un-": { "meaning": "negative / reversal", "base": "Adjective/Verb", "example": "unhappy, unlock" },
+      "re-": { "meaning": "again / repetition", "base": "Verb", "example": "rewrite, rebuild" },
+      "dis-": { "meaning": "negation / apart", "base": "Verb/Noun/Adjective", "example": "disagree, disconnect" },
+      "pre-": { "meaning": "before", "base": "Noun/Verb", "example": "preprocess, preview" },
+      "mis-": { "meaning": "incorrectly", "base": "Verb", "example": "misunderstand, misalign" }
+    },
+    "suffixes": {
+      "-ize / -ise": { "meaning": "make / become (Verb-forming)", "base": "Noun/Adjective", "example": "optimize, modernise" },
+      "-ation / -tion": { "meaning": "state / process (Noun-forming)", "base": "Verb", "example": "tokenization, execution" },
+      "-able / -ible": { "meaning": "capable of (Adjective-forming)", "base": "Verb", "example": "computable, accessible" },
+      "-ly": { "meaning": "manner (Adverb-forming)", "base": "Adjective", "example": "quickly, gracefully" },
+      "-ness": { "meaning": "quality / state (Noun-forming)", "base": "Adjective", "example": "darkness, fairness" }
+    }
+  }
+}

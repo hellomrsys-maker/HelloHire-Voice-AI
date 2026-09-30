@@ -1,0 +1,63 @@
+# Japanese Register and Formality Profiler Configuration (待遇表現・位相差分析)
+
+registers:
+  formal_business:
+    name: "Business Keigo (改まったビジネス体)"
+    target_formality: 0.85
+    markers:
+      - "恐縮"
+      - "所存"
+      - "拝見"
+      - "ご教示"
+      - "存じます"
+      - "申し上げます"
+      - "幸甚"
+      - "承知いたしました"
+
+  academic_paper:
+    name: "Academic Thesis (論文・学術体)"
+    target_formality: 0.90
+    markers:
+      - "である"
+      - "と考えられる"
+      - "本稿では"
+      - "先行研究"
+      - "示唆される"
+      - "検証する"
+      - "分析結果"
+      - "結論付ける"
+
+  legal_statutory:
+    name: "Official Document / Legal (公用文・法令体)"
+    target_formality: 0.95
+    markers:
+      - "とする"
+      - "に限る"
+      - "第.*条"
+      - "前項"
+      - "定めのない限り"
+      - "効力を有する"
+
+  polite_standard:
+    name: "Standard Polite (日常丁寧体)"
+    target_formality: 0.60
+    markers:
+      - "です"
+      - "ます"
+      - "でした"
+      - "ました"
+      - "ですね"
+      - "でしょうか"
+
+  casual_spoken:
+    name: "Casual Colloquial (親密口語・タメ口)"
+    target_formality: 0.20
+    markers:
+      - "だよね"
+      - "じゃん"
+      - "マジ"
+      - "やばい"
+      - "めっちゃ"
+      - "〜っす"
+      - "うん"
+      - "そうなんだ"

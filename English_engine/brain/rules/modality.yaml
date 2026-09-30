@@ -1,0 +1,27 @@
+# modality.yaml - Epistemic vs Deontic Modal Logic & Modal Force Scales
+
+modal_classes:
+  epistemic:
+    definition: "Assessment of possibility, likelihood, and certainty based on evidence."
+    force_scale:
+      certain: ["must", "will"]
+      probable: ["should", "ought to"]
+      possible: ["may", "might", "could"]
+    examples:
+      - "The model must be converging (strong evidentiary necessity)."
+      - "It might rain tomorrow (epistemic possibility)."
+
+  deontic:
+    definition: "Assessment of obligation, permission, prohibition, and social norms."
+    force_scale:
+      obligatory: ["must", "have to"]
+      advisable: ["should", "ought to"]
+      permitted: ["may", "can"]
+      prohibited: ["must not", "cannot"]
+    examples:
+      - "You must follow the Zero-Bridge Rule (strict obligation)."
+      - "You may inspect the state vector (permission)."
+
+dynamic_interpretation:
+  ambiguity_resolution:
+    context_directive: "Look for agent volition vs state-of-affairs predicates."

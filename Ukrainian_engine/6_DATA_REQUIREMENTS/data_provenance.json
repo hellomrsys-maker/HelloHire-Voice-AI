@@ -1,0 +1,15 @@
+{
+  "engine": "Ukrainian_engine",
+  "generated_utc": "2026-09-29T11:57:35Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Ukrainian-IU",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "The treebank is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license:",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

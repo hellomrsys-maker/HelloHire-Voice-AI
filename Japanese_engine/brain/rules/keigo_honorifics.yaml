@@ -1,0 +1,92 @@
+# Keigo (Honorifics) Configuration and Anti-Pattern Detection Matrix
+
+categories:
+  sonkeigo:
+    description: "Respectful language elevating the listener or third party."
+    special_verbs:
+      行く: ["いらっしゃる", "おいでになる"]
+      来る: ["いらっしゃる", "おいでになる", "お見えになる"]
+      いる: ["いらっしゃる", "おいでになる"]
+      言う: ["おっしゃる"]
+      する: ["なさる", "される"]
+      食べる: ["召し上がる"]
+      飲む: ["召し上がる"]
+      見る: ["ご覧になる"]
+      知る: ["ご存じだ", "ご存知です"]
+      くれる: ["くださる"]
+    regular_patterns:
+      - "お + 連用形 + になる"
+      - "ご + 漢語名詞 + なさる"
+      - "未然形 + れる/られる"
+
+  kenjougo_1:
+    description: "Humble language lowering oneself relative to recipient."
+    special_verbs:
+      行く: ["伺う", "参る"]
+      来る: ["伺う", "参る"]
+      言う: ["申す", "申し上げる"]
+      する: ["いたす"]
+      食べる: ["いただく"]
+      飲む: ["いただく"]
+      もらう: ["いただく", "頂戴する"]
+      見る: ["拝見する"]
+      知る: ["存じる", "存じ上げる"]
+      会う: ["お目にかかる"]
+      聞く: ["伺う", "拝聴する"]
+    regular_patterns:
+      - "お + 連用形 + する"
+      - "お + 連用形 + いたす"
+      - "ご + 漢語名詞 + 申し上げる"
+
+  kenjougo_2_dingo:
+    description: "Courteous language regarding one's actions politely to the listener."
+    verbs:
+      いる: ["おる"]
+      行く: ["参る"]
+      来る: ["参る"]
+      言う: ["申す"]
+      する: ["いたす"]
+
+  teineigo:
+    description: "Standard polite language."
+    copula: ["です", "でございます"]
+    verb_suffix: ["ます", "ました", "ません"]
+
+  bikago:
+    description: "Beautified language with o- / go- prefixes."
+    prefixes: ["お", "ご"]
+    words: ["お茶", "ご飯", "お酒", "お水", "お名前", "ご連絡"]
+
+anti_patterns:
+  nijuu_keigo:
+    description: "Double honorific redundancy (erroneous stacking)."
+    rules:
+      - pattern: "おっしゃられる"
+        suggestion: "おっしゃる"
+        reason: "おっしゃる (sonkeigo) + られる (sonkeigo) is redundant double honorific."
+      - pattern: "ご覧になられる"
+        suggestion: "ご覧になる"
+        reason: "ご覧になる (sonkeigo) + られる (sonkeigo) is redundant."
+      - pattern: "お召し上がりになられる"
+        suggestion: "召し上がる / お召し上がりになる"
+        reason: "Double honorific stacking."
+      - pattern: "伺わせていただく"
+        suggestion: "伺う / 参る"
+        reason: "Excessive humility layering."
+      - pattern: "拝見させていただきます"
+        suggestion: "拝見します / 拝見いたします"
+        reason: "Excessive stacked humble forms."
+
+  manual_keigo:
+    description: "Baito-keigo (improper convenience-store / customer service jargon)."
+    rules:
+      - pattern: "〜のほう"
+        context: "書類のほうをお持ちしました"
+        suggestion: "書類をお持ちしました"
+        reason: "Redundant directional filler '〜のほう'."
+      - pattern: "〜からお預かりします"
+        suggestion: "〜をお預かりします"
+        reason: "'から' is grammatically incorrect when receiving payment/objects."
+      - pattern: "よろしかったでしょうか"
+        suggestion: "よろしいでしょうか"
+        reason: "Past tense used inappropriately for present confirmation."

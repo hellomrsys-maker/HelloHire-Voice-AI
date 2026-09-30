@@ -1,0 +1,34 @@
+{
+  "kanji_reading_disambiguation": {
+    "polysemous_kanji_cases": [
+      {
+        "kanji": "生",
+        "readings": [
+          {"reading": "せい", "pos": "名詞/接頭辞", "context": "生活, 生産, 学生, 生年月日"},
+          {"reading": "しょう", "pos": "名詞", "context": "一生, 生涯, 誕生"},
+          {"reading": "なま", "pos": "名詞/接頭辞", "context": "生ビール, 生魚, 生放送"},
+          {"reading": "い-きる", "pos": "動詞", "context": "懸命に生きる"},
+          {"reading": "う-まれる", "pos": "動詞", "context": "子供が生まれる"},
+          {"reading": "は-える", "pos": "動詞", "context": "草が生える"},
+          {"reading": "き", "pos": "接頭辞", "context": "生一本, 生真面目"}
+        ]
+      },
+      {
+        "kanji": "方",
+        "readings": [
+          {"reading": "ほう", "context": "方向, 方法, 西方, 一方"},
+          {"reading": "かた", "context": "あの方, 読み方, 使い方, 夕方"}
+        ]
+      },
+      {
+        "kanji": "行",
+        "readings": [
+          {"reading": "こう", "context": "行動, 旅行, 銀行"},
+          {"reading": "ぎょう", "context": "行列, 行事, 執行"},
+          {"reading": "い-く / ゆ-く", "context": "東京へ行く"},
+          {"reading": "おこな-う", "context": "儀式を行う"}
+        ]
+      }
+    ]
+  }
+}

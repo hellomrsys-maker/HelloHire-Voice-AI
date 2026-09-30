@@ -1,0 +1,56 @@
+{
+  "engine": "Persian",
+  "version": "1.0.0",
+  "dom_marker_ra": {
+    "orthography": "را",
+    "transcription": "rā",
+    "position": "postpositional_enclitic_to_np",
+    "obligatory_conditions": [
+      {
+        "category": "proper_nouns",
+        "description": "Personal and geographical proper names as direct object",
+        "example": "علی را دیدم (I saw Ali)",
+        "status": "mandatory"
+      },
+      {
+        "category": "personal_pronouns",
+        "description": "Independent personal pronouns as direct object",
+        "example": "او را دیدم (I saw him/her)",
+        "status": "mandatory"
+      },
+      {
+        "category": "demonstrative_objects",
+        "description": "Demonstrative determiners (این / آن) modifying direct object",
+        "example": "این کتاب را خواندم (I read this book)",
+        "status": "mandatory"
+      },
+      {
+        "category": "definite_modified_noun",
+        "description": "Nouns with possessive enclitics or possessive Ezafe",
+        "example": "کتابم را آوردم (I brought my book) / کتابِ علی را بردم (I took Ali's book)",
+        "status": "mandatory"
+      }
+    ],
+    "prohibited_conditions": [
+      {
+        "category": "generic_non_specific",
+        "description": "Bare nouns functioning as generic direct objects incorporated into verb",
+        "example": "سیب خوردم (I ate apple/apples) vs *سیب را خوردم (when indefinite)",
+        "status": "forbidden"
+      },
+      {
+        "category": "subject_position",
+        "description": "Subjects of intransitive or transitive verbs",
+        "status": "strictly_forbidden"
+      }
+    ],
+    "optional_specific_conditions": [
+      {
+        "category": "indefinite_specific",
+        "description": "Noun marked with indefinite -i indicating a specific referent known to speaker",
+        "example": "کتابی را خریدم که دیروز دیدیم (I bought a [specific] book that we saw yesterday)",
+        "status": "optional_specific"
+      }
+    ]
+  }
+}

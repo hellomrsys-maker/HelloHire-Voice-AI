@@ -1,0 +1,26 @@
+# spelling_rules.yaml - English Orthographic Conventions & US/UK Variants
+
+spelling_axioms:
+  i_before_e_except_after_c:
+    rule: "I before E, except after C, or when sounding like A as in neighbor and weigh."
+    standard_examples: ["believe", "piece", "receive", "ceiling", "deceive"]
+    exceptions: ["weird", "seize", "caffeine", "neither", "species", "science"]
+
+  silent_letters:
+    silent_k: ["know", "knife", "knee", "knot"]
+    silent_w: ["write", "wrong", "wrap", "wrist"]
+    silent_b: ["doubt", "debt", "subtle", "comb", "tomb", "climb"]
+    silent_g: ["gnome", "gnaw", "sign", "foreign"]
+    silent_h: ["honest", "hour", "ghost", "rhythm"]
+    silent_l: ["walk", "talk", "half", "salmon", "calm"]
+
+dialect_orthography_variants:
+  us_vs_uk:
+    - { us: "color", uk: "colour" }
+    - { us: "flavor", uk: "flavour" }
+    - { us: "center", uk: "centre" }
+    - { us: "theater", uk: "theatre" }
+    - { us: "organize", uk: "organise" }
+    - { us: "analyze", uk: "analyse" }
+    - { us: "defense", uk: "defence" }
+    - { us: "traveling", uk: "travelling" }

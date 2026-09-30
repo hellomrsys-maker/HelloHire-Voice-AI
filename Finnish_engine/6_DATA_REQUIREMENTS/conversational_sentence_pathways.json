@@ -1,0 +1,75 @@
+{
+  "language": "Finnish",
+  "engine": "D:\\gra.voi\\Finnish_engine",
+  "iso_code": "fin",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "fin_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Insinööri suunnitteli erittäin tehokkaan hajautetun järjestelmän.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Opiskelijat ymmärsivät monimutkaisen neuroverkon perinpohjaisesti.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "fin_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Olemme onnistuneesti ottaneet käyttöön viiveettömän synkronisen muistiprotokollan.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Professori selitti generatiivisen kieliopin periaatteet erittäin yksityiskohtaisesti.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "fin_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Tutkimusryhmä julkaisi merkittävän tieteellisen artikkelin tekoälystä.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ohjelmistoarkkitehti optimoi koko tiedonkäsittelyputken toiminnan.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "fin_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Tekoäly analysoi monikielisiä tekstejä poikkeuksellisen tarkasti.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Kehitystiimi suoritti kaikki integraatiotestit menestyksekkäästi loppuun.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "fin_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Nopea muistiväylä varmistaa tietojen reaaliaikaisen johdonmukaisuuden.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Suoritimme tiukkoja suorituskykytestejä järjestelmän luotettavuuden osoittamiseksi.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

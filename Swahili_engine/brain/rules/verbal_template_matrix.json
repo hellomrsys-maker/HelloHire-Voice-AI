@@ -1,0 +1,41 @@
+{
+  "subject_prefixes": {
+    "1sg": "ni", "2sg": "u", "3sg": "a",
+    "1pl": "tu", "2pl": "m", "3pl": "wa",
+    "cl3": "u", "cl4": "i", "cl5": "li", "cl6": "ya",
+    "cl7": "ki", "cl8": "vi", "cl9": "i", "cl10": "zi",
+    "cl11": "u", "cl15": "ku", "cl16": "pa", "cl17": "ku", "cl18": "mu"
+  },
+  "negative_subject_prefixes": {
+    "1sg": "si", "2sg": "hu", "3sg": "ha",
+    "1pl": "hatu", "2pl": "ham", "3pl": "hawa",
+    "cl3": "hau", "cl4": "hai", "cl5": "hali", "cl6": "haya",
+    "cl7": "haki", "cl8": "havi", "cl9": "hai", "cl10": "hazi",
+    "cl11": "hau", "cl15": "haku", "cl16": "hapa", "cl17": "haku", "cl18": "hamu"
+  },
+  "tense_aspect_markers": {
+    "present": "na",
+    "past": "li",
+    "future": "ta",
+    "perfect": "me",
+    "conditional": "ki",
+    "hypothetical": "nge",
+    "narrative": "ka"
+  },
+  "negative_tenses": {
+    "present": {"tam": "", "final_vowel": "i"},
+    "past": {"tam": "ku", "final_vowel": "a"},
+    "future": {"tam": "ta", "final_vowel": "a"},
+    "perfect": {"tam": "ja", "final_vowel": "a"}
+  },
+  "object_prefixes": {
+    "1sg": "ni", "2sg": "ku", "3sg": "m",
+    "1pl": "tu", "2pl": "wa", "3pl": "wa",
+    "cl3": "u", "cl4": "i", "cl5": "li", "cl6": "ya",
+    "cl7": "ki", "cl8": "vi", "cl9": "i", "cl10": "zi",
+    "cl11": "u", "cl15": "ku", "cl16": "pa"
+  },
+  "monosyllabic_verbs": [
+    "la", "nywa", "ja", "fa", "pa", "cha", "enda", "isha"
+  ]
+}

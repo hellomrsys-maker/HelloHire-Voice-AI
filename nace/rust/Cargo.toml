@@ -1,0 +1,10 @@
+[package]
+name = "nace-narrative-engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "nace_narrative_engine"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

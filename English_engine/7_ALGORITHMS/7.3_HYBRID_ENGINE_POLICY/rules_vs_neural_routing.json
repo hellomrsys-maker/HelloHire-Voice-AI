@@ -1,0 +1,27 @@
+{
+  "rules_vs_neural_routing_policy": {
+    "philosophy": "Deterministic rule transducers take precedence for grammatical legality; neural representations provide probabilistic disambiguation and generative fluency.",
+    "routing_matrix": {
+      "spelling_and_closed_class_agreement": {
+        "primary_handler": "Deterministic Rules (FST / Regex)",
+        "neural_fallback": false,
+        "confidence_threshold": 1.0
+      },
+      "pronoun_binding_and_anaphora": {
+        "primary_handler": "Hybrid (Lappin-Leass syntactic filter + Neural coreference clustering)",
+        "neural_fallback": true,
+        "confidence_threshold": 0.85
+      },
+      "word_sense_and_pp_attachment": {
+        "primary_handler": "Neural Transformer attention scores",
+        "symbolic_constraint": "Selectional restriction filter (e.g., inanimate subjects cannot drink liquids)",
+        "confidence_threshold": 0.75
+      },
+      "register_and_style_transfer": {
+        "primary_handler": "Neural seq2seq / masked LM",
+        "symbolic_constraint": "Lexical replacement dictionary and contraction expander",
+        "confidence_threshold": 0.70
+      }
+    }
+  }
+}

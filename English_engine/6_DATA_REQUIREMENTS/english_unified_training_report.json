@@ -1,0 +1,31 @@
+{
+  "language": "English",
+  "pipeline": "English Unified Single Total Training Pipeline",
+  "duration_seconds": 24.42,
+  "phase1_syntax": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\english_main_model_verified.pt",
+    "final_loss": 52.8153
+  },
+  "phase2_sub_ais": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\english_engine_sub_ais_verified.pt"
+  },
+  "phase3_intent_tree": {
+    "status": "SUCCESS",
+    "total_capacity": 274,
+    "intents_evaluated": 5
+  },
+  "phase4_vocal_prosody": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\english_dialogue_and_prosody_verified.pt"
+  },
+  "phase5_amsv_sync": {
+    "status": "SUCCESS",
+    "verified_checkpoints": {
+      "english_main_model_verified.pt": "76f0c9c31f5071e349c8dd30e7c2d25f8f0ccef54d11f4fcae2ab3c78cf82b0b",
+      "english_engine_sub_ais_verified.pt": "d10559db5feeb2e06547dd4aecc1a6965aa66008d106b7594754030ffdab7fc7",
+      "english_dialogue_and_prosody_verified.pt": "e0a4683a82aad26ac09ab421a93a991914a6a0edade5190a4d4805d23f5084ee"
+    }
+  }
+}

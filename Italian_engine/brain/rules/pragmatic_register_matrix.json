@@ -1,0 +1,49 @@
+{
+  "address_registers": {
+    "informal": {
+      "name": "dare del tu",
+      "pronoun": "tu",
+      "direct_clitic": "ti",
+      "indirect_clitic": "ti",
+      "possessive": "tuo",
+      "verb_person": "2sg",
+      "salutations": ["Ciao", "Caro", "Cara", "Ehi"],
+      "closings": ["A presto", "Un abbraccio", "Baci", "Ci sentiamo"]
+    },
+    "formal": {
+      "name": "dare del Lei",
+      "pronoun": "Lei",
+      "direct_clitic": "La",
+      "indirect_clitic": "Le",
+      "possessive": "Suo",
+      "verb_person": "3sg",
+      "salutations": [
+        "Gentile Signore", "Gentile Signora",
+        "Gentile Dottore", "Gentile Dottoressa",
+        "Egregio Avvocato", "Egregio Dottore",
+        "Chiarissimo Professore"
+      ],
+      "closings": [
+        "Cordiali saluti",
+        "Distinti saluti",
+        "Con i migliori saluti",
+        "In attesa di un Suo cortese riscontro"
+      ]
+    }
+  },
+  "discourse_markers": {
+    "allora": "sequencer / conversational transition",
+    "mica": "polar presuppositional negative modifier",
+    "magari": "optative longing / hypothetical doubt",
+    "davvero": "truth-value confirmation request",
+    "figurati": "informal modesty marker",
+    "si_figuri": "formal modesty marker"
+  },
+  "idioms": [
+    {"phrase": "in bocca al lupo", "response": "crepi", "meaning": "good luck"},
+    {"phrase": "non vedere l'ora", "meaning": "to eagerly anticipate"},
+    {"phrase": "prendere lucciole per lanterne", "meaning": "to be deeply mistaken"},
+    {"phrase": "fare fiasco", "meaning": "to fail completely"},
+    {"phrase": "costare un occhio della testa", "meaning": "to cost a fortune"}
+  ]
+}

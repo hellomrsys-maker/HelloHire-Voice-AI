@@ -1,0 +1,1 @@
+from .malayalam_matrix_bridge import MalayalamMatrixBridge

@@ -1,0 +1,30 @@
+# Japanese Politeness Levels and Interpersonal Distance Calibration (待遇表現水準)
+
+levels:
+  plain_casual:
+    id: "DA_DEARU_OR_TAMEGUCHI"
+    target_interlocutor: "Close friends, family, juniors (kohai), internal notes, academic papers"
+    copula: "だ / である"
+    verb_ending: "Dictionary form (食べる, 行く, 書く)"
+    social_distance: "Low / In-group (内 uchi)"
+
+  polite_standard:
+    id: "DESU_MASU"
+    target_interlocutor: "Acquaintances, colleagues, public announcements, general polite conversation"
+    copula: "です"
+    verb_ending: "ます / ました / ません"
+    social_distance: "Medium / Neutral"
+
+  formal_keigo:
+    id: "KEIGO_BUSINESS"
+    target_interlocutor: "Clients, superiors (bucho/senpai), external business partners (外 soto)"
+    copula: "でございます"
+    verb_ending: "尊敬語 (おっしゃる/なさる) for superior; 謙譲語 (申す/いたす) for self"
+    social_distance: "High / Deference"
+
+social_distance_matrix:
+  bucho_to_subordinate: "polite_standard or plain_casual"
+  subordinate_to_bucho: "formal_keigo (Strictly mandatory)"
+  customer_to_staff: "polite_standard or plain_casual"
+  staff_to_customer: "formal_keigo (Strictly mandatory)"
+  peer_to_peer: "polite_standard initially, transitioning to plain_casual with intimacy"

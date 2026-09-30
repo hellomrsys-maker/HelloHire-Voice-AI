@@ -1,0 +1,164 @@
+{
+  "conjugations": {
+    "falar": {
+      "lemma": "falar",
+      "conjugation_class": "1st_ar",
+      "transitivity": "transitive",
+      "indicativo": {
+        "presente": { "eu": "falo", "tu": "falas", "ele": "fala", "nos": "falamos", "vos": "falais", "eles": "falam" },
+        "perfeito": { "eu": "falei", "tu": "falaste", "ele": "falou", "nos": "falamos", "vos": "falastes", "eles": "falaram" },
+        "imperfeito": { "eu": "falava", "tu": "falavas", "ele": "falava", "nos": "falávamos", "vos": "faláveis", "eles": "falavam" },
+        "futuro": { "eu": "falarei", "tu": "falarás", "ele": "falará", "nos": "falaremos", "vos": "falareis", "eles": "falarão" },
+        "condicional": { "eu": "falaria", "tu": "falarias", "ele": "falaria", "nos": "falaríamos", "vos": "falaríeis", "eles": "falariam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "fale", "tu": "fales", "ele": "fale", "nos": "falemos", "vos": "faleis", "eles": "falem" },
+        "imperfeito": { "eu": "falasse", "tu": "falasses", "ele": "falasse", "nos": "falássemos", "vos": "falásseis", "eles": "falassem" },
+        "futuro": { "eu": "falar", "tu": "falares", "ele": "falar", "nos": "falarmos", "vos": "falardes", "eles": "falarem" }
+      },
+      "infinitivo_pessoal": { "eu": "falar", "tu": "falares", "ele": "falar", "nos": "falarmos", "vos": "falardes", "eles": "falarem" },
+      "gerundio": "falando",
+      "participio": "falado"
+    },
+    "comer": {
+      "lemma": "comer",
+      "conjugation_class": "2nd_er",
+      "transitivity": "transitive",
+      "indicativo": {
+        "presente": { "eu": "como", "tu": "comes", "ele": "come", "nos": "comemos", "vos": "comeis", "eles": "comem" },
+        "perfeito": { "eu": "comi", "tu": "comeste", "ele": "comeu", "nos": "comemos", "vos": "comestes", "eles": "comeram" },
+        "imperfeito": { "eu": "comia", "tu": "comias", "ele": "comia", "nos": "comíamos", "vos": "comíeis", "eles": "comiam" },
+        "futuro": { "eu": "comerei", "tu": "comerás", "ele": "comerá", "nos": "comeremos", "vos": "comereis", "eles": "comerão" },
+        "condicional": { "eu": "comeria", "tu": "comerias", "ele": "comeria", "nos": "comeríamos", "vos": "comeríeis", "eles": "comeriam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "coma", "tu": "comas", "ele": "coma", "nos": "comamos", "vos": "comais", "eles": "comam" },
+        "imperfeito": { "eu": "comesse", "tu": "comesses", "ele": "comesse", "nos": "comêssemos", "vos": "comêsseis", "eles": "comessem" },
+        "futuro": { "eu": "comer", "tu": "comeres", "ele": "comer", "nos": "comermos", "vos": "comerdes", "eles": "comerem" }
+      },
+      "infinitivo_pessoal": { "eu": "comer", "tu": "comeres", "ele": "comer", "nos": "comermos", "vos": "comerdes", "eles": "comerem" },
+      "gerundio": "comendo",
+      "participio": "comido"
+    },
+    "partir": {
+      "lemma": "partir",
+      "conjugation_class": "3rd_ir",
+      "transitivity": "intransitive",
+      "indicativo": {
+        "presente": { "eu": "parto", "tu": "partes", "ele": "parte", "nos": "partimos", "vos": "partis", "eles": "partem" },
+        "perfeito": { "eu": "parti", "tu": "partiste", "ele": "partiu", "nos": "partimos", "vos": "partistes", "eles": "partiram" },
+        "imperfeito": { "eu": "partia", "tu": "partias", "ele": "partia", "nos": "partíamos", "vos": "partíeis", "eles": "partiam" },
+        "futuro": { "eu": "partirei", "tu": "partirás", "ele": "partirá", "nos": "partiremos", "vos": "partireis", "eles": "partirão" },
+        "condicional": { "eu": "partiria", "tu": "partirias", "ele": "partiria", "nos": "partiríamos", "vos": "partiríeis", "eles": "partiriam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "parta", "tu": "partas", "ele": "parta", "nos": "partamos", "vos": "partais", "eles": "partam" },
+        "imperfeito": { "eu": "partisse", "tu": "partisses", "ele": "partisse", "nos": "partíssemos", "vos": "partísseis", "eles": "partissem" },
+        "futuro": { "eu": "partir", "tu": "partires", "ele": "partir", "nos": "partirmos", "vos": "partirdes", "eles": "partirem" }
+      },
+      "infinitivo_pessoal": { "eu": "partir", "tu": "partires", "ele": "partir", "nos": "partirmos", "vos": "partirdes", "eles": "partirem" },
+      "gerundio": "partindo",
+      "participio": "partido"
+    },
+    "fazer": {
+      "lemma": "fazer",
+      "conjugation_class": "irregular",
+      "transitivity": "transitive",
+      "indicativo": {
+        "presente": { "eu": "faço", "tu": "fazes", "ele": "faz", "nos": "fazemos", "vos": "fazeis", "eles": "fazem" },
+        "perfeito": { "eu": "fiz", "tu": "fizeste", "ele": "fez", "nos": "fizemos", "vos": "fizestes", "eles": "fizeram" },
+        "imperfeito": { "eu": "fazia", "tu": "fazias", "ele": "fazia", "nos": "fazíamos", "vos": "fazíeis", "eles": "faziam" },
+        "futuro": { "eu": "farei", "tu": "farás", "ele": "fará", "nos": "faremos", "vos": "fareis", "eles": "farão" },
+        "condicional": { "eu": "faria", "tu": "farias", "ele": "faria", "nos": "faríamos", "vos": "faríeis", "eles": "fariam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "faça", "tu": "faças", "ele": "faça", "nos": "façamos", "vos": "façais", "eles": "façam" },
+        "imperfeito": { "eu": "fizesse", "tu": "fizesses", "ele": "fizesse", "nos": "fizéssemos", "vos": "fizésseis", "eles": "fizessem" },
+        "futuro": { "eu": "fizer", "tu": "fizeres", "ele": "fizer", "nos": "fizermos", "vos": "fizerdes", "eles": "fizerem" }
+      },
+      "infinitivo_pessoal": { "eu": "fazer", "tu": "fazeres", "ele": "fazer", "nos": "fazermos", "vos": "fazerdes", "eles": "fazerem" },
+      "gerundio": "fazendo",
+      "participio": "feito"
+    },
+    "ser": {
+      "lemma": "ser",
+      "conjugation_class": "irregular_copula",
+      "transitivity": "copula",
+      "indicativo": {
+        "presente": { "eu": "sou", "tu": "és", "ele": "é", "nos": "somos", "vos": "sois", "eles": "são" },
+        "perfeito": { "eu": "fui", "tu": "foste", "ele": "foi", "nos": "fomos", "vos": "fostes", "eles": "foram" },
+        "imperfeito": { "eu": "era", "tu": "eras", "ele": "era", "nos": "éramos", "vos": "éreis", "eles": "eram" },
+        "futuro": { "eu": "serei", "tu": "serás", "ele": "será", "nos": "seremos", "vos": "sereis", "eles": "serão" },
+        "condicional": { "eu": "seria", "tu": "serias", "ele": "seria", "nos": "seríamos", "vos": "seríeis", "eles": "seriam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "seja", "tu": "sejas", "ele": "seja", "nos": "sejamos", "vos": "sejais", "eles": "sejam" },
+        "imperfeito": { "eu": "fosse", "tu": "fosses", "ele": "fosse", "nos": "fôssemos", "vos": "fôsseis", "eles": "fossem" },
+        "futuro": { "eu": "for", "tu": "fores", "ele": "for", "nos": "formos", "vos": "fordes", "eles": "forem" }
+      },
+      "infinitivo_pessoal": { "eu": "ser", "tu": "seres", "ele": "ser", "nos": "sermos", "vos": "serdes", "eles": "serem" },
+      "gerundio": "sendo",
+      "participio": "sido"
+    },
+    "estar": {
+      "lemma": "estar",
+      "conjugation_class": "irregular_copula",
+      "transitivity": "copula",
+      "indicativo": {
+        "presente": { "eu": "estou", "tu": "estás", "ele": "está", "nos": "estamos", "vos": "estais", "eles": "estão" },
+        "perfeito": { "eu": "estive", "tu": "estiveste", "ele": "esteve", "nos": "estivemos", "vos": "estivestes", "eles": "estiveram" },
+        "imperfeito": { "eu": "estava", "tu": "estavas", "ele": "estava", "nos": "estávamos", "vos": "estáveis", "eles": "estavam" },
+        "futuro": { "eu": "estarei", "tu": "estarás", "ele": "estará", "nos": "estaremos", "vos": "estareis", "eles": "estarão" },
+        "condicional": { "eu": "estaria", "tu": "estarias", "ele": "estaria", "nos": "estaríamos", "vos": "estaríeis", "eles": "estariam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "esteja", "tu": "estejas", "ele": "esteja", "nos": "estejamos", "vos": "estejais", "eles": "estejam" },
+        "imperfeito": { "eu": "estivesse", "tu": "estivesses", "ele": "estivesse", "nos": "estivéssemos", "vos": "estivésseis", "eles": "estivessem" },
+        "futuro": { "eu": "estiver", "tu": "estiveres", "ele": "estiver", "nos": "estivermos", "vos": "estiverdes", "eles": "estiverem" }
+      },
+      "infinitivo_pessoal": { "eu": "estar", "tu": "estares", "ele": "estar", "nos": "estarmos", "vos": "estardes", "eles": "estarem" },
+      "gerundio": "estando",
+      "participio": "estado"
+    },
+    "ter": {
+      "lemma": "ter",
+      "conjugation_class": "irregular",
+      "transitivity": "transitive",
+      "indicativo": {
+        "presente": { "eu": "tenho", "tu": "tens", "ele": "tem", "nos": "temos", "vos": "tendes", "eles": "têm" },
+        "perfeito": { "eu": "tive", "tu": "tiveste", "ele": "teve", "nos": "tivemos", "vos": "tivestes", "eles": "tiveram" },
+        "imperfeito": { "eu": "tinha", "tu": "tinhas", "ele": "tinha", "nos": "tínhamos", "vos": "tínheis", "eles": "tinham" },
+        "futuro": { "eu": "terei", "tu": "terás", "ele": "terá", "nos": "teremos", "vos": "tereis", "eles": "terão" },
+        "condicional": { "eu": "teria", "tu": "terias", "ele": "teria", "nos": "teríamos", "vos": "teríeis", "eles": "teriam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "tenha", "tu": "tenhas", "ele": "tenha", "nos": "tenhamos", "vos": "tenhais", "eles": "tenham" },
+        "imperfeito": { "eu": "tivesse", "tu": "tivesses", "ele": "tivesse", "nos": "tivéssemos", "vos": "tivésseis", "eles": "tivessem" },
+        "futuro": { "eu": "tiver", "tu": "tiveres", "ele": "tiver", "nos": "tivermos", "vos": "tiverdes", "eles": "tiverem" }
+      },
+      "infinitivo_pessoal": { "eu": "ter", "tu": "teres", "ele": "ter", "nos": "termos", "vos": "terdes", "eles": "terem" },
+      "gerundio": "tendo",
+      "participio": "tido"
+    },
+    "dizer": {
+      "lemma": "dizer",
+      "conjugation_class": "irregular",
+      "transitivity": "transitive",
+      "indicativo": {
+        "presente": { "eu": "digo", "tu": "dizes", "ele": "diz", "nos": "dizemos", "vos": "dizeis", "eles": "dizem" },
+        "perfeito": { "eu": "disse", "tu": "disseste", "ele": "disse", "nos": "dissemos", "vos": "dissestes", "eles": "disseram" },
+        "imperfeito": { "eu": "dizia", "tu": "dizias", "ele": "dizia", "nos": "dizíamos", "vos": "dizíeis", "eles": "diziam" },
+        "futuro": { "eu": "direi", "tu": "dirás", "ele": "dirá", "nos": "diremos", "vos": "direis", "eles": "dirão" },
+        "condicional": { "eu": "diria", "tu": "dirias", "ele": "diria", "nos": "diríamos", "vos": "diríeis", "eles": "diriam" }
+      },
+      "subjuntivo": {
+        "presente": { "eu": "diga", "tu": "digas", "ele": "diga", "nos": "digamos", "vos": "digais", "eles": "digam" },
+        "imperfeito": { "eu": "dissesse", "tu": "dissesses", "ele": "dissesse", "nos": "disséssemos", "vos": "dissésseis", "eles": "dissessem" },
+        "futuro": { "eu": "disser", "tu": "disseres", "ele": "disser", "nos": "dissermos", "vos": "disserdes", "eles": "disserem" }
+      },
+      "infinitivo_pessoal": { "eu": "dizer", "tu": "dizeres", "ele": "dizer", "nos": "dizermos", "vos": "dizerdes", "eles": "dizerem" },
+      "gerundio": "dizendo",
+      "participio": "dito"
+    }
+  }
+}

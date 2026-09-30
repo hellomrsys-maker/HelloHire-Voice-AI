@@ -1,0 +1,22 @@
+{
+  "models_specifications": {
+    "tokenizers": [
+      {"name": "MeCab + UniDic 3.1.0", "mechanism": "FST lattice search over dictionary trie with connection cost tables"},
+      {"name": "SentencePiece BPE", "vocabulary_size": 32000, "character_coverage": 0.9995, "role": "Subword tokenization for deep transformer models"}
+    ],
+    "taggers_parsers": [
+      {"name": "Juman++", "approach": "Recurrent neural network language model lattice reranking"},
+      {"name": "Ginza (spaCy-ja)", "approach": "Transformer-based UD parser with SudachiPy morphological tokenizer"}
+    ],
+    "transformer_foundations": [
+      {"model_id": "cl-tohoku/bert-base-japanese-v3", "architecture": "BERT 12-layer, 768-hidden, UniDic tokenization"},
+      {"model_id": "rinna/japanese-gpt-neox-3.6b", "architecture": "Autoregressive decoder for Japanese text generation"},
+      {"model_id": "llm-jp/llm-jp-13b", "architecture": "Full-scale Japanese foundational LLM trained on massive web corpora"}
+    ],
+    "speech_models": [
+      {"model_id": "openai/whisper-large-v3", "capabilities": "Japanese ASR with high kanji/kana transcription accuracy"},
+      {"model_id": "espnet/espnet2-tts-jsut", "capabilities": "Phoneme and mora-aligned neural acoustic synthesis"},
+      {"model_id": "vits-japanese-hifigan", "capabilities": "End-to-end VITS acoustic model with pitch-accent conditioned vocoder"}
+    ]
+  }
+}

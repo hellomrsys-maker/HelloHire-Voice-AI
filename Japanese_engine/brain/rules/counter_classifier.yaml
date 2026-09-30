@@ -1,0 +1,63 @@
+# Japanese Numerical Classifiers and Counters (助数詞体系)
+
+classifiers:
+  hon:
+    counter: "本 (ほん)"
+    semantic_class: "Cylindrical, slender, elongated objects (pens, bottles, trees, umbrellas, train lines)"
+    readings:
+      1: "一本 (いっぽん)"
+      2: "二本 (にほん)"
+      3: "三本 (さんぼん)"
+      4: "四本 (よんほん)"
+      5: "五本 (ごほん)"
+      6: "六本 (ろっぽん)"
+      7: "七本 (ななほん)"
+      8: "八本 (はっぽん)"
+      9: "九本 (きゅうほん)"
+      10: "十本 (じゅっぽん)"
+
+  mai:
+    counter: "枚 (まい)"
+    semantic_class: "Flat, thin objects (paper, shirts, plates, photographs, tickets)"
+    readings:
+      1: "一枚 (いちまい)"
+      2: "二枚 (にまい)"
+      3: "三枚 (さんまい)"
+      4: "四枚 (よんまい)"
+
+  hiki:
+    counter: "匹 (ひき)"
+    semantic_class: "Small animals, fish, insects, pets (cats, dogs, fish)"
+    readings:
+      1: "一匹 (いっぴき)"
+      2: "二匹 (にひき)"
+      3: "三匹 (さんびき)"
+      4: "四匹 (よんひき)"
+      6: "六匹 (ろっぴき)"
+      8: "八匹 (はっぴき)"
+
+  satsu:
+    counter: "冊 (さつ)"
+    semantic_class: "Bound publications (books, magazines, notebooks)"
+    readings:
+      1: "一冊 (いっさつ)"
+      2: "二冊 (にさつ)"
+      3: "三冊 (さんさつ)"
+
+  dai:
+    counter: "台 (だい)"
+    semantic_class: "Mechanical vehicles and electronic machines (cars, computers, televisions)"
+    readings:
+      1: "一台 (いちだい)"
+      2: "二台 (にだい)"
+
+  nin:
+    counter: "人 (にん)"
+    semantic_class: "Human beings"
+    irregulars:
+      1: "一人 (ひとり)"
+      2: "二人 (ふたり)"
+    regular:
+      3: "三人 (さんにん)"
+      4: "四人 (よにん)"
+      5: "五人 (ごにん)"

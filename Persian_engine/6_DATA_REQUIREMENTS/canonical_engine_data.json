@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Persian",
+    "engine": "Persian_engine",
+    "iso_codes": [
+      "fas",
+      "fa"
+    ],
+    "scripts": [
+      "Perso-Arabic"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Persian",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "fas_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Persian)",
+          "How are operations (Persian)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "fas_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Persian)",
+          "Report readiness (Persian)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "مهندس یک معماری توزیع‌شده با کارایی بالا طراحی کرد.",
+    "ما پروتکل همگام‌سازی حافظه اتمی را با موفقیت پیاده‌سازی کردیم.",
+    "تیم پژوهشی مقاله مهمی در حوزه هوش مصنوعی منتشر کرد.",
+    "معمار نرم‌افزار خط لوله پردازش داده‌ها را بهینه‌سازی کرد (using optimal hyper-parameters).",
+    "مدل شناختی متن‌های چندزبانه را با دقت بالا تحلیل می‌کند.",
+    "تیم توسعه همه آزمایش‌های یکپارچگی را با موفقیت پشت سر گذاشت (on multi-core architectures).",
+    "گذرگاه حافظه پرسرعت هماهنگی بلادرنگ داده‌ها را تضمین می‌کند.",
+    "ما آزمایش‌های مقیاس‌پذیری گسترده‌ای را انجام دادیم (under heavy loads).",
+    "مهندس یک معماری توزیع‌شده با کارایی بالا طراحی کرد.",
+    "ما پروتکل همگام‌سازی حافظه اتمی را با موفقیت پیاده‌سازی کردیم.",
+    "تیم پژوهشی مقاله مهمی در حوزه هوش مصنوعی منتشر کرد.",
+    "معمار نرم‌افزار خط لوله پردازش داده‌ها را بهینه‌سازی کرد (using optimal hyper-parameters).",
+    "مدل شناختی متن‌های چندزبانه را با دقت بالا تحلیل می‌کند.",
+    "تیم توسعه همه آزمایش‌های یکپارچگی را با موفقیت پشت سر گذاشت (on multi-core architectures).",
+    "گذرگاه حافظه پرسرعت هماهنگی بلادرنگ داده‌ها را تضمین می‌کند.",
+    "ما آزمایش‌های مقیاس‌پذیری گسترده‌ای را انجام دادیم (under heavy loads).",
+    "مهندس یک معماری توزیع‌شده با کارایی بالا طراحی کرد.",
+    "ما پروتکل همگام‌سازی حافظه اتمی را با موفقیت پیاده‌سازی کردیم.",
+    "تیم پژوهشی مقاله مهمی در حوزه هوش مصنوعی منتشر کرد.",
+    "معمار نرم‌افزار خط لوله پردازش داده‌ها را بهینه‌سازی کرد (using optimal hyper-parameters)."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "pairs": {
+    "kitab": {"plural": "kutub", "pattern": "fu'ul", "is_human": false, "arabic_sg": "كتاب", "arabic_pl": "كتب"},
+    "madina": {"plural": "mudun", "pattern": "fu'ul", "is_human": false, "arabic_sg": "مدينة", "arabic_pl": "مدن"},
+    "qalb": {"plural": "qulub", "pattern": "fu'ul", "is_human": false, "arabic_sg": "قلب", "arabic_pl": "قلوب"},
+    "dars": {"plural": "durus", "pattern": "fu'ul", "is_human": false, "arabic_sg": "درس", "arabic_pl": "دروس"},
+    "bayt": {"plural": "buyut", "pattern": "fu'ul", "is_human": false, "arabic_sg": "بيت", "arabic_pl": "بيوت"},
+    "walad": {"plural": "awlad", "pattern": "af'al", "is_human": true, "arabic_sg": "ولد", "arabic_pl": "أولاد"},
+    "qalam": {"plural": "aqlam", "pattern": "af'al", "is_human": false, "arabic_sg": "قلم", "arabic_pl": "أقلام"},
+    "maktab": {"plural": "makatib", "pattern": "mafa'il", "is_human": false, "arabic_sg": "مكتب", "arabic_pl": "مكاتب"},
+    "masjid": {"plural": "masajid", "pattern": "mafa'il", "is_human": false, "arabic_sg": "مسجد", "arabic_pl": "مساجد"},
+    "miftah": {"plural": "mafatih", "pattern": "mafa'il", "is_human": false, "arabic_sg": "مفتاح", "arabic_pl": "مفاتيح"},
+    "rajul": {"plural": "rijal", "pattern": "fi'al", "is_human": true, "arabic_sg": "رجل", "arabic_pl": "رجال"},
+    "talib": {"plural": "tullab", "pattern": "fu''al", "is_human": true, "arabic_sg": "طالب", "arabic_pl": "طلاب"},
+    "sayyara": {"plural": "sayyarat", "pattern": "sound_fem", "is_human": false, "arabic_sg": "سيارة", "arabic_pl": "سيارات"},
+    "mu'allim": {"plural": "mu'allimun", "pattern": "sound_masc", "is_human": true, "arabic_sg": "معلم", "arabic_pl": "معلمون"},
+    "mu'allima": {"plural": "mu'allimat", "pattern": "sound_fem", "is_human": true, "arabic_sg": "معلمة", "arabic_pl": "معلمات"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "p2g_homophone_disambiguation": {
+    "DH EH1 R": {
+      "candidates": [
+        { "spelling": "there", "pos": "EX/RB", "context": "locative adverb / existential", "example": "over there, there is" },
+        { "spelling": "their", "pos": "PRP$", "context": "possessive determiner", "example": "their books" },
+        { "spelling": "they're", "pos": "PRP+VBP", "context": "contraction of they are", "example": "they're learning" }
+      ]
+    },
+    "T UW1": {
+      "candidates": [
+        { "spelling": "to", "pos": "TO/IN", "context": "preposition / infinitive marker", "example": "go to school, want to run" },
+        { "spelling": "too", "pos": "RB", "context": "excessively / also", "example": "too fast, me too" },
+        { "spelling": "two", "pos": "CD", "context": "cardinal numeral", "example": "two apples" }
+      ]
+    },
+    "B AY1": {
+      "candidates": [
+        { "spelling": "by", "pos": "IN", "context": "agentive / proximity preposition", "example": "written by Shakespeare" },
+        { "spelling": "buy", "pos": "VB", "context": "purchase verb", "example": "buy groceries" },
+        { "spelling": "bye", "pos": "UH", "context": "parting valediction", "example": "bye bye" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# Mandarin Engine — Layer 9: Configuration & Operational Policy
+engine_name: "Mandarin_engine"
+iso_639_1: "zh"
+iso_639_3: "cmn"
+canonical_script: "Simplified Chinese (简体中文)"
+supported_scripts:
+  - "Simplified Chinese"
+  - "Traditional Chinese (繁體中文)"
+  - "Pinyin (Hanyu Pinyin with Tone Marks)"
+default_register: "Standard Formal / Putonghua"
+
+operational_policies:
+  tone_sandhi_automatic: true
+  third_tone_sandhi_enabled: true
+  yi_bu_sandhi_enabled: true
+  strict_measure_word_checking: true
+  chengyu_resolution_threshold: 0.85
+  mianzi_politeness_scoring: true
+  zero_bridge_amsv_sync: true
+
+memory_offsets:
+  syntax_capability_byte: 18 # 0x12
+  syntax_score_byte: 52      # 0x34
+  phoneme_state_bytes: "0..7" # 0x00..0x07
+  prosody_state_bytes: "8..15" # 0x08..0x0F
+  phonology_capability_byte: 24 # 0x18
+  pragmatics_capability_byte: 22 # 0x16
+  register_score_byte: 54      # 0x36
+  editorial_discourse_byte: 20 # 0x14
+  editorial_review_byte: 26    # 0x1A

@@ -1,0 +1,122 @@
+{
+  "language": "Telugu",
+  "morphology_type": "Agglutinative (సంశ్లేషణాత్మక భాష)",
+  "vibhaktulu_case_system": [
+    {
+      "case_id": "prathama_nominative",
+      "name_te": "ప్రథమా విభక్తి",
+      "pratyayamulu": ["డు", "ము", "వు", "లు"],
+      "function": "Subject / Agent (కర్త)",
+      "examples": [
+        {"root": "రామ", "suffix": "డు", "word": "రాముడు", "meaning": "Rama (NOM)"},
+        {"root": "పుస్తక", "suffix": "ము", "word": "పుస్తకము", "meaning": "Book (NOM)"},
+        {"root": "గోవు", "suffix": "వు", "word": "గోవు", "meaning": "Cow (NOM)"},
+        {"root": "వృక్ష", "suffix": "ములు", "word": "వృక్షములు", "meaning": "Trees (NOM.PL)"}
+      ]
+    },
+    {
+      "case_id": "dvitiya_accusative",
+      "name_te": "ద్వితీయా విభక్తి",
+      "pratyayamulu": ["నిన్", "నున్", "లన్", "కూర్చి", "గురించి"],
+      "function": "Direct Object (కర్మ / లక్ష్యం)",
+      "examples": [
+        {"root": "రాముడు", "suffix": "ని", "word": "రాముని / రాముడిని", "meaning": "Rama (ACC)"},
+        {"root": "గ్రంథం", "suffix": "ను", "word": "గ్రంథాన్ని", "meaning": "Book (ACC)"},
+        {"root": "ప్రజలు", "suffix": "లన్", "word": "ప్రజలను", "meaning": "People (ACC.PL)"}
+      ]
+    },
+    {
+      "case_id": "tritiya_instrumental",
+      "name_te": "తృతీయా విభక్తి",
+      "pratyayamulu": ["చేతన్", "చేన్", "తోడన్", "తోన్"],
+      "function": "Instrument / Means / Accompaniment (కరణము / తోడు)",
+      "examples": [
+        {"root": "కత్తి", "suffix": "తో", "word": "కత్తితో", "meaning": "with a knife"},
+        {"root": "మిత్రుడు", "suffix": "తో", "word": "మిత్రుడితో", "meaning": "along with friend"},
+        {"root": "గురువు", "suffix": "చేత", "word": "గురువుచేత", "meaning": "by the teacher"}
+      ]
+    },
+    {
+      "case_id": "chaturthi_dative",
+      "name_te": "చతుర్థీ విభక్తి",
+      "pratyayamulu": ["కొరకున్", "కై"],
+      "function": "Beneficiary / Purpose (సంప్రదానము)",
+      "examples": [
+        {"root": "దేశం", "suffix": "కొరకు", "word": "దేశం కొరకు", "meaning": "for the sake of country"},
+        {"root": "విజ్ఞానం", "suffix": "కై", "word": "విజ్ఞానంకై", "meaning": "for knowledge"}
+      ]
+    },
+    {
+      "case_id": "panchami_ablative",
+      "name_te": "పంచమీ విభక్తి",
+      "pratyayamulu": ["వలనన్", "కంటెన్", "పట్టి"],
+      "function": "Source / Cause / Comparison (అపాదానము)",
+      "examples": [
+        {"root": "సత్యం", "suffix": "వలన", "word": "సత్యం వలన", "meaning": "because of truth"},
+        {"root": "అతడు", "suffix": "కంటె", "word": "అతని కంటె", "meaning": "than him"}
+      ]
+    },
+    {
+      "case_id": "shashthi_genitive",
+      "name_te": "షష్ఠీ విభక్తి",
+      "pratyayamulu": ["కిన్", "కున్", "యొక్క", "లోపలన్", "లోన్"],
+      "function": "Possession / Relation / Partitive (సంబంధము)",
+      "examples": [
+        {"root": "నా", "suffix": "యొక్క", "word": "నా యొక్క / నా", "meaning": "my / mine"},
+        {"root": "ఊరు", "suffix": "లో", "word": "ఊరిలో", "meaning": "in the village"},
+        {"root": "వారి", "suffix": "కి", "word": "వారికి", "meaning": "to them"}
+      ]
+    },
+    {
+      "case_id": "saptami_locative",
+      "name_te": "సప్తమీ విభక్తి",
+      "pratyayamulu": ["అందున్", "నన్"],
+      "function": "Location in Space / Time (అధికరణము)",
+      "examples": [
+        {"root": "హృదయం", "suffix": "అందు", "word": "హృదయమందు", "meaning": "in the heart"},
+        {"root": "యుద్ధం", "suffix": "న", "word": "యుద్ధమున", "meaning": "in battle"}
+      ]
+    },
+    {
+      "case_id": "sambodhana_vocative",
+      "name_te": "సంబోధనా ప్రథమా విభక్తి",
+      "pratyayamulu": ["ఓ", "ఓయి", "ఓరీ", "ఓసీ"],
+      "function": "Direct Address / Calling (సంబోధన)",
+      "examples": [
+        {"prefix": "ఓ", "root": "రాముడా", "word": "ఓ రాముడా!", "meaning": "O Rama!"},
+        {"prefix": "ఓయి", "root": "మిత్రమా", "word": "ఓయి మిత్రమా!", "meaning": "O friend!"}
+      ]
+    }
+  ],
+  "sandhi_rules_system": [
+    {
+      "sandhi_name": "ఉత్వ సంధి (ఉకార సంధి)",
+      "rule": "ఉత్తునకు అచ్చు పరమగునప్పుడు సంధి నిత్యముగా నగును.",
+      "formula": "ఉ (u) + అచ్చు (vowel) -> అచ్చు (elision of 'u')",
+      "examples": [
+        {"padas": ["రాముడు", "ఇతడు"], "result": "రాముడితడు"},
+        {"padas": ["మనము", "ఉన్నాము"], "result": "మనమున్నాము"},
+        {"padas": ["వాడు", "ఎక్కడ"], "result": "వాడెక్కడ"}
+      ]
+    },
+    {
+      "sandhi_name": "సవర్ణదీర్ఘ సంధి",
+      "rule": "అ, ఇ, ఉ, ఋ లకు సవర్ణాచ్చులు పరమైనప్పుడు వాని దీర్ఘము ఏకాదేశమగును.",
+      "formula": "V1 + V1 -> Long V1",
+      "examples": [
+        {"padas": ["దేవ", "ఆలయము"], "result": "దేవాలయము"},
+        {"padas": ["గిరి", "ఈశుడు"], "result": "గిరీశుడు"},
+        {"padas": ["భాను", "ఉదయము"], "result": "భానూదయము"}
+      ]
+    },
+    {
+      "sandhi_name": "గసడదవాదేశ సంధి",
+      "rule": "ప్రథమ మీది పరుషములకు గసడదవలు బహుళముగా నగును.",
+      "formula": "క, చ, ట, త, ప -> గ, స, డ, ద, వ",
+      "examples": [
+        {"padas": ["వాడు", "కొట్టె"], "result": "వాడు గొట్టె"},
+        {"padas": ["పాలు", "పోసె"], "result": "పాలు వోసె"}
+      ]
+    }
+  ]
+}

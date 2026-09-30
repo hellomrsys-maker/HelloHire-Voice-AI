@@ -1,0 +1,26 @@
+{
+  "vernacular_and_contact_varieties": {
+    "African_American_Vernacular_English_AAVE": {
+      "habitual_be": {
+        "rule": "Unconjugated 'be' marks habitual or recurrent actions",
+        "example": "He be working on models = He habitually works on models."
+      },
+      "copula_deletion": {
+        "rule": "Zero copula in contexts where Standard English allows contraction",
+        "example": "She smart = She is smart."
+      },
+      "negative_concord": {
+        "rule": "Multiple negative markers reinforcing a single negative proposition",
+        "example": "He didn't see nobody."
+      }
+    },
+    "Chicano_English": {
+      "phonology": "Less vowel reduction in unstressed syllables, /tʃ/ and /ʃ/ alternation",
+      "prosody": "Higher fundamental frequency pitch peaks on phrase finals"
+    },
+    "Creole_contact_features": {
+      "tense_aspect_markers": "Pre-verbal particles marking aspect (e.g., 'don' for completive aspect)",
+      "serial_verb_constructions": "Multiple verbs within a single clause without overt coordination"
+    }
+  }
+}

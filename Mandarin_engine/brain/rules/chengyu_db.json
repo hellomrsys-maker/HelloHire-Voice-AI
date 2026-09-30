@@ -1,0 +1,64 @@
+{
+  "chengyu": {
+    "塞翁失马": {
+      "pinyin": "sài wēng shī mǎ",
+      "literal": "The old man of the frontier lost his horse",
+      "meaning": "A blessing in disguise; setbacks may turn into good fortune",
+      "category": "philosophical_wisdom"
+    },
+    "画蛇添足": {
+      "pinyin": "huà shé tiān zú",
+      "literal": "Draw a snake and add feet to it",
+      "meaning": "Ruin the effect by adding something superfluous",
+      "category": "cautionary"
+    },
+    "半途而废": {
+      "pinyin": "bàn tú ér fèi",
+      "literal": "Abandon halfway down the road",
+      "meaning": "Give up halfway without completing the task",
+      "category": "perseverance"
+    },
+    "胸有成竹": {
+      "pinyin": "xiōng yǒu chéng zhú",
+      "literal": "Have a bamboo plant already formed in one's chest",
+      "meaning": "Having a well-thought-out plan and confidence in success beforehand",
+      "category": "strategy"
+    },
+    "卧薪尝胆": {
+      "pinyin": "wò xīn cháng dǎn",
+      "literal": "Sleep on brushwood and taste gall",
+      "meaning": "Enduring bitter hardships patiently to achieve long-term goals",
+      "category": "ambition"
+    },
+    "名落孙山": {
+      "pinyin": "míng luò sūn shān",
+      "literal": "Name falls behind Sun Shan (who was last on the imperial pass list)",
+      "meaning": "Fail to pass a competitive examination",
+      "category": "academic"
+    },
+    "一目了然": {
+      "pinyin": "yī mù liǎo rán",
+      "literal": "Understand clearly at a single glance",
+      "meaning": "Obvious, self-evident, completely transparent",
+      "category": "clarity"
+    },
+    "循序渐进": {
+      "pinyin": "xún xù jiàn jìn",
+      "literal": "Follow the sequence and advance gradually",
+      "meaning": "Make steady, systematic progress step by step",
+      "category": "methodology"
+    },
+    "博大精深": {
+      "pinyin": "bó dà jīng shēn",
+      "literal": "Broad and vast, refined and profound",
+      "meaning": "Extensive knowledge and deep scholarship",
+      "category": "intellect"
+    },
+    "水到渠成": {
+      "pinyin": "shuǐ dào qú chéng",
+      "literal": "When water flows, a canal is formed",
+      "meaning": "Conditions are ripe and success comes naturally",
+      "category": "natural_progression"
+    }
+  }
+}

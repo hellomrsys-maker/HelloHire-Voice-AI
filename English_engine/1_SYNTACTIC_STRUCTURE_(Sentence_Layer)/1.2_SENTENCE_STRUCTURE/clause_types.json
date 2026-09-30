@@ -1,0 +1,33 @@
+{
+  "clause_types": {
+    "independent_clause": {
+      "definition": "A clause containing a subject and finite verb expressing a complete proposition",
+      "structure": "NP + VP (+ Period/Semicolon)",
+      "example": "The neural network converges quickly."
+    },
+    "dependent_adverbial_clause": {
+      "definition": "A clause introduced by a subordinating conjunction modifying the main predicate",
+      "subtypes": ["temporal", "causal", "conditional", "concessive"],
+      "example": "Although the dataset was noisy, accuracy remained high."
+    },
+    "dependent_relative_clause": {
+      "definition": "A postnominal clause modifying a noun phrase",
+      "subtypes": {
+        "restrictive": { "punctuation": "No commas", "pronouns": ["that", "who", "which"], "example": "The model that won the benchmark used attention." },
+        "non_restrictive": { "punctuation": "Enclosed in commas", "pronouns": ["which", "who"], "example": "The transformer, which was introduced in 2017, changed NLP." }
+      }
+    },
+    "dependent_noun_clause": {
+      "definition": "A clause functioning as a grammatical subject, direct object, or complement",
+      "markers": ["that", "whether", "if", "what", "how"],
+      "example": "We hypothesized that language models exhibit emergent behavior."
+    },
+    "non_finite_clause": {
+      "types": {
+        "infinitive": "to + Verb (e.g., 'to evaluate performance')",
+        "gerund_participle": "Verb-ing (e.g., 'optimizing the weights')",
+        "past_participle": "Verb-ed/-en (e.g., 'trained on large text')"
+      }
+    }
+  }
+}

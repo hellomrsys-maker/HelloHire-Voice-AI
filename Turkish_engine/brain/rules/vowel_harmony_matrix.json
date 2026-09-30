@@ -1,0 +1,34 @@
+{
+  "vowel_classification": {
+    "front_unrounded": ["e", "i"],
+    "front_rounded": ["ö", "ü"],
+    "back_unrounded": ["a", "ı"],
+    "back_rounded": ["o", "u"]
+  },
+  "two_way_harmony": {
+    "e": "e", "i": "e", "ö": "e", "ü": "e",
+    "a": "a", "ı": "a", "o": "a", "u": "a"
+  },
+  "four_way_harmony": {
+    "e": "i", "i": "i",
+    "a": "ı", "ı": "ı",
+    "ö": "ü", "ü": "ü",
+    "o": "u", "u": "u"
+  },
+  "suffix_harmony_types": {
+    "plural": "two_way",
+    "dative": "two_way",
+    "locative": "two_way",
+    "ablative": "two_way",
+    "conditional": "two_way",
+    "accusative": "four_way",
+    "genitive": "four_way",
+    "past": "four_way",
+    "evidential": "four_way",
+    "possessive_1sg": "four_way",
+    "possessive_2sg": "four_way",
+    "possessive_3sg": "four_way",
+    "possessive_1pl": "four_way",
+    "possessive_2pl": "four_way"
+  }
+}

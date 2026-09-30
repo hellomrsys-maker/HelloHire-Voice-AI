@@ -1,0 +1,25 @@
+{
+  "lexicons_specifications": {
+    "morphological_dictionaries": [
+      {"name": "UniDic", "authority": "NINJAL", "description": "Gold standard short-unit (SUW) and long-unit (LUW) lexicon with lemma keys and pronunciation forms"},
+      {"name": "NAIST-JDIC", "description": "Core MeCab dictionary for broad lexical coverage"},
+      {"name": "JMdict/EDICT", "description": "Open Japanese-English multilingual lexical database"}
+    ],
+    "kanji_databases": [
+      {"name": "KANJIDIC2", "features": ["Jouyou level", "Radical index", "Stroke count", "On/Kun readings", "Nanori readings", "English meanings"]}
+    ],
+    "pitch_accent_lexicons": [
+      {"source": "NHK Japanese Pronunciation and Accent Dictionary", "coverage": "75,000 words with Tokyo standard pitch kernel indices (0 to N)"},
+      {"source": "Daijirin Accent Data", "format": "Mora integer kernel annotations"}
+    ],
+    "keigo_verb_tables": {
+      "suppletive_inventory": "40 primary irregular honorific verbs mapped across Plain, Sonkeigo, Kenjougo, and Teineigo."
+    },
+    "counter_tables": {
+      "classifier_count": "150+ classifiers with complete numeral euphony mutation matrices (1 to 100)."
+    },
+    "proper_nouns_dictionaries": {
+      "problem": "Lack of capitalization cues in Japanese scripts requires specialized Gazeteer dictionaries for person names (人名辞書), place names (地名辞書), and corporate organizations (会社名辞書)."
+    }
+  }
+}

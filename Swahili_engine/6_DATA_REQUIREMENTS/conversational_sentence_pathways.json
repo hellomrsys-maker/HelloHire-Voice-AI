@@ -1,0 +1,62 @@
+{
+  "language": "Swahili",
+  "engine": "D:\\gra.voi\\Swahili_engine",
+  "iso_code": "swa",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "swa_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Mhandisi amebuni usanifu bora wa mifumo iliyosambazwa.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Tumetekeleza itifaki ya ulandanishaji wa kumbukumbu kwa mafanikio.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "swa_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Watafiti wamechapisha ripoti muhimu kuhusu akili bandia.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Mbunifu wa programu ameboresha mchakato wa uchakataji wa data (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "swa_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Mfumo wa akili bandia unatathmini muktadha wa lugha kwa ufasaha.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Timu ya watengenezaji imekamilisha majaribio yote kwa ufanisi (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "swa_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Kumbukumbu ya kasi kubwa inalinda uadilifu wa data bila kuchelewa.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Tulifanya majaribio thabiti ya utendakazi wa mfumo mzima (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

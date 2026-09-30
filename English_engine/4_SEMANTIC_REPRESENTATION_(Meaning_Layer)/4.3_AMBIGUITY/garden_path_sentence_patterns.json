@@ -1,0 +1,22 @@
+{
+  "garden_path_sentence_patterns": {
+    "reduced_relative_clause": {
+      "canonical_sentence": "The horse raced past the barn fell.",
+      "initial_misparse": "The horse [Subject] raced [Main Verb] past the barn...",
+      "disambiguated_parse": "The horse [that was] raced past the barn [Reduced Relative Clause] fell [Main Verb].",
+      "mechanism": "Ambiguity between past tense finite verb and past participle"
+    },
+    "noun_verb_ambiguity": {
+      "canonical_sentence": "The old man the boat.",
+      "initial_misparse": "The old man [NP Subject] ... (expects VP)",
+      "disambiguated_parse": "The old [Nominalized Adjective Plural Subject] man [Verb: to operate] the boat.",
+      "mechanism": "Categorical POS ambiguity of 'old' and 'man'"
+    },
+    "clause_boundary_ambiguity": {
+      "canonical_sentence": "While the woman was reading the letter fell from her hand.",
+      "initial_misparse": "While the woman was reading the letter [Direct Object]...",
+      "disambiguated_parse": "While the woman was reading, [Clause Boundary] the letter fell from her hand.",
+      "remedy": "Insert disambiguating comma"
+    }
+  }
+}

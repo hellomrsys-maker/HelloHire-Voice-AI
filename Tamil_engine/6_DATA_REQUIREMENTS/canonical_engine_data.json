@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Tamil",
+    "engine": "Tamil_engine",
+    "iso_codes": [
+      "tam",
+      "ta"
+    ],
+    "scripts": [
+      "Tamil"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Tamil",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "tam_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Tamil)",
+          "How are operations (Tamil)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "tam_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Tamil)",
+          "Report readiness (Tamil)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "பொறியாளர் மிகச்சிறந்த விநியோகிக்கப்பட்ட கணினி கட்டமைப்பை உருவாக்கினார்.",
+    "நாங்கள் ஒத்திசைவான நினைவக நெறிமுறையை வெற்றிகரமாகச் செயல்படுத்தினோம்.",
+    "ஆராய்ச்சிக் குழு செயற்கை நுண்ணறிவு பற்றிய ஆய்வறிக்கையை வெளியிட்டது.",
+    "மென்பொருள் வடிவமைப்பாளர் தரவு செயலாக்கப் பாதையை மேம்படுத்தினார் (using optimal hyper-parameters).",
+    "செயற்கை நுண்ணறிவு பலமொழி உரைகளை மிகத் துல்லியமாக பகுப்பாய்வு செய்கிறது.",
+    "உருவாக்கக் குழு அனைத்து ஒருங்கிணைப்பு சோதனைகளையும் முடித்தது (on multi-core architectures).",
+    "அதிவேக நினைவகம் தரவு ஒருமைப்பாட்டை தாமதமின்றி உறுதி செய்கிறது.",
+    "நாங்கள் கடுமையான செயல்திறன் சோதனைகளை மேற்கொண்டுள்ளோம் (under heavy loads).",
+    "பொறியாளர் மிகச்சிறந்த விநியோகிக்கப்பட்ட கணினி கட்டமைப்பை உருவாக்கினார்.",
+    "நாங்கள் ஒத்திசைவான நினைவக நெறிமுறையை வெற்றிகரமாகச் செயல்படுத்தினோம்.",
+    "ஆராய்ச்சிக் குழு செயற்கை நுண்ணறிவு பற்றிய ஆய்வறிக்கையை வெளியிட்டது.",
+    "மென்பொருள் வடிவமைப்பாளர் தரவு செயலாக்கப் பாதையை மேம்படுத்தினார் (using optimal hyper-parameters).",
+    "செயற்கை நுண்ணறிவு பலமொழி உரைகளை மிகத் துல்லியமாக பகுப்பாய்வு செய்கிறது.",
+    "உருவாக்கக் குழு அனைத்து ஒருங்கிணைப்பு சோதனைகளையும் முடித்தது (on multi-core architectures).",
+    "அதிவேக நினைவகம் தரவு ஒருமைப்பாட்டை தாமதமின்றி உறுதி செய்கிறது.",
+    "நாங்கள் கடுமையான செயல்திறன் சோதனைகளை மேற்கொண்டுள்ளோம் (under heavy loads).",
+    "பொறியாளர் மிகச்சிறந்த விநியோகிக்கப்பட்ட கணினி கட்டமைப்பை உருவாக்கினார்.",
+    "நாங்கள் ஒத்திசைவான நினைவக நெறிமுறையை வெற்றிகரமாகச் செயல்படுத்தினோம்.",
+    "ஆராய்ச்சிக் குழு செயற்கை நுண்ணறிவு பற்றிய ஆய்வறிக்கையை வெளியிட்டது.",
+    "மென்பொருள் வடிவமைப்பாளர் தரவு செயலாக்கப் பாதையை மேம்படுத்தினார் (using optimal hyper-parameters)."
+  ]
+}

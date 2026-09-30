@@ -1,0 +1,48 @@
+{
+  "address_registers": {
+    "formal": {
+      "name": "bahasa_baku",
+      "pronouns_2nd": ["Bapak", "Ibu", "Anda", "Saudara", "Saudari"],
+      "pronouns_1st": ["Saya", "Kami"],
+      "salutations": [
+        "Dengan hormat,",
+        "Yang terhormat Bapak/Ibu,",
+        "Yth. Direktur Utama,"
+      ],
+      "closings": [
+        "Hormat kami,",
+        "Hormat saya,",
+        "Atas perhatian dan kerja sama Bapak/Ibu, kami ucapkan terima kasih."
+      ]
+    },
+    "informal": {
+      "name": "bahasa_gaul",
+      "pronouns_2nd": ["Kamu", "Kalian", "Lu"],
+      "pronouns_1st": ["Aku", "Gue"],
+      "salutations": ["Halo", "Hai"],
+      "closings": ["Sampai jumpa", "Dadah"]
+    }
+  },
+  "dialect_mappings_gaul_to_baku": {
+    "nggak": "tidak",
+    "gak": "tidak",
+    "kagak": "tidak",
+    "banget": "sangat",
+    "udah": "sudah",
+    "belom": "belum",
+    "bikin": "membuat",
+    "ngeliat": "melihat",
+    "ngomong": "berbicara",
+    "pake": "memakai",
+    "gini": "seperti ini",
+    "gitu": "seperti itu",
+    "bisaan": "bisa"
+  },
+  "peribahasa": [
+    {"phrase": "ada udang di balik batu", "meaning": "hidden motive"},
+    {"phrase": "sambil menyelam minum air", "meaning": "two birds with one stone"},
+    {"phrase": "tong kosong nyaring bunyinya", "meaning": "empty vessels make most sound"},
+    {"phrase": "besar pasak daripada tiang", "meaning": "spending beyond means"},
+    {"phrase": "air tenang menghanyutkan", "meaning": "still waters run deep"}
+  ]
+}

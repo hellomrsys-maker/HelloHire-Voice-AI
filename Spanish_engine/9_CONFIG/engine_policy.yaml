@@ -1,0 +1,35 @@
+engine_name: "SpanishLanguageEngine"
+version: "1.0.0"
+iso_639_1: "es"
+iso_639_3: "spa"
+
+invariants:
+  word_order: "SVO"
+  null_subject: true
+  mandatory_inverted_punctuation: true
+  zero_bridge_memory: true
+  amsv_size_bytes: 64
+
+thresholds:
+  min_agreement_concordance: 0.90
+  min_subjunctive_alignment: 0.85
+  min_copula_disambiguation: 0.90
+  min_preposition_por_para: 0.88
+
+dialect_profile:
+  default_dialect: "General_Latin_American"
+  supported_dialects:
+    - "Peninsular_Standard"
+    - "Mexican_Standard"
+    - "Rioplatense_Voseo"
+    - "Andean_Standard"
+    - "Caribbean_Standard"
+
+amsv_sync:
+  capability_1_syntax: 18         # 0x12
+  capability_2_discourse: 20      # 0x14
+  capability_3_pragmatics: 22     # 0x16
+  capability_4_phonology: 24      # 0x18
+  capability_5_editorial: 26      # 0x1A
+  global_structural_state: 52     # 0x34
+  global_register_state: 54       # 0x36

@@ -1,0 +1,50 @@
+{
+  "sentence_structure": {
+    "canonical_order": {
+      "typology": "Strictly Head-Final, Subject-Object-Verb (SOV)",
+      "predicate_position": "Sentence-final (Main verb, copula, or predicative adjective always closes the clause)",
+      "modifier_rule": "Modifiers strictly precede their heads (Adjectives precede nouns; adverbs precede verbs; relative clauses precede head nouns)"
+    },
+    "bunsetsu_chunks": {
+      "definition": "The minimal pronounceable phrasal unit in Japanese, composed of one content word (Jiritsugo) followed by zero or more clitic functional words (Fuzokugo: particles/auxiliaries).",
+      "example": {
+        "sentence": "私は図書館で本を読む。",
+        "chunks": [
+          {"id": 0, "content": "私は", "jiritsugo": "私", "fuzokugo": "は", "head_id": 3},
+          {"id": 1, "content": "図書館で", "jiritsugo": "図書館", "fuzokugo": "で", "head_id": 3},
+          {"id": 2, "content": "本を", "jiritsugo": "本", "fuzokugo": "を", "head_id": 3},
+          {"id": 3, "content": "読む。", "jiritsugo": "読む", "fuzokugo": "。", "head_id": -1}
+        ]
+      }
+    },
+    "clauses": {
+      "relative_clauses": {
+        "rule": "Relative clauses precede the noun they modify with NO relative pronouns (e.g. who, which, that).",
+        "example": "昨日買った本 (The book that [I] bought yesterday)",
+        "ga_no_conversion": "In adnominal relative clauses, subject particle 'が' optionally converts to 'の' (私が書いた論文 -> 私の書いた論文)"
+      }
+    },
+    "topic_comment": {
+      "distinction": "Topic (は) establishes discourse frame; Comment makes an assertion about the topic.",
+      "classic_example": {
+        "sentence": "象は鼻が長い。",
+        "literal": "As for the elephant, the trunk is long.",
+        "analysis": "象は = Topic (not grammatical subject of 長い); 鼻が = Syntactic subject of predicate 長い."
+      }
+    },
+    "word_order_flexibility": {
+      "scrambling": "Pre-verbal constituents can freely reorder (scramble) without changing propositional truth value because case particles uniquely designate grammatical roles.",
+      "permutations": [
+        "太郎が花子に本をあげた。 (Canonical SOV)",
+        "花子に太郎が本をあげた。 (Scrambled)",
+        "本を太郎が花子にあげた。 (Scrambled for topical emphasis)"
+      ]
+    },
+    "sentence_types": {
+      "declarative": "Ends in shuushikei verb or copula (本を読む / 本です).",
+      "interrogative": "Formed by adding sentence-final particle 'か' (or rising intonation) without subject-aux inversion (本を読みますか).",
+      "imperative": "Formed via Meireikei (読め) or request auxiliary (読んでください).",
+      "exclamative": "Marked via final particles (なんと美しいことか / すごいな)."
+    }
+  }
+}

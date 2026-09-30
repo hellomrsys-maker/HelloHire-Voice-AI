@@ -1,0 +1,1914 @@
+{
+  "book_id": "book2_dk",
+  "sentences_extracted": 205,
+  "writing_corpus": [
+    [
+      "All rights reserved.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Published in Great Britain by Dorling Kindersley Limited.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The base form of the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "With \"he,\" \"she,\" and \"it,\" \"-s\" is added.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "With \"he,\" \"she,\" and \"it,\" add \"-s\" to the base form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The subject comes after the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is formed with \"be\" and a present participle.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Action verbs can be used in simple and continuous forms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "State verbs are not usually used in continuous forms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This action is happening right now.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "This is always true.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is a temporary situation.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is a repeated action.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is a continuing state.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "An exclamation mark is used if the imperative is urgent.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Fixed point in the past.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "She is still in Florida.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "UK English would use the present perfect.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Use \"had\" followed by the past participle to form the past perfect.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Refers to a past habit.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Refers to a past state.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Narrative tenses are types of past tense that are used when telling a story.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The past continuous is used to set the scene. The past simple describes actions in the story.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The past perfect is used to talk about things that happened before the beginning of the story.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Future forms in English are formed using auxiliary verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In these cases, it is only used with \"I\" or \"we.\" It is rarely used in US English.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The future perfect continuous can be used to predict the length of an activity.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This tense looks back from the imagined finishing time in the future.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "There are three ways to form this construction.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This decision has already been planned.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In the present simple passive, the present simple verb becomes a past participle.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is not known or important who will catch the thief.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Modal verbs in English can be used in passive forms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They can use many different verb forms.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "The order is reversed, so there is no comma.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The second conditional is usually introduced by an \"if\" clause with a past simple verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "So this didn't happen either.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "A comma is used if the action comes first.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Present tense shows the speaker believes this is likely to happen.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "In a statement, the subject comes before the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Auxiliary comes first.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Main verb doesn't move.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The subject and \"was / were\" swap places.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past simple statement.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "There are nine common question words in English.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Why is used to ask for reasons.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Who is used to ask about people.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The question includes a choice of possible answers.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "There are no choices in the question.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Auxiliary \"do\" follows the question word.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A polite opening phrase comes first.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indirect questions start with an opening phrase.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb comes after the subject.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indirect questions are more polite than direct questions.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The subject comes before the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In this context, \"if\" and \"whether\" mean the same thing.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Question tag uses negative form of verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Question tag uses positive form of verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Short questions must be in the same tense as the statement they're responding to.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "If the statement is positive, the short question should be positive and vice versa.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The subject from the statement is replaced with the relevant pronoun.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Subject questions ask who did an action.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A form of \"do\" goes before the subject.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The main verb goes in its base form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The words that people say are called direct speech.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Direct speech uses the present simple.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Amelia still likes eating cake.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Past simple negative.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Present simple negative.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "An object can be included to say who was asked the original question.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The object of the reporting verb can be left out.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The tense doesn't always change.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The object can be left out.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb changes tense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The reporting verb can be in the present tense.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In this case, the tense of the sentence doesn't change.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The tense usually moves back.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Most modal verbs, except for \"will\" and \"can,\" behave differently from other verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "No matter what the tense of the direct speech, they don't change in reported speech.",
+      1.0,
+      0,
+      2
+    ],
+    [
+      "Verbs can be described as main verbs or auxiliary verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Main verbs describe actions, occurrences, or states of being.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Auxiliary verbs modify the meaning of main verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Action verbs usually describe what people or things do.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "State verbs usually say how things are or how someone feels.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A few state verbs can be used in continuous forms, keeping their stative meaning.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The use of a continuous form emphasizes a change, development, or temporary situation.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The infinitive is the simplest form of the verb. English verbs have two types of infinitive.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Present participles and gerunds are formed by adding \"-ing\" to the base form of the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They are spelled the same, but they perform different functions in a sentence.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "The \"-e\" is dropped from the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The infinitive doesn't change no matter what the tense of the main verb is.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "You can often use both forms interchangeably.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The particle often changes the usual meaning of the verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Negatives are formed in the usual way.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb after \"can\" goes in its base form.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Describes a present ability.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Describes a past ability.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is not usually used in the negative or question forms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Very strong suggestion.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Stronger suggestion.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They are often used to give important instructions.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "The exact one is not yet known.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Use \"some\" to talk about more than one thing.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Referring to an invention, not an individual telescope.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Referring to a species of animal, not an individual animal.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Referring to a type of musical instrument, not an individual instrument.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "There's no idea of a number.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The house is close to you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The house is farther away from you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The dog is close to you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The dog is farther away from you.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They point out a specific thing.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Means all the times.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Means all the places.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Common nouns often come after articles.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adjectives describe nouns.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some other nouns have completely irregular plurals.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A good dictionary can be used to check these.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some nouns do not change in the plural.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In English, nouns can be countable or uncountable.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "For both countable and uncountable nouns, \"any\" is used in negative sentences and questions.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb is singular.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Tales is a single work of literature.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "English they can often be used with either singular or plural verbs.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Some abstract nouns have both countable and uncountable forms.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "US English each number is said individually. In UK English, other expressions are possible.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "In US English, this is considered informal.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates too little.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates there are too few.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates more than enough.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "English. It emphasizes how small the amount is.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "If specific figures are known, it can be useful to give them.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicate that the quantity is not exact.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates that the difference is small.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates that the difference is large.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Indicates that the number is slightly less.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Personal pronouns are used to replace nouns in a sentence.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb is negative.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The verb is positive.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Although \"have\" is irregular, its negative is formed in the usual way.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The negative form can also be contracted as with other verbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Non-defining relative clauses can come in the middle of a sentence, or at the end.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Do not invert the subject and verb.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Here, \"whichever\" is an object.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Here, \"whoever\" is a subject.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "John who I met before.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is called substitution.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The noun can be replaced with a pronoun.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Opinion adjectives describe what somebody thinks about something.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "General opinion adjectives can describe lots of different things.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Specific opinion adjectives can only usually describe a certain type of thing.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The man experiences fright.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The spider causes fright.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adjectives that end in \"-ing\" describe the effect something has.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adjectives ending in \"-ed\" describe how something is affected.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Comparative adjectives are used to compare two things.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Emphasizing equality.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Comparing similarity.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Specific degree of difference.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Emphasizing difference.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The adjective stays the same.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "These modifiers make the superlative stronger.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Words such as \"quietly\" and \"loudly\" are adverbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The \"-y\" is dropped.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Adverbs that can be used with gradable adjectives are called grading adverbs.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They can be used to make an adjective's meaning stronger or weaker.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Some adverbs can only be paired with certain adjectives.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They cannot usually be used with gradable adjectives.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "They can also refer to a continuing event or action.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Means something has happened very recently.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Means something has happened.",
+      1.0,
+      0,
+      4
+    ],
+    [
+      "Frequency can also be described with more precise expressions.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Unlike adverbs of frequency, these must sit at the end of a phrase.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Balloons are countable.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Food is uncountable.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Chrissy goes to the gym.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Since can't be used with the present simple.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is used to talk about possession.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some verbs can take either \"to\" or \"for,\" depending on the context.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The present perfect still describes a future event.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Subject of first main clause.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They can be coordinating or subordinating.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "Roots ending \"-ge\" or \"-ce\" are an exception.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The structure is used with \"should\" to give advice.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This is known as backchanneling.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Imperatives are used to give commands or to make requests.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They are formed using the base form of the verb.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "The past simple describes single, completed actions in the past.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "It is the most commonly used past tense in English.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The future perfect continuous is used to predict the length of an activity.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "This tense looks back from that imagined time in the future.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some adjectives have to be followed by a specific preposition.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some nouns have to be followed by a specific preposition.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Some verbs have to be followed by a specific preposition.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Most plurals in English are formed by adding \"-s\" to the end of the singular noun.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "However, some plurals are irregular, either taking a different ending, or not changing at all.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Linking words are used to link two or more words, phrases or clauses together.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "They are usually conjunctions, but can also be adverbial phrases.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "English has lots of words to talk about when things happen. They usually act as prepositions, conjunctions, or adverbs.",
+      1.0,
+      0,
+      3
+    ],
+    [
+      "An order to someone, e.g.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "I gave the ball to the dog.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A group of one or more clauses.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The person / thing / place, etc.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "A verb that takes a direct object.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "The English letters a, e, i, o, u.",
+      1.0,
+      0,
+      0
+    ],
+    [
+      "Because the linguistic committee delayed their final decision.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Although the experimental results contradicted earlier findings.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "While the syntactic trees were being computed in the laboratory.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Whereas classical grammarians emphasized morphological inflection.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Since no conclusive evidence could be extracted from the text.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Unless the author clarifies the ambiguous antecedent on line twelve.",
+      0.0,
+      0,
+      0
+    ],
+    [
+      "Whenever an intransitive verb appears without a direct object.",
+      0.0,
+      0,
+      0
+    ]
+  ],
+  "email_corpus": [
+    [
+      "Fixed point in the past.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Short questions must be in the same tense as the statement they're responding to.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Unlike adverbs of frequency, these must sit at the end of a phrase.",
+      0.25,
+      3,
+      0.65,
+      3
+    ],
+    [
+      "Dear Dr. Patel, could you please review the attached document? Best regards, Alex.",
+      0.96,
+      0,
+      0.04,
+      0
+    ],
+    [
+      "Dear Professor Schmidt, could you please let me know if Friday works for our seminar? Sincerely, Marcus.",
+      0.94,
+      0,
+      0.05,
+      0
+    ],
+    [
+      "Hi team, please find attached the revised quarterly projections for your review. Thanks, David.",
+      0.8,
+      1,
+      0.1,
+      1
+    ],
+    [
+      "Send me the updated database passwords right now.",
+      0.15,
+      3,
+      0.75,
+      3
+    ],
+    [
+      "You must rewrite this report immediately without any excuses.",
+      0.1,
+      3,
+      0.85,
+      3
+    ]
+  ],
+  "listening_corpus": [
+    [
+      "With \"he,\" \"she,\" and \"it,\" add \"-s\" to the base form.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Use \"had\" followed by the past participle to form the past perfect.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Narrative tenses are types of past tense that are used when telling a story.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The past continuous is used to set the scene. The past simple describes actions in the story.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The past perfect is used to talk about things that happened before the beginning of the story.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "In these cases, it is only used with \"I\" or \"we.\" It is rarely used in US English.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The future perfect continuous can be used to predict the length of an activity.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "This tense looks back from the imagined finishing time in the future.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "In the present simple passive, the present simple verb becomes a past participle.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "It is not known or important who will catch the thief.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The second conditional is usually introduced by an \"if\" clause with a past simple verb.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Present tense shows the speaker believes this is likely to happen.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Short questions must be in the same tense as the statement they're responding to.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "If the statement is positive, the short question should be positive and vice versa.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The subject from the statement is replaced with the relevant pronoun.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "An object can be included to say who was asked the original question.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Most modal verbs, except for \"will\" and \"can,\" behave differently from other verbs.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "No matter what the tense of the direct speech, they don't change in reported speech.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "State verbs usually say how things are or how someone feels.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "A few state verbs can be used in continuous forms, keeping their stative meaning.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The use of a continuous form emphasizes a change, development, or temporary situation.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The infinitive is the simplest form of the verb. English verbs have two types of infinitive.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Present participles and gerunds are formed by adding \"-ing\" to the base form of the verb.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "They are spelled the same, but they perform different functions in a sentence.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The infinitive doesn't change no matter what the tense of the main verb is.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "It is not usually used in the negative or question forms.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Referring to a type of musical instrument, not an individual instrument.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "For both countable and uncountable nouns, \"any\" is used in negative sentences and questions.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "English they can often be used with either singular or plural verbs.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "US English each number is said individually. In UK English, other expressions are possible.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "If specific figures are known, it can be useful to give them.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Although \"have\" is irregular, its negative is formed in the usual way.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The negative form can also be contracted as with other verbs.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Non-defining relative clauses can come in the middle of a sentence, or at the end.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Specific opinion adjectives can only usually describe a certain type of thing.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Adverbs that can be used with gradable adjectives are called grading adverbs.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "They can be used to make an adjective's meaning stronger or weaker.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Unlike adverbs of frequency, these must sit at the end of a phrase.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Some verbs can take either \"to\" or \"for,\" depending on the context.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "The future perfect continuous is used to predict the length of an activity.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "This tense looks back from that imagined time in the future.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Most plurals in English are formed by adding \"-s\" to the end of the singular noun.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "However, some plurals are irregular, either taking a different ending, or not changing at all.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "Linking words are used to link two or more words, phrases or clauses together.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "English has lots of words to talk about when things happen. They usually act as prepositions, conjunctions, or adverbs.",
+      0,
+      0.55,
+      0
+    ],
+    [
+      "I'd've gone to the conference if the train had not been delayed.",
+      1,
+      0.85,
+      0
+    ],
+    [
+      "Whaddya think about the new universal syntax model?",
+      2,
+      0.78,
+      0
+    ],
+    [
+      "We're gonna analyze the acoustic speech waveform tomorrow.",
+      3,
+      0.72,
+      0
+    ],
+    [
+      "Do you wanna review the experimental results together this afternoon?",
+      4,
+      0.68,
+      0
+    ],
+    [
+      "You gotta make sure you're ready for the phonology quiz.",
+      6,
+      0.7,
+      0
+    ]
+  ],
+  "pronunciation_corpus": [
+    [
+      "Published in Great Britain by Dorling Kindersley Limited.",
+      0.92,
+      0,
+      0.88
+    ],
+    [
+      "The subject comes after the verb.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "It is formed with \"be\" and a present participle.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "UK English would use the present perfect.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "In the present simple passive, the present simple verb becomes a past participle.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Present tense shows the speaker believes this is likely to happen.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "In a statement, the subject comes before the verb.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The subject and \"was / were\" swap places.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The verb comes after the subject.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The subject comes before the verb.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The subject from the statement is replaced with the relevant pronoun.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Subject questions ask who did an action.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "A form of \"do\" goes before the subject.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Direct speech uses the present simple.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Present simple negative.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "An object can be included to say who was asked the original question.",
+      0.92,
+      0,
+      0.88
+    ],
+    [
+      "The object of the reporting verb can be left out.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "The object can be left out.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "The reporting verb can be in the present tense.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "Present participles and gerunds are formed by adding \"-ing\" to the base form of the verb.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "Describes a present ability.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The negative form can also be contracted as with other verbs.",
+      0.9,
+      1,
+      0.9
+    ],
+    [
+      "Do not invert the subject and verb.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Here, \"whichever\" is an object.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Here, \"whoever\" is a subject.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Since can't be used with the present simple.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The present perfect still describes a future event.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "Subject of first main clause.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "A verb that takes a direct object.",
+      0.9,
+      0,
+      0.9
+    ],
+    [
+      "The student walked to school and asked several insightful questions.",
+      0.94,
+      0,
+      0.88
+    ],
+    [
+      "The official RE-cord of the committee was archived.",
+      0.92,
+      0,
+      0.92
+    ],
+    [
+      "Please re-CORD the audio signal inside the chamber.",
+      0.91,
+      1,
+      0.91
+    ],
+    [
+      "A rare archaeological OB-ject was uncovered near the temple.",
+      0.92,
+      0,
+      0.89
+    ],
+    [
+      "They ob-JECT strongly to the proposed methodological changes.",
+      0.9,
+      1,
+      0.9
+    ]
+  ],
+  "reviewing_corpus": [
+    [
+      "In the present simple passive, the present simple verb becomes a past participle.",
+      1,
+      0.6,
+      1.0
+    ],
+    [
+      "Modal verbs in English can be used in passive forms.",
+      1,
+      0.6,
+      1.0
+    ],
+    [
+      "In US English, this is considered informal.",
+      2,
+      0.75,
+      1.0
+    ],
+    [
+      "In Section 3 on page 14, the subject-verb concord completely fails: 'they is' must be corrected to 'they are'.",
+      0,
+      0.15,
+      1.0
+    ],
+    [
+      "Page 8, line 22: The double negative creates an unintended contradictory assertion in the proof.",
+      0,
+      0.2,
+      1.0
+    ],
+    [
+      "On page 5, the antecedent of the pronoun 'it' is ambiguous across the two preceding noun phrases.",
+      1,
+      0.65,
+      1.0
+    ],
+    [
+      "The author might consider softening the tone in paragraph 2, as colloquial slang clashes with journal style.",
+      2,
+      0.85,
+      1.0
+    ],
+    [
+      "You may optionally prefer the Oxford comma here for aesthetic balance, though the sentence is grammatically sound.",
+      3,
+      0.95,
+      0.8
+    ]
+  ],
+  "book_writing_corpus": [
+    [
+      "The detective walked into the abandoned study. Rain battered the dark window panes. He noticed the drawer was open.",
+      0.03,
+      0.04,
+      3
+    ],
+    [
+      "The detective walked into the room. Rain batters the window panes and he sees the broken lock on the door.",
+      0.88,
+      0.1,
+      2
+    ],
+    [
+      "Three hundred pages after introducing Lord Harrington's second cousin once, the narrative simply states 'he died'.",
+      0.1,
+      0.92,
+      1
+    ]
+  ]
+}

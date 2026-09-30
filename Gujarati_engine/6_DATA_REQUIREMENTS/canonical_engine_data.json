@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Gujarati",
+    "engine": "Gujarati_engine",
+    "iso_codes": [
+      "guj",
+      "gu"
+    ],
+    "scripts": [
+      "Gujarati"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Gujarati",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "guj_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Gujarati)",
+          "How are operations (Gujarati)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "guj_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Gujarati)",
+          "Report readiness (Gujarati)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "ઇજનેરે અત્યંત કાર્યક્ષમ વિતરિત સિસ્ટમ વિકસાવી છે.",
+    "વિદ્યાર્થીઓએ જટિલ ન્યુરલ નેટવર્કને સારી રીતે સમજી લીધું છે.",
+    "અમે શૂન્ય-વિલંબ સમન્વયિત મેમરી પ્રોટોકોલ સફળતાપૂર્વક લાગુ કર્યો.",
+    "પ્રોફેસરે જનરેટિવ વ્યાકરણના સિદ્ધાંતો વિગતવાર સમજાવ્યા.",
+    "સંશોધન ટીમે કૃત્રિમ બુદ્ધિ પર એક મહત્વપૂર્ણ સંશોધન પત્ર પ્રકાશિત કર્યું.",
+    "સોફ્ટવેર આર્કિટેક્ટે ડેટા પ્રોસેસિંગ પાઇપલાઇનને શ્રેષ્ઠ બનાવી.",
+    "કૃત્રિમ બુદ્ધિ બહુભાષી પાઠ્યનું સચોટ વિશ્લેષણ કરે છે.",
+    "વિકાસ ટીમે તમામ એકીકરણ પરીક્ષણો સફળતાપૂર્વક પૂર્ણ કર્યા.",
+    "હાઇ-સ્પીડ મેમરી બસ રીઅલ-ટાઇમ ડેટા સુસંગતતા સુનિશ્ચિત કરે છે.",
+    "વિશ્વસનીયતા સાબિત કરવા અમે કડક બેન્ચમાર્ક પરીક્ષણો કર્યા.",
+    "બાળકોએ પુસ્તકાલયમાં રસપ્રદ પુસ્તકો વાંચ્યા.",
+    "આજે હવામાન ખૂબ જ સરસ અને ખુશનુમા છે.",
+    "ખેડૂતોએ ખેતરોમાં પાકની લણણી શરૂ કરી.",
+    "વૈજ્ઞાનિકે નવા અલ્ગોરિધમની ચોકસાઈ ચકાસી.",
+    "ઇજનેરે અત્યંત કાર્યક્ષમ વિતરિત સિસ્ટમ વિકસાવી છે. [14]",
+    "વિદ્યાર્થીઓએ જટિલ ન્યુરલ નેટવર્કને સારી રીતે સમજી લીધું છે. [15]",
+    "અમે શૂન્ય-વિલંબ સમન્વયિત મેમરી પ્રોટોકોલ સફળતાપૂર્વક લાગુ કર્યો. [16]",
+    "પ્રોફેસરે જનરેટિવ વ્યાકરણના સિદ્ધાંતો વિગતવાર સમજાવ્યા. [17]",
+    "સંશોધન ટીમે કૃત્રિમ બુદ્ધિ પર એક મહત્વપૂર્ણ સંશોધન પત્ર પ્રકાશિત કર્યું. [18]",
+    "સોફ્ટવેર આર્કિટેક્ટે ડેટા પ્રોસેસિંગ પાઇપલાઇનને શ્રેષ્ઠ બનાવી. [19]"
+  ]
+}

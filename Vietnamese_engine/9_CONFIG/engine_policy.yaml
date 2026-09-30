@@ -1,0 +1,66 @@
+# Vietnamese Language Engine Policy & Configuration Specification (Config Layer)
+
+engine:
+  name: "Vietnamese Language Engine"
+  code: "vi"
+  version: "1.0.0"
+  standard: "Contemporary Standard Vietnamese (Hanoi Academic Orthography)"
+  iso_639_1: "vi"
+  iso_639_3: "vie"
+  script: "Latin (Chữ Quốc Ngữ)"
+
+zero_bridge_memory:
+  magic_bytes: "0x56494554" # "VIET" in ASCII
+  vector_size_bytes: 64
+  alignment_bytes: 64
+  zero_latency_mode: true
+  byte_map:
+    magic: [0, 4]
+    version: [4, 6]
+    engine_mode: 6
+    dialect_mode: 7
+    tone_bitfield: [8, 16]
+    syntactic_flags: [16, 18]
+    syntax_sub_ai_capability: 18
+    classifier_concord: 19
+    tone_orthography: 20
+    tam_particle_flag: 21
+    kinship_tier: 22
+    politeness_flag: 23
+    confidence_score: [24, 28]
+    reserved_hardware: [28, 32]
+    semantic_vector: [32, 48]
+    task_status: [48, 52]
+    sub_ai_active:
+      syntax: 52
+      phonology: 53
+      pragmatic: 54
+      editorial: 55
+    attention_vector: [56, 64]
+
+linguistic_policy:
+  word_order: "SVO"
+  isolating_morphology: true
+  classifier_enforcement: "strict" # Mandates classifiers after numerals
+  tam_sequencing: "strict" # Validates preverbal TAM particles (đã, đang, sẽ)
+  tone_diacritic_standard: "new_standard" # Hanoi modern diphthong placement
+  kinship_symmetry: "enforced" # Verifies anh-em / ông-cháu concord
+  politeness_particles: "honorific_audit" # Audits presence of ạ in high-formal address
+
+sub_ais:
+  syntax:
+    name: "VietnameseSyntaxSubAI"
+    designated_bytes: [18, 52]
+    scope: "SVO topology, head-initial noun phrases, serial verb chaining"
+  phonology:
+    name: "VietnamesePhonologySubAI"
+    designated_bytes: [20, 53]
+    scope: "6-tone contour identification, Quốc Ngữ diacritics, syllable structure"
+  pragmatic:
+    name: "VietnamesePragmaticSubAI"
+    designated_bytes: [22, 23, 54]
+    scope: "Kinship deixis resolution, deference tiers, final particles (ạ, dạ)"
+  editorial:
+    name: "VietnameseEditorialSubAI"
+    designated_bytes: [19, 21, 24, 25, 26, 27, 55]
+    scope: "Classifier concord, preverbal TAM markers, confidence score"

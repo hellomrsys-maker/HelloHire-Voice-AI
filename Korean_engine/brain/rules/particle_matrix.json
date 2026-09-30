@@ -1,0 +1,64 @@
+{
+  "particles": {
+    "topic": {
+      "consonant": "은",
+      "vowel": "는",
+      "function": "theme_or_contrast"
+    },
+    "subject": {
+      "consonant": "이",
+      "vowel": "가",
+      "honorific": "께서",
+      "function": "grammatical_subject_focus"
+    },
+    "object": {
+      "consonant": "을",
+      "vowel": "를",
+      "function": "direct_object"
+    },
+    "genitive": {
+      "consonant": "의",
+      "vowel": "의",
+      "function": "possessive_adnominal"
+    },
+    "dative_inanimate": {
+      "consonant": "에",
+      "vowel": "에",
+      "function": "time_or_static_location_or_goal"
+    },
+    "locative_dynamic": {
+      "consonant": "에서",
+      "vowel": "에서",
+      "function": "dynamic_action_location_or_source"
+    },
+    "dative_animate": {
+      "consonant": "에게",
+      "vowel": "에게",
+      "colloquial": "한테",
+      "honorific": "께",
+      "function": "recipient_or_goal"
+    },
+    "instrumental": {
+      "consonant": "으로",
+      "vowel": "로",
+      "rieul_exception": "로",
+      "function": "instrument_means_or_direction"
+    },
+    "comitative": {
+      "consonant": "과",
+      "vowel": "와",
+      "colloquial_consonant": "이랑",
+      "colloquial_vowel": "랑",
+      "invariable": "하고",
+      "function": "conjunction_or_accompaniment"
+    },
+    "auxiliary": {
+      "also": "도",
+      "only": "만",
+      "until": "까지",
+      "from": "부터",
+      "each": "마다",
+      "even": "조차"
+    }
+  }
+}

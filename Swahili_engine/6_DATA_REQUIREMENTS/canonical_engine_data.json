@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Swahili",
+    "engine": "Swahili_engine",
+    "iso_codes": [
+      "swa",
+      "sw"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Swahili",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "swa_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Swahili)",
+          "How are operations (Swahili)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "swa_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Swahili)",
+          "Report readiness (Swahili)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Mhandisi amebuni usanifu bora wa mifumo iliyosambazwa.",
+    "Tumetekeleza itifaki ya ulandanishaji wa kumbukumbu kwa mafanikio.",
+    "Watafiti wamechapisha ripoti muhimu kuhusu akili bandia.",
+    "Mbunifu wa programu ameboresha mchakato wa uchakataji wa data (using optimal hyper-parameters).",
+    "Mfumo wa akili bandia unatathmini muktadha wa lugha kwa ufasaha.",
+    "Timu ya watengenezaji imekamilisha majaribio yote kwa ufanisi (on multi-core architectures).",
+    "Kumbukumbu ya kasi kubwa inalinda uadilifu wa data bila kuchelewa.",
+    "Tulifanya majaribio thabiti ya utendakazi wa mfumo mzima (under heavy loads).",
+    "Mhandisi amebuni usanifu bora wa mifumo iliyosambazwa.",
+    "Tumetekeleza itifaki ya ulandanishaji wa kumbukumbu kwa mafanikio.",
+    "Watafiti wamechapisha ripoti muhimu kuhusu akili bandia.",
+    "Mbunifu wa programu ameboresha mchakato wa uchakataji wa data (using optimal hyper-parameters).",
+    "Mfumo wa akili bandia unatathmini muktadha wa lugha kwa ufasaha.",
+    "Timu ya watengenezaji imekamilisha majaribio yote kwa ufanisi (on multi-core architectures).",
+    "Kumbukumbu ya kasi kubwa inalinda uadilifu wa data bila kuchelewa.",
+    "Tulifanya majaribio thabiti ya utendakazi wa mfumo mzima (under heavy loads).",
+    "Mhandisi amebuni usanifu bora wa mifumo iliyosambazwa.",
+    "Tumetekeleza itifaki ya ulandanishaji wa kumbukumbu kwa mafanikio.",
+    "Watafiti wamechapisha ripoti muhimu kuhusu akili bandia.",
+    "Mbunifu wa programu ameboresha mchakato wa uchakataji wa data (using optimal hyper-parameters)."
+  ]
+}

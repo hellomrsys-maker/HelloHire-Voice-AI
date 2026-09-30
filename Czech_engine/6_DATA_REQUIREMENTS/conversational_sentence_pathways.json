@@ -1,0 +1,75 @@
+{
+  "language": "Czech",
+  "engine": "D:\\gra.voi\\Czech_engine",
+  "iso_code": "ces",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "ces_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Inženýr navrhl mimořádně efektivní distribuovaný systém.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Studenti dokonale porozuměli složité neuronové síti.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ces_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Úspěšně jsme implementovali synchronní paměťový protokol s nulovou latencí.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Profesor podrobně vysvětlil teoretické principy generativní gramatiky.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ces_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Výzkumný tým publikoval významný vědecký článek o umělé inteligenci.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Softwarový architekt optimalizoval celý řetězec zpracování dat.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ces_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Umělá inteligence přesně analyzuje vícejazyčné textové korpusy.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Vývojový tým úspěšně dokončil všechny integrační testy.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ces_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Vysokorychlostní paměťová sběrnice zajišťuje konzistenci dat v reálném čase.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Provedli jsme přísné srovnávací testy k ověření spolehlivosti systému.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[package]
+name = "alie-stream-processor"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "alie_stream_processor"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

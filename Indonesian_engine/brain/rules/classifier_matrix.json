@@ -1,0 +1,36 @@
+{
+  "classifiers": {
+    "orang": {
+      "domain": "human",
+      "valid_nouns": ["guru", "anak", "dokter", "siswa", "teman", "presiden", "mahasiswa", "polisi", "pemimpin"]
+    },
+    "ekor": {
+      "domain": "animal",
+      "valid_nouns": ["kucing", "anjing", "burung", "ikan", "sapi", "kuda", "ayam", "harimau", "gajah"]
+    },
+    "buah": {
+      "domain": "inanimate_large_general",
+      "valid_nouns": ["buku", "rumah", "mobil", "meja", "gedung", "apel", "pisang", "negara", "rencana", "surat"]
+    },
+    "lembar": {
+      "domain": "flat_thin_sheets",
+      "valid_nouns": ["kertas", "kain", "surat", "foto", "daun", "ijazah"]
+    },
+    "batang": {
+      "domain": "cylindrical_long_sticks",
+      "valid_nouns": ["pohon", "pensil", "rokok", "kayu", "sungai", "lilin"]
+    },
+    "butir": {
+      "domain": "small_round_grains",
+      "valid_nouns": ["telur", "mutiara", "beras", "jagung", "pil"]
+    },
+    "pucuk": {
+      "domain": "letters_weapons",
+      "valid_nouns": ["surat", "senjata", "senapan", "pistol"]
+    },
+    "bilah": {
+      "domain": "sharp_blades",
+      "valid_nouns": ["pisau", "pedang", "keris", "parang"]
+    }
+  }
+}

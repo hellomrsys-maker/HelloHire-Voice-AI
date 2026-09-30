@@ -1,0 +1,32 @@
+{
+  "language": "Telugu",
+  "phonological_classification": "Ajanta Bhasha (అజంత భాష - All native words end in a vowel)",
+  "vowel_system_acchulu": {
+    "short_hrasvalu": ["అ (a)", "ఇ (i)", "ఉ (u)", "ఋ (ru)", "ఎ (e)", "ఒ (o)"],
+    "long_deerghalu": ["ఆ (aa)", "ఈ (ii)", "ఊ (uu)", "ౠ (ruu)", "ఏ (ee)", "ఐ (ai)", "ఓ (oo)", "ఔ (au)"],
+    "total_vowels": 14
+  },
+  "consonant_system_hallulu": {
+    "sparshamulu_stops": {
+      "kanthya_velar": ["క (ka)", "ఖ (kha)", "గ (ga)", "ఘ (gha)", "ఙ (nga)"],
+      "talavya_palatal": ["చ (ca)", "ఛ (cha)", "జ (ja)", "ఝ (jha)", "ఞ (nya)"],
+      "murdhanya_retroflex": ["ట (ta)", "ఠ (tha)", "డ (da)", "ఢ (dha)", "ణ (na)"],
+      "dantya_dental": ["త (ta)", "థ (tha)", "ద (da)", "ధ (dha)", "న (na)"],
+      "oshtya_labial": ["ప (pa)", "ఫ (pha)", "బ (ba)", "భ (bha)", "మ (ma)"]
+    },
+    "anthasthulu_approximants": ["య (ya)", "ర (ra)", "ల (la)", "వ (va)", "ళ (la retroflex)", "ఱ (bandira)"],
+    "ooshmamulu_fricatives": ["శ (sha palatal)", "ష (sha retroflex)", "స (sa dental)", "హ (ha glottal)"],
+    "total_consonants": 36
+  },
+  "ubhayaksharalu": {
+    "sunna_anusvara": "ం (M/N nasalization)",
+    "arasunna_ardhanusvara": "ఁ (historical nasal glide)",
+    "visarga": "ః (voiceless aspiration)"
+  },
+  "acoustic_prosodic_features": {
+    "ajanta_musical_sonority": "Every phonological phrase terminates on a sonorant vowel nucleus, ensuring smooth continuous f0 contour without harsh glottal stops.",
+    "baseline_f0_hz": 218.0,
+    "mora_timing_sps": 3.7,
+    "retroflex_acoustic_signature": "Lowered F3/F4 formants characteristic of sub-apical retroflexion (ట, డ, ణ, ళ)."
+  }
+}

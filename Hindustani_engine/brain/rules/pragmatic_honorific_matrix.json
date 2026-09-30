@@ -1,0 +1,57 @@
+{
+  "honorific_tiers": {
+    "tier_3_aap": {
+      "pronoun": "aap",
+      "devanagari": "आप",
+      "address_level": "deferential_formal",
+      "verbal_agreement": "3rd_person_plural_honorific",
+      "auxiliary_present": "hain",
+      "auxiliary_past": "the",
+      "politeness_weight": 0.95,
+      "appropriate_for": ["elders", "teachers", "superiors", "clients", "strangers", "respected_figures"]
+    },
+    "tier_2_tum": {
+      "pronoun": "tum",
+      "devanagari": "तुम",
+      "address_level": "familiar_informal",
+      "verbal_agreement": "2nd_person_plural",
+      "auxiliary_present": "ho",
+      "auxiliary_past": "the",
+      "politeness_weight": 0.55,
+      "appropriate_for": ["friends", "peers", "classmates", "younger_siblings"]
+    },
+    "tier_1_tu": {
+      "pronoun": "tu",
+      "devanagari": "तू",
+      "address_level": "intimate_or_low",
+      "verbal_agreement": "2nd_person_singular",
+      "auxiliary_present": "hai",
+      "auxiliary_past": "tha",
+      "politeness_weight": 0.20,
+      "appropriate_for": ["deities", "infants", "extreme_intimacy", "disrespect"]
+    }
+  },
+  "honorific_particles": {
+    "ji": {
+      "devanagari": "जी",
+      "usage": ["suffix_to_name", "suffix_to_title", "affirmative_marker"],
+      "bonus_politeness": 0.15
+    },
+    "saab": {
+      "devanagari": "साहब",
+      "usage": ["title_suffix"],
+      "bonus_politeness": 0.15
+    }
+  },
+  "formal_closings": {
+    "hindi_standard": [
+      "भवदीय,", "आपका कृपाकांक्षी,", "सादर प्रणाम,"
+    ],
+    "urdu_standard": [
+      "نیازمند،", "مخلص،", "فقط والسلام،"
+    ],
+    "romanized": [
+      "Bhavadiya,", "Aapka vishwaas-patra,", "Saadar pranaam,", "Shukriya,"
+    ]
+  }
+}

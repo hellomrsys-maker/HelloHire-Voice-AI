@@ -1,0 +1,31 @@
+{
+  "etymological_roots": {
+    "anglo_saxon": {
+      "characteristics": "High frequency, basic human experience, monosyllabic/disyllabic, concrete",
+      "roots": [
+        { "root": "bearn", "meaning": "child", "modern": "bairn, born" },
+        { "root": "wer", "meaning": "man", "modern": "werewolf, world" },
+        { "root": "writan", "meaning": "score / inscribe", "modern": "write" },
+        { "root": "heorte", "meaning": "heart", "modern": "heart" }
+      ]
+    },
+    "latin": {
+      "characteristics": "Abstract, scholarly, legal, multisyllabic, prefix-root-suffix structure",
+      "roots": [
+        { "root": "scrib / script", "meaning": "write", "derivatives": ["describe", "transcript", "manuscript", "inscribe"] },
+        { "root": "voc / vok", "meaning": "voice / call", "derivatives": ["vocal", "revoke", "provoke", "vocabulary"] },
+        { "root": "struct", "meaning": "build", "derivatives": ["structure", "construct", "destruct", "instruct"] },
+        { "root": "port", "meaning": "carry", "derivatives": ["export", "import", "portable", "transport"] }
+      ]
+    },
+    "greek": {
+      "characteristics": "Technical, philosophical, scientific, compound morphemes",
+      "roots": [
+        { "root": "graph / gram", "meaning": "write / draw", "derivatives": ["phonograph", "grammar", "diagram", "grapheme"] },
+        { "root": "phon", "meaning": "sound / voice", "derivatives": ["phoneme", "telephone", "symphony", "allophone"] },
+        { "root": "morph", "meaning": "form / shape", "derivatives": ["morpheme", "morphology", "amorphous"] },
+        { "root": "sem", "meaning": "sign / meaning", "derivatives": ["semantic", "semiotics", "polysemy"] }
+      ]
+    }
+  }
+}

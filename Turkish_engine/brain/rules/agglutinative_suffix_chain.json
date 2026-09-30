@@ -1,0 +1,41 @@
+{
+  "nominal_chain": {
+    "slot_order": ["root", "plural", "possessive", "case"],
+    "plural": {
+      "harmony": "two_way",
+      "front": "ler",
+      "back": "lar"
+    },
+    "possessives": {
+      "1sg": {"harmony": "four_way", "cons_stem": "m", "vowel_stem": "im"},
+      "2sg": {"harmony": "four_way", "cons_stem": "n", "vowel_stem": "in"},
+      "3sg": {"harmony": "four_way", "cons_stem": "si", "vowel_stem": "i"},
+      "1pl": {"harmony": "four_way", "cons_stem": "miz", "vowel_stem": "imiz"},
+      "2pl": {"harmony": "four_way", "cons_stem": "niz", "vowel_stem": "iniz"},
+      "3pl": {"harmony": "two_way", "front": "leri", "back": "ları"}
+    },
+    "cases": {
+      "nom": {"marker": ""},
+      "acc": {"harmony": "four_way", "buffer": "y", "pronominal_buffer": "n", "vowel": "i"},
+      "dat": {"harmony": "two_way", "buffer": "y", "pronominal_buffer": "n", "vowel": "e"},
+      "loc": {"harmony": "two_way", "assimilates": true, "pronominal_buffer": "n", "vowel": "de"},
+      "abl": {"harmony": "two_way", "assimilates": true, "pronominal_buffer": "n", "vowel": "den"},
+      "gen": {"harmony": "four_way", "buffer": "n", "vowel": "in"}
+    }
+  },
+  "postposition_government": {
+    "için": "nom",
+    "ile": "nom",
+    "gibi": "nom",
+    "kadar": "dat",
+    "doğru": "dat",
+    "göre": "dat",
+    "rağmen": "dat",
+    "karşın": "dat",
+    "sonra": "abl",
+    "önce": "abl",
+    "beri": "abl",
+    "dolayı": "abl",
+    "ötürü": "abl"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "language": "Turkish",
+  "curriculum_stages": [
+    {
+      "stage": 1,
+      "name": "Foundational SOV Syntax & Morphological Typology",
+      "sentences": 350
+    },
+    {
+      "stage": 2,
+      "name": "Agreement Concord & Clausal Subordination",
+      "sentences": 350
+    },
+    {
+      "stage": 3,
+      "name": "Pragmatic Register Deixis & Complex Discourse Cohesion",
+      "sentences": 350
+    }
+  ],
+  "total_training_units": 1050,
+  "ready_for_neural_training": true
+}

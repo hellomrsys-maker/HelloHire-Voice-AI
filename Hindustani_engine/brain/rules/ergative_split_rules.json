@@ -1,0 +1,35 @@
+{
+  "ergative_conditions": {
+    "tense": "perfective",
+    "verb_category": "transitive",
+    "marker": "ne",
+    "marker_devanagari": "ने"
+  },
+  "pronominal_ergative_forms": {
+    "main": {"standard": "maine", "devanagari": "मैंने"},
+    "tu":   {"standard": "tune",  "devanagari": "तूने"},
+    "woh":  {"standard": "usne",  "devanagari": "उसने"},
+    "yeh":  {"standard": "isne",  "devanagari": "इसने"},
+    "hum":  {"standard": "humne", "devanagari": "हमने"},
+    "tum":  {"standard": "tumne", "devanagari": "तुमने"},
+    "aap":  {"standard": "aapne", "devanagari": "आपने"},
+    "woh_pl": {"standard": "unhonne", "devanagari": "उन्होंने"},
+    "yeh_pl": {"standard": "inhonne", "devanagari": "इन्होंने"}
+  },
+  "agreement_principles": {
+    "unmarked_object": {
+      "rule": "Verb agrees with direct object in gender and number.",
+      "examples": [
+        {"subject": "ladke ne", "object": "kitaab", "object_gender": "F", "object_number": "SG", "verb": "padhi", "gloss": "The boy read the book."},
+        {"subject": "ladke ne", "object": "akhbaar", "object_gender": "M", "object_number": "SG", "verb": "padha", "gloss": "The boy read the newspaper."}
+      ]
+    },
+    "marked_object_with_ko": {
+      "rule": "If direct object is marked with 'ko', verb defaults to neutral masculine singular.",
+      "default_ending": "M_SG",
+      "examples": [
+        {"subject": "ladke ne", "object": "ladki ko", "verb": "dekha", "gloss": "The boy saw the girl."}
+      ]
+    }
+  }
+}

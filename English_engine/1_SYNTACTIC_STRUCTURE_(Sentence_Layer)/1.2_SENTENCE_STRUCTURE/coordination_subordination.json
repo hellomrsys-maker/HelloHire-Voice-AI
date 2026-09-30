@@ -1,0 +1,37 @@
+{
+  "coordination_subordination_paradigms": {
+    "coordination": {
+      "coordinators": ["and", "but", "or", "nor", "for", "yet", "so"],
+      "correlative_coordinators": [
+        ["either", "or"],
+        ["neither", "nor"],
+        ["both", "and"],
+        ["not only", "but also"]
+      ],
+      "constraints": [
+        "Coordination of like constituents (NP & NP, VP & VP, CP & CP)",
+        "Comma required before coordinator when conjoining two independent clauses",
+        "Serial comma (Oxford comma) preferred before coordinator in tri-constituent sequences"
+      ]
+    },
+    "subordination": {
+      "subordinators": [
+        "after", "although", "as", "because", "before", "even though",
+        "if", "in order that", "once", "provided that", "since", "so that",
+        "though", "unless", "until", "when", "whenever", "where", "while"
+      ],
+      "clause_ordering_effects": {
+        "subordinate_clause_first": {
+          "pattern": "SUB_CLAUSE + COMMA + MAIN_CLAUSE",
+          "example": "Because latency was low, throughput doubled.",
+          "comma_mandatory": true
+        },
+        "main_clause_first": {
+          "pattern": "MAIN_CLAUSE + SUB_CLAUSE",
+          "example": "Throughput doubled because latency was low.",
+          "comma_mandatory": false
+        }
+      }
+    }
+  }
+}

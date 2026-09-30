@@ -1,0 +1,52 @@
+{
+  "cases": {
+    "nominative": {
+      "marker_consonant": "",
+      "marker_vowel": "",
+      "role": "subject",
+      "example": "ছাত্র"
+    },
+    "objective": {
+      "marker_consonant": "কে",
+      "marker_vowel": "কে",
+      "role": "direct_indirect_object",
+      "animacy_constraint": "animate_or_specific_inanimate",
+      "example": "ছাত্রকে"
+    },
+    "genitive": {
+      "marker_consonant": "ের",
+      "marker_vowel": "র",
+      "role": "possessive_and_postposition_governor",
+      "example": "বইয়ের / ছেলের"
+    },
+    "locative": {
+      "marker_consonant": "ে",
+      "marker_vowel": "তে",
+      "alternative_vowel": "য়",
+      "role": "spatial_temporal_location",
+      "example": "ঘরে / বাড়িতে / ঢাকায়"
+    }
+  },
+  "postpositions": {
+    "governing_genitive": [
+      { "form": "জন্য", "meaning": "for", "romanized": "jonno" },
+      { "form": "সাথে", "meaning": "with", "romanized": "sathe" },
+      { "form": "সঙ্গে", "meaning": "along with", "romanized": "shonge" },
+      { "form": "কাছে", "meaning": "near / to", "romanized": "kache" },
+      { "form": "সামনে", "meaning": "in front of", "romanized": "shamne" },
+      { "form": "পিছনে", "meaning": "behind", "romanized": "pichhone" },
+      { "form": "ভিতরে", "meaning": "inside", "romanized": "bhitore" },
+      { "form": "বাইরে", "meaning": "outside", "romanized": "baire" },
+      { "form": "উপরে", "meaning": "above / on top of", "romanized": "upore" },
+      { "form": "নিচে", "meaning": "underneath", "romanized": "niche" },
+      { "form": "পরে", "meaning": "after", "romanized": "pore" },
+      { "form": "কারণে", "meaning": "due to", "romanized": "karone" }
+    ],
+    "governing_nominative": [
+      { "form": "দিয়ে", "meaning": "with / by means of", "romanized": "diye" },
+      { "form": "থেকে", "meaning": "from", "romanized": "theke" },
+      { "form": "হতে", "meaning": "from (formal)", "romanized": "hote" },
+      { "form": "পর্যন্ত", "meaning": "until / up to", "romanized": "porjonto" }
+    ]
+  }
+}

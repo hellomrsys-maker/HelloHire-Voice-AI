@@ -1,0 +1,56 @@
+{
+  "engine": "Vietnamese",
+  "version": "1.0.0",
+  "tone_system": {
+    "tones": {
+      "ngang": {
+        "id": 1,
+        "name": "Thanh Ngang (Level)",
+        "contour": "33_high_level",
+        "diacritic": "none",
+        "sample_vowels": ["a", "e", "ê", "i", "o", "ô", "ơ", "u", "ư", "y"],
+        "example": "ba (three / father)"
+      },
+      "huyen": {
+        "id": 2,
+        "name": "Thanh Huyền (Falling)",
+        "contour": "21_low_falling",
+        "diacritic": "grave_accent",
+        "sample_vowels": ["à", "è", "ề", "ì", "ò", "ồ", "ờ", "ù", "ừ", "ỳ"],
+        "example": "bà (grandmother)"
+      },
+      "sac": {
+        "id": 3,
+        "name": "Thanh Sắc (Rising)",
+        "contour": "35_high_rising",
+        "diacritic": "acute_accent",
+        "sample_vowels": ["á", "é", "ế", "í", "ó", "ố", "ớ", "ú", "ứ", "ý"],
+        "example": "bá (count / senior)"
+      },
+      "hoi": {
+        "id": 4,
+        "name": "Thanh Hỏi (Dipping-Rising)",
+        "contour": "312_dipping_rising",
+        "diacritic": "hook_above",
+        "sample_vowels": ["ả", "ẻ", "ể", "ỉ", "ỏ", "ổ", "ở", "ủ", "ử", "ỷ"],
+        "example": "bả (bait)"
+      },
+      "nga": {
+        "id": 5,
+        "name": "Thanh Ngã (Glottalized Broken)",
+        "contour": "3ʔ5_broken_rising",
+        "diacritic": "tilde",
+        "sample_vowels": ["ã", "ẽ", "ễ", "ĩ", "õ", "ỗ", "ỡ", "ũ", "ữ", "ỹ"],
+        "example": "bã (residue)"
+      },
+      "nang": {
+        "id": 6,
+        "name": "Thanh Nặng (Dropping Creaky)",
+        "contour": "21ʔ_constricted_drop",
+        "diacritic": "dot_below",
+        "sample_vowels": ["ạ", "ẹ", "ệ", "ị", "ọ", "ộ", "ợ", "ụ", "ự", "ỵ"],
+        "example": "bạ (indiscriminate)"
+      }
+    }
+  }
+}

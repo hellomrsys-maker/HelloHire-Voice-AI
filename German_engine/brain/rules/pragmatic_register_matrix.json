@@ -1,0 +1,54 @@
+{
+  "informal_markers": {
+    "pronouns": [
+      "du", "dich", "dir", "dein", "deine", "deinem", "deinen", "deiner", "deines",
+      "ihr", "euch", "euer", "eure", "eurem", "euren", "eurer", "eures"
+    ],
+    "imperative_singular_endings": ["", "e"],
+    "imperative_plural_endings": ["t", "et"],
+    "salutations": [
+      "Liebe", "Lieber", "Hallo", "Hi", "Guten Morgen zusammen", "Servus", "Moin"
+    ],
+    "closings": [
+      "Liebe Grüße", "Herzliche Grüße", "Viele Grüße", "Alles Liebe", "Bis bald", "Dein", "Deine", "Tschüss", "Ciao"
+    ]
+  },
+  "formal_markers": {
+    "pronouns": [
+      "Sie", "Ihnen", "Ihr", "Ihre", "Ihrem", "Ihren", "Ihrer", "Ihres"
+    ],
+    "salutations": [
+      "Sehr geehrte Damen und Herren",
+      "Sehr geehrte Frau",
+      "Sehr geehrter Herr",
+      "Sehr geehrte Frau Dr.",
+      "Sehr geehrter Herr Dr.",
+      "Sehr geehrte Frau Professorin",
+      "Sehr geehrter Herr Professor",
+      "Guten Tag, Frau",
+      "Guten Tag, Herr"
+    ],
+    "closings": [
+      "Mit freundlichen Grüßen",
+      "Mit besten Grüßen",
+      "Mit vorzüglicher Hochachtung",
+      "Freundliche Grüße"
+    ]
+  },
+  "modal_particles": {
+    "ja": { "meaning": "shared_knowledge", "pragmatic_force": "presupposition_alignment" },
+    "doch": { "meaning": "contradiction_reminder", "pragmatic_force": "corrective_appeal" },
+    "mal": { "meaning": "softener", "pragmatic_force": "burden_minimization" },
+    "denn": { "meaning": "curiosity_skepticism", "pragmatic_force": "interest_intensifier" },
+    "eben": { "meaning": "inevitability", "pragmatic_force": "resignation" },
+    "halt": { "meaning": "inevitability_informal", "pragmatic_force": "colloquial_resignation" },
+    "wohl": { "meaning": "probability_conjecture", "pragmatic_force": "epistemic_qualification" },
+    "schon": { "meaning": "reassurance_concession", "pragmatic_force": "concessive_soothing" },
+    "bloß": { "meaning": "urgency_warning", "pragmatic_force": "negative_injunction" },
+    "nur": { "meaning": "urgency_intensifier", "pragmatic_force": "directive_strengthener" }
+  },
+  "substantive_signals": {
+    "der_die_das": true,
+    "capitalization_mandatory": true
+  }
+}

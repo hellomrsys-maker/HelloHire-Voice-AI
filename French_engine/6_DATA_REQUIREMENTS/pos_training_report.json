@@ -1,0 +1,17 @@
+{
+  "engine": "French_engine",
+  "treebank": "UD_French-GSD",
+  "license": "The treebank is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International.",
+  "trained": true,
+  "val_token_accuracy": 0.698,
+  "majority_baseline": 0.1823,
+  "beats_baseline_by": 0.5157,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 680,
+  "final_train_loss": 0.6411,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\french_engine_pos_tagger.pt"
+}

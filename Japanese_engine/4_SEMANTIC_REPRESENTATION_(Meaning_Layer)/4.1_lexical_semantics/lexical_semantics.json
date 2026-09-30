@@ -1,0 +1,32 @@
+{
+  "lexical_semantics": {
+    "onomatopoeia_giongo_gitaigo": {
+      "system_scale": "Hundreds of systematic sound-symbolic mimetic roots, functioning grammatically as adverbs or 'する' verbs.",
+      "inventory": [
+        {"root": "わくわく", "type": "Gitaigo (Mimetic of emotional state)", "meaning": "Eager anticipation and joyful excitement"},
+        {"root": "どきどき", "type": "Giongo/Gitaigo (Heartbeat sound)", "meaning": "Heart pounding rapidly due to nervousness or infatuation"},
+        {"root": "きらきら", "type": "Gitaigo (Optical visual)", "meaning": "Sparkling or glittering brilliantly with light"},
+        {"root": "ぺらぺら", "type": "Gitaigo/Giongo", "meaning": "Fluent talkative speech, or thin lightweight fluttering"},
+        {"root": "さらさら", "type": "Giongo/Gitaigo", "meaning": "Smooth effortless silky flowing or rustling"},
+        {"root": "ぎりぎり", "type": "Gitaigo", "meaning": "At the barest edge or margin of time or capacity"}
+      ]
+    },
+    "synonymy_register_strata": {
+      "explanation": "Japanese synonyms are strongly stratified along social distance and politeness.",
+      "triplets": [
+        {"concept": "To eat", "plain": "食べる (taberu)", "humble_kenjou": "いただく (itadaku)", "honorific_sonkei": "召し上がる (meshiagaru)"},
+        {"concept": "To say", "plain": "言う (iu)", "humble_kenjou": "申す (mousu)", "honorific_sonkei": "おっしゃる (ossharu)"},
+        {"concept": "To go", "plain": "行く (iku)", "humble_kenjou": "参る (mairu)", "honorific_sonkei": "いらっしゃる (irassharu)"},
+        {"concept": "House", "plain": "家 (ie)", "humble_kenjou": "自宅 / 拙宅 (jitaku/settaku)", "honorific_sonkei": "お宅 / ご自宅 (otaku/gojitaku)"}
+      ]
+    },
+    "counters_semantics": {
+      "affordance_mapping": "Classifiers enforce physical and topological constraints on the quantified referent.",
+      "mappings": [
+        {"counter": "本 (hon)", "geometric_criterion": "1D linear extension: length dominates width/depth (pencils, bottles, roads, trees)"},
+        {"counter": "枚 (mai)", "geometric_criterion": "2D planar extension: flat surface with negligible thickness (sheets, shirts, plates)"},
+        {"counter": "個 (ko)", "geometric_criterion": "3D compact bounded unit: discrete solid or container (apples, stones, boxes)"}
+      ]
+    }
+  }
+}

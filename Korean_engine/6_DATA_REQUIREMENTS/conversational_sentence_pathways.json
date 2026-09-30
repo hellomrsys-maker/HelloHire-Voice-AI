@@ -1,0 +1,62 @@
+{
+  "language": "Korean",
+  "engine": "D:\\gra.voi\\Korean_engine",
+  "iso_code": "kor",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "kor_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "엔지니어가 고성능 분산 시스템 아키텍처를 설계했습니다.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "우리는 제로 지연 원자적 메모리 동기화 프로토콜을 구현했습니다.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kor_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "연구팀이 최신 생성형 인공지능 연구 논문을 발표했습니다.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "소프트웨어 아키텍트가 대규모 데이터 파이프라인을 최적화했습니다 (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kor_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "다국어 인지 분석 엔진이 문맥적 의미를 정확하게 평가합니다.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "개발팀이 모든 단위 테스트와 통합 테스트를 통과시켰습니다 (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "kor_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "고속 메모리 인터페이스가 실시간 데이터 일관성을 보장합니다.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "우리는 엄격한 벤치마크 실험을 통해 처리량을 검증했습니다 (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

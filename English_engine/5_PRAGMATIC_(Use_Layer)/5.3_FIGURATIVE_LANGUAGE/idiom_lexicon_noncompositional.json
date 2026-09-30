@@ -1,0 +1,10 @@
+{
+  "non_compositional_idioms": {
+    "spill the beans": { "meaning": "Divulge secret information prematurely", "syntactic_flexibility": "Low (passivization: ?the beans were spilled)", "register": "Informal" },
+    "bite the bullet": { "meaning": "Endure an inevitable unpleasant situation courageously", "syntactic_flexibility": "Moderate", "register": "General" },
+    "kick the bucket": { "meaning": "Die", "syntactic_flexibility": "Frozen (*the bucket was kicked by him does not maintain idiomatic sense)", "register": "Informal / Slang" },
+    "piece of cake": { "meaning": "A remarkably simple task or achievement", "syntactic_flexibility": "Predicative noun phrase only", "register": "Informal" },
+    "break a leg": { "meaning": "Good luck (wished to performers)", "syntactic_flexibility": "Frozen imperative", "register": "Theatrical / Colloquial" },
+    "barking up the wrong tree": { "meaning": "Pursuing an erroneous line of thought or accusing the wrong person", "syntactic_flexibility": "Participle VP", "register": "Informal" }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "address_tiers": {
+    "tuteo": {
+      "pronoun": "tú",
+      "person": 2,
+      "number": "singular",
+      "formality": "informal",
+      "clitics": ["te"],
+      "possessives": ["tu", "tus", "tuyo", "tuya"]
+    },
+    "voseo": {
+      "pronoun": "vos",
+      "person": 2,
+      "number": "singular",
+      "formality": "informal_intimate",
+      "clitics": ["te"],
+      "possessives": ["tu", "tus", "tuyo", "tuya"]
+    },
+    "ustedeo": {
+      "pronoun": "usted",
+      "person": 3,
+      "number": "singular",
+      "formality": "formal_deference",
+      "clitics": ["le", "la", "lo", "se"],
+      "possessives": ["su", "sus", "suyo", "suya"]
+    }
+  },
+  "courtesy_markers": [
+    "por favor",
+    "muchas gracias",
+    "le agradezco",
+    "disculpe",
+    "disculpa",
+    "con su permiso",
+    "tenga la amabilidad",
+    "sería tan amable"
+  ],
+  "epistolary_salutations": {
+    "formal": [
+      "Estimado señor",
+      "Estimada señora",
+      "Apreciado colega",
+      "Distinguido doctor"
+    ],
+    "informal": [
+      "Hola",
+      "Querido amigo",
+      "Querida amiga",
+      "¡Qué tal!"
+    ]
+  },
+  "epistolary_closings": {
+    "formal": [
+      "Atentamente,",
+      "Le saluda cordialmente,",
+      "Quedo a su entera disposición,",
+      "Reciba un cordial saludo,"
+    ],
+    "informal": [
+      "Un abrazo,",
+      "Saludos afectuosos,",
+      "Hasta pronto,",
+      "Cuídate mucho,"
+    ]
+  }
+}

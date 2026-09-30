@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Spanish",
+    "engine": "Spanish_engine",
+    "iso_codes": [
+      "spa",
+      "es"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Spanish",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "spa_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Spanish)",
+          "How are operations (Spanish)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "spa_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Spanish)",
+          "Report readiness (Spanish)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "El ingeniero diseñó una arquitectura distribuida.",
+    "Hemos implementado el protocolo de memoria compartida.",
+    "El médico examinó al paciente con gran atención.",
+    "La científica publicó un artículo sobre inteligencia artificial (using optimal hyper-parameters).",
+    "Trabajamos continuamente para optimizar la latencia del sistema.",
+    "El gobierno aprobó la nueva legislación energética (on multi-core architectures).",
+    "Queremos que todos los módulos sincronicen sin demora.",
+    "El profesor explicó la gramática generativa detalladamente (under heavy loads).",
+    "El ingeniero diseñó una arquitectura distribuida.",
+    "Hemos implementado el protocolo de memoria compartida.",
+    "El médico examinó al paciente con gran atención.",
+    "La científica publicó un artículo sobre inteligencia artificial (using optimal hyper-parameters).",
+    "Trabajamos continuamente para optimizar la latencia del sistema.",
+    "El gobierno aprobó la nueva legislación energética (on multi-core architectures).",
+    "Queremos que todos los módulos sincronicen sin demora.",
+    "El profesor explicó la gramática generativa detalladamente (under heavy loads).",
+    "El ingeniero diseñó una arquitectura distribuida.",
+    "Hemos implementado el protocolo de memoria compartida.",
+    "El médico examinó al paciente con gran atención.",
+    "La científica publicó un artículo sobre inteligencia artificial (using optimal hyper-parameters)."
+  ]
+}

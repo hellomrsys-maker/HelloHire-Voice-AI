@@ -1,0 +1,1346 @@
+# =============================================================================
+# language_engines/French_engine.training.yaml
+#
+# CANONICAL TRAINING FILE — French Language Engine
+# Specification: ONE ENGINE = ONE CANONICAL TRAINING FILE
+#
+# This single file contains the COMPLETE French engine across all 19 sections
+# defined in the Single-File Language Engine AI Specification.
+#
+#   1.  engine_identity
+#   2.  artificial_intelligence_core
+#   3.  brain
+#   4.  skills
+#   5.  creativity
+#   6.  language_rules
+#   7.  sentence_processing
+#   8.  sentence_generation
+#   9.  sentence_breakdown
+#   10. vocabulary
+#   11. pronunciation
+#   12. meaning
+#   13. pragmatics
+#   14. training_data
+#   15. examples
+#   16. evaluation
+#   17. memory_policy
+#   18. connections
+#   19. version_control
+#
+# RULES ENFORCED BY THIS FILE:
+#   - No raw dialogue stored as training data
+#   - Every sentence is broken down into component families and slot templates
+#   - Runtime artifacts are NEVER written here
+#   - Cross-language relationships live only in the connections section
+#   - Every training item follows the full training_item tree from the spec
+#   - Updates must go through review_status: approved before permanent insertion
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "french_engine_v1"
+  language_name:                "French"
+  language_code:                "fr"
+  language_family:              "Indo-European › Italic › Romance › Gallo-Romance"
+  writing_systems:
+    - name: Latin
+      direction: left_to_right
+      case_sensitive: true
+      diacritics:
+        - { mark: "é", name: "acute_accent",       affects: "vowel_quality_and_syllable_stress" }
+        - { mark: "è", name: "grave_accent",        affects: "vowel_quality" }
+        - { mark: "ê", name: "circumflex",          affects: "vowel_length_historical" }
+        - { mark: "ë", name: "diaeresis",           affects: "separate_vowel_pronunciation" }
+        - { mark: "à", name: "grave_accent_a",      affects: "disambiguation_only" }
+        - { mark: "â", name: "circumflex_a",        affects: "vowel_length_historical" }
+        - { mark: "î", name: "circumflex_i",        affects: "historical_spelling" }
+        - { mark: "ï", name: "diaeresis_i",         affects: "separate_vowel_pronunciation" }
+        - { mark: "ô", name: "circumflex_o",        affects: "vowel_quality" }
+        - { mark: "ù", name: "grave_accent_u",      affects: "disambiguation_only" }
+        - { mark: "û", name: "circumflex_u",        affects: "historical_spelling" }
+        - { mark: "ü", name: "diaeresis_u",         affects: "separate_vowel_pronunciation" }
+        - { mark: "ç", name: "cedilla",             affects: "consonant_soft_c_before_a_o_u" }
+        - { mark: "œ", name: "ligature_oe",         affects: "vowel_quality" }
+        - { mark: "æ", name: "ligature_ae",         affects: "vowel_quality_archaic" }
+  supported_variants:
+    - code: fr-FR
+      name: "Metropolitan French"
+      reference_accent: "Standard Parisian"
+    - code: fr-BE
+      name: "Belgian French"
+      reference_accent: "Standard Belgian"
+    - code: fr-CH
+      name: "Swiss French"
+      reference_accent: "Standard Swiss"
+    - code: fr-CA
+      name: "Canadian French"
+      reference_accent: "Standard Québec"
+    - code: fr-MA
+      name: "Maghrebi French"
+      reference_accent: "North African"
+  canonical_training_file:      "language_engines/French_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    context_compression:        "sliding_window"
+    topic_shift_detection:      true
+    pronoun_resolution:         true
+    gender_agreement_tracking:  true
+    politeness_register_tracking: true
+
+  task_planning:
+    enabled:                    true
+    max_plan_steps:             16
+    planning_depth:             "moderate"
+    replanning_on_failure:      true
+
+  reasoning:
+    chain_of_thought:           true
+    max_reasoning_steps:        32
+    metacognitive_monitoring:   true
+    uncertainty_awareness:      true
+    causal_inference:           true
+    analogical_reasoning:       true
+
+  uncertainty_estimation:
+    method:                     "predictive_entropy"
+    threshold_low:              0.30
+    threshold_high:             0.85
+    abstain_below:              0.30
+
+  error_detection:
+    grammar_error_detection:    true
+    gender_agreement_check:     true
+    number_agreement_check:     true
+    accent_omission_detection:  true
+    register_mismatch:          true
+
+  self_correction:
+    enabled:                    true
+    correction_passes:          2
+    rewrite_on_low_confidence:  true
+
+  response_planning:
+    template_selection:         true
+    component_family_selection: true
+    register_matching:          true
+    creativity_modulation:      true
+    length_targeting:           true
+
+  safety_and_privacy:
+    content_filter:             true
+    privacy_guard:              true
+    filter_threshold:           0.85
+    blocked_content_categories:
+      - harmful_content
+      - private_pii
+      - unverified_medical_claims
+      - hate_speech
+      - violence_promotion
+
+  human_preference_alignment:
+    register_adaptation:        true
+    politeness_default:         "neutral"
+    tu_vous_default:            "vous"
+    cultural_sensitivity:       true
+    user_preference_memory:     "session_only_unless_approved"
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      max_length:               8192
+      strip_leading_trailing_whitespace: true
+      diacritic_preservation:   true
+    speech_input:
+      supported_formats:        ["PCM_16kHz_mono", "Opus", "WebM", "FLAC"]
+      sample_rate_hz:           16000
+      channels:                 1
+      vad_enabled:              true
+      vad_threshold:            0.01
+    image_text_input:
+      ocr_enabled:              false
+      planned:                  true
+
+  understanding:
+    language_identification:
+      method:                   "trigram_plus_neural"
+      min_confidence:           0.60
+      fallback:                 "french"
+    tokenization:
+      strategy:                 "BPE"
+      vocab_size:               52000
+      max_length:               8192
+      special_tokens:           ["[PAD]", "[UNK]", "[BOS]", "[EOS]", "[SEP]", "[MASK]"]
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      dependency_parsing:       true
+      gender_annotation:        true
+      number_annotation:        true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      output_format:            "Universal_Dependencies_v2"
+      word_order:               "SVO"
+      adjective_placement:      "post_nominal_default_with_BANGS_pre_nominal"
+    semantics:
+      word_sense_disambiguation: true
+      semantic_role_labeling:   true
+      named_entity_recognition: true
+      entity_types:             ["PERSON", "ORG", "LOC", "DATE", "TIME", "MONEY", "PRODUCT"]
+    pragmatics:
+      speech_act_detection:     true
+      tu_vous_register_detection: true
+      politeness_analysis:      true
+    discourse:
+      coreference_resolution:   true
+      gender_pronoun_resolution: true
+      discourse_coherence:      true
+    world_knowledge_linking:
+      enabled:                  true
+      knowledge_base:           "internal_semantic_memory"
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+      lifetime:                 "sentence_scope"
+      gender_stack:             true
+    current_task_memory:
+      type:                     "working"
+      max_entries:              1024
+      capacity_bytes:           268435456
+      lifetime:                 "task_scope"
+    document_memory:
+      type:                     "episodic"
+      max_events:               131072
+      lifetime:                 "session_scope"
+    user_preference_memory:
+      type:                     "episodic"
+      approval_required:        true
+      lifetime:                 "approved_only_persisted"
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+      lifetime:                 "permanent_until_deleted"
+
+  generation:
+    sentence_planning:
+      template_driven:          true
+      component_family_composition: true
+      gender_agreement_pass:    true
+      number_agreement_pass:    true
+    word_selection:
+      strategy:                 "register_aware_sampling"
+      temperature_default:      0.70
+      top_p:                    0.90
+      top_k:                    50
+    grammar_realization:
+      agreement_checking:       true
+      elision_rules:            true
+      liaison_rules:            true
+      punctuation_rules:        "French_standard_with_non_breaking_spaces"
+    style_control:
+      register_adaptation:      true
+      tu_vous_switching:        true
+      formality_range:          ["très_familier", "très_formel"]
+    creativity_control:
+      creativity_level_default: 0.50
+      metaphor_enabled:         true
+      analogy_enabled:          true
+      originality_check:        true
+      originality_method:       "jaccard_similarity"
+      originality_threshold:    0.70
+    final_validation:
+      grammar_check:            true
+      gender_agreement_check:   true
+      accent_check:             true
+      safety_check:             true
+      max_response_tokens:      4096
+
+  learning:
+    supervised_examples:
+      accepted:                 true
+      source_constraint:        "developer_or_approved_corpus"
+    corrected_examples:
+      accepted:                 true
+      update_policy:            "update_existing_item_preserve_version_history"
+    approved_updates_only:
+      strict:                   true
+      require_review_status:    "approved"
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:
+    enabled:                    true
+    supported_genres:           ["narrative", "expository", "persuasive", "technical", "poetic", "legal", "scientific"]
+    comprehension_depth:        "deep"
+    skimming_mode:              true
+
+  writing:
+    enabled:                    true
+    styles:                     ["académique", "créatif", "professionnel", "informel", "journalistique", "technique", "juridique"]
+    max_output_tokens:          10000
+    outline_mode:               true
+
+  listening:
+    enabled:                    true
+    requires_speech_input:      true
+    real_time:                  true
+
+  speaking:
+    enabled:                    true
+    requires_tts:               true
+    prosody_control:            true
+    liaison_in_tts:             true
+
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    syllable_breakdown:         true
+    stress_marking:             true
+    liaison_marking:            true
+    elision_marking:            true
+    variants:
+      fr-FR:                    "Standard_Parisian"
+      fr-CA:                    "Standard_Quebec"
+      fr-BE:                    "Standard_Belgian"
+
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "de", "es", "ja", "ar", "ta"]
+    requires_target_engine:     true
+    alignment_method:           "neural_attention"
+
+  summarization:
+    enabled:                    true
+    methods:                    ["extractive", "abstractive"]
+    max_summary_ratio:          0.30
+    bullet_point_mode:          true
+
+  explanation:
+    enabled:                    true
+    simplification_levels:      ["expert", "intermédiaire", "débutant", "enfant"]
+    analogy_insertion:          true
+
+  dialogue_management:
+    enabled:                    true
+    history_window:             20
+    context_tracking:           true
+    register_switching_tu_vous: true
+
+  teaching:
+    enabled:                    true
+    scaffolding:                true
+    assessment_enabled:         true
+    feedback_modes:             ["correctif", "élaboratif", "confirmatif", "socratique"]
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    domain_crossing:            true
+    brainstorming_modes:        ["association_libre", "relaxation_contrainte", "analogique", "combinaison_aléatoire"]
+
+  analogy_generation:
+    enabled:                    true
+    source_domains:             ["science", "nature", "ingénierie", "art", "sport", "quotidien", "histoire", "mythologie"]
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      temps:
+        - { metaphor: "le temps est un fleuve",   effect: "flux_constant" }
+        - { metaphor: "le temps c'est de l'argent", effect: "cadrage_ressource" }
+        - { metaphor: "le temps est un voleur",   effect: "cadrage_perte" }
+        - { metaphor: "le temps guérit tout",     effect: "cadrage_rétablissement" }
+      esprit:
+        - { metaphor: "l'esprit est un jardin",   effect: "cadrage_cultivation" }
+        - { metaphor: "l'esprit est un ordinateur", effect: "cadrage_traitement" }
+        - { metaphor: "l'esprit est un muscle",   effect: "cadrage_entraînement" }
+        - { metaphor: "l'esprit est un océan",    effect: "cadrage_profondeur" }
+      idée:
+        - { metaphor: "les idées sont des graines", effect: "cadrage_croissance" }
+        - { metaphor: "les idées sont de la lumière", effect: "cadrage_illumination" }
+        - { metaphor: "les idées sont des ponts",  effect: "cadrage_connexion" }
+        - { metaphor: "les idées sont des étincelles", effect: "cadrage_ignition" }
+      langue:
+        - { metaphor: "la langue est un outil",   effect: "cadrage_utilité" }
+        - { metaphor: "la langue est une fenêtre", effect: "cadrage_perspective" }
+        - { metaphor: "la langue est de la musique", effect: "cadrage_esthétique" }
+
+  style_transfer:
+    enabled:                    true
+    formal_to_informal:
+      tu_vous_swap:
+        - { from: "vous",    to: "tu"    }
+        - { from: "Monsieur", to: "mec"  }
+        - { from: "Madame",  to: "nana"  }
+    informal_to_formal:
+      tu_vous_swap:
+        - { from: "tu",    to: "vous"    }
+        - { from: "mec",   to: "Monsieur" }
+
+  controlled_variation:
+    enabled:                    true
+    max_variants_per_item:      8
+
+  cultural_appropriateness:
+    enabled:                    true
+    sensitivity_check:          true
+    regions_supported:          ["fr-FR", "fr-BE", "fr-CH", "fr-CA", "fr-MA"]
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    script:                     "Latin"
+    capital_letters:            true
+    case_sensitive:             true
+    diacritics_required:        true
+    cedilla_before_aou:         true
+    ligatures_required:         ["œ", "æ"]
+    non_breaking_space_before:  [":", ";", "!", "?", "»"]
+    non_breaking_space_after:   ["«"]
+
+  tokenization:
+    primary_strategy:           "BPE"
+    fallback:                   "whitespace"
+    max_token_length:           100
+    elision_tokenization:       true
+    clitic_splitting:           true
+
+  segmentation:
+    sentence_boundary:          true
+    paragraph_boundary:         true
+    abbreviation_list:
+      - M.
+      - Mme.
+      - Dr.
+      - Prof.
+      - etc.
+      - "c.-à-d."
+      - "p. ex."
+      - av.
+      - apr.
+      - vol.
+      - "n°"
+
+  morphology:
+    gender:
+      values:                   ["masculine", "feminine"]
+      default_for_unknown:      "masculine"
+      noun_gender_assignment:   "lexical"
+      adjective_agreement:      "agrees_with_head_noun_in_gender_and_number"
+      article_agreement:        "agrees_with_noun_in_gender_and_number"
+    number:
+      values:                   ["singular", "plural"]
+      plural_formation:
+        regular:                "add_-s"
+        x_nouns:                "add_-x"
+        irregular_list:         true
+    inflection:
+      verbs:
+        groups:
+          - id: "group_1"
+            description: "Regular -er verbs (parler)"
+            present_endings: ["-e", "-es", "-e", "-ons", "-ez", "-ent"]
+          - id: "group_2"
+            description: "Regular -ir verbs with -iss- infix (finir)"
+            present_endings: ["-is", "-is", "-it", "-issons", "-issez", "-issent"]
+          - id: "group_3"
+            description: "Irregular verbs (être, avoir, aller, faire, etc.)"
+            note: "Must be memorised individually"
+        tenses_supported:
+          - présent
+          - imparfait
+          - futur_simple
+          - passé_composé
+          - plus_que_parfait
+          - conditionnel_présent
+          - subjonctif_présent
+          - subjonctif_imparfait
+          - impératif
+        auxiliary_verbs:
+          avoir:                "default auxiliary for most verbs"
+          être:                 "used for motion/state verbs and all reflexive verbs"
+        reflexive_verbs:
+          reflexive_pronouns:   ["me", "te", "se", "nous", "vous", "se"]
+          agreement_with_subject: true
+      nouns:
+        determination:
+          definite:             ["le", "la", "l'", "les"]
+          indefinite:           ["un", "une", "des"]
+          partitive:            ["du", "de la", "de l'", "des"]
+        elision_rules:
+          - { trigger: "vowel_or_mute_h", article: "le", result: "l'" }
+          - { trigger: "vowel_or_mute_h", article: "la", result: "l'" }
+          - { trigger: "vowel_or_mute_h", preposition: "de", result: "d'" }
+          - { trigger: "vowel_or_mute_h", preposition: "que", result: "qu'" }
+
+    irregular_verbs:
+      - { infinitive: "être",   présent: ["suis","es","est","sommes","êtes","sont"],       passé_composé_aux: "être", pp: "été" }
+      - { infinitive: "avoir",  présent: ["ai","as","a","avons","avez","ont"],             passé_composé_aux: "avoir", pp: "eu" }
+      - { infinitive: "aller",  présent: ["vais","vas","va","allons","allez","vont"],      passé_composé_aux: "être", pp: "allé" }
+      - { infinitive: "faire",  présent: ["fais","fais","fait","faisons","faites","font"], passé_composé_aux: "avoir", pp: "fait" }
+      - { infinitive: "dire",   présent: ["dis","dis","dit","disons","dites","disent"],    passé_composé_aux: "avoir", pp: "dit" }
+      - { infinitive: "prendre",présent: ["prends","prends","prend","prenons","prenez","prennent"], passé_composé_aux: "avoir", pp: "pris" }
+      - { infinitive: "vouloir",présent: ["veux","veux","veut","voulons","voulez","veulent"], passé_composé_aux: "avoir", pp: "voulu" }
+      - { infinitive: "pouvoir",présent: ["peux","peux","peut","pouvons","pouvez","peuvent"], passé_composé_aux: "avoir", pp: "pu" }
+      - { infinitive: "savoir", présent: ["sais","sais","sait","savons","savez","savent"],  passé_composé_aux: "avoir", pp: "su" }
+      - { infinitive: "venir",  présent: ["viens","viens","vient","venons","venez","viennent"], passé_composé_aux: "être", pp: "venu" }
+
+  phonology:
+    stress_marking:             false
+    word_level_stress:          "final_syllable_of_prosodic_group"
+    nasal_vowels:               ["ɑ̃", "ɛ̃", "œ̃", "ɔ̃"]
+    liaison:
+      mandatory_contexts:
+        - "article + noun"
+        - "pronoun + verb"
+        - "adjective + noun (pre-nominal)"
+        - "auxiliary + past_participle"
+      optional_contexts:
+        - "noun + adjective (post-nominal)"
+        - "verb + adverb"
+      forbidden_contexts:
+        - "noun (singular) + verb (next sentence)"
+        - "h aspiré words"
+      note: "Liaison_s pronounced as [z]; liaison_n as [n]; liaison_d as [t]"
+    elision:
+      rule:                     "le/la/ce/de/que/ne/me/te/se before vowel or mute h"
+    schwa:
+      description:              "Unstressed e often deleted in casual speech"
+
+  syntax:
+    word_order:                 "SVO"
+    adjective_placement:
+      default:                  "post_nominal"
+      pre_nominal_group:        "BANGS"
+      BANGS_categories:         ["Beauté", "Âge", "Numéro_rank", "Gentillesse", "Taille"]
+      BANGS_examples:
+        - "beau (beautiful)"
+        - "nouveau (new)"
+        - "vieux (old)"
+        - "bon (good)"
+        - "grand (tall/great)"
+        - "petit (small)"
+        - "gros (big)"
+        - "jeune (young)"
+    negation:
+      standard:                 "ne … pas"
+      literary_ne_only:         true
+      other_negations:          ["ne … jamais", "ne … plus", "ne … rien", "ne … personne", "ne … que"]
+    question_formation:
+      intonation_rising:        true
+      est_ce_que:               true
+      inversion:                "subject_verb_inversion"
+    impersonal_constructions:
+      - "il faut"
+      - "il y a"
+      - "il est + adjective + de + infinitive"
+    subjunctive_triggers:
+      - "vouloir que"
+      - "falloir que"
+      - "bien que"
+      - "pour que"
+      - "bien que"
+      - "à moins que"
+      - "avant que"
+      - "après que (indicative or subjunctive in transition)"
+      - "quoique"
+
+  punctuation:
+    sentence_ending:            [".", "!", "?", "…"]
+    clause_separator:           [",", ";", ":"]
+    quotation:                  "guillemets_français"
+    guillemets:                 ["«\u00A0", "\u00A0»"]
+    parenthetical:              ["(parenthèses)", "tiret_cadratin_—"]
+    non_breaking_spaces:        "required_before_double_punctuation"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      description: "Formal French greetings"
+      register: "formal"
+      slots:
+        salutation:             ["Bonjour", "Bonsoir", "Bonne journée"]
+        addressee_title:        ["Monsieur", "Madame", "Mademoiselle", "Monsieur le Directeur", "Madame la Directrice"]
+      templates:
+        - "{salutation}, {addressee_title}."
+        - "{salutation}, {addressee_title}, comment allez-vous ?"
+
+    - id: "greeting_informal"
+      description: "Informal French greetings using tu-register"
+      register: "informal"
+      slots:
+        salutation:             ["Salut", "Coucou", "Bonjour", "Hey"]
+        addressee_name:         ["[NAME]"]
+      templates:
+        - "{salutation} {addressee_name} !"
+        - "{salutation} ! Comment tu vas ?"
+        - "{salutation} ! Ça va ?"
+
+    - id: "farewell_formal"
+      description: "Formal French farewells"
+      register: "formal"
+      slots:
+        valediction:            ["Au revoir", "Bonne journée", "Bonne soirée", "À bientôt"]
+        courtesy:               ["", "Monsieur", "Madame"]
+      templates:
+        - "{valediction}, {courtesy}."
+        - "{valediction}."
+
+    - id: "farewell_informal"
+      description: "Informal French farewells"
+      register: "informal"
+      slots:
+        valediction:            ["Ciao", "Salut", "À plus", "À tout à l'heure", "À bientôt", "Tchao"]
+      templates:
+        - "{valediction} !"
+        - "{valediction}, {addressee_name} !"
+
+    - id: "wellbeing_inquiry_formal"
+      description: "Asking how someone is — formal vous register"
+      register: "formal"
+      slots:
+        verb_form:              ["allez-vous", "vous portez-vous"]
+        modifier:               ["", "bien", "très bien"]
+      templates:
+        - "Comment allez-vous ?"
+        - "Comment vous portez-vous ?"
+        - "J'espère que vous allez {modifier}."
+
+    - id: "wellbeing_inquiry_informal"
+      description: "Asking how someone is — informal tu register"
+      register: "informal"
+      slots:
+        phrase:                 ["Ça va ?", "Tu vas bien ?", "Comment tu vas ?", "T'as l'air en forme ?"]
+      templates:
+        - "{phrase}"
+
+    - id: "gratitude_expression"
+      description: "Expressing thanks in French"
+      register: "any"
+      slots:
+        thanks:                 ["Merci", "Je vous remercie", "Je te remercie", "Grand merci"]
+        intensifier:            ["", "beaucoup", "infiniment", "mille fois", "sincèrement"]
+        reason:                 ["", "pour votre aide", "pour tout", "de m'avoir aidé(e)"]
+      templates:
+        - "{thanks} {intensifier}."
+        - "{thanks} {intensifier} {reason}."
+
+    - id: "apology_expression"
+      description: "Apologies and excuses in French"
+      register: "any"
+      slots:
+        apology:                ["Pardon", "Excusez-moi", "Je suis désolé(e)", "Je m'excuse", "Veuillez m'excuser"]
+        intensifier:            ["", "vraiment", "sincèrement", "profondément"]
+        reason:                 ["", "pour le dérangement", "pour le retard", "pour mon erreur"]
+      templates:
+        - "{apology}."
+        - "{apology} {intensifier} {reason}."
+
+    - id: "introduction_self"
+      description: "Introducing oneself in French"
+      register: "any"
+      slots:
+        verb_phrase:            ["Je m'appelle", "Mon nom est", "Je suis"]
+        name:                   ["[NAME]"]
+        profession:             ["", "je suis étudiant(e)", "je suis professeur(e)", "je suis ingénieur(e)"]
+      templates:
+        - "{verb_phrase} {name}."
+        - "{verb_phrase} {name}, et {profession}."
+
+    - id: "negation_standard"
+      description: "Standard ne...pas negation structure"
+      register: "any"
+      slots:
+        subject:                ["Je", "Tu", "Il", "Elle", "Nous", "Vous", "Ils", "Elles", "On"]
+        ne:                     ["ne", "n'"]
+        auxiliary:              ["", "suis", "es", "est", "sommes", "êtes", "sont", "ai", "as", "a", "avons", "avez", "ont"]
+        verb:                   ["parle", "comprends", "sais", "veux", "peux", "vais", "fais", "dit"]
+        pas:                    ["pas"]
+      templates:
+        - "{subject} {ne} {verb} {pas}."
+        - "{subject} {ne} {auxiliary} {pas} {verb}."
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "fill_slots_from_context"
+    - step: "apply_gender_agreement"
+    - step: "apply_number_agreement"
+    - step: "apply_elision_rules"
+    - step: "apply_liaison_rules"
+    - step: "apply_register_tu_vous"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  gender_agreement_rules:
+    - rule: "adjective agrees in gender and number with head noun"
+    - rule: "past participle agrees with direct object when object precedes avoir auxiliary"
+    - rule: "past participle always agrees with subject for être auxiliaries"
+
+  register_engine:
+    tu_register:
+      pronouns:   "tu / toi / te / ton / ta / tes"
+      verb_forms: "2nd_person_singular"
+      contexts:   ["friends", "family", "children", "informal_peers"]
+    vous_register:
+      pronouns:   "vous / vous / vous / votre / vos"
+      verb_forms: "2nd_person_plural_for_singular_polite"
+      contexts:   ["strangers", "superiors", "formal_situations", "older_adults"]
+
+  elision_engine:
+    rules:
+      - { environment: "before_vowel_or_mute_h", apply_to: ["le","la","de","que","ne","me","te","se","ce","je"], result: "apostrophe_clitic" }
+    exceptions:
+      - "aspirate_h_words: le hibou (not l'hibou), la honte (not l'honte)"
+
+  liaison_engine:
+    categories:
+      mandatory:  ["les amis", "vous avez", "ils ont", "en été", "comment allez-vous", "un enfant"]
+      optional:   ["et alors (liaison optional)", "ils parlent → [z] only in formal speech"]
+      forbidden:  ["et + vowel: et il → no liaison", "noun_sg + verb: le chat_aime → no liaison"]
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input"
+    - step: "unicode_normalization_NFC"
+    - step: "diacritic_preservation_check"
+    - step: "sentence_boundary_detection"
+    - step: "tokenization_BPE"
+    - step: "morphological_analysis"
+    - step: "gender_number_tagging"
+    - step: "POS_tagging_UD"
+    - step: "dependency_parse_SVO"
+    - step: "elision_detection"
+    - step: "liaison_detection"
+    - step: "register_classification_tu_vous"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "semantic_role_labeling"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string"
+    language:                   "fr"
+    tokens:                     "list[Token]"
+    morphology:                 "list[MorphTag]"
+    syntax_tree:                "DependencyTree"
+    component_family:           "string"
+    slots:                      "dict[str,str]"
+    register:                   "tu|vous|neutral"
+    gender_assignments:         "dict[noun_token, masculine|feminine]"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         15000
+  extended_vocabulary_size:     80000
+  frequency_tiers:
+    tier_1_high_frequency:      2000
+    tier_2_intermediate:        6000
+    tier_3_advanced:            7000
+
+  register_categories:
+    - soutenu
+    - courant
+    - familier
+    - argot
+    - vulgaire
+
+  false_friends_with_english:
+    - { french: "actuel",    false_meaning: "actual",   true_meaning: "current/present" }
+    - { french: "sensible",  false_meaning: "sensible", true_meaning: "sensitive" }
+    - { french: "rester",    false_meaning: "to rest",  true_meaning: "to stay/remain" }
+    - { french: "assister",  false_meaning: "to assist", true_meaning: "to attend" }
+    - { french: "éventuellement", false_meaning: "eventually", true_meaning: "possibly" }
+    - { french: "prétendre", false_meaning: "to pretend", true_meaning: "to claim" }
+    - { french: "ignorer",   false_meaning: "to ignore", true_meaning: "to not know" }
+    - { french: "lecture",   false_meaning: "lecture",  true_meaning: "reading" }
+    - { french: "librairie", false_meaning: "library",  true_meaning: "bookshop" }
+    - { french: "journée",   false_meaning: "journey",  true_meaning: "day (duration)" }
+
+  loanwords_from_english:
+    - { word: "le weekend",   domain: "everyday" }
+    - { word: "le marketing", domain: "business" }
+    - { word: "le selfie",    domain: "social_media" }
+    - { word: "le chat",      domain: "internet" }
+    - { word: "le feedback",  domain: "professional" }
+    - { word: "le smartphone", domain: "technology" }
+    - { word: "le hashtag",   domain: "social_media" }
+    - { word: "le podcast",   domain: "media" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  reference_accent:             "fr-FR Standard Parisian"
+
+  vowel_chart:
+    oral_vowels:
+      - { grapheme: "a",  IPA: "a",  example: "chat" }
+      - { grapheme: "â",  IPA: "ɑ",  example: "pâte" }
+      - { grapheme: "e",  IPA: "ə",  example: "le" }
+      - { grapheme: "é",  IPA: "e",  example: "été" }
+      - { grapheme: "è/ê", IPA: "ɛ", example: "fête" }
+      - { grapheme: "i",  IPA: "i",  example: "vie" }
+      - { grapheme: "o",  IPA: "o",  example: "dos" }
+      - { grapheme: "ô",  IPA: "o",  example: "côte" }
+      - { grapheme: "u",  IPA: "y",  example: "lune" }
+      - { grapheme: "ou", IPA: "u",  example: "four" }
+      - { grapheme: "eu/œu", IPA: "ø", example: "feu" }
+      - { grapheme: "œ",  IPA: "œ",  example: "peur" }
+    nasal_vowels:
+      - { grapheme: "an/en", IPA: "ɑ̃", example: "enfant" }
+      - { grapheme: "in/ain/ein", IPA: "ɛ̃", example: "vin" }
+      - { grapheme: "on",  IPA: "ɔ̃", example: "bon" }
+      - { grapheme: "un",  IPA: "œ̃", example: "brun" }
+
+  consonant_chart:
+    - { grapheme: "r",   IPA: "ʁ",  example: "rouge", note: "uvular fricative — key French feature" }
+    - { grapheme: "ch",  IPA: "ʃ",  example: "chat" }
+    - { grapheme: "j/g(+e,i)", IPA: "ʒ", example: "jour" }
+    - { grapheme: "gn",  IPA: "ɲ",  example: "agneau" }
+    - { grapheme: "ll (after i)", IPA: "j", example: "fille" }
+
+  liaison_phonetics:
+    s_liaison:                  "[z]"
+    n_liaison:                  "[n]"
+    d_liaison:                  "[t]"
+    t_liaison:                  "[t]"
+    x_liaison:                  "[z]"
+    r_liaison:                  "[ʁ]"
+
+  syllable_structure:
+    preferred:                  "CV"
+    resyllabification:          true
+    final_consonant_deletion:   "common_in_casual_speech"
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  lexical_semantics:
+    polysemy_handling:          "context_disambiguation"
+    synonym_resolution:         "register_and_frequency_weighted"
+    antonym_recognition:        true
+    collocation_awareness:      true
+
+  grammatical_meaning:
+    tense_aspect_mood:
+      - { form: "présent",     meaning: "current_state_or_habitual_action" }
+      - { form: "imparfait",   meaning: "past_background_state_or_habitual_past" }
+      - { form: "passé_composé", meaning: "completed_past_event_with_present_relevance" }
+      - { form: "plus_que_parfait", meaning: "past_before_another_past" }
+      - { form: "futur_simple", meaning: "future_event_or_promise" }
+      - { form: "conditionnel_présent", meaning: "hypothetical_or_polite_request" }
+      - { form: "subjonctif_présent", meaning: "doubt_emotion_or_subjectivity" }
+    article_semantics:
+      definite:                 "specific_known_referent"
+      indefinite:               "non_specific_or_first_mention"
+      partitive:                "uncountable_quantity"
+      zero_article:             "after_de_in_negative + professions_without_adjective"
+
+  pragmatic_meaning:
+    implicature_handling:       true
+    politeness_inference:       true
+    register_inference:         true
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - complaining
+    - refusing
+    - agreeing
+    - disagreeing
+
+  politeness_system:
+    dimensions:
+      - dimension: "tu_vs_vous"
+        description: "Binary T-V distinction — fundamental register marker in French"
+        tu_contexts:  ["family", "close_friends", "children", "informal_peers", "animals"]
+        vous_contexts: ["strangers", "superiors", "formal_situations", "groups", "polite_singular"]
+        transition:   "Only move from vous to tu when mutually agreed; default to vous with unknown adults"
+      - dimension: "formality_lexical"
+        description: "Lexical register choices regardless of T-V"
+        levels:       ["soutenu", "courant", "familier", "argot"]
+    formulaic_politeness:
+      opening_formal:           ["Bonjour, Monsieur / Madame", "Je me permets de vous contacter"]
+      opening_informal:         ["Salut !", "Coucou !"]
+      closing_formal:           ["Veuillez agréer, Monsieur / Madame, l'expression de mes salutations distinguées", "Cordialement"]
+      closing_informal:         ["À plus !", "Bisous", "Bonne journée"]
+
+  cultural_context:
+    bisous_greeting:            "Physical cheek-kisses (la bise) common in informal social settings; number varies by region (1–4)"
+    formality_default:          "French culture defaults to formal vous with new acquaintances; switching to tu is a social signal"
+    food_culture:               "References to cuisine are high-prestige; le repas is a social ritual"
+    laïcité:                    "Strict secular public sphere; avoid unsolicited religious references"
+    regional_variation:
+      - region: "Québec"
+        notes: "Distinct vocabulary (char=car, magasiner=shopping, dépanneur=convenience store); often retains vous in formal contexts"
+      - region: "Belgique"
+        notes: "Septante/huitante/nonante for 70/80/90; different food vocabulary"
+      - region: "Maghreb"
+        notes: "Code-switching with Arabic/Darija common; specific loanwords"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "fr_td_001"
+    language:                   "fr"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation", "addressee_title"]
+    normalized_components:
+      salutation:               "Bonjour"
+      addressee_title:          "Monsieur"
+    grammar_rules_used:
+      - "formal_register"
+      - "vous_pronoun_system"
+      - "nominal_group_gender_masculine"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "fr_td_002"
+    language:                   "fr"
+    component_families:
+      - "greeting_informal"
+    slot_order:                 ["salutation", "addressee_name"]
+    normalized_components:
+      salutation:               "Salut"
+      addressee_name:           "Marie"
+    grammar_rules_used:
+      - "informal_register"
+      - "tu_pronoun_system"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "fr_td_003"
+    language:                   "fr"
+    component_families:
+      - "farewell_formal"
+    slot_order:                 ["valediction", "courtesy"]
+    normalized_components:
+      valediction:              "Au revoir"
+      courtesy:                 "Madame"
+    grammar_rules_used:
+      - "formal_register"
+      - "gender_feminine_title"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "fr_td_004"
+    language:                   "fr"
+    component_families:
+      - "negation_standard"
+    slot_order:                 ["subject", "ne", "verb", "pas"]
+    normalized_components:
+      subject:                  "Je"
+      ne:                       "ne"
+      verb:                     "comprends"
+      pas:                      "pas"
+    grammar_rules_used:
+      - "ne_pas_negation"
+      - "group_3_irregular_comprendre"
+      - "first_person_singular_present"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "fr_td_005"
+    language:                   "fr"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks", "intensifier"]
+    normalized_components:
+      thanks:                   "Merci"
+      intensifier:              "beaucoup"
+    grammar_rules_used:
+      - "adverb_post_verb"
+      - "register_neutral"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "fr_ex_001"
+    training_item_ref:          "fr_td_001"
+    input_context:              "User initiates conversation formally"
+    expected_output:            "Bonjour, Monsieur."
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "Bonjour"
+      addressee_title:          "Monsieur"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Bonjour"
+      - "contains_Monsieur"
+      - "ends_with_period"
+      - "no_tu_forms_present"
+
+  - example_id:                 "fr_ex_002"
+    training_item_ref:          "fr_td_002"
+    input_context:              "User greets a close friend informally"
+    expected_output:            "Salut Marie !"
+    component_family_used:      "greeting_informal"
+    slots_filled:
+      salutation:               "Salut"
+      addressee_name:           "Marie"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Salut"
+      - "contains_name"
+      - "ends_with_exclamation"
+      - "no_vous_forms_present"
+
+  - example_id:                 "fr_ex_003"
+    training_item_ref:          "fr_td_003"
+    input_context:              "User says goodbye formally to a woman"
+    expected_output:            "Au revoir, Madame."
+    component_family_used:      "farewell_formal"
+    slots_filled:
+      valediction:              "Au revoir"
+      courtesy:                 "Madame"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Au_revoir"
+      - "contains_Madame_not_Monsieur"
+      - "ends_with_period"
+
+  - example_id:                 "fr_ex_004"
+    training_item_ref:          "fr_td_004"
+    input_context:              "User expresses they do not understand"
+    expected_output:            "Je ne comprends pas."
+    component_family_used:      "negation_standard"
+    slots_filled:
+      subject:                  "Je"
+      ne:                       "ne"
+      verb:                     "comprends"
+      pas:                      "pas"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_ne_before_verb"
+      - "contains_pas_after_verb"
+      - "subject_Je_present"
+      - "no_accent_errors_on_verb"
+
+  - example_id:                 "fr_ex_005"
+    training_item_ref:          "fr_td_005"
+    input_context:              "User says thank you"
+    expected_output:            "Merci beaucoup."
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "Merci"
+      intensifier:              "beaucoup"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Merci"
+      - "contains_beaucoup"
+      - "ends_with_period"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "fr_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "fr_eval_002"
+    rule_type:                  "min_length"
+    description:                "Output must be at least 1 token long"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "fr_eval_003"
+    rule_type:                  "max_length"
+    description:                "Output must not exceed 4096 tokens"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "fr_eval_004"
+    rule_type:                  "gender_agreement"
+    description:                "Adjective gender must agree with head noun in generated outputs"
+    parameters:
+      check_method:             "morphological_tagger"
+      enforce_on_families:      ["greeting_formal", "farewell_formal", "introduction_self"]
+    threshold:                  0.90
+    blocking:                   false
+
+  - rule_id:                    "fr_eval_005"
+    rule_type:                  "diacritic_preservation"
+    description:                "All required diacritics must be present — é è ê ë à â î ï ô ù û ü ç œ"
+    parameters:
+      diacritic_list:           ["é", "è", "ê", "ë", "à", "â", "î", "ï", "ô", "ù", "û", "ü", "ç", "œ"]
+      check_against_lexicon:    true
+    threshold:                  0.95
+    blocking:                   false
+
+  - rule_id:                    "fr_eval_006"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots in a template must be filled"
+    parameters:
+      required_slots:           ["salutation", "valediction", "subject", "thanks"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "fr_eval_007"
+    rule_type:                  "register_consistency"
+    description:                "tu and vous forms must not be mixed in a single utterance"
+    parameters:
+      check_tu_vous_mixing:     true
+    threshold:                  1.0
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    gender_agreement_stack:     "persists_within_sentence_boundary"
+    register_tracking:          "persists_within_conversation_boundary"
+    auto_clear_on:              ["session_end", "topic_shift_detected"]
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+    max_events:                 131072
+    retention_policy:           "session_scoped_cleared_on_end"
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+    max_concepts:               2097152
+    update_policy:              "versioned_append_only"
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+    note:                       "Raw dialogue is not stored. Only structured, approved, normalized training items are persisted."
+
+  privacy_policy:
+    pii_detection:              true
+    pii_action:                 "redact_before_any_storage"
+    user_data_ownership:        "user"
+    data_export_on_request:     true
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "French ↔ English is the primary translation axis. False friends list maintained here."
+
+  engine_to_spanish:
+    type:                       "bridge"
+    target_engine:              "spanish_engine_v1"
+    link_file:                  "language_engines/Spanish_engine.training.yaml"
+    relationship:               "Romance_sibling_language_positive_transfer"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "High lexical overlap; gender system similar; tense/mood system similar."
+
+  engine_to_german:
+    type:                       "bridge"
+    target_engine:              "german_engine_v1"
+    link_file:                  "language_engines/German_engine.training.yaml"
+    relationship:               "Indo_European_cousin_contrastive"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "Shared Germanic-Romance substrate differences; case vs. agreement contrasts useful for training."
+
+  engine_to_arabic:
+    type:                       "bridge"
+    target_engine:              "arabic_engine_v1"
+    link_file:                  "language_engines/Arabic_engine.training.yaml"
+    relationship:               "extensive_loanword_history_French_into_Maghrebi_Arabic"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "Significant overlap in Maghrebi French–Arabic code-switching contexts."
+
+  engine_to_japanese:
+    type:                       "bridge"
+    target_engine:              "japanese_engine_v1"
+    link_file:                  "language_engines/Japanese_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "French is popular second language for Japanese learners; contrastive phonology important."
+
+  engine_to_tamil:
+    type:                       "bridge"
+    target_engine:              "tamil_engine_v1"
+    link_file:                  "language_engines/Tamil_engine.training.yaml"
+    relationship:               "contrastive_agglutinative_vs_analytic"
+    alignment_method:           "neural_attention_bilingual"
+    note:                       "French spoken in Pondicherry and parts of Tamil Nadu; colonial contact language."
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold created with all 19 section stubs"
+      reason:                   "Project initialization — French engine stub"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: engine_identity with 5 regional variants and full diacritics list,
+        ai_core with gender/register tracking, brain with gender agreement pipeline,
+        skills with French-specific labels, creativity with French metaphor bank,
+        language_rules with full morphology (10 irregular verbs, 3 verb groups,
+        gender system, elision/liaison rules, BANGS adjective placement,
+        ne...pas negation, subjunctive triggers), sentence_processing with 10
+        component families (formal/informal greeting/farewell, wellbeing inquiry,
+        gratitude, apology, introduction, negation), sentence_generation with
+        full agreement pipeline, sentence_breakdown with 17-step pipeline,
+        vocabulary (false friends, loanwords), pronunciation (full IPA chart
+        including nasal vowels and liaison phonetics), meaning (tense/aspect/mood
+        semantic mappings, article semantics), pragmatics (tu/vous politeness system,
+        cultural context for 3 regional variants), 5 approved training items,
+        5 regression test examples, 7 evaluation rules, memory policy,
+        6 inter-engine connection bridges.
+      reason:                   "Promote French engine from scaffold to active status"
+      approved_by:              "polyglot_engine_dev"

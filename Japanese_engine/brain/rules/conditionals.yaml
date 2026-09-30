@@ -1,0 +1,34 @@
+# Japanese Conditional Structures (条件表現)
+
+conditionals:
+  tara:
+    marker: "〜たら / 〜だら"
+    formation: "Past tense (ta-form) + ら"
+    semantics: "Temporal sequence, discovery, hypothetical conditional with volition allowed in apodosis."
+    constraints:
+      - "Can be followed by commands, requests, proposals, volition (e.g. 日本に行ったら、連絡してください)."
+      - "In past tense, expresses discovery of an unexpected event (e.g. 窓を開けたら、雪が降っていた)."
+
+  ba:
+    marker: "〜ば"
+    formation: "Kateikei (仮定形) + ば"
+    semantics: "General condition, logical antecedent."
+    constraints:
+      - "Cannot have volitional, request, or command main clause UNLESS the antecedent is a stative predicate (ある/いる/形容詞)."
+      - "Ex: 安ければ買います (Allowed - stative), 雨が降れば傘を買いましょう (Unnatural/Strictly restricted)."
+
+  to:
+    marker: "〜と"
+    formation: "Dictionary / Non-past plain form + と"
+    semantics: "Natural consequence, universal scientific fact, automatic sequence, repeated correlation."
+    constraints:
+      - "NEVER followed by volition, intention, command, suggestion, or request in the main clause."
+      - "Ex: 春になると桜が咲く (Correct: automatic nature law)."
+      - "Violation check: '〜と、〜してください' is strictly ungrammatical."
+
+  nara:
+    marker: "〜なら"
+    formation: "Noun / Na-stem / Plain verb + なら"
+    semantics: "Contextual or conversational topic condition, advising based on listener statement."
+    constraints:
+      - "Can precede actions temporally (Ex: 東京に行くなら、新幹線が便利です: Shinkansen decision happens before going)."

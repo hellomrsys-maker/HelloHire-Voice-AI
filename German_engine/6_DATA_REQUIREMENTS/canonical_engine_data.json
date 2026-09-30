@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "German",
+    "engine": "German_engine",
+    "iso_codes": [
+      "deu",
+      "de"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "German",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "deu_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (German)",
+          "How are operations (German)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "deu_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (German)",
+          "Report readiness (German)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Der Ingenieur entwickelte eine hochmoderne verteilte Architektur.",
+    "Wir haben das synchrone Speicherprotokoll erfolgreich implementiert.",
+    "Die Forscherin veröffentlichte eine bahnbrechende Studie zur KI.",
+    "Der Architekt optimierte die Datenverarbeitungspipeline (using optimal hyper-parameters).",
+    "Alle Komponenten kommunizieren ohne Latenzverzögerung miteinander.",
+    "Obwohl die Anforderungen komplex waren, schloss das Team das Projekt ab (on multi-core architectures).",
+    "Das neuronale Netzwerk klassifiziert multilinguale Syntaxmuster präzise.",
+    "Wir führten umfassende Zuverlässigkeitstests durch (under heavy loads).",
+    "Der Ingenieur entwickelte eine hochmoderne verteilte Architektur.",
+    "Wir haben das synchrone Speicherprotokoll erfolgreich implementiert.",
+    "Die Forscherin veröffentlichte eine bahnbrechende Studie zur KI.",
+    "Der Architekt optimierte die Datenverarbeitungspipeline (using optimal hyper-parameters).",
+    "Alle Komponenten kommunizieren ohne Latenzverzögerung miteinander.",
+    "Obwohl die Anforderungen komplex waren, schloss das Team das Projekt ab (on multi-core architectures).",
+    "Das neuronale Netzwerk klassifiziert multilinguale Syntaxmuster präzise.",
+    "Wir führten umfassende Zuverlässigkeitstests durch (under heavy loads).",
+    "Der Ingenieur entwickelte eine hochmoderne verteilte Architektur.",
+    "Wir haben das synchrone Speicherprotokoll erfolgreich implementiert.",
+    "Die Forscherin veröffentlichte eine bahnbrechende Studie zur KI.",
+    "Der Architekt optimierte die Datenverarbeitungspipeline (using optimal hyper-parameters)."
+  ]
+}

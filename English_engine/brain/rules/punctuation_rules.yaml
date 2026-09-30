@@ -1,0 +1,63 @@
+# Punctuation Rules Configuration for English Engine
+punctuation_rules:
+  comma_splice:
+    id: "PUNC_001"
+    description: "Two independent clauses joined with only a comma without coordinating conjunction"
+    severity: "error"
+    detection_pattern: "INDEPENDENT_CLAUSE + COMMA + INDEPENDENT_CLAUSE"
+    resolution_strategies:
+      - "Replace comma with semicolon"
+      - "Add coordinating conjunction (for, and, nor, but, or, yet, so)"
+      - "Split into two distinct sentences with a period"
+      - "Subordinate one clause using subordinating conjunction"
+
+  oxford_comma:
+    id: "PUNC_002"
+    description: "Comma preceding conjunction in a series of three or more items"
+    policy: "strict_preferred"
+    default_enabled: true
+    pattern: "ITEM_1, ITEM_2, (and|or) ITEM_3 -> ITEM_1, ITEM_2, and ITEM_3"
+    rationale: "Prevents syntactic ambiguity in coordinate noun phrases"
+
+  apostrophe_usage:
+    id: "PUNC_003"
+    rules:
+      singular_possessive:
+        pattern: "{NOUN} + 's"
+        example: "the student's thesis"
+      plural_possessive_regular:
+        pattern: "{PLURAL_NOUN_ENDS_WITH_S} + '"
+        example: "the students' desks"
+      plural_possessive_irregular:
+        pattern: "{IRREGULAR_PLURAL_NOT_S} + 's"
+        example: "children's toys, women's rights"
+      its_vs_its:
+        contraction: "it's = it is / it has"
+        possessive_determiner: "its = belonging to it (NO apostrophe)"
+        who_vs_whose: "who's = who is; whose = possessive pronoun"
+
+  semicolon_colon:
+    id: "PUNC_004"
+    semicolon:
+      rule: "Links closely related independent clauses without a conjunction, or separates list items containing commas"
+      invalid_usage: "Do not follow with coordinating conjunction unless separating complex clauses"
+    colon:
+      rule: "Preceding clause MUST be a grammatically complete independent clause"
+      invalid_usage: "Never place immediately after a linking verb or preposition (e.g., 'The ingredients are: ...' is invalid)"
+
+  quotation_conventions:
+    id: "PUNC_005"
+    us_style:
+      period_comma_inside: true
+      colon_semicolon_outside: true
+      question_mark_context_dependent: true
+    uk_style:
+      period_comma_outside_unless_part_of_quote: true
+      single_quotes_primary: true
+      double_quotes_nested: true
+
+  hyphenation:
+    id: "PUNC_006"
+    compound_modifier_prenominal: "Hyphenate compound adjectives preceding a noun (e.g., 'state-of-the-art model')"
+    compound_modifier_predicative: "Do not hyphenate compound adjectives in predicate position (e.g., 'the model is state of the art')"
+    ly_adverb_rule: "Never hyphenate adverb ending in -ly with adjective (e.g., 'highly developed', NOT 'highly-developed')"

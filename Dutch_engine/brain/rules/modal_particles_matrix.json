@@ -1,0 +1,57 @@
+{
+  "engine": "Dutch",
+  "matrix_type": "modal_particles_matrix",
+  "version": "1.0.0",
+  "particles": [
+    {
+      "token": "maar",
+      "pragmatic_force": "imperative_softener / concession",
+      "gloss": "just, simply, go ahead",
+      "example": "Kom maar binnen"
+    },
+    {
+      "token": "even",
+      "pragmatic_force": "minimizing burden / brief duration",
+      "gloss": "for a moment, just a sec",
+      "example": "Kun je even kijken?"
+    },
+    {
+      "token": "toch",
+      "pragmatic_force": "counter-expectation / seeking confirmation",
+      "gloss": "surely, after all, isn't it",
+      "example": "Het is toch duidelijk?"
+    },
+    {
+      "token": "eens",
+      "pragmatic_force": "invitation / exploratory suggestion",
+      "gloss": "once, sometime",
+      "example": "Probeer dat eens"
+    },
+    {
+      "token": "hoor",
+      "pragmatic_force": "clause-final reassurance / conversational marker",
+      "gloss": "you know, really",
+      "example": "Geen probleem hoor"
+    },
+    {
+      "token": "nou",
+      "pragmatic_force": "urgency / impatience / emphatic focus",
+      "gloss": "now, already, on earth",
+      "example": "Schiet nou op"
+    }
+  ],
+  "common_clusters": [
+    {
+      "cluster": ["maar", "even"],
+      "usage": "Directive softened for minimal effort: 'Doe dat maar even.'"
+    },
+    {
+      "cluster": ["toch", "maar", "eens"],
+      "usage": "Plea / gentle insistence: 'Denk er toch maar eens over na.'"
+    },
+    {
+      "cluster": ["nou", "eens"],
+      "usage": "Exasperated imperative: 'Luister nou eens!'"
+    }
+  ]
+}

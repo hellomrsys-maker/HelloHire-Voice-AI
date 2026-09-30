@@ -1,0 +1,75 @@
+{
+  "language": "Hungarian",
+  "engine": "D:\\gra.voi\\Hungarian_engine",
+  "iso_code": "hun",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "hun_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A mérnök egy rendkívül hatékony elosztott rendszert tervezett.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A hallgatók tökéletesen megértették a bonyolult neurális hálózatot.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hun_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Sikeresen megvalósítottuk a zéró késleltetésű szinkron memóriaprotokollt.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A professzor részletesen elmagyarázta a generatív nyelvtan elméletét.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hun_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A kutatócsoport egy jelentős mesterséges intelligencia tanulmányt publikált.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A szoftverarchitekt optimalizálta az adatfeldolgozási folyamatot.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hun_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A mesterséges intelligencia pontosan elemzi a többnyelvű szövegeket.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A fejlesztőcsapat sikeresen befejezte az összes integrációs tesztet.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "hun_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A nagysebességű memóriabusz garantálja a valós idejű adatintegritást.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Szigorú teljesítményteszteket végeztünk a rendszer megbízhatóságának igazolására.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

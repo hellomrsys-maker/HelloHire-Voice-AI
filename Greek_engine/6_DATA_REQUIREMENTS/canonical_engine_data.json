@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Greek",
+    "engine": "Greek_engine",
+    "iso_codes": [
+      "ell",
+      "el"
+    ],
+    "scripts": [
+      "Greek"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Greek",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "ell_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Greek)",
+          "How are operations (Greek)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "ell_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Greek)",
+          "Report readiness (Greek)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Ο μηχανικός σχεδίασε ένα εξαιρετικά αποδοτικό κατανεμημένο σύστημα.",
+    "Οι φοιτητές κατανόησαν πλήρως το περίπλοκο νευρωνικό δίκτυο.",
+    "Εφαρμόσαμε επιτυχώς το πρωτόκολλο σύγχρονης μνήμης μηδενικής καθυστέρησης.",
+    "Ο καθηγητής εξήγησε λεπτομερώς τις αρχές της παραγωγικής γραμματικής.",
+    "Η ερευνητική ομάδα δημοσίευσε μια σημαντική εργασία για την τεχνητή νοημοσύνη.",
+    "Ο αρχιτέκτονας λογισμικού βελτιστοποίησε τη γραμμή επεξεργασίας δεδομένων.",
+    "Η τεχνητή νοημοσύνη αναλύει με ακρίβεια πολυγλωσσικά κείμενα.",
+    "Η ομάδα ανάπτυξης ολοκλήρωσε επιτυχώς όλες τις δοκιμές ολοκλήρωσης.",
+    "Ο δίαυλος μνήμης υψηλής ταχύτητας διασφαλίζει τη συνοχή δεδομένων σε πραγματικό χρόνο.",
+    "Διεξαγάγαμε αυστηρές δοκιμές απόδοσης για να αποδείξουμε την αξιοπιστία.",
+    "Τα παιδιά διάβασαν ενδιαφέροντα βιβλία στη βιβλιοθήκη.",
+    "Σήμερα ο καιρός είναι πολύ ευχάριστος και δροσερός.",
+    "Οι αγρότες ξεκίνησαν τη συγκομιδή των σιτηρών στους αγρούς.",
+    "Ο επιστήμονας εξέτασε την ταχύτητα και την ακρίβεια του αλγορίθμου.",
+    "Ο μηχανικός σχεδίασε ένα εξαιρετικά αποδοτικό κατανεμημένο σύστημα. [14]",
+    "Οι φοιτητές κατανόησαν πλήρως το περίπλοκο νευρωνικό δίκτυο. [15]",
+    "Εφαρμόσαμε επιτυχώς το πρωτόκολλο σύγχρονης μνήμης μηδενικής καθυστέρησης. [16]",
+    "Ο καθηγητής εξήγησε λεπτομερώς τις αρχές της παραγωγικής γραμματικής. [17]",
+    "Η ερευνητική ομάδα δημοσίευσε μια σημαντική εργασία για την τεχνητή νοημοσύνη. [18]",
+    "Ο αρχιτέκτονας λογισμικού βελτιστοποίησε τη γραμμή επεξεργασίας δεδομένων. [19]"
+  ]
+}

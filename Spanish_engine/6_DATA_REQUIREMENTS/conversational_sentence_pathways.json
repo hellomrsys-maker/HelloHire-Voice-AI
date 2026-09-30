@@ -1,0 +1,88 @@
+{
+  "language": "Spanish",
+  "engine": "Spanish_engine",
+  "iso_code": "es",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "es_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Podemos resolver este desacuerdo antes de que termine el día?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Por supuesto, siempre que mantengamos el respeto mutuo en la conversación.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 203.0,
+        "speech_rate_sps": 3.27,
+        "vocal_roughness": 0.656,
+        "floor_posture": "WARM_CONCILIATORY"
+      }
+    },
+    {
+      "id": "es_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Cuánto tiempo necesitamos para concluir la evaluación completa?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Menos de diez minutos si nos enfocamos en los datos esenciales.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 217.6,
+        "speech_rate_sps": 3.0,
+        "vocal_roughness": 0.743,
+        "floor_posture": "PRACTICAL_FOCUSED"
+      }
+    },
+    {
+      "id": "es_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Entiendes exactamente lo que esto significa para todos nosotros?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Lo entiendo perfectamente, y actuaré de acuerdo con las instrucciones.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 261.4,
+        "speech_rate_sps": 4.25,
+        "vocal_roughness": 0.997,
+        "floor_posture": "FIRM_COMMITTED"
+      }
+    },
+    {
+      "id": "es_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Vale la pena arriesgar todo por una sola oportunidad?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Cuando el propósito es verdadero, el riesgo es necesario.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 217.3,
+        "speech_rate_sps": 3.48,
+        "vocal_roughness": 0.698,
+        "floor_posture": "PHILOSOPHICAL_TILT"
+      }
+    },
+    {
+      "id": "es_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Quién dio la orden de iniciar este procedimiento sin aviso?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "La dirección ejecutiva autorizó el protocolo directamente.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 201.0,
+        "speech_rate_sps": 3.53,
+        "vocal_roughness": 0.765,
+        "floor_posture": "OFFICIAL_HIERARCHICAL"
+      }
+    },
+    {
+      "id": "es_pathway_006",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "¿Qué garantías tenemos de que este acuerdo será respetado?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Nuestra palabra y el registro formal son la garantía más sólida.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 255.7,
+        "speech_rate_sps": 2.82,
+        "vocal_roughness": 0.855,
+        "floor_posture": "HONORABLE_CLOSURE"
+      }
+    }
+  ]
+}

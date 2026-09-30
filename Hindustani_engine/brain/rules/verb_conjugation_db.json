@@ -1,0 +1,67 @@
+{
+  "aspectual_suffixes": {
+    "habitual": {
+      "M_SG": "ta",
+      "M_PL": "te",
+      "F_SG": "ti",
+      "F_PL": "tin"
+    },
+    "continuous": {
+      "M_SG": "raha",
+      "M_PL": "rahe",
+      "F_SG": "rahi",
+      "F_PL": "rahin"
+    },
+    "perfective": {
+      "M_SG": "a",
+      "M_PL": "e",
+      "F_SG": "i",
+      "F_PL": "in"
+    },
+    "future": {
+      "1_SG_M": "unga", "1_SG_F": "ungi",
+      "2_SG_M": "ega",  "2_SG_F": "egi",
+      "3_SG_M": "ega",  "3_SG_F": "egi",
+      "2_PL_M": "oge",  "2_PL_F": "ogin",
+      "1_PL_M": "enge", "1_PL_F": "engin",
+      "3_PL_M": "enge", "3_PL_F": "engin"
+    }
+  },
+  "auxiliary_hona": {
+    "present": {
+      "main": "hoon",
+      "tu": "hai",
+      "yeh": "hai",
+      "woh": "hai",
+      "tum": "ho",
+      "aap": "hain",
+      "hum": "hain",
+      "yeh_pl": "hain",
+      "woh_pl": "hain"
+    },
+    "past": {
+      "M_SG": "tha",
+      "M_PL": "the",
+      "F_SG": "thi",
+      "F_PL": "thin"
+    }
+  },
+  "transitivity_classes": {
+    "transitive_verbs": [
+      "karna", "dekhna", "likhna", "padhna", "khana", "peena",
+      "kehna", "sunna", "dena", "lena", "banana", "khareedna",
+      "bechna", "dhundhna", "bhejna", "samajhna"
+    ],
+    "intransitive_verbs": [
+      "aana", "jaana", "sona", "hasna", "rona", "baithna",
+      "daudna", "girna", "marna", "chalna", "uthna", "rukna", "rahna"
+    ]
+  },
+  "irregular_perfective": {
+    "karna": {"M_SG": "kiya", "M_PL": "kiye", "F_SG": "ki", "F_PL": "kin"},
+    "jaana": {"M_SG": "gaya", "M_PL": "gaye", "F_SG": "gayi", "F_PL": "gayin"},
+    "dena":  {"M_SG": "diya", "M_PL": "diye", "F_SG": "di", "F_PL": "din"},
+    "lena":  {"M_SG": "liya", "M_PL": "liye", "F_SG": "li", "F_PL": "lin"},
+    "hona":  {"M_SG": "hua",  "M_PL": "hue",  "F_SG": "hui", "F_PL": "huin"}
+  }
+}

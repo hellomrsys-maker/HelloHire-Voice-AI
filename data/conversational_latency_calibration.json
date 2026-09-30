@@ -1,0 +1,11 @@
+{
+  "calibrated_gap_ms": 518,
+  "turn_taking_range_ms": [
+    300,
+    650
+  ],
+  "speech_tempo_sps": 3.6,
+  "baseline_f0_hz": 230.0,
+  "vocal_roughness": 0.75,
+  "model_checkpoint": "checkpoints/multilingual_acoustic_prosody_model.pt"
+}

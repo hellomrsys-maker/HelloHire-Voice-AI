@@ -1,0 +1,49 @@
+# Arabic Engine — Layer 9: Engine Policy & Runtime Configuration
+
+engine:
+  name: "ArabicEngine"
+  version: "1.0.0"
+  iso_code: "ara"
+  script: "Arab"
+  direction: "rtl"
+  target_standard: "Modern_Standard_Arabic"
+
+syntax:
+  canonical_word_order: "VSO"
+  allow_svo_nominal_clauses: true
+  strict_vso_singular_verb_agreement: true
+  enforce_deflected_agreement: true # Non-human plurals take feminine singular concord
+  validate_idafa_construct_state: true
+
+morphology:
+  root_pattern_system: "semitic_non_concatenative"
+  supported_derived_forms: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  broken_plural_resolution: true
+  dual_number_support: true
+
+phonology:
+  sun_moon_coronal_assimilation: true
+  hamza_orthography_audit: true
+  diacritic_normalization: true
+
+pragmatics:
+  enforce_formal_greeting_protocol: true
+  flag_colloquial_dialect_incursions: true
+  epistolary_etiquette_audit: true
+
+zero_bridge_memory:
+  magic_header: "0x41524142" # "ARAB"
+  vector_size_bytes: 64
+  synchronous_memory_rule: true
+  sub_ai_byte_mapping:
+    syntax_flags: 18
+    case_error_flags: 19
+    phonology_flags: 20
+    morphology_flags: 21
+    root_class: 22
+    pragmatic_flags: 23
+    confidence_score: "24..27"
+    syntax_sub_ai_id: 52
+    phonology_sub_ai_id: 53
+    pragmatic_sub_ai_id: 54
+    editorial_sub_ai_id: 55

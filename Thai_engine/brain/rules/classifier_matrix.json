@@ -1,0 +1,70 @@
+{
+  "classifiers": {
+    "ตัว": {
+      "translit": "tua",
+      "domain": "animals, garments with legs/sleeves, furniture with legs",
+      "nouns": ["หมา", "สุนัข", "แมว", "ช้าง", "ปลา", "นก", "เสื้อ", "กางเกง", "โต๊ะ", "เก้าอี้"],
+      "example": "หมาสองตัว (two dogs)"
+    },
+    "คน": {
+      "translit": "khon",
+      "domain": "humans, ordinary persons",
+      "nouns": ["คน", "นักเรียน", "ครู", "เพื่อน", "เด็ก", "ผู้หญิง", "ผู้ชาย", "อาจารย์"],
+      "example": "นักเรียนสามคน (three students)"
+    },
+    "องค์": {
+      "translit": "oŋ",
+      "domain": "royalty, Buddha statues, deities, high monks",
+      "nouns": ["พระมหากษัตริย์", "พระพุทธรูป", "เทวดา", "พระสงฆ์"],
+      "example": "พระพุทธรูปหนึ่งองค์ (one Buddha image)"
+    },
+    "เล่ม": {
+      "translit": "lêm",
+      "domain": "books, notebooks, bladed tools, candles",
+      "nouns": ["หนังสือ", "สมุด", "มีด", "เทียน", "ดาบ"],
+      "example": "หนังสือสี่เล่ม (four books)"
+    },
+    "คัน": {
+      "translit": "khan",
+      "domain": "wheeled vehicles, umbrellas, spoons, forks",
+      "nouns": ["รถ", "รถยนต์", "จักรยาน", "ร่ม", "ช้อน", "ส้อม"],
+      "example": "รถยนต์หนึ่งคัน (one car)"
+    },
+    "หลัง": {
+      "translit": "lǎŋ",
+      "domain": "dwellings, houses, buildings",
+      "nouns": ["บ้าน", "กระท่อม", "ตึก"],
+      "example": "บ้านสองหลัง (two houses)"
+    },
+    "ใบ": {
+      "translit": "bay",
+      "domain": "hollow containers, fruits, tickets, bags",
+      "nouns": ["แก้ว", "จาน", "ถ้วย", "กระเป๋า", "ไข่", "ตั๋ว", "ใบไม้"],
+      "example": "กระเป๋าหนึ่งใบ (one bag)"
+    },
+    "ชิ้น": {
+      "translit": "chín",
+      "domain": "pieces, portions, slices",
+      "nouns": ["เค้ก", "ขนม", "เนื้อ", "งาน"],
+      "example": "เค้กสองชิ้น (two slices of cake)"
+    },
+    "แห่ง": {
+      "translit": "hɛ̀ŋ",
+      "domain": "places, institutions, locations",
+      "nouns": ["สถานที่", "โรงพยาบาล", "มหาวิทยาลัย", "ธนาคาร"],
+      "example": "โรงพยาบาลสองแห่ง (two hospitals)"
+    },
+    "อัน": {
+      "translit": "an",
+      "domain": "small miscellaneous items without special classifier",
+      "nouns": ["ของ", "ชิ้นส่วน", "สิ่งของ"],
+      "example": "ของสามอัน (three items)"
+    }
+  },
+  "syntax_rules": {
+    "quantified_phrase": "[Noun] + [Numeral] + [Classifier]",
+    "demonstrative_phrase": "[Noun] + [Classifier] + [Demonstrative]",
+    "indefinite_phrase": "[Noun] + [Classifier] + หนึ่ง",
+    "calque_warning": "Pre-nominal order [Numeral] + [Classifier] + [Noun] is an ungrammatical foreign calque in Standard Thai"
+  }
+}

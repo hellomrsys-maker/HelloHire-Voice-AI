@@ -1,0 +1,66 @@
+# Persian Language Engine Policy & Configuration Specification (Config Layer)
+
+engine:
+  name: "Persian Language Engine"
+  code: "fa"
+  version: "1.0.0"
+  standard: "Contemporary Standard Iranian Persian (Tehran Academic Norm)"
+  iso_639_1: "fa"
+  iso_639_3: "fas"
+  script: "Perso-Arabic (RTL)"
+
+zero_bridge_memory:
+  magic_bytes: "0x46415253" # "FARS" in ASCII
+  vector_size_bytes: 64
+  alignment_bytes: 64
+  zero_latency_mode: true
+  byte_map:
+    magic: [0, 4]
+    version: [4, 6]
+    engine_mode: 6
+    script_mode: 7
+    phonology_bitfield: [8, 16]
+    syntactic_flags: [16, 18]
+    syntax_sub_ai_capability: 18
+    dom_accuracy: 19
+    zwnj_orthography: 20
+    light_verb_flag: 21
+    taarof_register: 22
+    deference_flag: 23
+    confidence_score: [24, 28]
+    reserved_hardware: [28, 32]
+    semantic_vector: [32, 48]
+    task_status: [48, 52]
+    sub_ai_active:
+      syntax: 52
+      phonology: 53
+      pragmatic: 54
+      editorial: 55
+    attention_vector: [56, 64]
+
+linguistic_policy:
+  word_order: "SOV"
+  pro_drop: true
+  ezafe_enforcement: "strict" # Mandates correct -e vs -ye phonetic realization
+  dom_ra_enforcement: "strict" # Mandates rā on definite direct objects
+  zwnj_normalization: "mandatory" # Standardizes half-space across prefixes and plurals
+  diglossic_normalization: "bilingual_awareness" # Audits colloquialisms in formal text
+  taarof_mode: "adaptive" # Adjusts between Informal, Formal, and High Ta'arof
+
+sub_ais:
+  syntax:
+    name: "PersianSyntaxSubAI"
+    designated_bytes: [18, 52]
+    scope: "SOV word order, Ezafe attachment, DOM rā verification"
+  phonology:
+    name: "PersianPhonologySubAI"
+    designated_bytes: [20, 53]
+    scope: "ZWNJ morpheme boundaries, Perso-Arabic letters, vowel harmony"
+  pragmatic:
+    name: "PersianPragmaticSubAI"
+    designated_bytes: [22, 23, 54]
+    scope: "Ta'arof deference tiers, honorific verbal concord, epistolary formulas"
+  editorial:
+    name: "PersianEditorialSubAI"
+    designated_bytes: [19, 21, 24, 25, 26, 27, 55]
+    scope: "Complex predicates, overall grammatical confidence score"

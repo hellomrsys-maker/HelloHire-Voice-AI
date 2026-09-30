@@ -1,0 +1,49 @@
+{
+  "ser_conditions": [
+    "identidad_definicion",
+    "origen_nacionalidad",
+    "profesion_ocupacion",
+    "caracteristicas_esenciales_permanentes",
+    "tiempo_hora_fecha",
+    "localizacion_de_eventos",
+    "posesion_material",
+    "voz_pasiva_con_participio"
+  ],
+  "estar_conditions": [
+    "ubicacion_espacial_de_objetos_o_personas",
+    "estados_temporales_fisicos_o_mentales",
+    "condiciones_resultantes",
+    "aspecto_progresivo_con_gerundio",
+    "percepcion_sensorial_subjetiva"
+  ],
+  "semantic_shift_adjectives": {
+    "listo": {
+      "ser": "Inteligente, astuto, perspicaz",
+      "estar": "Preparado para una acción, listo para salir"
+    },
+    "bueno": {
+      "ser": "Bondadoso, moralmente recto, de buena calidad",
+      "estar": "Sano, atractivo físicamente, de buen sabor"
+    },
+    "malo": {
+      "ser": "Malvado, perjudicial, de pésima calidad",
+      "estar": "Enfermo, en mal estado, descompuesto"
+    },
+    "aburrido": {
+      "ser": "Monótono, que produce aburrimiento",
+      "estar": "Desganado, que siente aburrimiento en este momento"
+    },
+    "rico": {
+      "ser": "Poseedor de mucho dinero o bienes materiales",
+      "estar": "Delicioso, con sabor agradable"
+    },
+    "verde": {
+      "ser": "De color verde",
+      "estar": "Inmaduro (fruta), inexperto (persona)"
+    },
+    "atento": {
+      "ser": "Amable, educado, cortés",
+      "estar": "Prestando atención, concentrado"
+    }
+  }
+}

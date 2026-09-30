@@ -1,0 +1,37 @@
+engine:
+  name: "Tamil Sovereign Language Engine"
+  id: "tamil_engine"
+  sovereign_scope:
+    - "India (Tamil Nadu)"
+    - "Sri Lanka"
+    - "Singapore"
+    - "Malaysia"
+  version: "1.0.0"
+
+hardware_zero_bridge:
+  magic: 0x54414D4C  # "TAML"
+  total_bytes: 64
+  architecture: "Zero-Bridge Synchronous Shared Physical Memory"
+  byte_offsets:
+    magic: [0, 4]
+    version: [4, 6]
+    engine_mode: 6
+    dialect_mode: 7
+    syntax_capability: 18
+    case_agglutination: 19
+    retroflex_orthography: 20
+    png_concord_flag: 21
+    register_tier: 22
+    sandhi_concord_flag: 23
+    editorial_confidence: [24, 28]
+    sub_ai_syntax_active: 52
+    sub_ai_phonology_active: 53
+    sub_ai_pragmatic_active: 54
+    sub_ai_editorial_active: 55
+
+linguistic_policy:
+  default_register: "centamil"  # "centamil" (literary) or "koduntamil" (spoken)
+  enforce_sandhi: true
+  enforce_png_concord: true
+  validate_retroflex_triad: true
+  dative_subject_rules: true

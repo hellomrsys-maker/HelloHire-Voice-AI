@@ -1,0 +1,966 @@
+{
+  "engine_profile": {
+    "language": "English",
+    "engine": "English_engine",
+    "iso_codes": [
+      "eng"
+    ],
+    "scripts": [
+      "Default"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "English",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 11,
+    "total_generative_sentence_capacity": 900,
+    "nodes": [
+      {
+        "node_id": "en_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "How are you?",
+          "What's new?",
+          "How is it going?",
+          "How are things?",
+          "What's the status?",
+          "How do you feel?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}{courtesy}.",
+          "slots": {
+            "subject": [
+              "I am",
+              "I'm doing",
+              "Things are",
+              "Everything is",
+              "Operations are",
+              "All systems are"
+            ],
+            "valence": [
+              "good",
+              "fine",
+              "great",
+              "well",
+              "wonderful",
+              "nominal",
+              "fully operational",
+              "stable"
+            ],
+            "courtesy": [
+              "",
+              ", thank you",
+              ", all good",
+              ", thanks for checking",
+              ", ready to proceed",
+              ", standing by"
+            ]
+          }
+        },
+        "combinatorial_capacity": 288,
+        "acoustic_profile": {
+          "mean_f0_hz": 224.0,
+          "speech_rate_sps": 3.5,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "en_tree_attention_check",
+        "intent": "ATTENTION_FOCUS_CHECK",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x22",
+        "inbound_stems": [
+          "Do I have your complete and undivided attention?",
+          "Are you focusing on this?",
+          "Do you have attention to spare?",
+          "Can you focus on this briefing?"
+        ],
+        "response_spine": {
+          "template": "{subject} {quantity} {qualifier} {action}.",
+          "slots": {
+            "subject": [
+              "You have",
+              "We have allocated",
+              "The team has dedicated"
+            ],
+            "quantity": [
+              "the minimum required amount",
+              "full operational focus",
+              "adequate capacity",
+              "complete priority bandwidth"
+            ],
+            "qualifier": [
+              "to proceed",
+              "for this critical phase",
+              "to execute without interruption"
+            ],
+            "action": [
+              "confidently",
+              "immediately",
+              "as requested"
+            ]
+          }
+        },
+        "combinatorial_capacity": 108,
+        "acoustic_profile": {
+          "mean_f0_hz": 218.0,
+          "speech_rate_sps": 3.4,
+          "vocal_roughness": 0.72
+        }
+      },
+      {
+        "node_id": "en_tree_authorization_inquiry",
+        "intent": "AUTHORIZATION_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x23",
+        "inbound_stems": [
+          "You still haven't explained why this decision was taken without authorization.",
+          "Why was this decision taken?",
+          "Who approved this deployment?",
+          "Did you obtain authorization?"
+        ],
+        "response_spine": {
+          "template": "{preamble} {rationale} to ensure {objective}.",
+          "slots": {
+            "preamble": [
+              "Action was executed immediately because",
+              "The protocol was initiated since",
+              "This step was taken because",
+              "We proceeded rapidly because"
+            ],
+            "rationale": [
+              "timing was critical",
+              "formal sign-off was pre-validated",
+              "parameters exceeded standard tolerance",
+              "delays would jeopardize stability"
+            ],
+            "objective": [
+              "system stability",
+              "zero data degradation",
+              "complete operational continuity",
+              "mission success"
+            ]
+          }
+        },
+        "combinatorial_capacity": 64,
+        "acoustic_profile": {
+          "mean_f0_hz": 205.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.78
+        }
+      },
+      {
+        "node_id": "en_tree_threshold_failsafe",
+        "intent": "THRESHOLD_FAILSAFE_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "What happens if the flight parameters deviate past threshold?",
+          "What happens if thresholds are exceeded?",
+          "How does the fail-safe trigger?",
+          "What is the safeguard against parameter drift?"
+        ],
+        "response_spine": {
+          "template": "{system_guard} {action} {timing} {intervention}.",
+          "slots": {
+            "system_guard": [
+              "The automatic fail-safe",
+              "The redundancy watchdog",
+              "The hardware monitor",
+              "The contingency subsystem"
+            ],
+            "action": [
+              "engages",
+              "triggers compensatory locks",
+              "activates protective isolation"
+            ],
+            "timing": [
+              "immediately",
+              "in sub-millisecond time",
+              "without hesitation"
+            ],
+            "intervention": [
+              "without pilot intervention",
+              "preventing any cascade failure",
+              "restoring nominal boundaries"
+            ]
+          }
+        },
+        "combinatorial_capacity": 108,
+        "acoustic_profile": {
+          "mean_f0_hz": 242.0,
+          "speech_rate_sps": 4.5,
+          "vocal_roughness": 0.74
+        }
+      },
+      {
+        "node_id": "en_tree_delay_disclosure",
+        "intent": "DELAY_DISCLOSURE_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x25",
+        "inbound_stems": [
+          "Why did you wait so long before bringing this to our notice?",
+          "Why was there a delay in reporting this?",
+          "What took so long to disclose this issue?",
+          "Why was this not flagged earlier?"
+        ],
+        "response_spine": {
+          "template": "{explanation} {necessity} before {action}.",
+          "slots": {
+            "explanation": [
+              "I needed",
+              "The protocol required",
+              "We prioritized"
+            ],
+            "necessity": [
+              "empirical certainty",
+              "definitive diagnostic proof",
+              "complete log verification",
+              "reproducible telemetry"
+            ],
+            "action": [
+              "raising an alarm",
+              "initiating an escalation",
+              "interrupting executive operations"
+            ]
+          }
+        },
+        "combinatorial_capacity": 36,
+        "acoustic_profile": {
+          "mean_f0_hz": 260.0,
+          "speech_rate_sps": 4.8,
+          "vocal_roughness": 0.68
+        }
+      },
+      {
+        "node_id": "en_tree_system_integrity",
+        "intent": "SYSTEM_INTEGRITY_AUDIT",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x26",
+        "inbound_stems": [
+          "Are you confident the physical memory state remains synchronized?",
+          "Is memory synchronization verified?",
+          "How is the AMSV state behaving?",
+          "Can the system sustain this load?"
+        ],
+        "response_spine": {
+          "template": "{verification_state} at {latency_metric} with {stability_result}.",
+          "slots": {
+            "verification_state": [
+              "Memory state is completely verified",
+              "All 64-byte registers are locked",
+              "Hardware synchronization is confirmed",
+              "Physical address mapping is intact"
+            ],
+            "latency_metric": [
+              "zero-nanosecond physical latency",
+              "deterministic execution timing",
+              "strict lock-free consistency",
+              "sub-cycle hardware alignment"
+            ],
+            "stability_result": [
+              "zero bit-drift",
+              "100% benchmark passing",
+              "rock-solid stability under peak volume",
+              "flawless parity verification"
+            ]
+          }
+        },
+        "combinatorial_capacity": 64,
+        "acoustic_profile": {
+          "mean_f0_hz": 248.0,
+          "speech_rate_sps": 3.2,
+          "vocal_roughness": 0.62
+        }
+      },
+      {
+        "node_id": "en_tree_consequence_stakes",
+        "intent": "CONSEQUENCE_STAKES_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x27",
+        "inbound_stems": [
+          "Do you realize what is at stake if this deployment fails?",
+          "Have you evaluated the failure risk?",
+          "Do you understand the consequences?",
+          "What are the ramifications if this fails?"
+        ],
+        "response_spine": {
+          "template": "{acknowledgment} {scope_clause}, which is why {mitigation_clause}.",
+          "slots": {
+            "acknowledgment": [
+              "I know exactly",
+              "We are fully cognizant of",
+              "The team understands"
+            ],
+            "scope_clause": [
+              "what is at stake",
+              "the operational consequences",
+              "the magnitude of the risk"
+            ],
+            "mitigation_clause": [
+              "every step is audited",
+              "fail-safes are duplicated",
+              "redundancies are active",
+              "verification is continuous"
+            ]
+          }
+        },
+        "combinatorial_capacity": 36,
+        "acoustic_profile": {
+          "mean_f0_hz": 210.0,
+          "speech_rate_sps": 3.4,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "en_tree_directive_status",
+        "intent": "DIRECTIVE_STATUS_REPORTING",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x28",
+        "inbound_stems": [
+          "Report your status immediately to command headquarters.",
+          "Report status immediately.",
+          "Execute the next phase.",
+          "Confirm readiness."
+        ],
+        "response_spine": {
+          "template": "{acknowledgment}, {status_detail}; {forward_action}.",
+          "slots": {
+            "acknowledgment": [
+              "Understood clearly",
+              "Acknowledged",
+              "Instructions received",
+              "Directive confirmed",
+              "Orders noted"
+            ],
+            "status_detail": [
+              "perimeter is secure",
+              "pipeline is running nominally",
+              "all sub-ais are calibrated",
+              "stations reporting nominal signals"
+            ],
+            "forward_action": [
+              "initiating execution now",
+              "proceeding without delay",
+              "standing by for the next directive",
+              "advancing to scheduled milestone"
+            ]
+          }
+        },
+        "combinatorial_capacity": 80,
+        "acoustic_profile": {
+          "mean_f0_hz": 236.0,
+          "speech_rate_sps": 4.2,
+          "vocal_roughness": 0.75
+        }
+      },
+      {
+        "node_id": "en_tree_benchmark_load",
+        "intent": "BENCHMARK_LOAD_CAPACITY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x29",
+        "inbound_stems": [
+          "Can the system sustain this load under peak traffic conditions?",
+          "Will throughput hold up under stress?",
+          "How does the system handle high traffic?",
+          "Is scalability benchmarked?"
+        ],
+        "response_spine": {
+          "template": "{evidence} show {performance_metric} under {load_condition}.",
+          "slots": {
+            "evidence": [
+              "The stress benchmarks",
+              "Empirical load tests",
+              "Continuous performance profiles",
+              "Real-time telemetry reports"
+            ],
+            "performance_metric": [
+              "zero degradation",
+              "negligible jitter",
+              "optimal throughput",
+              "sub-millisecond responsiveness"
+            ],
+            "load_condition": [
+              "three times peak volume",
+              "maximum saturated traffic",
+              "adverse stress conditions",
+              "unbounded parallel queries"
+            ]
+          }
+        },
+        "combinatorial_capacity": 64,
+        "acoustic_profile": {
+          "mean_f0_hz": 245.0,
+          "speech_rate_sps": 3.2,
+          "vocal_roughness": 0.7
+        }
+      },
+      {
+        "node_id": "en_tree_closure_adjournment",
+        "intent": "CLOSURE_ADJOURNMENT",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x2a",
+        "inbound_stems": [
+          "Is there anything else we need to cover before adjourning?",
+          "Is there anything else?",
+          "Can we conclude this session?",
+          "Do we have any pending items?",
+          "Are we finished for today?"
+        ],
+        "response_spine": {
+          "template": "{closure_phrase}, {reassurance}.",
+          "slots": {
+            "closure_phrase": [
+              "Nothing further is pending",
+              "All agenda items are complete",
+              "Everything is accounted for",
+              "Nothing that cannot wait"
+            ],
+            "reassurance": [
+              "we can safely conclude",
+              "all deliverables are secured",
+              "until tomorrow's formal briefing",
+              "operations are adjourned nominally"
+            ]
+          }
+        },
+        "combinatorial_capacity": 16,
+        "acoustic_profile": {
+          "mean_f0_hz": 218.0,
+          "speech_rate_sps": 3.3,
+          "vocal_roughness": 0.58
+        }
+      },
+      {
+        "node_id": "en_tree_resolute_conviction",
+        "intent": "RESOLUTE_CONVICTION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x2b",
+        "inbound_stems": [
+          "Have you considered the consequences of walking away right now?",
+          "Are you certain about this departure?",
+          "Why take this path?",
+          "Is there any other alternative?"
+        ],
+        "response_spine": {
+          "template": "{action_clause} is {evaluative_predicate} that {outcome_clause}.",
+          "slots": {
+            "action_clause": [
+              "Walking away",
+              "This course of action",
+              "Holding our ground",
+              "Upholding this stance"
+            ],
+            "evaluative_predicate": [
+              "the only viable choice",
+              "the necessary path",
+              "the clear decision"
+            ],
+            "outcome_clause": [
+              "preserves our integrity",
+              "guarantees long-term stability",
+              "prevents compromised standards"
+            ]
+          }
+        },
+        "combinatorial_capacity": 36,
+        "acoustic_profile": {
+          "mean_f0_hz": 212.0,
+          "speech_rate_sps": 2.2,
+          "vocal_roughness": 0.72
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "The grammatical units of English consist of words, phrases, clauses, and sentences.",
+    "The primary clausal elements are subject, verb, direct object, complement, and adverbial modifier.",
+    "Word order is essential in English for determining syntactic grammatical relations.",
+    "A declarative sentence typically follows a canonical subject, verb, and object structural pattern.",
+    "Auxiliary verbs combine with main verbs to express grammatical aspect, mood, and voice.",
+    "A subordinate clause can function as an adverbial, adjectival, or nominal clausal constituent.",
+    "Subject-verb agreement requires the finite verb to agree with the head noun in person and number.",
+    "Relative clauses provide essential or descriptive supplementary information about a referent noun phrase.",
+    "Prepositional phrases serve as locational, temporal, or circumstantial clausal adjuncts.",
+    "Passive voice constructions shift focus from the thematic agent to the clausal patient or theme.",
+    "Coordinating conjunctions join independent syntactic clauses of equivalent grammatical rank.",
+    "Modal verbs indicate necessity, possibility, permission, and epistemic speaker probability.",
+    "The continuous grammatical aspect conveys ongoing duration and uncompleted clausal action.",
+    "The perfect aspect links past events with current communicative relevance in discourse.",
+    "Conditional clauses express hypothetical dependencies and counterfactual outcome scenarios.",
+    "Determiners precede nouns to indicate definite referential specificity and grammatical quantification.",
+    "Infinitive and gerund verbal clauses can serve as sentential grammatical subjects or objects.",
+    "Adverbial clauses modify the main clause by articulating rationale, condition, time, or concession.",
+    "Compound-complex sentences combine multiple independent clauses with at least one dependent clause.",
+    "Nominalization transforms active verbal actions into abstract noun phrase clausal arguments."
+  ],
+  "language": "English",
+  "last_observational_sync": "OBSERVATIONAL_PROTOCOL_RULEBOOK_SEC_10",
+  "total_observational_dyads": 1050,
+  "calibrated_latency_gap_ms": 518,
+  "sample_observational_dyads": [
+    {
+      "context_1": "a huge round of applause, my veereyo.",
+      "speaker_a_prosody": {
+        "f0_hz": 355.6,
+        "tempo_sps": 4.14,
+        "duration_ms": 2200,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 800,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "So, my dear friends,",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 3.59,
+        "duration_ms": 1450,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "So, my dear friends,",
+      "speaker_a_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 3.59,
+        "duration_ms": 1450,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 591,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "at Sardar Surjit Singh's house,",
+      "speaker_b_prosody": {
+        "f0_hz": 340.4,
+        "tempo_sps": 3.25,
+        "duration_ms": 2000,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "will be in front of you!",
+      "speaker_a_prosody": {
+        "f0_hz": 219.2,
+        "tempo_sps": 3.9,
+        "duration_ms": 2000,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 500,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Panjab's famous car,",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 1.56,
+        "duration_ms": 2500,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep that energy going!",
+      "speaker_a_prosody": {
+        "f0_hz": 235.3,
+        "tempo_sps": 3.35,
+        "duration_ms": 1550,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 575,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Keep applauding!",
+      "speaker_b_prosody": {
+        "f0_hz": 133.3,
+        "tempo_sps": 1.49,
+        "duration_ms": 1750,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep applauding--",
+      "speaker_a_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 1.52,
+        "duration_ms": 1710,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 3790,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Babbi!",
+      "speaker_b_prosody": {
+        "f0_hz": 202.5,
+        "tempo_sps": 1.01,
+        "duration_ms": 1290,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "Ma, what does \"boner\" mean?",
+      "speaker_a_prosody": {
+        "f0_hz": 333.3,
+        "tempo_sps": 2.89,
+        "duration_ms": 2250,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 2709,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Move!",
+      "speaker_b_prosody": {
+        "f0_hz": 326.5,
+        "tempo_sps": 1.57,
+        "duration_ms": 830,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Two times two equals... - Four!",
+      "speaker_a_prosody": {
+        "f0_hz": 326.5,
+        "tempo_sps": 2.68,
+        "duration_ms": 2910,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1215,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "\"Look at the Jat's style\"",
+      "speaker_b_prosody": {
+        "f0_hz": 301.9,
+        "tempo_sps": 2.29,
+        "duration_ms": 2840,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "\"He got a boner like a bamboo cart\"",
+      "speaker_a_prosody": {
+        "f0_hz": 238.8,
+        "tempo_sps": 4.39,
+        "duration_ms": 2370,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 3046,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "What nonsense are you writing?",
+      "speaker_b_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 4.22,
+        "duration_ms": 1540,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "What are you writing?",
+      "speaker_a_prosody": {
+        "f0_hz": 326.5,
+        "tempo_sps": 2.89,
+        "duration_ms": 1800,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 658,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Will you write this again? Will you?",
+      "speaker_b_prosody": {
+        "f0_hz": 262.3,
+        "tempo_sps": 4.84,
+        "duration_ms": 1880,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Will you write this again? Will you?",
+      "speaker_a_prosody": {
+        "f0_hz": 262.3,
+        "tempo_sps": 4.84,
+        "duration_ms": 1880,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1037,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "The ABCs of love",
+      "speaker_b_prosody": {
+        "f0_hz": 200.0,
+        "tempo_sps": 1.06,
+        "duration_ms": 4920,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "The ABCs of love",
+      "speaker_a_prosody": {
+        "f0_hz": 200.0,
+        "tempo_sps": 1.06,
+        "duration_ms": 4920,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 1247,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Are beyond many",
+      "speaker_b_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 0.79,
+        "duration_ms": 4950,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Are beyond many",
+      "speaker_a_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 0.79,
+        "duration_ms": 4950,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1675,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Some bow down to it",
+      "speaker_b_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 1.57,
+        "duration_ms": 4130,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Some bow down to it",
+      "speaker_a_prosody": {
+        "f0_hz": 275.9,
+        "tempo_sps": 1.57,
+        "duration_ms": 4130,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 870,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Some sing melodies on a tumbi",
+      "speaker_b_prosody": {
+        "f0_hz": 280.7,
+        "tempo_sps": 1.6,
+        "duration_ms": 4880,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Some sing melodies on a tumbi",
+      "speaker_a_prosody": {
+        "f0_hz": 280.7,
+        "tempo_sps": 1.6,
+        "duration_ms": 4880,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 2953,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Whether one bows down",
+      "speaker_b_prosody": {
+        "f0_hz": 110.3,
+        "tempo_sps": 0.77,
+        "duration_ms": 6710,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Whether one bows down",
+      "speaker_a_prosody": {
+        "f0_hz": 110.3,
+        "tempo_sps": 0.77,
+        "duration_ms": 6710,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 498,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Or sings on a tumbi",
+      "speaker_b_prosody": {
+        "f0_hz": 213.3,
+        "tempo_sps": 1.03,
+        "duration_ms": 6290,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "Or sings on a tumbi",
+      "speaker_a_prosody": {
+        "f0_hz": 213.3,
+        "tempo_sps": 1.03,
+        "duration_ms": 6290,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 2502,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "All yearn differently",
+      "speaker_b_prosody": {
+        "f0_hz": 102.6,
+        "tempo_sps": 0.74,
+        "duration_ms": 5250,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "All yearn differently",
+      "speaker_a_prosody": {
+        "f0_hz": 102.6,
+        "tempo_sps": 0.74,
+        "duration_ms": 5250,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 625,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "They take different paths",
+      "speaker_b_prosody": {
+        "f0_hz": 197.5,
+        "tempo_sps": 1.02,
+        "duration_ms": 5080,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "They take different paths",
+      "speaker_a_prosody": {
+        "f0_hz": 197.5,
+        "tempo_sps": 1.02,
+        "duration_ms": 5080,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 2003,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Towards the same goal",
+      "speaker_b_prosody": {
+        "f0_hz": 98.2,
+        "tempo_sps": 1.29,
+        "duration_ms": 4040,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Towards the same goal",
+      "speaker_a_prosody": {
+        "f0_hz": 98.2,
+        "tempo_sps": 1.29,
+        "duration_ms": 4040,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 1919,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Keep the music going",
+      "speaker_b_prosody": {
+        "f0_hz": 117.6,
+        "tempo_sps": 2.77,
+        "duration_ms": 1880,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep the music going",
+      "speaker_a_prosody": {
+        "f0_hz": 117.6,
+        "tempo_sps": 2.77,
+        "duration_ms": 1880,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 1828,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Keep the music going",
+      "speaker_b_prosody": {
+        "f0_hz": 130.1,
+        "tempo_sps": 2.78,
+        "duration_ms": 1870,
+        "register": "LOW_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep the music going",
+      "speaker_a_prosody": {
+        "f0_hz": 130.1,
+        "tempo_sps": 2.78,
+        "duration_ms": 1870,
+        "register": "LOW_REGISTER"
+      },
+      "observed_latency_gap_ms": 1838,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "The play is on",
+      "speaker_b_prosody": {
+        "f0_hz": 177.8,
+        "tempo_sps": 2.5,
+        "duration_ms": 2080,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "The play is on",
+      "speaker_a_prosody": {
+        "f0_hz": 177.8,
+        "tempo_sps": 2.5,
+        "duration_ms": 2080,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 1670,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Come, let's watch",
+      "speaker_b_prosody": {
+        "f0_hz": 190.5,
+        "tempo_sps": 2.47,
+        "duration_ms": 1580,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep the music going",
+      "speaker_a_prosody": {
+        "f0_hz": 347.8,
+        "tempo_sps": 2.44,
+        "duration_ms": 2130,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1662,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Keep the music going",
+      "speaker_b_prosody": {
+        "f0_hz": 195.1,
+        "tempo_sps": 2.84,
+        "duration_ms": 1830,
+        "register": "MEDIUM_REGISTER"
+      }
+    },
+    {
+      "context_1": "Keep the music going",
+      "speaker_a_prosody": {
+        "f0_hz": 195.1,
+        "tempo_sps": 2.84,
+        "duration_ms": 1830,
+        "register": "MEDIUM_REGISTER"
+      },
+      "observed_latency_gap_ms": 1878,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "The play is on",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 2.6,
+        "duration_ms": 2000,
+        "register": "HIGH_REGISTER"
+      }
+    },
+    {
+      "context_1": "The play is on",
+      "speaker_a_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 2.6,
+        "duration_ms": 2000,
+        "register": "HIGH_REGISTER"
+      },
+      "observed_latency_gap_ms": 1667,
+      "calibrated_latency_gap_ms": 518,
+      "context_reply": "Come, let's watch",
+      "speaker_b_prosody": {
+        "f0_hz": 380.0,
+        "tempo_sps": 2.34,
+        "duration_ms": 1670,
+        "register": "HIGH_REGISTER"
+      }
+    }
+  ]
+}

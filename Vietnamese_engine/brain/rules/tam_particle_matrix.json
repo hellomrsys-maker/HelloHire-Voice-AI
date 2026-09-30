@@ -1,0 +1,27 @@
+{
+  "engine": "Vietnamese",
+  "version": "1.0.0",
+  "tam_particles": {
+    "tense_aspect": {
+      "đã": {"type": "past_anterior", "order": 1, "description": "Actions completed in past"},
+      "đang": {"type": "progressive_continuous", "order": 1, "description": "Actions currently ongoing"},
+      "sẽ": {"type": "future_posterior", "order": 1, "description": "Actions anticipated in future"},
+      "vừa": {"type": "immediate_anterior", "order": 1, "description": "Actions completed just a moment ago"},
+      "mới": {"type": "recent_past", "order": 1, "description": "Actions just recently commenced or finished"},
+      "sắp": {"type": "imminent_future", "order": 1, "description": "Actions about to happen"}
+    },
+    "negation": {
+      "không": {"type": "declarative_negation", "order": 2, "description": "Neutral negative statement"},
+      "chẳng": {"type": "emphatic_colloquial_negation", "order": 2, "description": "Colloquial negative assertion"},
+      "chưa": {"type": "experiential_negation", "order": 2, "description": "Not yet completed action"}
+    },
+    "combinatorial_sequencing": [
+      {"pattern": "đã từng", "meaning": "has ever in the past"},
+      {"pattern": "đang chuẩn bị", "meaning": "is currently preparing to"},
+      {"pattern": "sắp sửa", "meaning": "about to immediately"},
+      {"pattern": "vẫn đang", "meaning": "still currently"},
+      {"pattern": "sẽ không", "meaning": "will not"},
+      {"pattern": "đã không", "meaning": "did not"}
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "elision": {
+    "triggers": ["l'", "d'", "c'", "j'", "m'", "t'", "s'", "n'", "qu'", "jusqu'", "lorsqu'", "puisqu'"],
+    "source_words": {
+      "l'": ["le", "la"],
+      "d'": ["de"],
+      "c'": ["ce"],
+      "j'": ["je"],
+      "m'": ["me"],
+      "t'": ["te"],
+      "s'": ["se", "si"],
+      "n'": ["ne"],
+      "qu'": ["que"]
+    },
+    "vowel_starters": ["a", "e", "i", "o", "u", "y", "é", "è", "ê", "ë", "à", "â", "î", "ï", "ô", "û", "ù"],
+    "h_aspire_exceptions": [
+      "hache", "haie", "haine", "haïr", "halte", "hambourg", "hameau", "hamac",
+      "hanche", "handicap", "hangar", "hanneton", "hanter", "harceler", "hardi",
+      "harem", "hareng", "hargne", "haricot", "harnais", "harpe", "harpon", "hasard",
+      "hâte", "hausse", "haut", "hauteur", "havre", "havre-sac", "hennir", "héraut",
+      "hérisson", "héros", "hêtre", "heurt", "heurter", "hibou", "hiérarchie",
+      "hisse", "hisser", "hobereau", "hocher", "hochet", "hollande", "homard",
+      "honte", "honteux", "hoquet", "horde", "hors", "houblon", "houle", "housse",
+      "houx", "hublot", "huche", "huer", "huguenot", "huit", "huitième", "humer",
+      "hurler", "hussard", "hutte"
+    ]
+  },
+  "liaison": {
+    "compulsory_contexts": [
+      "determiner_noun",
+      "subject_pronoun_verb",
+      "preposition_complement",
+      "prenominal_adjective_noun",
+      "adverb_adjective"
+    ],
+    "forbidden_contexts": [
+      "after_et",
+      "singular_noun_post",
+      "before_h_aspire",
+      "after_inverted_subject_pronoun"
+    ],
+    "sound_shifts": {
+      "s": "z",
+      "x": "z",
+      "z": "z",
+      "d": "t",
+      "t": "t",
+      "n": "n",
+      "p": "p",
+      "r": "ʁ"
+    }
+  }
+}

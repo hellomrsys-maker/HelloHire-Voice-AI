@@ -1,0 +1,36 @@
+{
+  "language": "Hindustani",
+  "engine": "Hindustani_engine",
+  "runtime": "Node.js JavaScript",
+  "duration_seconds": 7.81,
+  "phases": {
+    "phase1_syntax": {
+      "status": "SUCCESS",
+      "final_loss": 2.0664,
+      "sentences_trained": 80,
+      "iterations": 2000
+    },
+    "phase2_sub_ais": {
+      "status": "SUCCESS",
+      "final_writing_loss": 0.0123,
+      "final_email_loss": 0.0123
+    },
+    "phase3_intent_tree": {
+      "status": "SUCCESS",
+      "nodes_validated": 6,
+      "calibrated_gap_ms": 518
+    },
+    "phase4_word_prosody": {
+      "status": "SUCCESS",
+      "samples_analyzed": 5
+    },
+    "phase5_amsv_verification": {
+      "status": "SUCCESS",
+      "model_checkpoint": "D:\\gra.voi\\checkpoints\\hindustani_model_js.json",
+      "model_hash": "514d1d710c5776e62c41cbc4ef315b70160c9524f274437c19431e1ef5689fb3",
+      "amsv_checkpoint": "D:\\gra.voi\\checkpoints\\master_cognitive_amsv.bin",
+      "amsv_hash": "1cc82a50fd9a3ebec3326273b6c9039a9dab8dba60ba50b68f5d8d1bd99452f3"
+    }
+  },
+  "timestamp": "2026-09-27T19:36:09.021Z"
+}

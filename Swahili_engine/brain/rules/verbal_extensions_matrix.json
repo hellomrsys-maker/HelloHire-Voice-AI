@@ -1,0 +1,37 @@
+{
+  "extensions": {
+    "applicative": {
+      "name": "kutendea",
+      "meaning": "for / at / with respect to",
+      "harmonic_vowel_i": "ia",
+      "harmonic_vowel_e": "ea"
+    },
+    "causative": {
+      "name": "kutendesha",
+      "meaning": "cause to do / make",
+      "harmonic_vowel_i": "isha",
+      "harmonic_vowel_e": "esha"
+    },
+    "passive": {
+      "name": "kutendwa",
+      "meaning": "be done by",
+      "suffix_consonant": "wa",
+      "suffix_vowel": "lewa"
+    },
+    "reciprocal": {
+      "name": "kutendana",
+      "meaning": "do to one another",
+      "suffix": "ana"
+    },
+    "stative": {
+      "name": "kutendeka",
+      "meaning": "be done / feasible",
+      "harmonic_vowel_i": "ika",
+      "harmonic_vowel_e": "eka"
+    }
+  },
+  "vowel_harmony": {
+    "high_group": ["a", "i", "u"],
+    "mid_group": ["e", "o"]
+  }
+}

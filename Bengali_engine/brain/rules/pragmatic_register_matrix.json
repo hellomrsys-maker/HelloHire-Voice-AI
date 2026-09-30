@@ -1,0 +1,55 @@
+{
+  "address_hierarchy": {
+    "superior": {
+      "level": "honorific",
+      "pronouns_2nd": ["আপনি", "আপনারা"],
+      "pronouns_3rd": ["তিনি", "তাঁরা", "এঁরা", "ওঁরা"],
+      "verb_suffix_present": "েন",
+      "verb_suffix_past": "লেন",
+      "verb_suffix_future": "বেন",
+      "verb_suffix_imperative": "ুন",
+      "courtesy_marker": "দয়া করে",
+      "target_group": "elders, teachers, officials, respected persons, strangers"
+    },
+    "familiar": {
+      "level": "ordinary_polite",
+      "pronouns_2nd": ["তুমি", "তোমরা"],
+      "pronouns_3rd": ["সে", "তারা", "এরা", "ওরা"],
+      "verb_suffix_present": "ো",
+      "verb_suffix_past": "লে",
+      "verb_suffix_future": "বে",
+      "verb_suffix_imperative": "ো",
+      "courtesy_marker": "অনুগ্রহ করে",
+      "target_group": "friends, peers, younger relatives, close colleagues"
+    },
+    "intimate": {
+      "level": "intimate_inferior",
+      "pronouns_2nd": ["তুই", "তোরা"],
+      "pronouns_3rd": ["সে", "তারা"],
+      "verb_suffix_present": "িস",
+      "verb_suffix_past": "লি",
+      "verb_suffix_future": "বি",
+      "verb_suffix_imperative": "",
+      "courtesy_marker": "",
+      "target_group": "childhood friends, younger siblings, children, pets"
+    }
+  },
+  "diglossia_pairs": {
+    "sadhu_to_cholito": {
+      "করিতেছেন": "করছেন",
+      "করিতেছে": "করছে",
+      "করিয়াছিল": "করেছিল",
+      "তাহাকে": "তাকে",
+      "তাহারা": "তারা",
+      "যাঁহার": "যার",
+      "হইয়াছিল": "হয়েছিল",
+      "সহিত": "সাথে",
+      "হইতে": "থেকে"
+    }
+  },
+  "guru_chondali_forbidden_cooccurrences": [
+    { "sadhu": "করিতেছেন", "cholito": "তাকে" },
+    { "sadhu": "তাহাকে", "cholito": "করছেন" },
+    { "sadhu": "হইয়াছিল", "cholito": "হয়েছে" }
+  ]
+}

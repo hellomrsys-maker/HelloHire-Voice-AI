@@ -1,0 +1,29 @@
+{
+  "corpora_specifications": {
+    "raw_unannotated": [
+      {"corpus_id": "cc100_ja", "size_tokens": "15B", "license": "Open / Research", "deduplication": "MinHash LSH"},
+      {"corpus_id": "wikipedia_ja", "size_articles": "1.4M", "quality": "High curated factual text"},
+      {"corpus_id": "oscar_ja", "cleaning_pipeline": "URL filtering, boilerplate removal, furigana stripping"}
+    ],
+    "treebanks": [
+      {"name": "Kyoto Text Corpus (KTC)", "framework": "Bunsetsu Kakariuke dependency trees with PAS frames"},
+      {"name": "NINJAL Parsed Corpus of Modern Japanese (NPCMJ)", "framework": "Phrase structure constituency and grammatical functions"},
+      {"name": "UD_Japanese_GSD", "framework": "Universal Dependencies 17 relations head-final representation"}
+    ],
+    "coreference_and_prodrop": [
+      {"name": "NAIST Text Corpus (NTC)", "annotation": "Explicit zero-pronoun resolution with Subject (ga) and Object (o, ni) antecedent links"}
+    ],
+    "speech_and_acoustic": [
+      {"name": "JSUT (Japanese Speech Corpus of Saruwatari Lab)", "spec": "10 hours high-fidelity phoneme/mora-aligned studio speech"},
+      {"name": "ReazonSpeech", "spec": "35,000 hours public broadcast audio with transcription"},
+      {"name": "Common Voice Japanese", "spec": "Crowdsourced multi-speaker conversational recordings"}
+    ],
+    "parallel_translation": [
+      {"name": "JParaCrawl", "language_pair": "JA-EN", "size_pairs": "10M+", "domain": "Web-mined parallel text"},
+      {"name": "Kyoto Free Translation Task (KFTT)", "domain": "Wikipedia articles related to Kyoto history and culture"}
+    ],
+    "keigo_annotated": [
+      {"name": "Business Dialogue Corpus", "annotation": "Token-level tags for Sonkeigo, Kenjougo, Teineigo, Bikago, and social distance axes"}
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "lexicon_manifest": {
+    "lexicons": [
+      {
+        "name": "CMU Pronouncing Dictionary (cmudict-0.7b)",
+        "entries": 134000,
+        "format": "ARPAbet phonemes with 0, 1, 2 lexical stress markers",
+        "usage": "TTS G2P lookup and acoustic phonetic modeling"
+      },
+      {
+        "name": "Princeton WordNet 3.1",
+        "entries": 155000,
+        "format": "Synset hierarchies (hypernyms, hyponyms, meronyms, antonyms)",
+        "usage": "Lexical semantics, sense disambiguation, ontology alignment"
+      },
+      {
+        "name": "PropBank (Proposition Bank)",
+        "entries": 6000,
+        "format": "Predicate argument structures and semantic roles (ARG0-ARG5, ARGM)",
+        "usage": "Semantic Role Labeling (SRL)"
+      },
+      {
+        "name": "VerbNet 3.4",
+        "entries": 4200,
+        "format": "Levin verb classes, thematic roles, syntactic alternation frames",
+        "usage": "Subcategorization frame validation and selectional constraints"
+      },
+      {
+        "name": "FrameNet 1.7",
+        "entries": 1200,
+        "format": "Frame semantics, frame elements, lexical units",
+        "usage": "Pragmatic and situational semantic understanding"
+      }
+    ]
+  }
+}

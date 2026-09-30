@@ -1,0 +1,16 @@
+{
+  "neologism_tracking": {
+    "detection_heuristics": [
+      "Token absent from static baseline vocabulary (WordNet / CMUdict)",
+      "Morphological compliance with productive English affixation (-able, -ize, -ist, un-)",
+      "Frequency threshold: Occurs across >3 independent sources within 30-day window",
+      "Perplexity spike in n-gram contexts"
+    ],
+    "tracked_contemporary_neologisms": {
+      "hallucination": { "shift": "AI generation of ungrounded plausible falsehoods", "pos": "Noun" },
+      "prompt_engineering": { "formation": "Noun phrase compound", "pos": "Noun" },
+      "fine_tuning": { "formation": "Hyphenated / open compound gerund", "pos": "Noun/Verb" },
+      "quantization": { "shift": "Weight reduction in deep learning networks", "pos": "Noun" }
+    }
+  }
+}

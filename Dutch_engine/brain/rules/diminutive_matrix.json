@@ -1,0 +1,69 @@
+{
+  "engine": "Dutch",
+  "matrix_type": "diminutive_matrix",
+  "version": "1.0.0",
+  "gender_invariant": {
+    "article": "het",
+    "plural_suffix": "s",
+    "rule": "Every diminutive noun in Dutch is unconditionally neuter (takes 'het' in singular, 'de' in plural)."
+  },
+  "allomorph_rules": [
+    {
+      "suffix": "kje",
+      "trigger": "Words ending in unstressed '-ing'",
+      "stem_modification": "replace 'ng' with 'nk'",
+      "examples": [
+        {"base": "woning", "diminutive": "woninkje"},
+        {"base": "ketting", "diminutive": "kettinkje"},
+        {"base": "rekening", "diminutive": "rekeninkje"}
+      ]
+    },
+    {
+      "suffix": "pje",
+      "trigger": "Words ending in /m/ preceded by a long vowel, diphthong, or unstressed schwa",
+      "stem_modification": "none",
+      "examples": [
+        {"base": "boom", "diminutive": "boompje"},
+        {"base": "raam", "diminutive": "raampje"},
+        {"base": "bodem", "diminutive": "bodempje"},
+        {"base": "bloem", "diminutive": "bloempje"}
+      ]
+    },
+    {
+      "suffix": "etje",
+      "trigger": "Words ending in a single liquid or nasal (/l, r, m, n, ŋ/) preceded by a short stressed vowel",
+      "stem_modification": "consonant doubling if needed",
+      "examples": [
+        {"base": "bal", "diminutive": "balletje"},
+        {"base": "man", "diminutive": "mannetje"},
+        {"base": "ster", "diminutive": "sterretje"},
+        {"base": "ring", "diminutive": "ringetje"},
+        {"base": "kom", "diminutive": "kommetje"}
+      ]
+    },
+    {
+      "suffix": "je",
+      "trigger": "Words ending in voiceless stops/fricatives /p, t, k, s, f/ or /d, b/",
+      "stem_modification": "none",
+      "examples": [
+        {"base": "huis", "diminutive": "huisje"},
+        {"base": "boek", "diminutive": "boekje"},
+        {"base": "hond", "diminutive": "hondje"},
+        {"base": "kat", "diminutive": "katje"},
+        {"base": "brief", "diminutive": "briefje"}
+      ]
+    },
+    {
+      "suffix": "tje",
+      "trigger": "Words ending in vowels, diphthongs, or /l, r, n/ preceded by long vowel or schwa",
+      "stem_modification": "vowel lengthening spelling adjustment if single vowel letter",
+      "examples": [
+        {"base": "trein", "diminutive": "treintje"},
+        {"base": "stoel", "diminutive": "stoeltje"},
+        {"base": "tafel", "diminutive": "tafeltje"},
+        {"base": "auto", "diminutive": "autootje"},
+        {"base": "zee", "diminutive": "zeetje"}
+      ]
+    }
+  ]
+}

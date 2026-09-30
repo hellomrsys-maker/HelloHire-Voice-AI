@@ -1,0 +1,75 @@
+{
+  "language": "Punjabi",
+  "engine": "D:\\gra.voi\\Punjabi_engine",
+  "iso_code": "pan",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "pan_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ਇੰਜੀਨੀਅਰ ਨੇ ਇੱਕ ਬਹੁਤ ਹੀ ਕੁਸ਼ਲ ਵੰਡਿਆ ਹੋਇਆ ਸਿਸਟਮ ਤਿਆਰ ਕੀਤਾ ਹੈ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ਵਿਦਿਆਰਥੀਆਂ ਨੇ ਗੁੰਝਲਦਾਰ ਨਿਊਰਲ ਨੈੱਟਵਰਕ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਮਝ ਲਿਆ ਹੈ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pan_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ਅਸੀਂ ਜ਼ੀਰੋ-ਲੇਟੈਂਸੀ ਸਮਕਾਲੀ ਮੈਮੋਰੀ ਪ੍ਰੋਟੋਕੋਲ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਲਾਗੂ ਕੀਤਾ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ਪ੍ਰੋਫੈਸਰ ਨੇ ਜਨਰੇਟਿਵ ਵਿਆਕਰਣ ਦੇ ਸਿਧਾਂਤਾਂ ਨੂੰ ਵਿਸਥਾਰ ਵਿੱਚ ਸਮਝਾਇਆ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pan_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ਖੋਜ ਟੀਮ ਨੇ ਨਕਲੀ ਬੁੱਧੀ 'ਤੇ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਖੋਜ ਪੱਤਰ ਪ੍ਰਕਾਸ਼ਿਤ ਕੀਤਾ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ਸਾਫਟਵੇਅਰ ਆਰਕੀਟੈਕਟ ਨੇ ਡਾਟਾ ਪ੍ਰੋਸੈਸਿੰਗ ਪਾਈਪਲਾਈਨ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਇਆ ਹੈ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pan_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ਆਰਟੀਫੀਸ਼ੀਅਲ ਇੰਟੈਲੀਜੈਂਸ ਬਹੁਭਾਸ਼ਾਈ ਟੈਕਸਟ ਦਾ ਸਹੀ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੀ ਹੈ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ਡਿਵੈਲਪਮੈਂਟ ਟੀਮ ਨੇ ਸਾਰੇ ਏਕੀਕਰਣ ਟੈਸਟ ਸਫਲਤਾਪੂਰਵਕ ਪੂਰੇ ਕੀਤੇ ਹਨ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "pan_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ਹਾਈ-ਸਪੀਡ ਮੈਮੋਰੀ ਬੱਸ ਰੀਅਲ-ਟਾਈਮ ਡਾਟਾ ਇਕਸਾਰਤਾ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਂਦੀ ਹੈ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ਅਸੀਂ ਭਰੋਸੇਯੋਗਤਾ ਸਾਬਤ ਕਰਨ ਲਈ ਸਖ਼ਤ ਬੈਂਚਮਾਰਕ ਟੈਸਟ ਕੀਤੇ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

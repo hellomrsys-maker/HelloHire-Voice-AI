@@ -1,0 +1,40 @@
+{
+  "characters": {
+    "我": {"pinyin": "wǒ", "tone": 3, "initial": "w", "final": "o"},
+    "你": {"pinyin": "nǐ", "tone": 3, "initial": "n", "final": "i"},
+    "您": {"pinyin": "nín", "tone": 2, "initial": "n", "final": "in"},
+    "他": {"pinyin": "tā", "tone": 1, "initial": "t", "final": "a"},
+    "她": {"pinyin": "tā", "tone": 1, "initial": "t", "final": "a"},
+    "它": {"pinyin": "tā", "tone": 1, "initial": "t", "final": "a"},
+    "好": {"pinyin": "hǎo", "tone": 3, "initial": "h", "final": "ao"},
+    "是": {"pinyin": "shì", "tone": 4, "initial": "sh", "final": "i"},
+    "不": {"pinyin": "bù", "tone": 4, "initial": "b", "final": "u"},
+    "一": {"pinyin": "yī", "tone": 1, "initial": "y", "final": "i"},
+    "了": {"pinyin": "le", "tone": 0, "initial": "l", "final": "e"},
+    "的": {"pinyin": "de", "tone": 0, "initial": "d", "final": "e"},
+    "得": {"pinyin": "de", "tone": 0, "initial": "d", "final": "e"},
+    "地": {"pinyin": "de", "tone": 0, "initial": "d", "final": "e"},
+    "在": {"pinyin": "zài", "tone": 4, "initial": "z", "final": "ai"},
+    "有": {"pinyin": "yǒu", "tone": 3, "initial": "y", "final": "ou"},
+    "个": {"pinyin": "gè", "tone": 4, "initial": "g", "final": "e"},
+    "书": {"pinyin": "shū", "tone": 1, "initial": "sh", "final": "u"},
+    "把": {"pinyin": "bǎ", "tone": 3, "initial": "b", "final": "a"},
+    "被": {"pinyin": "bèi", "tone": 4, "initial": "b", "final": "ei"},
+    "看": {"pinyin": "kàn", "tone": 4, "initial": "k", "final": "an"},
+    "写": {"pinyin": "xiě", "tone": 3, "initial": "x", "final": "ie"},
+    "做": {"pinyin": "zuò", "tone": 4, "initial": "z", "final": "uo"},
+    "学": {"pinyin": "xué", "tone": 2, "initial": "x", "final": "ue"},
+    "生": {"pinyin": "shēng", "tone": 1, "initial": "sh", "final": "eng"},
+    "老": {"pinyin": "lǎo", "tone": 3, "initial": "l", "final": "ao"},
+    "师": {"pinyin": "shī", "tone": 1, "initial": "sh", "final": "i"},
+    "总": {"pinyin": "zǒng", "tone": 3, "initial": "z", "final": "ong"},
+    "请": {"pinyin": "qǐng", "tone": 3, "initial": "q", "final": "ing"},
+    "谢": {"pinyin": "xiè", "tone": 4, "initial": "x", "final": "ie"}
+  },
+  "sandhi_rules": {
+    "third_tone_pair": "3+3 -> 2+3",
+    "yi_before_fourth": "yī + T4 -> yí + T4",
+    "yi_before_other": "yī + T1/2/3 -> yì + T1/2/3",
+    "bu_before_fourth": "bù + T4 -> bú + T4"
+  }
+}

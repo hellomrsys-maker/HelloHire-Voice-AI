@@ -1,0 +1,62 @@
+{
+  "language": "Portuguese",
+  "engine": "D:\\gra.voi\\Portuguese_engine",
+  "iso_code": "por",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "por_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "O engenheiro projetou uma arquitetura distribuída altamente eficiente.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Implementamos com sucesso o protocolo de memória compartilhada atômica.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "por_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A equipe de pesquisa publicou um artigo inovador sobre inteligência artificial.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "O arquiteto de software otimizou o pipeline de processamento em tempo real (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "por_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "O modelo cognitivo analisa fluxos multilíngues com elevada precisão.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A equipe de desenvolvimento concluiu todos os testes de integração com êxito (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "por_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A interface de memória de alta velocidade assegura coerência absoluta.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Realizamos rigorosos testes empíricos de desempenho sob alta carga (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

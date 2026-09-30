@@ -1,0 +1,75 @@
+{
+  "language": "Telugu",
+  "engine": "D:\\gra.voi\\Telugu_engine",
+  "iso_code": "tel",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "tel_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ఇంజనీరు అత్యంత సమర్థవంతమైన పంపిణీ వ్యవస్థను రూపొందించారు.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "విద్యార్థులు సంక్లిష్టమైన న్యూరల్ నెట్‌వర్క్‌ను క్షుణ్ణంగా అర్థం చేసుకున్నారు.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tel_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "మేము సున్నా-లేటెన్సీ సింక్రోనస్ మెమరీ ప్రోటోకాల్‌ను విజయవంతంగా అమలు చేసాము.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ఆచార్యులు ఉత్పాదక వ్యాకరణ సిద్ధాంతాన్ని వివరంగా వివరించారు.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tel_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "పరిశోధనా బృందం కృత్రిమ మేధస్సుపై ఒక ముఖ్యమైన పత్రాన్ని ప్రచురించింది.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "సాఫ్ట్‌వేర్ ఆర్కిటెక్ట్ డేటా ప్రాసెసింగ్ పైప్‌లైన్‌ను ఆప్టిమైజ్ చేశారు.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tel_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "కృత్రిమ మేధస్సు బహుభాషా పాఠ్యాన్ని కచ్చితంగా విశ్లేషిస్తుంది.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "అభివృద్ధి బృందం అన్ని ఇంటిగ్రేషన్ పరీక్షలను విజయవంతంగా పూర్తి చేసింది.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tel_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "హై-స్పీడ్ మెమరీ బస్ రియల్-టైమ్ డేటా స్థిరత్వాన్ని నిర్ధారిస్తుంది.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "విశ్వసనీయతను నిరూపించడానికి మేము కఠినమైన బెంచ్‌మార్క్ పరీక్షలను నిర్వహించాము.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

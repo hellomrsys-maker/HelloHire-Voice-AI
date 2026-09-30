@@ -1,0 +1,32 @@
+{
+  "pronunciation_variation": {
+    "connected_speech_contractions": [
+      {"formal": "では", "colloquial": "じゃ (ja)", "example": "それでは -> それじゃ"},
+      {"formal": "ては", "colloquial": "ちゃ (cha)", "example": "してはいけない -> しちゃいけない"},
+      {"formal": "なくては", "colloquial": "なくちゃ (nakucha)", "example": "行かなくては -> 行かなくちゃ"},
+      {"formal": "ておく", "colloquial": "とく (toku)", "example": "買っておく -> 買っとく"},
+      {"formal": "てしまう", "colloquial": "ちゃう (chau)", "example": "忘れてしまった -> 忘れちゃった"}
+    ],
+    "dialect_acoustics": {
+      "kansai_keihan_accent": {
+        "characteristics": "Features fundamentally different pitch contours from Tokyo (e.g. 雨 is high-low in Tokyo, but low-high in Kyoto/Osaka).",
+        "morphology": ["〜や (copula corresponding to だ)", "〜へん (negative corresponding to ない: 行かへん)", "〜てる (progressive)"]
+      },
+      "tohoku_dialect": {
+        "characteristics": "Voicing of intervocalic unvoiced stops (k -> g, t -> d), centralized high vowels [ɨ], [ʉ].",
+        "morphology": ["〜だべ (conjectural tag)", "〜すぺ"]
+      },
+      "okinawan_ryukyuan": {
+        "characteristics": "Three-vowel historical retention (a, i, u; e->i, o->u), unique lexical substrata.",
+        "morphology": ["〜さぁ (affective final particle)", "メンソーレ (welcome)"]
+      }
+    },
+    "regional_lexicon": [
+      {"expression": "おおきに", "region": "Kansai", "standard": "ありがとう (Thank you)"},
+      {"expression": "ええ", "region": "Kansai", "standard": "良い (Good)"},
+      {"expression": "あかん", "region": "Kansai", "standard": "だめ (No good / Impossible)"},
+      {"expression": "なまら", "region": "Hokkaido", "standard": "とても (Very)"},
+      {"expression": "でら", "region": "Nagoya", "standard": "とても (Very)"}
+    ]
+  }
+}

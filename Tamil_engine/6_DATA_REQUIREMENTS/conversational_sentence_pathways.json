@@ -1,0 +1,62 @@
+{
+  "language": "Tamil",
+  "engine": "D:\\gra.voi\\Tamil_engine",
+  "iso_code": "tam",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "tam_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "பொறியாளர் மிகச்சிறந்த விநியோகிக்கப்பட்ட கணினி கட்டமைப்பை உருவாக்கினார்.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "நாங்கள் ஒத்திசைவான நினைவக நெறிமுறையை வெற்றிகரமாகச் செயல்படுத்தினோம்.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tam_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ஆராய்ச்சிக் குழு செயற்கை நுண்ணறிவு பற்றிய ஆய்வறிக்கையை வெளியிட்டது.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "மென்பொருள் வடிவமைப்பாளர் தரவு செயலாக்கப் பாதையை மேம்படுத்தினார் (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tam_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "செயற்கை நுண்ணறிவு பலமொழி உரைகளை மிகத் துல்லியமாக பகுப்பாய்வு செய்கிறது.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "உருவாக்கக் குழு அனைத்து ஒருங்கிணைப்பு சோதனைகளையும் முடித்தது (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tam_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "அதிவேக நினைவகம் தரவு ஒருமைப்பாட்டை தாமதமின்றி உறுதி செய்கிறது.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "நாங்கள் கடுமையான செயல்திறன் சோதனைகளை மேற்கொண்டுள்ளோம் (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

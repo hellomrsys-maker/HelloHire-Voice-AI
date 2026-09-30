@@ -1,0 +1,32 @@
+# French Engine Operational Policy & Tolerances
+engine:
+  name: "FrenchEngine"
+  version: "1.0.0"
+  iso_639_1: "fr"
+  iso_639_3: "fra"
+  family: "Indo-European"
+  branch: "Gallo-Romance"
+
+morphology:
+  enforce_non_pro_drop: true
+  allow_colloquial_ne_drop: false
+  enforce_past_participle_agreement: true
+  enforce_elision: true
+  h_aspire_strict_check: true
+
+pragmatics:
+  default_register: "formal" # "formal" (vouvoiement) | "informal" (tutoiement)
+  strict_epistolary_closings: true
+
+memory:
+  zero_bridge_amsv: true
+  state_vector_bytes: 64
+  offsets:
+    phonology: [0, 16, 24]
+    syntax: [18, 52]
+    pragmatics: [22, 54]
+    editorial: [20, 26]
+
+dialects:
+  active: "metropolitan" # "metropolitan" | "quebecois" | "swiss" | "belgian" | "african"
+  vigesimal_numerals: true

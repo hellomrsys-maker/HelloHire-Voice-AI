@@ -1,0 +1,96 @@
+{
+  "aspect_markers": {
+    "咗": {
+      "jyutping": "zo2",
+      "type": "perfective",
+      "meaning": "completed action",
+      "mandarin_equivalent": "了",
+      "position": "immediately postverbal",
+      "example": "食咗飯未？ (Have you eaten rice yet?)"
+    },
+    "緊": {
+      "jyutping": "gan2",
+      "type": "progressive",
+      "meaning": "ongoing action in progress",
+      "mandarin_equivalent": "正在 / 着",
+      "position": "immediately postverbal",
+      "example": "我睇緊波。 (I am watching a ball game.)"
+    },
+    "過": {
+      "jyutping": "gwo3",
+      "type": "experiential",
+      "meaning": "past experience / completion across boundary",
+      "mandarin_equivalent": "過",
+      "position": "immediately postverbal",
+      "example": "我去過日本。 (I have been to Japan.)"
+    },
+    "開": {
+      "jyutping": "hoi1",
+      "type": "habitual_inceptive",
+      "meaning": "accustomed to doing / underway",
+      "mandarin_equivalent": "習慣做 / 正在做着",
+      "position": "immediately postverbal",
+      "example": "食開呢間茶餐廳。 (Accustomed to eating at this cha chaan teng.)"
+    },
+    "住": {
+      "jyutping": "zyu6",
+      "type": "durative_stative",
+      "meaning": "continuous state or action maintenance",
+      "mandarin_equivalent": "着",
+      "position": "immediately postverbal",
+      "example": "拎住把遮。 (Holding an umbrella.)"
+    },
+    "吓": {
+      "jyutping": "haa5",
+      "type": "delimitative_tentative",
+      "meaning": "do a little bit / briefly",
+      "mandarin_equivalent": "一下 / 點點",
+      "position": "immediately postverbal",
+      "example": "坐吓先。 (Sit down for a moment first.)"
+    },
+    "晒": {
+      "jyutping": "saai3",
+      "type": "quantifying_completive",
+      "meaning": "entirely / all / completely",
+      "mandarin_equivalent": "光 / 完 / 全都",
+      "position": "postverbal or post-aspectual",
+      "example": "食晒啲飯。 (Ate up all the rice.)"
+    },
+    "埋": {
+      "jyutping": "maai4",
+      "type": "additive_inclusive",
+      "meaning": "also / including / finished off alongside",
+      "mandarin_equivalent": "連同 / 一起做完",
+      "position": "postverbal",
+      "example": "飲埋杯水。 (Drink up the water too.)"
+    },
+    "返": {
+      "jyutping": "faan1",
+      "type": "restorative_iterative",
+      "meaning": "return to original state / restore",
+      "mandarin_equivalent": "回 / 恢復",
+      "position": "postverbal",
+      "example": "攞返個袋。 (Get back the bag.)"
+    },
+    "翻": {
+      "jyutping": "faan1",
+      "type": "restorative_iterative_variant",
+      "meaning": "variant of 返",
+      "mandarin_equivalent": "回",
+      "position": "postverbal",
+      "example": "買翻嚟。 (Buy back.)"
+    }
+  },
+  "combination_constraints": {
+    "allowed_combinations": [
+      ["緊", "住"],
+      ["食", "晒", "咗"],
+      ["做", "埋", "佢"],
+      ["攞", "返", "嚟"]
+    ],
+    "disallowed_combinations": [
+      ["咗", "緊"],
+      ["過", "緊"]
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "phonologically_conditioned_alternations": {
+    "vowel_reduction": {
+      "mechanism": "Unstressed vowels reduce to schwa /ə/ or near-close near-front /ɪ/",
+      "examples": [
+        { "base": "telegraph /ˈtɛlɪɡræf/", "derived": "telegraphy /təˈlɛɡrəfi/" },
+        { "base": "photograph /ˈfoʊtəɡræf/", "derived": "photography /fəˈtɒɡrəfi/" }
+      ]
+    },
+    "trisyllabic_laxing": {
+      "mechanism": "Tense vowel becomes lax when followed by two syllables, the first of which is unstressed",
+      "examples": [
+        { "base": "sane /seɪn/", "derived": "sanity /ˈsænɪti/" },
+        { "base": "divine /dɪˈvaɪn/", "derived": "divinity /dɪˈvɪnɪti/" },
+        { "base": "serene /səˈriːn/", "derived": "serenity /səˈrɛnɪti/" }
+      ]
+    },
+    "velar_softening": {
+      "mechanism": "/k/ -> /s/ before front vowels in Latinate derivations",
+      "examples": [
+        { "base": "electric /ɪˈlɛktrɪk/", "derived": "electricity /ɪˌlɛkˈtrɪsɪti/" },
+        { "base": "opaque /oʊˈpeɪk/", "derived": "opacity /oʊˈpæsɪti/" }
+      ]
+    }
+  }
+}

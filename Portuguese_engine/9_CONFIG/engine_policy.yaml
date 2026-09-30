@@ -1,0 +1,35 @@
+# Layer 9: Engine Policy & Operational Configuration - Portuguese Engine (Português)
+version: "1.0.0"
+language: "pt"
+language_name: "Portuguese"
+script: "Latin (Latim)"
+typology:
+  canonical_word_order: "SVO"
+  head_directionality: "head-initial"
+  pro_drop: true
+  personal_infinitive_supported: true
+  future_subjunctive_supported: true
+
+orthography_policy:
+  enforce_ao90: true
+  forbid_trema: true
+  validate_crase_accents: true
+
+clitic_policy:
+  enforce_proclisis_attractors: true
+  enforce_enclitic_hyphens: true
+  allow_mesoclisis: true
+  enforce_lo_no_allomorphy: true
+
+zero_bridge_amsv:
+  memory_size_bytes: 64
+  offsets:
+    phoneme_state: [0, 7]
+    prosody_state: [8, 15]
+    capability_1_syntax: 18       # 0x12
+    capability_2_editorial: 20    # 0x14
+    capability_3_pragmatics: 22   # 0x16
+    capability_4_phonology: 24    # 0x18
+    capability_5_style: 26        # 0x1A
+    global_structural_score: 52   # 0x34
+    global_register_score: 54     # 0x36

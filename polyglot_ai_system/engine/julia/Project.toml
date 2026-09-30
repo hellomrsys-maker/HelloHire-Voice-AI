@@ -1,0 +1,23 @@
+name = "EngineJulia"
+uuid = "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+authors = ["Polyglot AI System"]
+version = "1.0.0"
+
+[deps]
+LinearAlgebra   = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Statistics      = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+Random          = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+FFTW            = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+Zygote          = "e88e6eb3-aa80-5325-afca-941959d7151f"
+ChainRulesCore  = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+Optim           = "429524aa-4258-5aef-a3af-852621145aeb"
+DifferentialEquations = "0c46a032-eb83-5123-abaf-570d42b7fbaa"
+NNlib          = "872c559c-99b0-510c-b3b7-b6c96a88d5cd"
+Flux           = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+CUDA           = "052768ef-5323-57ea-38c5-65a6fdac6b64"
+BSON           = "fbb218c0-ad8c-4afc-8396-5e2cb63c86f9"
+JSON3          = "0f8b85d8-7e73-4b42-9b33-cf5eeae8d05c"
+Logging        = "56ddb016-857b-54e1-b83d-db4d58db5568"
+
+[compat]
+julia = "1.10"

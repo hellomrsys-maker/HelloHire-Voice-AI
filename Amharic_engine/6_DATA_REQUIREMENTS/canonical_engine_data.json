@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Amharic",
+    "engine": "Amharic_engine",
+    "iso_codes": [
+      "amh",
+      "am"
+    ],
+    "scripts": [
+      "Ge'ez"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Amharic",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "amh_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Amharic)",
+          "How are operations (Amharic)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "amh_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Amharic)",
+          "Report readiness (Amharic)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "መሐንዲሱ በጣም ቀልጣፋ የሆነ የተከፋፈለ ሥርዓት ሠራ።",
+    "ተማሪዎቹ ውስብስብ የሆነውን የነርቭ ኔትወርክ በሚገባ ተረዱት።",
+    "የዜሮ መዘግየት የተመሳሰለ የማስታወሻ ፕሮቶኮልን በተሳካ ሁኔታ ተግባራዊ አድርገናል።",
+    "ፕሮፌሰሩ የሰዋሰው ንድፈ ሐሳቦችን በዝርዝር አብራሩ።",
+    "የምርምር ቡድኑ በሰው ሰራሽ አስተውሎት ላይ ጠቃሚ ጥናት አሳተመ።",
+    "የሶፍትዌር አርክቴክቱ የመረጃ ማቀነባበሪያውን ሂደት አሻሻለ።",
+    "ሰው ሰራሽ አስተውሎት የብዙ ቋንቋዎችን ጽሑፍ በትክክል ይመረምራል።",
+    "የልማት ቡድኑ ሁሉንም የውህደት ሙከራዎች በተሳካ ሁኔታ አጠናቋል።",
+    "ከፍተኛ ፍጥነት ያለው የማስታወሻ አውቶቡስ አስተማማኝ የመረጃ አንድነትን ያረጋግጣል።",
+    "የሥርዓቱን አስተማማኝነት ለማረጋገጥ ጥብቅ ሙከራዎችን አድርገናል።",
+    "ልጆቹ በቤተ መጻሕፍት ውስጥ አስደሳች መጻሕፍትን አነበቡ።",
+    "የዛሬው አየር ሁኔታ በጣም ደስ የሚል እና ቀዝቃዛ ነው።",
+    "ገበሬዎቹ በእርሻ ቦታዎች ላይ የእህል ምርት መሰብሰብ ጀመሩ።",
+    "ሳይንቲስቱ የአዲሱን ቀመር ትክክለኛነት እና ፍጥነት መረመረ።",
+    "መሐንዲሱ በጣም ቀልጣፋ የሆነ የተከፋፈለ ሥርዓት ሠራ። [14]",
+    "ተማሪዎቹ ውስብስብ የሆነውን የነርቭ ኔትወርክ በሚገባ ተረዱት። [15]",
+    "የዜሮ መዘግየት የተመሳሰለ የማስታወሻ ፕሮቶኮልን በተሳካ ሁኔታ ተግባራዊ አድርገናል። [16]",
+    "ፕሮፌሰሩ የሰዋሰው ንድፈ ሐሳቦችን በዝርዝር አብራሩ። [17]",
+    "የምርምር ቡድኑ በሰው ሰራሽ አስተውሎት ላይ ጠቃሚ ጥናት አሳተመ። [18]",
+    "የሶፍትዌር አርክቴክቱ የመረጃ ማቀነባበሪያውን ሂደት አሻሻለ። [19]"
+  ]
+}

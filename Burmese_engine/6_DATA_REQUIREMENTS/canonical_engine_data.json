@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Burmese",
+    "engine": "Burmese_engine",
+    "iso_codes": [
+      "mya",
+      "my"
+    ],
+    "scripts": [
+      "Burmese"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Burmese",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "mya_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Burmese)",
+          "How are operations (Burmese)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "mya_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Burmese)",
+          "Report readiness (Burmese)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "အင်ဂျင်နီယာသည် အလွန်ထိရောက်သော ဖြန့်ဝေစနစ်ကို တည်ဆောက်ခဲ့သည်။",
+    "ကျောင်းသားများသည် ရှုပ်ထွေးသော အာရုံကြောကွန်ရက်ကို ကောင်းစွာ နားလည်ခဲ့ကြသည်။",
+    "ကျွန်ုပ်တို့သည် သုည-နှောင့်နှေးမှု မှတ်ဉာဏ်ပရိုတိုကောကို အောင်မြင်စွာ အကောင်အထည်ဖော်ခဲ့သည်။",
+    "ပါမောက္ခသည် သဒ္ဒါသဘောတရားများကို အသေးစိတ် ရှင်းပြခဲ့သည်။",
+    "သုတေသနအဖွဲ့သည် ဉာဏ်ရည်တုဆိုင်ရာ အရေးကြီးသော စာတမ်းတစ်စောင်ကို ထုတ်ဝေခဲ့သည်။",
+    "ဆော့ဖ်ဝဲလ်ဗိသုကာပညာရှင်သည် ဒေတာလုပ်ငန်းစဉ်ကို အကောင်းဆုံးဖြစ်အောင် ပြုပြင်ခဲ့သည်။",
+    "ဉာဏ်ရည်တုသည် ဘာသာစကားမျိုးစုံ စာသားများကို တိကျစွာ ခွဲခြမ်းစိတ်ဖြာသည်။",
+    "ဖွံ့ဖြိုးတိုးတက်ရေးအဖွဲ့သည် စမ်းသပ်မှုအားလုံးကို အောင်မြင်စွာ ပြီးမြောက်ခဲ့သည်။",
+    "အမြန်နှုန်းမြင့် မှတ်ဉာဏ်လိုင်းသည် အချိန်နှင့်တပြေးညီ ဒေတာညီညွတ်မှုကို သေချာစေသည်။",
+    "စနစ်၏ ခိုင်မာမှုကို သက်သေပြရန် တိကျသော စမ်းသပ်မှုများကို ပြုလုပ်ခဲ့သည်။",
+    "ကလေးများသည် စာကြည့်တိုက်တွင် ကောင်းမွန်သော စာအုပ်များကို ဖတ်ရှုခဲ့ကြသည်။",
+    "ယနေ့ ရာသီဥတုသည် အလွန်သာယာပြီး အေးမြလျက်ရှိသည်။",
+    "လယ်သမားများသည် လယ်ကွင်းများတွင် စပါးရိတ်သိမ်းခြင်းကို စတင်ခဲ့ကြသည်။",
+    "သိပ္ပံပညာရှင်သည် အယ်လဂိုရီသမ်သစ်၏ တိကျမှုကို စစ်ဆေးခဲ့သည်။",
+    "အင်ဂျင်နီယာသည် အလွန်ထိရောက်သော ဖြန့်ဝေစနစ်ကို တည်ဆောက်ခဲ့သည်။ [14]",
+    "ကျောင်းသားများသည် ရှုပ်ထွေးသော အာရုံကြောကွန်ရက်ကို ကောင်းစွာ နားလည်ခဲ့ကြသည်။ [15]",
+    "ကျွန်ုပ်တို့သည် သုည-နှောင့်နှေးမှု မှတ်ဉာဏ်ပရိုတိုကောကို အောင်မြင်စွာ အကောင်အထည်ဖော်ခဲ့သည်။ [16]",
+    "ပါမောက္ခသည် သဒ္ဒါသဘောတရားများကို အသေးစိတ် ရှင်းပြခဲ့သည်။ [17]",
+    "သုတေသနအဖွဲ့သည် ဉာဏ်ရည်တုဆိုင်ရာ အရေးကြီးသော စာတမ်းတစ်စောင်ကို ထုတ်ဝေခဲ့သည်။ [18]",
+    "ဆော့ဖ်ဝဲလ်ဗိသုကာပညာရှင်သည် ဒေတာလုပ်ငန်းစဉ်ကို အကောင်းဆုံးဖြစ်အောင် ပြုပြင်ခဲ့သည်။ [19]"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "sound_system": {
+    "mora_timing": {
+      "unit": "Mora (拍 Haku)",
+      "isochrony": "Each mora occupies an approximately equal duration in time (~120-150ms).",
+      "special_morae": {
+        "hatsuon_moraic_nasal": "ん (N): counts as 1 full mora (e.g. に・ほ・ん = 3 morae).",
+        "sokuon_geminate_stop": "っ (Q): counts as 1 full mora (e.g. き・っ・て = 3 morae).",
+        "chouon_long_vowel": "ー / 長音 (R): counts as 1 full mora (e.g. コ・ー・ヒ・ー = 4 morae)."
+      }
+    },
+    "pitch_accent": {
+      "nature": "Lexical pitch accent (High vs Low pitch melody), distinctly different from Chinese tone or English stress accent.",
+      "tokyo_kernel_types": ["平板型 (Type 0)", "頭高型 (Type 1)", "中高型 (Type 2 to N-1)", "尾高型 (Type N)"]
+    },
+    "sound_inventory": {
+      "vowels": ["/a/", "/i/", "/ɯ/ (unrounded back vowel)", "/e/", "/o/"],
+      "consonants": ["/k/", "/g/", "/s/", "/z/", "/t/", "/d/", "/n/", "/h/", "/b/", "/p/", "/m/", "/j/", "/w/", "/ɾ/ (alveolar lateral flap, no l/r contrast)"],
+      "vowel_devoicing": "High vowels /i/ and /u/ become unvoiced [i̥], [ɯ̥] when occurring between voiceless consonants (/k/, /s/, /t/, /h/, /p/) or utterance-finally after a voiceless consonant (e.g. です -> [desɯ̥], 学生 -> [gakɯ̥seː])."
+    },
+    "loanword_phonology": {
+      "vowel_insertion": "Epenthetic vowels /u/ and /o/ are inserted to break up English/foreign consonant clusters (e.g., strike -> s[u]t[o]raik[u] ストライク).",
+      "phonemic_mapping": {
+        "l_and_r": "Both map to Japanese /ɾ/ (e.g., light and right both become ライト).",
+        "v": "Maps to /b/ (e.g., violin -> バイオリン), or modern ヴ (ヴァイオリン)."
+      }
+    }
+  }
+}

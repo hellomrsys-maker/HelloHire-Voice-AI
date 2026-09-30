@@ -1,0 +1,15 @@
+{
+  "engine": "Czech_engine",
+  "generated_utc": "2026-09-29T11:57:26Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Czech-PDT",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "unknown",
+      "status": "treebank not found in archive",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

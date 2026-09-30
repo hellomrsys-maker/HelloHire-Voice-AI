@@ -1,0 +1,77 @@
+{
+  "direct_clitics": {
+    "1sg": "mi",
+    "2sg": "ti",
+    "3sg_masc": "lo",
+    "3sg_fem": "la",
+    "1pl": "ci",
+    "2pl": "vi",
+    "3pl_masc": "li",
+    "3pl_fem": "le"
+  },
+  "indirect_clitics": {
+    "1sg": "mi",
+    "2sg": "ti",
+    "3sg_masc": "gli",
+    "3sg_fem": "le",
+    "1pl": "ci",
+    "2pl": "vi",
+    "3pl": "loro"
+  },
+  "reflexive_clitics": {
+    "1sg": "mi",
+    "2sg": "ti",
+    "3sg": "si",
+    "1pl": "ci",
+    "2pl": "vi",
+    "3pl": "si"
+  },
+  "adverbial_clitics": {
+    "locative": "ci",
+    "partitive": "ne"
+  },
+  "combined_clusters": {
+    "mi_lo": "me lo",
+    "mi_la": "me la",
+    "mi_li": "me li",
+    "mi_le": "me le",
+    "mi_ne": "me ne",
+    "ti_lo": "te lo",
+    "ti_la": "te la",
+    "ti_li": "te li",
+    "ti_le": "te le",
+    "ti_ne": "te ne",
+    "gli_lo": "glielo",
+    "gli_la": "gliela",
+    "gli_li": "glieli",
+    "gli_le": "gliele",
+    "gli_ne": "gliene",
+    "le_lo": "glielo",
+    "le_la": "gliela",
+    "le_li": "glieli",
+    "le_le": "gliele",
+    "le_ne": "gliene",
+    "ci_lo": "ce lo",
+    "ci_la": "ce la",
+    "ci_li": "ce li",
+    "ci_le": "ce le",
+    "ci_ne": "ce ne",
+    "vi_lo": "ve lo",
+    "vi_la": "ve la",
+    "vi_li": "ve li",
+    "vi_le": "ve le",
+    "vi_ne": "ve ne",
+    "si_lo": "se lo",
+    "si_la": "se la",
+    "si_li": "se li",
+    "si_le": "se le",
+    "si_ne": "se ne"
+  },
+  "imperative_geminates": {
+    "da": {"mi": "dammi", "ti": "datti", "lo": "dallo", "la": "dalla", "ci": "dacci", "ne": "danne"},
+    "fa": {"mi": "fammi", "ti": "fatti", "lo": "fallo", "la": "falla", "ci": "facci", "ne": "fanne"},
+    "di": {"mi": "dimmi", "ti": "ditti", "lo": "dillo", "la": "dilla", "ci": "dicci", "ne": "dinne"},
+    "va": {"mi": "vammi", "ci": "vacci"},
+    "sta": {"mi": "stammi", "ci": "stacci"}
+  }
+}

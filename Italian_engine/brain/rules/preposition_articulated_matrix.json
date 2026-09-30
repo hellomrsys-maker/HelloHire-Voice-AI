@@ -1,0 +1,59 @@
+{
+  "prepositions": ["di", "a", "da", "in", "su"],
+  "articles": ["il", "lo", "l'", "la", "i", "gli", "le"],
+  "contractions": {
+    "di_il": "del",
+    "di_lo": "dello",
+    "di_l'": "dell'",
+    "di_la": "della",
+    "di_i": "dei",
+    "di_gli": "degli",
+    "di_le": "delle",
+    "a_il": "al",
+    "a_lo": "allo",
+    "a_l'": "all'",
+    "a_la": "alla",
+    "a_i": "ai",
+    "a_gli": "agli",
+    "a_le": "alle",
+    "da_il": "dal",
+    "da_lo": "dallo",
+    "da_l'": "dall'",
+    "da_la": "dalla",
+    "da_i": "dai",
+    "da_gli": "dagli",
+    "da_le": "dalle",
+    "in_il": "nel",
+    "in_lo": "nello",
+    "in_l'": "nell'",
+    "in_la": "nella",
+    "in_i": "nei",
+    "in_gli": "negli",
+    "in_le": "nelle",
+    "su_il": "sul",
+    "su_lo": "sullo",
+    "su_l'": "sull'",
+    "su_la": "sulla",
+    "su_i": "sui",
+    "su_gli": "sugli",
+    "su_le": "sulle"
+  },
+  "article_selection": {
+    "masculine_singular": {
+      "default": "il",
+      "s_impure_z_gn_ps_x": "lo",
+      "vowel": "l'"
+    },
+    "masculine_plural": {
+      "default": "i",
+      "s_impure_z_gn_ps_x_vowel": "gli"
+    },
+    "feminine_singular": {
+      "default": "la",
+      "vowel": "l'"
+    },
+    "feminine_plural": {
+      "default": "le"
+    }
+  }
+}

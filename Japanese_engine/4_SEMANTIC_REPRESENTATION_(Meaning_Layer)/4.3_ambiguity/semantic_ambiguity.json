@@ -1,0 +1,33 @@
+{
+  "semantic_ambiguity": {
+    "ha_ga_semantic_divergence": {
+      "case": "Sentence structure remains identical, but information packaging and exhaustivity completely flip between は and が.",
+      "contrast": {
+        "with_wa": {"sentence": "私が書いた (watashi ga kaita)", "interpretation": "Exhaustive focus: 'I was the one who wrote it [not someone else]'."},
+        "with_ga": {"sentence": "私は書いた (watashi wa kaita)", "interpretation": "Topic / Contrastive: 'As for me, I wrote [it], but maybe someone else did not'."}
+      }
+    },
+    "quantifier_scope_interaction": {
+      "universal_quantifier_negation": {
+        "phrase": "全員が来なかった (zen'in ga konakatta)",
+        "readings": [
+          {"reading_A": "Total Negation: No one came (None of all members arrived).", "dominant": true},
+          {"reading_B": "Partial Negation: Not all of them came (Some arrived, some did not).", "dominant": false}
+        ]
+      }
+    },
+    "japanese_specific_semantic_quirks": {
+      "adjectival_predicates_for_verbs": {
+        "explanation": "Concepts that are transitive verbs in English (like, dislike, need, capable) are syntactically stative adjectives in Japanese taking 'が' for their object.",
+        "examples": [
+          {"japanese": "私は猫が好きだ。", "literal": "To me, cats are pleasing/likable.", "target_object_particle": "が (NOT を)"},
+          {"japanese": "水が飲みたい。", "literal": "Water is desirable-to-drink.", "target_object_particle": "が"}
+        ]
+      },
+      "animacy_existence_split": {
+        "animate_sentient": "いる (iru: humans, animals, insects). Ex: 部屋に犬がいる。",
+        "inanimate_non_sentient": "ある (aru: plants, objects, abstract ideas). Ex: 机の上に本がある。"
+      }
+    }
+  }
+}

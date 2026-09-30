@@ -1,0 +1,75 @@
+{
+  "language": "Romanian",
+  "engine": "D:\\gra.voi\\Romanian_engine",
+  "iso_code": "ron",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "ron_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Inginerul a proiectat un sistem distribuit extrem de eficient.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Studenții au înțeles pe deplin rețeaua neuronală complexă.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ron_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Am implementat cu succes protocolul de memorie sincronă cu latență zero.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Profesorul a explicat în detaliu principiile gramaticii generative.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ron_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Echipa de cercetare a publicat o lucrare științifică importantă despre AI.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Arhitectul de software a optimizat întregul flux de procesare a datelor.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ron_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Inteligența artificială analizează cu precizie texte multilingve.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Echipa de dezvoltare a finalizat cu succes toate testele de integrare.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ron_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Magistrala de memorie de mare viteză asigură consistența datelor în timp real.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Am efectuat teste riguroase de performanță pentru a demonstra fiabilitatea.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

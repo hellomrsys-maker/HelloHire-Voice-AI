@@ -1,0 +1,61 @@
+# Tokyo Standard Pitch Accent Patterns (東京式アクセント体系)
+
+types:
+  heiban:
+    name: "平板型 (Type 0 / Flat)"
+    kernel_position: 0
+    contour: "Low on 1st mora, High on 2nd and subsequent moras, staying High into attached particles"
+    examples:
+      - word: "鼻 (はな)"
+        particle: "が"
+        pitch: "L-H-H (はなが)"
+      - word: "桜 (さくら)"
+        particle: "が"
+        pitch: "L-H-H-H (さくらが)"
+      - word: "日本語 (にほんご)"
+        particle: "が"
+        pitch: "L-H-H-H-H (にほんごが)"
+
+  atamadaka:
+    name: "頭高型 (Type 1 / Head-High)"
+    kernel_position: 1
+    contour: "High on 1st mora, immediately drops to Low on 2nd mora and remains Low"
+    examples:
+      - word: "箸 (はし)"
+        meaning: "Chopsticks"
+        particle: "が"
+        pitch: "H-L-L (はしが)"
+      - word: "雨 (あめ)"
+        meaning: "Rain"
+        particle: "が"
+        pitch: "H-L-L (あめが)"
+      - word: "本 (ほん)"
+        particle: "が"
+        pitch: "H-L-L (ほんが)"
+
+  nakadaka:
+    name: "中高型 (Type 2 to N-1 / Mid-High)"
+    kernel_position: "Between 2nd and (N-1)th mora"
+    contour: "Low on 1st mora, rises on 2nd mora, drops immediately after accent kernel"
+    examples:
+      - word: "卵 (たまご)"
+        kernel: 2
+        particle: "が"
+        pitch: "L-H-L-L (たまごが)"
+      - word: "男 (おとこ)"
+        kernel: 3
+        particle: "が"
+        pitch: "L-H-H-L (おとこが)"
+
+  odaka:
+    name: "尾高型 (Type N / Tail-High)"
+    kernel_position: "On final mora N"
+    contour: "Low on 1st mora, High across rest of the word, drops to Low immediately on the attached particle"
+    examples:
+      - word: "橋 (はし)"
+        meaning: "Bridge"
+        particle: "が"
+        pitch: "L-H-L (はしが - contrast with 箸 はしが H-L-L and 端 はしが L-H-H)"
+      - word: "花 (はな)"
+        particle: "が"
+        pitch: "L-H-L (はなが - contrast with 鼻 はなが L-H-H)"

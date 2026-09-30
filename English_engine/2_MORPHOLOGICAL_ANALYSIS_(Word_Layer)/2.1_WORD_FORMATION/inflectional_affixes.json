@@ -1,0 +1,12 @@
+{
+  "inflectional_affixes_8": {
+    "noun_plural": { "affix": "-s / -es", "attaches_to": "Noun", "output": "Noun (Plural)", "example": "books, foxes" },
+    "noun_possessive": { "affix": "-'s / -'", "attaches_to": "Noun", "output": "Noun (Possessive)", "example": "student's, students'" },
+    "verb_3rd_singular_present": { "affix": "-s / -es", "attaches_to": "Verb", "output": "Verb (3SG Present)", "example": "runs, catches" },
+    "verb_past_tense": { "affix": "-ed", "attaches_to": "Verb", "output": "Verb (Past Simple)", "example": "walked, jumped" },
+    "verb_past_participle": { "affix": "-ed / -en", "attaches_to": "Verb", "output": "Verb (Past Participle)", "example": "walked, eaten" },
+    "verb_present_participle": { "affix": "-ing", "attaches_to": "Verb", "output": "Verb (Gerund/Participle)", "example": "walking, coding" },
+    "adjective_comparative": { "affix": "-er", "attaches_to": "Adjective", "output": "Adjective (Comparative)", "example": "faster, taller" },
+    "adjective_superlative": { "affix": "-est", "attaches_to": "Adjective", "output": "Adjective (Superlative)", "example": "fastest, tallest" }
+  }
+}

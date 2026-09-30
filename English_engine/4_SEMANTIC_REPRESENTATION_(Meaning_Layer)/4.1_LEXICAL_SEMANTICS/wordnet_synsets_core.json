@@ -1,0 +1,13 @@
+{
+  "wordnet_core_synsets": {
+    "entity.n.01": { "definition": "That which is perceived or known or inferred to have its own distinct existence", "hypernym": null },
+    "physical_entity.n.01": { "definition": "An entity that has physical existence", "hypernym": "entity.n.01" },
+    "abstraction.n.06": { "definition": "A general concept formed by extracting common features from specific examples", "hypernym": "entity.n.01" },
+    "agent.n.01": { "definition": "An active and efficient cause; capable of producing a certain effect", "hypernym": "physical_entity.n.01" },
+    "organism.n.01": { "definition": "A living thing that has the ability to act or function independently", "hypernym": "physical_entity.n.01" },
+    "person.n.01": { "definition": "A human being", "hypernym": "organism.n.01" },
+    "artifact.n.01": { "definition": "A man-made object taken as a whole", "hypernym": "physical_entity.n.01" },
+    "computation.n.02": { "definition": "The procedure of calculating or determining something by mathematical or logical methods", "hypernym": "abstraction.n.06" },
+    "communication.n.02": { "definition": "The activity of communicating; the activity of conveying information", "hypernym": "abstraction.n.06" }
+  }
+}

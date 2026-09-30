@@ -1,0 +1,41 @@
+{
+  "word_formation": {
+    "agglutination": {
+      "mechanism": "Successive stacking of functional auxiliary suffixes onto verbal and adjectival stems.",
+      "canonical_example": {
+        "surface": "食べさせられたくない",
+        "romanized": "tabesaseraretakunai",
+        "meaning": "I do not want to be made to eat",
+        "morpheme_decomposition": [
+          {"morpheme": "食べ", "role": "Root verb stem (Ichidan)", "lemma": "食べる"},
+          {"morpheme": "させ", "role": "Causative auxiliary (使役)", "lemma": "させる"},
+          {"morpheme": "られ", "role": "Passive auxiliary (受身)", "lemma": "られる"},
+          {"morpheme": "たく", "role": "Desiderative auxiliary (希望・連用形)", "lemma": "たい"},
+          {"morpheme": "ない", "role": "Negative polarity auxiliary (否定)", "lemma": "ない"}
+        ]
+      }
+    },
+    "derivation": {
+      "nominalizers": [
+        {"suffix": "〜さ", "function": "Objective dimensional nominalizer", "examples": ["高い -> 高さ (height)", "長い -> 長さ (length)", "重い -> 重さ (weight)"]},
+        {"suffix": "〜み", "function": "Subjective experiential nominalizer", "examples": ["深い -> 深み (profundity)", "悲しい -> 悲しみ (sorrow)", "甘い -> 甘み (sweetness)"]}
+      ],
+      "adjectivizers": [
+        {"suffix": "〜的 (teki)", "function": "Suffix deriving Sino-Japanese nominal adjectives", "examples": ["科学 -> 科学的 (scientific)", "経済 -> 経済的 (economic)"]},
+        {"suffix": "〜らしい (rashii)", "function": "Exemplary typicality", "examples": ["男らしい (manly)", "春らしい (spring-like)"]}
+      ]
+    },
+    "compounding_and_rendaku": {
+      "compound_nouns": "Juxtaposition of Kanji roots (e.g. 電 + 話 + 番 + 号 = 電話番号).",
+      "rendaku_sequential_voicing": {
+        "rule": "The initial unvoiced consonant (k, s, t, h) of the second element in a compound becomes voiced (g, z, d, b).",
+        "examples": [
+          {"elements": ["手 (te)", "紙 (kami)"], "compound": "手紙 (tegami)", "phonological_shift": "k -> g"},
+          {"elements": ["雨 (ama)", "傘 (kasa)"], "compound": "雨傘 (amagasa)", "phonological_shift": "k -> g"},
+          {"elements": ["鼻 (hana)", "血 (chi)"], "compound": "鼻血 (hanaji)", "phonological_shift": "ch -> j"}
+        ],
+        "lymans_law": "Rendaku is strictly blocked if the second element already contains an underlying voiced obstruent (b, d, g, z) anywhere in its morpheme (e.g. 春 + 風 (kaze) -> はるかぜ, NOT はるがぜ)."
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "language": "Malayalam",
+  "engine": "D:\\gra.voi\\Malayalam_engine",
+  "iso_code": "mal",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "mal_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "എഞ്ചിനീയർ വളരെ കാര്യക്ഷമമായ വിതരണ സംവിധാനം നിർമ്മിച്ചു.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "വിദ്യാർത്ഥികൾ സങ്കീർണ്ണമായ ന്യൂറൽ നെറ്റ്‌വർക്ക് പൂർണ്ണമായും മനസ്സിലാക്കി.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "mal_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ഞങ്ങൾ സീറോ-ലേറ്റൻസി സിൻക്രണസ് മെമ്മറി പ്രോട്ടോക്കോൾ വിജയകരമായി നടപ്പിലാക്കി.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "പ്രൊഫസർ വ്യാകരണ തത്വങ്ങൾ വിശദമായി വിശദീകരിച്ചു നൽകി.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "mal_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ഗവേഷണ സംഘം കൃത്രിമ ബുദ്ധിയെക്കുറിച്ച് ഒരു പ്രധാന പ്രബന്ധം പ്രസിദ്ധീകരിച്ചു.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "സോഫ്റ്റ്‌വെയർ ആർക്കിടെക്റ്റ് ഡാറ്റാ പ്രോസസ്സിംഗ് പൈപ്പ്‌ലൈൻ ഒപ്റ്റിമൈസ് ചെയ്തു.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "mal_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "കൃത്രിമ ബുദ്ധി ബഹുഭാഷാ പാഠങ്ങൾ കൃത്യമായി വിശകലനം ചെയ്യുന്നു.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ഡെവലപ്‌മെന്റ് ടീം എല്ലാ ഇന്റഗ്രേഷൻ ടെസ്റ്റുകളും വിജയകരമായി പൂർത്തിയാക്കി.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "mal_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ഹൈ-സ്പീഡ് മെമ്മറി ബസ് തത്സമയ ഡാറ്റ സ്ഥിരത ഉറപ്പാക്കുന്നു.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "വിശ്വാസ്യത തെളിയിക്കാൻ ഞങ്ങൾ കർശനമായ മാനദണ്ഡ പരിശോധനകൾ നടത്തി.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

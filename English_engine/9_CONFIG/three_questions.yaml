@@ -1,0 +1,25 @@
+# Three Core Questions Configuration for English Engine Decisioning
+three_questions:
+  question_1:
+    prompt: "Is the syntactic structure legally admissible under standard prescriptive and descriptive English grammar rules?"
+    evaluation_criteria:
+      - "Subject-verb agreement satisfied"
+      - "Tense-aspect consistency preserved"
+      - "No ungrammatical double modals or comma splices"
+    action_if_no: "Trigger rule-based repair FST and flag severity=error"
+
+  question_2:
+    prompt: "Does the utterance achieve clear pragmatic alignment and communicative intent within its intended register?"
+    evaluation_criteria:
+      - "Searle illocutionary force matches propositional content"
+      - "Formality level matches detected context (Academic, Corporate, Conversational)"
+      - "Gricean maxims of relation and manner are upheld"
+    action_if_no: "Suggest register rewriter transformation"
+
+  question_3:
+    prompt: "Is the neural-symbolic cognitive confidence sufficient to execute 0-nanosecond physical memory synchronization to AMSV?"
+    evaluation_criteria:
+      - "AMSV state vector written to offsets 0x00 through 0x3F"
+      - "Zero serialization overhead maintained"
+      - "Confidence threshold >= 0.70"
+    action_if_no: "Degrade to conservative fallback and log diagnostic telemetry"

@@ -1,0 +1,17 @@
+{
+  "engine": "Gujarati_engine",
+  "treebank": "UD_Gujarati-GujTB",
+  "license": "The treebank is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International.",
+  "trained": true,
+  "val_token_accuracy": 0.4724,
+  "majority_baseline": 0.2563,
+  "beats_baseline_by": 0.2161,
+  "train_sentences": 150,
+  "val_sentences": 37,
+  "vocab_size": 166,
+  "final_train_loss": 1.0057,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\gujarati_engine_pos_tagger.pt"
+}

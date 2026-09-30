@@ -1,0 +1,25 @@
+{
+  "engine": "Yoruba_engine",
+  "language": "Yoruba",
+  "iso_code": "yo",
+  "english_first": true,
+  "trained_on_real_corpus": true,
+  "verified_by_metrics": true,
+  "orchestration_avg_score": 0.94,
+  "sub_ai_validation_metrics": {
+    "train_size": 256,
+    "val_size": 64,
+    "final_train_loss": 0.4717,
+    "val_completeness": {
+      "accuracy": 0.9688,
+      "precision": 0.9608,
+      "recall": 1.0,
+      "f1": 0.98,
+      "n": 64
+    },
+    "val_punctuation_accuracy": 0.9375,
+    "passed": true
+  },
+  "amsv_sha256": "a7f48dc4060ab3b1e60ca3d35131c852b2e55054cc445d5c5edaabca9d6ec3d4",
+  "amsv_hex": "0000000000000000000000000000000088e369fa37e826f247f040eaccadd0f10000000000000000000000000000000000000000ffffa2f00000000000000000"
+}

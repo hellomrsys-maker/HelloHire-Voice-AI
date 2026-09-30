@@ -1,0 +1,17 @@
+{
+  "engine": "Danish_engine",
+  "treebank": "UD_Danish-DDT",
+  "license": "Attribution-ShareAlike 4.0 International",
+  "trained": true,
+  "val_token_accuracy": 0.6853,
+  "majority_baseline": 0.2056,
+  "beats_baseline_by": 0.4797,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 502,
+  "final_train_loss": 0.5868,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\danish_engine_pos_tagger.pt"
+}

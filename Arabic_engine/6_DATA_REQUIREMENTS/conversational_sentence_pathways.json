@@ -1,0 +1,62 @@
+{
+  "language": "Arabic",
+  "engine": "D:\\gra.voi\\Arabic_engine",
+  "iso_code": "ara",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "ara_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "صمم المهندس معمارية حاسوبية موزعة وعالية الأداء.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "قمنا بتطبيق بروتوكول المزامنة الفورية للذاكرة المشتركة.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ara_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "نشر الفريق البحثي دراسة متقدمة في الذكاء الاصطناعي.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "قام مهندس النظم بتحسين مسار تدفق البيانات الحسابية (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ara_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "أظهر النموذج العصبي دقة فائقة في المعالجة متعددة اللغات.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "أنجز فريق التطوير جميع اختبارات التكامل في الوقت المحدد (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ara_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "يضمن النظام استقرار الاتصال وسرعة الاستجابة الخالية من التأخير.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "أجرينا تحليلا شاملا لتقييم كفاءة المعالجة الزمنية للبيانات (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "engine": "Persian",
+  "version": "1.0.0",
+  "light_verbs": {
+    "kardan": {
+      "lemma": "کردن",
+      "present_stem": "کن",
+      "past_stem": "کرد",
+      "type": "transitive_agentive",
+      "collocations": [
+        {"non_verbal": "کار", "compound": "کار کردن", "meaning": "to work"},
+        {"non_verbal": "صحبت", "compound": "صحبت کردن", "meaning": "to speak"},
+        {"non_verbal": "پیدا", "compound": "پیدا کردن", "meaning": "to find"},
+        {"non_verbal": "کمک", "compound": "کمک کردن", "meaning": "to help"},
+        {"non_verbal": "زندگی", "compound": "زندگی کردن", "meaning": "to live"},
+        {"non_verbal": "نگاه", "compound": "نگاه کردن", "meaning": "to look"}
+      ]
+    },
+    "shodan": {
+      "lemma": "شدن",
+      "present_stem": "شو",
+      "past_stem": "شد",
+      "type": "inchoative_passive",
+      "collocations": [
+        {"non_verbal": "پیدا", "compound": "پیدا شدن", "meaning": "to be found"},
+        {"non_verbal": "آغاز", "compound": "آغاز شدن", "meaning": "to begin / start"},
+        {"non_verbal": "تمام", "compound": "تمام شدن", "meaning": "to finish / end"},
+        {"non_verbal": "خراب", "compound": "خراب شدن", "meaning": "to break down / spoil"},
+        {"non_verbal": "بیدار", "compound": "بیدار شدن", "meaning": "to wake up"}
+      ]
+    },
+    "zadan": {
+      "lemma": "زدن",
+      "present_stem": "زن",
+      "past_stem": "زد",
+      "type": "contact_percussive",
+      "collocations": [
+        {"non_verbal": "حرف", "compound": "حرف زدن", "meaning": "to talk"},
+        {"non_verbal": "زنگ", "compound": "زنگ زدن", "meaning": "to call / ring"},
+        {"non_verbal": "لبخند", "compound": "لبخند زدن", "meaning": "to smile"},
+        {"non_verbal": "حدس", "compound": "حدس زدن", "meaning": "to guess"}
+      ]
+    },
+    "dadan": {
+      "lemma": "دادن",
+      "present_stem": "ده",
+      "past_stem": "داد",
+      "type": "transfer_causative",
+      "collocations": [
+        {"non_verbal": "انجام", "compound": "انجام دادن", "meaning": "to perform / carry out"},
+        {"non_verbal": "نشان", "compound": "نشان دادن", "meaning": "to show"},
+        {"non_verbal": "پاسخ", "compound": "پاسخ دادن", "meaning": "to answer / reply"},
+        {"non_verbal": "قرار", "compound": "قرار دادن", "meaning": "to place / put"}
+      ]
+    },
+    "gereftan": {
+      "lemma": "گرفتن",
+      "present_stem": "گیر",
+      "past_stem": "گرفت",
+      "type": "receptive_inceptive",
+      "collocations": [
+        {"non_verbal": "یاد", "compound": "یاد گرفتن", "meaning": "to learn"},
+        {"non_verbal": "تصمیم", "compound": "تصمیم گرفتن", "meaning": "to decide"},
+        {"non_verbal": "آرام", "compound": "آرام گرفتن", "meaning": "to calm down / rest"},
+        {"non_verbal": "شکل", "compound": "شکل گرفتن", "meaning": "to take shape"}
+      ]
+    },
+    "dashtan": {
+      "lemma": "داشتن",
+      "present_stem": "دار",
+      "past_stem": "داشت",
+      "type": "stative_durative",
+      "collocations": [
+        {"non_verbal": "دوست", "compound": "دوست داشتن", "meaning": "to like / love"},
+        {"non_verbal": "نگه", "compound": "نگه داشتن", "meaning": "to keep / hold"},
+        {"non_verbal": "باور", "compound": "باور داشتن", "meaning": "to believe"}
+      ]
+    }
+  }
+}

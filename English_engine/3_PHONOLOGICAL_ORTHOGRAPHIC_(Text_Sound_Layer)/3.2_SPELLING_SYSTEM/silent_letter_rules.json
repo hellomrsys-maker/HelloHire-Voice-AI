@@ -1,0 +1,11 @@
+{
+  "silent_letter_rules": {
+    "silent_k": { "pattern": "^kn-", "examples": ["knife", "know", "knot", "knee"], "historical": "Old English /kn/ cluster simplification" },
+    "silent_w": { "pattern": "^wr-", "examples": ["write", "wrist", "wrong", "wreck"], "historical": "Old English /wr/ cluster simplification" },
+    "silent_g": { "pattern": "-gn$", "examples": ["sign", "design", "foreign", "reign"], "historical": "Latin/French loanword absorption" },
+    "silent_b": { "pattern": "-mb$", "examples": ["climb", "comb", "tomb", "bomb"], "historical": "Final bilabial stop elision after nasal" },
+    "silent_l": { "pattern": "-lk, -lm, -lf", "examples": ["walk", "talk", "calm", "half"], "historical": "L-vocalization in Middle English" },
+    "silent_p": { "pattern": "^ps-, ^pn-, ^pt-", "examples": ["psychology", "pneumonia", "pterodactyl"], "historical": "Greek initial cluster simplification" },
+    "silent_h": { "pattern": "^h- in specific Romance loans", "examples": ["hour", "honor", "honest", "heir"], "historical": "Old French silent h" }
+  }
+}

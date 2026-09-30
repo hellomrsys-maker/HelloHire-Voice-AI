@@ -1,0 +1,44 @@
+{
+  "contractions": {
+    "de": {
+      "o": "do", "a": "da", "os": "dos", "as": "das",
+      "um": "dum", "uma": "duma", "uns": "duns", "umas": "dumas",
+      "ele": "dele", "ela": "dela", "eles": "deles", "elas": "delas",
+      "este": "deste", "esta": "desta", "estes": "destes", "estas": "destas",
+      "esse": "desse", "essa": "dessa", "esses": "desses", "essas": "dessas",
+      "aquele": "daquele", "aquela": "daquela", "aqueles": "daqueles", "aquelas": "daquelas",
+      "isto": "disto", "isso": "disso", "aquilo": "daquilo"
+    },
+    "em": {
+      "o": "no", "a": "na", "os": "nos", "as": "nas",
+      "um": "num", "uma": "numa", "uns": "nuns", "umas": "numas",
+      "ele": "nele", "ela": "nela", "eles": "neles", "elas": "nelas",
+      "este": "neste", "esta": "nesta", "estes": "nestes", "estas": "nestas",
+      "esse": "nesse", "essa": "nessa", "esses": "nesses", "essas": "nessas",
+      "aquele": "naquele", "aquela": "naquela", "aqueles": "naqueles", "aquelas": "naquelas",
+      "isto": "nisto", "isso": "nisso", "aquilo": "naquilo"
+    },
+    "a": {
+      "o": "ao", "os": "aos",
+      "a": "à", "as": "às",
+      "aquele": "àquele", "aquela": "àquela", "aqueles": "àqueles", "aquelas": "àquelas",
+      "aquilo": "àquilo"
+    },
+    "por": {
+      "o": "pelo", "a": "pela", "os": "pelos", "as": "pelas"
+    }
+  },
+  "crase_rules": {
+    "description": "Fusion of preposition 'a' with feminine article 'a' or demonstrative 'aquele'",
+    "mandatory_cases": [
+      "before_feminine_nouns_governed_by_prep_a",
+      "locutions_feminine (à noite, às vezes, à medida que, às pressas)",
+      "demonstratives_aquele (fui àquele lugar)"
+    ],
+    "prohibited_cases": [
+      "before_masculine_nouns (a pé, a cavalo)",
+      "before_verbs (a partir de, a fazer)",
+      "before_indefinite_pronouns (a alguém, a qualquer)"
+    ]
+  }
+}

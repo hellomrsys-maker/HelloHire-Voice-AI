@@ -1,0 +1,88 @@
+[package]
+name = "polyglot-training"
+version = "1.0.0"
+edition = "2021"
+description = "High-throughput, memory-safe training data pipeline for the polyglot AI system"
+authors = ["Polyglot AI System"]
+license = "Apache-2.0"
+
+[[bin]]
+name = "polyglot-data-pipeline"
+path = "src/main.rs"
+
+[lib]
+name = "polyglot_training"
+crate-type = ["cdylib", "rlib"]
+path = "src/lib.rs"
+
+[dependencies]
+# Concurrency and async
+rayon = "1.8"
+tokio = { version = "1.35", features = ["full"] }
+crossbeam-channel = "0.5"
+crossbeam-deque = "0.8"
+parking_lot = "0.12"
+
+# Serialisation
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+
+# String / tokenisation
+unicode-segmentation = "1.10"
+unicode-normalization = "0.1"
+regex = "1.10"
+aho-corasick = "1.1"
+memchr = "2.7"
+
+# Hashing
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+ahash = "0.8"
+
+# I/O and file handling
+memmap2 = "0.9"
+flate2 = "1.0"
+zstd = "0.13"
+tempfile = "3.8"
+walkdir = "2.4"
+
+# Logging and diagnostics
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Numeric
+bytemuck = { version = "1.14", features = ["derive"] }
+half = "2.3"
+ndarray = "0.15"
+
+# FFI with C++
+libc = "0.2"
+
+# Random (for shuffle)
+rand = "0.8"
+
+# CLI
+clap = { version = "4.4", features = ["derive"] }
+
+# Progress
+indicatif = "0.17"
+
+[dev-dependencies]
+tempfile = "3.8"
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "tokenizer_bench"
+harness = false
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+
+[profile.bench]
+opt-level = 3
+lto = "thin"

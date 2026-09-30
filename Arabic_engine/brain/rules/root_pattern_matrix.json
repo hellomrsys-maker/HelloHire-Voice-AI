@@ -1,0 +1,70 @@
+{
+  "roots": {
+    "ktb": {
+      "root": "كتب",
+      "meaning": "writing",
+      "forms": {
+        "I": {"past": "kataba", "present": "yaktubu", "masdar": "kitaba", "act_part": "katib", "pass_part": "maktub"},
+        "II": {"past": "kattaba", "present": "yukattibu", "masdar": "taktib", "act_part": "mukattib", "pass_part": "mukattab"},
+        "III": {"past": "kataba", "present": "yukatibu", "masdar": "mukataba", "act_part": "mukatib", "pass_part": "mukatab"},
+        "VI": {"past": "takataba", "present": "yatakatabu", "masdar": "takatub", "act_part": "mutakatib", "pass_part": "mutakatab"},
+        "VIII": {"past": "iktataba", "present": "yaktatibu", "masdar": "iktitab", "act_part": "muktantib", "pass_part": "muktattab"}
+      }
+    },
+    "drs": {
+      "root": "درس",
+      "meaning": "studying/teaching",
+      "forms": {
+        "I": {"past": "darasa", "present": "yadrusu", "masdar": "diraasa", "act_part": "daris", "pass_part": "madrus"},
+        "II": {"past": "darrasa", "present": "yudarrisu", "masdar": "tadris", "act_part": "mudarris", "pass_part": "mudarras"}
+      }
+    },
+    "slm": {
+      "root": "سلم",
+      "meaning": "peace/safety/surrender",
+      "forms": {
+        "I": {"past": "salima", "present": "yaslamu", "masdar": "salama", "act_part": "salim", "pass_part": "maslum"},
+        "II": {"past": "sallama", "present": "yusallimu", "masdar": "taslim", "act_part": "musallim", "pass_part": "musallam"},
+        "IV": {"past": "aslama", "present": "yuslimu", "masdar": "islam", "act_part": "muslim", "pass_part": "muslam"},
+        "V": {"past": "tasallama", "present": "yatasallamu", "masdar": "tasallum", "act_part": "mutasallim", "pass_part": "mutasallam"},
+        "X": {"past": "istaslama", "present": "yastaslimu", "masdar": "istislam", "act_part": "mustaslim", "pass_part": "mustaslam"}
+      }
+    },
+    "'lm": {
+      "root": "علم",
+      "meaning": "knowing/learning/teaching",
+      "forms": {
+        "I": {"past": "'alima", "present": "ya'lamu", "masdar": "'ilm", "act_part": "'alim", "pass_part": "ma'lum"},
+        "II": {"past": "'allama", "present": "yu'allimu", "masdar": "ta'lim", "act_part": "mu'allim", "pass_part": "mu'allam"},
+        "V": {"past": "ta'allama", "present": "yata'allamu", "masdar": "ta'allum", "act_part": "muta'allim", "pass_part": "muta'allam"},
+        "X": {"past": "ista'lama", "present": "yasta'limu", "masdar": "isti'lam", "act_part": "musta'lim", "pass_part": "musta'lam"}
+      }
+    },
+    "ksr": {
+      "root": "كسر",
+      "meaning": "breaking",
+      "forms": {
+        "I": {"past": "kasara", "present": "yaksiru", "masdar": "kasr", "act_part": "kasir", "pass_part": "maksur"},
+        "II": {"past": "kassara", "present": "yukassiru", "masdar": "taksir", "act_part": "mukassir", "pass_part": "mukassar"},
+        "VII": {"past": "inkasara", "present": "yankasiru", "masdar": "inkisar", "act_part": "munkasir", "pass_part": "munkasar"}
+      }
+    },
+    "jm'": {
+      "root": "جمع",
+      "meaning": "gathering",
+      "forms": {
+        "I": {"past": "jama'a", "present": "yajma'u", "masdar": "jam'", "act_part": "jami'", "pass_part": "majmu'"},
+        "VIII": {"past": "ijtama'a", "present": "yajtami'u", "masdar": "ijtima'", "act_part": "mujtami'", "pass_part": "mujtama'"}
+      }
+    },
+    "xrj": {
+      "root": "خرج",
+      "meaning": "exiting",
+      "forms": {
+        "I": {"past": "kharaja", "present": "yakhruju", "masdar": "khuruj", "act_part": "kharij", "pass_part": "makhruj"},
+        "IV": {"past": "akhraja", "present": "yukhriju", "masdar": "ikhraj", "act_part": "mukhrij", "pass_part": "mukhraj"},
+        "X": {"past": "istakhraja", "present": "yastakhriju", "masdar": "istikhraj", "act_part": "mustakhrij", "pass_part": "mustakhraj"}
+      }
+    }
+  }
+}

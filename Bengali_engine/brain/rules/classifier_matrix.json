@@ -1,0 +1,65 @@
+{
+  "classifiers": {
+    "টা": {
+      "romanized": "Ta",
+      "type": "general_definite_singular",
+      "animacy": "inanimate_or_general",
+      "politeness": "neutral",
+      "description": "General singular definite article / counter, attached to nouns or numerals",
+      "examples": ["বইটা", "কলমটা", "দুটো বই"]
+    },
+    "টি": {
+      "romanized": "Ti",
+      "type": "diminutive_polite_singular",
+      "animacy": "inanimate_or_general",
+      "politeness": "polite_affectionate",
+      "description": "Polite or small/diminutive singular definite marker",
+      "examples": ["কলমটি", "গানটি", "একটি ফুল"]
+    },
+    "গুলো": {
+      "romanized": "gulo",
+      "type": "general_definite_plural",
+      "animacy": "animate_and_inanimate",
+      "politeness": "neutral",
+      "description": "General plural definite classifier",
+      "examples": ["বইগুলো", "মানুষগুলো", "ফুলগুলো"]
+    },
+    "গুলি": {
+      "romanized": "guli",
+      "type": "formal_definite_plural",
+      "animacy": "animate_and_inanimate",
+      "politeness": "formal_literary",
+      "description": "Formal, literary, or diminutive plural definite classifier",
+      "examples": ["কথাগুলি", "নিয়মগুলি", "পাখিগুলি"]
+    },
+    "খানা": {
+      "romanized": "khana",
+      "type": "flat_object_singular",
+      "animacy": "inanimate",
+      "politeness": "neutral",
+      "description": "Classifier for flat, rectangular, or paper-like items (books, letters, maps)",
+      "examples": ["চিঠিখানা", "বইখানা", "ছবিখানা"]
+    },
+    "খানি": {
+      "romanized": "khani",
+      "type": "flat_object_poetic",
+      "animacy": "inanimate",
+      "politeness": "affectionate_poetic",
+      "description": "Poetic, delicate, or affectionate flat object classifier",
+      "examples": ["মুখখানি", "হাতখানি", "একখানি গান"]
+    },
+    "জন": {
+      "romanized": "jon",
+      "type": "human_numeral_counter",
+      "animacy": "human",
+      "politeness": "neutral_polite",
+      "description": "Numeral classifier strictly for human beings",
+      "examples": ["পাঁচজন ছাত্র", "দুজন শিক্ষক", "কতজন"]
+    }
+  },
+  "compatibility_rules": {
+    "numeral_inversion": {
+      "rule": "Numeral + classifier (e.g. 'পাঁচজন') precedes bare noun ('ছাত্র'); Noun + classifier (e.g. 'ছাত্রটি') creates definite reading ('the student')."
+    }
+  }
+}

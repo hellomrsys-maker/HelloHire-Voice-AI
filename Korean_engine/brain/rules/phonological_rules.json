@@ -1,0 +1,36 @@
+{
+  "neutralization_7_coda_stops": {
+    "ㄱ": ["ㄱ", "ㄲ", "ㅋ", "ㄳ", "ㄺ"],
+    "ㄴ": ["ㄴ", "ㄵ", "ㄶ"],
+    "ㄷ": ["ㄷ", "ㅅ", "ㅆ", "ㅈ", "ㅊ", "ㅌ", "ㅎ"],
+    "ㄹ": ["ㄹ", "ㄼ", "ㄽ", "ㄾ", "ㅀ"],
+    "ㅁ": ["ㅁ", "ㄻ"],
+    "ㅂ": ["ㅂ", "ㅍ", "ㄿ", "ㅄ"],
+    "ㅇ": ["ㅇ"]
+  },
+  "nasalization_rules": {
+    "description": "Stops [ㄱ, ㄷ, ㅂ] assimilate to nasals [ㅇ, ㄴ, ㅁ] before nasals [ㄴ, ㅁ]",
+    "coda_stops": {"ㄱ": "ㅇ", "ㄷ": "ㄴ", "ㅂ": "ㅁ"},
+    "following_nasals": ["ㄴ", "ㅁ"]
+  },
+  "tensification_rules": {
+    "description": "Lax consonants become tense after unreleased stops",
+    "trigger_codas": ["ㄱ", "ㄷ", "ㅂ"],
+    "lax_targets": {"ㄱ": "ㄲ", "ㄷ": "ㄸ", "ㅂ": "ㅃ", "ㅅ": "ㅆ", "ㅈ": "ㅉ"}
+  },
+  "liquidization_rules": {
+    "description": "ㄴ and ㄹ assimilate to double lateral ㄹㄹ",
+    "sequences": [
+      {"coda": "ㄴ", "onset": "ㄹ", "result": "ㄹㄹ"},
+      {"coda": "ㄹ", "onset": "ㄴ", "result": "ㄹㄹ"}
+    ]
+  },
+  "palatalization_rules": {
+    "description": "ㄷ, ㅌ before /i/ become ㅈ, ㅊ",
+    "rules": {"ㄷ": "ㅈ", "ㅌ": "ㅊ"}
+  },
+  "aspiration_rules": {
+    "description": "Lax stop + ㅎ (or ㅎ + lax stop) merge to aspirated stop",
+    "pairs": {"ㄱ": "ㅋ", "ㄷ": "ㅌ", "ㅂ": "ㅍ", "ㅈ": "ㅊ"}
+  }
+}

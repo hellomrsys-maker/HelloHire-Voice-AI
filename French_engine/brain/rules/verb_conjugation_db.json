@@ -1,0 +1,115 @@
+{
+  "regular_groups": {
+    "group1_er": {
+      "suffix": "er",
+      "present": ["e", "es", "e", "ons", "ez", "ent"],
+      "imparfait": ["ais", "ais", "ait", "ions", "iez", "aient"],
+      "futur": ["erai", "eras", "era", "erons", "erez", "eront"],
+      "conditionnel": ["erais", "erais", "erait", "erions", "eriez", "eraient"],
+      "subjonctif_present": ["e", "es", "e", "ions", "iez", "ent"],
+      "participe_present": "ant",
+      "participe_passe": "é"
+    },
+    "group2_ir": {
+      "suffix": "ir",
+      "present": ["is", "is", "it", "issons", "issez", "issent"],
+      "imparfait": ["issais", "issais", "issait", "issions", "issiez", "issaient"],
+      "futur": ["irai", "iras", "ira", "irons", "irez", "iront"],
+      "conditionnel": ["irais", "irais", "irait", "irions", "iriez", "iraient"],
+      "subjonctif_present": ["isse", "isses", "isse", "issions", "issiez", "issent"],
+      "participe_present": "issant",
+      "participe_passe": "i"
+    }
+  },
+  "auxiliary_classification": {
+    "etre_verbs": [
+      "aller", "arriver", "descendre", "devenir", "entrer", "monter",
+      "mourir", "naître", "partir", "rentrer", "rester", "retourner",
+      "revenir", "sortir", "tomber", "venir"
+    ],
+    "reflexive_auxiliary": "être",
+    "default_auxiliary": "avoir"
+  },
+  "irregular_verbs": {
+    "être": {
+      "present": ["suis", "es", "est", "sommes", "êtes", "sont"],
+      "imparfait": ["étais", "étais", "était", "étions", "étiez", "étaient"],
+      "futur": ["serai", "seras", "sera", "serons", "serez", "seront"],
+      "subjonctif_present": ["sois", "sois", "soit", "soyons", "soyez", "soient"],
+      "participe_passe": "été",
+      "auxiliary": "avoir"
+    },
+    "avoir": {
+      "present": ["ai", "as", "a", "avons", "avez", "ont"],
+      "imparfait": ["avais", "avais", "avait", "avions", "aviez", "avaient"],
+      "futur": ["aurai", "auras", "aura", "aurons", "aurez", "auront"],
+      "subjonctif_present": ["aie", "aies", "ait", "ayons", "ayez", "aient"],
+      "participe_passe": "eu",
+      "auxiliary": "avoir"
+    },
+    "aller": {
+      "present": ["vais", "vas", "va", "allons", "allez", "vont"],
+      "imparfait": ["allais", "allais", "allait", "allions", "alliez", "allaient"],
+      "futur": ["irai", "iras", "ira", "irons", "irez", "iront"],
+      "subjonctif_present": ["aille", "ailles", "aille", "allions", "alliez", "aillent"],
+      "participe_passe": "allé",
+      "auxiliary": "être"
+    },
+    "faire": {
+      "present": ["fais", "fais", "fait", "faisons", "faites", "font"],
+      "imparfait": ["faisais", "faisais", "faisait", "faisions", "faisiez", "faisaient"],
+      "futur": ["ferai", "feras", "fera", "ferons", "ferez", "feront"],
+      "subjonctif_present": ["fasse", "fasses", "fasse", "fassions", "fassiez", "fassent"],
+      "participe_passe": "fait",
+      "auxiliary": "avoir"
+    },
+    "pouvoir": {
+      "present": ["peux", "peux", "peut", "pouvons", "pouvez", "peuvent"],
+      "imparfait": ["pouvais", "pouvais", "pouvait", "pouvions", "pouviez", "pouvaient"],
+      "futur": ["pourrai", "pourras", "pourra", "pourrons", "pourrez", "pourront"],
+      "subjonctif_present": ["puisse", "puisses", "puisse", "puissions", "puissiez", "puissent"],
+      "participe_passe": "pu",
+      "auxiliary": "avoir"
+    },
+    "vouloir": {
+      "present": ["veux", "veux", "veut", "voulons", "voulez", "veulent"],
+      "imparfait": ["voulais", "voulais", "voulait", "voulions", "vouliez", "voulaient"],
+      "futur": ["voudrai", "voudras", "voudra", "voudrons", "voudrez", "voudront"],
+      "subjonctif_present": ["veuille", "veuilles", "veuille", "voulions", "vouliez", "veuillent"],
+      "participe_passe": "voulu",
+      "auxiliary": "avoir"
+    },
+    "devoir": {
+      "present": ["dois", "dois", "doit", "devons", "devez", "doivent"],
+      "imparfait": ["devais", "devais", "devait", "devions", "deviez", "devaient"],
+      "futur": ["devrai", "devras", "devra", "devrons", "devrez", "devront"],
+      "subjonctif_present": ["doive", "doives", "doive", "devions", "deviez", "doivent"],
+      "participe_passe": "dû",
+      "auxiliary": "avoir"
+    },
+    "venir": {
+      "present": ["viens", "viens", "vient", "venons", "venez", "viennent"],
+      "imparfait": ["venais", "venais", "venait", "venions", "veniez", "venaient"],
+      "futur": ["viendrai", "viendras", "viendra", "viendrons", "viendrez", "viendront"],
+      "subjonctif_present": ["vienne", "viennes", "vienne", "venions", "veniez", "viennent"],
+      "participe_passe": "venu",
+      "auxiliary": "être"
+    },
+    "savoir": {
+      "present": ["sais", "sais", "sait", "savons", "savez", "savent"],
+      "imparfait": ["savais", "savais", "savait", "savions", "saviez", "savaient"],
+      "futur": ["saurai", "sauras", "saura", "saurons", "saurez", "sauront"],
+      "subjonctif_present": ["sache", "saches", "sache", "sachions", "sachiez", "sachent"],
+      "participe_passe": "su",
+      "auxiliary": "avoir"
+    },
+    "prendre": {
+      "present": ["prends", "prends", "prend", "prenons", "prenez", "prennent"],
+      "imparfait": ["prenais", "prenais", "prenait", "prenions", "preniez", "prenaient"],
+      "futur": ["prendrai", "prendras", "prendra", "prendrons", "prendrez", "prendront"],
+      "subjonctif_present": ["prenne", "prennes", "prenne", "prenions", "preniez", "prennent"],
+      "participe_passe": "pris",
+      "auxiliary": "avoir"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "por": {
+    "causa_motivo": "Explicación o razón que origina la acción (e.g., 'cancelado por lluvia')",
+    "duracion_lapso": "Extensión temporal (e.g., 'por dos horas')",
+    "medio_instrumento": "Canal o instrumento de comunicación o transporte (e.g., 'por correo', 'por teléfono')",
+    "intercambio_precio": "Transacción monetaria o trueque (e.g., 'por 20 euros')",
+    "transito_a_traves": "Espacio recorrido o tránsito difuso (e.g., 'caminar por el bosque')",
+    "agente_pasivo": "Autor de la acción en voz pasiva (e.g., 'escrito por Cervantes')",
+    "agradecimiento": "Objeto de gratitud (e.g., 'gracias por tu ayuda')"
+  },
+  "para": {
+    "finalidad_proposito": "Meta u objetivo con verbo infinitivo (e.g., 'para estudiar')",
+    "destinatario": "Persona o entidad receptora (e.g., 'un regalo para ti')",
+    "fecha_limite": "Plazo temporal específico (e.g., 'para el viernes')",
+    "destino_direccion": "Punto final de movimiento (e.g., 'salgo para Madrid')",
+    "opinion": "Punto de vista individual (e.g., 'para mí es importante')",
+    "comparacion_estandar": "Relación con norma esperada (e.g., 'para ser principiante, escribe muy bien')"
+  }
+}

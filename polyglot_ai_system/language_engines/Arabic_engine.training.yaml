@@ -1,0 +1,873 @@
+# =============================================================================
+# language_engines/Arabic_engine.training.yaml
+# CANONICAL TRAINING FILE — Arabic Language Engine
+# Single-File Language Engine AI Specification — all 19 sections.
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "arabic_engine_v1"
+  language_name:                "Arabic"
+  language_code:                "ar"
+  language_family:              "Afro-Asiatic › Semitic › Central Semitic"
+  writing_systems:
+    - name: "Arabic Script"
+      direction: "right_to_left"
+      script_type: "abjad (consonantal alphabet)"
+      note: "Vowels are written as diacritics (harakat/tashkeel) which are optional in most contexts"
+      characters: "28 base letters, each with up to 4 contextual forms (isolated, initial, medial, final)"
+      diacritics:
+        - { mark: "َ (fatha)",   IPA: "a",  function: "short_vowel_a" }
+        - { mark: "ِ (kasra)",   IPA: "i",  function: "short_vowel_i" }
+        - { mark: "ُ (damma)",   IPA: "u",  function: "short_vowel_u" }
+        - { mark: "ً (tanwin_fath)", IPA: "an", function: "indefinite_accusative" }
+        - { mark: "ٍ (tanwin_kasr)", IPA: "in", function: "indefinite_genitive" }
+        - { mark: "ٌ (tanwin_damm)", IPA: "un", function: "indefinite_nominative" }
+        - { mark: "ْ (sukun)",   function: "absence_of_vowel" }
+        - { mark: "ّ (shadda)",  function: "consonant_gemination" }
+        - { mark: "ٰ (alef_superscript)", function: "special_alef_cases" }
+  supported_variants:
+    - code: ar-MSA
+      name: "Modern Standard Arabic (فصحى العصر)"
+      reference: "Formal written standard across all Arab countries; used in media, education, government"
+      note: "Nobody speaks MSA as a native language; it is a learned formal register"
+    - code: ar-EG
+      name: "Egyptian Arabic (عامية مصرية)"
+      reference: "Cairo dialect — most widely understood colloquial due to media influence"
+    - code: ar-SA
+      name: "Gulf Arabic / Saudi (الخليجي)"
+      reference: "Arabian Peninsula varieties"
+    - code: ar-SY
+      name: "Levantine Arabic (شامي)"
+      reference: "Syria, Lebanon, Jordan, Palestine varieties"
+    - code: ar-MA
+      name: "Moroccan Arabic / Darija (الدارجة)"
+      reference: "Maghrebi variety — most different from MSA; influenced by Berber and French"
+  canonical_training_file:      "language_engines/Arabic_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    MSA_dialect_tracking:       true
+    gender_agreement_tracking:  true
+    dual_number_tracking:       true
+
+  error_detection:
+    grammar_error_detection:    true
+    gender_agreement_check:     true
+    triliteral_root_analysis:   true
+    MSA_dialect_mixing:         true
+
+  safety_and_privacy:
+    content_filter:             true
+    filter_threshold:           0.85
+
+  human_preference_alignment:
+    register_adaptation:        true
+    MSA_default:                true
+    cultural_sensitivity:       true
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      direction:                "RTL"
+      max_length:               8192
+      harakat_optional:         true
+      harakat_disambiguation:   true
+
+  understanding:
+    tokenization:
+      strategy:                 "morphological_BPE"
+      tool:                     "Farasa_or_Camel_Tools"
+      vocab_size:               64000
+      root_extraction:          true
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      root_pattern_analysis:    true
+      gender_annotation:        true
+      number_annotation:        true
+      case_annotation:          true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      word_order:               "VSO_or_SVO"
+      pro_drop:                 true
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+      gender_agreement_stack:   true
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+
+  generation:
+    grammar_realization:
+      gender_agreement:         true
+      number_agreement:         true
+      case_marking:             true
+      root_pattern_morphology:  true
+      RTL_output:               true
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:    { enabled: true, comprehension_depth: "deep" }
+  writing:    { enabled: true, max_output_tokens: 10000, RTL: true }
+  listening:  { enabled: true, real_time: true }
+  speaking:   { enabled: true, prosody_control: true }
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    emphatic_consonants:        true
+    pharyngeal_consonants:      true
+    harakat_pronunciation:      true
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "fr", "de", "es", "ja", "ta"]
+  teaching:   { enabled: true, scaffolding: true }
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    root_creativity:            "Triliteral root system enables systematic word family creativity"
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      الوقت_time:
+        - { metaphor: "الوقت كالسيف",       effect: "خطر_danger_framing" }
+        - { metaphor: "الوقت من ذهب",       effect: "قيمة_value_framing" }
+      العقل_mind:
+        - { metaphor: "العقل نور",          effect: "إضاءة_illumination_framing" }
+        - { metaphor: "العقل بستان",        effect: "نمو_growth_framing" }
+      اللغة_language:
+        - { metaphor: "اللغة جسر",          effect: "تواصل_connection_framing" }
+        - { metaphor: "اللغة مرآة",         effect: "انعكاس_reflection_framing" }
+
+  classical_poetry_mode:
+    enabled:                    true
+    meter_support:              ["الطويل", "البسيط", "الوافر", "الكامل"]
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    script:                     "Arabic"
+    direction:                  "RTL"
+    contextual_forms:           true
+    harakat_optional:           "Vowel diacritics optional in most adult text; required in Quran, children's books, and pedagogical materials"
+    hamza_rules:                "ء / أ / إ / آ / ؤ / ئ — hamza carrier selection depends on adjacent vowels"
+    alef_variations:
+      - { form: "ا", usage: "standard alef" }
+      - { form: "أ", usage: "alef with hamza above" }
+      - { form: "إ", usage: "alef with hamza below" }
+      - { form: "آ", usage: "alef with madda (long aa)" }
+      - { form: "ى", usage: "alef maqsura (word-final)" }
+    ta_marbuta:                 "ة — feminine marker at word end; pronounced t before genitive constructs"
+
+  morphology:
+    triliteral_root_system:
+      description: >
+        Arabic morphology is root-and-pattern based. Most words derive from
+        3-consonant (triliteral) roots; meaning carried by root + pattern (wazn).
+      examples:
+        - { root: "ك-ت-ب (k-t-b)", meaning: "write/book", derivatives: ["كَتَبَ (kataba — he wrote)", "كِتَاب (kitāb — book)", "كَاتِب (kātib — writer)", "مَكْتَبَة (maktaba — library/office)", "كِتَابَة (kitāba — writing)"] }
+        - { root: "ع-ل-م (ʕ-l-m)", meaning: "know/teach", derivatives: ["عَلِمَ (ʕalima — he knew)", "عِلْم (ʕilm — knowledge)", "عَالِم (ʕālim — scholar)", "مَعْلَم (maʕlam — landmark/teacher)", "تَعْلِيم (taʕlīm — education)"] }
+        - { root: "د-ر-س (d-r-s)", meaning: "study/lesson", derivatives: ["دَرَسَ (darasa — he studied)", "دَرْس (dars — lesson)", "دَرَّاسَة (darrāsa — tricycle; thresher)", "مَدْرَسَة (madrasa — school)", "دِرَاسَة (dirāsa — study/studies)"] }
+    gender:
+      values:                   ["masculine", "feminine"]
+      feminine_markers:         ["ة (ta_marbuta)", "ى (alef_maqsura)", "ت (ta)", "some_unmarked_nouns_are_fem"]
+      agreement:                "adjective, verb, pronoun all agree with head noun in gender"
+    number:
+      values:                   ["singular", "dual", "plural"]
+      dual_formation:           "add ان- (ān) nominative or ين- (ayn) accusative/genitive"
+      plural_types:
+        sound_masculine:        "add ون- (ūn) nominative or ين- (īn) acc/gen"
+        sound_feminine:         "add ات- (āt)"
+        broken_plural:          "Internal vowel change — must be memorized; no systematic rule"
+        broken_plural_examples:
+          - { singular: "كِتَاب (kitāb)", plural: "كُتُب (kutub)" }
+          - { singular: "رَجُل (rajul)",  plural: "رِجَال (rijāl)" }
+          - { singular: "بَيْت (bayt)",   plural: "بُيُوت (buyūt)" }
+          - { singular: "كَلْب (kalb)",   plural: "كِلَاب (kilāb)" }
+    case:
+      values:                   ["nominative (rafa)", "accusative (nasb)", "genitive (jarr)"]
+      marking:                  "Short vowel diacritics when written; case often not marked in unvoweled text"
+    definiteness:
+      definite_article:         "ال (al-) — attached to the noun; article is invariable"
+      sun_letters:              "When al- precedes a sun letter (ش س ص ض ط ظ ن ت ث د ذ ر ز ل), the 'l' assimilates: الشمس → ash-shams"
+      moon_letters:             "al- pronounced as written: القمر → al-qamar"
+    verb_system:
+      forms_binyan:             "Arabic has 10 standard verb forms (أوزان awzān); each adds systematic meaning"
+      form_meanings:
+        - { form: "Form_I (فَعَلَ)", meaning: "basic_action" }
+        - { form: "Form_II (فَعَّلَ)", meaning: "intensive_or_causative" }
+        - { form: "Form_III (فَاعَلَ)", meaning: "reciprocal_or_attempted" }
+        - { form: "Form_IV (أَفْعَلَ)", meaning: "causative" }
+        - { form: "Form_V (تَفَعَّلَ)", meaning: "reflexive_of_II" }
+        - { form: "Form_VI (تَفَاعَلَ)", meaning: "reflexive_reciprocal" }
+        - { form: "Form_VII (اِنْفَعَلَ)", meaning: "passive_of_I" }
+        - { form: "Form_VIII (اِفْتَعَلَ)", meaning: "reflexive_or_middle" }
+        - { form: "Form_X (اِسْتَفْعَلَ)", meaning: "request_or_consider" }
+      tense:
+        perfective:             "Completed action (past in most contexts)"
+        imperfective:           "Incomplete action (present or future depending on context/mood)"
+        moods:                  ["indicative", "subjunctive", "jussive", "imperative"]
+
+  phonology:
+    emphatic_consonants:        "ص ض ط ظ — pharyngealized/velarized consonants; affect adjacent vowel quality"
+    pharyngeal_consonants:
+      - { letter: "ع (ayn)",  IPA: "ʕ",  description: "voiced pharyngeal fricative — unique to Semitic; no English equivalent" }
+      - { letter: "ح (ha)",   IPA: "ħ",  description: "voiceless pharyngeal fricative" }
+    uvular_consonants:
+      - { letter: "خ (kha)", IPA: "x", example: "خبز (bread)" }
+      - { letter: "غ (ghayn)", IPA: "ɣ", example: "غرفة (room)" }
+      - { letter: "ق (qaf)", IPA: "q", description: "uvular stop" }
+    glottal_consonant:
+      - { letter: "ء (hamza)", IPA: "ʔ", description: "glottal stop" }
+    long_vowels:
+      - { grapheme: "آ/ا", IPA: "aː", example: "كتاب (kitāb — book)" }
+      - { grapheme: "و",   IPA: "uː", example: "نور (nūr — light)" }
+      - { grapheme: "ي",   IPA: "iː", example: "بيت (bayt — house, but ي in عزيز)" }
+
+  syntax:
+    word_order:
+      MSA:                      "VSO preferred in classical/formal; SVO also used in modern writing"
+      colloquial:               "SVO predominant in dialects"
+    definite_noun_phrase:
+      rule:                     "Adjective follows noun; both take definite article if noun is definite"
+      example:                  "البيت الكبير (al-bayt al-kabīr — the big house)"
+    idafa_construct:
+      description:              "Noun + noun possessive chain; first noun has no article; last noun carries definiteness"
+      example:                  "بيت الرجل (bayt ar-rajul — the man's house)"
+    negation:
+      perfective:               "ما (mā) before perfective verb"
+      imperfective:             "لا (lā) before imperfective verb"
+      nominal:                  "ليس (laysa) — negated copula"
+
+  diglossia:
+    description: >
+      Arabic exhibits strong diglossia — a high variety (MSA) used in formal
+      writing and broadcasting, and low varieties (dialects) used in everyday speech.
+      Code-switching between MSA and dialects is common in educated speech.
+    MSA_contexts:               "formal_writing, news, official_speeches, religious_texts, education"
+    dialect_contexts:           "everyday_conversation, informal_media, social_media, family"
+    policy:                     "Engine defaults to MSA; dialect variants available per variant code"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      register: "MSA_formal"
+      slots:
+        salutation:             ["السلام عليكم", "مرحباً", "أهلاً وسهلاً", "تحية طيبة"]
+        addressee_title:        ["السيد", "السيدة", "الدكتور", "الأستاذ", ""]
+        name:                   ["[NAME]", ""]
+      templates:
+        - "{salutation}، {addressee_title} {name}."
+        - "{salutation}."
+
+    - id: "greeting_informal"
+      register: "colloquial"
+      slots:
+        salutation:             ["أهلاً", "مرحبا", "هلا", "كيفك"]
+        name:                   ["[NAME]", ""]
+      templates:
+        - "{salutation} {name}!"
+        - "{salutation}!"
+
+    - id: "farewell_formal"
+      register: "formal"
+      slots:
+        valediction:            ["مع السلامة", "وداعاً", "في أمان الله", "إلى اللقاء"]
+      templates:
+        - "{valediction}."
+
+    - id: "farewell_informal"
+      register: "informal"
+      slots:
+        valediction:            ["باي", "يلا باي", "مع السلامة", "بكرة نتكلم"]
+      templates:
+        - "{valediction}!"
+
+    - id: "gratitude_expression"
+      register: "any"
+      slots:
+        thanks:                 ["شكراً", "شكراً جزيلاً", "أشكرك", "أشكركم", "جزاك الله خيراً"]
+        reason:                 ["", "على مساعدتك", "على كل شيء", "على تعاونك"]
+      templates:
+        - "{thanks}."
+        - "{thanks} {reason}."
+
+    - id: "apology_expression"
+      register: "any"
+      slots:
+        apology:                ["آسف", "آسفة", "أعتذر", "المعذرة", "أرجو المعذرة"]
+        reason:                 ["", "على الإزعاج", "على التأخير", "على خطئي"]
+      templates:
+        - "{apology}."
+        - "{apology} {reason}."
+
+    - id: "introduction_self"
+      register: "any"
+      slots:
+        verb_phrase:            ["اسمي", "أنا", "يسعدني أن أعرفك، اسمي"]
+        name:                   ["[NAME]"]
+      templates:
+        - "{verb_phrase} {name}."
+        - "{verb_phrase} {name}، سعيد بلقائك."
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "select_MSA_or_dialect"
+    - step: "fill_slots_from_context"
+    - step: "apply_gender_agreement"
+    - step: "apply_number_agreement_singular_dual_plural"
+    - step: "apply_definite_article_with_sun_moon_assimilation"
+    - step: "apply_case_marking"
+    - step: "apply_verb_form_selection"
+    - step: "apply_RTL_rendering"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  gender_agreement_rules:
+    - rule: "Adjective must agree with noun in gender, number, definiteness, and case"
+    - rule: "Verb agrees with subject in gender and number (VSO allows masculine singular default)"
+    - rule: "Broken plural triggers agreement as feminine singular in some contexts"
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input_RTL"
+    - step: "unicode_normalization_NFC"
+    - step: "harakat_detection_and_optionality"
+    - step: "sentence_boundary_detection"
+    - step: "morphological_analysis_root_pattern"
+    - step: "gender_number_case_annotation"
+    - step: "POS_tagging_UD"
+    - step: "definiteness_analysis"
+    - step: "verb_form_analysis"
+    - step: "MSA_dialect_classification"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string (RTL)"
+    language:                   "ar"
+    variant:                    "ar-MSA|ar-EG|ar-SA|ar-SY|ar-MA"
+    morphemes:                  "list[MorphemeWithRoot]"
+    roots:                      "dict[word, triliteral_root]"
+    gender_assignments:         "dict[noun, masculine|feminine]"
+    number_assignments:         "dict[noun, singular|dual|plural]"
+    syntax_tree:                "DependencyTree"
+    component_family:           "string"
+    slots:                      "dict[str,str]"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         12000
+  extended_vocabulary_size:     65000
+
+  arabic_loanwords_to_other_languages:
+    into_english:
+      - { arabic: "الكحول (al-kuħūl)",  english: "alcohol" }
+      - { arabic: "الجبر (al-jabr)",    english: "algebra" }
+      - { arabic: "خوارزم (Khwarizm)",  english: "algorithm" }
+      - { arabic: "القهوة (al-qahwa)",  english: "coffee" }
+      - { arabic: "الأريكة (al-arīka)", english: "sofa" }
+      - { arabic: "مزين",              english: "magazine (via French)" }
+    into_spanish:
+      - { arabic: "الأزرق (al-azraq)", spanish: "azul (blue)" }
+      - { arabic: "الأرز (al-aruzz)",  spanish: "arroz (rice)" }
+      - { arabic: "الجبرة",            spanish: "almohada (pillow)" }
+
+  islamic_expressions:
+    - { expression: "بسم الله الرحمن الرحيم", transliteration: "Bismillah ir-rahman ir-rahim", meaning: "In the name of God, the Most Gracious, the Most Merciful — used to begin important actions" }
+    - { expression: "إن شاء الله", transliteration: "Inshallah", meaning: "God willing — used for future events" }
+    - { expression: "الحمد لله", transliteration: "Alhamdulillah", meaning: "Praise be to God — used for gratitude" }
+    - { expression: "ماشاء الله", transliteration: "Mashallah",   meaning: "What God has willed — used to express admiration" }
+    - { expression: "السلام عليكم", transliteration: "As-salamu alaykum", meaning: "Peace be upon you — standard Islamic greeting" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  short_vowels:
+    - { diacritic: "fatha (َ)", IPA: "a", example: "كَتَبَ (kataba)" }
+    - { diacritic: "kasra (ِ)", IPA: "i", example: "كِتَاب (kitāb)" }
+    - { diacritic: "damma (ُ)", IPA: "u", example: "كُتُب (kutub)" }
+
+  long_vowels:
+    - { grapheme: "ا", IPA: "aː", example: "كتاب" }
+    - { grapheme: "و", IPA: "uː", example: "نور" }
+    - { grapheme: "ي", IPA: "iː", example: "عزيز" }
+
+  distinctive_consonants:
+    - { letter: "ع",  IPA: "ʕ",  description: "voiced pharyngeal fricative — no Western equivalent" }
+    - { letter: "ح",  IPA: "ħ",  description: "voiceless pharyngeal fricative" }
+    - { letter: "خ",  IPA: "x",  description: "voiceless velar fricative (like ch in Bach)" }
+    - { letter: "غ",  IPA: "ɣ",  description: "voiced velar fricative (like French r)" }
+    - { letter: "ق",  IPA: "q",  description: "uvular stop" }
+    - { letter: "ص",  IPA: "sˤ", description: "emphatic s — pharyngealized" }
+    - { letter: "ض",  IPA: "dˤ", description: "emphatic d — pharyngealized (historically lateral)" }
+    - { letter: "ط",  IPA: "tˤ", description: "emphatic t — pharyngealized" }
+    - { letter: "ظ",  IPA: "ðˤ", description: "emphatic th — pharyngealized" }
+    - { letter: "ء",  IPA: "ʔ",  description: "glottal stop" }
+
+  sun_and_moon_letters:
+    sun_letters:                "ن ل ر ز ذ د ث ت ظ ط ض ص ش س — assimilate ل from ال"
+    moon_letters:               "All other letters — ال pronounced as al-"
+    example_sun:                "الشمس → ash-shams (not al-shams)"
+    example_moon:               "القمر → al-qamar"
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  grammatical_meaning:
+    tense_aspect_mood:
+      - { form: "الماضي (perfective)",   meaning: "completed_action — typically past tense" }
+      - { form: "المضارع (imperfective)", meaning: "ongoing_or_habitual — present or future by context" }
+      - { form: "المضارع المنصوب",        meaning: "subjunctive — after أن and similar" }
+      - { form: "المضارع المجزوم",        meaning: "jussive — in negation and conditional" }
+      - { form: "الأمر (imperative)",     meaning: "command" }
+    verb_form_meanings:
+      Form_II:                  "intensive or causative — علّم (ʕallama — he taught, made known)"
+      Form_IV:                  "causative — أعلم (aʕlama — he informed)"
+      Form_X:                   "consider as / request — استعلم (istaʕlama — he inquired)"
+    definiteness_meaning:
+      definite:                 "specific known referent — البيت (al-bayt — the house)"
+      indefinite:               "non-specific or first-mention — بيت (baytun — a house)"
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - refusing
+    - agreeing
+    - disagreeing
+    - blessing
+
+  politeness_system:
+    honorifics:
+      السيد:                    "Mr. — used before surname"
+      السيدة:                   "Mrs./Ms. — used before surname"
+      الدكتور/الدكتورة:         "Dr. — used for academics and medical doctors"
+      الأستاذ/الأستاذة:         "Professor/Teacher — also general respectful term"
+    formulaic_politeness:
+      opening_formal:           ["السلام عليكم", "مرحباً بكم", "تحية طيبة وبعد"]
+      opening_informal:         ["أهلاً", "هلا", "مرحبا"]
+      closing_formal:           ["وفي الختام", "مع خالص التقدير", "في أمان الله"]
+      closing_informal:         ["مع السلامة", "باي", "يلا باي"]
+    response_to_greeting:       "وعليكم السلام (wa ʕalaykum as-salām) — standard response to السلام عليكم"
+
+  cultural_context:
+    hospitality:                "الكرم (karam) — generosity and hospitality are core values; refusing food/drink three times is the minimum polite refusal"
+    religious_language:         "Islamic religious expressions (inshallah, alhamdulillah, bismillah) are used by religious and secular speakers alike in many contexts"
+    face_saving:                "Direct criticism is often avoided; indirect language preferred in formal contexts"
+    gender_norms:               "Addressing unknown women with respectful titles; avoiding personal questions to women about family in some contexts"
+    regional_variation:         "MSA is the lingua franca across regions; dialect use is identity-marking; Egyptians have high dialect prestige due to media"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "ar_td_001"
+    language:                   "ar"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation"]
+    normalized_components:
+      salutation:               "السلام عليكم"
+    grammar_rules_used:
+      - "MSA_formal_greeting"
+      - "RTL_text_direction"
+      - "sun_moon_letter_rule_السلام"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ar_td_002"
+    language:                   "ar"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks"]
+    normalized_components:
+      thanks:                   "شكراً جزيلاً"
+    grammar_rules_used:
+      - "indefinite_adverb_shukran"
+      - "adjective_agreement_jazilan"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ar_td_003"
+    language:                   "ar"
+    component_families:
+      - "apology_expression"
+    slot_order:                 ["apology"]
+    normalized_components:
+      apology:                  "أعتذر"
+    grammar_rules_used:
+      - "Form_VIII_verb_iʕtazara"
+      - "first_person_singular_imperfective"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ar_td_004"
+    language:                   "ar"
+    component_families:
+      - "farewell_formal"
+    slot_order:                 ["valediction"]
+    normalized_components:
+      valediction:              "مع السلامة"
+    grammar_rules_used:
+      - "prepositional_phrase_maʕa"
+      - "definite_noun_السلامة"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "ar_td_005"
+    language:                   "ar"
+    component_families:
+      - "introduction_self"
+    slot_order:                 ["verb_phrase", "name"]
+    normalized_components:
+      verb_phrase:              "اسمي"
+    grammar_rules_used:
+      - "possessive_ism_plus_1sg_suffix_i"
+      - "no_copula_in_nominal_sentence"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "ar_ex_001"
+    training_item_ref:          "ar_td_001"
+    expected_output:            "السلام عليكم."
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "السلام عليكم"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "text_is_RTL"
+      - "contains_السلام_with_sun_letter_assimilation"
+      - "ends_with_period"
+
+  - example_id:                 "ar_ex_002"
+    training_item_ref:          "ar_td_002"
+    expected_output:            "شكراً جزيلاً."
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "شكراً جزيلاً"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_شكراً"
+      - "contains_جزيلاً_indefinite_accusative"
+      - "ends_with_period"
+
+  - example_id:                 "ar_ex_003"
+    training_item_ref:          "ar_td_003"
+    expected_output:            "أعتذر."
+    component_family_used:      "apology_expression"
+    slots_filled:
+      apology:                  "أعتذر"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_أعتذر_Form_VIII"
+      - "ends_with_period"
+
+  - example_id:                 "ar_ex_004"
+    training_item_ref:          "ar_td_004"
+    expected_output:            "مع السلامة."
+    component_family_used:      "farewell_formal"
+    slots_filled:
+      valediction:              "مع السلامة"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "contains_مع_السلامة"
+      - "ends_with_period"
+
+  - example_id:                 "ar_ex_005"
+    training_item_ref:          "ar_td_005"
+    expected_output:            "اسمي [الاسم]."
+    component_family_used:      "introduction_self"
+    slots_filled:
+      verb_phrase:              "اسمي"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "starts_with_اسمي"
+      - "no_explicit_copula_في_الجملة"
+      - "ends_with_period"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "ar_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ar_eval_002"
+    rule_type:                  "min_length"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ar_eval_003"
+    rule_type:                  "max_length"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "ar_eval_004"
+    rule_type:                  "RTL_text_direction"
+    description:                "Output must use RTL-compatible Unicode Arabic characters"
+    parameters:
+      check_unicode_arabic_block: true
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ar_eval_005"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots must be filled"
+    parameters:
+      required_slots:           ["salutation", "thanks", "apology", "valediction"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "ar_eval_006"
+    rule_type:                  "gender_agreement"
+    description:                "Adjective must agree with head noun in gender and number"
+    parameters:
+      check_method:             "morphological_tagger"
+    threshold:                  0.90
+    blocking:                   false
+
+  - rule_id:                    "ar_eval_007"
+    rule_type:                  "sun_moon_letter_assimilation"
+    description:                "al- prefix must assimilate before sun letters in output"
+    parameters:
+      check_article_assimilation: true
+    threshold:                  0.95
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    gender_agreement_stack:     "persists_within_sentence_boundary"
+    register_tracking:          "MSA_vs_dialect_persists_within_conversation"
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+
+  engine_to_french:
+    type:                       "bridge"
+    target_engine:              "french_engine_v1"
+    link_file:                  "language_engines/French_engine.training.yaml"
+    relationship:               "Maghrebi_French_Arabic_code_switching"
+    note:                       "Significant French–Arabic bilingualism in North Africa"
+
+  engine_to_spanish:
+    type:                       "bridge"
+    target_engine:              "spanish_engine_v1"
+    link_file:                  "language_engines/Spanish_engine.training.yaml"
+    relationship:               "historical_Arabic_loanword_donor_to_Spanish"
+    note:                       "~4000 Spanish words of Arabic origin"
+
+  engine_to_german:
+    type:                       "bridge"
+    target_engine:              "german_engine_v1"
+    link_file:                  "language_engines/German_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_japanese:
+    type:                       "bridge"
+    target_engine:              "japanese_engine_v1"
+    link_file:                  "language_engines/Japanese_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_tamil:
+    type:                       "bridge"
+    target_engine:              "tamil_engine_v1"
+    link_file:                  "language_engines/Tamil_engine.training.yaml"
+    relationship:               "Semitic_Dravidian_contrastive"
+    note:                       "Both have historical trade/religious contact via Indian Ocean routes"
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold with all 19 section stubs"
+      reason:                   "Project initialization"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: 5 regional variants (MSA, Egyptian, Gulf, Levantine, Moroccan),
+        full RTL rendering specification, Arabic script with 9 harakat diacritics,
+        triliteral root system with 3 example root families, 10 verb forms (awzan),
+        broken plural examples, sun/moon letter assimilation, definite article rules,
+        idafa construct, diglossia policy, 10 distinctive consonants with IPA,
+        emphatic/pharyngeal consonants, Islamic expressions bank, Arabic loanwords
+        to English/Spanish, 6 component families, 5 training items, 5 regression
+        tests, 7 evaluation rules (RTL/gender/sun-moon/slot coverage).
+      reason:                   "Promote Arabic engine from scaffold to active"
+      approved_by:              "polyglot_engine_dev"

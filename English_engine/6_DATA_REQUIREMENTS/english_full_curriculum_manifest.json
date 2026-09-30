@@ -1,0 +1,51 @@
+{
+  "library_path": "C:\\Users\\sysyo\\Downloads\\grammar",
+  "books": [
+    {
+      "id": "book1_oxford",
+      "name": "Oxford Guide to English Grammar",
+      "file": "English_Oxford-Guide-to-English-Grammar.pdf",
+      "output_json": "corpus_book1_oxford.json",
+      "pedagogy": "Descriptive Formal Syntax, Subordination, Modals, Conditionals",
+      "primary_register": "Formal / Academic",
+      "sentences_count": 7196,
+      "writing_samples": 7203,
+      "email_samples": 226,
+      "listening_samples": 1856,
+      "pronunciation_samples": 290,
+      "reviewing_samples": 117,
+      "book_writing_samples": 114
+    },
+    {
+      "id": "book2_dk",
+      "name": "English for Everyone: English Grammar Guide",
+      "file": "English_English-for-Everyone-Grammar-Guide.pdf",
+      "output_json": "corpus_book2_dk.json",
+      "pedagogy": "Visual Communicative Rules, Pragmatics, Phrasal Verbs, Business",
+      "primary_register": "Professional / Everyday",
+      "sentences_count": 205,
+      "writing_samples": 212,
+      "email_samples": 8,
+      "listening_samples": 50,
+      "pronunciation_samples": 34,
+      "reviewing_samples": 8,
+      "book_writing_samples": 3
+    },
+    {
+      "id": "book3_1891",
+      "name": "Complete English Grammar (1891)",
+      "file": "English_Complete-English-Grammar-1891.pdf",
+      "output_json": "corpus_book3_1891.json",
+      "pedagogy": "Classical 8 Parts of Speech, Inflectional Case, Subjunctive, Parsing",
+      "primary_register": "Classical / Historical",
+      "sentences_count": 492,
+      "writing_samples": 499,
+      "email_samples": 11,
+      "listening_samples": 28,
+      "pronunciation_samples": 18,
+      "reviewing_samples": 11,
+      "book_writing_samples": 7
+    }
+  ],
+  "total_sentences_extracted": 7893
+}

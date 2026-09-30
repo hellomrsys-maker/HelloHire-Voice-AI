@@ -1,0 +1,160 @@
+{
+  "classes": {
+    "1": {
+      "name": "M_WA_SG",
+      "semantics": "human_singular",
+      "noun_prefix": ["m", "mw"],
+      "adj_prefix": ["m", "mw"],
+      "poss_concord": "w",
+      "assoc_concord": "wa",
+      "dem_proximal": "huyu",
+      "dem_distal": "yule",
+      "verb_sp": "a",
+      "verb_op": "m"
+    },
+    "2": {
+      "name": "M_WA_PL",
+      "semantics": "human_plural",
+      "noun_prefix": ["wa"],
+      "adj_prefix": ["wa"],
+      "poss_concord": "w",
+      "assoc_concord": "wa",
+      "dem_proximal": "hawa",
+      "dem_distal": "wale",
+      "verb_sp": "wa",
+      "verb_op": "wa"
+    },
+    "3": {
+      "name": "M_MI_SG",
+      "semantics": "tree_instrument_singular",
+      "noun_prefix": ["m", "mw"],
+      "adj_prefix": ["m", "mw"],
+      "poss_concord": "w",
+      "assoc_concord": "wa",
+      "dem_proximal": "huu",
+      "dem_distal": "ule",
+      "verb_sp": "u",
+      "verb_op": "u"
+    },
+    "4": {
+      "name": "M_MI_PL",
+      "semantics": "tree_instrument_plural",
+      "noun_prefix": ["mi"],
+      "adj_prefix": ["mi"],
+      "poss_concord": "y",
+      "assoc_concord": "ya",
+      "dem_proximal": "hii",
+      "dem_distal": "ile",
+      "verb_sp": "i",
+      "verb_op": "i"
+    },
+    "5": {
+      "name": "JI_MA_SG",
+      "semantics": "fruit_augmentative_singular",
+      "noun_prefix": ["ji", ""],
+      "adj_prefix": ["ji", ""],
+      "poss_concord": "l",
+      "assoc_concord": "la",
+      "dem_proximal": "hili",
+      "dem_distal": "lile",
+      "verb_sp": "li",
+      "verb_op": "li"
+    },
+    "6": {
+      "name": "JI_MA_PL",
+      "semantics": "fruit_collective_plural",
+      "noun_prefix": ["ma"],
+      "adj_prefix": ["ma"],
+      "poss_concord": "y",
+      "assoc_concord": "ya",
+      "dem_proximal": "haya",
+      "dem_distal": "yale",
+      "verb_sp": "ya",
+      "verb_op": "ya"
+    },
+    "7": {
+      "name": "KI_VI_SG",
+      "semantics": "artifact_diminutive_singular",
+      "noun_prefix": ["ki", "ch"],
+      "adj_prefix": ["ki", "ch"],
+      "poss_concord": "ch",
+      "assoc_concord": "cha",
+      "dem_proximal": "hiki",
+      "dem_distal": "kile",
+      "verb_sp": "ki",
+      "verb_op": "ki"
+    },
+    "8": {
+      "name": "KI_VI_PL",
+      "semantics": "artifact_diminutive_plural",
+      "noun_prefix": ["vi", "vy"],
+      "adj_prefix": ["vi", "vy"],
+      "poss_concord": "vy",
+      "assoc_concord": "vya",
+      "dem_proximal": "hivi",
+      "dem_distal": "vile",
+      "verb_sp": "vi",
+      "verb_op": "vi"
+    },
+    "9": {
+      "name": "N_N_SG",
+      "semantics": "animal_loan_singular",
+      "noun_prefix": ["n", "ny", ""],
+      "adj_prefix": ["n", "ny", ""],
+      "poss_concord": "y",
+      "assoc_concord": "ya",
+      "dem_proximal": "hii",
+      "dem_distal": "ile",
+      "verb_sp": "i",
+      "verb_op": "i"
+    },
+    "10": {
+      "name": "N_N_PL",
+      "semantics": "animal_loan_plural",
+      "noun_prefix": ["n", "ny", ""],
+      "adj_prefix": ["n", "ny", ""],
+      "poss_concord": "z",
+      "assoc_concord": "za",
+      "dem_proximal": "hizi",
+      "dem_distal": "zile",
+      "verb_sp": "zi",
+      "verb_op": "zi"
+    },
+    "11": {
+      "name": "U_SG",
+      "semantics": "abstract_long_singular",
+      "noun_prefix": ["u", "w"],
+      "adj_prefix": ["m", "mw"],
+      "poss_concord": "w",
+      "assoc_concord": "wa",
+      "dem_proximal": "huu",
+      "dem_distal": "ule",
+      "verb_sp": "u",
+      "verb_op": "u"
+    },
+    "15": {
+      "name": "KU_INF",
+      "semantics": "infinitive_gerund",
+      "noun_prefix": ["ku", "kw"],
+      "adj_prefix": ["ku", "kw"],
+      "poss_concord": "kw",
+      "assoc_concord": "kwa",
+      "dem_proximal": "huku",
+      "dem_distal": "kule",
+      "verb_sp": "ku",
+      "verb_op": "ku"
+    },
+    "16": {
+      "name": "PA_LOC",
+      "semantics": "specific_location",
+      "noun_prefix": ["pa"],
+      "adj_prefix": ["pa"],
+      "poss_concord": "p",
+      "assoc_concord": "pa",
+      "dem_proximal": "hapa",
+      "dem_distal": "pale",
+      "verb_sp": "pa",
+      "verb_op": "pa"
+    }
+  }
+}

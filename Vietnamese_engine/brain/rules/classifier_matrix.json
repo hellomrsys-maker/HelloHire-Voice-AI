@@ -1,0 +1,61 @@
+{
+  "engine": "Vietnamese",
+  "version": "1.0.0",
+  "classifiers": {
+    "con": {
+      "semantic_category": "animals_and_dynamic_inanimates",
+      "nouns": ["chó", "mèo", "cá", "chim", "gà", "bò", "ngựa", "dao", "đường", "sông", "thuyền"],
+      "description": "Living animals, moving creatures, and selected active/dynamic objects (knife, road, river)"
+    },
+    "cái": {
+      "semantic_category": "general_inanimate_objects",
+      "nouns": ["bàn", "ghế", "áo", "nhà", "xe", "cửa", "máy", "hộp", "túi", "đồng hồ"],
+      "description": "General inanimate artifacts, manufactured tools, and furniture"
+    },
+    "quyển": {
+      "semantic_category": "bound_volumes_books",
+      "nouns": ["sách", "tiểu thuyết", "tạp chí", "từ điển", "vở"],
+      "description": "Bound printed volumes and books (Northern preferred)"
+    },
+    "cuốn": {
+      "semantic_category": "bound_volumes_books",
+      "nouns": ["sách", "tiểu thuyết", "sổ", "phim", "băng"],
+      "description": "Bound volumes and rolled items (Southern preferred, general)"
+    },
+    "cây": {
+      "semantic_category": "plants_and_elongated_objects",
+      "nouns": ["bút", "cầu", "tre", "chuối", "cột", "gậy", "kim"],
+      "description": "Plants, trees, and slender elongated cylindrical tools"
+    },
+    "bức": {
+      "semantic_category": "vertical_planar_sheets_messages",
+      "nouns": ["tranh", "ảnh", "thư", "tường", "màn"],
+      "description": "Wall hangings, vertical artistic works, and written letters"
+    },
+    "tờ": {
+      "semantic_category": "thin_flexible_sheets",
+      "nouns": ["báo", "giấy", "tiền", "vé", "lịch"],
+      "description": "Thin, flat, flexible sheets of paper or fabric"
+    },
+    "ngôi": {
+      "semantic_category": "structures_and_sacred_landmarks",
+      "nouns": ["nhà", "chùa", "đền", "trường", "sao", "mộ"],
+      "description": "Elevated, sacred, architectural structures, and stars"
+    },
+    "người": {
+      "semantic_category": "human_beings",
+      "nouns": ["bạn", "giáo viên", "bác sĩ", "phụ nữ", "đàn ông", "lính"],
+      "description": "Human beings in neutral or respectful context"
+    },
+    "quả": {
+      "semantic_category": "fruits_and_spherical_items",
+      "nouns": ["táo", "cam", "chuối", "bóng", "đất", "tim"],
+      "description": "Fruits and globular/spherical round objects (Northern preferred)"
+    },
+    "trái": {
+      "semantic_category": "fruits_and_spherical_items",
+      "nouns": ["táo", "cam", "tim", "bóng", "đất"],
+      "description": "Fruits and globular/spherical round objects (Southern preferred)"
+    }
+  }
+}

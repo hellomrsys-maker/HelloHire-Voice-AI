@@ -1,0 +1,64 @@
+{
+  "classifiers": {
+    "个": {
+      "pinyin": "gè",
+      "type": "general_default",
+      "nouns": ["人", "苹果", "问题", "苹果", "想法", "学生", "国家", "朋友", "城市", "汉字", "秘密"]
+    },
+    "条": {
+      "pinyin": "tiáo",
+      "type": "long_slender_flexible",
+      "nouns": ["鱼", "路", "裤子", "绳子", "河", "龙", "蛇", "狗", "腿", "信息", "建议"]
+    },
+    "张": {
+      "pinyin": "zhāng",
+      "type": "flat_surface_sheet",
+      "nouns": ["纸", "桌子", "照片", "票", "床", "嘴", "画", "卡", "地图", "皮"]
+    },
+    "本": {
+      "pinyin": "běn",
+      "type": "bound_volume",
+      "nouns": ["书", "词典", "笔记本", "杂志", "小说", "账本"]
+    },
+    "支": {
+      "pinyin": "zhī",
+      "type": "stick_slender_rigid",
+      "nouns": ["笔", "枪", "箭", "蜡烛", "队伍", "曲子"]
+    },
+    "只": {
+      "pinyin": "zhī",
+      "type": "animal_or_single_of_pair",
+      "nouns": ["猫", "鸟", "手", "眼睛", "耳朵", "鸡", "鸭", "老鼠", "鞋"]
+    },
+    "辆": {
+      "pinyin": "liàng",
+      "type": "wheeled_vehicle",
+      "nouns": ["车", "汽车", "自行车", "摩托车", "卡车"]
+    },
+    "台": {
+      "pinyin": "tái",
+      "type": "machinery_appliance",
+      "nouns": ["电脑", "电视", "机器", "戏", "手术"]
+    },
+    "栋": {
+      "pinyin": "dòng",
+      "type": "building",
+      "nouns": ["楼", "房子", "大厦", "别墅"]
+    },
+    "座": {
+      "pinyin": "zuò",
+      "type": "large_stationary_structure",
+      "nouns": ["山", "桥", "城市", "塔", "雕塑"]
+    },
+    "杯": {
+      "pinyin": "bēi",
+      "type": "cup_container",
+      "nouns": ["茶", "咖啡", "水", "酒", "牛奶"]
+    },
+    "双": {
+      "pinyin": "shuāng",
+      "type": "pair",
+      "nouns": ["筷子", "鞋", "手", "眼睛", "袜子"]
+    }
+  }
+}

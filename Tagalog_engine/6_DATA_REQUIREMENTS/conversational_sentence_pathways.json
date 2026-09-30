@@ -1,0 +1,75 @@
+{
+  "language": "Tagalog",
+  "engine": "D:\\gra.voi\\Tagalog_engine",
+  "iso_code": "tgl",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "tgl_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Bumuo ang inhinyero ng isang napakahusay na sistemang ipinamamahagi.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Naintindihan nang lubusan ng mga mag-aaral ang masalimuot na neural network.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tgl_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Matagumpay naming ipinatupad ang sero-latency na synchronous memory protocol.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ipinaliwanag ng propesor nang detalyado ang mga teorya ng balarila.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tgl_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Nag-publish ang grupo ng pananaliksik ng isang mahalagang papel sa AI.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "In-optimize ng arkitekto ng software ang buong daloy ng pagpoproseso ng datos.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tgl_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Tumpak na sinusuri ng artificial intelligence ang maraming wika.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Matagumpay na natapos ng pangkat ng pag-unlad ang lahat ng pagsusuri.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "tgl_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Tinitiyak ng mabilis na memory bus ang pagkakaisa ng datos sa real-time.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Nagsagawa kami ng mahigpit na mga benchmark upang patunayan ang katatagan.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

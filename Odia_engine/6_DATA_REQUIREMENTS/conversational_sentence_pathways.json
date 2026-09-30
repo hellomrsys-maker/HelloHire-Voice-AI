@@ -1,0 +1,75 @@
+{
+  "language": "Odia",
+  "engine": "D:\\gra.voi\\Odia_engine",
+  "iso_code": "ori",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "ori_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ଇଞ୍ଜିନିୟର ଏକ ଅତ୍ୟନ୍ତ ଦକ୍ଷ ବିତରିତ ପ୍ରଣାଳୀ ବିକଶିତ କରିଛନ୍ତି।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ଛାତ୍ରମାନେ ଜଟିଳ ନ୍ୟୁରାଲ ନେଟୱାର୍କକୁ ଭଲ ଭାବରେ ବୁଝିପାରିଛନ୍ତି।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ori_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ଆମେ ଶୂନ-ବିଳମ୍ବ ସମକାଳୀନ ମେମୋରୀ ପ୍ରୋଟୋକଲ୍ ସଫଳତାର ସହିତ ଲାଗୁ କରିଛୁ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ପ୍ରଫେସର ଉତ୍ପାଦନକ୍ଷମ ବ୍ୟାକରଣ ନିୟମଗୁଡ଼ିକ ବିସ୍ତୃତ ଭାବରେ ବୁଝାଇଲେ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ori_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ଗବେଷଣା ଦଳ କୃତ୍ରିମ ବୁଦ୍ଧିମତା ଉପରେ ଏକ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ଗବେଷଣା ପତ୍ର ପ୍ରକାଶ କଲେ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ସଫ୍ଟୱେର୍ ଆର୍କିଟେକ୍ଟ ଡାଟା ପ୍ରକ୍ରିୟାକରଣ ପାଇପଲାଇନକୁ ସୁବ୍ୟବସ୍ଥିତ କଲେ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ori_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "କୃତ୍ରିମ ବୁଦ୍ଧିମତା ବହୁଭାଷୀ ପାଠ୍ୟକୁ ସଠିକ୍ ଭାବରେ ବିଶ୍ଳେଷଣ କରେ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ବିକାଶ ଦଳ ସମସ୍ତ ଏକୀକରଣ ପରୀକ୍ଷା ସଫଳତାର ସହିତ ସମାପ୍ତ କଲେ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "ori_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ଉଚ୍ଚ-ଗତି ମେମୋରୀ ବସ୍ ପ୍ରକୃତ-ସମୟ ଡାଟା ସୁସଙ୍ଗତତା ସୁନିଶ୍ଚିତ କରେ।",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ବିଶ୍ୱସନୀୟତା ପ୍ରମାଣ କରିବା ପାଇଁ ଆମେ କଠୋର ମାନଦଣ୍ଡ ପରୀକ୍ଷା କରିଥିଲୁ।",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

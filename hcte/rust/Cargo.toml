@@ -1,0 +1,10 @@
+[package]
+name = "hcte-cognitive-engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "hcte_cognitive_engine"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

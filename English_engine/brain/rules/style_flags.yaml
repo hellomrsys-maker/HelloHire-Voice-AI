@@ -1,0 +1,58 @@
+# Stylistic Flags and Editorial Heuristics for English Engine
+style_flags:
+  passive_voice:
+    id: "STYLE_001"
+    name: "Passive Voice Overuse"
+    description: "Sentence uses be-auxiliary + past participle without clear agent attribution"
+    pattern: "BE_VERB + VBN + (BY + AGENT)?"
+    threshold_percent: 15.0
+    action: "Flag when passive constructions exceed 15% of total sentences unless genre is scientific/legal"
+    remedy: "Convert to active voice with explicit subject: 'The agent performed the action'"
+
+  nominalization:
+    id: "STYLE_002"
+    name: "Nominalization (Zombie Nouns)"
+    description: "Verbs or adjectives transformed into abstract nouns ending in -tion, -ment, -ance, -ity"
+    suffixes: ["tion", "sion", "ment", "ance", "ence", "ity", "ness"]
+    examples:
+      "make an assumption": "assume"
+      "conduct an investigation": "investigate"
+      "achieve implementation": "implement"
+      "give consideration to": "consider"
+    remedy: "Unpack nominalization back into strong, vibrant action verbs"
+
+  wordiness_and_cliches:
+    id: "STYLE_003"
+    name: "Pleonasm and Wordiness"
+    replacements:
+      "in order to": "to"
+      "due to the fact that": "because"
+      "at this point in time": "now"
+      "has the ability to": "can"
+      "in the event that": "if"
+      "for the purpose of": "for"
+      "prior to": "before"
+      "subsequent to": "after"
+      "with reference to": "about"
+      "in close proximity to": "near"
+
+  dangling_modifiers:
+    id: "STYLE_004"
+    name: "Dangling or Misplaced Modifier"
+    description: "Participial or prepositional phrase whose logical subject does not match grammatical subject"
+    example_error: "Walking into the room, the smoke was thick."
+    correction: "Walking into the room, she noticed the smoke was thick."
+
+  split_infinitive:
+    id: "STYLE_005"
+    name: "Split Infinitive"
+    pattern: "to + ADVERB + VERB_BASE"
+    policy: "informational"
+    rationale: "Acceptable for emphasis or rhythm, but flagged for strict formal register"
+
+  sentence_variety:
+    id: "STYLE_006"
+    name: "Sentence Rhythm and Length Variance"
+    target_mean_length_words: 16.5
+    std_dev_threshold: 4.0
+    monotony_penalty: "Flag paragraphs where 4+ consecutive sentences have identical clause structures or word counts within +-2 words"

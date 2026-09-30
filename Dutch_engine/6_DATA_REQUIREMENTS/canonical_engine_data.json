@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Dutch",
+    "engine": "Dutch_engine",
+    "iso_codes": [
+      "nld",
+      "nl"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Dutch",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "nld_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Dutch)",
+          "How are operations (Dutch)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "nld_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Dutch)",
+          "Report readiness (Dutch)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "De ingenieur ontwierp een uiterst efficiënte gedistribueerde architectuur.",
+    "We hebben het synchrone geheugenprotocol succesvol geïmplementeerd.",
+    "De onderzoeksgroep publiceerde een baanbrekende studie over AI.",
+    "De softwarearchitect optimaliseerde de gehele gegevensverwerkingspijplijn (using optimal hyper-parameters).",
+    "Alle modules communiceren direct zonder enige latentievertraging.",
+    "Hoewel de eisen complex waren, voltooide het team het project op tijd (on multi-core architectures).",
+    "Het neurale netwerk classificeert meertalige structuren uiterst nauwkeurig.",
+    "Wij hebben grondige prestatietests uitgevoerd onder zware belasting (under heavy loads).",
+    "De ingenieur ontwierp een uiterst efficiënte gedistribueerde architectuur.",
+    "We hebben het synchrone geheugenprotocol succesvol geïmplementeerd.",
+    "De onderzoeksgroep publiceerde een baanbrekende studie over AI.",
+    "De softwarearchitect optimaliseerde de gehele gegevensverwerkingspijplijn (using optimal hyper-parameters).",
+    "Alle modules communiceren direct zonder enige latentievertraging.",
+    "Hoewel de eisen complex waren, voltooide het team het project op tijd (on multi-core architectures).",
+    "Het neurale netwerk classificeert meertalige structuren uiterst nauwkeurig.",
+    "Wij hebben grondige prestatietests uitgevoerd onder zware belasting (under heavy loads).",
+    "De ingenieur ontwierp een uiterst efficiënte gedistribueerde architectuur.",
+    "We hebben het synchrone geheugenprotocol succesvol geïmplementeerd.",
+    "De onderzoeksgroep publiceerde een baanbrekende studie over AI.",
+    "De softwarearchitect optimaliseerde de gehele gegevensverwerkingspijplijn (using optimal hyper-parameters)."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "grammar_theoretical_frameworks": {
+    "Dependency_Grammar": {
+      "focus": "Binary asymmetrical head-dependent directed relations between words without phrasal nodes",
+      "advantages": "Excellent for variable word order, computationally efficient O(n^3) or O(n) transition parsing",
+      "implementations": ["Universal Dependencies", "Eisner Algorithm", "Biaffine Attention Parsers"]
+    },
+    "Head-driven_Phrase_Structure_Grammar_HPSG": {
+      "focus": "Unification of typed feature structures (AVMs), constraint-based generative grammar",
+      "advantages": "Rigorous lexical head projection, deep semantic interface (Minimal Recursion Semantics)",
+      "implementations": ["DELPH-IN", "LinGO Grammar Matrix", "PET parser"]
+    },
+    "Lexical_Functional_Grammar_LFG": {
+      "focus": "Dual levels of syntactic representation: c-structure (constituency trees) and f-structure (functional attributes)",
+      "advantages": "Clear separation of surface word order from grammatical functions (subject, object)"
+    },
+    "Construction_Grammar_CxG": {
+      "focus": "Non-modular pairing of form and meaning (lexicon and syntax as a continuum)",
+      "advantages": "Seamless handling of idioms, semi-productive constructions ('the more, the merrier')"
+    }
+  }
+}

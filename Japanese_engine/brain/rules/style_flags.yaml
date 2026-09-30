@@ -1,0 +1,55 @@
+# Japanese Style Flags and Linguistic Heuristics (文体・語法規則)
+
+style_inconsistencies:
+  keitai_joutai_mix:
+    id: "STYLE_KEITAI_JOUTAI_MIX"
+    severity: "warning"
+    description: "敬体（です・ます調）と常体（だ・である調）の混在（文体のねじれ）"
+    keitai_markers: ["です", "ます", "でした", "ました", "ません", "ございます"]
+    joutai_markers: ["だ", "である", "だった", "であった", "ではない", "ではないか"]
+
+ra_nuki_kotoba:
+  id: "STYLE_RA_NUKI"
+  severity: "warning"
+  description: "ら抜き言葉の検出（可能動詞において一段動詞の「ら」が脱落する現象）"
+  examples:
+    - bad: "食べれる"
+      good: "食べられる"
+    - bad: "見れる"
+      good: "見られる"
+    - bad: "来れる"
+      good: "来られる"
+    - bad: "出れる"
+      good: "出られる"
+    - bad: "起きれる"
+      good: "起きられる"
+
+sa_ire_kotoba:
+  id: "STYLE_SA_IRE"
+  severity: "warning"
+  description: "さ入れ言葉の検出（五段動詞の使役形・使役謙譲表現に不要な「さ」を挿入する現象）"
+  examples:
+    - bad: "休まさせていただきます"
+      good: "休ませていただきます"
+    - bad: "歌わさせていただきます"
+      good: "歌わせていただきます"
+    - bad: "読まさせていただきます"
+      good: "読ませていただきます"
+
+pleonasm_redundancies:
+  id: "STYLE_REDUNDANCY"
+  severity: "warning"
+  description: "重言（重複表現）"
+  pairs:
+    - offending: "頭痛が痛い"
+      suggestion: "頭が痛い / 頭痛がする"
+    - offending: "まず最初に"
+      suggestion: "まず / 最初に"
+    - offending: "一番ベスト"
+      suggestion: "ベスト / 最善"
+    - offending: "後で後悔する"
+      suggestion: "後悔する"
+    - offending: "過半数を超える"
+      suggestion: "過半数に達する / 半数を超える"
+    - offending: "馬から落馬する"
+      suggestion: "落馬する"

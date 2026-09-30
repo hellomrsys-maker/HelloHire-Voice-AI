@@ -1,0 +1,19 @@
+{
+  "active_passive_transformations": {
+    "transformation_rule": "Subject(Active) -> by-Phrase(Passive), Object(Active) -> Subject(Passive), Verb -> be + Verb(Past Participle)",
+    "tense_mappings": {
+      "present_simple": { "active": "writes code", "passive": "is written by" },
+      "present_continuous": { "active": "is writing code", "passive": "is being written by" },
+      "present_perfect": { "active": "has written code", "passive": "has been written by" },
+      "past_simple": { "active": "wrote code", "passive": "was written by" },
+      "past_continuous": { "active": "was writing code", "passive": "was being written by" },
+      "past_perfect": { "active": "had written code", "passive": "had been written by" },
+      "future_simple": { "active": "will write code", "passive": "will be written by" },
+      "modal": { "active": "must write code", "passive": "must be written by" }
+    },
+    "agentless_passive": {
+      "rationale": "Omission of agent when unknown, irrelevant, or intentionally suppressed (common in scientific literature)",
+      "example": "The anomaly was detected at midnight."
+    }
+  }
+}

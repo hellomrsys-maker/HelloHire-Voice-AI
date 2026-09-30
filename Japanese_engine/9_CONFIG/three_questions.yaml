@@ -1,0 +1,29 @@
+# Japanese Engine Diagnostic Triad: The Three Core Questions
+# Every linguistic assertion and computational transformation must evaluate these three dimensions.
+
+question_1_linguistic_layer:
+  prompt: "Which linguistic layer governs this phenomenon?"
+  options:
+    - "1_SYNTACTIC_STRUCTURE: Bunsetsu dependency, SOV head-final order, case particles"
+    - "2_MORPHOLOGICAL_ANALYSIS: Katsuyou 6 stems, agglutination, Rendaku, onbin"
+    - "3_PHONOLOGICAL_ORTHOGRAPHIC: Mora timing, Tokyo pitch accent, kanji/kana script selection"
+    - "4_SEMANTIC_REPRESENTATION: Predicate-argument structures, thematic roles, animacy splits"
+    - "5_PRAGMATIC_USE: Uchi/Soto, Keigo honorific concord, Sasshi indirectness"
+
+question_2_register_politeness:
+  prompt: "What is the social distance and intended politeness register?"
+  options:
+    - "PLAIN_CASUAL: Da/Dearu, intimate tameguchi, family/peer dialogue"
+    - "POLITE_STANDARD: Desu/Masu, public discourse, general courtesy"
+    - "BUSINESS_KEIGO: Sonkeigo, Kenjougo, Bikago, external client relations"
+    - "ACADEMIC_FORMAL: Dearu, impersonal passive, research publications"
+    - "OFFICIAL_LEGAL: Kouyoubun, strict statutory phrases"
+
+question_3_certainty_calibration:
+  prompt: "What is the epistemic certainty and evidential grounding?"
+  options:
+    - "FACTUAL_CERTAINTY (1.00): Directly observed event / verified truth (〜だ / 〜である)"
+    - "LOGICAL_EXPECTATION (0.85): Inference from known rules (〜はずだ / 〜に違いない)"
+    - "CONJECTURE_PROBABILITY (0.65): High likelihood hypothesis (〜だろう / 〜でしょう)"
+    - "POSSIBILITY_HEDGE (0.40): Epistemic hedging (〜かもしれない)"
+    - "HEARSAY_EVIDENTIAL (0.50): Indirect report (〜そうだ / 〜らしい)"

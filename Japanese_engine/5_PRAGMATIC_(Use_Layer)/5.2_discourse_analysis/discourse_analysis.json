@@ -1,0 +1,14 @@
+{
+  "discourse_analysis": {
+    "topic_chains": {
+      "mechanism": "A discourse topic introduced with 'は' in an initial sentence remains active across multiple subsequent sentences until explicitly superseded by a new 'は' topic.",
+      "anaphora_recovery": "All downstream sentences with omitted subjects (zero pronouns) automatically anchor their null argument to the active topic chain."
+    },
+    "cohesion_without_pronouns": {
+      "strategy": "Instead of overt third-person pronouns (he, she, they), Japanese maintains textual cohesion through demonstratives (これ, それ, あれ, そのN, あのN), zero pronouns, and reiteration of social titles (部長, 先生)."
+    },
+    "register_shifts": {
+      "triggers": "Speakers modulate politeness levels dynamically based on emotional proximity, topic seriousness, or institutional shifts (e.g., slipping into casual plain form when uttering an internal thought / monologue, then restoring Keigo to interlocutor)."
+    }
+  }
+}

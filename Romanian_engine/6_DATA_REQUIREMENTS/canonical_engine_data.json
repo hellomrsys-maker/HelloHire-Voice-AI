@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Romanian",
+    "engine": "Romanian_engine",
+    "iso_codes": [
+      "ron",
+      "ro"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Romanian",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "ron_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Romanian)",
+          "How are operations (Romanian)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "ron_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Romanian)",
+          "Report readiness (Romanian)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Inginerul a proiectat un sistem distribuit extrem de eficient.",
+    "Studenții au înțeles pe deplin rețeaua neuronală complexă.",
+    "Am implementat cu succes protocolul de memorie sincronă cu latență zero.",
+    "Profesorul a explicat în detaliu principiile gramaticii generative.",
+    "Echipa de cercetare a publicat o lucrare științifică importantă despre AI.",
+    "Arhitectul de software a optimizat întregul flux de procesare a datelor.",
+    "Inteligența artificială analizează cu precizie texte multilingve.",
+    "Echipa de dezvoltare a finalizat cu succes toate testele de integrare.",
+    "Magistrala de memorie de mare viteză asigură consistența datelor în timp real.",
+    "Am efectuat teste riguroase de performanță pentru a demonstra fiabilitatea.",
+    "Copiii au citit cărți fascinante la biblioteca universitară.",
+    "Astăzi vremea este foarte plăcută, însorită și răcoroasă.",
+    "Fermierii au început recoltarea grâului pe câmpurile aurii.",
+    "Cercetătorul a verificat viteza și acuratețea noului algoritm.",
+    "Inginerul a proiectat un sistem distribuit extrem de eficient. [14]",
+    "Studenții au înțeles pe deplin rețeaua neuronală complexă. [15]",
+    "Am implementat cu succes protocolul de memorie sincronă cu latență zero. [16]",
+    "Profesorul a explicat în detaliu principiile gramaticii generative. [17]",
+    "Echipa de cercetare a publicat o lucrare științifică importantă despre AI. [18]",
+    "Arhitectul de software a optimizat întregul flux de procesare a datelor. [19]"
+  ]
+}

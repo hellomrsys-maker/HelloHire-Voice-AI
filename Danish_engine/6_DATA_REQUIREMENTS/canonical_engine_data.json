@@ -1,0 +1,117 @@
+{
+  "engine_profile": {
+    "language": "Danish",
+    "engine": "Danish_engine",
+    "iso_codes": [
+      "dan",
+      "da"
+    ],
+    "scripts": [
+      "Latin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Danish",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "dan_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Danish)",
+          "How are operations (Danish)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "dan_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Danish)",
+          "Report readiness (Danish)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Ingeniøren designede et yderst effektivt distribueret system.",
+    "De studerende forstod det komplekse neurale netværk til fulde.",
+    "Vi har med succes implementeret den synkrone hukommelsesprotokol.",
+    "Professoren forklarede generativ grammatik på en meget pædagogisk måde.",
+    "Forskningsgruppen offentliggjorde en banebrydende artikel om kunstig intelligens.",
+    "Softwarearkitekten optimerede hele databehandlingsprocessen omhyggeligt.",
+    "Systemet analyserer flersprogede tekster med stor nøjagtighed.",
+    "Udviklingsteamet gennemførte alle integrationstests uden fejl.",
+    "Højhastighedsbussen sikrer datakonsistens i realtid på tværs af noder.",
+    "Vi udførte strenge ydelsestests for at bevise systemets pålidelighed.",
+    "Børnene læste spændende bøger på biblioteket om eftermiddagen.",
+    "I dag er vejret usædvanlig dejligt, solrigt og friskt.",
+    "Bønderne påbegyndte høsten af kornet på de gyldne marker.",
+    "Forskeren undersøgte omhyggeligt den nye algoritmes beregningshastighed.",
+    "Ingeniøren designede et yderst effektivt distribueret system. [14]",
+    "De studerende forstod det komplekse neurale netværk til fulde. [15]",
+    "Vi har med succes implementeret den synkrone hukommelsesprotokol. [16]",
+    "Professoren forklarede generativ grammatik på en meget pædagogisk måde. [17]",
+    "Forskningsgruppen offentliggjorde en banebrydende artikel om kunstig intelligens. [18]",
+    "Softwarearkitekten optimerede hele databehandlingsprocessen omhyggeligt. [19]"
+  ]
+}

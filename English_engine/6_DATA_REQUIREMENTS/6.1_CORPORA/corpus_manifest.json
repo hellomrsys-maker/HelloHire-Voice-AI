@@ -1,0 +1,34 @@
+{
+  "corpus_manifest": {
+    "corpora": [
+      {
+        "name": "Penn Treebank (PTB-WSJ)",
+        "size_words": "1 million words",
+        "genre": "Financial journalism (Wall Street Journal)",
+        "annotations": ["Gold syntactic bracketed trees", "POS tags"],
+        "usage": "Syntactic parsing baseline and constituency evaluation"
+      },
+      {
+        "name": "British National Corpus (BNC)",
+        "size_words": "100 million words",
+        "genre": "90% written (news, academic, fiction) + 10% spoken dialogues",
+        "annotations": ["CLAWS POS tagging"],
+        "usage": "British English dialect baseline and collocation statistics"
+      },
+      {
+        "name": "Corpus of Contemporary American English (COCA)",
+        "size_words": "1 billion words",
+        "genre": "Balanced: TV/movies, spoken, fiction, magazines, newspapers, academic",
+        "annotations": ["Lemmatized", "POS tagged"],
+        "usage": "American English frequency distributions and register drift analysis"
+      },
+      {
+        "name": "Universal Dependencies English EWT",
+        "size_words": "254,000 words",
+        "genre": "Weblogs, newsgroups, reviews, email",
+        "annotations": ["UD CoNLL-U format", "Dependency heads", "Lemmas", "Morphological features"],
+        "usage": "Universal dependency parsing model training"
+      }
+    ]
+  }
+}

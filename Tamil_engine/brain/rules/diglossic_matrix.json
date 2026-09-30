@@ -1,0 +1,56 @@
+{
+  "registers": {
+    "centamil": {
+      "name": "Centamiḻ (செந்தமிழ்)",
+      "type": "literary_formal",
+      "description": "Standard high literary register used in literature, administration, news, formal speeches"
+    },
+    "koduntamil": {
+      "name": "Koṭuntamiḻ (கொடுந்தமிழ்)",
+      "type": "spoken_colloquial",
+      "description": "Spoken colloquial dialect used in everyday conversations, informal dialogue"
+    }
+  },
+  "lexical_mappings": [
+    {
+      "centamil": "வருகிறேன்",
+      "koduntamil": "வர்றேன்",
+      "meaning": "I come / am coming (1SG Present)"
+    },
+    {
+      "centamil": "போனான்",
+      "koduntamil": "போனான்",
+      "meaning": "he went (3MSG Past)"
+    },
+    {
+      "centamil": "சாப்பிடுங்கள்",
+      "koduntamil": "சாப்பிடுங்க",
+      "meaning": "please eat (2PL/Hon Imperative)"
+    },
+    {
+      "centamil": "செய்தான்",
+      "koduntamil": "பண்ணான்",
+      "meaning": "he did (3MSG Past)"
+    },
+    {
+      "centamil": "இல்லை",
+      "koduntamil": "இல்ல",
+      "meaning": "not / no (Negative)"
+    },
+    {
+      "centamil": "அவ்வாறு",
+      "koduntamil": "அப்படி",
+      "meaning": "in that manner / like that"
+    },
+    {
+      "centamil": "எவ்வாறு",
+      "koduntamil": "எப்படி",
+      "meaning": "how / in what manner"
+    },
+    {
+      "centamil": "நன்றாக",
+      "koduntamil": "நல்லா",
+      "meaning": "well / good"
+    }
+  ]
+}

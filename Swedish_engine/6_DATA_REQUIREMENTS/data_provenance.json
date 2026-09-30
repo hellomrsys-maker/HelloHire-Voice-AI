@@ -1,0 +1,15 @@
+{
+  "engine": "Swedish_engine",
+  "generated_utc": "2026-09-29T11:57:34Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Swedish-Talbanken",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "This treebank is based on the Professional Prose section of Talbanken,",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

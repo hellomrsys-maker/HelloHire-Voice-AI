@@ -1,0 +1,79 @@
+{
+  "engine": "Polish",
+  "matrix_type": "preposition_case_matrix",
+  "version": "1.0.0",
+  "preposition_government": [
+    {
+      "preposition": "do",
+      "case": "genitive",
+      "meaning": "to, into",
+      "examples": ["Idę do domu.", "do Polski"]
+    },
+    {
+      "preposition": "od",
+      "case": "genitive",
+      "meaning": "from",
+      "examples": ["List od brata."]
+    },
+    {
+      "preposition": "bez",
+      "case": "genitive",
+      "meaning": "without",
+      "examples": ["Kawa bez mleka."]
+    },
+    {
+      "preposition": "dla",
+      "case": "genitive",
+      "meaning": "for",
+      "examples": ["Prezent dla matki."]
+    },
+    {
+      "preposition": "dzięki",
+      "case": "dative",
+      "meaning": "thanks to",
+      "examples": ["Dzięki tobie."]
+    },
+    {
+      "preposition": "przeciwko",
+      "case": "dative",
+      "meaning": "against",
+      "examples": ["Przeciwko wojnie."]
+    },
+    {
+      "preposition": "przez",
+      "case": "accusative",
+      "meaning": "through, across, by",
+      "examples": ["Przez okno.", "przez las"]
+    },
+    {
+      "preposition": "z",
+      "case": "instrumental",
+      "meaning": "with (accompaniment)",
+      "examples": ["Herbata z cytryną.", "Rozmawiam z Janem."]
+    },
+    {
+      "preposition": "o",
+      "case": "locative",
+      "meaning": "about",
+      "examples": ["Myślę o tobie.", "książka o Polsce"]
+    },
+    {
+      "preposition": "w",
+      "case": "locative",
+      "meaning": "in (static location)",
+      "examples": ["Mieszkam w Warszawie.", "w pokoju"]
+    },
+    {
+      "preposition": "na",
+      "case": "locative",
+      "meaning": "on (static surface)",
+      "examples": ["Na stole.", "na uniwersytecie"]
+    },
+    {
+      "preposition": "przy",
+      "case": "locative",
+      "meaning": "near, beside",
+      "examples": ["Przy oknie."]
+    }
+  ]
+}

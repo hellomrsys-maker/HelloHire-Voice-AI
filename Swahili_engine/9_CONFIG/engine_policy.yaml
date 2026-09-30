@@ -1,0 +1,62 @@
+# =====================================================================
+# Swahili Engine Policy Configuration
+# Language: Swahili (Kiswahili) [sw / swa]
+# Standard: Kiswahili Sanifu (Standard Swahili, BAKITA / Kiunguja standard)
+# Cognitive Architecture: 9-Layer Matrix + 4 Dedicated Sub-AIs
+# =====================================================================
+
+engine:
+  name: "SwahiliEngine"
+  version: "1.0.0"
+  iso_639_1: "sw"
+  iso_639_2: "swa"
+  architecture: "9-layer cognitive"
+  zero_bridge_memory:
+    enabled: true
+    state_vector_bytes: 64
+    magic_header: 0x53574148 # "SWAH"
+    synchronization_ns: 0
+
+morphological_rules:
+  noun_classes:
+    enabled: true
+    total_classes: 18
+    validate_alliterative_concord: true
+    animate_agreement_rule: true # Animate nouns in Classes 9/10, 5/6, etc. trigger Class 1/2 agreement
+  verbal_templates:
+    validate_slots: true
+    enforce_monosyllabic_ku_retention: true
+    allow_ku_dropping_with_op: true
+    vowel_harmony_extensions: true # Height harmony for -ia/-ea, -isha/-esha, -ika/-eka
+
+pragmatic_rules:
+  greetings:
+    enforce_shikamoo_marahaba_protocol: true
+    symmetric_hujambo_sijambo: true
+  honorifics:
+    recognize_titles: ["Mzee", "Bwana", "Bibi", "Mheshimiwa", "Ndugu"]
+  epistolary_conventions:
+    standard_closings: ["Wako mtiifu", "Wako mwaminifu", "Wasalaam"]
+
+sub_ais:
+  syntax_sub_ai:
+    target_offset_byte: 18
+    target_sub_ai_id_byte: 52
+    rules: ["head_initial_svo", "modifier_order", "relative_clause_concord"]
+  phonology_sub_ai:
+    target_offset_byte: 20
+    target_sub_ai_id_byte: 53
+    rules: ["penultimate_stress", "monosyllabic_ku_rule", "vowel_harmony"]
+  pragmatic_sub_ai:
+    target_offset_byte: 22
+    target_sub_ai_id_byte: 54
+    rules: ["shikamoo_marahaba_concord", "politeness_markers", "greeting_chains"]
+  editorial_sub_ai:
+    target_offset_byte: 19
+    target_sub_ai_id_byte: 55
+    rules: ["noun_class_concord", "verbal_slot_validation", "negation_shifts"]
+
+benchmarks:
+  max_inference_latency_ns: 2500000 # 2.5 ms
+  target_amsv_sync_ns: 0
+  min_confidence_score: 0.95

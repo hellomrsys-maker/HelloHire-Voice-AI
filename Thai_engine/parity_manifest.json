@@ -1,0 +1,19 @@
+{
+  "engine": "Thai_engine",
+  "language": "Thai",
+  "iso_code": "th",
+  "word_order": "SVO",
+  "script": "Thai",
+  "english_first": true,
+  "parity_source": "engine_common",
+  "parity_files": [
+    "brain\\task\\parity_grammar_check.py",
+    "brain\\task\\parity_qa.py",
+    "brain\\task\\parity_summarize.py",
+    "brain\\task\\parity_translate.py",
+    "parity_orchestrator.py",
+    "six_language_matrix\\python\\parity_matrix_bridge.py",
+    "train.js",
+    "train.py"
+  ]
+}

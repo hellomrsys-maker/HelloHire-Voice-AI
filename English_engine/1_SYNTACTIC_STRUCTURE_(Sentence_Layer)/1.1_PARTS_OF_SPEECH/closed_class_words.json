@@ -1,0 +1,37 @@
+{
+  "determiners": [
+    "the", "a", "an", "this", "that", "these", "those", "my", "your", "his", "her",
+    "its", "our", "their", "whose", "which", "what", "any", "some", "no", "every",
+    "each", "either", "neither", "all", "both", "half", "many", "few", "several"
+  ],
+  "prepositions": [
+    "about", "above", "across", "after", "against", "along", "among", "around", "at",
+    "before", "behind", "below", "beneath", "beside", "between", "beyond", "by", "down",
+    "during", "except", "for", "from", "in", "inside", "into", "near", "of", "off", "on",
+    "onto", "out", "outside", "over", "past", "since", "through", "throughout", "till",
+    "to", "toward", "towards", "under", "underneath", "until", "up", "upon", "with",
+    "within", "without"
+  ],
+  "coordinating_conjunctions": [
+    "for", "and", "nor", "but", "or", "yet", "so"
+  ],
+  "subordinating_conjunctions": [
+    "after", "although", "as", "as if", "as long as", "as much as", "as soon as", "as though",
+    "because", "before", "even if", "even though", "if", "inasmuch", "in case", "lest",
+    "now that", "once", "provided that", "since", "so that", "than", "that", "though",
+    "unless", "until", "when", "whenever", "where", "wherever", "while"
+  ],
+  "pronouns": {
+    "personal_subject": ["I", "you", "he", "she", "it", "we", "they"],
+    "personal_object": ["me", "you", "him", "her", "it", "us", "them"],
+    "possessive": ["mine", "yours", "his", "hers", "ours", "theirs"],
+    "reflexive": ["myself", "yourself", "himself", "herself", "itself", "ourselves", "yourselves", "themselves"],
+    "relative": ["who", "whom", "whose", "which", "that"],
+    "demonstrative": ["this", "that", "these", "those"],
+    "indefinite": ["anybody", "anyone", "anything", "each", "either", "everybody", "everyone", "everything", "neither", "nobody", "no one", "nothing", "one", "somebody", "someone", "something"]
+  },
+  "auxiliary_verbs": {
+    "primary": ["be", "am", "is", "are", "was", "were", "been", "being", "have", "has", "had", "having", "do", "does", "did"],
+    "modal": ["can", "could", "may", "might", "shall", "should", "will", "would", "must", "ought to"]
+  }
+}

@@ -1,0 +1,40 @@
+# Dutch Sovereign Language Engine Configuration Policy
+
+engine:
+  id: 8
+  iso_code: "nl"
+  name: "Dutch Sovereign Language Engine"
+  country_coverage: ["Netherlands", "Belgium", "Suriname", "Aruba", "Curacao", "Sint Maarten"]
+  version: "1.0.0"
+  amsv_magic: 0x4E454452  # "NEDR"
+  amsv_bytes: 64
+
+rules:
+  v2_inversion_strict: true
+  subordinate_sov_strict: true
+  diminutive_neuter_coercion: true
+  adjective_zero_ending_check: true
+  separable_verb_bracket_check: true
+  ij_capitalization_invariant: true
+
+registers:
+  allowed: ["neutral", "informal_jij", "formal_u", "flemish_gij"]
+  default: "neutral"
+
+sub_ais:
+  syntax:
+    bitmask: 0x01
+    active: true
+  phonology:
+    bitmask: 0x02
+    active: true
+  pragmatic:
+    bitmask: 0x04
+    active: true
+  editorial:
+    bitmask: 0x08
+    active: true
+
+performance:
+  zero_bridge_direct_memory: true
+  max_latency_nanoseconds: 1000000  # 1ms target threshold

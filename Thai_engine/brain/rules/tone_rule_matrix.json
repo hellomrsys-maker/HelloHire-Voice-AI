@@ -1,0 +1,57 @@
+{
+  "consonant_classes": {
+    "middle": {
+      "name": "อักษรกลาง",
+      "characters": ["ก", "จ", "ด", "ต", "ฎ", "ฏ", "บ", "ป", "อ"],
+      "tone_rules": {
+        "live_unmarked": "mid",
+        "dead_unmarked": "low",
+        "mai_ek": "low",
+        "mai_tho": "falling",
+        "mai_tri": "high",
+        "mai_chattawa": "rising"
+      }
+    },
+    "high": {
+      "name": "อักษรสูง",
+      "characters": ["ข", "ฃ", "ฉ", "ฐ", "ถ", "ผ", "ฝ", "ศ", "ษ", "ส", "ห"],
+      "tone_rules": {
+        "live_unmarked": "rising",
+        "dead_unmarked": "low",
+        "mai_ek": "low",
+        "mai_tho": "falling",
+        "mai_tri": null,
+        "mai_chattawa": null
+      }
+    },
+    "low": {
+      "name": "อักษรต่ำ",
+      "characters": [
+        "ค", "ฅ", "ฆ", "ช", "ซ", "ฌ", "ฑ", "ฒ", "ท", "ธ", "พ", "ฟ", "ภ", "ฮ",
+        "ง", "ญ", "ณ", "น", "ม", "ย", "ร", "ล", "ว", "ฬ"
+      ],
+      "tone_rules": {
+        "live_unmarked": "mid",
+        "dead_short_vowel": "high",
+        "dead_long_vowel": "falling",
+        "mai_ek": "falling",
+        "mai_tho": "high",
+        "mai_tri": null,
+        "mai_chattawa": null
+      }
+    }
+  },
+  "tone_marks": {
+    "่": "mai_ek",
+    "้": "mai_tho",
+    "๊": "mai_tri",
+    "๋": "mai_chattawa"
+  },
+  "tones": {
+    "mid": {"number": 1, "contour": "33", "thai_name": "สามัญ"},
+    "low": {"number": 2, "contour": "21", "thai_name": "เอก"},
+    "falling": {"number": 3, "contour": "51", "thai_name": "โท"},
+    "high": {"number": 4, "contour": "45", "thai_name": "ตรี"},
+    "rising": {"number": 5, "contour": "24", "thai_name": "จัตวา"}
+  }
+}

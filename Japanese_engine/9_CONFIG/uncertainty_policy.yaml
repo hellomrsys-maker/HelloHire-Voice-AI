@@ -1,0 +1,15 @@
+# Japanese Engine Uncertainty Policy and Ambiguity Resolution Strategy
+
+kanji_reading_alternatives:
+  policy: "Preserve and propagate top-K ranked phonological readings with Bayesian prior likelihoods."
+  top_k: 5
+  entropy_threshold: 1.25 # Exceeding this threshold triggers explicit ambiguity telemetry
+
+zero_pronoun_candidate_ranking:
+  policy: "Rank omitted-argument recovery candidates using composite score: Topic-chain salience (0.45) + Honorific concord (0.35) + Giving-verb valency (0.20)."
+  confidence_cutoff: 0.60
+  fallback_behavior: "Annotate as ungrounded pro-drop or query conversational context."
+
+homophone_selection:
+  policy: "Condition Kanji selection on local N-gram context (trigram window) + global document domain classifier."
+  tie_breaking: "Default to higher Jōyō frequency grade."

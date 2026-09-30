@@ -1,0 +1,10 @@
+[package]
+name = "pace-adaptation-engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "pace_adaptation_engine"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

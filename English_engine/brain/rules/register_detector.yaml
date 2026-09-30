@@ -1,0 +1,72 @@
+# Register Detection and Classification Parameters
+registers:
+  formal_academic:
+    id: "REG_ACADEMIC"
+    nominalization_density: "high (> 8 per 100 words)"
+    latinate_root_preference: 0.85
+    contractions_allowed: false
+    first_person_singular_allowed: false
+    passive_voice_tolerance: 0.35
+    flesch_kincaid_grade_min: 12.0
+    markers:
+      - "furthermore"
+      - "consequently"
+      - "hypothesize"
+      - "substantiate"
+      - "empirically"
+      - "paradigmatic"
+      - "elucidate"
+
+  professional_corporate:
+    id: "REG_PROFESSIONAL"
+    nominalization_density: "moderate (3-6 per 100 words)"
+    contractions_allowed: false
+    first_person_plural_allowed: true
+    action_verb_emphasis: true
+    flesch_kincaid_grade_range: [9.0, 13.0]
+    markers:
+      - "deliverable"
+      - "stakeholder"
+      - "optimize"
+      - "strategic"
+      - "alignment"
+      - "pipeline"
+      - "quarterly"
+
+  conversational_informal:
+    id: "REG_CONVERSATIONAL"
+    nominalization_density: "low (< 2 per 100 words)"
+    germanic_phrasal_verbs: true
+    contractions_allowed: true
+    slang_or_idiom_tolerance: high
+    interrogative_and_exclamatory_density: high
+    flesch_kincaid_grade_range: [4.0, 8.0]
+    markers:
+      - "gonna"
+      - "wanna"
+      - "yeah"
+      - "cool"
+      - "anyway"
+      - "figure out"
+      - "hang on"
+
+  legal_statutory:
+    id: "REG_LEGAL"
+    deontic_modality_density: "very high (shall, must, whereof)"
+    archaic_adverbs: true
+    sentence_length_mean: 35.0
+    contractions_allowed: false
+    markers:
+      - "heretofore"
+      - "indemnify"
+      - "pursuant to"
+      - "hereinafter"
+      - "notwithstanding"
+      - "severability"
+
+  literary_creative:
+    id: "REG_LITERARY"
+    figurative_language_density: "high"
+    sensory_imagery_ratio: 0.40
+    syntactic_inversion_allowed: true
+    sentence_variety_entropy: 0.85

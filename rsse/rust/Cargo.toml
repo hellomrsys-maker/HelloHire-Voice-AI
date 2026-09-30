@@ -1,0 +1,10 @@
+[package]
+name = "rsse-ontology"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rsse_ontology"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

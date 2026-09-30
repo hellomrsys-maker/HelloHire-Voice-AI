@@ -1,0 +1,28 @@
+{
+  "language": "Spanish",
+  "duration_seconds": 24.94,
+  "phase1_syntax": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\spanish_main_model_verified.pt",
+    "final_loss": 46.3521
+  },
+  "phase2_sub_ais": {
+    "status": "SUCCESS",
+    "checkpoint": "checkpoints\\spanish_engine_sub_ais_verified.pt"
+  },
+  "phase3_intent_tree": {
+    "status": "SUCCESS",
+    "nodes_evaluated": 2
+  },
+  "phase4_vocal_prosody": {
+    "status": "SUCCESS",
+    "scenarios_evaluated": 6
+  },
+  "phase5_amsv_sync": {
+    "status": "SUCCESS",
+    "verified_checkpoints": {
+      "spanish_main_model_verified.pt": "7016777847c1a7cade4b490b66508765cd8a2e112861c8520e8d9301f772e15f",
+      "spanish_engine_sub_ais_verified.pt": "d154d8e8754edd713fbceef0c9e8a4e9d8162e3c58d5382da1e035e9851a65c1"
+    }
+  }
+}

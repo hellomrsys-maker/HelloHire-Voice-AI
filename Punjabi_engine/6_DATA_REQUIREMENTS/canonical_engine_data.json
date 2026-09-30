@@ -1,0 +1,118 @@
+{
+  "engine_profile": {
+    "language": "Punjabi",
+    "engine": "Punjabi_engine",
+    "iso_codes": [
+      "pan",
+      "pa"
+    ],
+    "scripts": [
+      "Gurmukhi",
+      "Shahmukhi"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Punjabi",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "pan_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Punjabi)",
+          "How are operations (Punjabi)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "pan_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Punjabi)",
+          "Report readiness (Punjabi)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "ਇੰਜੀਨੀਅਰ ਨੇ ਇੱਕ ਬਹੁਤ ਹੀ ਕੁਸ਼ਲ ਵੰਡਿਆ ਹੋਇਆ ਸਿਸਟਮ ਤਿਆਰ ਕੀਤਾ ਹੈ।",
+    "ਵਿਦਿਆਰਥੀਆਂ ਨੇ ਗੁੰਝਲਦਾਰ ਨਿਊਰਲ ਨੈੱਟਵਰਕ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਮਝ ਲਿਆ ਹੈ।",
+    "ਅਸੀਂ ਜ਼ੀਰੋ-ਲੇਟੈਂਸੀ ਸਮਕਾਲੀ ਮੈਮੋਰੀ ਪ੍ਰੋਟੋਕੋਲ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਲਾਗੂ ਕੀਤਾ।",
+    "ਪ੍ਰੋਫੈਸਰ ਨੇ ਜਨਰੇਟਿਵ ਵਿਆਕਰਣ ਦੇ ਸਿਧਾਂਤਾਂ ਨੂੰ ਵਿਸਥਾਰ ਵਿੱਚ ਸਮਝਾਇਆ।",
+    "ਖੋਜ ਟੀਮ ਨੇ ਨਕਲੀ ਬੁੱਧੀ 'ਤੇ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਖੋਜ ਪੱਤਰ ਪ੍ਰਕਾਸ਼ਿਤ ਕੀਤਾ।",
+    "ਸਾਫਟਵੇਅਰ ਆਰਕੀਟੈਕਟ ਨੇ ਡਾਟਾ ਪ੍ਰੋਸੈਸਿੰਗ ਪਾਈਪਲਾਈਨ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਇਆ ਹੈ।",
+    "ਆਰਟੀਫੀਸ਼ੀਅਲ ਇੰਟੈਲੀਜੈਂਸ ਬਹੁਭਾਸ਼ਾਈ ਟੈਕਸਟ ਦਾ ਸਹੀ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰਦੀ ਹੈ।",
+    "ਡਿਵੈਲਪਮੈਂਟ ਟੀਮ ਨੇ ਸਾਰੇ ਏਕੀਕਰਣ ਟੈਸਟ ਸਫਲਤਾਪੂਰਵਕ ਪੂਰੇ ਕੀਤੇ ਹਨ।",
+    "ਹਾਈ-ਸਪੀਡ ਮੈਮੋਰੀ ਬੱਸ ਰੀਅਲ-ਟਾਈਮ ਡਾਟਾ ਇਕਸਾਰਤਾ ਨੂੰ ਯਕੀਨੀ ਬਣਾਉਂਦੀ ਹੈ।",
+    "ਅਸੀਂ ਭਰੋਸੇਯੋਗਤਾ ਸਾਬਤ ਕਰਨ ਲਈ ਸਖ਼ਤ ਬੈਂਚਮਾਰਕ ਟੈਸਟ ਕੀਤੇ।",
+    "ਕੰਪਿਊਟਰ ਵਿਗਿਆਨੀ ਨੇ ਐਲਗੋਰਿਦਮ ਦੀ ਗਤੀ ਅਤੇ ਸ਼ੁੱਧਤਾ ਦੀ ਜਾਂਚ ਕੀਤੀ।",
+    "ਬੱਚਿਆਂ ਨੇ ਲਾਇਬ੍ਰੇਰੀ ਵਿੱਚ ਨਵੀਆਂ ਕਿਤਾਬਾਂ ਪੜ੍ਹੀਆਂ।",
+    "ਅੱਜ ਮੌਸਮ ਬਹੁਤ ਸੁਹਾਵਣਾ ਅਤੇ ਠੰਢਾ ਹੈ।",
+    "ਕਿਸਾਨਾਂ ਨੇ ਖੇਤਾਂ ਵਿੱਚ ਕਣਕ ਦੀ ਵਾਢੀ ਸ਼ੁਰੂ ਕੀਤੀ।",
+    "ਇੰਜੀਨੀਅਰ ਨੇ ਇੱਕ ਬਹੁਤ ਹੀ ਕੁਸ਼ਲ ਵੰਡਿਆ ਹੋਇਆ ਸਿਸਟਮ ਤਿਆਰ ਕੀਤਾ ਹੈ। [14]",
+    "ਵਿਦਿਆਰਥੀਆਂ ਨੇ ਗੁੰਝਲਦਾਰ ਨਿਊਰਲ ਨੈੱਟਵਰਕ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਮਝ ਲਿਆ ਹੈ। [15]",
+    "ਅਸੀਂ ਜ਼ੀਰੋ-ਲੇਟੈਂਸੀ ਸਮਕਾਲੀ ਮੈਮੋਰੀ ਪ੍ਰੋਟੋਕੋਲ ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਲਾਗੂ ਕੀਤਾ। [16]",
+    "ਪ੍ਰੋਫੈਸਰ ਨੇ ਜਨਰੇਟਿਵ ਵਿਆਕਰਣ ਦੇ ਸਿਧਾਂਤਾਂ ਨੂੰ ਵਿਸਥਾਰ ਵਿੱਚ ਸਮਝਾਇਆ। [17]",
+    "ਖੋਜ ਟੀਮ ਨੇ ਨਕਲੀ ਬੁੱਧੀ 'ਤੇ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਖੋਜ ਪੱਤਰ ਪ੍ਰਕਾਸ਼ਿਤ ਕੀਤਾ। [18]",
+    "ਸਾਫਟਵੇਅਰ ਆਰਕੀਟੈਕਟ ਨੇ ਡਾਟਾ ਪ੍ਰੋਸੈਸਿੰਗ ਪਾਈਪਲਾਈਨ ਨੂੰ ਅਨੁਕੂਲ ਬਣਾਇਆ ਹੈ। [19]"
+  ]
+}

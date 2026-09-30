@@ -1,0 +1,118 @@
+{
+  "engine_profile": {
+    "language": "Tagalog",
+    "engine": "Tagalog_engine",
+    "iso_codes": [
+      "tgl",
+      "tl"
+    ],
+    "scripts": [
+      "Latin",
+      "Baybayin"
+    ]
+  },
+  "latency_prosody_calibration": {
+    "calibrated_gap_ms": 518,
+    "turn_taking_range_ms": [
+      300,
+      650
+    ],
+    "baseline_f0_hz": 230.0,
+    "speech_tempo_sps": 3.6,
+    "vocal_roughness": 0.75
+  },
+  "dialogue_intent_tree": {
+    "framework": "Hierarchical Dialogue Intent Tree & Slot-Equivalence Standard",
+    "language": "Tagalog",
+    "calibrated_common_gap_ms": 518,
+    "total_nodes": 2,
+    "total_generative_sentence_capacity": 21,
+    "nodes": [
+      {
+        "node_id": "tgl_tree_status_inquiry",
+        "intent": "STATUS_INQUIRY",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x21",
+        "inbound_stems": [
+          "Status check (Tagalog)",
+          "How are operations (Tagalog)?"
+        ],
+        "response_spine": {
+          "template": "{subject} {valence}.",
+          "slots": {
+            "subject": [
+              "Status",
+              "Operations",
+              "System"
+            ],
+            "valence": [
+              "nominal",
+              "optimal",
+              "ready",
+              "stable"
+            ]
+          }
+        },
+        "combinatorial_capacity": 12,
+        "acoustic_profile": {
+          "mean_f0_hz": 220.0,
+          "speech_rate_sps": 3.6,
+          "vocal_roughness": 0.65
+        }
+      },
+      {
+        "node_id": "tgl_tree_directive_confirm",
+        "intent": "DIRECTIVE_CONFIRMATION",
+        "calibrated_gap_ms": 518,
+        "amsv_intent_byte": "0x24",
+        "inbound_stems": [
+          "Confirm execution (Tagalog)",
+          "Report readiness (Tagalog)"
+        ],
+        "response_spine": {
+          "template": "{action} {status}.",
+          "slots": {
+            "action": [
+              "Execution",
+              "Module",
+              "Pipeline"
+            ],
+            "status": [
+              "confirmed",
+              "active",
+              "synchronized"
+            ]
+          }
+        },
+        "combinatorial_capacity": 9,
+        "acoustic_profile": {
+          "mean_f0_hz": 230.0,
+          "speech_rate_sps": 3.8,
+          "vocal_roughness": 0.7
+        }
+      }
+    ]
+  },
+  "curriculum_sentences": [
+    "Bumuo ang inhinyero ng isang napakahusay na sistemang ipinamamahagi.",
+    "Naintindihan nang lubusan ng mga mag-aaral ang masalimuot na neural network.",
+    "Matagumpay naming ipinatupad ang sero-latency na synchronous memory protocol.",
+    "Ipinaliwanag ng propesor nang detalyado ang mga teorya ng balarila.",
+    "Nag-publish ang grupo ng pananaliksik ng isang mahalagang papel sa AI.",
+    "In-optimize ng arkitekto ng software ang buong daloy ng pagpoproseso ng datos.",
+    "Tumpak na sinusuri ng artificial intelligence ang maraming wika.",
+    "Matagumpay na natapos ng pangkat ng pag-unlad ang lahat ng pagsusuri.",
+    "Tinitiyak ng mabilis na memory bus ang pagkakaisa ng datos sa real-time.",
+    "Nagsagawa kami ng mahigpit na mga benchmark upang patunayan ang katatagan.",
+    "Sinubukan ng dalubhasa ang bilis at katumpakan ng bagong algorithm.",
+    "Nagbasa ang mga bata ng magagandang aklat sa silid-aklatan.",
+    "Napakaganda at napakapresko ng panahon ngayong araw.",
+    "Nagsimula nang mag-ani ang mga magsasaka sa malawak na bukirin.",
+    "Bumuo ang inhinyero ng isang napakahusay na sistemang ipinamamahagi. [14]",
+    "Naintindihan nang lubusan ng mga mag-aaral ang masalimuot na neural network. [15]",
+    "Matagumpay naming ipinatupad ang sero-latency na synchronous memory protocol. [16]",
+    "Ipinaliwanag ng propesor nang detalyado ang mga teorya ng balarila. [17]",
+    "Nag-publish ang grupo ng pananaliksik ng isang mahalagang papel sa AI. [18]",
+    "In-optimize ng arkitekto ng software ang buong daloy ng pagpoproseso ng datos. [19]"
+  ]
+}

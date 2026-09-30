@@ -1,0 +1,36 @@
+{
+  "language": "Telugu",
+  "honorific_registers": {
+    "maryada_polite_formal": {
+      "pronoun": "మీరు (Meeru)",
+      "verbal_agreement_suffix": "-ఆరు / -తారు / -ండి",
+      "honorific_noun_suffix": "-గారు (-Garu)",
+      "context": "Elders, teachers, professionals, public interactions",
+      "examples": [
+        {"te": "మీరు ఎప్పుడు వచ్చారు?", "en": "When did you arrive? (Polite)"},
+        {"te": "దయచేసి కూర్చోండి.", "en": "Please be seated. (Polite directive)"},
+        {"te": "ఆచార్యులగారు ప్రసంగించారు.", "en": "The professor (hon.) delivered a speech."}
+      ]
+    },
+    "sadharana_informal_intimate": {
+      "pronoun": "నువ్వు (Nuvvu)",
+      "verbal_agreement_suffix": "-ఆవు / -తావు",
+      "context": "Close friends, younger siblings, informal peers",
+      "examples": [
+        {"te": "నువ్వు ఎప్పుడు వచ్చావు?", "en": "When did you arrive? (Informal)"},
+        {"te": "ఇక్కడికి రా.", "en": "Come here. (Informal directive)"}
+      ]
+    }
+  },
+  "discourse_particles_and_pragmatic_markers": {
+    "sare": {"particle": "సరే", "function": "Agreement / Compliance (Okay / Understood)"},
+    "avunu": {"particle": "అవును", "function": "Affirmation (Yes / Indeed)"},
+    "ayyo": {"particle": "అయ్యో", "function": "Sympathy / Regret / Shock (Oh no / Alas)"},
+    "lemaata": {"particle": "లేండి / లెండి", "function": "Softening tag (Never mind / Please note)"},
+    "kadu": {"particle": "కాదు / లేదే", "function": "Negative assertion / Polite denial"}
+  },
+  "turn_taking_calibration": {
+    "empirical_gap_ms": 518,
+    "floor_yielding_contour": "Falling final vowel prolongation with open throat acoustics."
+  }
+}

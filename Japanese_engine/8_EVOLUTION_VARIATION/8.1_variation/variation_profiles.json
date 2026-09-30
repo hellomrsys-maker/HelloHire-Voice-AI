@@ -1,0 +1,43 @@
+{
+  "variation_profiles": {
+    "standard_vs_dialects": {
+      "standard_japanese_hyoujungo": "Based on Tokyo Yamanote dialect; utilized in broadcasting, legal, and educational spheres.",
+      "regional_varieties": {
+        "kansai": {
+          "copula": "〜や (ya)",
+          "negation": "〜へん (hen: 行かへん)",
+          "sentence_final": "〜やん (assertive tag), 〜ねん (explanatory)"
+        },
+        "tohoku": {
+          "phonetics": "Voicing of intervocalic stops, high vowel centralizing",
+          "sentence_final": "〜だべ (conjectural)"
+        },
+        "kyushu": {
+          "aspect": "Distinct markers for progressive (〜よる) vs perfective resultative (〜とる)",
+          "directional_particle": "〜たい / 〜ばい"
+        }
+      }
+    },
+    "registers": {
+      "business_mail": "Hyper-polite Kenjougo and Sonkeigo (平素より大変お世話になっております, 幸甚に存じます).",
+      "newspaper_editorial": "Strict Joutai / Dearu (〜である, 〜とみられる, 〜を明らかにした).",
+      "manga_conversational": "Rich onomatopoeia, expressive sentence-final particles, colloquial contractions."
+    },
+    "historical_classical_japanese_bungo": {
+      "legacy_grammar": "Classical auxiliaries preserved in set phrases, proverbs, and legal statutes.",
+      "markers": ["〜けり (past poetic recollection)", "〜なり (assertion/hearsay)", "〜べし (obligation/necessity)", "〜ごとし (simile)"]
+    },
+    "gendered_speech_evolution": {
+      "traditional": "Feminine speech (わ, かしら, お- prefixation) vs Masculine speech (ぞ, ぜ, 俺, 飯).",
+      "contemporary_reality": "Significant convergence among youth toward neutral conversational markers (ね, よ, じゃん); flagged as descriptive stylistic traits rather than prescriptive mandates."
+    },
+    "code_switching_and_wasei_eigo": {
+      "pseudo_loanwords": [
+        {"term": "サラリーマン (salaryman)", "meaning": "Company office worker / white-collar employee (Not used in English)"},
+        {"term": "ノートパソコン (notebook personal computer)", "meaning": "Laptop computer"},
+        {"term": "スキンシップ (skinship)", "meaning": "Physical bonding / affectionate touch"},
+        {"term": "マイペース (my pace)", "meaning": "Doing things at one's own leisure / rhythm"}
+      ]
+    }
+  }
+}

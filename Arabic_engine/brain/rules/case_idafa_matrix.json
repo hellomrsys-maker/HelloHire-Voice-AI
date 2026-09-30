@@ -1,0 +1,24 @@
+{
+  "cases": {
+    "nominative": {"name": "marfu'", "vowel": "u", "tanwin": "un", "dual": "ani", "sound_masc_pl": "una"},
+    "accusative": {"name": "mansub", "vowel": "a", "tanwin": "an", "dual": "ayni", "sound_masc_pl": "ina"},
+    "genitive": {"name": "majrur", "vowel": "i", "tanwin": "in", "dual": "ayni", "sound_masc_pl": "ina"}
+  },
+  "idafa_rules": {
+    "mudaf": {
+      "requires_al": false,
+      "allows_al": false,
+      "allows_tanwin": false,
+      "drops_dual_and_plural_nuun": true
+    },
+    "mudaf_ilayh": {
+      "required_case": "genitive",
+      "allows_al": true,
+      "allows_tanwin": true
+    }
+  },
+  "diptotes": [
+    "masajid", "makatib", "mafatih", "ahmar", "aswad", "abyad",
+    "asdaqa", "atibba", "fatima", "makka", "baghdad", "ibrahim"
+  ]
+}

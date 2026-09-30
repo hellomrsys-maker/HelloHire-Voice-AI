@@ -1,0 +1,140 @@
+{
+  "language": "English",
+  "engine": "English_engine",
+  "iso_code": "en",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "en_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Do I have your complete and undivided attention?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "You have the minimum required amount to proceed.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 224.0,
+        "speech_rate_sps": 3.34,
+        "vocal_roughness": 0.768,
+        "floor_posture": "ASSERTIVE_DOMINANCE"
+      }
+    },
+    {
+      "id": "en_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "You still haven't explained why this decision was taken without authorization.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Because authorization would have arrived three hours too late.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 195.7,
+        "speech_rate_sps": 3.83,
+        "vocal_roughness": 0.89,
+        "floor_posture": "FAST_DEFENSIVE_LOCK"
+      }
+    },
+    {
+      "id": "en_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Is there anything else we need to cover before adjourning?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Nothing that cannot wait until tomorrow's formal briefing.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 225.7,
+        "speech_rate_sps": 3.98,
+        "vocal_roughness": 0.887,
+        "floor_posture": "CALM_RESONANT_CLOSURE"
+      }
+    },
+    {
+      "id": "en_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "What happens if the flight parameters deviate past threshold?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "The automatic fail-safe engages immediately without pilot intervention.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 255.2,
+        "speech_rate_sps": 4.69,
+        "vocal_roughness": 0.744,
+        "floor_posture": "TECHNICAL_PRECISE_CADENCE"
+      }
+    },
+    {
+      "id": "en_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Why did you wait so long before bringing this to our notice?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "I needed empirical certainty before raising an alarm.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 276.0,
+        "speech_rate_sps": 5.31,
+        "vocal_roughness": 0.597,
+        "floor_posture": "DELIBERATE_CONFESSION"
+      }
+    },
+    {
+      "id": "en_pathway_006",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Are you confident the physical memory state remains synchronized?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Completely verified at zero-nanosecond memory latency across both runtimes.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 203.8,
+        "speech_rate_sps": 2.81,
+        "vocal_roughness": 0.675,
+        "floor_posture": "STOIC_AUTHORITATIVE"
+      }
+    },
+    {
+      "id": "en_pathway_007",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Do you realize what is at stake if this deployment fails?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "I know exactly what is at stake, which is why every step is audited.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 207.3,
+        "speech_rate_sps": 3.52,
+        "vocal_roughness": 0.509,
+        "floor_posture": "RESOLUTE_MEASURED"
+      }
+    },
+    {
+      "id": "en_pathway_008",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Report your status immediately to command headquarters.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Perimeter is secure, all stations reporting nominal signals.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 336.5,
+        "speech_rate_sps": 5.93,
+        "vocal_roughness": 1.0,
+        "floor_posture": "HIGH_ALERT_STACCATO"
+      }
+    },
+    {
+      "id": "en_pathway_009",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Can the system sustain this load under peak traffic conditions?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "The stress benchmarks show zero degradation under three times peak volume.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 248.6,
+        "speech_rate_sps": 2.99,
+        "vocal_roughness": 0.828,
+        "floor_posture": "TECHNICAL_CERTAINTY"
+      }
+    },
+    {
+      "id": "en_pathway_010",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Have you considered the consequences of walking away right now?",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Walking away is the only choice that preserves our integrity.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 213.0,
+        "speech_rate_sps": 1.38,
+        "vocal_roughness": 0.72,
+        "floor_posture": "LENTO_CONVICTION"
+      }
+    }
+  ]
+}

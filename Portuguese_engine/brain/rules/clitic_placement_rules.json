@@ -1,0 +1,39 @@
+{
+  "proclisis_attractors": [
+    "não", "nunca", "jamais", "nada", "ninguém", "nem",
+    "que", "quando", "se", "como", "embora", "porque", "caso",
+    "alguém", "tudo", "algo", "sempre", "talvez", "já", "onde", "quem"
+  ],
+  "enclisis_triggers": [
+    "sentence_initial_pt_pt",
+    "imperative_affirmative",
+    "gerund_without_preposition",
+    "infinitive_preceded_by_preposition"
+  ],
+  "mesoclisis_tenses": [
+    "futuro_do_presente",
+    "futuro_do_preterito_condicional"
+  ],
+  "allomorphy": {
+    "terminal_r_s_z": {
+      "trigger_endings": ["r", "s", "z"],
+      "action": "drop_consonant_and_add_hyphen_l",
+      "pronoun_map": { "o": "lo", "a": "la", "os": "los", "as": "las" },
+      "examples": [
+        { "verb": "fazer", "clitic": "o", "result": "fazê-lo" },
+        { "verb": "dizer", "clitic": "a", "result": "dizê-la" },
+        { "verb": "comer", "clitic": "as", "result": "comê-las" }
+      ]
+    },
+    "nasal_diphthongs": {
+      "trigger_endings": ["m", "ão", "õe"],
+      "action": "attach_hyphen_n",
+      "pronoun_map": { "o": "no", "a": "na", "os": "nos", "as": "nas" },
+      "examples": [
+        { "verb": "fazem", "clitic": "o", "result": "fazem-no" },
+        { "verb": "dão", "clitic": "as", "result": "dão-nas" },
+        { "verb": "põem", "clitic": "os", "result": "põem-nos" }
+      ]
+    }
+  }
+}

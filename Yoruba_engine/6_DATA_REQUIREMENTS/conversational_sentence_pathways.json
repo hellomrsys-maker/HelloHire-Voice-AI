@@ -1,0 +1,75 @@
+{
+  "language": "Yoruba",
+  "engine": "D:\\gra.voi\\Yoruba_engine",
+  "iso_code": "yor",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "yor_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Onimọ-ẹrọ kọ eto pinpin ti o munadoko pupọ.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Awọn ọmọ ile-iwe loye nẹtiwọki ti o nipọn daradara.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yor_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "A ti ṣe aṣeyọri ilana iranti ti ko ni idaduro kankan.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ọjọgbọn ṣe alaye awọn ilana girama ni kikun.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yor_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Ẹgbẹ iwadii gbe iwe pataki kan jade lori oye atọwọda.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ẹlẹrọ sọfitiwia mu gbogbo ilana ṣiṣe data dara si.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yor_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Oye atọwọda n ṣe itupalẹ ọrọ ni ọpọlọpọ awọn ede ni pipe.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Ẹgbẹ idagbasoke pari gbogbo awọn idanwo iṣọpọ ni aṣeyọri.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "yor_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Ọna iranti ti o yara n rii daju pe data wa ni ibamu ni gbogbo igba.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "A ṣe awọn idanwo lile lati jẹri iduroṣinṣin eto naa.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

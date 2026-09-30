@@ -1,0 +1,23 @@
+{
+  "tagset_name": "Universal Dependencies (UD) 17 Tagset",
+  "version": "2.14",
+  "tags": {
+    "ADJ": { "category": "Open", "description": "Adjective", "examples": ["big", "old", "green"] },
+    "ADP": { "category": "Closed", "description": "Adposition (preposition/postposition)", "examples": ["in", "to", "during"] },
+    "ADV": { "category": "Open", "description": "Adverb", "examples": ["very", "well", "exactly"] },
+    "AUX": { "category": "Closed", "description": "Auxiliary verb", "examples": ["is", "has", "should", "will"] },
+    "CCONJ": { "category": "Closed", "description": "Coordinating conjunction", "examples": ["and", "or", "but"] },
+    "DET": { "category": "Closed", "description": "Determiner", "examples": ["a", "the", "this"] },
+    "INTJ": { "category": "Other", "description": "Interjection", "examples": ["psst", "ouch", "bravo"] },
+    "NOUN": { "category": "Open", "description": "Noun", "examples": ["girl", "cat", "tree", "air"] },
+    "NUM": { "category": "Closed", "description": "Numeral", "examples": ["1", "2024", "one", "IV"] },
+    "PART": { "category": "Closed", "description": "Particle", "examples": ["'s", "not"] },
+    "PRON": { "category": "Closed", "description": "Pronoun", "examples": ["I", "you", "he", "she", "someone"] },
+    "PROPN": { "category": "Open", "description": "Proper noun", "examples": ["Mary", "London", "NATO"] },
+    "PUNCT": { "category": "Other", "description": "Punctuation", "examples": [".", ",", "(", ")"] },
+    "SCONJ": { "category": "Closed", "description": "Subordinating conjunction", "examples": ["that", "if", "while"] },
+    "SYM": { "category": "Other", "description": "Symbol", "examples": ["$", "%", "§"] },
+    "VERB": { "category": "Open", "description": "Verb", "examples": ["run", "eat", "write"] },
+    "X": { "category": "Other", "description": "Other / unclassified", "examples": ["et", "al"] }
+  }
+}

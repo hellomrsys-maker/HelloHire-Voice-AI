@@ -1,0 +1,37 @@
+{
+  "engine": "Vietnamese",
+  "version": "1.0.0",
+  "kinship_system": {
+    "reciprocal_pairs": [
+      {"speaker": "em", "listener": "anh", "context": "younger_to_older_male"},
+      {"speaker": "anh", "listener": "em", "context": "older_male_to_younger"},
+      {"speaker": "em", "listener": "chị", "context": "younger_to_older_female"},
+      {"speaker": "chị", "listener": "em", "context": "older_female_to_younger"},
+      {"speaker": "cháu", "listener": "ông", "context": "grandchild_to_grandfather"},
+      {"speaker": "ông", "listener": "cháu", "context": "grandfather_to_grandchild"},
+      {"speaker": "cháu", "listener": "bà", "context": "grandchild_to_grandmother"},
+      {"speaker": "bà", "listener": "cháu", "context": "grandmother_to_grandchild"},
+      {"speaker": "cháu", "listener": "bác", "context": "youth_to_elder_senior"},
+      {"speaker": "cháu", "listener": "chú", "context": "youth_to_paternal_uncle"},
+      {"speaker": "cháu", "listener": "cô", "context": "youth_to_paternal_aunt_or_female_teacher"},
+      {"speaker": "con", "listener": "bố", "context": "child_to_father"},
+      {"speaker": "con", "listener": "mẹ", "context": "child_to_mother"}
+    ],
+    "neutral_formal_pronouns": {
+      "first_person": ["tôi", "chúng tôi", "chúng ta"],
+      "second_person": ["bạn", "các bạn", "quý vị", "quý khách", "ông bà"],
+      "third_person": ["họ", "người ấy", "anh ấy", "chị ấy", "ông ấy"]
+    },
+    "politeness_particles": {
+      "sentence_final": {
+        "ạ": {"role": "deference_to_superior", "register": "high_formal"},
+        "nhé": {"role": "friendly_suggestion", "register": "informal_peer"},
+        "nha": {"role": "southern_friendly_suggestion", "register": "informal_peer"}
+      },
+      "turn_initial": {
+        "dạ": {"role": "deferential_acknowledgment", "register": "polite_formal"},
+        "vâng": {"role": "affirmative_deference", "register": "polite_formal"}
+      }
+    }
+  }
+}

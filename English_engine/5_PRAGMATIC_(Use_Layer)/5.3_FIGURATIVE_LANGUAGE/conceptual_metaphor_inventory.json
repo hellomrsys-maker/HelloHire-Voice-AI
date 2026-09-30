@@ -1,0 +1,46 @@
+{
+  "conceptual_metaphors_lakoff_johnson": {
+    "ARGUMENT_IS_WAR": {
+      "source_domain": "Physical Warfare",
+      "target_domain": "Verbal Debate",
+      "linguistic_realizations": [
+        "Your claims are indefensible.",
+        "He attacked every weak point in my argument.",
+        "His criticism was right on target.",
+        "I demolished his argument.",
+        "If you use that strategy, he will wipe you out."
+      ]
+    },
+    "TIME_IS_MONEY": {
+      "source_domain": "Commodity / Currency",
+      "target_domain": "Temporal Duration",
+      "linguistic_realizations": [
+        "You are wasting my time.",
+        "This gadget will save you hours.",
+        "I don't have enough time to spare.",
+        "He is living on borrowed time.",
+        "I have invested a lot of time in this project."
+      ]
+    },
+    "IDEAS_ARE_FOOD": {
+      "source_domain": "Nutrition / Digestion",
+      "target_domain": "Cognitive Processing",
+      "linguistic_realizations": [
+        "All this data is hard to digest.",
+        "That's food for thought.",
+        "Let me stew over that suggestion.",
+        "That is a half-baked idea."
+      ]
+    },
+    "LOVE_IS_A_JOURNEY": {
+      "source_domain": "Travel / Vehicle Navigation",
+      "target_domain": "Romantic Partnership",
+      "linguistic_realizations": [
+        "Look how far we've come.",
+        "We're at a crossroads.",
+        "We may have to go our separate ways.",
+        "Our relationship has hit a dead end."
+      ]
+    }
+  }
+}

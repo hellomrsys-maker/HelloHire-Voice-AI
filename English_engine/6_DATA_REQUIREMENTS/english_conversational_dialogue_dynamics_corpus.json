@@ -1,0 +1,1698 @@
+{
+  "metadata": {
+    "corpus_name": "English Conversational Dialogue Dynamics & Word Prosody Corpus",
+    "description": "Authentic conversational dialogue scenes modeling word-by-word prosody breakdown, acoustic vocal toning (Rough, Smooth, Rash, Calm), inter-turn wait latency (ms), and conversational floor management.",
+    "version": "1.0",
+    "zero_voice_cloning_certified": true
+  },
+  "dialogue_scenes": [
+    {
+      "scene_id": "scene_01_courtroom_confrontation",
+      "context": "Acoustic conversational dialogue analysis: High-friction staccato delivery, aggressive turn-taking overlap, tight latency buffers (150ms-220ms), and explosive vocal rashness.",
+      "register": "FORMAL_AGGRESSIVE_COURTROOM",
+      "vocal_texture": "RASH_HARSH",
+      "turns": [
+        {
+          "speaker": "Speaker_A",
+          "text": "You want answers?",
+          "intent": "AGGRESSIVE_CHALLENGE",
+          "speech_tempo": "ALLEGRO_FAST",
+          "post_utterance_pause_ms": 220,
+          "expected_response_latency_range_ms": [
+            120,
+            250
+          ],
+          "vocal_profile": {
+            "roughness": 0.75,
+            "smoothness": 0.15,
+            "rashness": 0.85,
+            "calmness": 0.1
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 190,
+              "pitch_hz": 165.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "want",
+              "duration_ms": 210,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "answers?",
+              "duration_ms": 290,
+              "pitch_hz": 195.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "I think I am entitled to them!",
+          "intent": "FIRM_ASSERTION",
+          "speech_tempo": "ALLEGRO_FIRM",
+          "post_utterance_pause_ms": 180,
+          "expected_response_latency_range_ms": [
+            100,
+            220
+          ],
+          "vocal_profile": {
+            "roughness": 0.5,
+            "smoothness": 0.3,
+            "rashness": 0.7,
+            "calmness": 0.25
+          },
+          "word_tokens": [
+            {
+              "word": "I",
+              "duration_ms": 140,
+              "pitch_hz": 150.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "think",
+              "duration_ms": 190,
+              "pitch_hz": 155.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "I",
+              "duration_ms": 130,
+              "pitch_hz": 152.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "am",
+              "duration_ms": 140,
+              "pitch_hz": 158.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "entitled",
+              "duration_ms": 260,
+              "pitch_hz": 175.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "to",
+              "duration_ms": 130,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "them!",
+              "duration_ms": 240,
+              "pitch_hz": 168.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "You want answers?",
+          "intent": "INTENSE_REPETITION",
+          "speech_tempo": "ALLEGRO_FAST",
+          "post_utterance_pause_ms": 150,
+          "expected_response_latency_range_ms": [
+            80,
+            180
+          ],
+          "vocal_profile": {
+            "roughness": 0.8,
+            "smoothness": 0.1,
+            "rashness": 0.9,
+            "calmness": 0.05
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 180,
+              "pitch_hz": 170.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "want",
+              "duration_ms": 200,
+              "pitch_hz": 178.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "answers?",
+              "duration_ms": 280,
+              "pitch_hz": 205.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_B",
+          "text": "I want the truth!",
+          "intent": "EXPLOSIVE_DEMAND",
+          "speech_tempo": "ALLEGRO_CLIMAX",
+          "post_utterance_pause_ms": 200,
+          "expected_response_latency_range_ms": [
+            100,
+            220
+          ],
+          "vocal_profile": {
+            "roughness": 0.65,
+            "smoothness": 0.2,
+            "rashness": 0.85,
+            "calmness": 0.1
+          },
+          "word_tokens": [
+            {
+              "word": "I",
+              "duration_ms": 150,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "want",
+              "duration_ms": 220,
+              "pitch_hz": 175.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "the",
+              "duration_ms": 130,
+              "pitch_hz": 168.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "truth!",
+              "duration_ms": 350,
+              "pitch_hz": 215.0,
+              "focal_stress": true,
+              "contour": "PEAK_FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "You can not handle the truth!",
+          "intent": "TERMINAL_DOMINANCE_OUTBURST",
+          "speech_tempo": "FIRM_DECELERATED_PEAK",
+          "post_utterance_pause_ms": 850,
+          "expected_response_latency_range_ms": [
+            700,
+            1200
+          ],
+          "vocal_profile": {
+            "roughness": 0.88,
+            "smoothness": 0.1,
+            "rashness": 0.92,
+            "calmness": 0.05
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 240,
+              "pitch_hz": 185.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "can",
+              "duration_ms": 220,
+              "pitch_hz": 188.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "not",
+              "duration_ms": 260,
+              "pitch_hz": 195.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "handle",
+              "duration_ms": 280,
+              "pitch_hz": 182.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "the",
+              "duration_ms": 160,
+              "pitch_hz": 175.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "truth!",
+              "duration_ms": 480,
+              "pitch_hz": 230.0,
+              "focal_stress": true,
+              "contour": "PROLONGED_FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_02_scholarly_philosophical_discourse",
+      "context": "Calm, reflective academic discourse between research mentors on cognitive architecture and distributed memory systems.",
+      "register": "FORMAL_SCHOLARLY",
+      "vocal_texture": "CALM_RESONANT",
+      "turns": [
+        {
+          "speaker": "Scholar_A",
+          "text": "Do you believe that synchronous zero-bridge memory can eliminate latency entirely?",
+          "intent": "PROFOUND_INQUIRY",
+          "speech_tempo": "ANDANTE_DELIBERATE",
+          "post_utterance_pause_ms": 850,
+          "expected_response_latency_range_ms": [
+            700,
+            1150
+          ],
+          "vocal_profile": {
+            "roughness": 0.1,
+            "smoothness": 0.82,
+            "rashness": 0.08,
+            "calmness": 0.94
+          },
+          "word_tokens": [
+            {
+              "word": "Do",
+              "duration_ms": 170,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 180,
+              "pitch_hz": 132.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "believe",
+              "duration_ms": 260,
+              "pitch_hz": 142.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "that",
+              "duration_ms": 160,
+              "pitch_hz": 135.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "synchronous",
+              "duration_ms": 320,
+              "pitch_hz": 148.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "memory",
+              "duration_ms": 280,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "can",
+              "duration_ms": 160,
+              "pitch_hz": 138.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "eliminate",
+              "duration_ms": 290,
+              "pitch_hz": 145.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "latency",
+              "duration_ms": 280,
+              "pitch_hz": 142.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "entirely?",
+              "duration_ms": 340,
+              "pitch_hz": 162.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        },
+        {
+          "speaker": "Scholar_B",
+          "text": "In physical terms, shared physical addresses provide true zero-nanosecond synchronization.",
+          "intent": "DELIBERATE_EXPLANATION",
+          "speech_tempo": "MEASURED_CALM",
+          "post_utterance_pause_ms": 900,
+          "expected_response_latency_range_ms": [
+            750,
+            1200
+          ],
+          "vocal_profile": {
+            "roughness": 0.08,
+            "smoothness": 0.85,
+            "rashness": 0.06,
+            "calmness": 0.95
+          },
+          "word_tokens": [
+            {
+              "word": "In",
+              "duration_ms": 140,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "physical",
+              "duration_ms": 240,
+              "pitch_hz": 134.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "terms,",
+              "duration_ms": 260,
+              "pitch_hz": 138.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "shared",
+              "duration_ms": 220,
+              "pitch_hz": 135.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "addresses",
+              "duration_ms": 280,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "provide",
+              "duration_ms": 230,
+              "pitch_hz": 136.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "true",
+              "duration_ms": 210,
+              "pitch_hz": 142.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "synchronization.",
+              "duration_ms": 420,
+              "pitch_hz": 118.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_03_warm_empathic_guidance",
+      "context": "Supportive mentoring exchange offering encouragement and empathetic listening.",
+      "register": "WARM_INTERPERSONAL",
+      "vocal_texture": "SMOOTH_BREATHY",
+      "turns": [
+        {
+          "speaker": "Mentor",
+          "text": "Take your time, you are making exceptional progress.",
+          "intent": "REASSURANCE",
+          "speech_tempo": "FLOWING_WARM",
+          "post_utterance_pause_ms": 600,
+          "expected_response_latency_range_ms": [
+            450,
+            750
+          ],
+          "vocal_profile": {
+            "roughness": 0.12,
+            "smoothness": 0.92,
+            "rashness": 0.08,
+            "calmness": 0.88
+          },
+          "word_tokens": [
+            {
+              "word": "Take",
+              "duration_ms": 220,
+              "pitch_hz": 142.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "your",
+              "duration_ms": 180,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "time,",
+              "duration_ms": 260,
+              "pitch_hz": 145.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 170,
+              "pitch_hz": 141.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "are",
+              "duration_ms": 150,
+              "pitch_hz": 139.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "making",
+              "duration_ms": 230,
+              "pitch_hz": 146.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "exceptional",
+              "duration_ms": 320,
+              "pitch_hz": 154.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "progress.",
+              "duration_ms": 350,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_04_questionable_orders",
+      "context": "Acoustic conversational dialogue analysis: Strict military judicial posture, locked forward eye contact, fast and rigid turn-taking latency (150ms-300ms), and formal defense deference.",
+      "register": "FORMAL_MILITARY_JUDICIAL",
+      "vocal_texture": "RASH_HARSH",
+      "turns": [
+        {
+          "speaker": "Counsel",
+          "text": "Did you order the code red?",
+          "intent": "ACCUSATORY_INQUIRY",
+          "speech_tempo": "ALLEGRO_FIRM",
+          "post_utterance_pause_ms": 250,
+          "expected_response_latency_range_ms": [
+            150,
+            300
+          ],
+          "vocal_profile": {
+            "roughness": 0.65,
+            "smoothness": 0.2,
+            "rashness": 0.8,
+            "calmness": 0.15
+          },
+          "word_tokens": [
+            {
+              "word": "Did",
+              "duration_ms": 160,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 170,
+              "pitch_hz": 165.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "order",
+              "duration_ms": 230,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "the",
+              "duration_ms": 140,
+              "pitch_hz": 168.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "code",
+              "duration_ms": 260,
+              "pitch_hz": 182.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "red?",
+              "duration_ms": 310,
+              "pitch_hz": 195.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        },
+        {
+          "speaker": "Witness",
+          "text": "I followed my orders, sir.",
+          "intent": "DEFENSIVE_FORMAL_ASSERTION",
+          "speech_tempo": "MEASURED_RIGID",
+          "post_utterance_pause_ms": 300,
+          "expected_response_latency_range_ms": [
+            180,
+            350
+          ],
+          "vocal_profile": {
+            "roughness": 0.55,
+            "smoothness": 0.35,
+            "rashness": 0.5,
+            "calmness": 0.4
+          },
+          "word_tokens": [
+            {
+              "word": "I",
+              "duration_ms": 140,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "followed",
+              "duration_ms": 240,
+              "pitch_hz": 144.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "my",
+              "duration_ms": 150,
+              "pitch_hz": 142.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "orders,",
+              "duration_ms": 250,
+              "pitch_hz": 148.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "sir.",
+              "duration_ms": 280,
+              "pitch_hz": 132.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_05_reflective_wisdom",
+      "context": "Acoustic conversational dialogue analysis: Intimate reflective delivery, long contemplative pauses (400ms-850ms), sustained low fundamental pitch (F0 ~125Hz-140Hz), soft glottal closure, and high calm/smooth resonance.",
+      "register": "INTIMATE_REFLECTIVE_COUNSEL",
+      "vocal_texture": "CALM_RESONANT",
+      "turns": [
+        {
+          "speaker": "Counselor",
+          "text": "You are just a boy, you have not the faintest idea what you are talking about.",
+          "intent": "GROUNDING_REALITY_CHECK",
+          "speech_tempo": "ANDANTE_REFLECTIVE",
+          "post_utterance_pause_ms": 750,
+          "expected_response_latency_range_ms": [
+            600,
+            1100
+          ],
+          "vocal_profile": {
+            "roughness": 0.18,
+            "smoothness": 0.88,
+            "rashness": 0.08,
+            "calmness": 0.92
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 220,
+              "pitch_hz": 132.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "are",
+              "duration_ms": 160,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "just",
+              "duration_ms": 210,
+              "pitch_hz": 136.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "a",
+              "duration_ms": 120,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "boy,",
+              "duration_ms": 320,
+              "pitch_hz": 124.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            },
+            {
+              "word": "you",
+              "duration_ms": 180,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "have",
+              "duration_ms": 190,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "not",
+              "duration_ms": 240,
+              "pitch_hz": 138.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "the",
+              "duration_ms": 130,
+              "pitch_hz": 129.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "faintest",
+              "duration_ms": 290,
+              "pitch_hz": 134.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "idea",
+              "duration_ms": 310,
+              "pitch_hz": 131.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "what",
+              "duration_ms": 170,
+              "pitch_hz": 127.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 180,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "are",
+              "duration_ms": 140,
+              "pitch_hz": 126.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "talking",
+              "duration_ms": 260,
+              "pitch_hz": 132.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "about.",
+              "duration_ms": 380,
+              "pitch_hz": 118.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Counselor",
+          "text": "You do not know about real loss, because that only occurs when you love something more than you love yourself.",
+          "intent": "EMOTIONAL_PROFOUND_TRUTH",
+          "speech_tempo": "LARGO_DEEP_EMOTION",
+          "post_utterance_pause_ms": 950,
+          "expected_response_latency_range_ms": [
+            800,
+            1400
+          ],
+          "vocal_profile": {
+            "roughness": 0.22,
+            "smoothness": 0.85,
+            "rashness": 0.05,
+            "calmness": 0.94
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 240,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "do",
+              "duration_ms": 170,
+              "pitch_hz": 126.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "not",
+              "duration_ms": 230,
+              "pitch_hz": 134.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "know",
+              "duration_ms": 250,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "about",
+              "duration_ms": 210,
+              "pitch_hz": 127.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "real",
+              "duration_ms": 260,
+              "pitch_hz": 132.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "loss,",
+              "duration_ms": 380,
+              "pitch_hz": 122.0,
+              "focal_stress": true,
+              "contour": "FALLING"
+            },
+            {
+              "word": "because",
+              "duration_ms": 220,
+              "pitch_hz": 125.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "that",
+              "duration_ms": 170,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "only",
+              "duration_ms": 220,
+              "pitch_hz": 131.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "occurs",
+              "duration_ms": 270,
+              "pitch_hz": 129.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "when",
+              "duration_ms": 180,
+              "pitch_hz": 127.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 170,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "love",
+              "duration_ms": 280,
+              "pitch_hz": 138.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "something",
+              "duration_ms": 290,
+              "pitch_hz": 130.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "more",
+              "duration_ms": 240,
+              "pitch_hz": 135.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "than",
+              "duration_ms": 160,
+              "pitch_hz": 127.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 170,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "love",
+              "duration_ms": 270,
+              "pitch_hz": 136.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "yourself.",
+              "duration_ms": 460,
+              "pitch_hz": 115.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_06_passionate_tribunal_defense",
+      "context": "Acoustic conversational dialogue analysis: High vocal cord tension, raspy/gravelly vocal texture (roughness 0.86, rashness 0.82), sharp staccato attack, intense acoustic dynamic swings, and authoritative dominance delivery.",
+      "register": "FORMAL_TRIBUNAL_PASSIONATE_DEFENSE",
+      "vocal_texture": "ROUGH_GRAVELLY",
+      "turns": [
+        {
+          "speaker": "Frank_Slade",
+          "text": "Their spirit is dead, if they ever had one, it is gone.",
+          "intent": "CONDEMNATORY_PROCLAMATION",
+          "speech_tempo": "ALLEGRO_STACCATO_RASP",
+          "post_utterance_pause_ms": 500,
+          "expected_response_latency_range_ms": [
+            350,
+            700
+          ],
+          "vocal_profile": {
+            "roughness": 0.86,
+            "smoothness": 0.12,
+            "rashness": 0.82,
+            "calmness": 0.1
+          },
+          "word_tokens": [
+            {
+              "word": "Their",
+              "duration_ms": 190,
+              "pitch_hz": 155.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "spirit",
+              "duration_ms": 280,
+              "pitch_hz": 168.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "is",
+              "duration_ms": 150,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "dead,",
+              "duration_ms": 340,
+              "pitch_hz": 178.0,
+              "focal_stress": true,
+              "contour": "FALLING"
+            },
+            {
+              "word": "if",
+              "duration_ms": 140,
+              "pitch_hz": 152.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "they",
+              "duration_ms": 160,
+              "pitch_hz": 154.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "ever",
+              "duration_ms": 220,
+              "pitch_hz": 162.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "had",
+              "duration_ms": 180,
+              "pitch_hz": 158.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "one,",
+              "duration_ms": 260,
+              "pitch_hz": 165.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "it",
+              "duration_ms": 140,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "is",
+              "duration_ms": 160,
+              "pitch_hz": 164.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "gone.",
+              "duration_ms": 390,
+              "pitch_hz": 142.0,
+              "focal_stress": true,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Frank_Slade",
+          "text": "You are building a rat ship here, a vessel for sea going snitches!",
+          "intent": "SAVAGE_METAPHORICAL_ATTACK",
+          "speech_tempo": "ALLEGRO_FIRM_RASH",
+          "post_utterance_pause_ms": 650,
+          "expected_response_latency_range_ms": [
+            450,
+            850
+          ],
+          "vocal_profile": {
+            "roughness": 0.88,
+            "smoothness": 0.1,
+            "rashness": 0.85,
+            "calmness": 0.08
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 180,
+              "pitch_hz": 162.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "are",
+              "duration_ms": 140,
+              "pitch_hz": 160.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "building",
+              "duration_ms": 260,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "a",
+              "duration_ms": 110,
+              "pitch_hz": 158.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "rat",
+              "duration_ms": 240,
+              "pitch_hz": 185.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "ship",
+              "duration_ms": 270,
+              "pitch_hz": 180.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "here,",
+              "duration_ms": 290,
+              "pitch_hz": 165.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            },
+            {
+              "word": "a",
+              "duration_ms": 110,
+              "pitch_hz": 155.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "vessel",
+              "duration_ms": 250,
+              "pitch_hz": 168.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "for",
+              "duration_ms": 140,
+              "pitch_hz": 162.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "sea",
+              "duration_ms": 210,
+              "pitch_hz": 170.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "going",
+              "duration_ms": 240,
+              "pitch_hz": 175.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "snitches!",
+              "duration_ms": 420,
+              "pitch_hz": 195.0,
+              "focal_stress": true,
+              "contour": "PEAK_FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Frank_Slade",
+          "text": "Because I say you are killing the very spirit this institution proclaims it instills! What a sham!",
+          "intent": "TERMINAL_TRIBUNAL_CLIMAX",
+          "speech_tempo": "ALLEGRO_THUNDEROUS_CLIMAX",
+          "post_utterance_pause_ms": 900,
+          "expected_response_latency_range_ms": [
+            700,
+            1300
+          ],
+          "vocal_profile": {
+            "roughness": 0.9,
+            "smoothness": 0.08,
+            "rashness": 0.92,
+            "calmness": 0.05
+          },
+          "word_tokens": [
+            {
+              "word": "Because",
+              "duration_ms": 220,
+              "pitch_hz": 165.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "I",
+              "duration_ms": 170,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "say",
+              "duration_ms": 210,
+              "pitch_hz": 178.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "you",
+              "duration_ms": 160,
+              "pitch_hz": 170.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "are",
+              "duration_ms": 140,
+              "pitch_hz": 168.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "killing",
+              "duration_ms": 280,
+              "pitch_hz": 188.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "the",
+              "duration_ms": 130,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "very",
+              "duration_ms": 240,
+              "pitch_hz": 182.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "spirit",
+              "duration_ms": 290,
+              "pitch_hz": 176.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "this",
+              "duration_ms": 160,
+              "pitch_hz": 170.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "institution",
+              "duration_ms": 380,
+              "pitch_hz": 184.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "proclaims",
+              "duration_ms": 320,
+              "pitch_hz": 179.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "it",
+              "duration_ms": 140,
+              "pitch_hz": 172.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "instills!",
+              "duration_ms": 360,
+              "pitch_hz": 192.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "What",
+              "duration_ms": 220,
+              "pitch_hz": 198.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "a",
+              "duration_ms": 130,
+              "pitch_hz": 185.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "sham!",
+              "duration_ms": 510,
+              "pitch_hz": 220.0,
+              "focal_stress": true,
+              "contour": "PROLONGED_FALLING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_07_intellectual_dominance",
+      "context": "Acoustic conversational dialogue analysis: Rapid-fire rapid intellectual cadence, staccato delivery, clinical monotone F0 contour (135Hz-148Hz), crisp micro-pause buffer (100ms-180ms), razor-sharp intellectual assertiveness, and calm superior dominance.",
+      "register": "FORMAL_LEGAL_INTELLECTUAL_DOMINANCE",
+      "vocal_texture": "CALM_RESONANT",
+      "turns": [
+        {
+          "speaker": "Inquiring_Counsel",
+          "text": "Mr. Davis, do I have your full attention?",
+          "intent": "CONDIVIDUAL_INQUIRY_AUTHORITY",
+          "speech_tempo": "ALLEGRO_FIRM",
+          "post_utterance_pause_ms": 180,
+          "expected_response_latency_range_ms": [
+            100,
+            220
+          ],
+          "vocal_profile": {
+            "roughness": 0.4,
+            "smoothness": 0.45,
+            "rashness": 0.55,
+            "calmness": 0.45
+          },
+          "word_tokens": [
+            {
+              "word": "Mr.",
+              "duration_ms": 150,
+              "pitch_hz": 150.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "Davis,",
+              "duration_ms": 280,
+              "pitch_hz": 155.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "do",
+              "duration_ms": 120,
+              "pitch_hz": 148.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "I",
+              "duration_ms": 130,
+              "pitch_hz": 152.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "have",
+              "duration_ms": 160,
+              "pitch_hz": 156.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "your",
+              "duration_ms": 140,
+              "pitch_hz": 154.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "full",
+              "duration_ms": 220,
+              "pitch_hz": 165.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "attention?",
+              "duration_ms": 320,
+              "pitch_hz": 178.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "No.",
+          "intent": "INSTANT_DISMISSIVE_TRUNCATION",
+          "speech_tempo": "ALLEGRO_STACCATO_CLINICAL",
+          "post_utterance_pause_ms": 120,
+          "expected_response_latency_range_ms": [
+            80,
+            160
+          ],
+          "vocal_profile": {
+            "roughness": 0.15,
+            "smoothness": 0.8,
+            "rashness": 0.35,
+            "calmness": 0.9
+          },
+          "word_tokens": [
+            {
+              "word": "No.",
+              "duration_ms": 180,
+              "pitch_hz": 135.0,
+              "focal_stress": true,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "You have part of my attention, you have the minimum amount.",
+          "intent": "CLINICAL_DISDAIN_DELINEATION",
+          "speech_tempo": "ALLEGRO_RAPID_PRECISION",
+          "post_utterance_pause_ms": 250,
+          "expected_response_latency_range_ms": [
+            150,
+            300
+          ],
+          "vocal_profile": {
+            "roughness": 0.15,
+            "smoothness": 0.82,
+            "rashness": 0.3,
+            "calmness": 0.92
+          },
+          "word_tokens": [
+            {
+              "word": "You",
+              "duration_ms": 140,
+              "pitch_hz": 138.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "have",
+              "duration_ms": 150,
+              "pitch_hz": 137.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "part",
+              "duration_ms": 190,
+              "pitch_hz": 142.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "of",
+              "duration_ms": 110,
+              "pitch_hz": 136.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "my",
+              "duration_ms": 130,
+              "pitch_hz": 138.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "attention,",
+              "duration_ms": 260,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "you",
+              "duration_ms": 130,
+              "pitch_hz": 137.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "have",
+              "duration_ms": 140,
+              "pitch_hz": 138.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "the",
+              "duration_ms": 110,
+              "pitch_hz": 135.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "minimum",
+              "duration_ms": 220,
+              "pitch_hz": 144.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "amount.",
+              "duration_ms": 280,
+              "pitch_hz": 128.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Speaker_A",
+          "text": "Did I adequately answer your condescending question?",
+          "intent": "TERMINAL_INTELLECTUAL_CHECKMATE",
+          "speech_tempo": "ALLEGRO_MEASURED_STING",
+          "post_utterance_pause_ms": 600,
+          "expected_response_latency_range_ms": [
+            500,
+            950
+          ],
+          "vocal_profile": {
+            "roughness": 0.18,
+            "smoothness": 0.85,
+            "rashness": 0.4,
+            "calmness": 0.88
+          },
+          "word_tokens": [
+            {
+              "word": "Did",
+              "duration_ms": 130,
+              "pitch_hz": 140.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "I",
+              "duration_ms": 140,
+              "pitch_hz": 142.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "adequately",
+              "duration_ms": 290,
+              "pitch_hz": 146.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "answer",
+              "duration_ms": 220,
+              "pitch_hz": 141.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "your",
+              "duration_ms": 130,
+              "pitch_hz": 139.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "condescending",
+              "duration_ms": 380,
+              "pitch_hz": 148.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "question?",
+              "duration_ms": 340,
+              "pitch_hz": 158.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_08_carpe_diem",
+      "context": "Acoustic conversational dialogue analysis: Intimate, whispered delivery (soft glottal closure, smoothness 0.94, calmness 0.90), conspiratorial lean-in posture, elongated reflective pause buffers (800ms-1500ms), and resonant climactic vowel expansion.",
+      "register": "INTIMATE_INSPIRATIONAL_MENTORSHIP",
+      "vocal_texture": "SMOOTH_BREATHY",
+      "turns": [
+        {
+          "speaker": "Instructor",
+          "text": "Carpe diem, seize the day, boys.",
+          "intent": "INSPIRATIONAL_PROVOCATION",
+          "speech_tempo": "ANDANTE_WHISPERED_DELIBERATE",
+          "post_utterance_pause_ms": 850,
+          "expected_response_latency_range_ms": [
+            600,
+            1200
+          ],
+          "vocal_profile": {
+            "roughness": 0.1,
+            "smoothness": 0.94,
+            "rashness": 0.05,
+            "calmness": 0.9
+          },
+          "word_tokens": [
+            {
+              "word": "Carpe",
+              "duration_ms": 280,
+              "pitch_hz": 124.0,
+              "focal_stress": true,
+              "contour": "PEAK"
+            },
+            {
+              "word": "diem,",
+              "duration_ms": 320,
+              "pitch_hz": 128.0,
+              "focal_stress": true,
+              "contour": "RISING"
+            },
+            {
+              "word": "seize",
+              "duration_ms": 290,
+              "pitch_hz": 126.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "the",
+              "duration_ms": 130,
+              "pitch_hz": 122.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "day,",
+              "duration_ms": 310,
+              "pitch_hz": 125.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "boys.",
+              "duration_ms": 380,
+              "pitch_hz": 115.0,
+              "focal_stress": false,
+              "contour": "FALLING"
+            }
+          ]
+        },
+        {
+          "speaker": "Instructor",
+          "text": "Make your lives extraordinary.",
+          "intent": "PROFOUND_EXISTENTIAL_CHALLENGE",
+          "speech_tempo": "LARGO_RESONANT_CLIMAX",
+          "post_utterance_pause_ms": 1200,
+          "expected_response_latency_range_ms": [
+            900,
+            1600
+          ],
+          "vocal_profile": {
+            "roughness": 0.12,
+            "smoothness": 0.92,
+            "rashness": 0.06,
+            "calmness": 0.94
+          },
+          "word_tokens": [
+            {
+              "word": "Make",
+              "duration_ms": 260,
+              "pitch_hz": 122.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "your",
+              "duration_ms": 180,
+              "pitch_hz": 120.0,
+              "focal_stress": false,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "lives",
+              "duration_ms": 320,
+              "pitch_hz": 126.0,
+              "focal_stress": true,
+              "contour": "SUSTAINED"
+            },
+            {
+              "word": "extraordinary.",
+              "duration_ms": 650,
+              "pitch_hz": 110.0,
+              "focal_stress": true,
+              "contour": "PROLONGED_FALLING"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

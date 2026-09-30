@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "total_containers_processed": 3,
+  "total_english_dyads": 1050,
+  "total_hindustani_dyads": 646,
+  "calibrated_latency_gap_ms": 518,
+  "protocol_verification": "RULEBOOK_SEC_10_COMPLIANT_ZERO_NAMES_ZERO_TITLES",
+  "output_paths": {
+    "english_dyads": "D:\\gra.voi\\English_engine\\6_DATA_REQUIREMENTS\\observational_speech_dyads.json",
+    "hindustani_dyads": "D:\\gra.voi\\Hindustani_engine\\6_DATA_REQUIREMENTS\\observational_speech_dyads.json",
+    "vocabulary": "D:\\gra.voi\\data\\observational_speech_words_corpus.json"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "language": "Amharic",
+  "engine": "D:\\gra.voi\\Amharic_engine",
+  "iso_code": "amh",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "amh_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "መሐንዲሱ በጣም ቀልጣፋ የሆነ የተከፋፈለ ሥርዓት ሠራ።",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ተማሪዎቹ ውስብስብ የሆነውን የነርቭ ኔትወርክ በሚገባ ተረዱት።",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "amh_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "የዜሮ መዘግየት የተመሳሰለ የማስታወሻ ፕሮቶኮልን በተሳካ ሁኔታ ተግባራዊ አድርገናል።",
+      "calibrated_gap_ms": 518,
+      "context_reply": "ፕሮፌሰሩ የሰዋሰው ንድፈ ሐሳቦችን በዝርዝር አብራሩ።",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "amh_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "የምርምር ቡድኑ በሰው ሰራሽ አስተውሎት ላይ ጠቃሚ ጥናት አሳተመ።",
+      "calibrated_gap_ms": 518,
+      "context_reply": "የሶፍትዌር አርክቴክቱ የመረጃ ማቀነባበሪያውን ሂደት አሻሻለ።",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "amh_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ሰው ሰራሽ አስተውሎት የብዙ ቋንቋዎችን ጽሑፍ በትክክል ይመረምራል።",
+      "calibrated_gap_ms": 518,
+      "context_reply": "የልማት ቡድኑ ሁሉንም የውህደት ሙከራዎች በተሳካ ሁኔታ አጠናቋል።",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "amh_pathway_005",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "ከፍተኛ ፍጥነት ያለው የማስታወሻ አውቶቡስ አስተማማኝ የመረጃ አንድነትን ያረጋግጣል።",
+      "calibrated_gap_ms": 518,
+      "context_reply": "የሥርዓቱን አስተማማኝነት ለማረጋገጥ ጥብቅ ሙከራዎችን አድርገናል።",
+      "acoustic_metrics": {
+        "mean_f0_hz": 243.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.67,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

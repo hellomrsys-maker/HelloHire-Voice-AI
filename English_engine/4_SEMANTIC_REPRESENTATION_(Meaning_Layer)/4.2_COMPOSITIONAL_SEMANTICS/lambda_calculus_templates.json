@@ -1,0 +1,28 @@
+{
+  "lambda_calculus_templates": {
+    "proper_noun": {
+      "template": "lambda P. P(c)",
+      "example": "Turing -> lambda P. P(turing)"
+    },
+    "intransitive_verb": {
+      "template": "lambda x. V(x)",
+      "example": "converged -> lambda x. Converged(x)"
+    },
+    "transitive_verb": {
+      "template": "lambda Q lambda x. Q(lambda y. V(x, y))",
+      "example": "trained -> lambda Q lambda x. Q(lambda y. Trained(x, y))"
+    },
+    "determiners": {
+      "every": "lambda P lambda Q. forall x [P(x) -> Q(x)]",
+      "a_some": "lambda P lambda Q. exists x [P(x) and Q(x)]",
+      "no": "lambda P lambda Q. not exists x [P(x) and Q(x)]"
+    },
+    "beta_reduction_example": {
+      "sentence": "Every student reads",
+      "step_1": "(lambda P lambda Q. forall x [P(x) -> Q(x)])(Student)",
+      "step_2": "lambda Q. forall x [Student(x) -> Q(x)]",
+      "step_3": "(lambda Q. forall x [Student(x) -> Q(x)])(lambda y. Reads(y))",
+      "final": "forall x [Student(x) -> Reads(x)]"
+    }
+  }
+}

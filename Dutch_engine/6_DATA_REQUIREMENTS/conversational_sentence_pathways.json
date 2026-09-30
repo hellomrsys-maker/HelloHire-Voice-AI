@@ -1,0 +1,62 @@
+{
+  "language": "Dutch",
+  "engine": "D:\\gra.voi\\Dutch_engine",
+  "iso_code": "nld",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "nld_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "De ingenieur ontwierp een uiterst efficiënte gedistribueerde architectuur.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "We hebben het synchrone geheugenprotocol succesvol geïmplementeerd.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "nld_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "De onderzoeksgroep publiceerde een baanbrekende studie over AI.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "De softwarearchitect optimaliseerde de gehele gegevensverwerkingspijplijn (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "nld_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Alle modules communiceren direct zonder enige latentievertraging.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Hoewel de eisen complex waren, voltooide het team het project op tijd (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "nld_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Het neurale netwerk classificeert meertalige structuren uiterst nauwkeurig.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Wij hebben grondige prestatietests uitgevoerd onder zware belasting (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

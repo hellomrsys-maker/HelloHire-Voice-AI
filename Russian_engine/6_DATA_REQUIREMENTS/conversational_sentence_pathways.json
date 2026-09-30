@@ -1,0 +1,62 @@
+{
+  "language": "Russian",
+  "engine": "D:\\gra.voi\\Russian_engine",
+  "iso_code": "rus",
+  "framework": "Observational Conversational Sentence Pathways",
+  "legal_barrier_protocol": "Strict observational listening. Zero media artifacts, zero copyright footprints, zero fictional names. Pure sentence dyads with calibrated 518ms turn-taking gap.",
+  "calibrated_common_gap_ms": 518,
+  "sentence_pathways": [
+    {
+      "id": "rus_pathway_001",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Инженер спроектировал высокопроизводительную распределённую архитектуру.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Мы внедрили протокол атомарной синхронизации памяти.",
+      "acoustic_metrics": {
+        "mean_f0_hz": 215.0,
+        "speech_rate_sps": 3.4,
+        "vocal_roughness": 0.6,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "rus_pathway_002",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Исследовательская группа опубликовала важную научную работу.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Архитектор оптимизировал сквозной конвейер обработки данных (using optimal hyper-parameters).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 222.0,
+        "speech_rate_sps": 3.7,
+        "vocal_roughness": 0.68,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "rus_pathway_003",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Искусственный интеллект демонстрирует высокую точность классификации.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Команда разработчиков успешно прошла все приёмочные тесты (on multi-core architectures).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 229.0,
+        "speech_rate_sps": 4.0,
+        "vocal_roughness": 0.76,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    },
+    {
+      "id": "rus_pathway_004",
+      "speaker_pair": "Speaker_A -> Speaker_B",
+      "context_1": "Алгоритм гарантирует нулевое время запаздывания синхронизации.",
+      "calibrated_gap_ms": 518,
+      "context_reply": "Мы провели всесторонний эмпирический анализ устойчивости системы (under heavy loads).",
+      "acoustic_metrics": {
+        "mean_f0_hz": 236.0,
+        "speech_rate_sps": 4.3,
+        "vocal_roughness": 0.84,
+        "floor_posture": "STANDARD_CONVERSATIONAL_EXCHANGE"
+      }
+    }
+  ]
+}

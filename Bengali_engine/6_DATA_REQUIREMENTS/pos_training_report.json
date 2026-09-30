@@ -1,0 +1,17 @@
+{
+  "engine": "Bengali_engine",
+  "treebank": "UD_Bengali-BRU",
+  "license": "The treebank is licensed under the Creative Commons License Attribution-ShareAlike 4.0 International.",
+  "trained": true,
+  "val_token_accuracy": 0.6667,
+  "majority_baseline": 0.1167,
+  "beats_baseline_by": 0.55,
+  "train_sentences": 45,
+  "val_sentences": 11,
+  "vocab_size": 49,
+  "final_train_loss": 0.8524,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\bengali_engine_pos_tagger.pt"
+}

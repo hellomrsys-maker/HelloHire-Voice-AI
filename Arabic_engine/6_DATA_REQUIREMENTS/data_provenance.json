@@ -1,0 +1,15 @@
+{
+  "engine": "Arabic_engine",
+  "generated_utc": "2026-09-29T11:57:26Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Arabic-PADT",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "The Arabic UD treebank is derived from the Prague Arabic Dependency Treebank (PADT) and is distributed under the same license terms as PADT 1.0, which is",
+      "status": "skipped: NonCommercial license (commercial_safe=True)",
+      "count": 0
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

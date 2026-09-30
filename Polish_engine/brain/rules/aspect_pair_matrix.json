@@ -1,0 +1,78 @@
+{
+  "engine": "Polish",
+  "matrix_type": "aspect_pair_matrix",
+  "version": "1.0.0",
+  "description": "Aspectual pairings of Polish verbs: Imperfective (continuous/habitual) vs Perfective (completed/telic).",
+  "pairs": [
+    {
+      "imperfective": "pisać",
+      "perfective": "napisać",
+      "derivation_type": "prefixation (na-)",
+      "present_impf": "piszę",
+      "future_pf": "napiszę"
+    },
+    {
+      "imperfective": "czytać",
+      "perfective": "przeczytać",
+      "derivation_type": "prefixation (prze-)",
+      "present_impf": "czytam",
+      "future_pf": "przeczytam"
+    },
+    {
+      "imperfective": "robić",
+      "perfective": "zrobić",
+      "derivation_type": "prefixation (z-)",
+      "present_impf": "robię",
+      "future_pf": "zrobię"
+    },
+    {
+      "imperfective": "kupować",
+      "perfective": "kupić",
+      "derivation_type": "suffixation",
+      "present_impf": "kupuję",
+      "future_pf": "kupię"
+    },
+    {
+      "imperfective": "otwierać",
+      "perfective": "otworzyć",
+      "derivation_type": "stem alternation",
+      "present_impf": "otwieram",
+      "future_pf": "otworzę"
+    },
+    {
+      "imperfective": "zamykać",
+      "perfective": "zamknąć",
+      "derivation_type": "stem alternation",
+      "present_impf": "zamykam",
+      "future_pf": "zamknę"
+    },
+    {
+      "imperfective": "dawać",
+      "perfective": "dać",
+      "derivation_type": "stem reduction",
+      "present_impf": "daję",
+      "future_pf": "dam"
+    },
+    {
+      "imperfective": "brać",
+      "perfective": "wziąć",
+      "derivation_type": "suppletion",
+      "present_impf": "biorę",
+      "future_pf": "wezmę"
+    },
+    {
+      "imperfective": "widzieć",
+      "perfective": "zobaczyć",
+      "derivation_type": "suppletion",
+      "present_impf": "widzę",
+      "future_pf": "zobaczę"
+    },
+    {
+      "imperfective": "mówić",
+      "perfective": "powiedzieć",
+      "derivation_type": "suppletion",
+      "present_impf": "mówię",
+      "future_pf": "powiem"
+    }
+  ]
+}

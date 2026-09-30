@@ -1,0 +1,17 @@
+{
+  "engine": "English_engine",
+  "treebank": "UD_English-EWT",
+  "license": "Attribution-ShareAlike 4.0 International",
+  "trained": true,
+  "val_token_accuracy": 0.6631,
+  "majority_baseline": 0.1592,
+  "beats_baseline_by": 0.5039,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 810,
+  "final_train_loss": 0.563,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\english_engine_pos_tagger.pt"
+}

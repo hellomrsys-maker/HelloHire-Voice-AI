@@ -1,0 +1,17 @@
+{
+  "engine": "Arabic_engine",
+  "treebank": "UD_Arabic-PADT",
+  "license": "The Arabic UD treebank is derived from the Prague Arabic Dependency Treebank (PADT) and is distributed under the same license terms as PADT 1.0, which is",
+  "trained": true,
+  "val_token_accuracy": 0.7293,
+  "majority_baseline": 0.3021,
+  "beats_baseline_by": 0.4272,
+  "train_sentences": 400,
+  "val_sentences": 100,
+  "vocab_size": 1243,
+  "final_train_loss": 0.5583,
+  "passed": true,
+  "note": "trained on UD UPOS labels",
+  "tagset": "UD 17 Universal POS",
+  "checkpoint": "d:\\gra.voi\\checkpoints\\arabic_engine_pos_tagger.pt"
+}

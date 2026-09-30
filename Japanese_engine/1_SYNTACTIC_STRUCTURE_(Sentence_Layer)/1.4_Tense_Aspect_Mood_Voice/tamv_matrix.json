@@ -1,0 +1,37 @@
+{
+  "tense_aspect_mood_voice": {
+    "tense": {
+      "system": "Binary system: Past (た-form) vs Non-past (る/辞書形).",
+      "non_past_hikako": "The non-past form covers present habitual action, eternal truths, and future events (明日行く = I will go tomorrow)."
+    },
+    "aspect": {
+      "te_iru": {
+        "progressive": "With dynamic action verbs, indicates continuous ongoing action (本を読んでいる = is reading a book).",
+        "resultative_state": "With instantaneous change-of-state verbs, indicates the continuing result of a completed action (窓が開いている = the window has opened and is now open; 結婚している = is married)."
+      },
+      "te_shimau": {
+        "completion": "Action completed thoroughly (本を読んでしまった).",
+        "regret_unintentionality": "Action happened regretfully or unintentionally (鍵を失くしてしまった)."
+      }
+    },
+    "mood": {
+      "volitional": "Suffix 'よう / う' expressing intention or exhortation (行こう / 食べよう).",
+      "imperative": "Meireikei commands (行け / 食べろ).",
+      "potential": "Suffix 'れる / られる' or potential verbs expressing ability (書ける / 食べられる).",
+      "conditionals": {
+        "tara": "Hypothetical condition and temporal sequence allowing volition in main clause (行ったら教える).",
+        "ba": "Logical hypothetical condition (安ければ買う).",
+        "to": "Automatic natural law / scientific inevitability prohibiting volition (春になると暖かくなる).",
+        "nara": "Topical or advice condition based on interlocutor statement (京都に行くなら新幹線が良い)."
+      }
+    },
+    "voice": {
+      "passive_reru_rareru": {
+        "direct_passive": "Standard passive where direct object becomes subject (本が読まれる).",
+        "indirect_adversity_passive": "Affective/adversity passive where subject suffers harm from an action; has NO English equivalent (雨に降られた = 'I was rained upon [and suffered misfortune]'; 赤ちゃんに泣かれた)."
+      },
+      "causative_seru_saseru": "Making or letting someone perform an action (子供に野菜を食べさせる).",
+      "causative_passive_saserareru": "Being forced or made to do something against one's preference (無理やり歌わせられた)."
+    }
+  }
+}

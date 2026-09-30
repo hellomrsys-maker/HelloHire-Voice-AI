@@ -1,0 +1,26 @@
+{
+  "pronoun_antecedent_rules": {
+    "agreement_features": ["person", "number", "gender", "case"],
+    "rules": {
+      "singular_antecedents": {
+        "rule": "Singular pronoun matches singular antecedent in gender/person",
+        "example": "The scientist verified her hypothesis."
+      },
+      "singular_they": {
+        "policy": "Standard contemporary English for epicene / non-binary / generic indefinite antecedents",
+        "syntactic_agreement": "Takes plural verb agreement ('they are', not 'they is') even when antecedent is singular",
+        "example": "Every participant submitted their feedback."
+      },
+      "ambiguous_antecedents": {
+        "rule": "Flag as ambiguity when multiple same-gender nominals precede pronoun within governing category",
+        "example_ambiguous": "Bob told Jim that he was chosen.",
+        "correction": "Bob told Jim that Jim was chosen (or rewrite direct speech)."
+      },
+      "binding_principles_chomsky": {
+        "Principle_A": "An anaphor (reflexive/reciprocal: himself, themselves, each other) must be bound in its local domain",
+        "Principle_B": "A pronominal (him, her, them) must be free in its local domain",
+        "Principle_C": "An R-expression (proper name, lexical noun phrase) must be free everywhere"
+      }
+    }
+  }
+}

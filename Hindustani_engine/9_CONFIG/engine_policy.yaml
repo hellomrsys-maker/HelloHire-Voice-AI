@@ -1,0 +1,31 @@
+# Hindustani Engine Operational Policy & Tolerances
+engine:
+  name: "HindustaniEngine"
+  version: "1.0.0"
+  iso_639_1: "hi" # covers "ur" via unified Hindustani core
+  iso_639_3: "hin" # and "urd"
+  family: "Indo-European"
+  branch: "Indo-Aryan"
+
+morphology:
+  enforce_split_ergativity: true
+  enforce_oblique_case: true
+  enforce_honorific_agreement: true
+  allow_eastern_ne_omission: false
+
+pragmatics:
+  default_address_tier: "aap" # "aap" (Tier 3 formal) | "tum" (Tier 2 familiar) | "tu" (Tier 1 intimate)
+  honorific_particle_weight: 0.15
+
+memory:
+  zero_bridge_amsv: true
+  state_vector_bytes: 64
+  offsets:
+    phonology: [0, 16, 24]
+    syntax: [18, 52]
+    pragmatics: [22, 54]
+    editorial: [20, 26]
+
+dialects:
+  active: "standard_khariboli" # "standard_khariboli" | "bambaiya" | "dakhini" | "eastern"
+  script_mode: "dual" # "devanagari" | "nastaliq" | "roman_itrans" | "dual"

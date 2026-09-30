@@ -1,0 +1,44 @@
+# Layer 9: Engine Policy & Operational Configuration - Bengali Engine (বাংলা)
+version: "1.0.0"
+language: "bn"
+language_name: "Bengali"
+script: "Bengali (বাংলা লিপি)"
+typology:
+  canonical_word_order: "SOV"
+  alignment: "nominative-accusative"
+  head_directionality: "head-final"
+  pro_drop: true
+  ergative: false
+
+morphology_policy:
+  enforce_classifier_concord: true
+  enforce_ovisruti_vowel_harmony: true
+  allow_stem_apophony: true
+  prohibit_guru_chondali_mixing: true
+
+pragmatics_policy:
+  default_address_tier: "familiar"
+  honorific_hierarchy:
+    superior: "aapni"
+    familiar: "tumi"
+    intimate: "tui"
+  strict_pragmatic_concordance: true
+
+orthography_policy:
+  enforce_bengali_dari: true
+  dari_glyph: "।"
+  normalize_chandrabindu: true
+  handle_hasanta_splits: true
+
+zero_bridge_amsv:
+  memory_size_bytes: 64
+  offsets:
+    phoneme_state: [0, 7]
+    prosody_state: [8, 15]
+    capability_1_syntax: 18       # 0x12
+    capability_2_editorial: 20    # 0x14
+    capability_3_pragmatics: 22   # 0x16
+    capability_4_phonology: 24    # 0x18
+    capability_5_style: 26        # 0x1A
+    global_structural_score: 52   # 0x34
+    global_register_score: 54     # 0x36

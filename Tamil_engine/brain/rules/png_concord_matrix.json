@@ -1,0 +1,96 @@
+{
+  "png_suffixes": {
+    "1SG": {
+      "pronoun": "நான்",
+      "suffix": "ஏன்",
+      "translit": "-ēṉ",
+      "person": 1,
+      "number": "singular",
+      "gender": "common",
+      "example_past": "செய்தேன்"
+    },
+    "1PL": {
+      "pronoun": "நாம் / நாங்கள்",
+      "suffix": "ஓம்",
+      "translit": "-ōm",
+      "person": 1,
+      "number": "plural",
+      "gender": "common",
+      "example_past": "செய்தோம்"
+    },
+    "2SG": {
+      "pronoun": "நீ",
+      "suffix": "ஆய்",
+      "translit": "-āy",
+      "person": 2,
+      "number": "singular",
+      "gender": "common",
+      "deference": "informal",
+      "example_past": "செய்தாய்"
+    },
+    "2PL": {
+      "pronoun": "நீங்கள்",
+      "suffix": "ீர்கள்",
+      "translit": "-īrkaḷ",
+      "person": 2,
+      "number": "plural",
+      "gender": "common",
+      "deference": "honorific_or_plural",
+      "example_past": "செய்தீர்கள்"
+    },
+    "3MSG": {
+      "pronoun": "அவன்",
+      "suffix": "ஆன்",
+      "translit": "-āṉ",
+      "person": 3,
+      "number": "singular",
+      "gender": "masculine",
+      "example_past": "செய்தான்"
+    },
+    "3FSG": {
+      "pronoun": "அவள்",
+      "suffix": "ஆள்",
+      "translit": "-āḷ",
+      "person": 3,
+      "number": "singular",
+      "gender": "feminine",
+      "example_past": "செய்தாள்"
+    },
+    "3HON": {
+      "pronoun": "அவர்",
+      "suffix": "ஆர்",
+      "translit": "-ār",
+      "person": 3,
+      "number": "singular",
+      "gender": "honorific",
+      "example_past": "செய்தார்"
+    },
+    "3PL": {
+      "pronoun": "அவர்கள்",
+      "suffix": "ார்கள்",
+      "translit": "-ārkaḷ",
+      "person": 3,
+      "number": "plural",
+      "gender": "epicene",
+      "example_past": "செய்தார்கள்"
+    },
+    "3NSG": {
+      "pronoun": "அது",
+      "suffix": "அது",
+      "translit": "-atu",
+      "person": 3,
+      "number": "singular",
+      "gender": "neuter",
+      "example_past": "செய்தது"
+    },
+    "3NPL": {
+      "pronoun": "அவை",
+      "suffix": "அன",
+      "translit": "-aṉa",
+      "person": 3,
+      "number": "plural",
+      "gender": "neuter",
+      "example_past": "செய்தன"
+    }
+  }
+}

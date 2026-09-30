@@ -1,0 +1,40 @@
+{
+  "x_bar_theory_schema": {
+    "principles": [
+      "Maximal projection: XP -> (Specifier) X'",
+      "Intermediate projection: X' -> X' (Adjunct) | (Adjunct) X'",
+      "Head-complement projection: X' -> X (Complement)"
+    ],
+    "phrase_structures": {
+      "IP": {
+        "rule": "IP -> NP I'",
+        "I_prime": "I' -> I VP",
+        "description": "Inflection phrase (Sentence level with tense/agreement)"
+      },
+      "CP": {
+        "rule": "CP -> (Spec) C'",
+        "C_prime": "C' -> C IP",
+        "description": "Complementizer phrase (Subordination, interrogatives)"
+      },
+      "DP_NP": {
+        "DP_rule": "DP -> (D') D NP",
+        "NP_rule": "NP -> (AdjP) N'",
+        "N_prime": "N' -> N (PP)",
+        "description": "Determiner and Noun phrases with recursive adjuncts"
+      },
+      "VP": {
+        "rule": "VP -> (Spec) V'",
+        "V_prime": "V' -> V (NP) (PP) (CP)",
+        "description": "Verb phrase with subcategorization frames"
+      },
+      "PP": {
+        "rule": "PP -> P' -> P DP",
+        "description": "Prepositional phrase"
+      },
+      "AdjP": {
+        "rule": "AdjP -> (AdvP) Adj' -> Adj",
+        "description": "Adjective phrase"
+      }
+    }
+  }
+}

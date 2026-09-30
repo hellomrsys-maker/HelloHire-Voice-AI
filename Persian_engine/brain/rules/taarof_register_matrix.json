@@ -1,0 +1,73 @@
+{
+  "engine": "Persian",
+  "version": "1.0.0",
+  "taarof_matrix": {
+    "register_tiers": {
+      "tier_1_informal": {
+        "name": "صمیمانه (Intimate / Informal)",
+        "second_person_pronoun": "تو (to)",
+        "first_person_pronoun": "من (man)",
+        "tone": "colloquial_friendly",
+        "verbal_style": "plain"
+      },
+      "tier_2_formal": {
+        "name": "محترمانه (Respectful / Formal)",
+        "second_person_pronoun": "شما (shomā)",
+        "first_person_pronoun": "من (man) / ما (mā)",
+        "tone": "corporate_administrative",
+        "verbal_style": "polite"
+      },
+      "tier_3_high_taarof": {
+        "name": "تعارف رسمی و درباری (High Courteous / Diplomatic)",
+        "second_person_pronoun": "جناب‌عالی / سرکار (jenāb-e āli / sarkār)",
+        "first_person_pronoun": "بنده / مخلص (bandeh / mokhlec)",
+        "tone": "ceremonial_deference",
+        "verbal_style": "honorific_elevation"
+      }
+    },
+    "verb_substitutions": [
+      {
+        "neutral_verb": "گفتن",
+        "other_elevating": "فرمودن",
+        "self_lowering": "عرض کردن",
+        "meaning": "to say"
+      },
+      {
+        "neutral_verb": "آمدن",
+        "other_elevating": "تشریف آوردن",
+        "self_lowering": "خدمت رسیدن",
+        "meaning": "to come"
+      },
+      {
+        "neutral_verb": "رفتن",
+        "other_elevating": "تشریف بردن",
+        "self_lowering": "مرخص شدن",
+        "meaning": "to go"
+      },
+      {
+        "neutral_verb": "دادن",
+        "other_elevating": "لطف کردن",
+        "self_lowering": "تقدیم کردن",
+        "meaning": "to give"
+      },
+      {
+        "neutral_verb": "دانستن",
+        "other_elevating": "استحضار داشتن",
+        "self_lowering": "اطلاع داشتن",
+        "meaning": "to know"
+      }
+    ],
+    "epistolary_formulas": {
+      "salutations": {
+        "high_formal": "جناب آقای دکتر ...، ریاست محترم ...؛ با سلام و احترام",
+        "formal": "مدیریت محترم شرکت ...؛ با درود و احترام",
+        "informal": "دوست عزیز و گرامی، سلام"
+      },
+      "closings": {
+        "high_formal": "با تجدید احترام و سپاس فراوان",
+        "formal": "با آرزوی توفیق الهی و تشکر",
+        "informal": "قربانت / با آرزوی بهترین‌ها"
+      }
+    }
+  }
+}

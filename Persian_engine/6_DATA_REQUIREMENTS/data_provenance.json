@@ -1,0 +1,15 @@
+{
+  "engine": "Persian_engine",
+  "generated_utc": "2026-09-29T11:57:32Z",
+  "sources": [
+    {
+      "source": "UniversalDependencies(local)",
+      "treebank": "UD_Persian-Seraji",
+      "archive": "ud-treebanks-v2.18.tgz",
+      "license": "#LICENSE",
+      "status": "ok",
+      "count": 400
+    }
+  ],
+  "compliance_note": "Open-source data ingested for supervised Sub-AI training. Retain the attributions above when distributing."
+}

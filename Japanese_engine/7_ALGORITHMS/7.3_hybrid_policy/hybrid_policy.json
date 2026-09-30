@@ -1,0 +1,18 @@
+{
+  "hybrid_policy": {
+    "neural_layer_responsibilities": [
+      "Open-vocabulary semantic understanding and zero-shot reasoning",
+      "Contextual homophone disambiguation in conversational transcripts",
+      "Implicit intent classification and high-context Sasshi resolution",
+      "Continuous text generation and translation hypothesis scoring"
+    ],
+    "rule_fst_layer_responsibilities": [
+      "Strict grammatical Katsuyou verb conjugation (100% deterministic)",
+      "Adjective inflection and sound euphony (Onbin) generation",
+      "Keigo honorific elevation and anti-pattern blocking (double honorifics)",
+      "Numerical classifier agreement (counter constraints per shape)",
+      "Orthographic punctuation integrity and Kagikakko balancing"
+    ],
+    "arbitration_rule": "The deterministic rule/FST layer acts as a hard filter on neural generator outputs. Any neural generation that violates Keigo concord or introduces ungrammatical Katsuyou is rejected or auto-corrected."
+  }
+}

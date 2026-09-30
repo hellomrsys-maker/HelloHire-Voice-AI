@@ -1,0 +1,918 @@
+# =============================================================================
+# language_engines/German_engine.training.yaml
+# CANONICAL TRAINING FILE — German Language Engine
+# Single-File Language Engine AI Specification — all 19 sections.
+# =============================================================================
+
+# =============================================================================
+# 1. ENGINE IDENTITY
+# =============================================================================
+
+engine_identity:
+  engine_id:                    "german_engine_v1"
+  language_name:                "German"
+  language_code:                "de"
+  language_family:              "Indo-European › Germanic › West Germanic"
+  writing_systems:
+    - name: Latin
+      direction: left_to_right
+      case_sensitive: true
+      special_characters:
+        - { mark: "ä", name: "a_umlaut", IPA: "ɛ", example: "Mädchen" }
+        - { mark: "ö", name: "o_umlaut", IPA: "ø", example: "schön" }
+        - { mark: "ü", name: "u_umlaut", IPA: "y", example: "über" }
+        - { mark: "Ä", name: "A_umlaut_uppercase", note: "uppercase form of ä" }
+        - { mark: "Ö", name: "O_umlaut_uppercase", note: "uppercase form of ö" }
+        - { mark: "Ü", name: "U_umlaut_uppercase", note: "uppercase form of ü" }
+        - { mark: "ß", name: "Eszett_or_scharfes_S", IPA: "s", note: "used after long vowels and diphthongs; replaced by ss in Switzerland" }
+      noun_capitalization:      "All nouns capitalized regardless of position — fundamental German rule"
+  supported_variants:
+    - code: de-DE
+      name: "Standard German (Hochdeutsch)"
+      reference_accent: "Standard German / Bühnendeutsch"
+    - code: de-AT
+      name: "Austrian German"
+      reference_accent: "Österreichisches Hochdeutsch"
+      notes: "Different vocabulary (e.g. Jänner for January, Erdapfel for potato); distinct formality norms"
+    - code: de-CH
+      name: "Swiss Standard German"
+      reference_accent: "Schweizer Hochdeutsch"
+      notes: "No ß — always written as ss; different vocabulary; Swiss dialects (Schweizerdeutsch) used in speech"
+  canonical_training_file:      "language_engines/German_engine.training.yaml"
+  file_format:                  "YAML"
+  specification_version:        "1.0"
+  status:                       "active"
+
+# =============================================================================
+# 2. ARTIFICIAL INTELLIGENCE CORE
+# =============================================================================
+
+artificial_intelligence_core:
+  status: active
+
+  intent_recognition:
+    strategy:                   "neural_plus_rule_based"
+    confidence_threshold:       0.50
+    fallback_to_unknown:        true
+    intent_taxonomy:
+      - greet
+      - greet_and_identify
+      - farewell
+      - acknowledge
+      - ask_question
+      - answer_question
+      - request_action
+      - express_emotion
+      - provide_information
+      - creative_generate
+      - translate
+      - summarize
+      - teach
+      - correct_error
+
+  context_tracking:
+    max_context_tokens:         8192
+    case_agreement_tracking:    true
+    du_Sie_register_tracking:   true
+
+  error_detection:
+    grammar_error_detection:    true
+    case_agreement_check:       true
+    noun_capitalization_check:  true
+    umlaut_accuracy_check:      true
+    verb_position_V2_check:     true
+
+  self_correction:
+    enabled:                    true
+    correction_passes:          2
+
+  safety_and_privacy:
+    content_filter:             true
+    filter_threshold:           0.85
+
+# =============================================================================
+# 3. BRAIN
+# =============================================================================
+
+brain:
+  status: active
+
+  perception:
+    text_input:
+      encoding:                 "UTF-8"
+      normalization:            "NFC"
+      max_length:               8192
+      umlaut_normalization:     false
+      eszett_preservation:      true
+
+  understanding:
+    tokenization:
+      strategy:                 "BPE"
+      vocab_size:               52000
+      compound_word_splitting:  true
+    morphology:
+      lemmatization:            true
+      pos_tagging:              true
+      case_annotation:          true
+      gender_annotation:        true
+      output_format:            "Universal_Dependencies_v2"
+    syntax:
+      parser:                   "dependency_neural"
+      word_order:               "V2_main_clause_SOV_subordinate"
+      verb_second_constraint:   true
+      separable_verbs:          true
+
+  memory:
+    current_sentence_memory:
+      type:                     "working"
+      max_tokens:               512
+      case_stack:               "tracks_case_assignments_within_sentence"
+    approved_long_term_memory:
+      type:                     "semantic"
+      max_concepts:             2097152
+      requires_explicit_approval: true
+
+  generation:
+    grammar_realization:
+      case_agreement:           true
+      noun_capitalization:      true
+      verb_position_V2:         true
+      separable_verb_splitting: true
+      compound_noun_formation:  true
+
+# =============================================================================
+# 4. SKILLS
+# =============================================================================
+
+skills:
+  status: active
+
+  reading:    { enabled: true, comprehension_depth: "deep" }
+  writing:    { enabled: true, max_output_tokens: 10000 }
+  listening:  { enabled: true, real_time: true }
+  speaking:   { enabled: true, prosody_control: true }
+  pronunciation:
+    enabled:                    true
+    standard:                   "IPA"
+    umlaut_pronunciation:       true
+    eszett_pronunciation:       true
+  translation:
+    enabled:                    true
+    bridge_languages:           ["en", "fr", "es", "ja", "ar", "ta"]
+  teaching:   { enabled: true, scaffolding: true }
+
+# =============================================================================
+# 5. CREATIVITY
+# =============================================================================
+
+creativity:
+  status: active
+
+  idea_generation:
+    enabled:                    true
+    divergence_level:           "high"
+    compound_noun_creativity:   "German compound nouns allow creative portmanteau concepts"
+
+  metaphor_generation:
+    enabled:                    true
+    metaphor_bank:
+      Zeit:
+        - { metaphor: "Zeit ist Geld",           effect: "Ressource_Framing" }
+        - { metaphor: "Zeit ist ein Fluss",       effect: "Fluss_Framing" }
+        - { metaphor: "Zeit heilt alle Wunden",   effect: "Heilungs_Framing" }
+      Geist:
+        - { metaphor: "der Geist ist ein Garten",  effect: "Kultivierungs_Framing" }
+        - { metaphor: "der Geist ist ein Ozean",   effect: "Tiefe_Framing" }
+      Sprache:
+        - { metaphor: "Sprache ist eine Brücke",   effect: "Verbindungs_Framing" }
+        - { metaphor: "Sprache ist ein Werkzeug",  effect: "Nutzungs_Framing" }
+
+  controlled_variation:
+    enabled:                    true
+    compound_noun_generation:   true
+    max_variants_per_item:      8
+
+  originality_check:
+    method:                     "jaccard_similarity"
+    similarity_threshold:       0.70
+
+# =============================================================================
+# 6. LANGUAGE RULES
+# =============================================================================
+
+language_rules:
+  status: active
+
+  orthography:
+    script:                     "Latin"
+    all_nouns_capitalized:      true
+    sentence_initial_cap:       true
+    umlauts_required:           true
+    eszett_rule:                "use ß after long vowels and diphthongs; ss after short vowels"
+    swiss_variant_exception:    "Swiss German always uses ss — no ß"
+
+  morphology:
+    grammatical_gender:
+      values:                   ["masculine", "feminine", "neuter"]
+      assignment:               "largely_arbitrary_must_be_memorised"
+      tip:                      "Der (m), die (f/pl), das (n)"
+    grammatical_case:
+      values:                   ["nominative", "accusative", "dative", "genitive"]
+      nominative:               "subject of sentence"
+      accusative:               "direct object"
+      dative:                   "indirect object"
+      genitive:                 "possession or relationship"
+    number:
+      values:                   ["singular", "plural"]
+      plural_formation:         "highly_irregular — must be memorized per noun; 8+ patterns exist"
+
+    articles:
+      definite:
+        nominative:             { m: "der", f: "die", n: "das", pl: "die" }
+        accusative:             { m: "den", f: "die", n: "das", pl: "die" }
+        dative:                 { m: "dem", f: "der", n: "dem", pl: "den" }
+        genitive:               { m: "des", f: "der", n: "des", pl: "der" }
+      indefinite:
+        nominative:             { m: "ein", f: "eine", n: "ein" }
+        accusative:             { m: "einen", f: "eine", n: "ein" }
+        dative:                 { m: "einem", f: "einer", n: "einem" }
+        genitive:               { m: "eines", f: "einer", n: "eines" }
+
+    inflection:
+      verbs:
+        tenses_supported:
+          - Präsens
+          - Präteritum
+          - Perfekt
+          - Plusquamperfekt
+          - Futur_I
+          - Futur_II
+          - Konjunktiv_I
+          - Konjunktiv_II
+          - Imperativ
+        auxiliary_verbs:
+          haben:                "default auxiliary for most verbs in Perfekt"
+          sein:                 "used for verbs of motion/state change and sein/bleiben/werden"
+          werden:               "future tense and passive voice auxiliary"
+        separable_verbs:
+          description:          "Prefix splits from verb in main clause; reunites in subordinate clause"
+          example:              "anrufen → Ich rufe dich an (main) / weil ich dich anrufe (subordinate)"
+
+    irregular_verbs:
+      - { infinitive: "sein",   präsens: ["bin","bist","ist","sind","seid","sind"],    prät: "war", pp: "gewesen",  aux: "sein" }
+      - { infinitive: "haben",  präsens: ["habe","hast","hat","haben","habt","haben"], prät: "hatte", pp: "gehabt", aux: "haben" }
+      - { infinitive: "werden", präsens: ["werde","wirst","wird","werden","werdet","werden"], prät: "wurde", pp: "geworden", aux: "sein" }
+      - { infinitive: "gehen",  präsens: ["gehe","gehst","geht","gehen","geht","gehen"], prät: "ging", pp: "gegangen", aux: "sein" }
+      - { infinitive: "kommen", präsens: ["komme","kommst","kommt","kommen","kommt","kommen"], prät: "kam", pp: "gekommen", aux: "sein" }
+      - { infinitive: "machen", präsens: ["mache","machst","macht","machen","macht","machen"], prät: "machte", pp: "gemacht", aux: "haben" }
+      - { infinitive: "wissen", präsens: ["weiß","weißt","weiß","wissen","wisst","wissen"], prät: "wusste", pp: "gewusst", aux: "haben" }
+      - { infinitive: "können", präsens: ["kann","kannst","kann","können","könnt","können"], prät: "konnte", pp: "gekonnt", aux: "haben" }
+      - { infinitive: "müssen", präsens: ["muss","musst","muss","müssen","müsst","müssen"], prät: "musste", pp: "gemusst", aux: "haben" }
+      - { infinitive: "wollen", präsens: ["will","willst","will","wollen","wollt","wollen"], prät: "wollte", pp: "gewollt",  aux: "haben" }
+
+  phonology:
+    umlauts:
+      ä:                        "[ɛ] — like 'e' in 'bet'"
+      ö:                        "[ø] — rounded front vowel, no English equivalent"
+      ü:                        "[y] — rounded front vowel, like French 'u'"
+    eszett:
+      pronunciation:            "[s] — same as 'ss'"
+    ch:
+      after_front_vowel_or_consonant: "[ç] — like 'h' in 'human' but softer (ich)"
+      after_back_vowel:         "[x] — velar fricative (Bach)"
+    r:
+      standard:                 "[ʁ] — uvular, like French r; or vocalised [ɐ] in word-final/pre-consonant position"
+
+  syntax:
+    word_order:
+      main_clause:              "V2 (Verb Second) — finite verb always occupies position 2"
+      subordinate_clause:       "SOV (Subject-Object-Verb) — finite verb moves to end"
+      V2_examples:
+        - "Ich lerne Deutsch. (SV)"
+        - "Heute lerne ich Deutsch. (AdvV2 — adverb in position 1)"
+        - "Das Buch lese ich. (OV2 — object fronted)"
+    negation:
+      nicht:                    "negates verbs, adjectives, adverbs — placed before what it negates"
+      kein:                     "negates nouns — replaces indefinite article"
+      examples:
+        - "Ich spreche nicht Deutsch."
+        - "Ich habe kein Buch."
+    politeness:
+      du:                       "informal singular — family, friends, children, peers"
+      ihr:                      "informal plural — group of friends/family"
+      Sie:                      "formal singular AND plural — always capitalised; 3rd person plural verb forms"
+    compound_nouns:
+      rule:                     "German can combine unlimited nouns into one word"
+      examples:
+        - "Donaudampfschifffahrtsgesellschaft"
+        - "Rindfleischetikettierungsüberwachungsaufgabenübertragungsgesetz"
+      gender_rule:              "Compound noun takes gender of its final (head) component"
+    separable_verbs_list_sample:
+      - { verb: "anrufen",    prefix: "an",  meaning: "to call (by phone)" }
+      - { verb: "aufmachen",  prefix: "auf", meaning: "to open" }
+      - { verb: "aufstehen",  prefix: "auf", meaning: "to get up" }
+      - { verb: "einladen",   prefix: "ein", meaning: "to invite" }
+      - { verb: "vorstellen", prefix: "vor", meaning: "to introduce / to imagine" }
+      - { verb: "mitbringen", prefix: "mit", meaning: "to bring along" }
+
+  punctuation:
+    sentence_ending:            [".", "!", "?", "…"]
+    quotation:                  "typographic_guillemets_or_low_high"
+    german_quotes:              ["\u201E", "\u201C"]
+    comma_before_subordinate:   "mandatory — comma required before subordinating conjunctions (weil, dass, obwohl, etc.)"
+
+# =============================================================================
+# 7. SENTENCE PROCESSING
+# =============================================================================
+
+sentence_processing:
+  status: active
+
+  component_families:
+    - id: "greeting_formal"
+      register: "formal"
+      slots:
+        salutation:             ["Guten Morgen", "Guten Tag", "Guten Abend"]
+        addressee_title:        ["Herr", "Frau"]
+        name:                   ["[LASTNAME]"]
+      templates:
+        - "{salutation}, {addressee_title} {name}."
+        - "{salutation}, {addressee_title} {name}. Wie geht es Ihnen?"
+
+    - id: "greeting_informal"
+      register: "informal"
+      slots:
+        salutation:             ["Hallo", "Hi", "Hey", "Servus", "Moin"]
+        name:                   ["[FIRSTNAME]", ""]
+      templates:
+        - "{salutation}, {name}!"
+        - "{salutation}! Wie geht's?"
+
+    - id: "farewell_formal"
+      register: "formal"
+      slots:
+        valediction:            ["Auf Wiedersehen", "Auf Wiederhören", "Leben Sie wohl"]
+        addressee_title:        ["Herr", "Frau", ""]
+        name:                   ["[LASTNAME]", ""]
+      templates:
+        - "{valediction}, {addressee_title} {name}."
+        - "{valediction}."
+
+    - id: "farewell_informal"
+      register: "informal"
+      slots:
+        valediction:            ["Tschüss", "Ciao", "Bis später", "Bis bald", "Mach's gut"]
+      templates:
+        - "{valediction}!"
+        - "{valediction}, {name}!"
+
+    - id: "gratitude_expression"
+      register: "any"
+      slots:
+        thanks:                 ["Danke", "Vielen Dank", "Herzlichen Dank", "Danke sehr", "Ich danke Ihnen", "Ich danke dir"]
+        reason:                 ["", "für Ihre Hilfe", "für alles", "für deine Hilfe"]
+      templates:
+        - "{thanks}."
+        - "{thanks} {reason}."
+
+    - id: "apology_expression"
+      register: "any"
+      slots:
+        apology:                ["Entschuldigung", "Entschuldigen Sie", "Es tut mir leid", "Verzeihung", "Sorry"]
+        reason:                 ["", "für die Unannehmlichkeiten", "für die Verspätung", "für meinen Fehler"]
+      templates:
+        - "{apology}."
+        - "{apology} {reason}."
+
+    - id: "introduction_self"
+      register: "any"
+      slots:
+        verb_phrase:            ["Ich heiße", "Mein Name ist", "Ich bin"]
+        name:                   ["[NAME]"]
+      templates:
+        - "{verb_phrase} {name}."
+
+    - id: "wellbeing_inquiry_formal"
+      register: "formal"
+      slots:
+        question:               ["Wie geht es Ihnen?", "Wie geht's Ihnen?"]
+        response:               ["Gut, danke.", "Sehr gut, danke. Und Ihnen?"]
+      templates:
+        - "{question}"
+
+    - id: "wellbeing_inquiry_informal"
+      register: "informal"
+      slots:
+        question:               ["Wie geht's?", "Alles gut?", "Wie läuft's?"]
+      templates:
+        - "{question}"
+
+# =============================================================================
+# 8. SENTENCE GENERATION
+# =============================================================================
+
+sentence_generation:
+  status: active
+
+  strategy:                     "component_family_template_fill"
+  agreement_pipeline:
+    - step: "select_component_family"
+    - step: "fill_slots_from_context"
+    - step: "assign_grammatical_case"
+    - step: "apply_article_declension"
+    - step: "apply_adjective_declension"
+    - step: "apply_noun_capitalization"
+    - step: "apply_verb_second_constraint"
+    - step: "split_separable_verbs"
+    - step: "apply_register_du_Sie"
+    - step: "validate_grammar"
+    - step: "safety_check"
+    - step: "emit_utterance"
+
+  register_engine:
+    du_register:
+      description:              "Informal — family, close friends, children, students with each other"
+      pronoun:                  "du/dich/dir/dein"
+      verb_forms:               "2nd_person_singular"
+    Sie_register:
+      description:              "Formal — strangers, business contexts, authority figures; ALWAYS capitalized"
+      pronoun:                  "Sie/Sich/Ihr"
+      verb_forms:               "3rd_person_plural_grammatically"
+    ihr_register:
+      description:              "Informal plural — group of friends/family"
+      pronoun:                  "ihr/euch/euer"
+
+# =============================================================================
+# 9. SENTENCE BREAKDOWN
+# =============================================================================
+
+sentence_breakdown:
+  status: active
+
+  pipeline:
+    - step: "raw_text_input"
+    - step: "unicode_normalization_NFC"
+    - step: "umlaut_and_eszett_detection"
+    - step: "noun_capitalization_parsing"
+    - step: "sentence_boundary_detection"
+    - step: "tokenization_BPE_with_compound_splitting"
+    - step: "morphological_analysis"
+    - step: "case_assignment"
+    - step: "gender_annotation"
+    - step: "POS_tagging_UD"
+    - step: "verb_position_analysis_V2_SOV"
+    - step: "separable_verb_reconstruction"
+    - step: "register_classification_du_Sie"
+    - step: "component_family_identification"
+    - step: "slot_extraction"
+    - step: "pragmatic_analysis"
+    - step: "output_structured_representation"
+
+  output_schema:
+    sentence_id:                "UUID"
+    raw_text:                   "string"
+    language:                   "de"
+    variant:                    "de-DE|de-AT|de-CH"
+    tokens:                     "list[Token]"
+    morphology:                 "list[MorphTag]"
+    case_assignments:           "dict[noun_token, nominative|accusative|dative|genitive]"
+    syntax_tree:                "DependencyTree"
+    verb_position:              "V2|SOV"
+    register:                   "du|Sie|neutral"
+    pragmatic_intent:           "string"
+
+# =============================================================================
+# 10. VOCABULARY
+# =============================================================================
+
+vocabulary:
+  status: active
+
+  core_vocabulary_size:         12000
+  extended_vocabulary_size:     70000
+
+  false_friends_with_english:
+    - { german: "also",       false_meaning: "also/too", true_meaning: "so/therefore/well" }
+    - { german: "bald",       false_meaning: "bald",     true_meaning: "soon" }
+    - { german: "blank",      false_meaning: "blank",    true_meaning: "shiny/broke (broke = kein Geld)" }
+    - { german: "Chef",       false_meaning: "chef",     true_meaning: "boss/manager" }
+    - { german: "Gift",       false_meaning: "gift",     true_meaning: "poison" }
+    - { german: "Kind",       false_meaning: "kind",     true_meaning: "child" }
+    - { german: "komisch",    false_meaning: "comic",    true_meaning: "strange/odd" }
+    - { german: "Mist",       false_meaning: "mist",     true_meaning: "dung/rubbish" }
+    - { german: "Rock",       false_meaning: "rock",     true_meaning: "skirt" }
+    - { german: "sensibel",   false_meaning: "sensible", true_meaning: "sensitive" }
+
+  compound_noun_examples:
+    - { compound: "Fingerspitzengefühl", components: "Finger+Spitze+Gefühl", meaning: "tact / delicate touch" }
+    - { compound: "Weltanschauung",      components: "Welt+Anschauung",      meaning: "worldview / philosophy of life" }
+    - { compound: "Verschlimmbessern",   components: "Verschlimm+bessern",   meaning: "making worse while trying to improve" }
+    - { compound: "Fernweh",             components: "Fern+Weh",             meaning: "wanderlust / longing for distant places" }
+    - { compound: "Gemütlichkeit",       components: "Gemüt+lich+keit",       meaning: "cosy warmth / conviviality" }
+
+# =============================================================================
+# 11. PRONUNCIATION
+# =============================================================================
+
+pronunciation:
+  status: active
+
+  standard:                     "IPA"
+  reference_accent:             "Standard German / Bühnendeutsch"
+
+  vowel_chart:
+    - { grapheme: "a",   IPA: "a",  example: "Tag" }
+    - { grapheme: "ä",   IPA: "ɛ",  example: "Mädchen" }
+    - { grapheme: "e",   IPA: "e/ɛ", example: "See/Bett" }
+    - { grapheme: "i",   IPA: "ɪ",  example: "mit" }
+    - { grapheme: "ie",  IPA: "iː", example: "viel" }
+    - { grapheme: "o",   IPA: "o",  example: "Boot" }
+    - { grapheme: "ö",   IPA: "øː/œ", example: "schön/öffnen" }
+    - { grapheme: "u",   IPA: "ʊ",  example: "Mutter" }
+    - { grapheme: "ü",   IPA: "yː/ʏ", example: "über/Hütte" }
+
+  consonant_highlights:
+    - { grapheme: "ch",  IPA: "ç/x",  example: "ich/Bach",   note: "front vs back ch" }
+    - { grapheme: "r",   IPA: "ʁ/ɐ",  example: "reden/Uhr",  note: "uvular or vocalic" }
+    - { grapheme: "ß",   IPA: "s",    example: "Straße" }
+    - { grapheme: "z",   IPA: "ts",   example: "Zeit" }
+    - { grapheme: "sp/st", IPA: "ʃp/ʃt", example: "Sprache/Stein", note: "at start of syllable" }
+    - { grapheme: "v",   IPA: "f",    example: "Vater",       note: "mostly [f]; [v] in foreign words" }
+    - { grapheme: "w",   IPA: "v",    example: "Wasser" }
+
+# =============================================================================
+# 12. MEANING
+# =============================================================================
+
+meaning:
+  status: active
+
+  grammatical_meaning:
+    tense_aspect_mood:
+      - { form: "Präsens",         meaning: "present_or_near_future" }
+      - { form: "Präteritum",      meaning: "narrative_past_written_or_formal" }
+      - { form: "Perfekt",         meaning: "conversational_past_spoken" }
+      - { form: "Plusquamperfekt", meaning: "past_before_another_past" }
+      - { form: "Futur_I",         meaning: "future_or_assumption" }
+      - { form: "Konjunktiv_II",   meaning: "hypothetical_or_polite_request" }
+    case_meaning:
+      nominative:               "sentence subject — answers Wer/Was?"
+      accusative:               "direct object — answers Wen/Was?"
+      dative:                   "indirect object — answers Wem?"
+      genitive:                 "possession — answers Wessen?"
+
+# =============================================================================
+# 13. PRAGMATICS
+# =============================================================================
+
+pragmatics:
+  status: active
+
+  speech_acts:
+    - asserting
+    - questioning
+    - requesting
+    - greeting
+    - farewell
+    - thanking
+    - apologising
+    - complimenting
+    - complaining
+    - refusing
+    - agreeing
+    - disagreeing
+
+  politeness_system:
+    du_Sie_distinction:
+      du:         "Informal — family, close friends, children, young adults among peers"
+      Sie:        "Formal — always capitalised; strangers, colleagues without prior agreement, authority"
+      transition: "Switching to du requires explicit Angebot (offer): 'Wir können gern du sagen'"
+    honorifics:
+      Herr:       "Mr. / Sir — used with Nachname"
+      Frau:       "Ms. / Mrs. / Madam — used with Nachname (replaces Fräulein in modern usage)"
+    formulaic_politeness:
+      opening_formal:   ["Sehr geehrte Damen und Herren", "Sehr geehrter Herr [Name]", "Sehr geehrte Frau [Name]"]
+      opening_informal: ["Hallo", "Liebe/Lieber [Name]"]
+      closing_formal:   ["Mit freundlichen Grüßen", "Hochachtungsvoll"]
+      closing_informal: ["Viele Grüße", "Liebe Grüße", "Tschüss"]
+
+  cultural_context:
+    directness:               "German communication is relatively direct; beating around the bush may be seen as inefficient"
+    punctuality:              "Being on time is strongly valued — lateness without notice is considered rude"
+    Bitte:                    "Bitte means both 'please' and 'you're welcome' — context determines meaning"
+    privacy_culture:          "Personal questions about salary, age, or religion are not typically asked in formal settings"
+    regional_dialects:        "Bavarian (Servus), Berlinerisch, Kölsch, Swiss dialects differ substantially from Hochdeutsch"
+
+# =============================================================================
+# 14. TRAINING DATA
+# =============================================================================
+
+training_data:
+  - item_id:                    "de_td_001"
+    language:                   "de"
+    component_families:
+      - "greeting_formal"
+    slot_order:                 ["salutation", "addressee_title", "name"]
+    normalized_components:
+      salutation:               "Guten Tag"
+      addressee_title:          "Herr"
+      name:                     "Müller"
+    grammar_rules_used:
+      - "formal_register_Sie"
+      - "masculine_Herr_title"
+      - "greeting_time_appropriate_midday"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "de_td_002"
+    language:                   "de"
+    component_families:
+      - "greeting_informal"
+    slot_order:                 ["salutation", "name"]
+    normalized_components:
+      salutation:               "Hallo"
+      name:                     "Anna"
+    grammar_rules_used:
+      - "informal_register_du"
+      - "no_title_in_informal_address"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "de_td_003"
+    language:                   "de"
+    component_families:
+      - "farewell_formal"
+    slot_order:                 ["valediction", "addressee_title", "name"]
+    normalized_components:
+      valediction:              "Auf Wiedersehen"
+      addressee_title:          "Frau"
+      name:                     "Schmidt"
+    grammar_rules_used:
+      - "formal_register_Sie"
+      - "feminine_Frau_title"
+      - "auf_wiedersehen_standard_farewell"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "de_td_004"
+    language:                   "de"
+    component_families:
+      - "gratitude_expression"
+    slot_order:                 ["thanks", "reason"]
+    normalized_components:
+      thanks:                   "Vielen Dank"
+      reason:                   "für Ihre Hilfe"
+    grammar_rules_used:
+      - "formal_register_Sie"
+      - "akkusativ_für_Hilfe"
+      - "possessive_pronoun_Ihre_formal"
+    review_status:              "approved"
+    version:                    "1.0"
+
+  - item_id:                    "de_td_005"
+    language:                   "de"
+    component_families:
+      - "introduction_self"
+    slot_order:                 ["verb_phrase", "name"]
+    normalized_components:
+      verb_phrase:              "Ich heiße"
+      name:                     "Thomas Bauer"
+    grammar_rules_used:
+      - "first_person_singular_heißen"
+      - "full_name_in_self_introduction"
+      - "V2_word_order_ich_in_position_1"
+    review_status:              "approved"
+    version:                    "1.0"
+
+# =============================================================================
+# 15. EXAMPLES
+# =============================================================================
+
+examples:
+  - example_id:                 "de_ex_001"
+    training_item_ref:          "de_td_001"
+    expected_output:            "Guten Tag, Herr Müller."
+    component_family_used:      "greeting_formal"
+    slots_filled:
+      salutation:               "Guten Tag"
+      addressee_title:          "Herr"
+      name:                     "Müller"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Guten_Tag"
+      - "contains_Herr_not_Frau"
+      - "Müller_is_capitalized"
+      - "ends_with_period"
+
+  - example_id:                 "de_ex_002"
+    training_item_ref:          "de_td_002"
+    expected_output:            "Hallo, Anna!"
+    component_family_used:      "greeting_informal"
+    slots_filled:
+      salutation:               "Hallo"
+      name:                     "Anna"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Hallo"
+      - "contains_name_Anna"
+      - "ends_with_exclamation"
+
+  - example_id:                 "de_ex_003"
+    training_item_ref:          "de_td_003"
+    expected_output:            "Auf Wiedersehen, Frau Schmidt."
+    component_family_used:      "farewell_formal"
+    slots_filled:
+      valediction:              "Auf Wiedersehen"
+      addressee_title:          "Frau"
+      name:                     "Schmidt"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "output_starts_with_Auf_Wiedersehen"
+      - "contains_Frau_not_Herr"
+      - "Schmidt_capitalized"
+      - "ends_with_period"
+
+  - example_id:                 "de_ex_004"
+    training_item_ref:          "de_td_004"
+    expected_output:            "Vielen Dank für Ihre Hilfe."
+    component_family_used:      "gratitude_expression"
+    slots_filled:
+      thanks:                   "Vielen Dank"
+      reason:                   "für Ihre Hilfe"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "starts_with_Vielen_Dank"
+      - "contains_Ihre_capitalized_formal"
+      - "contains_Hilfe_capitalized_noun"
+      - "ends_with_period"
+
+  - example_id:                 "de_ex_005"
+    training_item_ref:          "de_td_005"
+    expected_output:            "Ich heiße Thomas Bauer."
+    component_family_used:      "introduction_self"
+    slots_filled:
+      verb_phrase:              "Ich heiße"
+      name:                     "Thomas Bauer"
+    is_regression_test:         true
+    regression_pass_criteria:
+      - "starts_with_Ich"
+      - "contains_heiße_with_eszett"
+      - "name_components_capitalized"
+      - "ends_with_period"
+
+# =============================================================================
+# 16. EVALUATION
+# =============================================================================
+
+evaluation:
+  - rule_id:                    "de_eval_001"
+    rule_type:                  "no_placeholder"
+    description:                "No TODO, STUB, or placeholder text in output"
+    parameters:                 {}
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "de_eval_002"
+    rule_type:                  "min_length"
+    parameters:
+      min_tokens:               1
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "de_eval_003"
+    rule_type:                  "max_length"
+    parameters:
+      max_tokens:               4096
+    threshold:                  1.0
+    blocking:                   false
+
+  - rule_id:                    "de_eval_004"
+    rule_type:                  "noun_capitalization"
+    description:                "All nouns in generated output must be capitalized"
+    parameters:
+      check_method:             "pos_tagger_noun_cap_check"
+    threshold:                  0.95
+    blocking:                   false
+
+  - rule_id:                    "de_eval_005"
+    rule_type:                  "slot_coverage"
+    description:                "All required slots must be filled"
+    parameters:
+      required_slots:           ["salutation", "valediction", "thanks", "verb_phrase"]
+    threshold:                  1.0
+    blocking:                   true
+
+  - rule_id:                    "de_eval_006"
+    rule_type:                  "umlaut_preservation"
+    description:                "Umlauts (ä ö ü) and ß must not be substituted with ae/oe/ue/ss in output"
+    parameters:
+      check_umlaut_substitution: true
+    threshold:                  0.98
+    blocking:                   false
+
+  - rule_id:                    "de_eval_007"
+    rule_type:                  "verb_position_V2"
+    description:                "In main clauses the finite verb must be in position 2"
+    parameters:
+      check_main_clause_V2:     true
+    threshold:                  0.90
+    blocking:                   false
+
+# =============================================================================
+# 17. MEMORY POLICY
+# =============================================================================
+
+memory_policy:
+  status: active
+
+  working_memory:
+    scope:                      "sentence_and_task"
+    max_tokens:                 512
+    case_agreement_stack:       "tracks_case_within_sentence"
+    register_tracking:          "du_Sie_persists_within_conversation"
+
+  episodic_memory:
+    scope:                      "session"
+    approved_events_only:       true
+
+  semantic_memory:
+    scope:                      "permanent"
+    requires_approval:          true
+
+  raw_dialogue_policy:
+    storage:                    "NEVER"
+
+# =============================================================================
+# 18. CONNECTIONS
+# =============================================================================
+
+connections:
+  status: active
+
+  engine_to_english:
+    type:                       "bridge"
+    target_engine:              "english_engine_v1"
+    link_file:                  "language_engines/English_engine.training.yaml"
+    relationship:               "translation_and_contrastive_learning"
+    note:                       "Closest major relative; strong vocabulary overlap; contrastive V2/word-order important"
+
+  engine_to_french:
+    type:                       "bridge"
+    target_engine:              "french_engine_v1"
+    link_file:                  "language_engines/French_engine.training.yaml"
+    relationship:               "Indo_European_contrastive"
+
+  engine_to_spanish:
+    type:                       "bridge"
+    target_engine:              "spanish_engine_v1"
+    link_file:                  "language_engines/Spanish_engine.training.yaml"
+    relationship:               "Indo_European_contrastive"
+
+  engine_to_arabic:
+    type:                       "bridge"
+    target_engine:              "arabic_engine_v1"
+    link_file:                  "language_engines/Arabic_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_japanese:
+    type:                       "bridge"
+    target_engine:              "japanese_engine_v1"
+    link_file:                  "language_engines/Japanese_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+  engine_to_tamil:
+    type:                       "bridge"
+    target_engine:              "tamil_engine_v1"
+    link_file:                  "language_engines/Tamil_engine.training.yaml"
+    relationship:               "typologically_distant_contrastive"
+
+# =============================================================================
+# 19. VERSION CONTROL
+# =============================================================================
+
+version_control:
+  current_version:              "1.0"
+  status:                       "active"
+
+  history:
+    - version:                  "0.1-scaffold"
+      date:                     "2025-01-01"
+      author:                   "polyglot_system_bootstrap"
+      change_summary:           "Initial scaffold with all 19 section stubs"
+      reason:                   "Project initialization"
+      approved_by:              "system"
+
+    - version:                  "1.0"
+      date:                     "2025-07-15"
+      author:                   "polyglot_engine_dev"
+      change_summary: >
+        Full population of all 19 sections to active status.
+        Added: 3 regional variants (de-DE, de-AT, de-CH), full 4-case system
+        with article declension tables, V2/SOV word order rules, separable verbs,
+        noun capitalization rule, compound noun system, du/Sie distinction,
+        Umlaut/Eszett rules, 10 irregular verbs, 10 false friends,
+        5 compound noun examples, full IPA vowel/consonant charts,
+        9 component families, 5 training items, 5 regression tests,
+        7 evaluation rules (including noun capitalization and V2 checks).
+      reason:                   "Promote German engine from scaffold to active"
+      approved_by:              "polyglot_engine_dev"

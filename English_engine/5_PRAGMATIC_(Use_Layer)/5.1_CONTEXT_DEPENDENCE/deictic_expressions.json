@@ -1,0 +1,25 @@
+{
+  "deictic_expressions": {
+    "person_deixis": {
+      "first_person": ["I", "me", "my", "mine", "we", "us", "our", "ours"],
+      "second_person": ["you", "your", "yours"],
+      "third_person": ["he", "him", "his", "she", "her", "it", "its", "they", "them", "their"]
+    },
+    "spatial_deixis": {
+      "proximal": ["here", "this", "these"],
+      "distal": ["there", "that", "those"],
+      "motion_oriented": ["come", "go", "bring", "take"]
+    },
+    "temporal_deixis": {
+      "relative_to_speech_time": ["now", "then", "today", "yesterday", "tomorrow", "tonight", "soon", "recently"],
+      "calindric_spans": ["this week", "last year", "next month"]
+    },
+    "discourse_deixis": {
+      "forward_referencing": ["in the next section", "as follows", "the following issue"],
+      "backward_referencing": ["as mentioned above", "that was remarkable", "heretofore"]
+    },
+    "social_deixis": {
+      "honorifics_and_titles": ["Dr.", "Professor", "Your Honor", "Sir", "Madam"]
+    }
+  }
+}

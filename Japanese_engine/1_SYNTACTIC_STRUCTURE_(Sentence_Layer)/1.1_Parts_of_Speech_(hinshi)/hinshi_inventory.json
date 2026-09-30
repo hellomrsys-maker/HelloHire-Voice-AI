@@ -1,0 +1,63 @@
+{
+  "hinshi_classes": {
+    "nouns_meishi": {
+      "properties": "No inflection, no grammatical gender, no morphological singular/plural distinction, no definite/indefinite articles.",
+      "subclasses": ["普通名詞 (Common)", "固有名詞 (Proper)", "数詞 (Numeral)", "形式名詞 (Formal nouns: こと, もの, ため, わけ)"],
+      "sample_lexicon": ["本", "車", "水", "時間", "研究", "言語"]
+    },
+    "verbs_doushi": {
+      "properties": "Always clause/sentence-final in canonical syntax; inflects through 6 stems (未然形, 連用形, 終止形, 連体形, 仮定形, 命令形); no person or number agreement.",
+      "conjugation_types": ["五段動詞 (Group 1 / Consonant-stem)", "一段動詞 (Group 2 / Vowel-stem)", "カ行変格活用 (来る)", "サ行変格活用 (する)"],
+      "sample_lexicon": ["書く", "泳ぐ", "話す", "待つ", "死ぬ", "飛ぶ", "読む", "取る", "買う", "食べる", "見る", "起きる"]
+    },
+    "i_adjectives": {
+      "properties": "Unique inflectional category ending in 'い'; conjugates similarly to verbs (高い -> 高くない -> 高かった -> 高くて).",
+      "sample_lexicon": ["高い", "新しい", "美しい", "大きい", "早い", "良い"]
+    },
+    "na_adjectives_keiyoudoushi": {
+      "properties": "Nominal adjectives; functions as noun modifiers via particle 'な' (静かな部屋) and predicatively via copula 'だ/です' (静かだ).",
+      "sample_lexicon": ["静か", "綺麗", "簡単", "親切", "便利", "有名"]
+    },
+    "particles_joshi": {
+      "properties": "The load-bearing clitic class specifying grammatical relation, discourse status, coordination, and mood.",
+      "types": {
+        "kaku_joshi_case": ["が (nominative)", "を (accusative)", "に (dative/goal)", "で (instrument/loc)", "へ (directional)", "と (comitative)", "から (source)", "まで (limit)"],
+        "kakari_joshi_topic": ["は (topic/contrast)", "も (additive)", "こそ (focus)", "さえ (extreme)"],
+        "setsuzoku_joshi_conjunctive": ["から", "ので", "が", "けれども", "ながら", "たら", "ば"],
+        "shuujoshi_final": ["ね", "よ", "か", "な", "わ", "ぞ", "さ"]
+      }
+    },
+    "auxiliary_verbs_jodoushi": {
+      "properties": "Clitic verb suffixes attaching to stems to express tense, aspect, politeness, voice, and modality.",
+      "items": ["ます (polite)", "た (past/perfective)", "ない (negative)", "れる/られる (passive/potential/honorific)", "せる/させる (causative)", "たい (desiderative)"]
+    },
+    "copula_da_desu": {
+      "registers": {
+        "plain": "だ (da)",
+        "polite": "です (desu)",
+        "literary_academic": "である (de aru)",
+        "formal_keigo": "でございます (de gozaimasu)"
+      }
+    },
+    "counters_josuushi": {
+      "properties": "Obligatory numerical classifiers matched to semantic noun geometry.",
+      "items": {
+        "本 (hon)": "Slender cylindrical objects (pens, bottles, trees)",
+        "枚 (mai)": "Thin flat sheets (paper, shirts, plates)",
+        "匹 (hiki)": "Small animals and fish",
+        "冊 (satsu)": "Bound publications and books",
+        "台 (dai)": "Machines and vehicles",
+        "人 (nin)": "Humans (ひとり, ふたり, さんにん)"
+      }
+    },
+    "pronouns_daimeishi": {
+      "properties": "Infrequently used compared to European languages; zero-pronoun drop or titles preferred.",
+      "classes": {
+        "first_person": ["私 (watashi)", "僕 (boku)", "俺 (ore)", "わたくし (watakushi)", "小生 (shousei)", "拙者 (archaic)"],
+        "second_person": ["あなた (anata)", "君 (kimi)", "お前 (omae)", "貴社 (kisha)"],
+        "third_person": ["彼 (kare)", "彼女 (kanojo)", "あの方 (ano kata)"],
+        "demonstratives_kosoado": ["これ (ko)", "それ (so)", "あれ (a)", "どれ (do)"]
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "particles": {
+    "ครับ": {
+      "translit": "kráp",
+      "speaker_gender": "male",
+      "tone": "high",
+      "act_type": ["declarative", "interrogative", "vocative"],
+      "politeness_tier": "polite_standard",
+      "example": "สวัสดีครับ / กินข้าวหรือยังครับ"
+    },
+    "ค่ะ": {
+      "translit": "kâ",
+      "speaker_gender": "female",
+      "tone": "falling",
+      "act_type": ["declarative", "answer", "affirmation"],
+      "politeness_tier": "polite_standard",
+      "example": "ขอบคุณค่ะ / ใช่ค่ะ"
+    },
+    "คะ": {
+      "translit": "kái",
+      "speaker_gender": "female",
+      "tone": "high",
+      "act_type": ["interrogative", "vocative", "inquiry"],
+      "politeness_tier": "polite_standard",
+      "example": "ไปไหนคะ / จริงหรือคะ"
+    },
+    "จ๊ะ": {
+      "translit": "já",
+      "speaker_gender": "any",
+      "tone": "high",
+      "act_type": ["interrogative_informal"],
+      "politeness_tier": "intimate_friendly",
+      "example": "ทำอะไรอยู่จ๊ะ"
+    },
+    "จ้า": {
+      "translit": "câa",
+      "speaker_gender": "any",
+      "tone": "falling",
+      "act_type": ["declarative_informal"],
+      "politeness_tier": "intimate_friendly",
+      "example": "ได้จ้า"
+    },
+    "นะ": {
+      "translit": "ná",
+      "speaker_gender": "any",
+      "tone": "high",
+      "act_type": ["softener_request"],
+      "politeness_tier": "friendly",
+      "example": "ไปด้วยกันนะ"
+    }
+  },
+  "concord_violations": [
+    {
+      "pattern": "*สวัสดีคะ",
+      "violation": "Female declarative with high-tone 'คะ' instead of falling-tone 'ค่ะ'",
+      "correction": "สวัสดีค่ะ"
+    },
+    {
+      "pattern": "*ขอบคุณคะ",
+      "violation": "Female declarative with high-tone 'คะ' instead of falling-tone 'ค่ะ'",
+      "correction": "ขอบคุณค่ะ"
+    },
+    {
+      "pattern": "*ไปไหนค่ะ?",
+      "violation": "Female question with falling-tone 'ค่ะ' instead of high-tone 'คะ'",
+      "correction": "ไปไหนคะ?"
+    }
+  ]
+}

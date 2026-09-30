@@ -1,0 +1,10 @@
+[package]
+name = "ecse-social-stream"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "ecse_social_stream"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]

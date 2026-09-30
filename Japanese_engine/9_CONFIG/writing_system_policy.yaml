@@ -1,0 +1,21 @@
+# Japanese Writing System, Ruby, and Text Orientation Policy
+
+furigana_ruby_policy:
+  default_mode: "Selective"
+  guidelines:
+    general_web: "Apply ruby exclusively to characters outside the 2,136 Jōyō Kanji inventory or non-standard Nanori readings."
+    educational: "Apply full ruby glossing across all Kanji tokens."
+    legal_official: "Prohibit ruby annotations except when required to resolve identical statutory homographs."
+
+script_mixing_rules:
+  particles: "Strictly in Hiragana (e.g. 'は', 'が', 'を', 'に')."
+  inflections_okurigana: "Follow Cabinet Notification on Okurigana (e.g. '行う', not '行なう'; '表す', not '表わす')."
+  loanwords: "Transliterate into Katakana using standard mora segmentation."
+
+layout_and_orientation:
+  horizontal_yokogaki:
+    reading_order: "Left to right, top to bottom."
+    punctuation: "Standard Kuten (。) and Touten (、)."
+  vertical_tategaki:
+    reading_order: "Top to bottom, right to left."
+    punctuation: "Vertical punctuation variants (﹁﹂, ︙, repositioned 。)."

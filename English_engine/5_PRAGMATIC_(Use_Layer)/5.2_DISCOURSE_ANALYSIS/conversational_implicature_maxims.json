@@ -1,0 +1,32 @@
+{
+  "gricean_conversational_maxims": {
+    "maxim_of_quantity": {
+      "sub_maxims": [
+        "Make your contribution as informative as is required for the current purposes of exchange.",
+        "Do not make your contribution more informative than is required."
+      ],
+      "flouting_implicature": "Giving scant details implies speaker lacks knowledge or withholds intentionally"
+    },
+    "maxim_of_quality": {
+      "super_maxim": "Try to make your contribution one that is true.",
+      "sub_maxims": [
+        "Do not say what you believe to be false.",
+        "Do not say that for which you lack adequate evidence."
+      ],
+      "flouting_implicature": "Irony, sarcasm, hyperbole, and metaphor arise from blatant violation of Quality"
+    },
+    "maxim_of_relation": {
+      "sub_maxim": "Be relevant.",
+      "flouting_implicature": "Abrupt topic change implies discomfort with previous subject or implicit refusal"
+    },
+    "maxim_of_manner": {
+      "super_maxim": "Be perspicuous.",
+      "sub_maxims": [
+        "Avoid obscurity of expression.",
+        "Avoid ambiguity.",
+        "Be brief (avoid unnecessary prolixity).",
+        "Be orderly."
+      ]
+    }
+  }
+}
