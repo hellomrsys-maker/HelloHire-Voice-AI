@@ -119,6 +119,7 @@ class AssemblyAIWebBridge:
                                             "competency_percent": out["competency_percentage"],
                                             "competency_verdict": out["competency_verdict"],
                                             "psychometric_diagnosis": out["psychometric_diagnosis"],
+                                            "knowledge_grounding": out.get("knowledge_grounding"),
                                             "cognitive_scores": out["cognitive_scores"],
                                             "amsv_byte_22": out["amsv_hardware_byte_22"],
                                             "processing_latency_ms": latency

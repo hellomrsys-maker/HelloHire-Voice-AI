@@ -33,6 +33,7 @@ from English_engine.brain.Analysis.vocal_cord_frequency_engine import (
 )
 from voice_agent.vocal_audio_renderer import VocalAudioRenderer
 from voice_agent.audio_io import AudioPlayer, AudioConfig
+from voice_agent.knowledge_grounding import ground_candidate_speech
 
 
 class VoiceAgentOrchestrator:
@@ -91,12 +92,19 @@ class VoiceAgentOrchestrator:
         t0 = time.time()
         user_clean = user_input_text.strip()
 
-        # 1. Intent Tree Slot-Equivalence Matching
+        # 1. Intent Tree Slot-Equivalence Matching & Wikipedia Knowledge Grounding
         res = self.intent_tree.synthesize_response(user_clean)
         reply_text = res["text"]
         intent_name = res["intent"]
         gap_ms = res.get("calibrated_gap_ms", 518)
         amsv_byte = res.get("amsv_intent_byte", 0x20)
+
+        # Free Wikipedia Knowledge Grounding (Zero-API-key semantic enrichment)
+        knowledge = ground_candidate_speech(user_clean)
+        if knowledge:
+            concept_title = knowledge.get("title", "")
+            if intent_name in ("COMPETENCY_EVALUATION", "TECHNICAL_STAR_DEFENSE", "STATUS_INQUIRY"):
+                reply_text = f"Understood. Leveraging {concept_title} addresses key architectural trade-offs; let us examine the system determinism and fault-tolerance bounds."
 
         # 2. Zero-Bridge AMSV 64-Byte Hardware Memory Synchronization & Cognitive Grading
         words = user_clean.split()
@@ -127,6 +135,10 @@ class VoiceAgentOrchestrator:
             competency_pct = min(96, max(84, 85 + word_count // 5))
             verdict = "Analytical Articulation"
             diagnosis = f"Candidate demonstrated progressive reasoning (GCI={competency_pct}%). Lexical density is strong."
+
+        if knowledge:
+            snippet = knowledge.get("extract", "")[:90].strip()
+            diagnosis = f"📚 Grounded in Wikipedia ({knowledge.get('title')}): {snippet}... | {diagnosis}"
 
         # 8-Dimensional Cognitive Scores
         cog_scores = {
@@ -188,6 +200,7 @@ class VoiceAgentOrchestrator:
             "competency_percentage": competency_pct,
             "competency_verdict": verdict,
             "psychometric_diagnosis": diagnosis,
+            "knowledge_grounding": knowledge,
             "cognitive_scores": cog_scores,
             "laryngeal_biomechanics": {
                 "subglottal_pressure_cmh2o": tuning_result.vocal_cord_biomechanics.get("subglottal_pressure_cmh2o", 8.0),

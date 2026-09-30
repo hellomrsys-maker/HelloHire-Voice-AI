@@ -420,11 +420,20 @@
             </span>
           </div>
 
-          <div style="margin-bottom: 16px;">
+          <div style="margin-bottom: 12px;">
             <div style="font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 4px;">Candidate transcript:</div>
             <div id="board-candidate-transcript" style="font-size: 0.88rem; color: #F1F5F9; font-family: var(--font-mono); padding: 10px 14px; background: rgba(0,0,0,0.4); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); min-height: 40px;">
               "We partitioned services by domain"
             </div>
+          </div>
+
+          <!-- Real-Time Wikipedia Knowledge Grounding Banner -->
+          <div id="board-knowledge-card" style="margin-bottom: 14px; padding: 8px 12px; background: rgba(99, 102, 241, 0.08); border: 1px solid rgba(99, 102, 241, 0.25); border-radius: var(--radius-sm); font-size: 0.75rem; color: #E2E8F0; display: flex; align-items: center; justify-content: space-between;">
+            <div style="display: flex; align-items: center; gap: 8px; overflow: hidden;">
+              <span style="background: rgba(99, 102, 241, 0.25); color: #818CF8; font-weight: 700; padding: 2px 6px; border-radius: 4px; font-family: var(--font-mono); white-space: nowrap;">📚 Wikipedia Grounding</span>
+              <span id="board-knowledge-topic" style="color: #FBBF24; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Remote direct memory access (RDMA): Direct memory transfer bypassing OS kernel...</span>
+            </div>
+            <a id="board-knowledge-link" href="https://en.wikipedia.org/wiki/Remote_direct_memory_access" target="_blank" style="color: #38BDF8; text-decoration: none; font-size: 0.72rem; font-family: var(--font-mono); white-space: nowrap; margin-left: 8px;">Wiki ↗</a>
           </div>
 
           <!-- Dual Telemetry: Rate & Accuracy + Staircase Theta Center -->
