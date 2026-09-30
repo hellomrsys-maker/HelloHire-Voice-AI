@@ -59,14 +59,14 @@
       <div class="hero-content">
         <div class="hero-pill">
           <span class="pulse-dot"></span>
-          AssemblyAI Voice Agent Hackathon | lablab.ai
+          Powered by AssemblyAI real-time streaming
         </div>
         <h1 class="hero-title">
-          <span class="gradient-text">HelloHire Voice AI</span><br>
-          <span style="font-size: 0.7em; font-weight: 600; color: #E2E8F0;">The Voice AI Recruiter</span>
+          <span class="gradient-text">HelloHire</span><br>
+          <span style="font-size: 0.65em; font-weight: 600; color: #E2E8F0; letter-spacing: -0.01em;">Cognitive voice AI interviewer</span>
         </h1>
         <p class="hero-subtitle">
-          that listens, scores and speaks like a human interviewer. Powered by <strong>AssemblyAI Universal-3 Pro</strong> streaming STT and <strong>Zero-Bridge 64-Byte AMSV</strong> hardware memory synchronization.
+          An autonomous recruiter that listens, scores, and speaks with human cadence. Built on <strong>AssemblyAI Universal-3 Pro</strong> streaming STT and <strong>Zero-Bridge 64-Byte AMSV</strong> cache-line memory synchronization.
         </p>
 
         <div class="hero-badges">
@@ -89,7 +89,7 @@
         </div>
 
         <div class="hero-actions">
-          <a href="#simulator" class="btn-primary" id="hero-try-sim-btn">Interactive Simulator</a>
+          <a href="#simulator" class="btn-primary" id="hero-try-sim-btn">Launch Live Simulator</a>
           <a href="#pipeline" class="btn-secondary" id="hero-view-pipeline-btn">Inspect Data Pipeline</a>
         </div>
       </div>
@@ -114,6 +114,73 @@
         <p class="section-desc">
           How voice moves from candidate utterance to sub-second real-time scoring, biophysical voice modulation, and audible reply.
         </p>
+      </div>
+
+      <!-- Sub-Second Responsiveness Flowchart (Image 2 Parity) -->
+      <div style="margin-bottom: 36px; padding: 24px; background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+          <div>
+            <h3 style="font-size: 1.35rem; color: #FFFFFF; font-weight: 800; letter-spacing: -0.01em;">Built for sub-second responsiveness</h3>
+            <p style="font-size: 0.88rem; color: var(--text-dim); margin-top: 4px;">Ultra-low latency architectural path engineered from microphone input to biophysical voice output.</p>
+          </div>
+          <span class="brand-tag" style="background: rgba(139, 92, 246, 0.15); color: #C084FC; border-color: rgba(139, 92, 246, 0.3); font-weight: 700;">Sub-second by design</span>
+        </div>
+
+        <div class="subsecond-flow-container">
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+            <div class="flow-step-title">Microphone</div>
+            <div class="flow-step-sub">16 kHz PCM</div>
+          </div>
+          <div style="color: #6366F1; font-weight: 800;">➔</div>
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 4.5l6.5 11.5h-13L12 6.5z"/></svg>
+            <div class="flow-step-title">AssemblyAI Streaming STT</div>
+            <div class="flow-step-sub">Universal-3 Pro Realtime</div>
+          </div>
+          <div style="color: #6366F1; font-weight: 800;">➔</div>
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z"/></svg>
+            <div class="flow-step-title">Orchestrator</div>
+            <div class="flow-step-sub">518ms Turn Pacing</div>
+          </div>
+          <div style="color: #F59E0B; font-weight: 800;">➔</div>
+          <div class="flow-step-card active-glow">
+            <svg class="flow-step-icon" style="color: #F59E0B;" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg>
+            <div class="flow-step-title" style="color: #FBBF24;">64-byte Memory Vector</div>
+            <div class="flow-step-sub" style="color: #F59E0B;">AMSV Cache Line</div>
+          </div>
+          <div style="color: #10B981; font-weight: 800;">➔</div>
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <div class="flow-step-title">Cognitive Scoring</div>
+            <div class="flow-step-sub">IRT &amp; CCTE 8-D</div>
+          </div>
+          <div style="color: #10B981; font-weight: 800;">➔</div>
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            <div class="flow-step-title">Vocal Renderer</div>
+            <div class="flow-step-sub">Biophysical Glottal Pulses</div>
+          </div>
+          <div style="color: #38BDF8; font-weight: 800;">➔</div>
+          <div class="flow-step-card">
+            <svg class="flow-step-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+            <div class="flow-step-title">Audio Out</div>
+            <div class="flow-step-sub">Candidate Earphone</div>
+          </div>
+        </div>
+
+        <div class="flow-summary-badges">
+          <div class="flow-summary-badge">
+            <strong style="color: #F59E0B;">64 bytes = 1 CPU cache line</strong> · ~0 ns sync
+          </div>
+          <div class="flow-summary-badge">
+            <strong style="color: #38BDF8;">24 parallel grammar nodes</strong> · Cross-Language Matrix
+          </div>
+          <div class="flow-summary-badge">
+            <strong style="color: #10B981;">8 cognitive dimensions</strong> · Psychometric Scaling
+          </div>
+        </div>
       </div>
 
       <div class="pipeline-flow">
@@ -225,7 +292,7 @@
         <span class="section-tag">Interactive Demonstration</span>
         <h2 class="section-title">Cognitive Scoring & AMSV Memory Visualizer</h2>
         <p class="section-desc">
-          Select an interview dialogue preset to observe real-time dialogue intent locking, 8-dimensional psychometric grading, and live 64-byte AMSV cache line updates.
+          Select an interview dialogue preset or speak live to observe real-time dialogue intent locking, 8-dimensional psychometric grading, and live 64-byte AMSV cache line updates.
         </p>
       </div>
 
@@ -339,31 +406,95 @@
           </div>
         </div>
 
-        <!-- Right Panel: AMSV Hex Matrix & 8 Cognitive Scores -->
-        <div class="glass-panel" style="padding: 28px;">
+        <!-- Right Panel: Interview-Analysis Master Board (Image 5 Parity) -->
+        <div class="glass-panel" style="padding: 26px;">
           <div class="sim-panel-header">
-            <h3>8-Dimensional Cognitive Scores</h3>
-            <span style="font-size: 0.8rem; font-family: var(--font-mono); color: #10B981;">CCTE Engine Evaluated</span>
+            <div>
+              <h3 style="font-size: 1.2rem; color: #FFFFFF; font-weight: 700; letter-spacing: -0.01em;">Interview-Analysis</h3>
+              <div style="font-size: 0.8rem; color: var(--text-dim); font-family: var(--font-mono); margin-top: 2px;">
+                Topic: <strong id="board-topic" style="color: #38BDF8;">Distributed architectures</strong>
+              </div>
+            </div>
+            <span class="brand-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border-color: rgba(16, 185, 129, 0.3);">
+              Universal-3 Pro Live
+            </span>
           </div>
 
-          <!-- Dynamic Scores -->
-          <div class="cognitive-score-list" id="cognitive-scores-container">
+          <div style="margin-bottom: 16px;">
+            <div style="font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 4px;">Candidate transcript:</div>
+            <div id="board-candidate-transcript" style="font-size: 0.88rem; color: #F1F5F9; font-family: var(--font-mono); padding: 10px 14px; background: rgba(0,0,0,0.4); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); min-height: 40px;">
+              "We partitioned services by domain"
+            </div>
+          </div>
+
+          <!-- Dual Telemetry: Rate & Accuracy + Staircase Theta Center -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 16px;">
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <!-- Speaking-rate -->
+              <div class="rate-box" style="text-align: center; padding: 8px 12px;">
+                <div class="rate-box-title" style="text-align: left;">Speaking-rate</div>
+                <div style="position: relative; width: 140px; height: 70px; margin: 4px auto 0 auto; overflow: hidden;">
+                  <svg width="140" height="140" viewBox="0 0 140 140" style="position: absolute; top: 0; left: 0;">
+                    <defs>
+                      <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#6366F1"/>
+                        <stop offset="60%" stop-color="#8B5CF6"/>
+                        <stop offset="100%" stop-color="#F59E0B"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M 20 70 A 50 50 0 0 1 120 70" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8" stroke-linecap="round"/>
+                    <path id="board-gauge-arc" d="M 20 70 A 50 50 0 0 1 108 42" fill="none" stroke="url(#gaugeGrad)" stroke-width="8" stroke-linecap="round"/>
+                  </svg>
+                  <div style="position: absolute; bottom: 4px; left: 0; right: 0; text-align: center; font-size: 1.05rem; font-weight: 700; color: #FFFFFF; font-family: var(--font-mono);" id="board-wpm">148 wpm</div>
+                </div>
+              </div>
+              <!-- Technical-accuracy -->
+              <div class="accuracy-box">
+                <div class="rate-box-title" style="margin-bottom: 6px;">Technical-accuracy</div>
+                <div class="accuracy-bar-bg" style="position: relative; height: 8px; border-radius: 4px; background: rgba(255,255,255,0.08); margin: 6px 0;">
+                  <div class="accuracy-bar-fill" id="board-accuracy-fill" style="width: 88%; height: 100%; border-radius: 4px; background: linear-gradient(90deg, #6366F1 0%, #8B5CF6 70%, #F59E0B 100%);"></div>
+                  <div id="board-accuracy-marker" style="position: absolute; top: -3px; left: 88%; width: 4px; height: 14px; background: #FBBF24; border-radius: 2px; box-shadow: 0 0 8px #F59E0B;"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-dim); font-family: var(--font-mono);">
+                  <span>0</span>
+                  <span id="board-accuracy-label" style="color: #FBBF24; font-weight: 700;">64 / 70</span>
+                  <span>70</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Theta Ability Estimate Staircase -->
+            <div class="board-theta-col">
+              <div class="theta-header">
+                <div class="theta-symbol">θ : <span id="board-theta">1.2</span></div>
+                <div class="theta-label">Ability estimate</div>
+              </div>
+              <div class="staircase-chart" id="board-staircase">
+                <div class="staircase-step passed" style="height: 15%;"></div>
+                <div class="staircase-step passed" style="height: 25%;"></div>
+                <div class="staircase-step passed" style="height: 38%;"></div>
+                <div class="staircase-step passed" style="height: 50%;"></div>
+                <div class="staircase-step active" style="height: 65%;"></div>
+                <div class="staircase-step" style="height: 80%;"></div>
+                <div class="staircase-step" style="height: 95%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 Cognitive Capability Bars with Purple-to-Gold Gradient -->
+          <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 8px; font-weight: 700;">8 Universal Cognitive Dimensions:</div>
+          <div class="board-cog-col" id="board-cog-container">
             <!-- Populated via app.js -->
           </div>
 
-          <!-- 64-Byte AMSV Memory Grid -->
-          <div class="amsv-grid-wrapper">
-            <div class="amsv-title">
-              <span>64-Byte Atomic Memory State Vector (AMSV)</span>
-              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #EC4899;">Byte 22 Intent: <strong id="sim-byte-val">0x22</strong></span>
+          <!-- Memory Dump (64 Bytes) -->
+          <div class="board-mem-dump-box">
+            <div class="board-mem-title">
+              <span>Memory dump (64 bytes)</span>
+              <span>Byte 22 Intent: <strong id="sim-byte-val" style="color: #EC4899;">0x22</strong></span>
             </div>
-            <div class="amsv-matrix" id="amsv-matrix-grid">
+            <div class="board-mem-grid" id="amsv-matrix-grid">
               <!-- Populated via app.js -->
-            </div>
-            <div style="display: flex; gap: 14px; margin-top: 10px; font-size: 0.72rem; color: var(--text-dim);">
-              <span><span style="color: #10B981;">■</span> 0x08-0x0F: Prosody/F0</span>
-              <span><span style="color: #06B6D4;">■</span> 0x10-0x1F: Cognitive Banks</span>
-              <span><span style="color: #EC4899;">■</span> Byte 22: Intent Register</span>
             </div>
           </div>
         </div>
@@ -382,6 +513,112 @@
         <p class="section-desc">
           Instead of monotone synthetic speech, HelloHire physically models laryngeal biomechanics (subglottal pressure $P_s$, open quotient $O_q$, and $F_0$) across six communicative scenarios.
         </p>
+      </div>
+
+      <!-- Bio-Acoustics Spectrogram & Formant Telemetry Board (Image 4 Parity) -->
+      <div style="margin-bottom: 32px; padding: 24px; background: rgba(10, 14, 23, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius-lg);">
+        <div class="bioacoustic-board">
+          <!-- Left: Spectrogram Display & 4 Biomechanics Meters -->
+          <div>
+            <div class="spectrogram-display-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span style="font-size: 0.75rem; font-weight: 700; color: #38BDF8; font-family: var(--font-mono); text-transform: uppercase;">Oral-Pharyngeal Formants (F1 - F4)</span>
+                <span style="font-size: 0.72rem; color: var(--text-dim); font-family: var(--font-mono);">FFT Spectrogram 16 kHz</span>
+              </div>
+              <svg width="100%" height="130" viewBox="0 0 500 130" style="background: rgba(0,0,0,0.5); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06);">
+                <defs>
+                  <linearGradient id="specGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#6366F1" stop-opacity="0.7"/>
+                    <stop offset="50%" stop-color="#A855F7" stop-opacity="0.8"/>
+                    <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.9"/>
+                  </linearGradient>
+                </defs>
+                <!-- Formant Resonance Bands -->
+                <path d="M 10 30 Q 120 15, 250 28 T 490 20" stroke="#F59E0B" stroke-width="3" fill="none" opacity="0.85"/>
+                <path d="M 10 55 Q 140 40, 260 52 T 490 45" stroke="#A855F7" stroke-width="2.5" fill="none" opacity="0.75"/>
+                <path d="M 10 80 Q 160 70, 280 85 T 490 75" stroke="#6366F1" stroke-width="2" fill="none" opacity="0.65"/>
+                <!-- Waveform Envelope -->
+                <path d="M 10 115 Q 40 100, 70 115 T 130 115 T 190 105 T 250 115 T 310 95 T 370 115 T 430 100 T 490 115" stroke="url(#specGrad)" stroke-width="2" fill="none"/>
+              </svg>
+
+              <!-- 4 Telemetry Meters (Image 4 Parity) -->
+              <div class="biomech-meters-grid">
+                <div class="biomech-meter-card">
+                  <div class="biomech-meter-header">
+                    <span class="biomech-meter-name">Ps</span>
+                    <span class="biomech-meter-sub">Plausible 703.9 mono</span>
+                  </div>
+                  <div class="biomech-meter-bar">
+                    <div class="biomech-meter-fill" style="width: 72%;"></div>
+                  </div>
+                </div>
+
+                <div class="biomech-meter-card">
+                  <div class="biomech-meter-header">
+                    <span class="biomech-meter-name">Oq</span>
+                    <span class="biomech-meter-sub">Frequency 142 Hz</span>
+                  </div>
+                  <div class="biomech-meter-bar">
+                    <div class="biomech-meter-fill" style="width: 50%;"></div>
+                  </div>
+                </div>
+
+                <div class="biomech-meter-card">
+                  <div class="biomech-meter-header">
+                    <span class="biomech-meter-name">F0</span>
+                    <span class="biomech-meter-sub">Instruments 189.4 mono</span>
+                  </div>
+                  <div class="biomech-meter-bar">
+                    <div class="biomech-meter-fill" style="width: 65%;"></div>
+                  </div>
+                </div>
+
+                <div class="biomech-meter-card">
+                  <div class="biomech-meter-header">
+                    <span class="biomech-meter-name">CT Tension</span>
+                    <span class="biomech-meter-sub">Cricothyroid Q16</span>
+                  </div>
+                  <div class="biomech-meter-bar">
+                    <div class="biomech-meter-fill" style="width: 58%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: 6 Situational Scenarios List (Image 4 Parity) -->
+          <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 8px;">
+            <div style="padding: 12px 16px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 600; color: #E2E8F0;">Calm Reassurance</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">188 Hz · Oq 0.68</span>
+            </div>
+
+            <div style="padding: 14px 18px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(245, 158, 11, 0.1)); border-radius: var(--radius-md); border: 1.5px solid #F59E0B; box-shadow: 0 0 20px rgba(245, 158, 11, 0.25); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 700; color: #FFFFFF; font-size: 0.98rem;">Confidence &amp; Authority</span>
+              <span style="font-family: var(--font-mono); font-size: 0.82rem; color: #FBBF24; font-weight: 700;">142 Hz · Oq 0.50</span>
+            </div>
+
+            <div style="padding: 12px 16px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 600; color: #E2E8F0;">High-Stress Alert</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">365 Hz · Oq 0.32</span>
+            </div>
+
+            <div style="padding: 12px 16px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 600; color: #E2E8F0;">Emotional Vulnerability</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">265 Hz · Oq 0.75</span>
+            </div>
+
+            <div style="padding: 12px 16px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 600; color: #E2E8F0;">Deep Melancholy</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">118 Hz · Oq 0.82</span>
+            </div>
+
+            <div style="padding: 12px 16px; background: rgba(255,255,255,0.02); border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-weight: 600; color: #E2E8F0;">Whisper &amp; Secrecy</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">0 Hz · Oq 1.00</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="scenario-grid">
