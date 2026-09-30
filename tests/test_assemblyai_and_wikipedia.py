@@ -91,6 +91,28 @@ class TestAssemblyAIAndWikipedia(unittest.TestCase):
         asyncio.run(run_test())
         print(f"\n[TEST PASS] AssemblyAI Universal-3 Pro WebSocket stream executed and parsed cleanly.")
 
+    def test_07_multilingual_matrix_routing(self):
+        """Verifies polyglot recruiter routing across English, Spanish, French, German, Tamil, and Hindi."""
+        languages = ["es", "fr", "de", "ta", "hi"]
+        for lang in languages:
+            res = self.orchestrator.process_utterance("Hello! Good morning.", play_audio=False, language=lang, voice_gender="female")
+            self.assertIsNotNone(res["response_text"])
+            self.assertEqual(res["language"], lang)
+            self.assertEqual(res["voice_gender"], "female")
+            self.assertGreaterEqual(res["f0_hz"], 185.0)
+            print(f"[TEST PASS] Multilingual {lang.upper()}: \"{res['response_text'][:55]}...\" (F0={res['f0_hz']:.1f}Hz)")
+
+    def test_08_dual_gender_biophysical_pitch_modulation(self):
+        """Verifies dual-gender recruiter biophysical pitch calibration (Female ~230Hz vs. Male ~125Hz)."""
+        female_res = self.orchestrator.process_utterance("Technical architecture interview", play_audio=False, language="en", voice_gender="female")
+        male_res = self.orchestrator.process_utterance("Technical architecture interview", play_audio=False, language="en", voice_gender="male")
+
+        self.assertGreater(female_res["f0_hz"], male_res["f0_hz"])
+        self.assertGreaterEqual(female_res["f0_hz"], 185.0, "Female recruiter voice should be in high register cohort")
+        self.assertLessEqual(male_res["f0_hz"], 135.0, "Male recruiter voice should be in low register cohort")
+        print(f"\n[TEST PASS] Female Recruiter Pitch: {female_res['f0_hz']:.1f} Hz (High Register)")
+        print(f"[TEST PASS] Male Recruiter Pitch:   {male_res['f0_hz']:.1f} Hz (Low Register)")
+
 
 if __name__ == "__main__":
     unittest.main()

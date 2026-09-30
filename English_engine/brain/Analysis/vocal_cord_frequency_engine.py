@@ -252,7 +252,7 @@ class VocalCordFrequencyEngine:
             scenario=scenario_key,
             display_name=sc_data.get("display_name", scenario_key),
             tuning_register=sc_data.get("tuning_register", "BALANCED"),
-            mean_f0_hz=freq_env["average_f0_mean"],
+            mean_f0_hz=mean_f0,
             frequency_envelope_hz=freq_env,
             speaker_cohort_used=cohort_key,
             speaker_scaled_f0_hz=mean_f0,

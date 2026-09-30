@@ -70,7 +70,13 @@ class AssemblyAIWebBridge:
                                 await aai_ws.send(message)
                             elif isinstance(message, str):
                                 data = json.loads(message)
-                                if data.get("type") == "terminate":
+                                if data.get("type") == "set_config":
+                                    new_lang = data.get("language", "en")
+                                    new_gender = data.get("voice_gender", "female")
+                                    self.orchestrator.language = new_lang
+                                    self.orchestrator.voice_gender = new_gender
+                                    print(f"[CONFIG UPDATED] Language: {new_lang}, Gender: {new_gender}")
+                                elif data.get("type") == "terminate":
                                     await aai_ws.send(json.dumps({"type": "Terminate"}))
                                     break
                     except Exception as e:
@@ -104,7 +110,11 @@ class AssemblyAIWebBridge:
                                         # Final utterance completed
                                         print(f"[FINAL TRANSCRIPT]: \"{transcript}\"")
                                         t0 = time.time()
-                                        out = self.orchestrator.process_utterance(transcript)
+                                        out = self.orchestrator.process_utterance(
+                                            transcript,
+                                            language=self.orchestrator.language,
+                                            voice_gender=self.orchestrator.voice_gender
+                                        )
                                         latency = round((time.time() - t0) * 1000.0, 1)
 
                                         # Send full evaluation back to browser UI
@@ -112,6 +122,8 @@ class AssemblyAIWebBridge:
                                             "type": "final_turn",
                                             "transcript": transcript,
                                             "reply": out["response_text"],
+                                            "language": out["language"],
+                                            "voice_gender": out["voice_gender"],
                                             "intent": out["matched_intent"],
                                             "scenario": out["scenario"],
                                             "f0": out["mean_f0_hz"],

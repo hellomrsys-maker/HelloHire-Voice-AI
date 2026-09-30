@@ -34,23 +34,34 @@ from English_engine.brain.Analysis.vocal_cord_frequency_engine import (
 from voice_agent.vocal_audio_renderer import VocalAudioRenderer
 from voice_agent.audio_io import AudioPlayer, AudioConfig
 from voice_agent.knowledge_grounding import ground_candidate_speech
+from voice_agent.multilingual_support import get_localized_dialogue_reply, get_language_config
 
 
 class VoiceAgentOrchestrator:
     """
     End-to-End Voice AI Agent.
-    Transforms user speech or incoming transcripts into biophysically modulated voice responses.
+    Transforms user speech or incoming transcripts into biophysically modulated voice responses
+    supporting 7 global languages and dual-gender (Female/Male) acoustic calibration.
     """
 
     def __init__(
         self,
-        language: str = "English",
-        speaker_cohort: SpeakerRegisterCohort = SpeakerRegisterCohort.MEDIUM_REGISTER,
+        language: str = "en",
+        voice_gender: str = "female",
+        speaker_cohort: Optional[SpeakerRegisterCohort] = None,
         amsv_view: Optional[AMSVEmbeddedView] = None,
         sample_rate: int = 16000,
     ):
         self.language = language
-        self.speaker_cohort = speaker_cohort
+        self.voice_gender = voice_gender
+        if speaker_cohort is None:
+            self.speaker_cohort = (
+                SpeakerRegisterCohort.HIGH_REGISTER
+                if voice_gender.lower().startswith("f")
+                else SpeakerRegisterCohort.LOW_REGISTER
+            )
+        else:
+            self.speaker_cohort = speaker_cohort
         self.amsv = amsv_view or AMSVEmbeddedView()
         self.intent_tree = build_default_english_intent_tree()
         self.vocal_engine = VocalCordFrequencyEngine(amsv_view=self.amsv)
@@ -79,18 +90,28 @@ class VoiceAgentOrchestrator:
         self,
         user_input_text: str,
         forced_scenario: Optional[SituationalScenario] = None,
-        play_audio: bool = False
+        play_audio: bool = False,
+        language: Optional[str] = None,
+        voice_gender: Optional[str] = None,
     ) -> Dict[str, Any]:
         """
         Executes the full agent cognitive & vocal cycle:
-        1. Intent Tree Matching
-        2. AMSV Memory Sync (0-ns physical write)
-        3. 518ms Turn-taking Pacing
-        4. Vocal Cord Bio-Acoustic Frequency Tuning
-        5. Audible Waveform Rendering
+        1. Intent Tree Matching & Multilingual Localization
+        2. Free Wikipedia Knowledge Grounding
+        3. Zero-Bridge AMSV Memory Sync (0-ns physical write)
+        4. 518ms Turn-taking Pacing
+        5. Vocal Cord Bio-Acoustic Frequency Tuning (Female High ~230Hz vs. Male Low ~120Hz)
+        6. Audible Waveform Rendering
         """
         t0 = time.time()
         user_clean = user_input_text.strip()
+        active_lang = language or self.language
+        active_gender = voice_gender or self.voice_gender
+        cohort = (
+            SpeakerRegisterCohort.HIGH_REGISTER
+            if active_gender.lower().startswith("f")
+            else SpeakerRegisterCohort.LOW_REGISTER
+        )
 
         # 1. Intent Tree Slot-Equivalence Matching & Wikipedia Knowledge Grounding
         res = self.intent_tree.synthesize_response(user_clean)
@@ -99,12 +120,21 @@ class VoiceAgentOrchestrator:
         gap_ms = res.get("calibrated_gap_ms", 518)
         amsv_byte = res.get("amsv_intent_byte", 0x20)
 
+        # Localized multilingual dialogue synthesis
+        if active_lang.lower() not in ("en", "english"):
+            loc_data = get_localized_dialogue_reply(intent_name, active_lang, active_gender)
+            reply_text = loc_data["text"]
+            self.speaker_cohort = loc_data["cohort"]
+        else:
+            self.speaker_cohort = cohort
+
         # Free Wikipedia Knowledge Grounding (Zero-API-key semantic enrichment)
         knowledge = ground_candidate_speech(user_clean)
         if knowledge:
             concept_title = knowledge.get("title", "")
             if intent_name in ("COMPETENCY_EVALUATION", "TECHNICAL_STAR_DEFENSE", "STATUS_INQUIRY"):
-                reply_text = f"Understood. Leveraging {concept_title} addresses key architectural trade-offs; let us examine the system determinism and fault-tolerance bounds."
+                if active_lang.lower() in ("en", "english"):
+                    reply_text = f"Understood. Leveraging {concept_title} addresses key architectural trade-offs; let us examine the system determinism and fault-tolerance bounds."
 
         # 2. Zero-Bridge AMSV 64-Byte Hardware Memory Synchronization & Cognitive Grading
         words = user_clean.split()
@@ -193,10 +223,14 @@ class VoiceAgentOrchestrator:
             "inbound_utterance": user_input_text,
             "matched_intent": intent_name,
             "response_text": reply_text,
+            "language": active_lang,
+            "voice_gender": active_gender,
             "scenario": scenario.value,
             "speaker_cohort": self.speaker_cohort.value,
             "calibrated_gap_ms": gap_ms,
             "mean_f0_hz": round(tuning_result.mean_f0_hz, 1),
+            "f0_hz": round(tuning_result.mean_f0_hz, 1),
+            "f0": round(tuning_result.mean_f0_hz, 1),
             "competency_percentage": competency_pct,
             "competency_verdict": verdict,
             "psychometric_diagnosis": diagnosis,
