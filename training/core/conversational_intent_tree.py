@@ -170,6 +170,95 @@ def build_default_english_intent_tree() -> ConversationalIntentTree:
     """Builds a rich canonical English conversational intent tree."""
     tree = ConversationalIntentTree(language="English", default_gap_ms=518)
 
+    # 0. Greeting & Rapport (Human-like Greeting)
+    tree.add_node(IntentTreeNode(
+        node_id="en_tree_greeting_rapport",
+        intent="GREETING_RAPPORT",
+        calibrated_gap_ms=518,
+        amsv_intent_byte=0x20,
+        inbound_stems=[
+            "Hi", "Hello", "Hey", "Good morning", "Good afternoon", "Good evening",
+            "Hi Hello", "Hello there", "Hey there", "Greetings"
+        ],
+        template="{salutation}! {welcome}, {intro}. {prompt}?",
+        slots={
+            "salutation": ["Hello", "Hi there", "Welcome", "Great to meet you"],
+            "welcome": [
+                "it is wonderful to connect with you",
+                "thank you for joining our interview session today",
+                "I am delighted to speak with you"
+            ],
+            "intro": [
+                "I am HelloHire, your autonomous voice interviewer",
+                "this is HelloHire Voice AI conducting your session",
+                "I am your conversational AI recruiter today"
+            ],
+            "prompt": [
+                "How are you doing today, and could you tell me a little about your background and technical interests",
+                "To get started, please tell me about yourself and the technical systems you enjoy building",
+                "Could you introduce yourself and walk me through what you have been working on recently"
+            ]
+        },
+        acoustic_profile={"mean_f0_hz": 188.0, "speech_rate_sps": 3.4, "vocal_roughness": 0.55}
+    ))
+
+    # 0b. Background Introduction
+    tree.add_node(IntentTreeNode(
+        node_id="en_tree_background_intro",
+        intent="BACKGROUND_INTRODUCTION",
+        calibrated_gap_ms=518,
+        amsv_intent_byte=0x21,
+        inbound_stems=[
+            "My name is", "I am a software engineer", "I am a developer",
+            "I work on", "I have experience with", "My background is", "I am a full stack"
+        ],
+        template="{acknowledgment}. {appreciation}, {next_question}?",
+        slots={
+            "acknowledgment": [
+                "Thank you for sharing that background",
+                "Understood and noted",
+                "That is a very strong engineering foundation"
+            ],
+            "appreciation": [
+                "your software experience aligns well with our high-performance technical standards",
+                "building scalable, resilient solutions is central to what we evaluate",
+                "distributed and data-intensive systems require deep engineering rigor"
+            ],
+            "next_question": [
+                "Could you walk me through a specific challenging project or architecture you designed and how you structured it",
+                "Can you describe a system you built from the ground up, highlighting key architectural constraints",
+                "Could you explain an architectural challenge you solved using the STAR method"
+            ]
+        },
+        acoustic_profile={"mean_f0_hz": 165.0, "speech_rate_sps": 3.6, "vocal_roughness": 0.60}
+    ))
+
+    # 0c. Technical Architecture & STAR Method
+    tree.add_node(IntentTreeNode(
+        node_id="en_tree_technical_star",
+        intent="TECHNICAL_STAR_DEFENSE",
+        calibrated_gap_ms=518,
+        amsv_intent_byte=0x22,
+        inbound_stems=[
+            "distributed architecture", "raft consensus", "kernel-bypass rdma",
+            "microservices", "database optimization", "system design", "zero-copy"
+        ],
+        template="{validation}. {deep_probe}?",
+        slots={
+            "validation": [
+                "Understood. That architecture satisfies zero state divergence and demonstrates deep structural rigor",
+                "Excellent technical breakdown. That approach ensures clean separation of concerns and high throughput",
+                "That design reflects advanced engineering depth and solid concurrency management"
+            ],
+            "deep_probe": [
+                "How did you measure the latency impact under peak saturation, and what trade-offs did you consider",
+                "Could you describe a high-stress incident, failure mode, or unexpected bottleneck you encountered in that system and how you resolved it",
+                "How did you guarantee zero data loss and fault tolerance during failover scenarios"
+            ]
+        },
+        acoustic_profile={"mean_f0_hz": 142.0, "speech_rate_sps": 3.5, "vocal_roughness": 0.62}
+    ))
+
     # 1. Status Inquiry
     tree.add_node(IntentTreeNode(
         node_id="en_tree_status_inquiry",

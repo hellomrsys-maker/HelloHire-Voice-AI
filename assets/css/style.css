@@ -892,3 +892,130 @@ h1, h2, h3, h4, h5, h6 {
   .scenario-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   Live One-on-One Human Interview Pop-Up Analysis Card
+   ========================================================================== */
+.pop-analysis-card {
+  background: linear-gradient(135deg, rgba(19, 26, 46, 0.95), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(6, 182, 212, 0.4);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+  animation: slide-down 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s ease;
+}
+
+.pop-analysis-card.popping {
+  animation: card-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border-color: #38BDF8;
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.4), 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+@keyframes card-pop {
+  0% { transform: scale(0.97); }
+  50% { transform: scale(1.025); }
+  100% { transform: scale(1.0); }
+}
+
+.analysis-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.competency-score-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.percent-ring {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: conic-gradient(#10B981 calc(var(--percent, 88) * 1%), rgba(255, 255, 255, 0.08) 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+}
+
+.percent-ring-inner {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #0A0E17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.diagnosis-text {
+  font-size: 0.92rem;
+  color: #E2E8F0;
+  line-height: 1.4;
+}
+
+.dialogue-thread {
+  max-height: 280px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: var(--radius-md);
+  margin-bottom: 18px;
+}
+
+.dialogue-msg {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  max-width: 88%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.msg-candidate {
+  align-self: flex-end;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.3), rgba(6, 182, 212, 0.2));
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #FFFFFF;
+  border-bottom-right-radius: 2px;
+}
+
+.msg-recruiter {
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #F1F5F9;
+  border-bottom-left-radius: 2px;
+}
+
+.msg-sender {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sender-cand { color: var(--accent-cyan); }
+.sender-rec { color: #10B981; }
+
+@keyframes slide-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

@@ -240,23 +240,64 @@
           <!-- Direct Live Voice Microphone & Custom Utterance Section -->
           <div style="margin-bottom: 24px; padding: 20px; background: rgba(79, 70, 229, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: var(--radius-md);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-              <span style="font-size: 0.85rem; font-weight: 700; color: #38BDF8; text-transform: uppercase;">Direct Voice Interview Mode</span>
+              <span style="font-size: 0.85rem; font-weight: 700; color: #38BDF8; text-transform: uppercase;">1-on-1 Human Voice Interview Mode</span>
               <span id="mic-status-badge" class="brand-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border-color: rgba(16, 185, 129, 0.3);">Microphone Ready</span>
             </div>
             
             <button id="direct-mic-btn" class="btn-primary" style="width: 100%; justify-content: center; padding: 14px; font-size: 0.95rem; margin-bottom: 12px;">
               <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
-              <span id="mic-btn-label">Click &amp; Speak into Microphone</span>
+              <span id="mic-btn-label">Click &amp; Speak (e.g. "Hi", "Hello")</span>
             </button>
 
             <!-- Custom Text Input Form -->
-            <form id="custom-utterance-form" style="display: flex; gap: 8px;">
-              <input type="text" id="custom-utterance-input" placeholder="Or type any interview answer here..." style="flex: 1; padding: 10px 14px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-md); color: #FFFFFF; font-family: var(--font-body); font-size: 0.88rem; outline: none;">
+            <form id="custom-utterance-form" style="display: flex; gap: 8px; margin-bottom: 12px;">
+              <input type="text" id="custom-utterance-input" placeholder="Or type: Hi, Hello, or describe your project..." style="flex: 1; padding: 10px 14px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-md); color: #FFFFFF; font-family: var(--font-body); font-size: 0.88rem; outline: none;">
               <button type="submit" class="btn-secondary" style="padding: 10px 16px; white-space: nowrap;">Submit</button>
             </form>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: var(--text-dim);">
+              <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                <input type="checkbox" id="auto-continue-call" checked style="accent-color: #10B981;">
+                <span style="color: #E2E8F0;">Continuous 1-on-1 Call (Auto-reopens mic after AI speaks)</span>
+              </label>
+              <button id="reset-conversation-btn" style="background: none; border: none; color: #F87171; font-size: 0.75rem; cursor: pointer; text-decoration: underline;">Reset Interview</button>
+            </div>
           </div>
 
-          <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 12px;">Or Select Standard Interview Presets:</div>
+          <!-- Real-Time Pop-Up Analysis Card -->
+          <div class="pop-analysis-card" id="pop-analysis-card">
+            <div class="analysis-header-row">
+              <div>
+                <span style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; color: var(--accent-cyan);">Live Psychometric Analysis</span>
+                <h4 id="analysis-stage-title" style="font-size: 1.05rem; color: #FFFFFF; margin-top: 2px;">Stage 1: Greeting &amp; Rapport</h4>
+              </div>
+              <div class="competency-score-block">
+                <div class="percent-ring" id="percent-ring" style="--percent: 88;">
+                  <div class="percent-ring-inner" id="percent-ring-val">88%</div>
+                </div>
+                <div style="text-align: right;">
+                  <div style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase;">Competency</div>
+                  <div id="competency-verdict" style="font-size: 0.85rem; font-weight: 700; color: #10B981;">Strong Match</div>
+                </div>
+              </div>
+            </div>
+            <div class="diagnosis-text" id="analysis-diagnosis-text">
+              ✨ <strong>Diagnosis:</strong> Candidate initiated interview dialogue with polite rapport. Probing foundational engineering background.
+            </div>
+          </div>
+
+          <!-- Live Dialogue Thread -->
+          <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 8px;">Live Conversation History:</div>
+          <div class="dialogue-thread" id="dialogue-thread">
+            <div class="dialogue-msg msg-recruiter">
+              <div class="msg-sender sender-rec">
+                <span>●</span> HelloHire Voice AI (Interviewer)
+              </div>
+              <div>"Hello! Welcome to your interview session. To begin, could you introduce yourself and tell me what technical challenges you enjoy working on?"</div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.82rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 12px; margin-top: 18px;">Or Select Quick Scenarios:</div>
 
           <button class="sim-preset-btn active" data-preset="tech-star" id="preset-tech-btn">
             <div class="preset-role">Preset 1: Technical Architecture & STAR Method</div>

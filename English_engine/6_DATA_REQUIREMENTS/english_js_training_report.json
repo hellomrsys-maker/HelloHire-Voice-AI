@@ -3,13 +3,13 @@
   "engine": "English_engine",
   "runtime": "Node.js JavaScript",
   "node_version": "v24.16.0",
-  "duration_seconds": 36.24,
+  "duration_seconds": 0.22,
   "phases": {
     "phase1_syntax": {
       "status": "SUCCESS",
-      "final_loss": 5.441,
-      "sentences_trained": 820,
-      "iterations": 2000
+      "final_loss": 7.4362,
+      "sentences_trained": 1070,
+      "iterations": 3
     },
     "phase2_sub_ais": {
       "status": "SUCCESS",
@@ -28,10 +28,10 @@
     "phase5_amsv_verification": {
       "status": "SUCCESS",
       "model_checkpoint": "D:\\gra.voi\\checkpoints\\english_model_js.json",
-      "model_hash": "c54c94aaca63886bccd441aa5ac76017f43d05501ba4a9f4d95435ceeb2f5df9",
+      "model_hash": "f7302261574613a050ed4c27987a3177e7f2d73fc430733403afe9d44886e635",
       "amsv_checkpoint": "D:\\gra.voi\\checkpoints\\master_cognitive_amsv.bin",
       "amsv_hash": "773be9d18f29c0b35ee968b7bd5ff7b9b4ea5baa9d133035a64cd26e613d9d32"
     }
   },
-  "timestamp": "2026-09-27T19:36:01.204Z"
+  "timestamp": "2026-09-30T14:28:05.831Z"
 }

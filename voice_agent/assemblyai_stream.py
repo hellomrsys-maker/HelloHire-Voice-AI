@@ -156,6 +156,8 @@ class AssemblyAIStreamingBridge:
                                     print(f"[HELLOHIRE VOICE AI REPLY]: \"{out['response_text']}\"")
                                     print(f"  * Matched Intent : {out['matched_intent']}")
                                     print(f"  * Scenario State : {out['scenario']} (Mean F0: {out['mean_f0_hz']} Hz)")
+                                    print(f"  * Competency %   : {out.get('competency_percentage', 88)}% ({out.get('competency_verdict', 'Strong Match')})")
+                                    print(f"  * Psychometrics  : {out.get('psychometric_diagnosis', 'Nominal evaluation.')}")
                                     print(f"  * Turn Latency   : {out['calibrated_gap_ms']} ms calibrated gap")
                                     print(f"  * AMSV Hardware  : Byte 22 locked at {out['amsv_hardware_byte_22']} (0-ns sync)")
                                     print(f"  * Total Runtime  : {latency} ms")
