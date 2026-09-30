@@ -1,20 +1,20 @@
-# HelloHire Voice AI — The Voice AI Recruiter
+# HelloHire-Voice-AI — The Voice AI Recruiter
 ### that listens, scores and speaks like a human interviewer.
 
-![HelloHire Banner](assets/hellohire_banner.png)
+![HelloHire-Voice-AI Banner](assets/hellohire_banner.png)
 
-> **AssemblyAI Voice Agent Hackathon** | **lablab.ai**  
-> **Project Name**: **HelloHire Voice AI**  
-> **Team**: Team Solo Rock • BandhuPrime Linguistic Intelligence  
-> `• 518 ms turn-taking` • `• 8-D cognitive scoring` • `• Live AssemblyAI streaming (Universal-3 Pro)`
+> **AssemblyAI Voice Agent Hackathon (lablab.ai)**  
+> **Project Name**: **HelloHire-Voice-AI**  
+> **Official Repository**: [hellomrsys-maker/HelloHire-Voice-AI](https://github.com/hellomrsys-maker/HelloHire-Voice-AI)  
+> `• 518 ms turn-taking` • `• 8-D cognitive scoring` • `• Live AssemblyAI Universal-3 Pro streaming`
 
 ---
 
 ## 🎙️ Overview
 
-**HelloHire Voice AI** is an autonomous, low-latency Voice AI Recruiter that conducts dynamic, human-like voice interviews with candidates while performing real-time **8-dimensional cognitive capability evaluation** and **Item Response Theory (IRT) adaptive examination**.
+**HelloHire-Voice-AI** is an autonomous, low-latency Voice AI Recruiter that conducts dynamic, human-like voice interviews with candidates while performing real-time **8-dimensional cognitive capability evaluation** and **Item Response Theory (IRT) adaptive examination**.
 
-Powered by **AssemblyAI Universal-3 Pro Realtime WebSocket STT**, HelloHire achieves sub-second conversational latency, synchronizes candidate state across the **Zero-Bridge 64-Byte Atomic Memory State Vector (AMSV)** with zero nanosecond overhead, and dynamically adjusts its vocal cord biophysics across six communicative scenarios.
+Powered by **AssemblyAI Universal-3 Pro Realtime WebSocket STT**, **HelloHire-Voice-AI** achieves sub-second conversational latency, synchronizes candidate state across the **Zero-Bridge 64-Byte Atomic Memory State Vector (AMSV)** with zero nanosecond overhead, and dynamically adjusts its vocal cord biophysics across six communicative scenarios.
 
 ---
 

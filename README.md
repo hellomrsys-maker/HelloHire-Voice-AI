@@ -1,24 +1,37 @@
-# Solo Rock & BandhuPrime — Universal Grammar, Cognitive Intelligence & Six-Language Matrix AI Ecosystem
+# HelloHire-Voice-AI — The Voice AI Recruiter
+### that listens, scores and speaks like a human interviewer.
 
-**Solo Rock & BandhuPrime** is an offline-capable, real-time verbal communication intelligence and cognitive training ecosystem engineered across the strict **Six-Language Matrix** (Rust, Julia, Python, C++20, CUDA/Triton, Java 21) under **The Zero-Bridge Synchronous Memory Rule**.
+![HelloHire-Voice-AI Banner](assets/hellohire_banner.png)
 
-Every language layer communicates through a physically shared, cache-aligned 64-byte **Atomic Memory State Vector (AMSV)** with zero serialization, zero network sockets, and zero translation overhead, guaranteeing **0-nanosecond hardware state synchronization**.
+> **AssemblyAI Voice Agent Hackathon (lablab.ai)**  
+> **Official Repository**: [hellomrsys-maker/HelloHire-Voice-AI](https://github.com/hellomrsys-maker/HelloHire-Voice-AI)  
+> `• 518 ms turn-taking` • `• 8-D cognitive scoring` • `• Live AssemblyAI Universal-3 Pro Streaming` • `• 0-ns AMSV memory sync`
 
 ---
 
-## 🎙️ Featured Application: HelloHire Voice AI — The Voice AI Recruiter
-### that listens, scores and speaks like a human interviewer.
+## 🎙️ Overview: What is HelloHire-Voice-AI?
 
-![HelloHire Banner](assets/hellohire_banner.png)
+**HelloHire-Voice-AI** is an autonomous, low-latency Voice AI Recruiter engineered to conduct natural, high-stakes candidate interviews with sub-second responsiveness, real-time **8-dimensional cognitive capability evaluation**, and **Item Response Theory (IRT) adaptive examination**.
 
-> **Official Hackathon Project**: **HelloHire Voice AI**  
-> **Built for the AssemblyAI Voice Agent Hackathon on lablab.ai**  
-> `• 518 ms turn-taking` • `• 8-D cognitive scoring` • `• Live AssemblyAI Universal-3 Pro Streaming`
+Powered by **AssemblyAI Universal-3 Pro Realtime WebSocket STT** (`wss://streaming.assemblyai.com/v3/ws`), **HelloHire-Voice-AI** achieves sub-second conversational latency. It synchronizes candidate state across the **Zero-Bridge 64-Byte Atomic Memory State Vector (AMSV)** with zero nanosecond overhead on a single CPU cache line, and physically modulates its vocal cord biophysics across six emotional and communicative scenarios.
 
-**HelloHire Voice AI** is an autonomous Voice AI recruiter powered by **AssemblyAI Universal-3 Pro Realtime WebSocket STT** and the **Solo Rock 64-Byte AMSV zero-bridge hardware memory**. It evaluates candidates across 8 cognitive capability dimensions, adjusts inquiry difficulty via Item Response Theory (IRT), and modulates its vocal cord biophysics in real time.
+### 🚀 Quick Start
+```powershell
+# 1. Start live voice interview via microphone on AssemblyAI Universal-3 Pro:
+py voice_agent/assemblyai_stream.py
 
-- **Live Microphone Stream**: `py voice_agent/assemblyai_stream.py`
-- **Full Voice Agent Guide**: [voice_agent/README.md](voice_agent/README.md)
+# 2. Test pre-recorded spoken audio:
+py voice_agent/assemblyai_stream.py --test-file data/vocal_demos/test_spoken_speech_16k.wav
+
+# 3. Benchmark biophysical vocal scenarios:
+py voice_agent/run_agent.py --demo
+
+# 4. Run multi-agent interview & cognitive scoring demo:
+py system_demo.py
+```
+
+- **Interactive Web Portal**: [View Live Demo](https://hellomrsys-maker.github.io/HelloHire-Voice-AI/) or launch locally at `http://localhost:8080/`
+- **Voice Agent Module Guide**: [voice_agent/README.md](voice_agent/README.md)
 - **Hackathon Presentation & Video Guide**: [HACKATHON_PRESENTATION_AND_VIDEO_GUIDE.md](C:/Users/sysyo/.gemini/antigravity-ide/brain/7e97df1f-8c22-4a68-85e0-0511fae4ee85/HACKATHON_PRESENTATION_AND_VIDEO_GUIDE.md)
 
 ---
