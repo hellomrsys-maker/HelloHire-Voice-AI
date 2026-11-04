@@ -38,7 +38,9 @@ def load_api_key() -> str:
                     val = line.split("=", 1)[1].strip().strip('"').strip("'")
                     if val:
                         return val
-    return "4823582e76784ac4879c11e7e8574334"
+    raise ValueError(
+        "ASSEMBLYAI_API_KEY not found. Please set your API key in the .env file or export ASSEMBLYAI_API_KEY."
+    )
 
 
 class AssemblyAIWebBridge:
