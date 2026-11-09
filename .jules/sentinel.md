@@ -1,0 +1,4 @@
+## 2024-11-09 - [CRITICAL] Remove Hardcoded AssemblyAI API Key
+**Vulnerability:** A hardcoded AssemblyAI API key (`4823582e76784ac4879c11e7e8574334`) was found in `voice_agent/web_bridge.py`. It was used as a fallback if the `.env` file or environment variable was missing.
+**Learning:** Hardcoding secrets as fallbacks for local development creates a massive risk if the code is pushed to version control, exposing the key to the public. The `assemblyai_stream.py` had a secure implementation that raised an error, but this wasn't carried over to the web bridge.
+**Prevention:** Never use hardcoded strings as fallbacks for secrets. If a secret is missing, fail securely and loudly (e.g., raise an Exception) to force the developer to configure their environment correctly using a `.env` file or environment variables.
